@@ -5033,8 +5033,8 @@ p, li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(15, 23, 42, 0.85);
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
 }
 
 .news-col-title-wrap {
@@ -5050,25 +5050,26 @@ p, li {
   gap: 8px;
   max-height: 640px;
   overflow-y: auto;
+  background: #ffffff;
 }
 
 .news-col-body::-webkit-scrollbar {
   width: 5px;
 }
 .news-col-body::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.2);
+  background: #f1f5f9;
 }
 .news-col-body::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
+  background: #cbd5e1;
   border-radius: 3px;
 }
 .news-col-body::-webkit-scrollbar-thumb:hover {
-  background: rgba(56, 189, 248, 0.4);
+  background: #94a3b8;
 }
 
 .news-item-compact-card {
-  background: rgba(255, 255, 255, 0.025);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 8px;
   padding: 10px 11px;
   display: flex;
@@ -5076,11 +5077,12 @@ p, li {
   justify-content: space-between;
   gap: 6px;
   transition: all 0.15s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
 }
 
 .news-item-compact-card:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(56, 189, 248, 0.25);
+  background: #f8fafc;
+  border-color: #cbd5e1;
   transform: translateY(-1px);
 }
 
