@@ -1,0 +1,25 @@
+[
+  {
+    "id": "case_1789721557305",
+    "theme_id": "custom_1789721514159",
+    "theme_name": "원전",
+    "sector": "사용자 관심 테마",
+    "lead_stock": "두산에너빌리티",
+    "base_price": "16,790원",
+    "base_date": "2026-09-18",
+    "status": "WAITING",
+    "return_rate": "+0.0%",
+    "user_memo": "눌림후 5일선 돌파 지점",
+    "shooting_badge": "✨ 6개월 내 첫 슈팅 - 신선한 신규 재료",
+    "continuity_badge": "🔥 신규 재료 첫 분출 (언론 관심 급증)",
+    "ma_status": "정배열 안착",
+    "supply_summary": "기관 순매수 방어",
+    "checklist_snapshot": {
+      "material": "두산에너빌리티, 우리기술, 비에이치아이, 한신기계, 보성파워텍 및 원전 관련 실시간 뉴스 & DART 공시 동적 추적",
+      "correlation": "두산에너빌리티, 우리기술, 비에이치아이, 한신기계, 보성파워텍 관련 보도 및 공시 모멘텀을 타임라인으로 실시간 누적 분석합니다.",
+      "future_expectation": "후속 단독 보도 및 금감원 공시 접수 여부 실시간 확인",
+      "expiration_date": "진행형 모멘텀"
+    },
+    "created_at": "2026-09-18T08:52:37.305Z"
+  }
+]

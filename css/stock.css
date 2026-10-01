@@ -1,0 +1,276 @@
+/* ==========================================================================
+   주식 인텔리전스 분석센터 소프트 웜 라이트 테마 (css/stock.css)
+   모든 다크/블랙 계열 제거 및 가독성 최적화 에디토리얼 라이트 테마
+   ========================================================================== */
+
+/* 1. 주식 메인 섹션 및 헤더 컨테이너 */
+#tab-stock {
+  color: #1e293b;
+}
+
+#tab-stock .kc-header-box {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+
+#tab-stock .kc-main-title {
+  color: #111827 !important;
+}
+
+/* 2. 당일 주요 시장 지표 전광판 (코스피 / 코스닥 / 환율) */
+.stock-market-indicators {
+  display: flex;
+  gap: 10px;
+}
+
+.stock-indicator-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  padding: 10px 16px !important;
+  text-align: center !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+
+.stock-indicator-title {
+  font-size: 0.74rem !important;
+  color: #64748b !important;
+  font-weight: 700 !important;
+}
+
+.stock-indicator-val {
+  font-size: 1.22rem !important;
+  font-weight: 900 !important;
+  margin: 3px 0 !important;
+}
+
+.stock-indicator-diff {
+  font-size: 0.72rem !important;
+  color: #64748b !important;
+  font-weight: 600 !important;
+}
+
+/* 3. 빠른 서브 탭 버튼 그룹 */
+.stock-subtabs-grid {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 8px 0;
+}
+
+.stock-sub-tab {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #334155 !important;
+  font-weight: 700 !important;
+  padding: 8px 14px !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  transition: all 0.2s ease !important;
+}
+
+.stock-sub-tab:hover {
+  background: #f1f5f9 !important;
+  color: #059669 !important;
+  border-color: #94a3b8 !important;
+}
+
+.stock-sub-tab.active {
+  background: #1e4d44 !important;
+  color: #ffffff !important;
+  border-color: #1e4d44 !important;
+}
+
+/* 4. 메인 카드 및 서브 박스 라이트 테마 공통 오버라이드 */
+#tab-stock .kc-box-white-card,
+#tab-stock .stock-panel-content > div[style*="background"],
+#tab-stock div[style*="background: #0f172a"],
+#tab-stock div[style*="background:#0f172a"] {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #1e293b !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* 5. 실시간 주식 탐정 질의응답 (Q&A) 바 */
+#stock-detective-qa-bar {
+  background: #ffffff !important;
+  border: 1.5px solid #bfdbfe !important;
+  border-radius: 14px !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+#stock-detective-qa-bar h4 {
+  color: #1e293b !important;
+}
+
+#stock-qa-input {
+  background: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #111827 !important;
+  border-radius: 10px !important;
+}
+
+#stock-qa-input:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15) !important;
+}
+
+.stock-qa-preset-chip {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #1e293b !important;
+  font-weight: 700 !important;
+  transition: all 0.2s ease !important;
+}
+
+.stock-qa-preset-chip:hover {
+  background: #eff6ff !important;
+  border-color: #93c5fd !important;
+  color: #2563eb !important;
+}
+
+/* 6. 국내 주식 뉴스 센터 및 카테고리 필터 */
+#stock-panel-news h3 {
+  color: #1e293b !important;
+}
+
+.news-item-compact-card,
+.news-col-box,
+.news-item-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 10px !important;
+  color: #1e293b !important;
+}
+
+.news-item-compact-card:hover {
+  border-color: #cbd5e1 !important;
+  background: #fafbf9 !important;
+}
+
+/* 7. 오늘의 주도 테마 레이더 & 테마 타임라인 */
+#today-leading-theme-radar,
+#leading-theme-dual-radar-section,
+#theme-timeline-viewer-section,
+#today-research-reports-widget {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+
+#theme-timeline-select,
+#theme-db-autocomplete-dropdown,
+.stock-select-box {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #111827 !important;
+  border-radius: 8px !important;
+}
+
+#theme-db-autocomplete-dropdown {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 8. 종목 상세정보 (딥분석) 컨테이너 */
+.kc-white-report-container {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 16px !important;
+  color: #1e293b !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04) !important;
+}
+
+.kc-report-main-title {
+  color: #111827 !important;
+}
+
+.kc-report-sub-meta {
+  color: #64748b !important;
+}
+
+.kc-big-score-card {
+  background: #f0f9ff !important;
+  border: 1px solid #bae6fd !important;
+  border-radius: 12px !important;
+}
+
+.deep-section-block {
+  background: #ffffff !important;
+  color: #334155 !important;
+}
+
+#deep-sec-future {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+}
+
+/* 9. 매매기법 및 시황 카드 (Technique Cards) */
+.stock-technique-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+  color: #1e293b !important;
+}
+
+.stock-technique-card h4,
+.stock-technique-card h5 {
+  color: #1e293b !important;
+}
+
+.stock-technique-card p,
+.stock-technique-card li {
+  color: #475569 !important;
+}
+
+/* 10. 서브 박스 배경 및 테두리 */
+#tab-stock div[style*="background: rgba(0, 0, 0"],
+#tab-stock div[style*="background:rgba(0,0,0"],
+#tab-stock div[style*="background: rgba(15, 23, 42"],
+#tab-stock div[style*="background: rgba(30, 41, 59"] {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #1e293b !important;
+}
+
+/* 11. 텍스트 컬러 강제 교정 */
+#tab-stock h1, #tab-stock h2, #tab-stock h3, #tab-stock h4, #tab-stock h5 {
+  color: #111827 !important;
+}
+
+#tab-stock p, #tab-stock span, #tab-stock label {
+  color: inherit;
+}
+
+#tab-stock .text-muted,
+#tab-stock [style*="color: #94a3b8"],
+#tab-stock [style*="color:#94a3b8"] {
+  color: #64748b !important;
+}
+
+#tab-stock [style*="color: #cbd5e1"],
+#tab-stock [style*="color:#cbd5e1"],
+#tab-stock [style*="color: #f8fafc"],
+#tab-stock [style*="color:#f8fafc"],
+#tab-stock [style*="color: #f1f5f9"],
+#tab-stock [style*="color:#f1f5f9"] {
+  color: #1e293b !important;
+}
+
+/* 12. 유튜브 영상 팝업 모달 */
+#tab8VideoModal .modal-box {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #1e293b !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15) !important;
+}
+
+#tab8VideoModal h4 {
+  color: #111827 !important;
+}
