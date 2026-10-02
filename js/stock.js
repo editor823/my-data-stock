@@ -4652,19 +4652,22 @@ async function fetchLiveMarketIndices() {
     }
   });
 
-    // 변동률 및 텍스트/스타일 서식 적용 헬퍼 함수 (왼쪽 레이더 스타일: (+0.46%), (-0.11%) 등락률 깔끔 표시)
+      // 변동률 및 텍스트/스타일 서식 적용 헬퍼 함수 (크고 선명하게: 플러스 빨강 #ef4444, 마이너스 파랑 #2563eb)
   function updateRateElement(diffEl, ratioStr, diffStr) {
     if (!diffEl) return;
     let ratio = parseFloat(String(ratioStr || '0').replace(/,/g, ''));
     const diff = diffStr !== undefined && diffStr !== null ? parseFloat(String(diffStr).replace(/,/g, '')) : null;
     const isPositive = ratio > 0 || (ratio === 0 && diff !== null && diff > 0);
     const isZero = ratio === 0 && (diff === null || diff === 0);
-    const color = isPositive ? '#ef4444' : (isZero ? '#94a3b8' : '#3b82f6');
+    const color = isPositive ? '#ef4444' : (isZero ? '#94a3b8' : '#2563eb');
     const ratioText = `${ratio > 0 ? '+' : ''}${ratio.toFixed(2)}%`;
 
     diffEl.textContent = `(${ratioText})`;
-    diffEl.style.color = color;
-    diffEl.style.fontWeight = '700';
+    diffEl.style.setProperty('color', color, 'important');
+    diffEl.style.setProperty('font-size', '1.15rem', 'important');
+    diffEl.style.setProperty('font-weight', '900', 'important');
+    diffEl.classList.remove('is-up', 'is-down', 'is-zero');
+    diffEl.classList.add(isPositive ? 'is-up' : (isZero ? 'is-zero' : 'is-down'));
   }
 
   // 실시간 엔드포인트 호출 헬퍼 (직접 호출 -> Jina AI -> allorigins 프록시 폴백)

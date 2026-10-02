@@ -4678,9 +4678,10 @@ p, li {
 }
 
 .stock-indicator-diff {
-  font-size: 0.72rem;
-  font-weight: 700;
+  font-size: 1.15rem;
+  font-weight: 900;
   white-space: nowrap;
+  line-height: 1.2;
 }
 
 /* 3. Technique Grid Base Style */
@@ -4742,8 +4743,9 @@ p, li {
   }
 
   .stock-indicator-diff {
-    font-size: 0.65rem !important;
-    letter-spacing: -0.4px !important;
+    font-size: 0.95rem !important;
+    letter-spacing: -0.3px !important;
+    font-weight: 900 !important;
   }
 
   /* Top 6 Sub-tabs touch horizontal scroll container */
@@ -4865,7 +4867,8 @@ p, li {
   }
 
   .stock-indicator-diff {
-    font-size: 0.6rem !important;
+    font-size: 0.88rem !important;
+    font-weight: 900 !important;
   }
 
   .kc-4metrics-grid-clean {

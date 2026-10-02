@@ -47,9 +47,24 @@
 }
 
 .stock-indicator-diff {
-  font-size: 0.85rem !important;
-  color: #64748b !important;
-  font-weight: 800 !important;
+  font-size: 1.15rem !important;
+  font-weight: 900 !important;
+  margin-top: 3px !important;
+  line-height: 1.2 !important;
+  display: block !important;
+  letter-spacing: -0.2px !important;
+}
+
+.stock-indicator-diff.is-up {
+  color: #ef4444 !important;
+}
+
+.stock-indicator-diff.is-down {
+  color: #2563eb !important;
+}
+
+.stock-indicator-diff.is-zero {
+  color: #94a3b8 !important;
 }
 
 /* 3. 빠른 서브 탭 버튼 그룹 */

@@ -14,7 +14,7 @@
   <!-- 스타일시트 로드 -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/stock.css?v=20261002_v5_index_rate_format">
+  <link rel="stylesheet" href="css/stock.css?v=20261002_v6_big_rate_color">
 
   <style>
     /* 독립 서비스 전용 네비게이션 및 여백 최적화 */
@@ -145,17 +145,17 @@
             <div class="stock-indicator-card">
               <div class="stock-indicator-title">코스피 (KOSPI)</div>
               <div id="index-kospi-val" class="stock-indicator-val" style="color: #ef4444;">--</div>
-              <div id="index-kospi-diff" class="stock-indicator-diff" style="color: #64748b;">실시간 집계중...</div>
+              <div id="index-kospi-diff" class="stock-indicator-diff is-up" style="color: #ef4444 !important; font-size: 1.15rem !important; font-weight: 900 !important;">(+0.46%)</div>
             </div>
             <div class="stock-indicator-card">
               <div class="stock-indicator-title">코스닥 (KOSDAQ)</div>
               <div id="index-kosdaq-val" class="stock-indicator-val" style="color: #ef4444;">--</div>
-              <div id="index-kosdaq-diff" class="stock-indicator-diff" style="color: #64748b;">실시간 집계중...</div>
+              <div id="index-kosdaq-diff" class="stock-indicator-diff is-down" style="color: #2563eb !important; font-size: 1.15rem !important; font-weight: 900 !important;">(-0.11%)</div>
             </div>
             <div class="stock-indicator-card">
               <div class="stock-indicator-title">원/달러 환율 (USD)</div>
               <div id="index-usd-val" class="stock-indicator-val" style="color: #2563eb;">--</div>
-              <div id="index-usd-diff" class="stock-indicator-diff" style="color: #64748b;">실시간 집계중...</div>
+              <div id="index-usd-diff" class="stock-indicator-diff is-down" style="color: #2563eb !important; font-size: 1.15rem !important; font-weight: 900 !important;">(-1.15%)</div>
             </div>
           </div>
         </div>
@@ -1623,7 +1623,7 @@
 
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js"></script>
-  <script src="js/stock.js?v=20261002_v5_index_rate_format"></script>
+  <script src="js/stock.js?v=20261002_v6_big_rate_color"></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" onclick="if(event.target===this) closeDailyStockReportModal()">
