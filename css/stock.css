@@ -274,3 +274,38 @@
 #tab8VideoModal h4 {
   color: #111827 !important;
 }
+
+
+/* ===== 주식 인텔리전스 라이트 모드 회색바 완전 제거 및 가독성 보강 ===== */
+#today-leading-themes-container > div,
+.today-leading-loading-box {
+  background: #f8fafc !important;
+  border: 1.5px dashed #cbd5e1 !important;
+  color: #1e293b !important;
+}
+
+#today-leading-themes-container > div div,
+.today-leading-loading-box div {
+  color: #1e293b !important;
+}
+
+#today-leading-themes-container > div div:last-child {
+  color: #64748b !important;
+}
+
+#radar-market-health-bar {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03) !important;
+}
+
+div[style*="background: rgba(0,0,0"],
+div[style*="background:rgba(0,0,0"],
+div[style*="background: rgba(0, 0, 0"],
+div[style*="background:rgba(0, 0, 0"],
+div[style*="background: rgba(30, 41, 59"],
+div[style*="background:rgba(30,41,59"] {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #1e293b !important;
+}

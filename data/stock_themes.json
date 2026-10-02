@@ -1,0 +1,72 @@
+[
+  {
+    "theme_name": "K-방산 & 우주항공",
+    "is_real_leading": true,
+    "trading_value_eok": 3250,
+    "leader_ratio": 14.2,
+    "leader_stock": "한화에어로스페이스",
+    "sub_leader_stock": "현대로템",
+    "sub_stocks_top3": [
+      { "name": "한화오션", "rate": "+8.9%" },
+      { "name": "LIG넥스원", "rate": "+7.6%" },
+      { "name": "한국항공우주", "rate": "+5.4%" }
+    ],
+    "material_summary": "폴란드·중동 2차 수출 실행 및 루마니아 K9 자주포 공급, 미 해군 MRO 수주 파이프라인 가시화"
+  },
+  {
+    "theme_name": "반도체 유리기판 & HBM 후공정",
+    "is_real_leading": true,
+    "trading_value_eok": 2840,
+    "leader_ratio": 12.8,
+    "leader_stock": "SKC",
+    "sub_leader_stock": "와이씨켐",
+    "sub_stocks_top3": [
+      { "name": "필옵틱스", "rate": "+9.4%" },
+      { "name": "한미반도체", "rate": "+6.5%" },
+      { "name": "제이앤티씨", "rate": "+5.8%" }
+    ],
+    "material_summary": "인텔·엔비디아 유리기판 조기 도입 로드맵 발표 및 HBM3E 12단 고대역폭 메모리 양산 증설"
+  },
+  {
+    "theme_name": "원전 르네상스 & 체코 수주",
+    "is_real_leading": true,
+    "trading_value_eok": 2410,
+    "leader_ratio": 11.5,
+    "leader_stock": "두산에너빌리티",
+    "sub_leader_stock": "우진엔텍",
+    "sub_stocks_top3": [
+      { "name": "우리기술", "rate": "+8.2%" },
+      { "name": "비에이치아이", "rate": "+7.1%" },
+      { "name": "한신기계", "rate": "+5.9%" }
+    ],
+    "material_summary": "체코 30조 원전 수주 본계약 체결 가속 및 美 빅테크 데이터센터 SMR 전력 공급 독점 계약 협상"
+  },
+  {
+    "theme_name": "바이오 플랫폼 & ADC 항암",
+    "is_real_leading": true,
+    "trading_value_eok": 1950,
+    "leader_ratio": 13.6,
+    "leader_stock": "알테오젠",
+    "sub_leader_stock": "리가켐바이오",
+    "sub_stocks_top3": [
+      { "name": "삼천당제약", "rate": "+8.1%" },
+      { "name": "에이비엘바이오", "rate": "+6.9%" },
+      { "name": "펩트론", "rate": "+5.2%" }
+    ],
+    "material_summary": "글로벌 빅파마 키트루다SC 마일스톤 유입 및 조 단위 ADC 플랫폼 추가 기술수출 기대감 고조"
+  },
+  {
+    "theme_name": "전력설비 & 초고압 송전망",
+    "is_real_leading": true,
+    "trading_value_eok": 1820,
+    "leader_ratio": 10.4,
+    "leader_stock": "대한전선",
+    "sub_leader_stock": "효성중공업",
+    "sub_stocks_top3": [
+      { "name": "가온전선", "rate": "+7.8%" },
+      { "name": "LS에코에너지", "rate": "+6.1%" },
+      { "name": "일진전기", "rate": "+4.9%" }
+    ],
+    "material_summary": "북미 노후 전력망 교체 및 AI 데이터센터 전력 소비 폭증에 따른 초고압 변압기 품귀 현상"
+  }
+]

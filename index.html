@@ -14,7 +14,7 @@
   <!-- 스타일시트 로드 -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/stock.css">
+  <link rel="stylesheet" href="css/stock.css?v=20261002_v3_typography">
 
   <style>
     /* 독립 서비스 전용 네비게이션 및 여백 최적화 */
@@ -316,13 +316,20 @@
               <div style="font-size: 0.76rem; color: #94a3b8; display: flex; align-items: center; gap: 6px;">
                 <span>⚡ 기준 충족 시에만 실시간 표출</span>
                 <span id="today-leading-status-badge" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; padding: 2px 8px; border-radius: 4px; font-weight: 700;">실시간 레이더 감지 중</span>
+
+                <button type="button" onclick="openDailyStockReportModal()" id="btn-open-daily-report"
+                  style="display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #1e40af, #2563eb); color: #ffffff; border: 1px solid #1d4ed8; padding: 5px 12px; border-radius: 8px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(37,99,235,0.3); transition: all 0.2s;"
+                  onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
+                  <span>📊</span> 오늘 시장 총정리 보고서 생성 / 복사
+                </button>
+
               </div>
             </div>
 
             <!-- 오늘의 주도 테마 카드 그리드 / 예외 안내 배너 -->
             <div id="today-leading-themes-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px;">
-              <div style="grid-column: 1 / -1; padding: 28px; text-align: center; color: #94a3b8; background: rgba(0,0,0,0.25); border: 1px dashed rgba(255,255,255,0.1); border-radius: 12px;">
-                <div style="font-size: 1.05rem; margin-bottom: 6px;">⏳ 실시간 주도 테마 거래대금 정밀 분석 중...</div>
+              <div style="grid-column: 1 / -1; padding: 28px; text-align: center; color: #334155; background: #f8fafc; border: 1.5px dashed #cbd5e1; border-radius: 12px;">
+                <div style="font-size: 1.05rem; font-weight: 800; color: #1e293b; margin-bottom: 6px;">⏳ 실시간 주도 테마 거래대금 정밀 분석 중...</div>
                 <div style="font-size: 0.78rem; color: #64748b;">네이버 실시간 증시 거래대금 및 테마 대장주 상승률을 교차 검증하고 있습니다.</div>
               </div>
             </div>
@@ -495,38 +502,38 @@
           </div>
 
           <!-- 구역 A (시장 판도 바): 코스피/코스닥 지수, 외인/기관 수급, 시장 성격 태그 -->
-          <div id="radar-market-health-bar" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 16px 18px; margin-bottom: 20px; display: grid; grid-template-columns: 1.2fr 1.8fr; gap: 16px; align-items: center;">
+          <div id="radar-market-health-bar" style="background: #ffffff; border: 1px solid #e2e8f0; box-shadow: 0 1px 3px rgba(0,0,0,0.03); border-radius: 14px; padding: 18px 22px; margin-bottom: 20px; display: grid; grid-template-columns: 1.15fr 1.85fr; gap: 20px; align-items: center;">
             <!-- 지수 및 수급 현황 -->
-            <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center; border-right: 1px dashed rgba(255,255,255,0.1); padding-right: 14px;">
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; border-right: 1px dashed #cbd5e1; padding-right: 18px;">
               <div>
-                <div style="font-size: 0.72rem; color: #94a3b8; font-weight: 700;">KOSPI 지수</div>
-                <div id="radar-kospi-display" style="font-size: 1.08rem; font-weight: 900; color: #ef4444;">2,680.50 (+0.45%)</div>
-                <div style="font-size: 0.72rem; color: #cbd5e1; margin-top: 2px;">
-                  외인 <strong id="radar-kp-foreign" style="color: #ef4444;">+1,240억</strong> · 기관 <strong id="radar-kp-organ" style="color: #3b82f6;">-420억</strong>
+                <div style="font-size: 13px; color: #64748b; font-weight: 700; margin-bottom: 2px;">KOSPI 지수</div>
+                <div id="radar-kospi-display" style="font-size: 26px; font-weight: 900; color: #ef4444; line-height: 1.2;">2,680.50 (+0.45%)</div>
+                <div style="font-size: 13.5px; color: #475569; font-weight: 600; margin-top: 4px;">
+                  외인 <strong id="radar-kp-foreign" style="color: #ef4444; font-size: 14px; font-weight: 800;">+1,240억</strong> · 기관 <strong id="radar-kp-organ" style="color: #3b82f6; font-size: 14px; font-weight: 800;">-420억</strong>
                 </div>
               </div>
-              <div style="width: 1px; height: 38px; background: rgba(255,255,255,0.08);"></div>
+              <div style="width: 1px; height: 50px; background: #e2e8f0;"></div>
               <div>
-                <div style="font-size: 0.72rem; color: #94a3b8; font-weight: 700;">KOSDAQ 지수</div>
-                <div id="radar-kosdaq-display" style="font-size: 1.08rem; font-weight: 900; color: #ef4444;">875.20 (+0.82%)</div>
-                <div style="font-size: 0.72rem; color: #cbd5e1; margin-top: 2px;">
-                  외인 <strong id="radar-kd-foreign" style="color: #ef4444;">+680억</strong> · 기관 <strong id="radar-kd-organ" style="color: #ef4444;">+310억</strong>
+                <div style="font-size: 13px; color: #64748b; font-weight: 700; margin-bottom: 2px;">KOSDAQ 지수</div>
+                <div id="radar-kosdaq-display" style="font-size: 26px; font-weight: 900; color: #ef4444; line-height: 1.2;">875.20 (+0.82%)</div>
+                <div style="font-size: 13.5px; color: #475569; font-weight: 600; margin-top: 4px;">
+                  외인 <strong id="radar-kd-foreign" style="color: #ef4444; font-size: 14px; font-weight: 800;">+680억</strong> · 기관 <strong id="radar-kd-organ" style="color: #ef4444; font-size: 14px; font-weight: 800;">+310억</strong>
                 </div>
               </div>
             </div>
 
             <!-- 시장 성격 태그 & 설명 -->
-            <div style="display: flex; flex-direction: column; gap: 6px;">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 0.74rem; color: #94a3b8; font-weight: 700;">당일 시장 성격 판정:</span>
-                <span id="radar-mood-tag" style="background: linear-gradient(135deg, rgba(234, 88, 12, 0.2), rgba(245, 158, 11, 0.3)); color: #fb923c; border: 1px solid rgba(245, 158, 11, 0.5); padding: 3px 10px; border-radius: 6px; font-weight: 900; font-size: 0.8rem; letter-spacing: -0.3px;">
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <span style="font-size: 13px; color: #475569; font-weight: 800;">당일 시장 성격 판정:</span>
+                <span id="radar-mood-tag" style="background: linear-gradient(135deg, rgba(234, 88, 12, 0.15), rgba(245, 158, 11, 0.2)); color: #ea580c; border: 1.5px solid #f97316; padding: 4px 12px; border-radius: 6px; font-weight: 900; font-size: 13px; letter-spacing: -0.2px;">
                   개별 테마 순환매 우세
                 </span>
-                <span id="radar-est-volume" style="font-size: 0.72rem; color: #38bdf8; background: rgba(56,189,248,0.1); padding: 2px 7px; border-radius: 4px; font-weight: 700;">
+                <span id="radar-est-volume" style="font-size: 13px; color: #0284c7; background: #e0f2fe; border: 1px solid #bae6fd; padding: 4px 10px; border-radius: 6px; font-weight: 800;">
                   거래대금 18조 4,500억
                 </span>
               </div>
-              <div id="radar-mood-desc" style="font-size: 0.78rem; color: #cbd5e1; line-height: 1.5;">
+              <div id="radar-mood-desc" style="font-size: 14px; color: #1e293b; line-height: 1.6; font-weight: 500;">
                 대형주 지수 관망세 속 실적 및 재료가 강력한 중소형 주도 테마로 자금 급속 쏠림
               </div>
             </div>
@@ -544,7 +551,7 @@
             </div>
 
             <!-- TOP 5 테마 카드 그리드 (구역 B) -->
-            <div id="radar-top-themes-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;">
+            <div id="radar-top-themes-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px;">
               <div style="text-align: center; padding: 28px; color: #94a3b8; font-size: 0.82rem;">
                 실시간 시장 판도 및 주도 테마를 분석하는 중입니다...
               </div>
@@ -552,15 +559,15 @@
           </div>
 
           <!-- 구역 C 안내 바: 원클릭 탐정 체크리스트 연동 가이드 -->
-          <div style="background: rgba(56, 189, 248, 0.08); border: 1px dashed rgba(56, 189, 248, 0.35); border-radius: 10px; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span style="font-size: 1.1rem;">🎯</span>
-              <div style="font-size: 0.8rem; color: #e2e8f0;">
-                <strong style="color: #38bdf8;">원클릭 탐정 체크리스트 연동</strong>: 위 TOP 5 테마 카드를 클릭하면, 아래 <strong>7대 체크리스트</strong>와 <strong>4대 채널(뉴스·공시·리포트·블로그) 타임라인</strong>이 즉각 해당 주도 테마로 자동 전환되어 정밀 분석이 실행됩니다.
+          <div style="background: #fff1f2; border: 1px solid #fecdd3; border-radius: 12px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1.25rem;">🎯</span>
+              <div style="font-size: 13px; color: #334155; line-height: 1.6;">
+                <strong style="color: #be123c; font-weight: 800;">원클릭 탐정 체크리스트 연동</strong>: 위 TOP 5 테마 카드를 클릭하면, 아래 <strong style="color: #0f172a;">7대 체크리스트</strong>와 <strong style="color: #0f172a;">4대 채널(뉴스·공시·리포트·블로그) 타임라인</strong>이 즉각 해당 주도 테마로 자동 전환되어 정밀 분석이 실행됩니다.
               </div>
             </div>
-            <span style="font-size: 0.72rem; color: #34d399; font-weight: 800; background: rgba(16, 185, 129, 0.15); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(16, 185, 129, 0.3);">
-              자동 타임라인 연동
+            <span style="font-size: 12px; color: #047857; font-weight: 800; background: #ecfdf5; padding: 4px 10px; border-radius: 6px; border: 1px solid #a7f3d0; white-space: nowrap;">
+              ⚡ 자동 타임라인 연동
             </span>
           </div>
 
@@ -568,30 +575,30 @@
 
 
         <!-- [신규] 사용자 수동 종목/테마 추가 & 즉시 수집 패널 -->
-        <div id="custom-stock-tracker-panel" class="kc-box-white-card" style="background: #ffffff; margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 14px; padding: 18px 20px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span style="font-size: 1.25rem;">🎯</span>
+        <div id="custom-stock-tracker-panel" class="kc-box-white-card" style="background: #ffffff; margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px 22px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1.35rem;">🎯</span>
               <div>
-                <h4 style="font-size: 1.05rem; font-weight: 900; color: #f8fafc; margin: 0;">
+                <h4 style="font-size: 1.1rem; font-weight: 900; color: #0f172a; margin: 0;">
                   계층형 키워드 정밀 추적 · 사용자 관심 종목 추가
                 </h4>
-                <div style="font-size: 0.76rem; color: #94a3b8; margin-top: 2px;">
+                <div style="font-size: 13px; color: #64748b; margin-top: 3px;">
                   대분류 테마에 속한 개별 종목을 추가하면 네이버 뉴스를 즉시 단독 검색하여 2번 탭 타임라인 상단에 실시간으로 적재합니다.
                 </div>
               </div>
             </div>
-            <span style="font-size: 0.72rem; color: #38bdf8; background: rgba(56,189,248,0.12); padding: 3px 10px; border-radius: 6px; font-weight: 800; border: 1px solid rgba(56,189,248,0.3);">
+            <span style="font-size: 12px; color: #0284c7; background: #e0f2fe; padding: 4px 12px; border-radius: 6px; font-weight: 800; border: 1px solid #bae6fd;">
               💾 브라우저 로컬 자동 보존
             </span>
           </div>
 
           <!-- 입력 폼 컨트롤 행 -->
-          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px;">
+          <div style="display: flex; align-items: flex-end; gap: 12px; flex-wrap: wrap; margin-bottom: 16px;">
             <!-- 대분류 테마 선택 셀렉트박스 -->
-            <div style="display: flex; flex-direction: column; gap: 4px;">
-              <label style="font-size: 0.72rem; color: #475569; font-weight: 700;">대분류 테마 선택</label>
-              <select id="custom-theme-select" onchange="handleCustomThemeSelectChange(this.value)" style="background: #ffffff; border: 1px solid #cbd5e1; color: #1e293b; padding: 8px 12px; border-radius: 8px; font-size: 0.82rem; font-weight: 700; outline: none; min-width: 150px; cursor: pointer;">
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+              <label style="font-size: 13px; color: #334155; font-weight: 700;">대분류 테마 선택</label>
+              <select id="custom-theme-select" onchange="handleCustomThemeSelectChange(this.value)" style="background: #ffffff; border: 1.5px solid #cbd5e1; color: #0f172a; padding: 0 14px; height: 42px; border-radius: 8px; font-size: 14px; font-weight: 700; outline: none; min-width: 170px; cursor: pointer; transition: border-color 0.2s;">
                 <option value="방산">방산 (K-방산 수출/자주포)</option>
                 <option value="로봇">로봇 (휴머노이드/감속기)</option>
                 <option value="원전">원전 (체코 30조/SMR)</option>
@@ -602,33 +609,31 @@
             </div>
 
             <!-- 직접 입력 시 노출되는 테마명 인풋 -->
-            <div id="custom-theme-direct-wrap" style="display: none; flex-direction: column; gap: 4px;">
-              <label style="font-size: 0.72rem; color: #38bdf8; font-weight: 700;">직접 입력 테마명</label>
-              <input type="text" id="custom-theme-input" placeholder="예: 우주항공, 자율주행" style="background: #ffffff; border: 1px solid #cbd5e1; color: #1e293b; padding: 8px 12px; border-radius: 8px; font-size: 0.82rem; outline: none; width: 150px;">
+            <div id="custom-theme-direct-wrap" style="display: none; flex-direction: column; gap: 6px;">
+              <label style="font-size: 13px; color: #0284c7; font-weight: 700;">직접 입력 테마명</label>
+              <input type="text" id="custom-theme-input" placeholder="예: 우주항공, 자율주행" style="background: #ffffff; border: 1.5px solid #cbd5e1; color: #0f172a; padding: 0 14px; height: 42px; border-radius: 8px; font-size: 14px; font-weight: 600; outline: none; width: 160px;">
             </div>
 
             <!-- 하위 추적 종목 입력 인풋 -->
-            <div style="display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 180px;">
-              <label style="font-size: 0.72rem; color: #475569; font-weight: 700;">하위 추적 종목명</label>
-              <input type="text" id="stock-keyword-input" placeholder="예: 엠로, 알에스오토메이션, 현대 로템" style="flex:1; background:#ffffff; border:1px solid #cbd5e1; color:#1e293b; padding:8px 12px; border-radius:6px;">
+            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 200px;">
+              <label style="font-size: 13px; color: #334155; font-weight: 700;">하위 추적 종목명</label>
+              <input type="text" id="stock-keyword-input" placeholder="예: 엠로, 알에스오토메이션, 현대로템" style="flex: 1; background: #ffffff; border: 1.5px solid #cbd5e1; color: #0f172a; padding: 0 14px; height: 42px; border-radius: 8px; font-size: 14px; font-weight: 600; outline: none;">
             </div>
 
             <!-- 💾 탐정 사건 수첩에 저장 + 📂 바로가기 버튼 -->
-            <div style="display: flex; flex-direction: column; gap: 4px; align-self: flex-end;">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <button type="button" id="btn-add-stock-track" onclick="saveToDossierFromTracker()" style="background: linear-gradient(135deg, #7c3aed, #6d28d9); border: 1.5px solid #a855f7; color: #f0e6ff; padding: 8px 16px; border-radius: 8px; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; height: 38px; transition: all 0.2s; box-shadow: 0 3px 10px rgba(139, 92, 246, 0.35);" onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 5px 16px rgba(139,92,246,0.55)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 3px 10px rgba(139,92,246,0.35)';">
-                  <span>💾 탐정 사건 수첩에 저장</span>
-                </button>
-                <button type="button" class="btn-goto-dossier" onclick="document.getElementById('theme-dossier-section')?.scrollIntoView({ behavior: 'smooth' });" style="background: rgba(168, 85, 247, 0.2); border: 1px solid #a855f7; color: #d8b4fe; padding: 8px 14px; border-radius: 8px; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; height: 38px; transition: all 0.2s;" onmouseover="this.style.background='rgba(168,85,247,0.4)';" onmouseout="this.style.background='rgba(168,85,247,0.2)';">
-                  📂 수첩 바로가기
-                </button>
-              </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <button type="button" id="btn-add-stock-track" onclick="saveToDossierFromTracker()" style="background: linear-gradient(135deg, #7c3aed, #6d28d9); border: 1.5px solid #a855f7; color: #ffffff; padding: 0 20px; border-radius: 8px; font-size: 14px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; height: 42px; transition: all 0.2s; box-shadow: 0 3px 10px rgba(139, 92, 246, 0.35);" onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
+                <span>💾 탐정 사건 수첩에 저장</span>
+              </button>
+              <button type="button" class="btn-goto-dossier" onclick="document.getElementById('theme-dossier-section')?.scrollIntoView({ behavior: 'smooth' });" style="background: #f5f3ff; border: 1.5px solid #c4b5fd; color: #6d28d9; padding: 0 16px; border-radius: 8px; font-size: 14px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; height: 42px; transition: all 0.2s;" onmouseover="this.style.background='#ede9fe';" onmouseout="this.style.background='#f5f3ff';">
+                📂 수첩 바로가기
+              </button>
             </div>
           </div>
 
           <!-- 추적 등록된 종목 태그 목록 -->
           <div style="border-top: 1px dashed #e2e8f0; padding-top: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-            <span style="font-size: 0.72rem; color: #64748b; font-weight: 700; white-space: nowrap;">현재 추적 중:</span>
+            <span style="font-size: 13px; color: #475569; font-weight: 700; white-space: nowrap;">현재 추적 중:</span>
             <div id="custom-tracked-tags-list" style="display: flex; gap: 6px; flex-wrap: wrap;">
               <!-- JS 동적 주입 -->
             </div>
@@ -1613,6 +1618,50 @@
 
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js"></script>
-  <script src="js/stock.js"></script>
+  <script src="js/stock.js?v=20261002_v3_typography"></script>
+
+<!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
+<div id="dailyStockReportModal" class="daily-report-modal-backdrop" onclick="if(event.target===this) closeDailyStockReportModal()">
+  <div class="daily-report-modal-content">
+    <div class="daily-report-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="font-size: 1.4rem;">📊</span>
+        <div>
+          <div style="font-size: 1.05rem; font-weight: 800; color: #ffffff;" id="daily-report-title">
+            데일리 주식 시장 종합 마감 브리핑
+          </div>
+          <div style="font-size: 0.76rem; color: #94a3b8;" id="daily-report-subtitle">
+            당일 주도 테마, 급등 특징주, 공시 및 시황을 단일 리포트로 자동 집약
+          </div>
+        </div>
+      </div>
+      <button type="button" onclick="closeDailyStockReportModal()" 
+        style="background: transparent; border: none; color: #cbd5e1; font-size: 1.3rem; cursor: pointer; padding: 4px 8px;"
+        title="닫기">✕</button>
+    </div>
+    <div class="daily-report-body">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+        <span style="font-size: 0.82rem; font-weight: 800; color: #1e40af; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
+          ⚡ 원클릭 복사 최적화 (마크다운 포맷)
+        </span>
+        <span style="font-size: 0.76rem; color: #64748b;" id="daily-report-timestamp"></span>
+      </div>
+      <div id="daily-report-content-preview" class="daily-report-preview-box">
+        리포트를 생성 중입니다...
+      </div>
+    </div>
+    <div class="daily-report-footer">
+      <button type="button" onclick="copyDailyStockReportText()" id="btn-copy-daily-report"
+        style="display: inline-flex; align-items: center; gap: 6px; background: #2563eb; color: #ffffff; border: 1px solid #1d4ed8; padding: 10px 20px; border-radius: 8px; font-size: 0.9rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(37,99,235,0.25);">
+        <span>📋</span> 리포트 텍스트 복사
+      </button>
+      <button type="button" onclick="closeDailyStockReportModal()"
+        style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 10px 18px; border-radius: 8px; font-size: 0.88rem; font-weight: 700; cursor: pointer;">
+        닫기
+      </button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

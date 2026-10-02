@@ -274,3 +274,180 @@
 #tab8VideoModal h4 {
   color: #111827 !important;
 }
+
+
+/* ===== 주식 인텔리전스 라이트 모드 회색바 완전 제거 및 가독성 보강 ===== */
+#today-leading-themes-container > div,
+.today-leading-loading-box {
+  background: #f8fafc !important;
+  border: 1.5px dashed #cbd5e1 !important;
+  color: #1e293b !important;
+}
+
+#today-leading-themes-container > div div,
+.today-leading-loading-box div {
+  color: #1e293b !important;
+}
+
+#today-leading-themes-container > div div:last-child {
+  color: #64748b !important;
+}
+
+#radar-market-health-bar {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03) !important;
+}
+
+div[style*="background: rgba(0,0,0"],
+div[style*="background:rgba(0,0,0"],
+div[style*="background: rgba(0, 0, 0"],
+div[style*="background:rgba(0, 0, 0"],
+div[style*="background: rgba(30, 41, 59"],
+div[style*="background:rgba(30,41,59"] {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #1e293b !important;
+}
+
+
+/* ==========================================================================
+   [뉴스 센터 필터 버튼 블루 활성 스타일 & 데일리 종합 보고서 모달]
+   ========================================================================== */
+#domestic-news-filter-chips .imggen-style-chip {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #475569 !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  padding: 6px 14px !important;
+  border-radius: 20px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+#domestic-news-filter-chips .imggen-style-chip:hover {
+  background: #eff6ff !important;
+  color: #2563eb !important;
+  border-color: #93c5fd !important;
+}
+
+#domestic-news-filter-chips .imggen-style-chip.active {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #1d4ed8 !important;
+  font-weight: 800 !important;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35) !important;
+}
+
+/* 데일리 종합 보고서 모달 */
+.daily-report-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(4px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  padding: 16px;
+}
+
+.daily-report-modal-content {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 860px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.daily-report-header {
+  padding: 18px 24px;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #334155;
+}
+
+.daily-report-body {
+  padding: 20px 24px;
+  overflow-y: auto;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: #1e293b;
+  background: #f8fafc;
+}
+
+.daily-report-preview-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  white-space: pre-wrap;
+  font-family: 'Pretendard Variable', Pretendard, monospace, sans-serif;
+  font-size: 0.88rem;
+  color: #0f172a;
+  line-height: 1.75;
+  user-select: text;
+  max-height: 52vh;
+  overflow-y: auto;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.daily-report-footer {
+  padding: 14px 24px;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+
+/* ==========================================================================
+   [상단 탭 네비게이션 가독성 상향 (14px font-semibold)]
+   ========================================================================== */
+.stock-sub-tab {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #334155 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 10px 18px !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) !important;
+}
+
+.stock-sub-tab:hover {
+  background: #f1f5f9 !important;
+  color: #1e293b !important;
+  border-color: #94a3b8 !important;
+  transform: translateY(-1px) !important;
+}
+
+.stock-sub-tab.active {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #1d4ed8 !important;
+  font-weight: 800 !important;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.35) !important;
+}
