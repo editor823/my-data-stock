@@ -47,9 +47,9 @@
 }
 
 .stock-indicator-diff {
-  font-size: 0.72rem !important;
+  font-size: 0.85rem !important;
   color: #64748b !important;
-  font-weight: 600 !important;
+  font-weight: 800 !important;
 }
 
 /* 3. 빠른 서브 탭 버튼 그룹 */

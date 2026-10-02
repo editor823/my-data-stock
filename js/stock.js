@@ -4652,24 +4652,19 @@ async function fetchLiveMarketIndices() {
     }
   });
 
-  // 변동폭/변동률 및 텍스트/스타일 서식 적용 헬퍼 함수
+    // 변동률 및 텍스트/스타일 서식 적용 헬퍼 함수 (왼쪽 레이더 스타일: (+0.46%), (-0.11%) 등락률 깔끔 표시)
   function updateRateElement(diffEl, ratioStr, diffStr) {
     if (!diffEl) return;
-    const ratio = parseFloat(String(ratioStr || '0').replace(/,/g, ''));
+    let ratio = parseFloat(String(ratioStr || '0').replace(/,/g, ''));
     const diff = diffStr !== undefined && diffStr !== null ? parseFloat(String(diffStr).replace(/,/g, '')) : null;
-    const isPositive = ratio > 0 || (diff !== null && diff > 0);
+    const isPositive = ratio > 0 || (ratio === 0 && diff !== null && diff > 0);
     const isZero = ratio === 0 && (diff === null || diff === 0);
-    const sign = isPositive ? '▲ ' : (isZero ? '' : '▼ ');
     const color = isPositive ? '#ef4444' : (isZero ? '#94a3b8' : '#3b82f6');
     const ratioText = `${ratio > 0 ? '+' : ''}${ratio.toFixed(2)}%`;
 
-    if (diff !== null && !isNaN(diff) && diff !== 0) {
-      const absDiff = Math.abs(diff).toFixed(2);
-      diffEl.textContent = `${sign}${absDiff} (${ratioText})`;
-    } else {
-      diffEl.textContent = `${sign}${ratioText}`;
-    }
+    diffEl.textContent = `(${ratioText})`;
     diffEl.style.color = color;
+    diffEl.style.fontWeight = '700';
   }
 
   // 실시간 엔드포인트 호출 헬퍼 (직접 호출 -> Jina AI -> allorigins 프록시 폴백)
