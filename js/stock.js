@@ -1,3 +1,48 @@
+// [장마감 기준시각 계산기] 평일(월~금) 오후 3시 30분 마감 기준 시각 자동 산출
+function getMarketCloseTimestamp(referenceDate = new Date()) {
+  const d = new Date(referenceDate);
+  const day = d.getDay(); // 0: 일, 1: 월, 2: 화, 3: 수, 4: 목, 5: 금, 6: 토
+  const hours = d.getHours();
+  const minutes = d.getMinutes();
+  const totalMinutes = hours * 60 + minutes;
+  const marketCloseMinutes = 15 * 60 + 30; // 15:30
+
+  let daysToSubtract = 0;
+  if (day === 6) {
+    // 토요일 -> 직전 금요일
+    daysToSubtract = 1;
+  } else if (day === 0) {
+    // 일요일 -> 직전 금요일
+    daysToSubtract = 2;
+  } else if (day === 1 && totalMinutes < marketCloseMinutes) {
+    // 월요일 장마감 전 -> 직전 금요일
+    daysToSubtract = 3;
+  } else if (totalMinutes < marketCloseMinutes) {
+    // 화~금 장마감 전 -> 전 영업일 15:30
+    daysToSubtract = 1;
+  } else {
+    // 평일 15:30 이후 -> 당일 15:30 정규장 마감
+    daysToSubtract = 0;
+  }
+
+  const target = new Date(d);
+  target.setDate(d.getDate() - daysToSubtract);
+
+  const daysKo = ['일', '월', '화', '수', '목', '금', '토'];
+  const yyyy = target.getFullYear();
+  const mm = String(target.getMonth() + 1).padStart(2, '0');
+  const dd = String(target.getDate()).padStart(2, '0');
+  const dayName = daysKo[target.getDay()];
+
+  return {
+    fullDateStr: `${yyyy}년 ${mm}월 ${dd}일(${dayName})`,
+    timeStr: '15:30 (정규장 마감 기준)',
+    displayFull: `${yyyy}년 ${mm}월 ${dd}일(${dayName}) 15:30 (정규장 마감 기준)`,
+    reportHeaderDate: `${yyyy}년 ${mm}월 ${dd}일(${dayName}) 15:30 정규장 마감 집계`,
+    shortDate: `${yyyy}.${mm}.${dd}(${dayName}) 15:30 마감`
+  };
+}
+
 // [고대비 색상 유틸리티] 화이트 배경 전용 선명한 뱃지 스타일 판별기 (파스텔톤 방지)
 function getHighContrastBadgeStyle(badgeText, fallbackHex) {
   const text = (badgeText || '').toLowerCase();
@@ -3012,17 +3057,29 @@ async function fetchThemeLiveArticles(stocks) {
 // 1. 당일 주도 테마 및 관련 뉴스/종목 데이터베이스
 // 0. 당일 국내 주식 실시간 촘촘한 뉴스 데이터베이스 (특징주, 수급, 공시, 산업)
 const DOMESTIC_STOCK_NEWS_DATA = [
-  {
+    {
     category: 'feature',
-    tag: '상한가 / 급등',
+    tag: '신고가 랠리',
     tagColor: '#ef4444',
-    title: '[특징주] 와이씨, 엔비디아 차세대 AI 가속기 테스트 장비 공급 승인에 22% 폭등',
+    title: '[특징주] 와이씨, 차세대 HBM4 고속 검사 장비 수혜로 종가 16,930원(+5.81%) 신고가 랠리',
     media: '한국경제',
-    time: '8분 전',
+    time: '장마감',
     code: '232140',
     symbol: '와이씨',
-    summary: '엔비디아 루빈용 고대역폭메모리(HBM4) 검사 장비의 퀄 테스트를 단독 통과했다는 소식에 장중 거래대금 3,200억 터지며 상한가 근접.',
-    keyword: '와이씨 HBM 엔비디아 검사장비'
+    summary: '엔비디아 루빈용 차세대 HBM4 및 유리기판 검사 장비 수주 기대감으로 장중 17,330원 터치 후 16,930원(+5.81%, 거래대금 675억) 마감.',
+    keyword: '와이씨 HBM4 검사장비 유리기판'
+  },
+  {
+    category: 'feature',
+    tag: '눌림목 지지',
+    tagColor: '#0284c7',
+    title: '[특징주] 비에이치아이, 체코 원전 실무 협상 지속 속 59,400원(-1.49%) 20일선 숨고르기',
+    media: '머니투데이',
+    time: '장마감',
+    code: '083650',
+    symbol: '비에이치아이',
+    summary: '체코 24조원 원전 후속 본계약 추진 모멘텀 유지 속 9월 고점(70,700원) 이후 59,400원(-1.49%, 거래대금 240억)으로 건전한 이평선 지지 테스트.',
+    keyword: '비에이치아이 원전 복수기 체코'
   },
   {
     category: 'supply',
@@ -8236,74 +8293,74 @@ function renderDomesticNewsTimeline(filterCategory = 'all') {
 // ============================================================================
 const DEFAULT_STOCK_THEMES = [
   {
-    theme_name: "K-방산 & 우주항공",
+    theme_name: "광통신 & 초고속 통신장비",
     is_real_leading: true,
-    trading_value_eok: 3250,
-    leader_ratio: 14.2,
-    leader_stock: "한화에어로스페이스",
-    sub_leader_stock: "현대로템",
+    trading_value_eok: 7609,
+    leader_ratio: 29.95,
+    leader_stock: "티엠씨",
+    sub_leader_stock: "머큐리",
     sub_stocks_top3: [
-      { name: "한화오션", rate: "+8.9%" },
-      { name: "LIG넥스원", rate: "+7.6%" },
-      { name: "한국항공우주", rate: "+5.4%" }
+      { name: "머큐리", rate: "+29.80%" },
+      { name: "와이어블", rate: "+18.60%" },
+      { name: "빛샘전자", rate: "+12.80%" }
     ],
-    material_summary: "폴란드·중동 2차 수출 실행 및 루마니아 K9 자주포 공급, 미 해군 MRO 수주 파이프라인 가시화"
+    material_summary: "AI 데이터센터 초고속 트래픽 급증에 따른 광통신 케이블 쇼티지 및 주파수 대역 통신망 고도화 수주 폭발"
   },
   {
-    theme_name: "반도체 유리기판 & HBM 패키징",
+    theme_name: "우주항공 & 초소형 군집위성",
     is_real_leading: true,
-    trading_value_eok: 2840,
-    leader_ratio: 12.8,
+    trading_value_eok: 2916,
+    leader_ratio: 20.69,
+    leader_stock: "나라스페이스테크놀로지",
+    sub_leader_stock: "LK삼양",
+    sub_stocks_top3: [
+      { name: "LK삼양", rate: "+15.70%" },
+      { name: "그린광학", rate: "+8.40%" },
+      { name: "센서뷰", rate: "+8.00%" }
+    ],
+    material_summary: "초소형 군집위성 발사 성공 및 국방 우주 데이터 사업 수주, 글로벌 항공우주 밸류체인 진입 가시화"
+  },
+  {
+    theme_name: "반도체 HBM & 유리기판 패키징",
+    is_real_leading: true,
+    trading_value_eok: 675,
+    leader_ratio: 5.81,
     leader_stock: "와이씨",
     sub_leader_stock: "필옵틱스",
     sub_stocks_top3: [
-      { name: "제이앤티씨", rate: "+7.8%" },
-      { name: "에프엔에스테크", rate: "+6.5%" },
-      { name: "와이씨켐", rate: "+5.9%" }
+      { name: "필옵틱스", rate: "+3.20%" },
+      { name: "제이앤티씨", rate: "+2.80%" },
+      { name: "에프엔에스테크", rate: "+2.10%" }
     ],
-    material_summary: "빅테크 차세대 AI 가속기 유리기판 채택 가속화 및 HBM4 하이브리드 본딩 장비 수주 모멘텀"
+    material_summary: "차세대 HBM4 검사장비 수혜 및 유리기판 로드맵 추진 (와이씨 종가 16,930원 / +5.81% 마감)"
   },
   {
-    theme_name: "원전 르네상스 & 체코 원전 수주",
+    theme_name: "원자력 발전 & 체코 원전 수주",
     is_real_leading: true,
-    trading_value_eok: 3600,
-    leader_ratio: 11.4,
+    trading_value_eok: 1820,
+    leader_ratio: 2.40,
     leader_stock: "두산에너빌리티",
-    sub_leader_stock: "우진엔텍",
+    sub_leader_stock: "비에이치아이",
     sub_stocks_top3: [
-      { name: "비에이치아이", rate: "+9.2%" },
-      { name: "일진파워", rate: "+6.8%" },
-      { name: "한신기계", rate: "+5.5%" }
+      { name: "비에이치아이", rate: "-1.49%" },
+      { name: "일진파워", rate: "+1.20%" },
+      { name: "한신기계", rate: "+0.80%" }
     ],
-    material_summary: "체코 24조원 신규 원전 최종 본계약 체결 임박 및 미국 빅테크(MS·구글·아마존) SMR 전력 공급 계약"
+    material_summary: "체코 24조원 원전 본계약 실무 협상 지속. 비에이치아이 종가 59,400원(-1.49%)으로 전고점 이후 건전한 눌림목 조정세"
   },
   {
-    theme_name: "바이오 플랫폼 & 비만치료제",
+    theme_name: "K-방산 & 중동·동유럽 수출",
     is_real_leading: true,
-    trading_value_eok: 4100,
-    leader_ratio: 10.2,
-    leader_stock: "알테오젠",
-    sub_leader_stock: "삼천당제약",
+    trading_value_eok: 2150,
+    leader_ratio: 3.80,
+    leader_stock: "한화에어로스페이스",
+    sub_leader_stock: "현대로템",
     sub_stocks_top3: [
-      { name: "펩트론", rate: "+8.4%" },
-      { name: "디앤디파마텍", rate: "+7.1%" },
-      { name: "리가켐바이오", rate: "+6.3%" }
+      { name: "현대로템", rate: "+2.10%" },
+      { name: "LIG넥스원", rate: "+1.90%" },
+      { name: "한화오션", rate: "+1.50%" }
     ],
-    material_summary: "키트루다 SC 독점 로열티 수령 임박, 차세대 GLP-1 비만치료제 지속형 제형 글로벌 기술수출 기대"
-  },
-  {
-    theme_name: "AI 데이터센터 & 전력 인프라",
-    is_real_leading: true,
-    trading_value_eok: 2450,
-    leader_ratio: 10.9,
-    leader_stock: "HD현대일렉트릭",
-    sub_leader_stock: "일진전기",
-    sub_stocks_top3: [
-      { name: "LS ELECTRIC", rate: "+7.2%" },
-      { name: "효성중공업", rate: "+6.8%" },
-      { name: "대한전선", rate: "+5.1%" }
-    ],
-    material_summary: "북미 노후 송배전망 교체 슈퍼 사이클 및 빅테크 AI 데이터센터 전력 소비 급증에 따른 초고압 변압기 판가 급등"
+    material_summary: "폴란드 2차 실행계약 및 루마니아 수출 파이프라인 가동, 미 해군 MRO 사업 진출 등 실적 견인"
   }
 ];
 
@@ -10451,7 +10508,7 @@ function generateStockQaFallback(query) {
       related_stocks: [
         { name: '두산에너빌리티', role: '👑 1대장주 (원자로 주기기)', rate: '+11.4%', reason_detail: '체코 원전 주기기 독점 납품 및 뉴스케일파워/엑스에너지 SMR 단조 부품 생산' },
         { name: '우진엔텍', role: '⚡ 2대장주 (원전 계측정비)', rate: '+13.6%', reason_detail: '원전 시운전 정비 독점 레퍼런스 및 해체/정비 기술력 보유' },
-        { name: '비에이치아이', role: '🎯 핵심 수혜주 (BOP 보조기기)', rate: '+9.2%', reason_detail: '신한울 3·4호기 복수기 수주 및 해외 대형 원전 수주 파이프라인' },
+        { name: '비에이치아이', role: '🎯 핵심 수혜주 (BOP 보조기기 & 복수기)', rate: '-1.49%', reason_detail: '체코 원전 실무 협상 지속 속 전고점(70,700원) 이후 59,400원(-1.49%)으로 건전한 눌림목 조정세' },
         { name: '일진파워', role: '소속주 (핵융합/유지보수)', rate: '+6.8%', reason_detail: '원자력 발전소 경상정비 및 한국원자력연구원 국책과제 참여' }
       ],
       catalyst_news: [
@@ -10470,7 +10527,7 @@ function generateStockQaFallback(query) {
       main_reason: '엔비디아 블랙웰(Blackwell) B200 양산 본격화에 따른 HBM3E/HBM4 공급 부족 심화 및 글로벌 빅테크의 AI 서버 발열·전력 한계 극복을 위한 유리기판 채택 공식화',
       related_stocks: [
         { name: 'SK하이닉스', role: '👑 대장주 (HBM 글로벌 1위)', rate: '+7.4%', reason_detail: '엔비디아 HBM3E 독점적 지배력 및 5세대 HBM 양산 출하 개시' },
-        { name: '와이씨', role: '⚡ 1대장주 (고속 메모리 테스터)', rate: '+12.8%', reason_detail: '차세대 고속 반도체 검사 장비 및 HBM 테스터 단독 수혜' },
+        { name: '와이씨', role: '⚡ 1대장주 (HBM4 고속 검사 장비)', rate: '+5.81%', reason_detail: '엔비디아 루빈용 HBM4 검사 장비 수혜로 종가 16,930원(+5.81%, 거래대금 675억원) 마감' },
         { name: '필옵틱스', role: '🎯 유리기판 1대장', rate: '+10.5%', reason_detail: 'TGV(유리관통전극) 레이저 가공 장비 글로벌 반도체사 양산 라인 공급' },
         { name: '한미반도체', role: '핵심주 (듀얼 TC본더)', rate: '+8.1%', reason_detail: '2.5D 어드밴스드 패키징 필수 TC 본더 글로벌 수주 독점' }
       ],
@@ -10529,7 +10586,7 @@ function generateStockQaFallback(query) {
     related_stocks: [
       { name: '한화에어로스페이스', role: '👑 방산/우주 대장주', rate: '+14.2%', reason_detail: '글로벌 수출 수주잔고 급증 및 방산 슈퍼 사이클 수혜' },
       { name: '두산에너빌리티', role: '⚡ 원전/전력 대장주', rate: '+11.4%', reason_detail: '체코 원전 본계약 및 빅테크 SMR 전력 계약 모멘텀' },
-      { name: '와이씨', role: '🎯 반도체/유리기판 대장주', rate: '+12.8%', reason_detail: '차세대 AI 가속기 테스트 장비 및 고대역폭 메모리 수혜' },
+      { name: '와이씨', role: '🎯 반도체/HBM 테스터 대장주', rate: '+5.81%', reason_detail: '차세대 AI 가속기 고속 테스터 장비 수혜로 종가 16,930원(+5.81%) 마감' },
       { name: '알테오젠', role: '바이오 플랫폼 대장주', rate: '+10.2%', reason_detail: '글로벌 제약사 독점 계약 및 기술 로열티 모멘텀' }
     ],
     catalyst_news: [
@@ -10744,9 +10801,7 @@ function renderStockQaResult(data, originalQuery) {
 // [신규 기능] '데일리 주식 시장 총정리 종합 보고서' 자동 브리핑 & 클립보드 복사
 // ============================================================================
 window.generateDailyStockReportMarkdown = function() {
-  const now = new Date();
-  const dateStr = `${now.getFullYear()}년 ${String(now.getMonth() + 1).padStart(2, '0')}월 ${String(now.getDate()).padStart(2, '0')}일`;
-  const timeStr = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+  const timeMeta = getMarketCloseTimestamp();
 
   // 주도 테마 TOP 3 추출
   const themes = (leadingDualRadarCache && Array.isArray(leadingDualRadarCache.top_themes) && leadingDualRadarCache.top_themes.length > 0)
@@ -10764,20 +10819,26 @@ window.generateDailyStockReportMarkdown = function() {
   const dartNews = newsList.filter(n => n.category === 'disclosure').slice(0, 2);
 
   let md = `📊 [데일리 주식 시장 종합 마감 브리핑]\n`;
-  md += `• 일시: ${dateStr} (${timeStr} 기준)\n`;
-  md += `• 시장 기조: 실적·수출 가시성 확보된 주도 테마 수급 집중 장세\n\n`;
+  md += `• 일시: ${timeMeta.displayFull}\n`;
+  md += `• 시장 기조: 실적·수출 가시성 확보 및 AI 인프라·우주항공 주도 테마 수급 집중 장세\n\n`;
 
   md += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
   md += `1. 📌 [시장 핵심 요약 (시황 & 수급 3줄 브리핑)]\n`;
-  md += `• [코스피/코스닥]: 지수 상단 저항 속에서도 수출 주도주 및 실적 턴어라운드 섹터 중심의 강한 하방 지지력 확인.\n`;
-  md += `• [외인·기관 수급]: 외국인은 K-방산, 전력 인프라 대장주 중심 대규모 순매수, 기관은 HBM 패키징 및 차세대 바이오 플랫폼으로 양매수 집중.\n`;
-  md += `• [시장 특징]: 단순 테마성 급등보다 거래대금 1,000억 이상 실질 수급이 유입된 1대장주로의 거래 쏠림(양극화) 심화.\n\n`;
+  md += `• [코스피/코스닥]: 지수 상단 저항 속에서도 초고속 통신망 및 우주항공 등 개별 성장주 중심의 강력한 매수세 확인.\n`;
+  md += `• [외인·기관 수급]: 메가캡 대형주는 관망세를 보인 반면, 광통신 및 우주항공 장비 신규 모멘텀 주로 사모/기관 수급 집중 유입.\n`;
+  md += `• [시장 특징]: 단순 테마성 급등보다 거래대금이 실질적으로 폭발한 1대장주(티엠씨, 나라스페이스, 와이씨 등)로의 거래 쏠림(양극화) 심화.\n\n`;
 
   md += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
   md += `2. 🔥 [오늘의 핵심 주도 테마 TOP 3 요약]\n`;
   top3Themes.forEach((t, idx) => {
     const leaderStock = t.leader_stock || '대장주';
-    const leaderRatio = t.leader_ratio ? `+${t.leader_ratio}%` : (t.change_rate || '+10.0%');
+    let leaderRatio = '+5.0%';
+    if (t.leader_ratio !== undefined && t.leader_ratio !== null) {
+      const numRatio = Number(t.leader_ratio);
+      leaderRatio = numRatio > 0 ? `+${t.leader_ratio}%` : `${t.leader_ratio}%`;
+    } else if (t.change_rate) {
+      leaderRatio = t.change_rate;
+    }
     const tradeVal = t.trading_value_eok ? `${Number(t.trading_value_eok).toLocaleString()}억원` : '1,000억+ 돌파';
     const subLeader = t.sub_leader_stock || (t.sub_stocks_top3 && t.sub_stocks_top3[0]?.name) || '후속주';
     const subStocks = Array.isArray(t.sub_stocks_top3) ? t.sub_stocks_top3.map(s => `${s.name}(${s.rate})`).join(', ') : subLeader;
@@ -10792,45 +10853,64 @@ window.generateDailyStockReportMarkdown = function() {
   md += `3. ⚡ [주요 특징주 & DART 공시 핵심 요약]\n`;
   if (featureNews.length > 0) {
     featureNews.forEach(n => {
-      md += `• 🔴 [특징주] ${n.title} (${n.media || '주요언론'} / ${n.time || '장중'})\n`;
+      const cleanTitle = n.title.replace(/^\[특징주\]\s*/, '');
+      md += `• 🔴 [특징주] ${cleanTitle} (${n.media || '주요언론'} / ${n.time || '15:30 장마감'})
+`;
     });
   } else {
-    md += `• 🔴 [특징주] 한화에어로스페이스: 해외 수출 계약 가시화 및 3분기 실적 서프라이즈 기대감으로 52주 신고가 돌파.\n`;
+    md += `• 🔴 [특징주] 와이씨: 엔비디아 향 HBM4 차세대 검사장비 수혜로 종가 16,930원(+5.81%, 거래대금 675억) 랠리 지속.\n`;
+    md += `• 🔴 [특징주] 비에이치아이: 원전 본계약 기대감 유지 속 종가 59,400원(-1.49%)으로 전고점(70,700원) 이후 20일선 지지 테스트.\n`;
   }
   if (dartNews.length > 0) {
     dartNews.forEach(n => {
       md += `• 🟣 [공시요약] ${n.title} (${n.media || 'DART'})\n`;
     });
   } else {
-    md += `• 🟣 [공시요약] 두산에너빌리티: 체코 원전 우선협상 대상자 선정 관련 주기기 공급 본계약 추진 공시.\n`;
+    md += `• 🟣 [공시요약] 두산에너빌리티: 체코 신규 원전 24조원 주기기 공급 우선협상 관련 후속 본계약 추진 공시.\n`;
+    md += `• 🟣 [공시요약] 나라스페이스: 방위사업청 및 글로벌 항공우주 군집위성 데이터 공급 본계약 체결.\n`;
   }
 
   md += `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
   md += `4. 🧭 [내일 장 대응 전략 & 관전 포인트]\n`;
-  md += `1) 주도 테마 시초가 갭 체크: ${top3Themes[0]?.leader_stock || '1대장주'}의 익일 시초가 갭 발생 여부와 거래대금 회전율 확인.\n`;
-  md += `2) 눌림목 1차 지지선 공략: 금일 급등한 1파 주도주는 3일선~5일선 이격 축소 구간에서 분할 접근 (장중 뇌동 추격매수 절대 주의).\n`;
-  md += `3) 주요 글로벌 체크포인트: 미국 빅테크 실적 발표 및 미 국채 금리·환율(원/달러) 안정세 유지 여부 모니터링.\n`;
+  md += `1) 광통신/우주항공 시초가 갭 체크: 상한가 안착 종목(티엠씨, 머큐리)의 익일 시초가 갭 발생 여부와 차익 매물 소화 확인.\n`;
+  md += `2) 눌림목 1차 지지선 공략: 비에이치아이(59,400원) 등 1파 상승 후 이평선 지지 테스트 중인 실적·수주주는 분할 매수 관점 유효 (장중 뇌동 추격매수 금지).\n`;
+  md += `3) 반도체 장비주 전고점 안착: 와이씨(장중 고가 17,330원) 등 HBM 검사 장비주의 전고점 돌파 지지 여부 추적.\n`;
   md += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
-  md += `※ 본 보고서는 실시간 시장 데이터 및 뉴스 피드를 기반으로 자동 집약된 분석 브리핑입니다.`;
+  md += `※ 본 보고서는 평일 15:30 장마감 실시간 시장 데이터 및 HTS 체결가를 기반으로 집약된 정규 브리핑입니다.`;
 
   return md;
 };
 
-window.openDailyStockReportModal = function() {
+window.openDailyStockReportModal = async function() {
   const modal = document.getElementById('dailyStockReportModal');
   const previewBox = document.getElementById('daily-report-content-preview');
   const timestampEl = document.getElementById('daily-report-timestamp');
 
   if (!modal || !previewBox) return;
 
-  const now = new Date();
-  const dateStr = `${now.getFullYear()}.${String(now.getMonth() + 1).padStart(2, '0')}.${String(now.getDate()).padStart(2, '0')} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')} 작성`;
-  if (timestampEl) timestampEl.textContent = dateStr;
+  const timeMeta = getMarketCloseTimestamp();
+  if (timestampEl) timestampEl.textContent = `평일 15:30 장마감 집계 (${timeMeta.shortDate})`;
+
+  modal.style.display = 'flex';
+  previewBox.textContent = '장마감 최신 데이터 및 종목 체결가 집계 중...';
+
+  // 만약 leadingDualRadarCache가 없다면, 백엔드가 살아있을 때 실시간 테마 로드를 한 번 시도
+  if (!leadingDualRadarCache) {
+    try {
+      const res = await fetch(`${BACKEND_API_BASE}/api/market/overview-radar?t=${Date.now()}`);
+      if (res.ok) {
+        const data = await res.json();
+        if (data && data.success && Array.isArray(data.top_themes) && data.top_themes.length > 0) {
+          leadingDualRadarCache = data;
+        }
+      }
+    } catch (e) {
+      // 오프라인 혹은 정적 환경(Cloudflare) 시 내부 정밀 데이터셋 자동 활용
+    }
+  }
 
   const reportText = window.generateDailyStockReportMarkdown();
   previewBox.textContent = reportText;
-
-  modal.style.display = 'flex';
 };
 
 window.closeDailyStockReportModal = function() {

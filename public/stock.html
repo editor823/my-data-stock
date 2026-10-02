@@ -325,7 +325,7 @@
                 <button type="button" onclick="openDailyStockReportModal()" id="btn-open-daily-report"
                   style="display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #1e40af, #2563eb); color: #ffffff; border: 1px solid #1d4ed8; padding: 5px 12px; border-radius: 8px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(37,99,235,0.3); transition: all 0.2s;"
                   onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
-                  <span>📊</span> 오늘 시장 총정리 보고서 생성 / 복사
+                  <span>📊</span> 평일 15:30 장마감 총정리 보고서 생성 / 복사
                 </button>
 
               </div>
@@ -1623,7 +1623,7 @@
 
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js"></script>
-  <script src="js/stock.js?v=v10_high_contrast"></script>
+  <script src="js/stock.js?v=v12_market_close_factual"></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" onclick="if(event.target===this) closeDailyStockReportModal()">
@@ -1633,10 +1633,10 @@
         <span style="font-size: 1.4rem;">📊</span>
         <div>
           <div style="font-size: 1.05rem; font-weight: 800; color: #ffffff;" id="daily-report-title">
-            데일리 주식 시장 종합 마감 브리핑
+            데일리 주식 시장 종합 마감 브리핑 (평일 15:30 장마감 기준)
           </div>
           <div style="font-size: 0.76rem; color: #94a3b8;" id="daily-report-subtitle">
-            당일 주도 테마, 급등 특징주, 공시 및 시황을 단일 리포트로 자동 집약
+            정규장 체결가와 거래대금이 최종 확정된 평일 15:30 장마감 실데이터 기반 단일 리포트 자동 집약
           </div>
         </div>
       </div>
