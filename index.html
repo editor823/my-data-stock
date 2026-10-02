@@ -14,7 +14,7 @@
   <!-- 스타일시트 로드 -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/stock.css?v=20261002_v6_big_rate_color">
+  <link rel="stylesheet" href="css/stock.css?v=20261003_v7_high_contrast">
 
   <style>
     /* 독립 서비스 전용 네비게이션 및 여백 최적화 */
@@ -495,8 +495,8 @@
             <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
               <span id="radar-updated-time" style="font-size: 0.74rem; color: #64748b; font-weight: 600;">실시간 동기화 대기</span>
               <!-- 📂 탐정 사건 수첩 바로가기 퀵 점프 버튼 -->
-              <button type="button" id="btn-goto-dossier-from-radar" onclick="document.getElementById('theme-dossier-section')?.scrollIntoView({ behavior: 'smooth' });" title="탐정 사건 수첩으로 바로가기" style="background: rgba(168, 85, 247, 0.2); border: 1px solid #a855f7; color: #d8b4fe; padding: 7px 12px; border-radius: 8px; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;" onmouseover="this.style.background='rgba(168,85,247,0.4)'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='rgba(168,85,247,0.2)'; this.style.transform='none';">
-                📂 탐정 사건 수첩 바로가기
+              <button type="button" id="btn-goto-dossier-from-radar" onclick="document.getElementById('theme-dossier-section')?.scrollIntoView({ behavior: 'smooth' });" title="탐정 사건 수첩으로 바로가기" style="background: #f5f3ff; border: 1.5px solid #a855f7; color: #6b21a8 !important; padding: 7px 14px; border-radius: 8px; font-size: 0.84rem; font-weight: 900; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 3px rgba(168, 85, 247, 0.15); transition: all 0.2s;" onmouseover="this.style.background='#ede9fe'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='#f5f3ff'; this.style.transform='none';">
+                📁 탐정 사건 수첩 바로가기
               </button>
               <button type="button" id="btn-sync-market-radar" onclick="refreshMarketOverviewRadar()" title="시장 판도 및 주도 테마 실시간 전수 스캔 새로고침" style="background: linear-gradient(135deg, #0284c7, #2563eb); color: #ffffff; border: 1.5px solid #38bdf8; padding: 7px 16px; border-radius: 8px; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4); transition: all 0.2s;" onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 18px rgba(2, 132, 199, 0.6)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 14px rgba(2, 132, 199, 0.4)';">
                 <span id="sync-radar-icon">🔄</span>
@@ -1623,7 +1623,7 @@
 
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js"></script>
-  <script src="js/stock.js?v=20261002_v6_big_rate_color"></script>
+  <script src="js/stock.js?v=20261003_v7_high_contrast"></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" onclick="if(event.target===this) closeDailyStockReportModal()">
@@ -1672,20 +1672,20 @@
 <!-- ================= [신규] 주식 인텔리전스 시스템 전 기능 자체 검수봇 모달 ================= -->
 <div id="systemInspectorBotModal" class="inspector-bot-modal-backdrop" onclick="if(event.target===this) closeSystemInspectorBot()">
   <div class="inspector-bot-modal-content">
-    <div class="inspector-bot-header">
+    <div class="inspector-bot-header" style="background: linear-gradient(135deg, #064e3b, #0f172a) !important; color: #ffffff !important; padding: 18px 24px; border-top-left-radius: 16px; border-top-right-radius: 16px; border-bottom: 1.5px solid #047857; display: flex; justify-content: space-between; align-items: center;">
       <div style="display: flex; align-items: center; gap: 10px;">
         <span style="font-size: 1.5rem;">🤖</span>
         <div>
-          <div style="font-size: 1.1rem; font-weight: 900; color: #ffffff;">
+          <div style="font-size: 1.15rem; font-weight: 900; color: #ffffff !important;">
             주식 인텔리전스 시스템 자체 검수봇 (Inspector Bot)
           </div>
-          <div style="font-size: 0.76rem; color: #a7f3d0;">
+          <div style="font-size: 0.8rem; color: #6ee7b7 !important; font-weight: 700; margin-top: 2px;">
             2026.10.02(금) 기준 5대 주요 탭 데이터 연동 및 UI 정상 작동 자가진단
           </div>
         </div>
       </div>
       <button type="button" onclick="closeSystemInspectorBot()" 
-        style="background: transparent; border: none; color: #cbd5e1; font-size: 1.4rem; cursor: pointer; padding: 4px 8px;"
+        style="background: transparent; border: none; color: #ffffff !important; font-size: 1.4rem; cursor: pointer; padding: 4px 8px;"
         title="닫기">✕</button>
     </div>
 

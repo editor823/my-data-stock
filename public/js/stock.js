@@ -1258,8 +1258,8 @@ window.loadDetectiveCaseLogs = async function() {
           </div>
 
           <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px;">
-            <span style="font-size: 0.72rem; padding: 2px 6px; background: rgba(56, 189, 248, 0.12); color: #7dd3fc; border-radius: 4px;">기준가: ${c.base_price}</span>
-            <span style="font-size: 0.72rem; padding: 2px 6px; background: rgba(168, 85, 247, 0.15); color: #c084fc; border-radius: 4px;">${c.shooting_badge}</span>
+            <span style="font-size: 0.72rem; padding: 2px 6px; background: #e0f2fe; color: #0369a1 !important; border: 1px solid #bae6fd; font-weight: 800; border-radius: 4px;">기준가: ${c.base_price}</span>
+            <span style="font-size: 0.72rem; padding: 2px 6px; background: #f3e8ff; color: #6b21a8 !important; border: 1px solid #d8b4fe; font-weight: 800; border-radius: 4px;">${c.shooting_badge}</span>
           </div>
 
           <!-- 사용자 메모 -->
@@ -1649,14 +1649,14 @@ function getStockSignalBadgeHtml(scoreObj) {
   if (!scoreObj || scoreObj.count === 0) return '';
   if (scoreObj.count >= 3) {
     return `
-      <span class="signal-badge triple-cross" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(234, 179, 8, 0.2)); border: 1px solid #eab308; color: #fde047; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 800; box-shadow: 0 0 8px rgba(234, 179, 8, 0.3); display: inline-flex; align-items: center; gap: 4px;" title="뉴스+DART공시+증권사리포트 3채널 크로스체크 완료 종목">
+      <span class="signal-badge triple-cross" style="background: #fef3c7; border: 1.5px solid #d97706; color: #78350f !important; padding: 3px 9px; border-radius: 4px; font-size: 11px; font-weight: 800; display: inline-flex; align-items: center; gap: 4px;" title="뉴스+DART공시+증권사리포트 3채널 크로스체크 완료 종목">
         👑 트리플 크로스 | 팩트 확정주
       </span>
     `;
   }
   if (scoreObj.count === 2) {
     return `
-      <span class="signal-badge double-cross" style="background: rgba(168, 85, 247, 0.15); border: 1px solid #a855f7; color: #c084fc; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;" title="2개 채널 교차 검증 완료">
+      <span class="signal-badge double-cross" style="background: #f3e8ff; border: 1.5px solid #9333ea; color: #6b21a8 !important; padding: 3px 9px; border-radius: 4px; font-size: 11px; font-weight: 800; display: inline-flex; align-items: center; gap: 4px;" title="2개 채널 교차 검증 완료">
         ⚡ 더블 크로스 | 수급 입증
       </span>
     `;
@@ -2245,16 +2245,16 @@ window.renderDetectiveCard = function(theme, period = 'all') {
 
           if (stk.isSpecial) {
             activeStyle = isActive
-              ? 'background: linear-gradient(135deg, rgba(245, 158, 11, 0.3), rgba(234, 179, 8, 0.35)); border: 1px solid #eab308; color: #fde047; font-weight: 800; box-shadow: 0 0 12px rgba(234, 179, 8, 0.4);'
-              : 'background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(234, 179, 8, 0.4); color: #fde047; font-weight: 700;';
-            badgeBg = isActive ? 'rgba(234, 179, 8, 0.4)' : 'rgba(245, 158, 11, 0.2)';
-            badgeColor = '#fff';
+              ? 'background: #fef3c7; border: 2px solid #d97706; color: #78350f !important; font-weight: 900; box-shadow: 0 2px 8px rgba(217, 119, 6, 0.25);'
+              : 'background: #fffbeb; border: 1.5px solid #fcd34d; color: #92400e !important; font-weight: 800;';
+            badgeBg = isActive ? '#d97706' : '#fef3c7';
+            badgeColor = isActive ? '#ffffff' : '#78350f';
           } else {
             activeStyle = isActive
-              ? 'background: rgba(99, 102, 241, 0.2); border: 1px solid #6366f1; color: #ffffff; font-weight: bold; box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);'
-              : 'background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #94a3b8; font-weight: 500;';
-            badgeBg = isActive ? 'rgba(99, 102, 241, 0.4)' : 'rgba(255, 255, 255, 0.08)';
-            badgeColor = isActive ? '#c7d2fe' : '#94a3b8';
+              ? 'background: #0284c7; border: 1.5px solid #0284c7; color: #ffffff !important; font-weight: 800; box-shadow: 0 2px 8px rgba(2, 132, 199, 0.3);'
+              : 'background: #ffffff; border: 1px solid #cbd5e1; color: #1e293b !important; font-weight: 700;';
+            badgeBg = isActive ? 'rgba(255, 255, 255, 0.3)' : '#f1f5f9';
+            badgeColor = isActive ? '#ffffff' : '#475569';
           }
 
           return `
@@ -2300,7 +2300,7 @@ window.renderDetectiveCard = function(theme, period = 'all') {
         let dateColor = '#38bdf8';
         let cardBorder = '';
         let actionBtnText = '원문 보기 ↗';
-        let actionBtnBg = 'background: rgba(56,189,248,0.12); border: 1px solid rgba(56,189,248,0.3); color: #38bdf8;';
+        let actionBtnBg = 'background: #eff6ff; border: 1px solid #bfdbfe; color: #0284c7 !important; font-weight: 700;';
 
         if (isReport) {
           pressBadgeStyle = 'background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0;';
@@ -2308,28 +2308,28 @@ window.renderDetectiveCard = function(theme, period = 'all') {
           dateColor = '#34d399';
           cardBorder = 'border-left: 4px solid #10b981; background: #ffffff; border-color: #e2e8f0;';
           actionBtnText = '리포트 원문 ↗';
-          actionBtnBg = 'background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(52, 211, 153, 0.4); color: #34d399;';
+          actionBtnBg = 'background: #ecfdf5; border: 1px solid #a7f3d0; color: #047857 !important; font-weight: 700;';
         } else if (isDart) {
           pressBadgeStyle = 'background: #faf5ff; color: #7c3aed; border: 1px solid #e9d5ff;';
           pressLabel = '📑 DART 전자공시';
           dateColor = '#c084fc';
           cardBorder = 'border-left: 4px solid #8b5cf6; background: #ffffff; border-color: #e2e8f0;';
           actionBtnText = '공시 원문 ↗';
-          actionBtnBg = 'background: rgba(168, 85, 247, 0.15); border: 1px solid rgba(168, 85, 247, 0.4); color: #d8b4fe;';
+          actionBtnBg = 'background: #faf5ff; border: 1px solid #d8b4fe; color: #6b21a8 !important; font-weight: 700;';
         } else if (isEvent) {
           pressBadgeStyle = 'background: #fffbeb; color: #b45309; border: 1px solid #fde68a;';
           pressLabel = '🎯 핵심 이벤트';
           dateColor = '#fbbf24';
           cardBorder = 'border-left: 4px solid #f59e0b; background: #ffffff; border-color: #e2e8f0;';
           actionBtnText = '일정 팩트 ↗';
-          actionBtnBg = 'background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(251, 191, 36, 0.4); color: #fde047;';
+          actionBtnBg = 'background: #fffbeb; border: 1px solid #fcd34d; color: #92400e !important; font-weight: 700;';
         } else if (isBlog) {
           pressBadgeStyle = 'background: #fdf2f8; color: #be185d; border: 1px solid #fbcfe8;';
           pressLabel = '✍️ 블로그 분석';
           dateColor = '#f472b6';
           cardBorder = 'border-left: 4px solid #ec4899; background: #ffffff; border-color: #e2e8f0;';
           actionBtnText = '블로그 원문 ↗';
-          actionBtnBg = 'background: rgba(244, 63, 94, 0.15); border: 1px solid rgba(251, 113, 133, 0.4); color: #fda4af;';
+          actionBtnBg = 'background: #fdf2f8; border: 1px solid #fbcfe8; color: #be185d !important; font-weight: 700;';
         }
 
         // 원문 보기 링크(Safe URL Fallback) 채널별 정밀 매핑
@@ -8065,7 +8065,7 @@ function classifyNewsCategory(title, summary) {
     'bw발행', '공개매수', '주주총회', '자사주', '소각', 'dart', '금감원', '사업보고서', '분기보고서'
   ];
   if (disclosureKeywords.some(kw => text.includes(kw))) {
-    return { cat: 'disclosure', tag: 'DART/실적', tagColor: '#c084fc' };
+    return { cat: 'disclosure', tag: 'DART/실적', tagColor: '#7c3aed' };
   }
 
   // 2순위: 🟡 글로벌 & 코인/원자재
@@ -8075,7 +8075,7 @@ function classifyNewsCategory(title, summary) {
     '월가', '월스트리트', '중동', '트럼프', '엔비디아', '테슬라', '애플', '빅테크', '글로벌'
   ];
   if (globalKeywords.some(kw => text.includes(kw))) {
-    return { cat: 'global', tag: '글로벌/원자재', tagColor: '#facc15' };
+    return { cat: 'global', tag: '글로벌/원자재', tagColor: '#d97706' };
   }
 
   // 3순위: 🔵 거시 경제 & 금리/환율
@@ -8137,8 +8137,8 @@ function renderDomesticNewsTimeline(filterCategory = 'all') {
     { key: 'feature', name: '특징주 & 급등 모멘텀', icon: '🔴', color: '#f87171', bg: 'rgba(239, 68, 68, 0.18)' },
     { key: 'macro', name: '거시 경제 & 금리/환율', icon: '🔵', color: '#38bdf8', bg: 'rgba(56, 189, 248, 0.18)' },
     { key: 'industry', name: '산업 동향 & 정부 정책', icon: '🟢', color: '#34d399', bg: 'rgba(16, 185, 129, 0.18)' },
-    { key: 'disclosure', name: 'DART 공시 & 기업 실적', icon: '🟣', color: '#c084fc', bg: 'rgba(168, 85, 247, 0.18)' },
-    { key: 'global', name: '글로벌 & 코인/원자재', icon: '🟡', color: '#facc15', bg: 'rgba(234, 179, 8, 0.18)' }
+    { key: 'disclosure', name: 'DART 공시 & 기업 실적', icon: '🟣', color: '#7c3aed', bg: 'rgba(168, 85, 247, 0.18)' },
+    { key: 'global', name: '글로벌 & 코인/원자재', icon: '🟡', color: '#d97706', bg: 'rgba(234, 179, 8, 0.18)' }
   ];
 
     // 단일 카테고리 필터 시 1열 100% 폭 확장, 'all'일 때는 기존 5열 그리드 복원
