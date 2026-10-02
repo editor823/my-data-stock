@@ -14,7 +14,7 @@
   <!-- 스타일시트 로드 -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/stock.css?v=20261002_v3_typography">
+  <link rel="stylesheet" href="css/stock.css?v=20261002_v4_inspector">
 
   <style>
     /* 독립 서비스 전용 네비게이션 및 여백 최적화 */
@@ -99,7 +99,14 @@
       </a>
 
       <div style="display: flex; align-items: center; gap: 12px;">
-        <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer" class="nav-external-link">
+        
+        <button type="button" id="btn-run-inspector-bot" onclick="openSystemInspectorBot()"
+          style="display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #10b981, #059669); color: #ffffff; border: 1.5px solid #059669; padding: 7px 14px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; box-shadow: 0 3px 10px rgba(16, 185, 129, 0.35); transition: all 0.2s;"
+          onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
+          <span>🤖</span> 기능 검수봇 작동
+        </button>
+
+<a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer" class="nav-external-link">
           <span>⚡</span> 블로그 자동화 허브 바로가기 ↗
         </a>
       </div>
@@ -191,9 +198,7 @@
               <h3 style="font-size: 1.2rem; font-weight: 900; color: #1e293b; margin: 0;">
                 당일 국내 주식 실시간 뉴스 센터
               </h3>
-              <span style="font-size: 0.72rem; background: #f0f9ff; color: #0284c7; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 6px; font-weight: 700;">
-                특징주 · 공시 · 수급 실시간 피드
-              </span>
+              <span style="font-size: 0.74rem; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; padding: 3px 9px; border-radius: 6px; font-weight: 800;" id="domestic-news-date-badge">📅 2026년 10월 2일(금) 장마감 기준 피드</span>
             </div>
             <p style="font-size: 0.82rem; color: #64748b; margin: 4px 0 0 0;">
               국내 증시의 장중 특징주, 상한가/급등 재료, 외인/기관 수급 및 주요 경영공시 뉴스를 촘촘하게 실시간 나열합니다.
@@ -380,7 +385,8 @@
               <button type="button" id="btn-refresh-domestic-news" class="imggen-style-chip" onclick="refreshLiveDomesticNews()" style="padding: 4px 10px; font-size: 0.74rem; background: rgba(56, 189, 248, 0.12); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">
                 🔄 네이버 실시간 뉴스 즉시 동기화
               </button>
-              <span style="font-size: 0.74rem; color: #94a3b8;">
+              <span id="domestic-news-sync-time" style="font-size: 0.74rem; background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 2px 8px; border-radius: 4px; font-weight: 700;">⏱️ 2026-10-02 15:30:00 (장마감 집계 완료)</span>
+<span style="font-size: 0.74rem; color: #94a3b8;">
                 클릭 시 원문 즉시 이동 ↗
               </span>
             </div>
@@ -478,9 +484,7 @@
                   <h4 style="font-size: 1.2rem; font-weight: 900; color: #f8fafc; margin: 0;">
                     당일 시장 판도 & 주도 테마 레이더
                   </h4>
-                  <span id="market-radar-badge" style="font-size: 0.72rem; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); padding: 2px 8px; border-radius: 6px; font-weight: 800;">
-                    Top-Down 전수 스캔 LIVE
-                  </span>
+                  <span id="market-radar-badge" style="font-size: 0.74rem; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); padding: 3px 9px; border-radius: 6px; font-weight: 800;">⚡ 2026.10.02(금) 당일 급등 재료 & 공시 타임라인</span>
                 </div>
                 <div style="font-size: 0.78rem; color: #94a3b8; margin-top: 3px;">
                   단순 개별주 나열이 아닌, 코스피/코스닥 지수 수급과 거래대금이 실제로 터진 '진짜 주도 섹터 TOP 5'를 자동 판정합니다.
@@ -890,6 +894,7 @@
             <h3 style="font-size: 1.2rem; font-weight: 900; color: #f8fafc; margin: 0 0 4px 0;">
               📅 주식 시장 핵심 캘린더 & 일정 매매 플래너
             </h3>
+<div style="margin-top: 4px; margin-bottom: 2px;"><span id="calendar-focus-date-badge" style="font-size: 0.74rem; background: rgba(2, 132, 199, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); padding: 2px 8px; border-radius: 4px; font-weight: 800;">📌 기준일 포커스: 2026년 10월 2일(금) / 10월 1주차 주요 일정</span></div>
             <p style="font-size: 0.84rem; color: #94a3b8; margin: 0;">
               "소문에 사고 뉴스에 팔아라" - 뉴스 기사에서 감지된 미래 모멘텀 일정을 승인하여 선점하는 스마트 캘린더
             </p>
@@ -1018,7 +1023,7 @@
               <div style="display: flex; align-items: center; gap: 8px;">
                 <span style="font-size: 1.2rem;">📅</span>
                 <h4 style="font-size: 1.1rem; font-weight: 900; color: #1e293b; margin: 0;">
-                  이번 주 주간 복기 & 차주 증시 예측 리포트 (9월 3주차)
+                  이번 주 주간 복기 & 차주 증시 예측 리포트 (10월 1주차 / 10.02 마감)
                 </h4>
               </div>
               <span id="weekly-status-badge" style="font-size: 0.74rem; background: #f0fdf4; color: #059669; padding: 3px 8px; border-radius: 6px; font-weight: 800; border: 1px solid #bbf7d0;">
@@ -1155,9 +1160,8 @@
             <div>
               <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
                 <span style="background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; font-size: 0.74rem; font-weight: 900; padding: 3px 9px; border-radius: 6px;">
-                  🚀 전일 미국장 마감 분석
-                </span>
-                <span style="font-size: 0.78rem; color: #0284c7; font-weight: 700;">외신 종합 리포트 (블룸버그 · 로이터 · WSJ 취합)</span>
+                  🚀 10월 2일(금) 모닝 브리핑 (현지시각 10월 1일 뉴욕 마감)</span>
+<span style="font-size: 0.78rem; color: #0284c7; font-weight: 700;">외신 종합 리포트 (블룸버그 · 로이터 · WSJ 취합)</span>
               </div>
               <h4 id="us-market-briefing-title" style="font-size: 1.25rem; font-weight: 900; color: #1e293b; margin: 0;">
                 실시간 뉴욕증시 마감 브리핑 집계 중...
@@ -1165,6 +1169,7 @@
             </div>
             <!-- 4대 지수 스코어보드 (다우, 나스닥, S&P 500, 필라델피아 반도체 실시간 연동) -->
             <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+<div style="width: 100%; display: flex; justify-content: flex-end; margin-bottom: 4px;"><span id="us-indices-base-date-badge" style="font-size: 0.72rem; background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; padding: 2px 8px; border-radius: 4px; font-weight: 700;">기준일: 2026년 10월 1일(목) 뉴욕 정규장 마감</span></div>
               <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 8px 14px; border-radius: 10px; text-align: center;">
                 <div style="font-size: 0.7rem; color: #64748b; font-weight: 700;">다우존스 (DJIA)</div>
                 <div id="index-dji-val" style="font-size: 0.95rem; font-weight: 900; color: #dc2626;">--</div>
@@ -1618,7 +1623,7 @@
 
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js"></script>
-  <script src="js/stock.js?v=20261002_v3_typography"></script>
+  <script src="js/stock.js?v=20261002_v4_inspector"></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" onclick="if(event.target===this) closeDailyStockReportModal()">
@@ -1657,6 +1662,59 @@
       </button>
       <button type="button" onclick="closeDailyStockReportModal()"
         style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 10px 18px; border-radius: 8px; font-size: 0.88rem; font-weight: 700; cursor: pointer;">
+        닫기
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================= [신규] 주식 인텔리전스 시스템 전 기능 자체 검수봇 모달 ================= -->
+<div id="systemInspectorBotModal" class="inspector-bot-modal-backdrop" onclick="if(event.target===this) closeSystemInspectorBot()">
+  <div class="inspector-bot-modal-content">
+    <div class="inspector-bot-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="font-size: 1.5rem;">🤖</span>
+        <div>
+          <div style="font-size: 1.1rem; font-weight: 900; color: #ffffff;">
+            주식 인텔리전스 시스템 자체 검수봇 (Inspector Bot)
+          </div>
+          <div style="font-size: 0.76rem; color: #a7f3d0;">
+            2026.10.02(금) 기준 5대 주요 탭 데이터 연동 및 UI 정상 작동 자가진단
+          </div>
+        </div>
+      </div>
+      <button type="button" onclick="closeSystemInspectorBot()" 
+        style="background: transparent; border: none; color: #cbd5e1; font-size: 1.4rem; cursor: pointer; padding: 4px 8px;"
+        title="닫기">✕</button>
+    </div>
+
+    <!-- 검수 종합 상태 요약 바 -->
+    <div style="padding: 14px 24px; background: #ecfdf5; border-bottom: 1px solid #a7f3d0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 1.1rem;">⚡</span>
+        <span id="inspector-summary-text" style="font-size: 0.88rem; font-weight: 800; color: #065f46;">
+          전체 5개 탭 7개 항목 점검: 진단 중...
+        </span>
+      </div>
+      <span id="inspector-timestamp" style="font-size: 0.76rem; color: #047857; font-weight: 700;"></span>
+    </div>
+
+    <!-- 검수 리포트 목록 본문 -->
+    <div class="inspector-bot-body" id="inspector-results-container">
+      <div style="text-align: center; padding: 30px; color: #64748b;">
+        <span>⏳</span> 1초 만에 5대 탭 시스템을 정밀 진단하고 있습니다...
+      </div>
+    </div>
+
+    <!-- 모달 푸터 버튼 -->
+    <div class="inspector-bot-footer">
+      <button type="button" onclick="runSystemInspectorBot()" id="btn-retest-inspector"
+        style="display: inline-flex; align-items: center; gap: 6px; background: #059669; color: #ffffff; border: 1px solid #047857; padding: 9px 18px; border-radius: 8px; font-size: 0.86rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(5, 150, 105, 0.25);">
+        <span>🔄</span> 즉시 재검수 실행
+      </button>
+      <button type="button" onclick="closeSystemInspectorBot()"
+        style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 9px 18px; border-radius: 8px; font-size: 0.86rem; font-weight: 700; cursor: pointer;">
         닫기
       </button>
     </div>

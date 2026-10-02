@@ -451,3 +451,109 @@ div[style*="background:rgba(30,41,59"] {
   font-weight: 800 !important;
   box-shadow: 0 3px 10px rgba(37, 99, 235, 0.35) !important;
 }
+
+
+/* ==========================================================================
+   [🤖 주식 인텔리전스 검수봇 (Inspector Bot) 모달 및 UI]
+   ========================================================================== */
+.inspector-bot-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(5px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  padding: 16px;
+}
+
+.inspector-bot-modal-content {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 780px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+.inspector-bot-header {
+  padding: 18px 24px;
+  background: linear-gradient(135deg, #064e3b, #0f172a);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #047857;
+}
+
+.inspector-bot-body {
+  padding: 20px 24px;
+  overflow-y: auto;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inspector-item-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: all 0.15s ease;
+}
+
+.inspector-item-card:hover {
+  border-color: #cbd5e1;
+  background: #ffffff;
+}
+
+.inspector-badge-ok {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #86efac;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.inspector-badge-fail {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.inspector-bot-footer {
+  padding: 14px 24px;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
