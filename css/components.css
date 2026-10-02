@@ -2801,28 +2801,28 @@
 }
 
 .card-mint {
-  background: rgba(16, 185, 129, 0.08);
-  border: 1px solid rgba(16, 185, 129, 0.25);
+  background: #ecfdf5;
+  border: 1.5px solid #a7f3d0;
 }
-.card-mint .kc-info-head { color: #34d399; }
+.card-mint .kc-info-head { color: #047857; }
 
 .card-blue {
-  background: rgba(59, 130, 246, 0.08);
-  border: 1px solid rgba(59, 130, 246, 0.25);
+  background: #eff6ff;
+  border: 1.5px solid #bfdbfe;
 }
-.card-blue .kc-info-head { color: #60a5fa; }
+.card-blue .kc-info-head { color: #1d4ed8; }
 
 .card-purple {
-  background: rgba(168, 85, 247, 0.08);
-  border: 1px solid rgba(168, 85, 247, 0.25);
+  background: #faf5ff;
+  border: 1.5px solid #e9d5ff;
 }
-.card-purple .kc-info-head { color: #c084fc; }
+.card-purple .kc-info-head { color: #6b21a8; }
 
 .card-yellow {
-  background: rgba(245, 158, 11, 0.08);
-  border: 1px solid rgba(245, 158, 11, 0.25);
+  background: #fffbeb;
+  border: 1.5px solid #fde68a;
 }
-.card-yellow .kc-info-head { color: #fbbf24; }
+.card-yellow .kc-info-head { color: #92400e; }
 
 .kc-info-head {
   font-size: 0.88rem;
@@ -2834,9 +2834,10 @@
 }
 
 .kc-info-body {
-  font-size: 0.8rem;
-  color: #cbd5e1;
+  font-size: 0.82rem;
+  color: #334155;
   line-height: 1.55;
+  font-weight: 500;
 }
 
 /* 7. 롱테일 파생 키워드 섹션 */
@@ -3215,9 +3216,9 @@
 }
 
 .stock-sub-tab:hover {
-  background: rgba(56, 189, 248, 0.12);
-  color: #38bdf8;
-  border-color: rgba(56, 189, 248, 0.35);
+  background: #e0f2fe;
+  color: #0284c7;
+  border-color: #bae6fd;
   transform: translateY(-1px);
 }
 
@@ -3277,9 +3278,9 @@
 }
 
 .stock-filter-chip.active {
-  background: #38bdf8;
-  color: #0f172a;
-  border-color: #38bdf8;
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7;
   font-weight: 800;
 }
 

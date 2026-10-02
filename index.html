@@ -14,12 +14,12 @@
   <!-- 스타일시트 로드 -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/stock.css?v=20261003_v7_high_contrast">
+  <link rel="stylesheet" href="css/stock.css?v=v10_high_contrast">
 
   <style>
     /* 독립 서비스 전용 네비게이션 및 여백 최적화 */
     body {
-      background-color: #f8fafc;
+      background-color: #0f172a;
       color: #0f172a;
     }
     .stock-standalone-nav {
@@ -311,7 +311,7 @@
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 12px;">
               <div style="display: flex; align-items: center; gap: 8px;">
                 <span style="font-size: 1.3rem;">🔥</span>
-                <h4 style="font-size: 1.08rem; font-weight: 900; color: #f8fafc; margin: 0; letter-spacing: -0.3px;">
+                <h4 style="font-size: 1.08rem; font-weight: 900; color: #0f172a; margin: 0; letter-spacing: -0.3px;">
                   오늘의 주도 테마 <span style="font-size: 0.8rem; font-weight: 700; color: #f87171;">(핵심 재료 & 뉴스 팩트)</span>
                 </h4>
                 <span style="font-size: 0.72rem; background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); padding: 2px 8px; border-radius: 6px; font-weight: 800;">
@@ -320,7 +320,7 @@
               </div>
               <div style="font-size: 0.76rem; color: #94a3b8; display: flex; align-items: center; gap: 6px;">
                 <span>⚡ 기준 충족 시에만 실시간 표출</span>
-                <span id="today-leading-status-badge" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; padding: 2px 8px; border-radius: 4px; font-weight: 700;">실시간 레이더 감지 중</span>
+                <span id="today-leading-status-badge" style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 4px; font-weight: 800;">실시간 레이더 감지 중</span>
 
                 <button type="button" onclick="openDailyStockReportModal()" id="btn-open-daily-report"
                   style="display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #1e40af, #2563eb); color: #ffffff; border: 1px solid #1d4ed8; padding: 5px 12px; border-radius: 8px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(37,99,235,0.3); transition: all 0.2s;"
@@ -481,10 +481,10 @@
               <span style="font-size: 1.5rem;">🌐</span>
               <div>
                 <div style="display: flex; align-items: center; gap: 8px;">
-                  <h4 style="font-size: 1.2rem; font-weight: 900; color: #f8fafc; margin: 0;">
+                  <h4 style="font-size: 1.2rem; font-weight: 900; color: #0f172a; margin: 0;">
                     당일 시장 판도 & 주도 테마 레이더
                   </h4>
-                  <span id="market-radar-badge" style="font-size: 0.74rem; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); padding: 3px 9px; border-radius: 6px; font-weight: 800;">⚡ 2026.10.02(금) 당일 급등 재료 & 공시 타임라인</span>
+                  <span id="market-radar-badge" style="font-size: 0.74rem; background: #e0f2fe; color: #0369a1; border: 1.5px solid #bae6fd; padding: 3px 9px; border-radius: 6px; font-weight: 900;">⚡ 2026.10.02(금) 당일 급등 재료 & 공시 타임라인</span>
                 </div>
                 <div style="font-size: 0.78rem; color: #94a3b8; margin-top: 3px;">
                   단순 개별주 나열이 아닌, 코스피/코스닥 지수 수급과 거래대금이 실제로 터진 '진짜 주도 섹터 TOP 5'를 자동 판정합니다.
@@ -546,7 +546,7 @@
           <!-- 구역 B (당일 주도 테마 TOP 5 지도): 실제 오늘 시장 자금을 흡수한 테마 순위, 섹터 평균 등락률, 주도 대장주 뱃지 -->
           <div style="margin-bottom: 22px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-              <div style="font-size: 0.95rem; font-weight: 900; color: #f8fafc; display: flex; align-items: center; gap: 6px;">
+              <div style="font-size: 0.95rem; font-weight: 900; color: #0f172a; display: flex; align-items: center; gap: 6px;">
                 <span>🏆</span> 당일 자금 쏠림 '진짜 주도 테마' TOP 5 (클릭 시 원클릭 심층 분석 연동)
               </div>
               <span style="font-size: 0.74rem; color: #38bdf8; font-weight: 700;">
@@ -651,7 +651,7 @@
               <span style="font-size: 1.2rem;">📊</span>
               <div>
                 <h4 style="font-size: 1.02rem; font-weight: 900; color: #0f172a; margin: 0; display: flex; align-items: center; gap: 6px;">
-                  최신 리서치 리포트 피드 (실시간 수집) <span style="font-size: 0.72rem; padding: 2px 7px; background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.4); border-radius: 4px; font-weight: 800;">한경 컨센서스 LIVE</span>
+                  최신 리서치 리포트 피드 (실시간 수집) <span style="font-size: 0.72rem; padding: 2px 7px; background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; border-radius: 4px; font-weight: 800;">한경 컨센서스 LIVE</span>
                 </h4>
                 <div style="font-size: 0.74rem; color: #94a3b8; margin-top: 2px;">
                   주요 증권사 애널리스트가 발행한 목표주가 상향 및 핵심 수주/실적 리포트를 실시간 대량 수집 피드로 제공합니다.
@@ -761,7 +761,7 @@
             <div style="display: flex; align-items: center; gap: 10px;">
               <span style="font-size: 1.35rem;">📋</span>
               <div>
-                <h4 style="font-size: 1.15rem; font-weight: 900; color: #f8fafc; margin: 0; display: flex; align-items: center; gap: 8px;">
+                <h4 style="font-size: 1.15rem; font-weight: 900; color: #0f172a; margin: 0; display: flex; align-items: center; gap: 8px;">
                   탐정 사건 수첩 (사후 복기 & 승률 검증 모듈)
                   <span id="case-logs-count-badge" style="font-size: 0.74rem; background: #faf5ff; color: #7c3aed; border: 1px solid #e9d5ff; padding: 2px 8px; border-radius: 6px; font-weight: 800;">0건</span>
                 </h4>
@@ -791,9 +791,9 @@
             <div style="display: flex; align-items: center; gap: 10px;">
               <span style="font-size: 1.35rem;">⭐</span>
               <div>
-                <h4 style="font-size: 1.15rem; font-weight: 900; color: #f8fafc; margin: 0; display: flex; align-items: center; gap: 8px;">
+                <h4 style="font-size: 1.15rem; font-weight: 900; color: #0f172a; margin: 0; display: flex; align-items: center; gap: 8px;">
                   상시 추적 관리 테마 포트폴리오 뷰
-                  <span style="font-size: 0.72rem; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); padding: 2px 8px; border-radius: 6px; font-weight: 800;">4대 채널 병렬 스트리밍</span>
+                  <span style="font-size: 0.72rem; background: #e0f2fe; color: #0369a1; border: 1.5px solid #bae6fd; padding: 2px 8px; border-radius: 6px; font-weight: 900;">4대 채널 병렬 스트리밍</span>
                 </h4>
                 <div style="font-size: 0.78rem; color: #94a3b8; margin-top: 3px;">
                   관심 테마들을 다중 선택하면 뉴스·DART 공시·증권사 리포트·블로그 분석이 4열 컬럼에 독립 분할되어 실시간 동기화됩니다.
@@ -801,7 +801,7 @@
               </div>
             </div>
             <div style="display: flex; align-items: center; gap: 8px;">
-              <button type="button" onclick="refreshThemePortfolioStreaming()" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(37, 99, 235, 0.3)); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; padding: 6px 14px; border-radius: 8px; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s;" onmouseover="this.style.background='rgba(56,189,248,0.3)';" onmouseout="this.style.background='linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(37, 99, 235, 0.3))';">
+              <button type="button" onclick="refreshThemePortfolioStreaming()" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(37, 99, 235, 0.3)); border: 1px solid rgba(56, 189, 248, 0.4); color: #0284c7; padding: 6px 14px; border-radius: 8px; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s;" onmouseover="this.style.background='rgba(56,189,248,0.3)';" onmouseout="this.style.background='linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(37, 99, 235, 0.3))';">
                 <span id="portfolio-sync-spin">🔄</span> 4대 채널 통합 동기화
               </button>
             </div>
@@ -873,7 +873,7 @@
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px; margin-bottom: 10px;">
                 <div style="display: flex; align-items: center; gap: 6px;">
                   <span style="font-size: 1rem;">✍️</span>
-                  <strong style="font-size: 0.85rem; color: #c084fc;">블로그 & 전문 분석</strong>
+                  <strong style="font-size: 0.85rem; color: #6b21a8;">블로그 & 전문 분석</strong>
                 </div>
                 <span id="portfolio-col-blog-count" style="font-size: 0.7rem; background: rgba(168, 85, 247, 0.15); color: #e9d5ff; border: 1px solid rgba(168, 85, 247, 0.3); padding: 1px 7px; border-radius: 10px; font-weight: 800;">
                   0건
@@ -891,10 +891,10 @@
       <div id="stock-panel-calendar" class="stock-panel-content" style="display: none;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
           <div>
-            <h3 style="font-size: 1.2rem; font-weight: 900; color: #f8fafc; margin: 0 0 4px 0;">
+            <h3 style="font-size: 1.2rem; font-weight: 900; color: #0f172a; margin: 0 0 4px 0;">
               📅 주식 시장 핵심 캘린더 & 일정 매매 플래너
             </h3>
-<div style="margin-top: 4px; margin-bottom: 2px;"><span id="calendar-focus-date-badge" style="font-size: 0.74rem; background: rgba(2, 132, 199, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); padding: 2px 8px; border-radius: 4px; font-weight: 800;">📌 기준일 포커스: 2026년 10월 2일(금) / 10월 1주차 주요 일정</span></div>
+<div style="margin-top: 4px; margin-bottom: 2px;"><span id="calendar-focus-date-badge" style="font-size: 0.76rem; background: #e0f2fe; color: #0369a1; border: 1.5px solid #7dd3fc; padding: 3px 10px; border-radius: 6px; font-weight: 900;">📌 기준일 포커스: 2026년 10월 2일(금) / 10월 1주차 주요 일정</span></div>
             <p style="font-size: 0.84rem; color: #94a3b8; margin: 0;">
               "소문에 사고 뉴스에 팔아라" - 뉴스 기사에서 감지된 미래 모멘텀 일정을 승인하여 선점하는 스마트 캘린더
             </p>
@@ -905,16 +905,16 @@
         </div>
 
         <!-- [신규] AI 뉴스 탐지 일정 후보 (승인 대기) 접고 펼치기 패널 -->
-        <div id="ai-pending-events-panel" class="kc-box-white-card" style="background: linear-gradient(145deg, #1e1b4b, #0f172a); margin-bottom: 20px; border: 1.5px solid rgba(168, 85, 247, 0.4); border-radius: 14px; padding: 18px 20px; box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.5);">
+        <div id="ai-pending-events-panel" class="kc-box-white-card" style="background: #ffffff; margin-bottom: 20px; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 18px 20px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);">
           <div style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;" onclick="togglePendingEventsPanel()">
             <div style="display: flex; align-items: center; gap: 10px;">
               <span style="font-size: 1.3rem;">💡</span>
               <div>
                 <div style="display: flex; align-items: center; gap: 8px;">
-                  <h4 style="font-size: 1.05rem; font-weight: 900; color: #f8fafc; margin: 0;">
+                  <h4 style="font-size: 1.05rem; font-weight: 900; color: #0f172a; margin: 0;">
                     AI 뉴스 탐지 일정 후보
                   </h4>
-                  <span id="pending-events-badge" style="font-size: 0.72rem; background: rgba(168, 85, 247, 0.25); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4); padding: 2px 8px; border-radius: 12px; font-weight: 800;">
+                  <span id="pending-events-badge" style="font-size: 0.74rem; background: #f3e8ff; color: #6b21a8; border: 1.5px solid #d8b4fe; padding: 2px 9px; border-radius: 12px; font-weight: 900;">
                     승인 대기 0건
                   </span>
                 </div>
@@ -926,10 +926,10 @@
 
             <!-- 우측 액션 & 접기/펼치기 아이콘 -->
             <div style="display: flex; align-items: center; gap: 8px;" onclick="event.stopPropagation()">
-              <button type="button" onclick="approveAllPendingEvents()" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35); padding: 4px 10px; border-radius: 6px; font-size: 0.72rem; font-weight: 800; cursor: pointer;">
+              <button type="button" onclick="approveAllPendingEvents()" style="background: #ecfdf5; color: #047857; border: 1.5px solid #a7f3d0; padding: 4px 10px; border-radius: 6px; font-size: 0.72rem; font-weight: 800; cursor: pointer;">
                 ✔ 모두 승인
               </button>
-              <button type="button" onclick="rejectAllPendingEvents()" style="background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.35); padding: 4px 10px; border-radius: 6px; font-size: 0.72rem; font-weight: 800; cursor: pointer;">
+              <button type="button" onclick="rejectAllPendingEvents()" style="background: #fef2f2; color: #b91c1c; border: 1.5px solid #fecaca; padding: 4px 10px; border-radius: 6px; font-size: 0.72rem; font-weight: 800; cursor: pointer;">
                 ✖ 모두 거절
               </button>
               <span id="pending-toggle-icon" style="font-size: 1rem; color: #94a3b8; padding-left: 6px; cursor: pointer;" onclick="togglePendingEventsPanel()">▼</span>
@@ -1623,7 +1623,7 @@
 
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js"></script>
-  <script src="js/stock.js?v=20261003_v7_high_contrast"></script>
+  <script src="js/stock.js?v=v10_high_contrast"></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" onclick="if(event.target===this) closeDailyStockReportModal()">
