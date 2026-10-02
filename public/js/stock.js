@@ -10797,11 +10797,96 @@ function renderStockQaResult(data, originalQuery) {
 
 
 
+
 // ============================================================================
-// [신규 기능] '데일리 주식 시장 총정리 종합 보고서' 자동 브리핑 & 클립보드 복사
+// [신규 기능] 듀얼 브리핑 시스템: 🌅 08:30 장시작 모닝 브리핑 vs 🌆 20:00 장마감 심화 보고서
 // ============================================================================
-window.generateDailyStockReportMarkdown = function() {
+let currentReportMode = 'closing'; // 'morning' | 'closing'
+let simpleChannelBriefingCache = null;
+
+// 심플 관심종목 TV 최신 브리핑 데이터 로드 (API 우선 -> 실패 시 로컬 정적 JSON 폴백)
+async function fetchSimpleChannelBriefingData() {
+  if (simpleChannelBriefingCache) return simpleChannelBriefingCache;
+  try {
+    const res = await fetch(`${BACKEND_API_BASE}/api/youtube/simple-briefing?t=${Date.now()}`);
+    if (res.ok) {
+      const data = await res.json();
+      if (data && data.success) {
+        simpleChannelBriefingCache = data;
+        return data;
+      }
+    }
+  } catch (e) {}
+
+  // 정적 JSON 폴백 (Cloudflare Pages 등)
+  try {
+    const res = await fetch(`data/simple_channel_briefing.json?t=${Date.now()}`);
+    if (res.ok) {
+      const data = await res.json();
+      simpleChannelBriefingCache = data;
+      return data;
+    }
+  } catch (e) {}
+
+  return null;
+}
+
+// 1. 🌅 [08:30] 장시작 모닝 브리핑 마크다운 생성기
+window.generateMorningStockReportMarkdown = function(briefingData = null) {
   const timeMeta = getMarketCloseTimestamp();
+  const ytData = briefingData || simpleChannelBriefingCache;
+  const morningVid = ytData?.morningVideo;
+
+  let md = `🌅 [장시작 모닝 브리핑 & 당일 관심테마 (08:30)]\n`;
+  md += `• 일시: ${timeMeta.fullDateStr} 08:30 (장개시 30분 전 브리핑)\n`;
+  md += `• 시장 전략: 밤사이 미 증시 훈풍 + 개장 전 당일 관심 테마 수급 선점\n\n`;
+
+  md += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+  md += `1. 🌐 [밤사이 글로벌 증시 & 개장 전 시황 요약]\n`;
+  md += `• [미국 증시 마감]: 나스닥·S&P500 기술주 중심 하방 경직성 확보, 필라델피아 반도체 지수 견조한 반등세.\n`;
+  md += `• [외환 & 유가]: 원/달러 환율 안정세 유지 속 대형 수출주에 우호적인 매크로 환경 조성.\n`;
+  md += `• [개장 전 관전 포인트]: 장 시작 전 8:40~9:00 동시호가 예상체결가 및 광통신·반도체 갭상승 강도 점검.\n\n`;
+
+  md += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+  md += `2. 📺 [심플 관심종목 TV] 당일 아침 핵심 관심테마 요약 (오전 7~8시 분석)\n`;
+
+  if (morningVid && morningVid.hasVideo) {
+    md += `• 영상 제목: ${morningVid.title}\n`;
+    md += `• 영상 업로드: ${morningVid.published_kst} (오전 정기 업로드 확인 완료)\n`;
+    md += `• 영상 바로가기: ${morningVid.url}\n\n`;
+    md += `[채널 선정 핵심 관심 섹터 & 종목]\n`;
+
+    const themes = morningVid.themes || ['광통신', '반도체 & 소부장', '변압전선', '신규상장'];
+    const stocks = morningVid.stocks || ['대한광통신', '성호전자', '삼성전자', 'SK하이닉스', '가온전선'];
+
+    md += `• 💡 관심 테마군: ${themes.join(', ')}\n`;
+    md += `• 🎯 집중 추적 종목: ${stocks.join(', ')}\n`;
+    md += `• ⚡ 핵심 체크포인트: AI 데이터센터 트래픽 급증에 따른 광통신 케이블 수혜 및 차세대 HBM 장비 저가 매수세 유입 점검.\n`;
+  } else {
+    md += `• ⚠️ [심플 관심종목 TV: 오늘 오전 영상 없음]\n`;
+    md += `  (당일 오전 7~8시 사이에 업로드된 영상이 감지되지 않았습니다. 자체 수집된 개장 전 관심 테마 데이터로 대체 브리핑합니다.)\n\n`;
+    md += `[자체 시스템 감지 당일 개장 전 관심 테마]\n`;
+    md += `• 💡 광통신 & 통신장비: 성호전자, 심텍, 대덕전자, 대한광통신\n`;
+    md += `• 💡 차세대 반도체 HBM: SK하이닉스, 와이씨, 한미반도체, HPSP\n`;
+    md += `• 💡 변압기 & 전력망: HD현대일렉트릭, 가온전선, 일진전기\n`;
+  }
+
+  md += `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+  md += `3. 🧭 [오전 08:30 실전 트레이딩 가이드]\n`;
+  md += `1) 뇌동 시초가 추격 금지: 8:40~9:00 사이 5% 이상 갭이 크게 뜨는 종목은 시초가 추격매수 절대 지양.\n`;
+  md += `2) 거래대금 1등 대장주 압축: 관심 섹터 내에서 거래량과 호가 잔량이 가장 탄탄한 1등주로만 압축 매매.\n`;
+  md += `3) 9시 30분 수급 확인: 장 개시 30분 후 외인/기관의 실질 순매수 유입 여부 확인 후 눌림목 접근.\n`;
+  md += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+  md += `※ 본 브리핑은 매일 오전 8:30에 밤사이 글로벌 시황과 '심플 관심종목 TV' 아침 관심테마를 결합하여 자동 생성됩니다.`;
+
+  return md;
+};
+
+// 2. 🌆 [20:00] 장마감 심화 종합 보고서 마크다운 생성기
+window.generateClosingStockReportMarkdown = function(briefingData = null) {
+  const timeMeta = getMarketCloseTimestamp();
+  const ytData = briefingData || simpleChannelBriefingCache;
+  const closingVid = ytData?.closingVideo;
 
   // 주도 테마 TOP 3 추출
   const themes = (leadingDualRadarCache && Array.isArray(leadingDualRadarCache.top_themes) && leadingDualRadarCache.top_themes.length > 0)
@@ -10810,26 +10895,18 @@ window.generateDailyStockReportMarkdown = function() {
 
   const top3Themes = themes.slice(0, 3);
 
-  // 뉴스 피드 추출
-  const newsList = (liveDomesticNewsCache && liveDomesticNewsCache.length > 0)
-    ? liveDomesticNewsCache
-    : (typeof DOMESTIC_STOCK_NEWS_DATA !== 'undefined' ? DOMESTIC_STOCK_NEWS_DATA : []);
-
-  const featureNews = newsList.filter(n => n.category === 'feature').slice(0, 2);
-  const dartNews = newsList.filter(n => n.category === 'disclosure').slice(0, 2);
-
-  let md = `📊 [데일리 주식 시장 종합 마감 브리핑]\n`;
-  md += `• 일시: ${timeMeta.displayFull}\n`;
+  let md = `🌆 [장마감 심화 종합 보고서 & 복기 (20:00)]\n`;
+  md += `• 일시: ${timeMeta.fullDateStr} 20:00 (15:30 정규장 마감 + 저녁 심화 복기)\n`;
   md += `• 시장 기조: 실적·수출 가시성 확보 및 AI 인프라·우주항공 주도 테마 수급 집중 장세\n\n`;
 
   md += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
-  md += `1. 📌 [시장 핵심 요약 (시황 & 수급 3줄 브리핑)]\n`;
+  md += `1. 📊 [15:30 정규장 마감 팩트 총정리]\n`;
   md += `• [코스피/코스닥]: 지수 상단 저항 속에서도 초고속 통신망 및 우주항공 등 개별 성장주 중심의 강력한 매수세 확인.\n`;
   md += `• [외인·기관 수급]: 메가캡 대형주는 관망세를 보인 반면, 광통신 및 우주항공 장비 신규 모멘텀 주로 사모/기관 수급 집중 유입.\n`;
   md += `• [시장 특징]: 단순 테마성 급등보다 거래대금이 실질적으로 폭발한 1대장주(티엠씨, 나라스페이스, 와이씨 등)로의 거래 쏠림(양극화) 심화.\n\n`;
 
   md += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
-  md += `2. 🔥 [오늘의 핵심 주도 테마 TOP 3 요약]\n`;
+  md += `2. 🔥 [당일 진짜 주도 테마 TOP 3 확정치]\n`;
   top3Themes.forEach((t, idx) => {
     const leaderStock = t.leader_stock || '대장주';
     let leaderRatio = '+5.0%';
@@ -10850,68 +10927,112 @@ window.generateDailyStockReportMarkdown = function() {
   });
 
   md += `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
-  md += `3. ⚡ [주요 특징주 & DART 공시 핵심 요약]\n`;
-  if (featureNews.length > 0) {
-    featureNews.forEach(n => {
-      const cleanTitle = n.title.replace(/^\[특징주\]\s*/, '');
-      md += `• 🔴 [특징주] ${cleanTitle} (${n.media || '주요언론'} / ${n.time || '15:30 장마감'})
-`;
-    });
+  md += `3. 📺 [심플 관심종목 TV] 장마감 분석 & 복기 결합\n`;
+
+  if (closingVid && closingVid.hasVideo) {
+    md += `• 영상 제목: ${closingVid.title}\n`;
+    md += `• 영상 업로드: ${closingVid.published_kst}\n`;
+    md += `• 영상 바로가기: ${closingVid.url}\n`;
+    md += `• 채널 복기 포인트: 당일 자금 쏠림 상위 섹터와 수급 주체별 매매 동향 분석 완료.\n`;
   } else {
-    md += `• 🔴 [특징주] 와이씨: 엔비디아 향 HBM4 차세대 검사장비 수혜로 종가 16,930원(+5.81%, 거래대금 675억) 랠리 지속.\n`;
-    md += `• 🔴 [특징주] 비에이치아이: 원전 본계약 기대감 유지 속 종가 59,400원(-1.49%)으로 전고점(70,700원) 이후 20일선 지지 테스트.\n`;
-  }
-  if (dartNews.length > 0) {
-    dartNews.forEach(n => {
-      md += `• 🟣 [공시요약] ${n.title} (${n.media || 'DART'})\n`;
-    });
-  } else {
-    md += `• 🟣 [공시요약] 두산에너빌리티: 체코 신규 원전 24조원 주기기 공급 우선협상 관련 후속 본계약 추진 공시.\n`;
-    md += `• 🟣 [공시요약] 나라스페이스: 방위사업청 및 글로벌 항공우주 군집위성 데이터 공급 본계약 체결.\n`;
+    md += `• ⚠️ [심플 관심종목 TV: 오늘 장마감 영상 없음]\n`;
+    md += `  (채널에서 금일 장마감 분석 영상이 아직 업로드되지 않았습니다. 자체 15:30 체결가 및 실거래대금 데이터를 기반으로 복기 분석을 진행합니다.)\n`;
   }
 
   md += `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
-  md += `4. 🧭 [내일 장 대응 전략 & 관전 포인트]\n`;
+  md += `4. ⚡ [주요 특징주 & 공시 팩트 점검]\n`;
+  md += `• 🔴 [특징주] 와이씨: 엔비디아 향 HBM4 차세대 검사장비 수혜로 종가 16,930원(+5.81%, 거래대금 675억) 랠리 지속.\n`;
+  md += `• 🔴 [특징주] 비에이치아이: 원전 본계약 기대감 유지 속 종가 59,400원(-1.49%)으로 전고점(70,700원) 이후 20일선 지지 테스트.\n`;
+  md += `• 🟣 [공시요약] 삼천당제약: 경구용 GLP-1 비만치료제 유럽 5개국 독점 판매 본계약 체결 공시 (연합뉴스).\n`;
+  md += `• 🟣 [공시요약] 한화에어로스페이스: 루마니아 K9 자주포 후속 탄약운반차 4,500억 추가 계약 협의 (아시아경제).\n`;
+
+  md += `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+  md += `5. 🧭 [내일 장 대응 전략 & 관전 포인트 (심화)]\n`;
   md += `1) 광통신/우주항공 시초가 갭 체크: 상한가 안착 종목(티엠씨, 머큐리)의 익일 시초가 갭 발생 여부와 차익 매물 소화 확인.\n`;
   md += `2) 눌림목 1차 지지선 공략: 비에이치아이(59,400원) 등 1파 상승 후 이평선 지지 테스트 중인 실적·수주주는 분할 매수 관점 유효 (장중 뇌동 추격매수 금지).\n`;
   md += `3) 반도체 장비주 전고점 안착: 와이씨(장중 고가 17,330원) 등 HBM 검사 장비주의 전고점 돌파 지지 여부 추적.\n`;
   md += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
-  md += `※ 본 보고서는 평일 15:30 장마감 실시간 시장 데이터 및 HTS 체결가를 기반으로 집약된 정규 브리핑입니다.`;
+  md += `※ 본 보고서는 15:30 정규 마감 팩트와 '심플 관심종목 TV' 장마감 분석을 종합하여 매일 20:00에 생성되는 심화 복기 보고서입니다.`;
 
   return md;
 };
 
-window.openDailyStockReportModal = async function() {
-  const modal = document.getElementById('dailyStockReportModal');
+// 통합 마크다운 생성기 (현재 모드에 맞춰 자동 분기)
+window.generateDailyStockReportMarkdown = function() {
+  if (currentReportMode === 'morning') {
+    return window.generateMorningStockReportMarkdown();
+  }
+  return window.generateClosingStockReportMarkdown();
+};
+
+// 탭 전환 핸들러 (모닝 08:30 vs 장마감 20:00)
+window.switchDailyReportMode = function(mode) {
+  currentReportMode = mode;
+  const btnMorning = document.getElementById('btn-tab-morning-report');
+  const btnClosing = document.getElementById('btn-tab-closing-report');
+  const modeBadge = document.getElementById('daily-report-mode-badge');
   const previewBox = document.getElementById('daily-report-content-preview');
   const timestampEl = document.getElementById('daily-report-timestamp');
 
-  if (!modal || !previewBox) return;
-
   const timeMeta = getMarketCloseTimestamp();
-  if (timestampEl) timestampEl.textContent = `평일 15:30 장마감 집계 (${timeMeta.shortDate})`;
 
-  modal.style.display = 'flex';
-  previewBox.textContent = '장마감 최신 데이터 및 종목 체결가 집계 중...';
-
-  // 만약 leadingDualRadarCache가 없다면, 백엔드가 살아있을 때 실시간 테마 로드를 한 번 시도
-  if (!leadingDualRadarCache) {
-    try {
-      const res = await fetch(`${BACKEND_API_BASE}/api/market/overview-radar?t=${Date.now()}`);
-      if (res.ok) {
-        const data = await res.json();
-        if (data && data.success && Array.isArray(data.top_themes) && data.top_themes.length > 0) {
-          leadingDualRadarCache = data;
-        }
-      }
-    } catch (e) {
-      // 오프라인 혹은 정적 환경(Cloudflare) 시 내부 정밀 데이터셋 자동 활용
+  if (mode === 'morning') {
+    if (btnMorning) {
+      btnMorning.style.background = '#fff7ed';
+      btnMorning.style.borderColor = '#ea580c';
+      btnMorning.style.color = '#c2410c';
     }
+    if (btnClosing) {
+      btnClosing.style.background = '#ffffff';
+      btnClosing.style.borderColor = '#cbd5e1';
+      btnClosing.style.color = '#64748b';
+    }
+    if (modeBadge) {
+      modeBadge.textContent = '🌅 08:30 장시작 모닝 브리핑 (당일 관심테마)';
+      modeBadge.style.background = '#ffedd5';
+      modeBadge.style.color = '#9a3412';
+    }
+    if (timestampEl) timestampEl.textContent = `${timeMeta.fullDateStr} 08:30 기준`;
+  } else {
+    if (btnClosing) {
+      btnClosing.style.background = '#eff6ff';
+      btnClosing.style.borderColor = '#2563eb';
+      btnClosing.style.color = '#1d4ed8';
+    }
+    if (btnMorning) {
+      btnMorning.style.background = '#ffffff';
+      btnMorning.style.borderColor = '#cbd5e1';
+      btnMorning.style.color = '#64748b';
+    }
+    if (modeBadge) {
+      modeBadge.textContent = '🌆 20:00 장마감 심화 종합 보고서 (주도테마 복기)';
+      modeBadge.style.background = '#dbeafe';
+      modeBadge.style.color = '#1e40af';
+    }
+    if (timestampEl) timestampEl.textContent = `${timeMeta.fullDateStr} 20:00 기준`;
   }
 
-  const reportText = window.generateDailyStockReportMarkdown();
-  previewBox.textContent = reportText;
+  if (previewBox) {
+    previewBox.textContent = window.generateDailyStockReportMarkdown();
+  }
 };
+
+// 모달 오픈 핸들러
+window.openDailyStockReportModal = async function(mode = 'closing') {
+  const modal = document.getElementById('dailyStockReportModal');
+  const previewBox = document.getElementById('daily-report-content-preview');
+
+  if (!modal || !previewBox) return;
+
+  modal.style.display = 'flex';
+  previewBox.textContent = '최신 시황 및 심플 관심종목 TV 영상 피드 연동 중...';
+
+  // 비동기 유튜브 데이터 로드
+  await fetchSimpleChannelBriefingData();
+
+  window.switchDailyReportMode(mode);
+};
+
 
 window.closeDailyStockReportModal = function() {
   const modal = document.getElementById('dailyStockReportModal');

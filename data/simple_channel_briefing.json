@@ -1,0 +1,45 @@
+{
+  "updatedAt": "2026-10-03T01:00:00+09:00",
+  "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
+  "channelTitle": "심플 관심종목 TV",
+  "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
+  "targetDate": "2026-10-02",
+  "morningVideo": {
+    "hasVideo": true,
+    "id": "R7Lm7CrtL4c",
+    "title": "당일 관심테마! 반도체,소부장,광통신,변압전선,신규상장/삼성전자,SK하이닉스,제주반도체,디아이,삼성전기,한미반도체,HPSP,성호전자,심텍,대덕전자,대한광통신,주성엔지니어링,가온전선",
+    "published_kst": "2026-10-02 06:56:18",
+    "url": "https://www.youtube.com/watch?v=R7Lm7CrtL4c",
+    "themes": [
+      "광통신 & 케이블",
+      "반도체 & 소부장",
+      "변압전선 & 전력망",
+      "신규상장주"
+    ],
+    "stocks": [
+      "대한광통신",
+      "성호전자",
+      "심텍",
+      "대덕전자",
+      "삼성전자",
+      "SK하이닉스",
+      "제주반도체",
+      "디아이",
+      "삼성전기",
+      "한미반도체",
+      "HPSP",
+      "주성엔지니어링",
+      "가온전선"
+    ],
+    "key_points": [
+      "광통신: AI 데이터센터 트래픽 폭증으로 광케이블 쇼티지 및 주파수 수혜",
+      "반도체: 차세대 HBM 및 메모리 검사장비 수혜주 중심 저가 매수세 유입",
+      "변압전선: 북미 전력망 교체 및 초고압 전선 수주 잔고 모멘텀 지속"
+    ]
+  },
+  "closingVideo": {
+    "hasVideo": false,
+    "status": "오늘 영상 없음",
+    "reason": "10월 2일(금) 장마감 분석 영상 미업로드 (장마감 후 업로드 영상 없음)"
+  }
+}

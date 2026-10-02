@@ -322,11 +322,19 @@
                 <span>⚡ 기준 충족 시에만 실시간 표출</span>
                 <span id="today-leading-status-badge" style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 4px; font-weight: 800;">실시간 레이더 감지 중</span>
 
-                <button type="button" onclick="openDailyStockReportModal()" id="btn-open-daily-report"
-                  style="display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #1e40af, #2563eb); color: #ffffff; border: 1px solid #1d4ed8; padding: 5px 12px; border-radius: 8px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(37,99,235,0.3); transition: all 0.2s;"
-                  onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
-                  <span>📊</span> 평일 15:30 장마감 총정리 보고서 생성 / 복사
-                </button>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                  <button type="button" onclick="openDailyStockReportModal('morning')" id="btn-open-morning-report"
+                    style="display: inline-flex; align-items: center; gap: 5px; background: #fff7ed; color: #c2410c; border: 1.5px solid #fdba74; padding: 5px 12px; border-radius: 8px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: 0 1px 3px rgba(194,65,12,0.15); transition: all 0.2s;"
+                    onmouseover="this.style.background='#ffedd5'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='#fff7ed'; this.style.transform='none';">
+                    <span>🌅</span> 08:30 장시작 브리핑
+                  </button>
+
+                  <button type="button" onclick="openDailyStockReportModal('closing')" id="btn-open-daily-report"
+                    style="display: inline-flex; align-items: center; gap: 5px; background: linear-gradient(135deg, #1e40af, #2563eb); color: #ffffff; border: 1px solid #1d4ed8; padding: 5px 12px; border-radius: 8px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(37,99,235,0.3); transition: all 0.2s;"
+                    onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
+                    <span>🌆</span> 20:00 장마감 심화 보고서
+                  </button>
+                </div>
 
               </div>
             </div>
@@ -1623,7 +1631,7 @@
 
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js"></script>
-  <script src="js/stock.js?v=v12_market_close_factual"></script>
+  <script src="js/stock.js?v=v13_simple_channel_briefing"></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" onclick="if(event.target===this) closeDailyStockReportModal()">
@@ -1645,8 +1653,20 @@
         title="닫기">✕</button>
     </div>
     <div class="daily-report-body">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-        <span style="font-size: 0.82rem; font-weight: 800; color: #1e40af; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
+      <!-- 듀얼 브리핑 탭 전환기 (08:30 장시작 모닝 브리핑 vs 20:00 장마감 심화 보고서) -->
+      <div style="display: flex; gap: 8px; margin-bottom: 14px; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 10px;">
+        <button type="button" id="btn-tab-morning-report" onclick="switchDailyReportMode('morning')" 
+          style="flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.86rem; font-weight: 800; cursor: pointer; border: 1.5px solid #cbd5e1; background: #ffffff; color: #64748b; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.2s;">
+          <span>🌅</span> 08:30 장시작 모닝 브리핑 (당일 관심테마)
+        </button>
+        <button type="button" id="btn-tab-closing-report" onclick="switchDailyReportMode('closing')" 
+          style="flex: 1; padding: 10px 14px; border-radius: 8px; font-size: 0.86rem; font-weight: 800; cursor: pointer; border: 1.5px solid #2563eb; background: #eff6ff; color: #1d4ed8; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.2s;">
+          <span>🌆</span> 20:00 장마감 심화 종합 보고서 (주도테마 복기)
+        </button>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 6px;">
+        <span id="daily-report-mode-badge" style="font-size: 0.82rem; font-weight: 800; color: #1e40af; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
           ⚡ 원클릭 복사 최적화 (마크다운 포맷)
         </span>
         <span style="font-size: 0.76rem; color: #64748b;" id="daily-report-timestamp"></span>
