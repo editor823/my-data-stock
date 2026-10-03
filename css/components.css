@@ -2323,7 +2323,7 @@
   background: rgba(0, 0, 0, 0.25);
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  padding: 10px 12px;
+  padding: 13px 15px;
 }
 
 .kc-cell-label {
@@ -4986,7 +4986,7 @@ p, li {
   }
   .yt-briefing-summary {
     font-size: 0.82rem;
-    padding: 10px 12px;
+    padding: 13px 15px;
   }
 }
 
@@ -5050,11 +5050,11 @@ p, li {
 }
 
 .news-col-body {
-  padding: 10px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-height: 640px;
+  max-height: 720px;
   overflow-y: auto;
   background: #ffffff;
 }
@@ -5077,7 +5077,7 @@ p, li {
   background: #2a201c;
   border: 1px solid #d4a373;
   border-radius: 9px;
-  padding: 10px 12px;
+  padding: 13px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -5289,7 +5289,7 @@ p, li {
   background: rgba(245, 158, 11, 0.08);
   border-left: 3px solid #f59e0b;
   border-radius: 6px;
-  padding: 10px 12px;
+  padding: 13px 15px;
   color: #fde68a;
   font-size: 0.85rem;
   line-height: 1.6;
@@ -5299,7 +5299,7 @@ p, li {
   background: rgba(99, 102, 241, 0.08);
   border-left: 3px solid #6366f1;
   border-radius: 6px;
-  padding: 10px 12px;
+  padding: 13px 15px;
   color: #c7d2fe;
   font-size: 0.82rem;
   line-height: 1.5;
@@ -5315,7 +5315,7 @@ p, li {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 8px;
-  padding: 10px 12px;
+  padding: 13px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;

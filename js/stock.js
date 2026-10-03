@@ -2154,10 +2154,10 @@ window.renderDetectiveCard = function(theme, period = 'all') {
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
         <!-- 1) 재료의 내용 & 핵심 스토리 -->
         <div style="background:#352924; border:1.5px solid #d4a373; border-radius:10px; padding:14px 16px; border-left:4px solid #d4a373; box-shadow:none;">
-          <div style="font-size:0.83rem; font-weight:800; color:#0369a1; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+          <div style="font-size:0.92rem; font-weight:800; color:#0369a1; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
             <span style="background:#2a201c; color:#d4a373; border:1px solid #d4a373; padding:2px 7px; border-radius:4px; font-weight:800;">1) 재료의 내용 & 핵심 스토리</span>
           </div>
-          <div style="font-size:0.86rem; color:#1e293b; font-weight:600; line-height:1.5; word-break: break-all;">
+          <div style="font-size:0.96rem; color:#f5ebe0; font-weight:600; line-height:1.5; word-break: break-all;">
             ${escapeHtml((() => {
               if (chk.material && chk.material.length > 5 && !chk.material.includes('메이저 거래대금 쏠림 분출')) {
                 return chk.material;
@@ -2177,10 +2177,10 @@ window.renderDetectiveCard = function(theme, period = 'all') {
         <!-- 2) 대장주 & 3) 관련성 -->
         <div style="background:#352924; border:1.5px solid #d4a373; border-radius:10px; padding:14px 16px; border-left:4px solid #d4a373; box-shadow:none;">
           <div>
-            <div style="font-size:0.83rem; font-weight:800; color:#d4a373; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+            <div style="font-size:0.92rem; font-weight:800; color:#d4a373; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
               <span style="background:#2a201c; color:#d4a373; border:1px solid #d4a373; padding:2px 7px; border-radius:4px; font-weight:800;">2) 대장주 & 3) 관련성</span>
             </div>
-            <div style="font-size:0.86rem; color:#1e293b; line-height:1.45;">
+            <div style="font-size:0.96rem; color:#f5ebe0; line-height:1.45;">
               <span style="color:#d4a373; font-weight:900;">👑 ${leaders.lead || '-'}</span> 
               ${leaders.sub ? `<span style="color:#64748b; font-size:0.8rem; font-weight:600;">(부대장: ${leaders.sub})</span>` : ''}
             </div>
@@ -2192,19 +2192,19 @@ window.renderDetectiveCard = function(theme, period = 'all') {
 
         <!-- 3) 재료와 종목의 연관성 (사업 스토리 팩트 매핑) -->
         <div style="background:#352924; border:1.5px solid #d4a373; border-radius:10px; padding:14px 16px; border-left:4px solid #d4a373; box-shadow:none;">
-          <div style="font-size:0.83rem; font-weight:800; color:#b45309; margin-bottom:6px; display: flex; align-items: center; justify-content: space-between;">
+          <div style="font-size:0.92rem; font-weight:800; color:#b45309; margin-bottom:6px; display: flex; align-items: center; justify-content: space-between;">
             <span style="background:#2a201c; color:#d4a373; border:1px solid #d4a373; padding:2px 7px; border-radius:4px; font-weight:800;">3) 재료와 종목의 연관성</span>
             <span style="font-size: 0.68rem; background: #2a201c; color: #d4a373; border: 1px solid #d4a373; padding: 1px 6px; border-radius: 4px; font-weight: 800;">밸류체인 직결</span>
           </div>
-          <div style="font-size:0.85rem; color:#1e293b; line-height:1.5;">${chk.correlation || '-'}</div>
+          <div style="font-size:0.95rem; color:#f5ebe0; line-height:1.5;">${chk.correlation || '-'}</div>
         </div>
 
         <!-- 4) 앞으로의 기대감 & 5) 유통기한 -->
         <div style="background:#352924; border:1.5px solid #d4a373; border-radius:10px; padding:14px 16px; border-left:4px solid #d4a373; box-shadow:none;">
-          <div style="font-size:0.83rem; font-weight:800; color:#047857; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+          <div style="font-size:0.92rem; font-weight:800; color:#047857; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
             <span style="background:#2a201c; color:#d4a373; border:1px solid #d4a373; padding:2px 7px; border-radius:4px; font-weight:800;">4) 앞으로의 기대감 & 5) 유통기한</span>
           </div>
-          <div style="font-size:0.85rem; color:#1e293b; line-height:1.5;">${chk.future_expectation || '-'}</div>
+          <div style="font-size:0.95rem; color:#f5ebe0; line-height:1.5;">${chk.future_expectation || '-'}</div>
           
           <div style="margin-top: 8px; padding: 8px 10px; background: #2a201c; border: 1px solid #4a3b34; border-radius: 6px;">
             <div style="font-size:0.82rem; color:#065f46; font-weight:800; display: flex; align-items: center; gap: 4px;">
@@ -2220,17 +2220,17 @@ window.renderDetectiveCard = function(theme, period = 'all') {
 
         <!-- 6) 국면 (차트 위치 & 기준봉 눌림률 타점) -->
         <div style="background:#352924; border:1.5px solid #d4a373; border-radius:10px; padding:14px 16px; border-left:4px solid #d4a373; box-shadow:none;">
-          <div style="font-size:0.83rem; font-weight:800; color:#be185d; margin-bottom:6px; display: flex; align-items: center; justify-content: space-between;">
+          <div style="font-size:0.92rem; font-weight:800; color:#be185d; margin-bottom:6px; display: flex; align-items: center; justify-content: space-between;">
             <span style="background:#2a201c; color:#d4a373; border:1px solid #d4a373; padding:2px 7px; border-radius:4px; font-weight:800;">6) 국면 (차트 위치 & 타점)</span>
             <span style="font-size: 0.68rem; background: #2a201c; color: #d4a373; border: 1px solid #d4a373; padding: 1px 6px; border-radius: 4px; font-weight: 800;">타점 정밀 판별</span>
           </div>
-          <div style="font-size:0.85rem; color:#1e293b; line-height:1.5;">${chk.chart_phase || '-'}</div>
+          <div style="font-size:0.95rem; color:#f5ebe0; line-height:1.5;">${chk.chart_phase || '-'}</div>
           ${techBadgesHtml}
         </div>
 
         <!-- 7) 주가 상승 / 하락 조건 -->
         <div style="background:#352924; border:1.5px solid #d4a373; border-radius:10px; padding:14px 16px; border-left:4px solid #d4a373; box-shadow:none;">
-          <div style="font-size:0.83rem; font-weight:800; color:#b91c1c; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+          <div style="font-size:0.92rem; font-weight:800; color:#b91c1c; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
             <span style="background:#2a201c; color:#d4a373; border:1px solid #d4a373; padding:2px 7px; border-radius:4px; font-weight:800;">7) 주가 상승 트리거 vs 하락 시나리오</span>
           </div>
           <div style="font-size:0.83rem; color:#15803d; line-height:1.45; font-weight:600; margin-bottom:4px;"><b>▲ 상승 조건:</b> ${conditions.bullish || '-'}</div>
@@ -2455,7 +2455,7 @@ window.renderDetectiveCard = function(theme, period = 'all') {
         return `
           <div style="display:flex; align-items:center; justify-content:space-between; background:#2a201c; border:1.5px solid #4a3b34; border-radius:10px; padding:14px 18px; margin-bottom:10px; gap:14px; transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
             <div style="min-width:92px; text-align:center;">
-              <div style="font-size:0.84rem; font-weight:700; color:${dateColor};">${tl.date || ''}</div>
+              <div style="font-size: 1.02rem; font-weight: 700; color:${dateColor};">${tl.date || ''}</div>
               <div style="font-size:0.7rem; color:#94a3b8; margin-top:2px;">${tl.stage || (isReport ? '증권사 리서치' : (isDart ? '공식 공시' : '전개'))}</div>
             </div>
             <div style="flex:1; min-width:0;">
@@ -6455,7 +6455,7 @@ window.refreshThemePortfolioStreaming = async function() {
             </a>
 
             ${itemDesc ? `
-              <div style="font-size: 0.74rem; color: #475569; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; word-break: break-word;">
+              <div style="font-size: 0.92rem; color: #d7ccc8; line-height: 1.65; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; word-break: break-word;">
                 ${escapeHtml(itemDesc)}
               </div>
             ` : ''}
@@ -8252,19 +8252,19 @@ function renderDomesticNewsTimeline(filterCategory = 'all') {
       return `
         <div class="news-item-compact-card">
           <div>
-            <div style="font-size: 0.84rem; font-weight: 700; color: #0f172a; line-height: 1.42; margin-bottom: 5px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;" title="${escapeHtml(item.title)}">
+            <div style="font-size: 1.02rem; font-weight: 700; color: #0f172a; line-height: 1.42; margin-bottom: 5px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;" title="${escapeHtml(item.title)}">
               ${symbolPrefix}${escapeHtml(item.title)}
             </div>
-            <div style="font-size: 0.74rem; color: #475569; line-height: 1.4; margin-bottom: 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+            <div style="font-size: 0.92rem; color: #d7ccc8; line-height: 1.65; margin-bottom: 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
               ${escapeHtml(item.summary || '')}
             </div>
           </div>
 
-          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 6px; font-size: 0.72rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 8px; font-size: 0.82rem;">
             <div style="color: #64748b; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 140px;">
               <span style="color: #475569; font-weight: 700;">${escapeHtml(mediaDisplay)}</span> · ${escapeHtml(timeDisplay)}
             </div>
-            <a href="${directUrl}" target="_blank" rel="noopener noreferrer" style="background: #eff6ff; color: #0284c7; border: 1px solid #bfdbfe; padding: 3px 8px; border-radius: 5px; font-size: 0.72rem; text-decoration: none; font-weight: 800; white-space: nowrap; transition: all 0.15s ease;">
+            <a href="${directUrl}" target="_blank" rel="noopener noreferrer" style="background: #eff6ff; color: #0284c7; border: 1px solid #bfdbfe; padding: 4px 10px; border-radius: 6px; font-size: 0.82rem; text-decoration: none; font-weight: 800; white-space: nowrap; transition: all 0.15s ease;">
               기사보기 ↗
             </a>
           </div>

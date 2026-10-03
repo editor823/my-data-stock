@@ -41,6 +41,10 @@
 /* ==========================================================================
    1. 전체 페이지 배경 & 상단 GNB
    ========================================================================== */
+html {
+  font-size: 18px !important; /* 기본 16px -> 18px (약 112.5% 시원하게 상향) */
+}
+
 html, body {
   background-color: #1a1412 !important;
   color: #d7ccc8 !important;
@@ -948,4 +952,106 @@ span[id^="news-col-count-"],
   background: #3e312b !important;
   border: 1px solid #d4a373 !important;
   color: #f5ebe0 !important;
+}
+
+/* ==========================================================================
+   [전체 폰트 크기 및 가독성 일괄 상향 룰 (1~2단계 쾌적한 확대)]
+   ========================================================================== */
+
+/* 1. 뉴스 피드 및 리스트 카드 가독성 상향 */
+.news-item-compact-card {
+  padding: 13px 15px !important;
+  gap: 8px !important;
+}
+
+/* 기사 제목: 16.5px (text-base ~ text-lg), semibold/bold */
+.news-item-compact-card div[title],
+.news-item-compact-card [style*="color: #0f172a"],
+.news-item-compact-card [style*="color:#0f172a"],
+.news-item-compact-card strong {
+  font-size: 16.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.48 !important;
+}
+
+/* 기사 본문 요약: 14.5px, 행간 1.65 (답답하지 않은 여유로운 리딩) */
+.news-item-compact-card [style*="color: #475569"],
+.news-item-compact-card [style*="color:#475569"],
+.news-item-compact-card div {
+  font-size: 14.5px !important;
+  line-height: 1.65 !important;
+}
+
+/* 신문사 / 날짜 / 시간 메타 정보: 최소 13px 이상 */
+.news-item-compact-card [style*="color: #64748b"],
+.news-item-compact-card [style*="color:#64748b"],
+.news-item-compact-card span {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+
+/* 뉴스 카드 '기사보기 ↗' 링크 버튼 */
+.news-item-compact-card a,
+.news-item-compact-card a[href*="http"] {
+  font-size: 13px !important;
+  padding: 5px 12px !important;
+  font-weight: 700 !important;
+}
+
+/* 2. 상단 탭 메뉴, 카테고리 헤더, 뱃지 폰트 상향 */
+.stock-sub-tab {
+  font-size: 15.5px !important;
+  padding: 10px 18px !important;
+  font-weight: 700 !important;
+}
+
+.news-col-header span,
+.news-col-title-wrap span {
+  font-size: 16px !important;
+  font-weight: 800 !important;
+}
+
+/* 뱃지 / 태그 내 텍스트: 최소 13px 이상 */
+span[id^="news-col-count-"],
+.news-col-header-badge,
+.timeline-lifecycle-badge,
+#tab-stock span.badge,
+#tab-stock .badge {
+  font-size: 13px !important;
+  padding: 3px 8px !important;
+}
+
+/* 일반 칩 및 액션 버튼 글자 상향 */
+#tab-stock button,
+.imggen-style-chip,
+.kc-header-btn,
+.btn-action {
+  font-size: 14.5px !important;
+  padding: 8px 16px !important;
+}
+
+/* 3. 체크리스트, 주도 테마, 타임라인, 캘린더 피드 본문 폰트 상향 */
+#past-pullback-themes-container p,
+#past-pullback-themes-container span,
+#leading-dual-radar-container div,
+#leading-dual-radar-container p,
+#stock-calendar-container div,
+#stock-calendar-container p,
+.kc-header-box p {
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+}
+
+/* 타임라인 뉴스 기사 제목 링크: 16.5px */
+#timeline-feed-container a,
+.timeline-item a {
+  font-size: 16.5px !important;
+  line-height: 1.5 !important;
+}
+
+/* 4. 여백 및 레이아웃 보정 */
+.news-col-body {
+  max-height: 720px !important;
+  gap: 10px !important;
+  padding: 12px !important;
 }
