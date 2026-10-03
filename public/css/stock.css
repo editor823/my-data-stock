@@ -262,14 +262,16 @@ html, body {
   margin-top: 22px !important;
   border-top: 1px dashed #4a3b34 !important;
   padding-top: 16px !important;
+  overflow: visible !important;
+  width: 100% !important;
 }
 
 .stock-subtabs-grid {
   display: flex !important;
-  gap: 8px !important;
-  overflow-x: auto !important;
+  flex-wrap: wrap !important; /* 끊기거나 잘림 없이 자연스럽게 모든 탭 표시 */
+  gap: 10px 8px !important;
   padding: 4px 0 !important;
-  scrollbar-width: none !important;
+  overflow: visible !important;
 }
 
 .stock-sub-tab {
@@ -1054,4 +1056,32 @@ span[id^="news-col-count-"],
   max-height: 720px !important;
   gap: 10px !important;
   padding: 12px !important;
+}
+
+/* ==========================================================================
+   [상단 서브탭 0~6번 전체 잘림 방지 및 줄바꿈 확정]
+   ========================================================================== */
+.stock-subtabs-scroll-wrap {
+  overflow: visible !important;
+  width: 100% !important;
+}
+
+.stock-subtabs-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px 8px !important;
+  overflow: visible !important;
+}
+
+.stock-sub-tab {
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+  font-size: 14.5px !important;
+  padding: 8px 16px !important;
+  border: 1.5px solid #4a3b34 !important;
+}
+
+.stock-sub-tab.active {
+  border-color: #d4a373 !important;
+  box-shadow: 0 0 12px rgba(212, 163, 115, 0.25) !important;
 }
