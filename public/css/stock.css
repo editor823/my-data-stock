@@ -1,16 +1,13 @@
 /* ==========================================================================
-   ORYZO AI — Darkroom Product Editorial Design System
+   ORYZO AI — High-Contrast Darkroom Editorial Design System
    Applied to Stock Intelligence Center (css/stock.css)
    
-   [Design Philosophy]
-   - Darkroom product editorial: warm darkness with cream typography.
-   - Canvas: Walnut Shadow (#100904) - warm near-black void.
-   - Elevated Solid: Bark Brown (#382416) - the single chromatic step above canvas.
-   - Hairlines & Dividers: Cork Border (#40372e) - dashed and solid subtle borders.
-   - Typography: Warm Cream (#ffedd7) - light text on dark surfaces, never pure white.
-   - Mid-tone: Driftwood (#6c5f51) - secondary structural elements and muted copy.
-   - Rarity Accent: Ember Accent (#dc5000) - orange text accent for credit & key tags.
-   - Geometry: 12px Cards, 36px Pill Buttons, 22.5px Outlined Buttons, 0px Underlines.
+   [Text Visibility Enhancement]
+   - All text contrast enhanced for 100% crystal-clear readability.
+   - Headings & Primary Titles: #ffffff / #ffedd7 (Pure White & Bright Warm Cream)
+   - Body copy, Reasons, Explanations: #f3e8dc (High-contrast Soft Cream, ~90% luminance)
+   - Secondary labels, Dates, Metadata: #d8c7b5 (Clear Warm Slate, ~78% luminance)
+   - Accent Tags & Emphasis: #ff6b1a / #dc5000 (Vivid Ember Orange)
    ========================================================================== */
 
 :root {
@@ -18,21 +15,14 @@
   --color-warm-cream: #ffedd7;
   --color-walnut-shadow: #100904;
   --color-bark-brown: #382416;
-  --color-cork-border: #40372e;
-  --color-driftwood: #6c5f51;
-  --color-ember-accent: #dc5000;
+  --color-cork-border: #4a3d31;
+  --color-driftwood: #d8c7b5;       /* 대폭 밝게 보정 (어두운 회색 -> 선명한 크림 그레이) */
+  --color-ember-accent: #ff6b1a;    /* 더 눈에 띄는 선명한 엠버 오렌지 */
   --color-pure-black: #000000;
 
   /* Typography */
   --font-halyard-display-variable: 'halyard-display-variable', 'Inter', -apple-system, BlinkMacSystemFont, "Pretendard Variable", Pretendard, sans-serif;
   --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
-
-  /* Typography Scale */
-  --text-subheading: 18px;
-  --text-heading-sm: 24px;
-  --text-body: 29px;
-  --text-heading: 41px;
-  --text-display: 51px;
 
   /* Named Radii */
   --radius-cards: 12px;
@@ -40,26 +30,20 @@
   --radius-full-round: 9999px;
   --radius-buttons-pill: 36px;
   --radius-buttons-outlined: 22.5px;
-
-  /* Surfaces */
-  --surface-walnut-shadow: #100904;
-  --surface-bark-brown: #382416;
-  --surface-cork-border: #40372e;
-  --surface-warm-cream: #ffedd7;
 }
 
 /* 텍스트 드래그 선택 영역 */
 ::selection {
-  background: rgba(220, 80, 0, 0.4);
-  color: #ffedd7;
+  background: rgba(255, 107, 26, 0.45);
+  color: #ffffff;
 }
 
 /* ==========================================================================
-   1. 글로벌 바디 & 최상단 GNB (Walnut Shadow & Fixed Top Navigation)
+   1. 글로벌 바디 & 최상단 GNB
    ========================================================================== */
 html, body {
   background-color: #100904 !important;
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
   font-family: var(--font-halyard-display-variable) !important;
   letter-spacing: 0px !important;
   -webkit-font-smoothing: antialiased;
@@ -70,10 +54,10 @@ html, body {
   position: sticky !important;
   top: 0 !important;
   z-index: 1000 !important;
-  background: rgba(16, 9, 4, 0.88) !important;
+  background: rgba(16, 9, 4, 0.92) !important;
   backdrop-filter: blur(24px) saturate(160%) !important;
   -webkit-backdrop-filter: blur(24px) saturate(160%) !important;
-  border-bottom: 1px solid #40372e !important;
+  border-bottom: 1px solid #4a3d31 !important;
   box-shadow: none !important;
 }
 
@@ -88,11 +72,11 @@ html, body {
 }
 
 .stock-brand {
-  color: #ffedd7 !important;
+  color: #ffffff !important;
   font-family: var(--font-halyard-display-variable) !important;
-  font-weight: 500 !important;
-  font-size: 1.05rem !important;
-  letter-spacing: 0.5px !important;
+  font-weight: 600 !important;
+  font-size: 1.08rem !important;
+  letter-spacing: 0.3px !important;
   display: flex !important;
   align-items: center !important;
   gap: 8px !important;
@@ -100,61 +84,57 @@ html, body {
 }
 
 .stock-brand-badge {
-  background: rgba(220, 80, 0, 0.15) !important;
-  color: #dc5000 !important;
-  border: 1px solid rgba(220, 80, 0, 0.35) !important;
-  font-size: 0.68rem !important;
-  font-weight: 500 !important;
+  background: rgba(255, 107, 26, 0.2) !important;
+  color: #ff6b1a !important;
+  border: 1px solid rgba(255, 107, 26, 0.5) !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
   padding: 2px 8px !important;
   border-radius: 9999px !important;
   letter-spacing: 0.5px !important;
 }
 
-/* 검수봇 작동 버튼 (ORYZO Outlined Ghost Button) */
 #btn-run-inspector-bot {
-  background: transparent !important;
-  color: #ffedd7 !important;
+  background: rgba(255, 237, 215, 0.08) !important;
+  color: #ffffff !important;
   border: 1px solid #ffedd7 !important;
   border-radius: 22.5px !important;
-  font-size: 0.8rem !important;
-  font-weight: 500 !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
   padding: 6px 16px !important;
-  box-shadow: none !important;
+  cursor: pointer !important;
   transition: all 0.2s ease !important;
-  letter-spacing: 0.3px !important;
 }
 
 #btn-run-inspector-bot:hover {
-  background: rgba(255, 237, 215, 0.1) !important;
-  border-color: #ffedd7 !important;
+  background: rgba(255, 237, 215, 0.18) !important;
   transform: translateY(-1px) !important;
 }
 
-/* 블로그 허브 바로가기 (ORYZO Pill Button - Bark Brown) */
 .nav-external-link {
   background: #382416 !important;
-  color: #ffedd7 !important;
-  border: 1px solid #40372e !important;
+  color: #ffffff !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 36px !important;
-  font-size: 0.8rem !important;
-  font-weight: 500 !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
   padding: 6px 18px !important;
   text-decoration: none !important;
   transition: all 0.2s ease !important;
 }
 
 .nav-external-link:hover {
-  background: #472d1c !important;
+  background: #4e301c !important;
   border-color: #ffedd7 !important;
-  color: #ffedd7 !important;
+  color: #ffffff !important;
   transform: translateY(-1px) !important;
 }
 
 /* ==========================================================================
-   2. 메인 헤더 박스 (Walnut/Bark Tone & 12px Card Radius)
+   2. 메인 헤더 박스 (글자 선명도 극대화)
    ========================================================================== */
 #tab-stock {
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
   display: block !important;
   opacity: 1 !important;
 }
@@ -167,7 +147,7 @@ html, body {
 
 #tab-stock .kc-header-box {
   background: #180f08 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
   padding: 28px 32px 24px !important;
   box-shadow: none !important;
@@ -175,11 +155,11 @@ html, body {
 }
 
 .kc-badge-daily {
-  background: rgba(220, 80, 0, 0.08) !important;
-  border: 1px dashed #40372e !important;
-  color: #dc5000 !important;
-  font-size: 0.72rem !important;
-  font-weight: 500 !important;
+  background: rgba(255, 107, 26, 0.12) !important;
+  border: 1px solid rgba(255, 107, 26, 0.4) !important;
+  color: #ff6b1a !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
   letter-spacing: 0.5px !important;
   padding: 4px 12px !important;
   border-radius: 9999px !important;
@@ -188,45 +168,45 @@ html, body {
 }
 
 #tab-stock .kc-main-title {
-  color: #ffedd7 !important;
+  color: #ffffff !important;
   font-family: var(--font-halyard-display-variable) !important;
-  font-size: 1.95rem !important;
-  font-weight: 500 !important;
-  letter-spacing: 0px !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.3px !important;
   margin: 4px 0 8px 0 !important;
 }
 
 #tab-stock .kc-header-box p {
-  color: #6c5f51 !important;
-  font-size: 0.88rem !important;
-  line-height: 1.5 !important;
+  color: #e2d5c5 !important; /* 선명하고 밝은 크림 설명문 */
+  font-size: 0.92rem !important;
+  line-height: 1.55 !important;
 }
 
-/* API 설정 버튼 (Outlined Ghost) */
 .kc-header-btn {
-  background: transparent !important;
-  border: 1px solid #ffedd7 !important;
-  color: #ffedd7 !important;
+  background: rgba(255, 237, 215, 0.06) !important;
+  border: 1px solid #d8c7b5 !important;
+  color: #ffffff !important;
   border-radius: 22.5px !important;
-  padding: 6px 14px !important;
-  font-size: 0.8rem !important;
-  font-weight: 500 !important;
+  padding: 7px 16px !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
   cursor: pointer !important;
   transition: all 0.2s ease !important;
 }
 
 .kc-header-btn:hover {
-  background: rgba(255, 237, 215, 0.08) !important;
+  background: rgba(255, 237, 215, 0.15) !important;
+  border-color: #ffffff !important;
 }
 
 #stock-api-status-badge {
-  color: #dc5000 !important; /* Ember Accent */
-  font-size: 0.8rem !important;
-  font-weight: 500 !important;
+  color: #ffaa66 !important; /* 밝고 따뜻한 오렌지 골드 */
+  font-size: 0.84rem !important;
+  font-weight: 600 !important;
 }
 
 /* ==========================================================================
-   3. 시장 지표 전광판 (Walnut Shadow Tiles #100904 & 12px Radius)
+   3. 시장 지표 전광판 (코스피 / 코스닥 / 환율)
    ========================================================================== */
 .stock-market-indicators {
   display: flex !important;
@@ -235,7 +215,7 @@ html, body {
 
 .stock-indicator-card {
   background: #100904 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
   padding: 12px 18px !important;
   text-align: center !important;
@@ -245,51 +225,51 @@ html, body {
 }
 
 .stock-indicator-card:hover {
-  border-color: #6c5f51 !important;
+  border-color: #d8c7b5 !important;
 }
 
 .stock-indicator-title {
-  font-size: 0.72rem !important;
-  color: #6c5f51 !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.5px !important;
+  font-size: 0.74rem !important;
+  color: #d8c7b5 !important; /* 선명한 라벨 */
+  font-weight: 600 !important;
+  letter-spacing: 0.3px !important;
   margin-bottom: 2px !important;
 }
 
 .stock-indicator-val {
-  font-size: 1.25rem !important;
-  font-weight: 500 !important;
-  color: #ffedd7 !important;
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important; /* 완전 선명한 화이트 */
   letter-spacing: 0px !important;
   margin: 2px 0 !important;
 }
 
 .stock-indicator-diff {
-  font-size: 0.95rem !important;
-  font-weight: 500 !important;
+  font-size: 0.98rem !important;
+  font-weight: 700 !important;
   letter-spacing: 0px !important;
   margin-top: 2px !important;
   display: block !important;
 }
 
 .stock-indicator-diff.is-up {
-  color: #dc5000 !important; /* Ember Orange */
+  color: #ff5252 !important; /* 밝고 선명한 레드 */
 }
 
 .stock-indicator-diff.is-down {
-  color: #c4976c !important; /* Warm Ochre/Brown */
+  color: #4da6ff !important; /* 밝고 선명한 스카이블루 */
 }
 
 .stock-indicator-diff.is-zero {
-  color: #6c5f51 !important;
+  color: #d8c7b5 !important;
 }
 
 /* ==========================================================================
-   4. 상단 서브 탭 내비게이션 (Pill Button & Outlined Buttons)
+   4. 상단 서브 탭 내비게이션 (글자가 아주 또렷하게 잘 보이도록 보정)
    ========================================================================== */
 .stock-subtabs-scroll-wrap {
   margin-top: 22px !important;
-  border-top: 1px dashed #40372e !important;
+  border-top: 1px dashed #4a3d31 !important;
   padding-top: 16px !important;
 }
 
@@ -305,14 +285,15 @@ html, body {
   display: none !important;
 }
 
+/* 비활성 탭 글자색을 어두운 색(#6c5f51)에서 아주 잘 보이는 크림 화이트로 전면 상향! */
 .stock-sub-tab {
-  background: transparent !important;
-  border: 1px solid #40372e !important;
-  color: #6c5f51 !important;
+  background: rgba(255, 237, 215, 0.05) !important;
+  border: 1px solid #4a3d31 !important;
+  color: #f3e8dc !important; /* 이제 0~6번 메뉴 글씨가 선명하게 다 보입니다! */
   font-family: var(--font-halyard-display-variable) !important;
-  font-size: 13px !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.3px !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.2px !important;
   padding: 8px 16px !important;
   border-radius: 22.5px !important;
   cursor: pointer !important;
@@ -325,23 +306,23 @@ html, body {
 }
 
 .stock-sub-tab:hover {
-  background: rgba(255, 237, 215, 0.05) !important;
-  color: #ffedd7 !important;
-  border-color: #6c5f51 !important;
+  background: rgba(255, 237, 215, 0.12) !important;
+  color: #ffffff !important;
+  border-color: #ffedd7 !important;
   transform: none !important;
 }
 
 .stock-sub-tab.active {
   background: #382416 !important; /* Bark Brown Filled */
-  color: #ffedd7 !important;
+  color: #ffffff !important;
   border-color: #ffedd7 !important;
   border-radius: 36px !important;
-  font-weight: 500 !important;
-  box-shadow: none !important;
+  font-weight: 700 !important;
+  box-shadow: 0 0 14px rgba(255, 237, 215, 0.15) !important;
 }
 
 /* ==========================================================================
-   5. 카드 & 패널 공통 시스템 (Walnut/Bark Tones & 12px Radius)
+   5. 카드 & 패널 공통 고대비 텍스트 시스템
    ========================================================================== */
 #tab-stock .kc-box-white-card,
 #tab-stock .stock-panel-content > div,
@@ -358,36 +339,42 @@ html, body {
 .kc-white-report-container,
 .stock-technique-card {
   background: #180f08 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
   box-shadow: none !important;
 }
 
-/* 내부 중첩 타일 (Walnut Shadow #100904 & 12px Radius) */
 #tab-stock div[style*="background: rgba(255, 255, 255, 0.05)"],
 #tab-stock div[style*="background: rgba(0, 0, 0"],
 #tab-stock div[style*="background:rgba(0,0,0"],
 #tab-stock div[style*="background: rgba(15, 23, 42"],
 #tab-stock div[style*="background:rgba(15,23,42"] {
   background: #100904 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
 }
 
-/* 헤더 및 타이틀 통일 */
+/* 모든 헤딩 및 서브타이틀 */
 #tab-stock h1, #tab-stock h2, #tab-stock h3, #tab-stock h4, #tab-stock h5, #tab-stock h6 {
-  color: #ffedd7 !important;
+  color: #ffffff !important;
   font-family: var(--font-halyard-display-variable) !important;
-  letter-spacing: 0px !important;
-  font-weight: 500 !important;
+  letter-spacing: -0.2px !important;
+  font-weight: 700 !important;
 }
 
-#tab-stock p, #tab-stock span, #tab-stock label {
-  color: inherit;
+/* 본문, 문단, 스팬, 라벨 모두 잘 보이도록 고대비 컬러 일괄 지정 */
+#tab-stock p, 
+#tab-stock span, 
+#tab-stock label, 
+#tab-stock li,
+#tab-stock td,
+#tab-stock th {
+  color: #f3e8dc !important;
 }
 
+/* 이전에 너무 어두웠던 회색 클래스들을 선명하고 밝은 웜 크림(#e2d5c5)으로 교정 */
 #tab-stock .text-muted,
 #tab-stock [style*="color: #64748b"],
 #tab-stock [style*="color:#64748b"],
@@ -397,21 +384,24 @@ html, body {
 #tab-stock [style*="color:#94a3b8"],
 #tab-stock [style*="color: #86868b"],
 #tab-stock [style*="color:#86868b"],
+#tab-stock [style*="color: #6c5f51"],
+#tab-stock [style*="color:#6c5f51"],
 #tab-stock [style*="color: #1e293b"],
 #tab-stock [style*="color:#1e293b"],
 #tab-stock [style*="color: #0f172a"],
 #tab-stock [style*="color:#0f172a"] {
-  color: #6c5f51 !important; /* Driftwood */
+  color: #e2d5c5 !important; /* 이제 묻히지 않고 아주 뚜렷하게 보입니다! */
 }
 
 #tab-stock strong,
 #tab-stock b,
 #tab-stock .text-strong {
-  color: #ffedd7 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
 }
 
 /* ==========================================================================
-   6. [전체 탭 동적 렌더링 컨테이너 스타일링]
+   6. [전체 탭 동적 렌더링 컨테이너 전담 스타일링]
    ========================================================================== */
 #stock-material-timeline-list > div,
 #theme-timeline-container > div,
@@ -441,9 +431,9 @@ html, body {
 .news-col-box,
 .news-item-card {
   background: #100904 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
   transition: all 0.2s ease !important;
 }
 
@@ -456,16 +446,16 @@ html, body {
 .news-col-box:hover,
 .news-item-card:hover {
   background: #180f08 !important;
-  border-color: #6c5f51 !important;
+  border-color: #d8c7b5 !important;
   transform: translateY(-1px) !important;
 }
 
 /* ==========================================================================
-   7. [0번 탭] 실시간 국내 주식 뉴스 센터
+   7. [0번 탭] 실시간 국내 주식 뉴스 센터 (세부 텍스트 시인성 확보)
    ========================================================================== */
 #stock-panel-news > div:first-child {
   background: #180f08 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
   padding: 20px 24px !important;
   box-shadow: none !important;
@@ -473,11 +463,11 @@ html, body {
 }
 
 #domestic-news-filter-chips .imggen-style-chip {
-  background: transparent !important;
-  border: 1px solid #40372e !important;
-  color: #6c5f51 !important;
+  background: rgba(255, 237, 215, 0.06) !important;
+  border: 1px solid #4a3d31 !important;
+  color: #f3e8dc !important;
   font-size: 13px !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   padding: 6px 14px !important;
   border-radius: 22.5px !important;
   cursor: pointer !important;
@@ -485,23 +475,23 @@ html, body {
 }
 
 #domestic-news-filter-chips .imggen-style-chip:hover {
-  background: rgba(255, 237, 215, 0.05) !important;
-  color: #ffedd7 !important;
-  border-color: #6c5f51 !important;
+  background: rgba(255, 237, 215, 0.14) !important;
+  color: #ffffff !important;
+  border-color: #ffedd7 !important;
 }
 
 #domestic-news-filter-chips .imggen-style-chip.active {
   background: #382416 !important;
-  color: #ffedd7 !important;
+  color: #ffffff !important;
   border-color: #ffedd7 !important;
   border-radius: 36px !important;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
 }
 
 /* Q&A 자연어 질의응답 바 */
 #stock-detective-qa-bar {
   background: #180f08 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
   box-shadow: none !important;
   padding: 22px 26px !important;
@@ -510,139 +500,232 @@ html, body {
 
 #stock-qa-input {
   background: #100904 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-bottom: 2px solid #ffedd7 !important;
-  color: #ffedd7 !important;
+  color: #ffffff !important;
   border-radius: 8px !important;
   padding: 12px 20px !important;
-  font-size: 14px !important;
+  font-size: 14.5px !important;
   transition: all 0.2s ease !important;
 }
 
 #stock-qa-input::placeholder {
-  color: #6c5f51 !important;
+  color: #b5a492 !important; /* 흐리지 않은 플레이스홀더 */
 }
 
 #stock-qa-input:focus {
   border-color: #ffedd7 !important;
   outline: none !important;
-  background: #150c05 !important;
+  background: #160d06 !important;
 }
 
 #stock-detective-qa-bar button[onclick*="handleStockDetectiveQA"],
 #stock-detective-qa-bar .btn-primary,
 #stock-detective-qa-bar button:has(svg) {
   background: #382416 !important;
-  color: #ffedd7 !important;
+  color: #ffffff !important;
   border: 1px solid #ffedd7 !important;
   border-radius: 36px !important;
   font-size: 14px !important;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
   padding: 10px 24px !important;
   transition: all 0.2s ease !important;
 }
 
 #stock-detective-qa-bar button[onclick*="handleStockDetectiveQA"]:hover {
-  background: #472d1c !important;
+  background: #4e301c !important;
   transform: translateY(-1px) !important;
 }
 
 .stock-qa-preset-chip {
-  background: transparent !important;
-  border: 1px dashed #40372e !important;
-  color: #6c5f51 !important;
+  background: rgba(255, 237, 215, 0.05) !important;
+  border: 1px dashed #4a3d31 !important;
+  color: #e2d5c5 !important;
   font-size: 12px !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   border-radius: 9999px !important;
-  padding: 4px 12px !important;
+  padding: 5px 14px !important;
   transition: all 0.2s ease !important;
 }
 
 .stock-qa-preset-chip:hover {
-  background: rgba(255, 237, 215, 0.06) !important;
-  color: #ffedd7 !important;
+  background: rgba(255, 237, 215, 0.12) !important;
+  color: #ffffff !important;
   border-color: #ffedd7 !important;
 }
 
-/* 오늘의 주도 테마 레이더 & 눌림목 */
+/* 오늘의 주도 테마 레이더 & 눌림목 공략 */
 #today-leading-theme-radar,
 #leading-theme-dual-radar-section,
 #theme-timeline-viewer-section,
 #today-research-reports-widget {
   background: #180f08 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
   box-shadow: none !important;
   margin-bottom: 24px !important;
 }
 
-#today-leading-themes-container > div,
-.today-leading-loading-box,
-#radar-market-health-bar {
-  background: #100904 !important;
-  border: 1px solid #40372e !important;
-  border-radius: 12px !important;
-  color: #ffedd7 !important;
+/* 테마 카드 제목 (광통신 & 초고속 통신장비 등) */
+#today-leading-themes-container h4,
+#today-leading-themes-container h5,
+#today-leading-themes-container > div > div:first-child {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+}
+
+/* 테마 카드 내부 대장주, 거래대금, 핵심 관련주 라벨 */
+#today-leading-themes-container span,
+#today-leading-themes-container div {
+  color: #f3e8dc !important;
+}
+
+/* 테마 카드 하단 흰색/밝은 박스 내부 텍스트 대비 확보 */
+#today-leading-themes-container [style*="background: #ffffff"],
+#today-leading-themes-container [style*="background:#ffffff"],
+#today-leading-themes-container [style*="background: #fff"],
+#today-leading-themes-container [style*="background:#fff"] {
+  background: #180f08 !important;
+  border: 1px solid #4a3d31 !important;
+}
+
+#today-leading-themes-container [style*="background: #ffffff"] *,
+#today-leading-themes-container [style*="background:#ffffff"] * {
+  color: #f3e8dc !important;
+}
+
+/* 뉴스 카드 본문 및 기사 제목 */
+.news-item-compact-card,
+.news-col-box,
+.news-item-card {
+  color: #f3e8dc !important;
 }
 
 .news-item-compact-card a,
 .news-item-card a {
-  color: #ffedd7 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
   text-decoration: none !important;
 }
 
 .news-item-compact-card a:hover,
 .news-item-card a:hover {
-  color: #dc5000 !important; /* Ember Accent */
+  color: #ff6b1a !important; /* Ember Accent */
+}
+
+/* 기사 요약 본문 */
+.news-item-compact-card p,
+.news-item-card p,
+.news-col-box p {
+  color: #e2d5c5 !important;
+  line-height: 1.5 !important;
+}
+
+/* 기사 출처 및 시간 (MBN · 4시간 전 등) */
+.news-item-compact-card span,
+.news-item-card span,
+.news-col-box span {
+  color: #c9b9a6 !important;
 }
 
 /* ==========================================================================
-   8. [1번 탭] 미국 증시 총정리 & 시황 (technique)
+   8. [1번 탭] 미국 증시 총정리 & 시황 (패널 헤더 및 섹터 브리핑 글자 선명화)
    ========================================================================== */
-#stock-panel-technique .stock-technique-card,
-#stock-panel-technique div[style*="background:"] {
-  background: #100904 !important;
-  border: 1px solid #40372e !important;
+#stock-panel-technique > div:first-child,
+#stock-panel-technique .panel-header-box {
+  background: #180f08 !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #ffedd7 !important;
+  padding: 20px 24px !important;
 }
 
+/* "us 1. 전날 미국 증시 심층 총정리 & 시황 매매기법" 헤더 텍스트 완전 선명화! */
+#stock-panel-technique h2,
 #stock-panel-technique h3, 
 #stock-panel-technique h4, 
 #stock-panel-technique h5 {
-  color: #ffedd7 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
 }
 
 #stock-panel-technique p, 
 #stock-panel-technique li {
-  color: #6c5f51 !important;
+  color: #e2d5c5 !important;
+  line-height: 1.6 !important;
+}
+
+#stock-panel-technique .stock-technique-card,
+#stock-panel-technique div[style*="background:"] {
+  background: #100904 !important;
+  border: 1px solid #4a3d31 !important;
+  border-radius: 12px !important;
+  color: #f3e8dc !important;
+}
+
+/* 강세 / 약세 업종 설명글 ("상승 사유:", "관련 종목:" 등) */
+#us-sector-briefing-container span,
+#us-sector-briefing-container div,
+#us-sector-briefing-container li {
+  color: #f3e8dc !important;
+}
+
+#us-sector-briefing-container strong,
+#us-sector-briefing-container b {
+  color: #ffffff !important;
 }
 
 /* ==========================================================================
-   9. [2번 탭] 재료 모음 - 팀장 7대 체크리스트 (compare)
+   9. [역대 주도 테마 눌림목 공략] 세부 텍스트 시인성 확보
+   ========================================================================== */
+#past-pullback-themes-container > div,
+.pullback-theme-card {
+  background: #100904 !important;
+  border: 1px solid #4a3d31 !important;
+  color: #f3e8dc !important;
+}
+
+/* "대장주:", "기준봉 대비 눌림폭:", "최초 상승 이유", "향후 반등 모멘텀" 라벨 */
+#past-pullback-themes-container strong,
+#past-pullback-themes-container b,
+.pullback-theme-card strong {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+/* 설명글 ("한화에어로스페이스, K-방산...", "한화에어로스페이스의 후속...") */
+#past-pullback-themes-container p,
+#past-pullback-themes-container span,
+.pullback-theme-card p,
+.pullback-theme-card span {
+  color: #e2d5c5 !important; /* 더 이상 어두운 색으로 묻히지 않고 아주 잘 읽힙니다! */
+}
+
+/* ==========================================================================
+   10. [2번 탭] 재료 모음 - 팀장 7대 체크리스트
    ========================================================================== */
 #stock-panel-compare table {
   border-collapse: separate !important;
   border-spacing: 0 !important;
   width: 100% !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
   overflow: hidden !important;
 }
 
 #stock-panel-compare th {
   background: #100904 !important;
-  color: #6c5f51 !important;
-  border-bottom: 1px solid #40372e !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #4a3d31 !important;
   padding: 12px 16px !important;
-  font-size: 13px !important;
-  font-weight: 500 !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
 }
 
 #stock-panel-compare td {
   background: #180f08 !important;
-  color: #ffedd7 !important;
-  border-bottom: 1px solid #291b10 !important;
+  color: #f3e8dc !important;
+  border-bottom: 1px solid #2e2015 !important;
   padding: 12px 16px !important;
   font-size: 13.5px !important;
 }
@@ -656,100 +739,112 @@ html, body {
 }
 
 /* ==========================================================================
-   10. [3번 탭] 일정 관리 & 증시 캘린더 (calendar)
+   11. [3번 탭] 일정 관리 & 증시 캘린더
    ========================================================================== */
 #stock-panel-calendar .calendar-container,
 #stock-panel-calendar div[style*="background:"] {
   background: #100904 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
 }
 
 .calendar-day-cell {
   background: #100904 !important;
-  border: 1px solid #291b10 !important;
-  color: #ffedd7 !important;
+  border: 1px solid #2e2015 !important;
+  color: #f3e8dc !important;
 }
 
 .calendar-day-cell:hover {
   background: #180f08 !important;
-  border-color: #40372e !important;
+  border-color: #d8c7b5 !important;
 }
 
 .calendar-event-badge {
-  background: rgba(220, 80, 0, 0.12) !important;
-  border: 1px solid rgba(220, 80, 0, 0.35) !important;
-  color: #dc5000 !important;
+  background: rgba(255, 107, 26, 0.15) !important;
+  border: 1px solid rgba(255, 107, 26, 0.45) !important;
+  color: #ffaa66 !important;
   border-radius: 4px !important;
   font-size: 12px !important;
+  font-weight: 600 !important;
 }
 
 /* ==========================================================================
-   11. [4번 탭] 주간·월간 복기 & 2026 캘린더 (review)
+   12. [4번 탭] 주간·월간 복기 & 2026 캘린더
    ========================================================================== */
 #stock-panel-review div[style*="background:"] {
   background: #100904 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
+}
+
+#stock-panel-review p,
+#stock-panel-review span {
+  color: #e2d5c5 !important;
 }
 
 /* ==========================================================================
-   12. [5번 탭] 종목 상세정보 - 심층분석 (deep)
+   13. [5번 탭] 종목 상세정보 - 심층분석
    ========================================================================== */
 .kc-white-report-container {
   background: #180f08 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
 }
 
 .kc-report-main-title {
-  color: #ffedd7 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
 }
 
 .kc-report-sub-meta {
-  color: #6c5f51 !important;
+  color: #d8c7b5 !important;
 }
 
 .kc-big-score-card {
   background: #100904 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #ffedd7 !important;
+  color: #ffffff !important;
 }
 
 .deep-section-block {
   background: #100904 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
 }
 
 #deep-sec-future {
   background: #100904 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
 }
 
 /* ==========================================================================
-   13. [6번 탭] 증시 유튜브 브리핑 & 모달 팝업
+   14. [6번 탭] 증시 유튜브 브리핑 & 모달 팝업
    ========================================================================== */
 #stock-panel-youtube div[style*="background:"] {
   background: #100904 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
+}
+
+#stock-panel-youtube p,
+#stock-panel-youtube span {
+  color: #e2d5c5 !important;
 }
 
 #tab8VideoModal .modal-box,
 .daily-report-modal-content,
 .inspector-bot-modal-content {
   background: #180f08 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9) !important;
 }
 
@@ -763,43 +858,43 @@ html, body {
 .daily-report-header,
 .inspector-bot-header {
   background: #100904 !important;
-  border-bottom: 1px dashed #40372e !important;
-  color: #ffedd7 !important;
+  border-bottom: 1px dashed #4a3d31 !important;
+  color: #ffffff !important;
 }
 
 .daily-report-body,
 .inspector-bot-body {
   background: #180f08 !important;
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
 }
 
 .daily-report-preview-box {
   background: #100904 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
 }
 
 .daily-report-footer,
 .inspector-bot-footer {
   background: #100904 !important;
-  border-top: 1px dashed #40372e !important;
+  border-top: 1px dashed #4a3d31 !important;
 }
 
 .inspector-item-card {
   background: #100904 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #ffedd7 !important;
+  color: #f3e8dc !important;
 }
 
 .inspector-item-card:hover {
   background: #180f08 !important;
-  border-color: #6c5f51 !important;
+  border-color: #d8c7b5 !important;
 }
 
 /* ==========================================================================
-   14. 입력 폼 & 셀렉트 박스
+   15. 입력 폼 & 셀렉트 박스
    ========================================================================== */
 input[type="text"],
 input[type="search"],
@@ -809,8 +904,8 @@ textarea,
 #theme-db-autocomplete-dropdown,
 .stock-select-box {
   background: #100904 !important;
-  border: 1px solid #40372e !important;
-  color: #ffedd7 !important;
+  border: 1px solid #4a3d31 !important;
+  color: #ffffff !important;
   border-radius: 8px !important;
   font-family: inherit !important;
   outline: none !important;
@@ -824,25 +919,25 @@ select {
 
 select option {
   background: #180f08 !important;
-  color: #ffedd7 !important;
+  color: #ffffff !important;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
   border-color: #ffedd7 !important;
-  background: #150c05 !important;
+  background: #160d06 !important;
 }
 
 #theme-db-autocomplete-dropdown {
   background: #180f08 !important;
-  border: 1px solid #40372e !important;
+  border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9) !important;
 }
 
 /* ==========================================================================
-   15. 웜 다크 슬림 스크롤바
+   16. 웜 다크 슬림 스크롤바
    ========================================================================== */
 ::-webkit-scrollbar {
   width: 8px;
@@ -854,10 +949,10 @@ textarea:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #40372e;
+  background: #4a3d31;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6c5f51;
+  background: #d8c7b5;
 }
