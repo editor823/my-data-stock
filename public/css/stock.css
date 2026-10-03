@@ -1,10 +1,10 @@
 /* ==========================================================================
-   ORYZO AI — 100% Anti-Glare High-Contrast Darkroom Design System
+   ORYZO AI — Soft Warm Tone-Down & Anti-Glare Design System
    Applied to Stock Intelligence Center (css/stock.css)
    
-   [Complete Light-Box Elimination]
-   - All glaring white & pastel background boxes/buttons/badges converted to dark.
-   - Text contrast guaranteed: 100% crisp, readable cream/white (#ffffff / #ffedd7).
+   [100% Elimination of Harsh White Boxes & High-Contrast Soft Darkening]
+   - All glaring white cards/boxes/chips/buttons toned down to soft warm walnut.
+   - Restful on the eyes while keeping all typography crystal-clear.
    ========================================================================== */
 
 :root {
@@ -36,7 +36,7 @@
 }
 
 /* ==========================================================================
-   1. 글로벌 기본 레이아웃 & 최상단 GNB
+   1. 글로벌 바디 & 최상단 GNB
    ========================================================================== */
 html, body {
   background-color: #100904 !important;
@@ -308,213 +308,243 @@ html, body {
 }
 
 /* ==========================================================================
-   5. [핵심] 눈부신 흰색/파스텔 박스를 100% 다크룸 톤으로 강제 진화!
-   모든 밝은 배경을 어둡게 치환하여 '흰 바탕에 흰 글씨' 현상을 원천 박멸합니다.
+   5. [전수 톤다운] 모든 눈 아픈 흰색 박스 & 칩 & 카드를 부드러운 다크로 전환
    ========================================================================== */
 
-/* 5-1. 모든 밝은 파스텔 배경 박스 & 흰색 박스 일괄 다크화 */
-#tab-stock div[style*="background: #ffffff"],
-#tab-stock div[style*="background:#ffffff"],
-#tab-stock div[style*="background: #fff"],
-#tab-stock div[style*="background:#fff"],
-#tab-stock div[style*="background: #f8fafc"],
-#tab-stock div[style*="background:#f8fafc"],
-#tab-stock div[style*="background: #f1f5f9"],
-#tab-stock div[style*="background:#f1f5f9"],
-#tab-stock div[style*="background: #f0f9ff"],
-#tab-stock div[style*="background:#f0f9ff"],
-#tab-stock div[style*="background: #f0fdf4"],
-#tab-stock div[style*="background:#f0fdf4"],
-#tab-stock div[style*="background: #eff6ff"],
-#tab-stock div[style*="background:#eff6ff"],
-#tab-stock div[style*="background: #fef2f2"],
-#tab-stock div[style*="background:#fef2f2"],
-#tab-stock div[style*="background: #fffbeb"],
-#tab-stock div[style*="background:#fffbeb"],
-#tab-stock div[style*="background: #fff1f2"],
-#tab-stock div[style*="background:#fff1f2"],
-#tab-stock div[style*="background: #fff5f5"],
-#tab-stock div[style*="background:#fff5f5"],
-#tab-stock div[style*="background: #ecfdf5"],
-#tab-stock div[style*="background:#ecfdf5"],
-#tab-stock div[style*="background: #e0f2fe"],
-#tab-stock div[style*="background:#e0f2fe"] {
+/* 5-1. [5번 탭 종목 상세정보] 좌측 1~5번 대형 종목 카드 (kc-card) 전면 다크화 */
+#stock-deep-list .kc-card,
+.kc-card,
+.card,
+.kc-list-col .kc-card {
   background: #180f08 !important;
-  border-color: #4a3d31 !important;
-  color: #f3e8dc !important;
-}
-
-/* 5-2. 오늘의 주도 테마 카드 내 [📌 당일 급등 이유 & 핵심 재료 팩트:] 박스 */
-#today-leading-themes-container div[style*="background: #fef2f2"],
-#today-leading-themes-container div[style*="background:#fef2f2"],
-#today-leading-themes-container [style*="border-left: 3px solid #ef4444"] {
-  background: #24140b !important;
   border: 1px solid #4a3d31 !important;
-  border-left: 4px solid #ff6b1a !important;
-  color: #ffffff !important;
+  border-radius: 12px !important;
+  color: #f3e8dc !important;
+  box-shadow: none !important;
+  transition: all 0.2s ease !important;
 }
 
-#today-leading-themes-container div[style*="background: #fef2f2"] strong,
-#today-leading-themes-container div[style*="background:#fef2f2"] strong {
+#stock-deep-list .kc-card:hover,
+.kc-card:hover {
+  background: #23160c !important;
+  border-color: #d8c7b5 !important;
+}
+
+#stock-deep-list .kc-card.active,
+.kc-card.active {
+  background: #2a180e !important;
+  border: 1.5px solid #ffaa66 !important;
+  box-shadow: 0 0 12px rgba(255, 170, 102, 0.25) !important;
+}
+
+#stock-deep-list .kc-card-num {
+  background: #251810 !important;
+  border: 1px solid #4a3d31 !important;
   color: #ffaa66 !important;
+}
+
+#stock-deep-list .kc-card-kw-title span:first-child {
+  color: #ffffff !important;
   font-weight: 700 !important;
 }
 
-/* 5-3. 모든 밝은 뱃지 & 칩 (span, a, button) 어두운 톤으로 일체화 */
-#tab-stock span[style*="background: #ffffff"],
-#tab-stock span[style*="background:#ffffff"],
-#tab-stock span[style*="background: #f1f5f9"],
-#tab-stock span[style*="background:#f1f5f9"],
-#tab-stock span[style*="background: #ecfdf5"],
-#tab-stock span[style*="background:#ecfdf5"],
-#tab-stock span[style*="background: #fffbeb"],
-#tab-stock span[style*="background:#fffbeb"],
-#tab-stock span[style*="background: #fff1f2"],
-#tab-stock span[style*="background:#fff1f2"],
-#tab-stock span[style*="background: #e0f2fe"],
-#tab-stock span[style*="background:#e0f2fe"],
-#tab-stock span[style*="background: #f0f9ff"],
-#tab-stock span[style*="background:#f0f9ff"] {
+#stock-deep-list .kc-badge-tag {
   background: #251810 !important;
+  border: 1px solid #4a3d31 !important;
+  color: #ffaa66 !important;
+}
+
+#stock-deep-list .kc-badge-vol {
+  color: #b5a492 !important;
+}
+
+/* 5-2. [5번 탭] 상단 추천 종목 칩 & 서브 탭 버튼 */
+#stock-deep-quick-chips button,
+#stock-deep-quick-chips .imggen-style-chip,
+.deep-tab-btn,
+.kc-detail-nav button,
+#stock-deep-detail button.imggen-style-chip,
+#stock-deep-detail button {
+  background: #20140c !important;
   border: 1px solid #4a3d31 !important;
   color: #ffedd7 !important;
+  border-radius: 22.5px !important;
+  padding: 6px 14px !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
 }
 
-/* [5일선 재돌파 ✓] 뱃지 */
-span:has-text("5일선 재돌파"),
-span[style*="color: #065f46"],
-span[style*="color:#065f46"] {
-  background: rgba(34, 197, 94, 0.15) !important;
-  border: 1px solid rgba(34, 197, 94, 0.45) !important;
-  color: #4ade80 !important;
+#stock-deep-quick-chips button:hover,
+#stock-deep-detail button:hover {
+  background: #2e1d12 !important;
+  border-color: #ffaa66 !important;
 }
 
-/* [5일선 지지 테스트 중] 뱃지 */
-span[style*="color: #b45309"],
-span[style*="color:#b45309"] {
-  background: rgba(245, 158, 11, 0.15) !important;
-  border: 1px solid rgba(245, 158, 11, 0.45) !important;
-  color: #fbbf24 !important;
-}
-
-/* 5-4. 눌림목 공략 [✓ 추적 승인] & [✕ 소멸 삭제] 버튼 */
-button[onclick*="approvePullbackTheme"] {
-  background: #1e3820 !important;
-  border: 1px solid #34d399 !important;
-  color: #34d399 !important;
-  font-weight: 700 !important;
-}
-
-button[onclick*="approvePullbackTheme"]:hover {
-  background: #274d2b !important;
+#stock-deep-detail button.active,
+#stock-deep-quick-chips button.active {
+  background: #382416 !important;
+  border-color: #ffaa66 !important;
   color: #ffffff !important;
+  box-shadow: 0 0 10px rgba(255, 170, 102, 0.2) !important;
 }
 
-button[onclick*="deletePullbackTheme"] {
-  background: #381a18 !important;
-  border: 1px solid #f87171 !important;
-  color: #f87171 !important;
-  font-weight: 700 !important;
+/* 5-3. [3번 탭 실시간 증시 캘린더] 8개 대형 일정 카드 & 버튼 일괄 다크화 */
+#stock-calendar-container > div,
+.calendar-feed-card,
+.stock-technique-grid > div {
+  background: #180f08 !important;
+  border: 1px solid #4a3d31 !important;
+  border-radius: 12px !important;
+  color: #f3e8dc !important;
+  box-shadow: none !important;
+  padding: 16px 18px !important;
 }
 
-button[onclick*="deletePullbackTheme"]:hover {
-  background: #4d2320 !important;
-  color: #ffffff !important;
+#stock-calendar-container > div:hover {
+  background: #20140c !important;
+  border-color: #d8c7b5 !important;
 }
 
-/* [기사보기 ↗] 버튼 */
-.news-item-compact-card a[href],
-.news-item-card a[href],
-a:has-text("기사보기"),
-a[style*="background: #ffffff"],
-a[style*="background:#ffffff"] {
+/* [상세 일정 ↗] 버튼 톤다운 */
+#stock-calendar-container button,
+#stock-calendar-container a,
+button[onclick*="openCalendarDetail"],
+a:has-text("상세 일정"),
+a:has-text("기사보기") {
   background: #251810 !important;
   border: 1px solid #4a3d31 !important;
   color: #ffaa66 !important;
-  font-weight: 700 !important;
-  padding: 4px 12px !important;
   border-radius: 6px !important;
+  font-weight: 700 !important;
   text-decoration: none !important;
-  display: inline-flex !important;
-  align-items: center !important;
 }
 
-.news-item-compact-card a[href]:hover,
-.news-item-card a[href]:hover {
+#stock-calendar-container button:hover,
+#stock-calendar-container a:hover {
   background: #382416 !important;
   border-color: #ffaa66 !important;
   color: #ffffff !important;
 }
 
-/* 5-5. 상단 카테고리 헤더 뱃지들 (특징주 22건, 거시 13건 등) */
-#domestic-news-filter-chips .imggen-style-chip,
-.news-col-box > div:first-child,
-div[style*="border-radius: 20px"][style*="background: #ffffff"],
-div[style*="border-radius: 20px"][style*="background:#ffffff"] {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  color: #ffffff !important;
-}
-
-/* 5-6. [5번 탭 종목 상세정보] 산업 유형 분류 & 매출 포트폴리오 비중 박스 */
-#stock-deep-container div[style*="background: #f0f9ff"],
-#stock-deep-container div[style*="background:#f0f9ff"],
-#stock-deep-container div[style*="background: #f0fdf4"],
-#stock-deep-container div[style*="background:#f0fdf4"],
-#stock-deep-container div[style*="background: #eff6ff"],
-#stock-deep-container div[style*="background:#eff6ff"],
-#stock-deep-container div[style*="background: #ffffff"],
-#stock-deep-container div[style*="background:#ffffff"] {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  color: #ffffff !important;
-}
-
-#stock-deep-container div[style*="color: #0284c7"],
-#stock-deep-container div[style*="color: #16a34a"],
-#stock-deep-container div[style*="color: #2563eb"],
-#stock-deep-container div[style*="color: #c2410c"] {
-  color: #ffaa66 !important;
-  font-weight: 700 !important;
-}
-
-/* 5-7. [4번 탭 2026 연간 캘린더] 1월 ~ 12월 월별 카드 & 뱃지 */
-#year-calendar-grid > div,
-div[onclick*="selectHistoryMonth"] {
-  background: #180f08 !important;
-  border: 1.5px solid #4a3d31 !important;
-  color: #ffffff !important;
-}
-
-div[onclick*="selectHistoryMonth"]:hover {
+/* [LIVE 일정 갱신] 버튼 */
+#btn-sync-stock-calendar {
   background: #251810 !important;
+  border: 1px solid #4a3d31 !important;
+  color: #ffaa66 !important;
+  border-radius: 8px !important;
+}
+
+#btn-sync-stock-calendar:hover {
+  background: #382416 !important;
   border-color: #ffaa66 !important;
 }
 
-div[onclick*="selectHistoryMonth"] strong {
-  color: #ffffff !important;
-  font-size: 1rem !important;
+/* 5-4. [4번 탭 복기] 상단 우측 버튼 & 뱃지 톤다운 */
+button[onclick*="saveDailyMarketClosing"],
+button[onclick*="loadMarketHistoryReview"] {
+  background: #251810 !important;
+  border: 1px solid #4a3d31 !important;
+  color: #ffedd7 !important;
+  border-radius: 8px !important;
 }
 
-div[onclick*="selectHistoryMonth"] span {
-  background: #2a1b12 !important;
+button[onclick*="saveDailyMarketClosing"]:hover,
+button[onclick*="loadMarketHistoryReview"]:hover {
+  background: #382416 !important;
+  border-color: #ffaa66 !important;
+}
+
+/* 5-5. [2번 탭] 관심 테마 선택 칩들 (반도체, AI, 로봇, 바이오 등) 톤다운 */
+#theme-selector-chips button,
+.theme-tag-chip,
+.theme-tag-btn,
+button[onclick*="toggleInterestTheme"] {
+  background: #20140c !important;
   border: 1px solid #4a3d31 !important;
+  color: #ffedd7 !important;
+  border-radius: 22.5px !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+
+#theme-selector-chips button:hover,
+button[onclick*="toggleInterestTheme"]:hover {
+  background: #2e1d12 !important;
+  border-color: #ffaa66 !important;
+}
+
+#theme-selector-chips button.active,
+button[onclick*="toggleInterestTheme"].active {
+  background: #382416 !important;
+  border-color: #ffaa66 !important;
   color: #ffaa66 !important;
   font-weight: 700 !important;
 }
 
-div[onclick*="selectHistoryMonth"] div:last-child {
-  color: #e2d5c5 !important;
-}
-
-/* 5-8. 상단 우측 날짜 뱃지들 (2026년 10월 2일, 실제적 재료 팩트 집계 등) */
-#tab-stock span[style*="background: #ffffff"],
-#tab-stock div[style*="background: #ffffff"],
-.badge-light,
-[style*="background: #ffffff;"][style*="border-radius:"] {
-  background: #22150d !important;
+/* 5-6. [하단 데일리 모달 & 리포트 바] 흰색 긴 바 톤다운 */
+.daily-report-nav-tab,
+div[style*="background: #ffffff"][style*="20:00"],
+div[style*="background:#ffffff"][style*="20:00"],
+button:has-text("닫기"),
+.btn-close-modal {
+  background: #251810 !important;
   border: 1px solid #4a3d31 !important;
   color: #ffedd7 !important;
+}
+
+/* 5-7. 모든 인라인 흰색(#ffffff, #fff, white) 배경 박스/버튼 전면 무력화 */
+#tab-stock [style*="background: #ffffff"],
+#tab-stock [style*="background:#ffffff"],
+#tab-stock [style*="background: #fff"],
+#tab-stock [style*="background:#fff"],
+#tab-stock [style*="background: white"],
+#tab-stock [style*="background:white"] {
+  background: #180f08 !important;
+  border-color: #4a3d31 !important;
+  color: #f3e8dc !important;
+}
+
+#tab-stock button[style*="background: #ffffff"],
+#tab-stock button[style*="background:#ffffff"],
+#tab-stock button[style*="background: white"],
+#tab-stock a[style*="background: #ffffff"],
+#tab-stock a[style*="background:#ffffff"],
+#tab-stock a[style*="background: white"],
+#tab-stock span[style*="background: #ffffff"],
+#tab-stock span[style*="background:#ffffff"],
+#tab-stock span[style*="background: white"] {
+  background: #251810 !important;
+  border-color: #4a3d31 !important;
+  color: #ffedd7 !important;
+}
+
+/* 5-8. 모든 밝은 파스텔톤 배경 박스 톤다운 */
+#tab-stock [style*="background: #f8fafc"],
+#tab-stock [style*="background:#f8fafc"],
+#tab-stock [style*="background: #f1f5f9"],
+#tab-stock [style*="background:#f1f5f9"],
+#tab-stock [style*="background: #f0f9ff"],
+#tab-stock [style*="background:#f0f9ff"],
+#tab-stock [style*="background: #f0fdf4"],
+#tab-stock [style*="background:#f0fdf4"],
+#tab-stock [style*="background: #eff6ff"],
+#tab-stock [style*="background:#eff6ff"],
+#tab-stock [style*="background: #fef2f2"],
+#tab-stock [style*="background:#fef2f2"],
+#tab-stock [style*="background: #fffbeb"],
+#tab-stock [style*="background:#fffbeb"],
+#tab-stock [style*="background: #fff1f2"],
+#tab-stock [style*="background:#fff1f2"],
+#tab-stock [style*="background: #fff5f5"],
+#tab-stock [style*="background:#fff5f5"],
+#tab-stock [style*="background: #ecfdf5"],
+#tab-stock [style*="background:#ecfdf5"],
+#tab-stock [style*="background: #e0f2fe"],
+#tab-stock [style*="background:#e0f2fe"] {
+  background: #1e130a !important;
+  border-color: #4a3d31 !important;
+  color: #f3e8dc !important;
 }
 
 /* ==========================================================================
