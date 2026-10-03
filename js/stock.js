@@ -7755,19 +7755,19 @@ async function renderUSSectorBriefing() {
         return `
           <div style="background: #ffffff; border: 1px solid #fee2e2; border-radius: 10px; padding: 12px 14px; margin-bottom: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <div style="font-size: 0.92rem; font-weight: 800; color: #0f172a; display: flex; align-items: center; gap: 6px;">
+              <div style="font-size: 1.08rem; font-weight: 800; color: #f5ebe0; display: flex; align-items: center; gap: 8px;">
                 <span style="color: #dc2626; font-weight: 900;">${idx + 1}위</span>
                 <span>${sec.name} (${sec.ticker})</span>
               </div>
-              <span style="font-size: 0.95rem; font-weight: 900; color: #dc2626;">${secRatioStr}</span>
+              <span style="font-size: 1.08rem; font-weight: 900; color: #e06d53;">${secRatioStr}</span>
             </div>
             ${sec.reason ? `
-              <div style="font-size: 0.8rem; color: #475569; line-height: 1.55; margin-bottom: 6px;">
+              <div style="font-size: 0.92rem; color: #d7ccc8; line-height: 1.65; margin-bottom: 8px;">
                 • <strong>상승 사유:</strong> ${sec.reason}
               </div>
             ` : ''}
             ${stocksStr ? `
-              <div style="font-size: 0.77rem; color: #334155; background: #f8fafc; border: 1px solid #e2e8f0; padding: 7px 12px; border-radius: 6px; line-height: 1.5;">
+              <div style="font-size: 0.88rem; color: #d7ccc8; background: #352924; border: 1px solid #4a3b34; padding: 9px 14px; border-radius: 6px; line-height: 1.65;">
                 <strong style="color: #991b1b; font-weight: 800;">관련 종목:</strong> ${stocksStr}
               </div>
             ` : ''}
@@ -7780,10 +7780,10 @@ async function renderUSSectorBriefing() {
     const macro = data.macro || {};
     const macroBoxHtml = `
       <div style="background: #ffffff; border: 1px solid #fca5a5; box-shadow: 0 1px 3px rgba(0,0,0,0.02); border-radius: 10px; padding: 12px 14px; margin-top: 6px;">
-        <div style="font-size: 0.8rem; font-weight: 800; color: #b91c1c; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+        <div style="font-size: 0.95rem; font-weight: 800; color: #d4a373; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
           <span>📌</span> [핵심 참고] 원자재 & 야간 변동성 지표
         </div>
-        <ul style="font-size: 0.77rem; color: #475569; line-height: 1.65; margin: 0; padding-left: 16px;">
+        <ul style="font-size: 0.9rem; color: #d7ccc8; line-height: 1.75; margin: 0; padding-left: 18px;">
           ${macro.diesel_alert ? `<li>${macro.diesel_alert.replace('6달러 사상 최고', '<strong style="color: #dc2626;">6달러 사상 최고</strong>')}</li>` : ''}
           <li>
             ${macro.brent ? `브렌트유 <strong style="color: #dc2626;">${macro.brent.ratio || ''}(${macro.brent.price || ''})</strong>` : ''}
@@ -7817,7 +7817,7 @@ async function renderUSSectorBriefing() {
         const secRatioStr = sec.ratio_str || (secRatio >= 0 ? `+${secRatio.toFixed(2)}% ▲` : `${secRatio.toFixed(2)}% ▼`);
 
         return `
-          <div style="background: #ffffff; border: 1px solid #bae6fd; border-radius: 8px; padding: 10px 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
+          <div style="background: #ffffff; border: 1px solid #bae6fd; border-radius: 8px; padding: 13px 15px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
               <div style="font-size: 0.88rem; font-weight: 800; color: #0f172a;">
                 <span style="color: #0284c7; font-weight: 900;">${idx + 1}위</span> ${sec.name} (${sec.ticker})

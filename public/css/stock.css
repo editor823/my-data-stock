@@ -1085,3 +1085,53 @@ span[id^="news-col-count-"],
   border-color: #d4a373 !important;
   box-shadow: 0 0 12px rgba(212, 163, 115, 0.25) !important;
 }
+
+/* ==========================================================================
+   [미국 증시 섹터 순위 & 관련 종목 글자 크기 +1단계 상향 룰]
+   ========================================================================== */
+#stock-panel-technique .us-sector-card,
+#stock-panel-technique div[style*="margin-bottom: 12px"],
+#stock-panel-technique div[style*="border-radius: 10px"],
+#stock-panel-technique div[style*="border-radius: 8px"] {
+  padding: 14px 16px !important;
+}
+
+/* 1위 산업재 (XLI) 등 섹터명 제목 및 퍼센트 폰트 확대 */
+#stock-panel-technique div[style*="font-size: 0.92rem"],
+#stock-panel-technique div[style*="font-size:0.92rem"],
+#stock-panel-technique span[style*="font-size: 0.95rem"],
+#stock-panel-technique span[style*="font-size:0.95rem"],
+#stock-panel-technique div[style*="font-size: 1.08rem"] {
+  font-size: 1.08rem !important; /* 약 19.5px */
+  font-weight: 800 !important;
+}
+
+/* 상승 사유 / 하락 사유 본문 글자 확대 */
+#stock-panel-technique div[style*="font-size: 0.8rem"],
+#stock-panel-technique div[style*="font-size:0.8rem"],
+#stock-panel-technique div[style*="font-size: 0.92rem"] {
+  font-size: 0.95rem !important; /* 약 17px */
+  line-height: 1.65 !important;
+  color: #d7ccc8 !important;
+}
+
+/* 관련 종목 내용 박스 폰트 확대 */
+#stock-panel-technique div[style*="font-size: 0.77rem"],
+#stock-panel-technique div[style*="font-size:0.77rem"],
+#stock-panel-technique div[style*="font-size: 0.88rem"] {
+  font-size: 0.9rem !important; /* 약 16.2px */
+  line-height: 1.65 !important;
+  color: #d7ccc8 !important;
+}
+
+/* [핵심 참고] 원자재 & 야간 변동성 지표 폰트 확대 */
+#stock-panel-technique ul {
+  font-size: 0.92rem !important;
+  line-height: 1.75 !important;
+}
+
+#stock-panel-technique ul li {
+  font-size: 0.92rem !important;
+  line-height: 1.75 !important;
+  color: #d7ccc8 !important;
+}
