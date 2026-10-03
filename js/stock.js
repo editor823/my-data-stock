@@ -1326,7 +1326,7 @@ window.loadDetectiveCaseLogs = async function() {
         <div style="border-top: 1px dashed rgba(255,255,255,0.08); padding-top: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px;">
           <span style="font-size: 0.72rem; color: #94a3b8; font-weight: 700;">결과 복기 변경:</span>
           <div style="display: flex; gap: 4px;">
-            <button type="button" onclick="updateCaseStatus('${c.id}', 'SUCCESS_SHOOTING')" style="background: #ecfdf5; border: 1px solid #a7f3d0; color: #047857; font-size: 0.7rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; cursor: pointer;" onmouseover="this.style.background='rgba(16,185,129,0.3)';" onmouseout="this.style.background='rgba(16,185,129,0.15)';">
+            <button type="button" onclick="updateCaseStatus('${c.id}', 'SUCCESS_SHOOTING')" style="background: #2a201c; border: 1px solid #4a3b34; color: #047857; font-size: 0.7rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; cursor: pointer;" onmouseover="this.style.background='rgba(16,185,129,0.3)';" onmouseout="this.style.background='rgba(16,185,129,0.15)';">
               🚀 성공
             </button>
             <button type="button" onclick="updateCaseStatus('${c.id}', 'WAITING')" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #0284c7; font-size: 0.7rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; cursor: pointer;" onmouseover="this.style.background='rgba(56,189,248,0.3)';" onmouseout="this.style.background='rgba(56,189,248,0.15)';">
@@ -1473,9 +1473,7 @@ const LIFECYCLE_CONFIG = {
   },
   verification: {
     label: '📊 입증 | 기관수급',
-    color: '#3b82f6',
-    bg: 'rgba(59, 130, 246, 0.15)',
-    border: 'rgba(59, 130, 246, 0.4)',
+    color: '#d4a373', bg: '#352924', border: '#d4a373',
     tip: '증권사 분석/목표가: 기관 매수세 안착 및 밸류에이션 리레이팅'
   },
   warning: {
@@ -2137,13 +2135,13 @@ window.renderDetectiveCard = function(theme, period = 'all') {
 
   let html = `
     <!-- 7대 재료 체크리스트 카드 (상단 고정 유지) -->
-    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px 22px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
+    <div style="background: #2a201c; border: 1.5px solid #d4a373; border-radius: 14px; padding: 20px 22px; margin-bottom: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.3);">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; border-bottom:1px solid #e2e8f0; padding-bottom:12px; flex-wrap:wrap; gap:8px;">
         <div style="font-size:1.05rem; font-weight:900; color:#0f172a; display:flex; align-items:center; gap:8px;">
           <span>📋</span> 데일리 주도주 탐정 7대 재료 체크리스트
         </div>
         <div style="display:flex; align-items:center; gap:10px;">
-          <button type="button" onclick="openSaveCaseModal()" style="display:inline-flex; align-items:center; gap:6px; background:linear-gradient(135deg, #059669, #10b981); color:#ffffff; font-size:0.84rem; font-weight:900; padding:6px 14px; border-radius:8px; border:1px solid #34d399; cursor:pointer; box-shadow:0 3px 12px rgba(16,185,129,0.35); transition:all 0.15s ease;" onmouseover="this.style.transform='translateY(-1px)'; this.style.filter='brightness(1.15)';" onmouseout="this.style.transform='none'; this.style.filter='none';">
+          <button type="button" onclick="openSaveCaseModal()" style="display:inline-flex; align-items:center; gap:6px; background:#c7926b; color:#1a1412; border:1.5px solid #d4a373; font-weight:800; box-shadow:none; transition:all 0.15s ease;" onmouseover="this.style.transform='translateY(-1px)'; this.style.filter='brightness(1.15)';" onmouseout="this.style.transform='none'; this.style.filter='none';">
             <span>💾</span>
             <span>현재 종목 사건 수첩에 박제</span>
           </button>
@@ -2155,9 +2153,9 @@ window.renderDetectiveCard = function(theme, period = 'all') {
 
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
         <!-- 1) 재료의 내용 & 핵심 스토리 -->
-        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:14px 16px; border-left:4px solid #0284c7; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+        <div style="background:#352924; border:1.5px solid #d4a373; border-radius:10px; padding:14px 16px; border-left:4px solid #d4a373; box-shadow:none;">
           <div style="font-size:0.83rem; font-weight:800; color:#0369a1; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
-            <span style="background:#e0f2fe; color:#0369a1; padding:2px 7px; border-radius:4px;">1) 재료의 내용 & 핵심 스토리</span>
+            <span style="background:#2a201c; color:#d4a373; border:1px solid #d4a373; padding:2px 7px; border-radius:4px; font-weight:800;">1) 재료의 내용 & 핵심 스토리</span>
           </div>
           <div style="font-size:0.86rem; color:#1e293b; font-weight:600; line-height:1.5; word-break: break-all;">
             ${escapeHtml((() => {
@@ -2177,10 +2175,10 @@ window.renderDetectiveCard = function(theme, period = 'all') {
         </div>
 
         <!-- 2) 대장주 & 3) 관련성 -->
-        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:14px 16px; border-left:4px solid #7c3aed; box-shadow:0 1px 3px rgba(0,0,0,0.03); display: flex; flex-direction: column; justify-content: space-between; gap: 8px;">
+        <div style="background:#352924; border:1.5px solid #d4a373; border-radius:10px; padding:14px 16px; border-left:4px solid #d4a373; box-shadow:none;">
           <div>
             <div style="font-size:0.83rem; font-weight:800; color:#6d28d9; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
-              <span style="background:#ede9fe; color:#6d28d9; padding:2px 7px; border-radius:4px;">2) 대장주 & 3) 관련성</span>
+              <span style="background:#2a201c; color:#d4a373; border:1px solid #d4a373; padding:2px 7px; border-radius:4px; font-weight:800;">2) 대장주 & 3) 관련성</span>
             </div>
             <div style="font-size:0.86rem; color:#1e293b; line-height:1.45;">
               <span style="color:#6d28d9; font-weight:900;">👑 ${leaders.lead || '-'}</span> 
@@ -2193,22 +2191,22 @@ window.renderDetectiveCard = function(theme, period = 'all') {
         </div>
 
         <!-- 3) 재료와 종목의 연관성 (사업 스토리 팩트 매핑) -->
-        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:14px 16px; border-left:4px solid #d97706; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+        <div style="background:#352924; border:1.5px solid #d4a373; border-radius:10px; padding:14px 16px; border-left:4px solid #d4a373; box-shadow:none;">
           <div style="font-size:0.83rem; font-weight:800; color:#b45309; margin-bottom:6px; display: flex; align-items: center; justify-content: space-between;">
-            <span style="background:#fef3c7; color:#b45309; padding:2px 7px; border-radius:4px;">3) 재료와 종목의 연관성</span>
-            <span style="font-size: 0.68rem; background: #fffbeb; color: #b45309; border:1px solid #fde68a; padding: 1px 6px; border-radius: 4px; font-weight: 800;">밸류체인 직결</span>
+            <span style="background:#2a201c; color:#d4a373; border:1px solid #d4a373; padding:2px 7px; border-radius:4px; font-weight:800;">3) 재료와 종목의 연관성</span>
+            <span style="font-size: 0.68rem; background: #2a201c; color: #d4a373; border: 1px solid #d4a373; padding: 1px 6px; border-radius: 4px; font-weight: 800;">밸류체인 직결</span>
           </div>
           <div style="font-size:0.85rem; color:#1e293b; line-height:1.5;">${chk.correlation || '-'}</div>
         </div>
 
         <!-- 4) 앞으로의 기대감 & 5) 유통기한 -->
-        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:14px 16px; border-left:4px solid #059669; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+        <div style="background:#352924; border:1.5px solid #d4a373; border-radius:10px; padding:14px 16px; border-left:4px solid #d4a373; box-shadow:none;">
           <div style="font-size:0.83rem; font-weight:800; color:#047857; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
-            <span style="background:#d1fae5; color:#047857; padding:2px 7px; border-radius:4px;">4) 앞으로의 기대감 & 5) 유통기한</span>
+            <span style="background:#2a201c; color:#d4a373; border:1px solid #d4a373; padding:2px 7px; border-radius:4px; font-weight:800;">4) 앞으로의 기대감 & 5) 유통기한</span>
           </div>
           <div style="font-size:0.85rem; color:#1e293b; line-height:1.5;">${chk.future_expectation || '-'}</div>
           
-          <div style="margin-top: 8px; padding: 8px 10px; background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 6px;">
+          <div style="margin-top: 8px; padding: 8px 10px; background: #2a201c; border: 1px solid #4a3b34; border-radius: 6px;">
             <div style="font-size:0.82rem; color:#065f46; font-weight:800; display: flex; align-items: center; gap: 4px;">
               <span>⏳ 유통기한:</span> <span style="color: #047857; font-weight:900;">${chk.expiration_date || '일정 추적 중'}</span>
             </div>
@@ -2221,19 +2219,19 @@ window.renderDetectiveCard = function(theme, period = 'all') {
         </div>
 
         <!-- 6) 국면 (차트 위치 & 기준봉 눌림률 타점) -->
-        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:14px 16px; border-left:4px solid #db2777; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+        <div style="background:#352924; border:1.5px solid #d4a373; border-radius:10px; padding:14px 16px; border-left:4px solid #d4a373; box-shadow:none;">
           <div style="font-size:0.83rem; font-weight:800; color:#be185d; margin-bottom:6px; display: flex; align-items: center; justify-content: space-between;">
-            <span style="background:#fce7f3; color:#be185d; padding:2px 7px; border-radius:4px;">6) 국면 (차트 위치 & 타점)</span>
-            <span style="font-size: 0.68rem; background: #fdf2f8; color: #be185d; border:1px solid #fbcfe8; padding: 1px 6px; border-radius: 4px; font-weight: 800;">타점 정밀 판별</span>
+            <span style="background:#2a201c; color:#d4a373; border:1px solid #d4a373; padding:2px 7px; border-radius:4px; font-weight:800;">6) 국면 (차트 위치 & 타점)</span>
+            <span style="font-size: 0.68rem; background: #2a201c; color: #d4a373; border: 1px solid #d4a373; padding: 1px 6px; border-radius: 4px; font-weight: 800;">타점 정밀 판별</span>
           </div>
           <div style="font-size:0.85rem; color:#1e293b; line-height:1.5;">${chk.chart_phase || '-'}</div>
           ${techBadgesHtml}
         </div>
 
         <!-- 7) 주가 상승 / 하락 조건 -->
-        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:14px 16px; border-left:4px solid #dc2626; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+        <div style="background:#352924; border:1.5px solid #d4a373; border-radius:10px; padding:14px 16px; border-left:4px solid #d4a373; box-shadow:none;">
           <div style="font-size:0.83rem; font-weight:800; color:#b91c1c; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
-            <span style="background:#fee2e2; color:#b91c1c; padding:2px 7px; border-radius:4px;">7) 주가 상승 트리거 vs 하락 시나리오</span>
+            <span style="background:#2a201c; color:#d4a373; border:1px solid #d4a373; padding:2px 7px; border-radius:4px; font-weight:800;">7) 주가 상승 트리거 vs 하락 시나리오</span>
           </div>
           <div style="font-size:0.83rem; color:#15803d; line-height:1.45; font-weight:600; margin-bottom:4px;"><b>▲ 상승 조건:</b> ${conditions.bullish || '-'}</div>
           ${bearishMultiHtml}
@@ -2362,7 +2360,7 @@ window.renderDetectiveCard = function(theme, period = 'all') {
           dateColor = '#047857';
           cardBorder = 'border-left: 4px solid #10b981; background: #ffffff; border-color: #e2e8f0;';
           actionBtnText = '리포트 원문 ↗';
-          actionBtnBg = 'background: #ecfdf5; border: 1px solid #a7f3d0; color: #047857 !important; font-weight: 700;';
+          actionBtnBg = 'background: #2a201c; border: 1px solid #4a3b34; color: #047857 !important; font-weight: 700;';
         } else if (isDart) {
           pressBadgeStyle = 'background: #faf5ff; color: #7c3aed; border: 1px solid #e9d5ff;';
           pressLabel = '📑 DART 전자공시';
@@ -2371,14 +2369,14 @@ window.renderDetectiveCard = function(theme, period = 'all') {
           actionBtnText = '공시 원문 ↗';
           actionBtnBg = 'background: #faf5ff; border: 1px solid #d8b4fe; color: #6b21a8 !important; font-weight: 700;';
         } else if (isEvent) {
-          pressBadgeStyle = 'background: #fffbeb; color: #b45309; border: 1px solid #fde68a;';
+          pressBadgeStyle = 'background: #2a201c; color: #d4a373; border: 1px solid #d4a373;';
           pressLabel = '🎯 핵심 이벤트';
           dateColor = '#fbbf24';
           cardBorder = 'border-left: 4px solid #f59e0b; background: #ffffff; border-color: #e2e8f0;';
           actionBtnText = '일정 팩트 ↗';
           actionBtnBg = 'background: #fffbeb; border: 1px solid #fcd34d; color: #92400e !important; font-weight: 700;';
         } else if (isBlog) {
-          pressBadgeStyle = 'background: #fdf2f8; color: #be185d; border: 1px solid #fbcfe8;';
+          pressBadgeStyle = 'background: #2a201c; color: #d4a373; border: 1px solid #d4a373;';
           pressLabel = '✍️ 블로그 분석';
           dateColor = '#be185d';
           cardBorder = 'border-left: 4px solid #ec4899; background: #ffffff; border-color: #e2e8f0;';
@@ -2422,13 +2420,13 @@ window.renderDetectiveCard = function(theme, period = 'all') {
 
         let factBadgeHtml = '';
         if (factBadge === '직납 팩트' || (tl.tag && tl.tag.includes('직납'))) {
-          factBadgeHtml = `<span style="font-size:0.7rem; padding:1px 7px; background:#fff1f2; color:#be123c; border:1px solid #fecdd3; border-radius:4px; font-weight:800;">🔥 직납 팩트</span>`;
+          factBadgeHtml = `<span style="font-size:0.7rem; padding:1px 7px; background:#352924; color:#d4a373; border:1px solid #d4a373; border-radius:4px; font-weight:800;">🔥 직납 팩트</span>`;
         } else if (factBadge === '단독 협의' || (tl.tag && tl.tag.includes('단독'))) {
-          factBadgeHtml = `<span style="font-size:0.7rem; padding:1px 7px; background:#fffbeb; color:#b45309; border:1px solid #fde68a; border-radius:4px; font-weight:800;">⚡ 단독 협의</span>`;
+          factBadgeHtml = `<span style="font-size:0.7rem; padding:1px 7px; background: #2a201c; color: #d4a373; border: 1px solid #d4a373; border-radius:4px; font-weight:800;">⚡ 단독 협의</span>`;
         } else if (factBadge === '수주 공시' || (tl.tag && tl.tag.includes('공시'))) {
-          factBadgeHtml = `<span style="font-size:0.7rem; padding:1px 7px; background:#faf5ff; color:#7c3aed; border:1px solid #e9d5ff; border-radius:4px; font-weight:800;">📑 수주 공시</span>`;
+          factBadgeHtml = `<span style="font-size:0.7rem; padding:1px 7px; background:#352924; color:#d4a373; border:1px solid #d4a373; border-radius:4px; font-weight:800;">📑 수주 공시</span>`;
         } else if (factBadge === '목표가 상향' || (tl.tag && tl.tag.includes('리포트'))) {
-          factBadgeHtml = `<span style="font-size:0.7rem; padding:1px 7px; background:#ecfdf5; color:#047857; border:1px solid #a7f3d0; border-radius:4px; font-weight:800;">🎯 ${tl.tag && tl.tag.includes('리포트') ? '리포트' : '목표가 상향'}</span>`;
+          factBadgeHtml = `<span style="font-size:0.7rem; padding:1px 7px; background:#352924; color:#d4a373; border:1px solid #d4a373; border-radius:4px; font-weight:800;">🎯 ${tl.tag && tl.tag.includes('리포트') ? '리포트' : '목표가 상향'}</span>`;
         }
 
         // 라이프사이클 4단계 뱃지 추출
@@ -2619,7 +2617,7 @@ window.renderTimelineCards = function(articles, period = 'all') {
       cardBg = 'background: #ffffff; border: 1px solid #e2e8f0; border-left: 4px solid #059669; box-shadow: 0 1px 3px rgba(0,0,0,0.03);';
       dateColor = '#059669';
       actionBtnText = '리포트 PDF ↗';
-      actionBtnBg = 'background: #ecfdf5; border: 1px solid #a7f3d0; color: #065f46;';
+      actionBtnBg = 'background: #2a201c; border: 1px solid #4a3b34; color: #065f46;';
     } else if (isDart) {
       pressBadgeStyle = 'background: #ede9fe; color: #6d28d9; border: 1px solid #ddd6fe;';
       cardBg = 'background: #ffffff; border: 1px solid #e2e8f0; border-left: 4px solid #7c3aed; box-shadow: 0 1px 3px rgba(0,0,0,0.03);';
@@ -7126,7 +7124,7 @@ window.selectStockDeepItem = function (idx) {
         <div style="font-size: 0.76rem; color: #94a3b8;">${escapeHtml(e.impact)}</div>
       </div>
       <div style="text-align: right;">
-        <span style="font-size: 0.92rem; font-weight: 900; color: #047857; background: #ecfdf5; border: 1px solid #a7f3d0; padding: 3px 8px; border-radius: 6px;">${escapeHtml(e.dday)}</span>
+        <span style="font-size: 0.92rem; font-weight: 900; color: #047857; background: #2a201c; border: 1px solid #4a3b34; padding: 3px 8px; border-radius: 6px;">${escapeHtml(e.dday)}</span>
         <div style="font-size: 0.72rem; color: #64748b; margin-top: 4px;">${escapeHtml(e.date)}</div>
       </div>
     </div>
@@ -8813,7 +8811,7 @@ async function renderPastPullbackThemes(currentTopThemes = []) {
     const isMa5 = item.ma5_recovered === true;
     const ma5Badge = isMa5
       ? `<span style="font-size: 0.72rem; background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; padding: 2px 7px; border-radius: 4px; font-weight: 800;">5일선 재돌파 ✓</span>`
-      : `<span style="font-size: 0.72rem; background: #fffbeb; color: #b45309; border: 1px solid #fde68a; padding: 2px 7px; border-radius: 4px; font-weight: 700;">5일선 지지 테스트 중</span>`;
+      : `<span style="font-size: 0.72rem; background: #2a201c; color: #d4a373; border: 1px solid #d4a373; padding: 2px 7px; border-radius: 4px; font-weight: 700;">5일선 지지 테스트 중</span>`;
 
     const fibColor = item.pullback_rate === '-50.0%' ? '#dc2626' : (item.pullback_rate === '-38.2%' ? '#0284c7' : '#7c3aed');
 

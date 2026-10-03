@@ -779,3 +779,75 @@ span[id^="news-col-count-"],
   border: 1.5px solid #d4a373 !important; /* 골든 베이지 테두리 */
   border-radius: 16px !important;
 }
+
+/* ==========================================================================
+   [전체 인라인 뱃지/칩/태그 강제 골든 베이지 룰]
+   ========================================================================== */
+
+/* 1. 모든 밝은 파스텔 / 흰색 인라인 배경 span, div, button 강제 변환 */
+#tab-stock span[style*="background: #e0f2fe"],
+#tab-stock span[style*="background:#e0f2fe"],
+#tab-stock span[style*="background: #eff6ff"],
+#tab-stock span[style*="background:#eff6ff"],
+#tab-stock span[style*="background: #f0f9ff"],
+#tab-stock span[style*="background:#f0f9ff"],
+#tab-stock span[style*="background: #ede9fe"],
+#tab-stock span[style*="background:#ede9fe"],
+#tab-stock span[style*="background: #fef3c7"],
+#tab-stock span[style*="background:#fef3c7"],
+#tab-stock span[style*="background: #fee2e2"],
+#tab-stock span[style*="background:#fee2e2"],
+#tab-stock span[style*="background: #fce7f3"],
+#tab-stock span[style*="background:#fce7f3"],
+#tab-stock span[style*="background: #d1fae5"],
+#tab-stock span[style*="background:#d1fae5"],
+#tab-stock span[style*="background: #ecfdf5"],
+#tab-stock span[style*="background:#ecfdf5"],
+#tab-stock span[style*="background: #faf5ff"],
+#tab-stock span[style*="background:#faf5ff"],
+#tab-stock span[style*="background: #f5f3ff"],
+#tab-stock span[style*="background:#f5f3ff"],
+#tab-stock span[style*="background: #f3e8ff"],
+#tab-stock span[style*="background:#f3e8ff"],
+#tab-stock span[style*="background: #fff1f2"],
+#tab-stock span[style*="background:#fff1f2"],
+#tab-stock span[style*="background: #fffbeb"],
+#tab-stock span[style*="background:#fffbeb"],
+#tab-stock span[style*="background: #f8fafc"],
+#tab-stock span[style*="background:#f8fafc"],
+#tab-stock span[style*="background: #f1f5f9"],
+#tab-stock span[style*="background:#f1f5f9"],
+#tab-stock span[style*="background: #ffffff"],
+#tab-stock span[style*="background:#ffffff"],
+#tab-stock span[style*="background: white"],
+#tab-stock span[style*="background:white"],
+#tab-stock span[style*="background: #fff"],
+#tab-stock span[style*="background:#fff"] {
+  background: #352924 !important;
+  border: 1px solid #d4a373 !important;
+  color: #d4a373 !important;
+}
+
+/* 2. 특정 주요 뱃지/버튼 골든베이지 확정 */
+#market-radar-badge,
+#radar-est-volume,
+#calendar-focus-date-badge,
+#case-logs-count-badge,
+.timeline-lifecycle-badge {
+  background: #352924 !important;
+  border: 1.5px solid #d4a373 !important;
+  color: #d4a373 !important;
+}
+
+#btn-add-stock-track {
+  background: #c7926b !important;
+  border: 1.5px solid #d4a373 !important;
+  color: #1a1412 !important;
+  box-shadow: none !important;
+}
+
+.btn-goto-dossier {
+  background: #3e312b !important;
+  border: 1.5px solid #d4a373 !important;
+  color: #f5ebe0 !important;
+}

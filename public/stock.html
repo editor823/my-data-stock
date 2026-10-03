@@ -17,8 +17,8 @@
 
   <!-- 스타일시트 로드 -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/components.css?v=golden_border_v10">
-  <link rel="stylesheet" href="css/stock.css?v=golden_border_v10">
+  <link rel="stylesheet" href="css/components.css?v=all_golden_v11">
+  <link rel="stylesheet" href="css/stock.css?v=all_golden_v11">
 
   <style>
     /* ORYZO AI — Darkroom Product Editorial Style */
@@ -518,7 +518,7 @@
                   <h4 style="font-size: 1.2rem; font-weight: 900; color: #0f172a; margin: 0;">
                     당일 시장 판도 & 주도 테마 레이더
                   </h4>
-                  <span id="market-radar-badge" style="font-size: 0.74rem; background: #e0f2fe; color: #d4a373; border: 1.5px solid #bae6fd; padding: 3px 9px; border-radius: 6px; font-weight: 900;">⚡ 2026.10.02(금) 당일 급등 재료 & 공시 타임라인</span>
+                  <span id="market-radar-badge" style="font-size: 0.74rem; background: #352924; color: #d4a373; border: 1.5px solid #d4a373; padding: 3px 9px; border-radius: 6px; font-weight: 900;">⚡ 2026.10.02(금) 당일 급등 재료 & 공시 타임라인</span>
                 </div>
                 <div style="font-size: 0.78rem; color: #94a3b8; margin-top: 3px;">
                   단순 개별주 나열이 아닌, 코스피/코스닥 지수 수급과 거래대금이 실제로 터진 '진짜 주도 섹터 TOP 5'를 자동 판정합니다.
@@ -567,7 +567,7 @@
                 <span id="radar-mood-tag" style="background: linear-gradient(135deg, rgba(234, 88, 12, 0.15), rgba(245, 158, 11, 0.2)); color: #ea580c; border: 1.5px solid #f97316; padding: 4px 12px; border-radius: 6px; font-weight: 900; font-size: 13px; letter-spacing: -0.2px;">
                   개별 테마 순환매 우세
                 </span>
-                <span id="radar-est-volume" style="font-size: 13px; color: #d4a373; background: #e0f2fe; border: 1px solid #bae6fd; padding: 4px 10px; border-radius: 6px; font-weight: 800;">
+                <span id="radar-est-volume" style="font-size: 13px; color: #d4a373; background: #352924; border: 1.5px solid #d4a373; padding: 4px 10px; border-radius: 6px; font-weight: 800;">
                   거래대금 18조 4,500억
                 </span>
               </div>
@@ -660,10 +660,10 @@
 
             <!-- 💾 탐정 사건 수첩에 저장 + 📂 바로가기 버튼 -->
             <div style="display: flex; align-items: center; gap: 8px;">
-              <button type="button" id="btn-add-stock-track" onclick="saveToDossierFromTracker()" style="background: linear-gradient(135deg, #7c3aed, #6d28d9); border: 1.5px solid #a855f7; color: #ffffff; padding: 0 20px; border-radius: 8px; font-size: 14px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; height: 42px; transition: all 0.2s; box-shadow: 0 3px 10px rgba(139, 92, 246, 0.35);" onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
+              <button type="button" id="btn-add-stock-track" onclick="saveToDossierFromTracker()" style="background: #c7926b; border: 1.5px solid #d4a373; color: #1a1412; padding: 0 20px; border-radius: 8px; font-size: 14px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; height: 42px; transition: all 0.2s; box-shadow: none;" onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
                 <span>💾 탐정 사건 수첩에 저장</span>
               </button>
-              <button type="button" class="btn-goto-dossier" onclick="document.getElementById('theme-dossier-section')?.scrollIntoView({ behavior: 'smooth' });" style="background: #f5f3ff; border: 1.5px solid #c4b5fd; color: #6d28d9; padding: 0 16px; border-radius: 8px; font-size: 14px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; height: 42px; transition: all 0.2s;" onmouseover="this.style.background='#ede9fe';" onmouseout="this.style.background='#f5f3ff';">
+              <button type="button" class="btn-goto-dossier" onclick="document.getElementById('theme-dossier-section')?.scrollIntoView({ behavior: 'smooth' });" style="background: #3e312b; border: 1.5px solid #d4a373; color: #f5ebe0; padding: 0 16px; border-radius: 8px; font-size: 14px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; height: 42px; transition: all 0.2s;" onmouseover="this.style.background='#ede9fe';" onmouseout="this.style.background='#f5f3ff';">
                 📂 수첩 바로가기
               </button>
             </div>
@@ -797,7 +797,7 @@
               <div>
                 <h4 style="font-size: 1.15rem; font-weight: 900; color: #0f172a; margin: 0; display: flex; align-items: center; gap: 8px;">
                   탐정 사건 수첩 (사후 복기 & 승률 검증 모듈)
-                  <span id="case-logs-count-badge" style="font-size: 0.74rem; background: #faf5ff; color: #7c3aed; border: 1px solid #e9d5ff; padding: 2px 8px; border-radius: 6px; font-weight: 800;">0건</span>
+                  <span id="case-logs-count-badge" style="font-size: 0.74rem; background: #352924; color: #d4a373; border: 1px solid #d4a373; padding: 2px 8px; border-radius: 6px; font-weight: 800;">0건</span>
                 </h4>
                 <div style="font-size: 0.78rem; color: #94a3b8; margin-top: 3px;">
                   분석 당시 7대 체크리스트와 주가를 기록해두고, 슈팅 성공 여부 및 등락률(%)을 사후에 복기·검증합니다.
@@ -805,7 +805,7 @@
               </div>
             </div>
             <div style="display: flex; align-items: center; gap: 8px;">
-              <button type="button" onclick="loadDetectiveCaseLogs()" style="background: #faf5ff; border: 1px solid #d8b4fe; color: #7c3aed; padding: 5px 12px; border-radius: 8px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.background='#f3e8ff';" onmouseout="this.style.background='#faf5ff';">
+              <button type="button" onclick="loadDetectiveCaseLogs()" style="background: #3e312b; border: 1px solid #d4a373; color: #f5ebe0; padding: 5px 12px; border-radius: 8px; font-size: 0.78rem; font-weight: 700; cursor: pointer;" onmouseover="this.style.background='#f3e8ff';" onmouseout="this.style.background='#faf5ff';">
                 일지 새로고침 🔄
               </button>
             </div>
@@ -827,7 +827,7 @@
               <div>
                 <h4 style="font-size: 1.15rem; font-weight: 900; color: #0f172a; margin: 0; display: flex; align-items: center; gap: 8px;">
                   상시 추적 관리 테마 포트폴리오 뷰
-                  <span style="font-size: 0.72rem; background: #e0f2fe; color: #d4a373; border: 1.5px solid #bae6fd; padding: 2px 8px; border-radius: 6px; font-weight: 900;">4대 채널 병렬 스트리밍</span>
+                  <span style="font-size: 0.72rem; background: #352924; color: #d4a373; border: 1.5px solid #d4a373; padding: 2px 8px; border-radius: 6px; font-weight: 900;">4대 채널 병렬 스트리밍</span>
                 </h4>
                 <div style="font-size: 0.78rem; color: #94a3b8; margin-top: 3px;">
                   관심 테마들을 다중 선택하면 뉴스·DART 공시·증권사 리포트·블로그 분석이 4열 컬럼에 독립 분할되어 실시간 동기화됩니다.
@@ -928,7 +928,7 @@
             <h3 style="font-size: 1.2rem; font-weight: 900; color: #0f172a; margin: 0 0 4px 0;">
               📅 주식 시장 핵심 캘린더 & 일정 매매 플래너
             </h3>
-<div style="margin-top: 4px; margin-bottom: 2px;"><span id="calendar-focus-date-badge" style="font-size: 0.76rem; background: #e0f2fe; color: #d4a373; border: 1.5px solid #7dd3fc; padding: 3px 10px; border-radius: 6px; font-weight: 900;">📌 기준일 포커스: 2026년 10월 2일(금) / 10월 1주차 주요 일정</span></div>
+<div style="margin-top: 4px; margin-bottom: 2px;"><span id="calendar-focus-date-badge" style="font-size: 0.76rem; background: #352924; color: #d4a373; border: 1.5px solid #d4a373; padding: 3px 10px; border-radius: 6px; font-weight: 900;">📌 기준일 포커스: 2026년 10월 2일(금) / 10월 1주차 주요 일정</span></div>
             <p style="font-size: 0.84rem; color: #94a3b8; margin: 0;">
               "소문에 사고 뉴스에 팔아라" - 뉴스 기사에서 감지된 미래 모멘텀 일정을 승인하여 선점하는 스마트 캘린더
             </p>
@@ -1657,7 +1657,7 @@
 
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js"></script>
-  <script src="js/stock.js?v=golden_border_v10"></script>
+  <script src="js/stock.js?v=all_golden_v11"></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" onclick="if(event.target===this) closeDailyStockReportModal()">
