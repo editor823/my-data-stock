@@ -17,8 +17,8 @@
 
   <!-- 스타일시트 로드 -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/components.css?v=beige_fix_v7">
-  <link rel="stylesheet" href="css/stock.css?v=beige_fix_v7">
+  <link rel="stylesheet" href="css/components.css?v=deep_brown_v9">
+  <link rel="stylesheet" href="css/stock.css?v=deep_brown_v9">
 
   <style>
     /* ORYZO AI — Darkroom Product Editorial Style */
@@ -127,7 +127,7 @@
       <div style="display: flex; align-items: center; gap: 12px;">
         
         <button type="button" id="btn-run-inspector-bot" onclick="openSystemInspectorBot()"
-          style="display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #10b981, #059669); color: #ffffff; border: 1.5px solid #059669; padding: 7px 14px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; box-shadow: 0 3px 10px rgba(16, 185, 129, 0.35); transition: all 0.2s;"
+          style="display: inline-flex; align-items: center; gap: 6px; background: #3e312b; color: #ffffff; border: 1px solid #4a3b34; padding: 7px 14px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; box-shadow: none; transition: all 0.2s;"
           onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
           <span>🤖</span> 기능 검수봇 작동
         </button>
@@ -160,7 +160,7 @@
               <button type="button" class="kc-header-btn" onclick="openStockApiModal()" style="border: 1px solid #6e6e73; color: #f5f5f7; background: rgba(255, 255, 255, 0.04); border-radius: 9999px;">
                 <span>🔑</span> 주식/뉴스 API 연동 키 설정
               </button>
-              <span id="stock-api-status-badge" style="font-size: 0.8rem; font-weight: 700; color: #059669;">
+              <span id="stock-api-status-badge" style="font-size: 0.8rem; font-weight: 700; color: #d4a373;">
                 🟢 네이버 허브 실시간 뉴스 API 연동 완료
               </span>
             </div>
@@ -250,7 +250,7 @@
               <h4 style="margin: 0; font-size: 1.05rem; font-weight: 900; color: #1e293b; letter-spacing: -0.3px;">
                 실시간 주식 탐정 질의응답 (자연어 원인 분석)
               </h4>
-              <span style="font-size: 0.7rem; background: #f0f9ff; color: #0284c7; border: 1px solid #bae6fd; padding: 2px 7px; border-radius: 6px; font-weight: 800;">
+              <span style="font-size: 0.7rem; background: #f0f9ff; color: #d4a373; border: 1px solid #bae6fd; padding: 2px 7px; border-radius: 6px; font-weight: 800;">
                 AI 뉴스·공시 교차 추적
               </span>
             </div>
@@ -346,7 +346,7 @@
               </div>
               <div style="font-size: 0.76rem; color: #94a3b8; display: flex; align-items: center; gap: 6px;">
                 <span>⚡ 기준 충족 시에만 실시간 표출</span>
-                <span id="today-leading-status-badge" style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 4px; font-weight: 800;">실시간 레이더 감지 중</span>
+                <span id="today-leading-status-badge" style="background: #e0f2fe; color: #d4a373; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 4px; font-weight: 800;">실시간 레이더 감지 중</span>
 
                 <div style="display: flex; gap: 8px; flex-wrap: wrap;">
                   <button type="button" onclick="openDailyStockReportModal('morning')" id="btn-open-morning-report"
@@ -380,15 +380,15 @@
               <div style="display: flex; align-items: center; gap: 8px;">
                 <span style="font-size: 1.25rem;">🎯</span>
                 <h4 style="font-size: 1.05rem; font-weight: 900; color: #1e293b; margin: 0; letter-spacing: -0.3px;">
-                  역대 주도 테마 눌림목 공략 <span style="font-size: 0.8rem; font-weight: 700; color: #0284c7;">(최근 1~3개월 추세 지지 & 5일선 재돌파)</span>
+                  역대 주도 테마 눌림목 공략 <span style="font-size: 0.8rem; font-weight: 700; color: #d4a373;">(최근 1~3개월 추세 지지 & 5일선 재돌파)</span>
                 </h4>
-                <span style="font-size: 0.72rem; background: #f0f9ff; color: #0284c7; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 6px; font-weight: 800;">
+                <span style="font-size: 0.72rem; background: #f0f9ff; color: #d4a373; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 6px; font-weight: 800;">
                   최근 1~3개월 기준봉 대비 -25%~-50% 피보나치 눌림목 추적
                 </span>
               </div>
               <div style="display: flex; align-items: center; gap: 10px;">
                 <span style="font-size: 0.76rem; color: #64748b;">
-                  보유 테마: <strong id="past-pullback-count" style="color: #0284c7;">0</strong>건
+                  보유 테마: <strong id="past-pullback-count" style="color: #d4a373;">0</strong>건
                 </span>
                 <button type="button" class="imggen-style-chip" onclick="resetDeletedPullbackThemes()" style="padding: 2px 8px; font-size: 0.7rem; background: #f8fafc; color: #475569;" title="소멸 삭제된 과거 테마 복원">
                   ↺ 초기화
@@ -411,9 +411,9 @@
             <div style="display: flex; align-items: center; gap: 8px;">
               <span style="font-size: 1.1rem;">⚡</span>
               <span style="font-size: 0.98rem; font-weight: 800; color: #1e293b;">
-                당일 국내 증시 5대 핵심 카테고리 멀티컬럼 피드 (<span id="domestic-news-count" style="color: #0284c7;">100건</span>)
+                당일 국내 증시 5대 핵심 카테고리 멀티컬럼 피드 (<span id="domestic-news-count" style="color: #d4a373;">100건</span>)
               </span>
-              <span id="domestic-news-live-tag" style="font-size: 0.72rem; background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; padding: 1px 6px; border-radius: 4px; font-weight: 700;">LIVE 자동분류</span>
+              <span id="domestic-news-live-tag" style="font-size: 0.72rem; background: #352924; color: #d4a373; border: 1px solid #4a3b34; padding: 1px 6px; border-radius: 4px; font-weight: 700;">LIVE 자동분류</span>
             </div>
             <div style="display: flex; align-items: center; gap: 10px;">
               <button type="button" id="btn-refresh-domestic-news" class="imggen-style-chip" onclick="refreshLiveDomesticNews()" style="padding: 4px 10px; font-size: 0.74rem; background: rgba(56, 189, 248, 0.12); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">
@@ -463,7 +463,7 @@
                   <span style="font-size: 0.95rem;">🟢</span>
                   <span style="font-size: 0.86rem; font-weight: 800; color: #1e293b;">산업 동향 & 정부 정책</span>
                 </div>
-                <span id="news-col-count-industry" style="font-size: 0.72rem; font-weight: 800; background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; padding: 2px 7px; border-radius: 4px;">0건</span>
+                <span id="news-col-count-industry" style="font-size: 0.72rem; font-weight: 800; background: #ecfdf5; color: #a89f91; border: 1px solid #a7f3d0; padding: 2px 7px; border-radius: 4px;">0건</span>
               </div>
               <div class="news-col-body" id="news-list-industry">
                 <div style="text-align: center; color: #64748b; font-size: 0.76rem; padding: 20px 0;">기사 분석 중...</div>
@@ -518,7 +518,7 @@
                   <h4 style="font-size: 1.2rem; font-weight: 900; color: #0f172a; margin: 0;">
                     당일 시장 판도 & 주도 테마 레이더
                   </h4>
-                  <span id="market-radar-badge" style="font-size: 0.74rem; background: #e0f2fe; color: #0369a1; border: 1.5px solid #bae6fd; padding: 3px 9px; border-radius: 6px; font-weight: 900;">⚡ 2026.10.02(금) 당일 급등 재료 & 공시 타임라인</span>
+                  <span id="market-radar-badge" style="font-size: 0.74rem; background: #e0f2fe; color: #d4a373; border: 1.5px solid #bae6fd; padding: 3px 9px; border-radius: 6px; font-weight: 900;">⚡ 2026.10.02(금) 당일 급등 재료 & 공시 타임라인</span>
                 </div>
                 <div style="font-size: 0.78rem; color: #94a3b8; margin-top: 3px;">
                   단순 개별주 나열이 아닌, 코스피/코스닥 지수 수급과 거래대금이 실제로 터진 '진짜 주도 섹터 TOP 5'를 자동 판정합니다.
@@ -529,7 +529,7 @@
             <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
               <span id="radar-updated-time" style="font-size: 0.74rem; color: #64748b; font-weight: 600;">실시간 동기화 대기</span>
               <!-- 📂 탐정 사건 수첩 바로가기 퀵 점프 버튼 -->
-              <button type="button" id="btn-goto-dossier-from-radar" onclick="document.getElementById('theme-dossier-section')?.scrollIntoView({ behavior: 'smooth' });" title="탐정 사건 수첩으로 바로가기" style="background: #f5f3ff; border: 1.5px solid #a855f7; color: #6b21a8 !important; padding: 7px 14px; border-radius: 8px; font-size: 0.84rem; font-weight: 900; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 3px rgba(168, 85, 247, 0.15); transition: all 0.2s;" onmouseover="this.style.background='#ede9fe'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='#f5f3ff'; this.style.transform='none';">
+              <button type="button" id="btn-goto-dossier-from-radar" onclick="document.getElementById('theme-dossier-section')?.scrollIntoView({ behavior: 'smooth' });" title="탐정 사건 수첩으로 바로가기" style="background: #3e312b; border: 1px solid #4a3b34; color: #f5ebe0 !important; padding: 7px 14px; border-radius: 8px; font-size: 0.84rem; font-weight: 900; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 3px rgba(168, 85, 247, 0.15); transition: all 0.2s;" onmouseover="this.style.background='#ede9fe'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='#f5f3ff'; this.style.transform='none';">
                 📁 탐정 사건 수첩 바로가기
               </button>
               <button type="button" id="btn-sync-market-radar" onclick="refreshMarketOverviewRadar()" title="시장 판도 및 주도 테마 실시간 전수 스캔 새로고침" style="background: linear-gradient(135deg, #0284c7, #2563eb); color: #ffffff; border: 1.5px solid #38bdf8; padding: 7px 16px; border-radius: 8px; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4); transition: all 0.2s;" onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 18px rgba(2, 132, 199, 0.6)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 14px rgba(2, 132, 199, 0.4)';">
@@ -567,7 +567,7 @@
                 <span id="radar-mood-tag" style="background: linear-gradient(135deg, rgba(234, 88, 12, 0.15), rgba(245, 158, 11, 0.2)); color: #ea580c; border: 1.5px solid #f97316; padding: 4px 12px; border-radius: 6px; font-weight: 900; font-size: 13px; letter-spacing: -0.2px;">
                   개별 테마 순환매 우세
                 </span>
-                <span id="radar-est-volume" style="font-size: 13px; color: #0284c7; background: #e0f2fe; border: 1px solid #bae6fd; padding: 4px 10px; border-radius: 6px; font-weight: 800;">
+                <span id="radar-est-volume" style="font-size: 13px; color: #d4a373; background: #e0f2fe; border: 1px solid #bae6fd; padding: 4px 10px; border-radius: 6px; font-weight: 800;">
                   거래대금 18조 4,500억
                 </span>
               </div>
@@ -604,7 +604,7 @@
                 <strong style="color: #be123c; font-weight: 800;">원클릭 탐정 체크리스트 연동</strong>: 위 TOP 5 테마 카드를 클릭하면, 아래 <strong style="color: #0f172a;">7대 체크리스트</strong>와 <strong style="color: #0f172a;">4대 채널(뉴스·공시·리포트·블로그) 타임라인</strong>이 즉각 해당 주도 테마로 자동 전환되어 정밀 분석이 실행됩니다.
               </div>
             </div>
-            <span style="font-size: 12px; color: #047857; font-weight: 800; background: #ecfdf5; padding: 4px 10px; border-radius: 6px; border: 1px solid #a7f3d0; white-space: nowrap;">
+            <span style="font-size: 12px; color: #a89f91; font-weight: 800; background: #ecfdf5; padding: 4px 10px; border-radius: 6px; border: 1px solid #a7f3d0; white-space: nowrap;">
               ⚡ 자동 타임라인 연동
             </span>
           </div>
@@ -626,7 +626,7 @@
                 </div>
               </div>
             </div>
-            <span style="font-size: 12px; color: #0284c7; background: #e0f2fe; padding: 4px 12px; border-radius: 6px; font-weight: 800; border: 1px solid #bae6fd;">
+            <span style="font-size: 12px; color: #d4a373; background: #e0f2fe; padding: 4px 12px; border-radius: 6px; font-weight: 800; border: 1px solid #bae6fd;">
               💾 브라우저 로컬 자동 보존
             </span>
           </div>
@@ -648,7 +648,7 @@
 
             <!-- 직접 입력 시 노출되는 테마명 인풋 -->
             <div id="custom-theme-direct-wrap" style="display: none; flex-direction: column; gap: 6px;">
-              <label style="font-size: 13px; color: #0284c7; font-weight: 700;">직접 입력 테마명</label>
+              <label style="font-size: 13px; color: #d4a373; font-weight: 700;">직접 입력 테마명</label>
               <input type="text" id="custom-theme-input" placeholder="예: 우주항공, 자율주행" style="background: #ffffff; border: 1.5px solid #cbd5e1; color: #0f172a; padding: 0 14px; height: 42px; border-radius: 8px; font-size: 14px; font-weight: 600; outline: none; width: 160px;">
             </div>
 
@@ -685,7 +685,7 @@
               <span style="font-size: 1.2rem;">📊</span>
               <div>
                 <h4 style="font-size: 1.02rem; font-weight: 900; color: #0f172a; margin: 0; display: flex; align-items: center; gap: 6px;">
-                  최신 리서치 리포트 피드 (실시간 수집) <span style="font-size: 0.72rem; padding: 2px 7px; background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; border-radius: 4px; font-weight: 800;">한경 컨센서스 LIVE</span>
+                  최신 리서치 리포트 피드 (실시간 수집) <span style="font-size: 0.72rem; padding: 2px 7px; background: #ecfdf5; color: #a89f91; border: 1px solid #a7f3d0; border-radius: 4px; font-weight: 800;">한경 컨센서스 LIVE</span>
                 </h4>
                 <div style="font-size: 0.74rem; color: #94a3b8; margin-top: 2px;">
                   주요 증권사 애널리스트가 발행한 목표주가 상향 및 핵심 수주/실적 리포트를 실시간 대량 수집 피드로 제공합니다.
@@ -693,7 +693,7 @@
               </div>
             </div>
             <div style="display: flex; align-items: center; gap: 6px;">
-              <button type="button" onclick="loadTodayHkReportsWidget()" style="background: #ecfdf5; border: 1px solid #a7f3d0; color: #047857; padding: 4px 10px; border-radius: 6px; font-size: 0.74rem; font-weight: 700; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.background='#d1fae5';" onmouseout="this.style.background='#ecfdf5';">
+              <button type="button" onclick="loadTodayHkReportsWidget()" style="background: #ecfdf5; border: 1px solid #a7f3d0; color: #a89f91; padding: 4px 10px; border-radius: 6px; font-size: 0.74rem; font-weight: 700; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.background='#d1fae5';" onmouseout="this.style.background='#ecfdf5';">
                 새로고침 🔄
               </button>
             </div>
@@ -718,12 +718,12 @@
                   <h4 id="theme-timeline-title" style="font-size: 1.15rem; font-weight: 900; color: #1e293b; margin: 0;">
                     차세대 HBM4 & 유리기판 재료 타임라인
                   </h4>
-                  <span id="theme-timeline-badge" style="font-size: 0.72rem; background: #f0f9ff; color: #0284c7; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 6px; font-weight: 800;">
+                  <span id="theme-timeline-badge" style="font-size: 0.72rem; background: #f0f9ff; color: #d4a373; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 6px; font-weight: 800;">
                     반도체/AI
                   </span>
                 </div>
                 <div id="theme-timeline-lead-desc" style="font-size: 0.78rem; color: #64748b; margin-top: 4px;">
-                  👑 대장주: <span style="color: #334155; font-weight: 700;">SK하이닉스, 와이씨, 에프에스티, 필옵틱스</span> · 기사 <span id="theme-timeline-count" style="color: #0284c7; font-weight: 800;">0건</span>
+                  👑 대장주: <span style="color: #334155; font-weight: 700;">SK하이닉스, 와이씨, 에프에스티, 필옵틱스</span> · 기사 <span id="theme-timeline-count" style="color: #d4a373; font-weight: 800;">0건</span>
                 </div>
               </div>
             </div>
@@ -750,7 +750,7 @@
               </button>
 
               <!-- [5단계 신규] 사건 일지 저장 버튼 -->
-              <button type="button" id="btn-save-case-log" onclick="openSaveCaseModal()" title="현재 테마와 대장주, 7대 체크리스트를 사건 일지로 영구 보존" style="background: #ecfdf5; color: #047857; border: 1.5px solid #a7f3d0; padding: 6px 13px; border-radius: 8px; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all 0.2s;">
+              <button type="button" id="btn-save-case-log" onclick="openSaveCaseModal()" title="현재 테마와 대장주, 7대 체크리스트를 사건 일지로 영구 보존" style="background: #ecfdf5; color: #a89f91; border: 1.5px solid #a7f3d0; padding: 6px 13px; border-radius: 8px; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all 0.2s;">
                 <span>💾 사건 일지 저장</span>
               </button>
 
@@ -827,7 +827,7 @@
               <div>
                 <h4 style="font-size: 1.15rem; font-weight: 900; color: #0f172a; margin: 0; display: flex; align-items: center; gap: 8px;">
                   상시 추적 관리 테마 포트폴리오 뷰
-                  <span style="font-size: 0.72rem; background: #e0f2fe; color: #0369a1; border: 1.5px solid #bae6fd; padding: 2px 8px; border-radius: 6px; font-weight: 900;">4대 채널 병렬 스트리밍</span>
+                  <span style="font-size: 0.72rem; background: #e0f2fe; color: #d4a373; border: 1.5px solid #bae6fd; padding: 2px 8px; border-radius: 6px; font-weight: 900;">4대 채널 병렬 스트리밍</span>
                 </h4>
                 <div style="font-size: 0.78rem; color: #94a3b8; margin-top: 3px;">
                   관심 테마들을 다중 선택하면 뉴스·DART 공시·증권사 리포트·블로그 분석이 4열 컬럼에 독립 분할되어 실시간 동기화됩니다.
@@ -835,7 +835,7 @@
               </div>
             </div>
             <div style="display: flex; align-items: center; gap: 8px;">
-              <button type="button" onclick="refreshThemePortfolioStreaming()" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(37, 99, 235, 0.3)); border: 1px solid rgba(56, 189, 248, 0.4); color: #0284c7; padding: 6px 14px; border-radius: 8px; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s;" onmouseover="this.style.background='rgba(56,189,248,0.3)';" onmouseout="this.style.background='linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(37, 99, 235, 0.3))';">
+              <button type="button" onclick="refreshThemePortfolioStreaming()" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(37, 99, 235, 0.3)); border: 1px solid rgba(56, 189, 248, 0.4); color: #d4a373; padding: 6px 14px; border-radius: 8px; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s;" onmouseover="this.style.background='rgba(56,189,248,0.3)';" onmouseout="this.style.background='linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(37, 99, 235, 0.3))';">
                 <span id="portfolio-sync-spin">🔄</span> 4대 채널 통합 동기화
               </button>
             </div>
@@ -844,7 +844,7 @@
           <!-- 테마 다중 선택 칩 그룹 바 -->
           <div style="margin-bottom: 16px; padding: 12px 14px; background: #f8fafc; border-radius: 10px; border: 1px solid #e2e8f0;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <span style="font-size: 0.76rem; font-weight: 800; color: #0284c7;">🎯 관심 추적 테마 다중 선택 (클릭하여 ON/OFF):</span>
+              <span style="font-size: 0.76rem; font-weight: 800; color: #d4a373;">🎯 관심 추적 테마 다중 선택 (클릭하여 ON/OFF):</span>
               <span id="portfolio-selected-count" style="font-size: 0.72rem; color: #94a3b8;">선택: 0개 테마</span>
             </div>
             <div id="theme-portfolio-selector-chips" style="display: flex; flex-wrap: wrap; gap: 8px;">
@@ -859,9 +859,9 @@
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px; margin-bottom: 10px;">
                 <div style="display: flex; align-items: center; gap: 6px;">
                   <span style="font-size: 1rem;">📰</span>
-                  <strong style="font-size: 0.85rem; color: #0284c7;">실시간 뉴스 피드</strong>
+                  <strong style="font-size: 0.85rem; color: #d4a373;">실시간 뉴스 피드</strong>
                 </div>
-                <span id="portfolio-col-news-count" style="font-size: 0.7rem; background: #eff6ff; color: #0284c7; border: 1px solid #bfdbfe; padding: 1px 7px; border-radius: 10px; font-weight: 800;">
+                <span id="portfolio-col-news-count" style="font-size: 0.7rem; background: #3e312b; color: #f5ebe0; border: 1px solid #4a3b34; padding: 1px 7px; border-radius: 10px; font-weight: 800;">
                   0건
                 </span>
               </div>
@@ -891,7 +891,7 @@
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px; margin-bottom: 10px;">
                 <div style="display: flex; align-items: center; gap: 6px;">
                   <span style="font-size: 1rem;">📊</span>
-                  <strong style="font-size: 0.85rem; color: #059669;">증권사 리포트</strong>
+                  <strong style="font-size: 0.85rem; color: #d4a373;">증권사 리포트</strong>
                 </div>
                 <span id="portfolio-col-report-count" style="font-size: 0.7rem; background: rgba(16, 185, 129, 0.15); color: #a7f3d0; border: 1px solid rgba(16, 185, 129, 0.3); padding: 1px 7px; border-radius: 10px; font-weight: 800;">
                   0건
@@ -907,7 +907,7 @@
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px; margin-bottom: 10px;">
                 <div style="display: flex; align-items: center; gap: 6px;">
                   <span style="font-size: 1rem;">✍️</span>
-                  <strong style="font-size: 0.85rem; color: #6b21a8;">블로그 & 전문 분석</strong>
+                  <strong style="font-size: 0.85rem; color: #d4a373;">블로그 & 전문 분석</strong>
                 </div>
                 <span id="portfolio-col-blog-count" style="font-size: 0.7rem; background: rgba(168, 85, 247, 0.15); color: #e9d5ff; border: 1px solid rgba(168, 85, 247, 0.3); padding: 1px 7px; border-radius: 10px; font-weight: 800;">
                   0건
@@ -928,12 +928,12 @@
             <h3 style="font-size: 1.2rem; font-weight: 900; color: #0f172a; margin: 0 0 4px 0;">
               📅 주식 시장 핵심 캘린더 & 일정 매매 플래너
             </h3>
-<div style="margin-top: 4px; margin-bottom: 2px;"><span id="calendar-focus-date-badge" style="font-size: 0.76rem; background: #e0f2fe; color: #0369a1; border: 1.5px solid #7dd3fc; padding: 3px 10px; border-radius: 6px; font-weight: 900;">📌 기준일 포커스: 2026년 10월 2일(금) / 10월 1주차 주요 일정</span></div>
+<div style="margin-top: 4px; margin-bottom: 2px;"><span id="calendar-focus-date-badge" style="font-size: 0.76rem; background: #e0f2fe; color: #d4a373; border: 1.5px solid #7dd3fc; padding: 3px 10px; border-radius: 6px; font-weight: 900;">📌 기준일 포커스: 2026년 10월 2일(금) / 10월 1주차 주요 일정</span></div>
             <p style="font-size: 0.84rem; color: #94a3b8; margin: 0;">
               "소문에 사고 뉴스에 팔아라" - 뉴스 기사에서 감지된 미래 모멘텀 일정을 승인하여 선점하는 스마트 캘린더
             </p>
           </div>
-          <button type="button" id="btn-direct-track-submit" class="imggen-style-chip active" style="background: #0284c7; border-color: #0284c7;">
+          <button type="button" id="btn-direct-track-submit" class="imggen-style-chip active" style="background: #0284c7; border-color: #d4a373;">
             ➕ 나만의 관심 일정 추가
           </button>
         </div>
@@ -948,7 +948,7 @@
                   <h4 style="font-size: 1.05rem; font-weight: 900; color: #0f172a; margin: 0;">
                     AI 뉴스 탐지 일정 후보
                   </h4>
-                  <span id="pending-events-badge" style="font-size: 0.74rem; background: #f3e8ff; color: #6b21a8; border: 1.5px solid #d8b4fe; padding: 2px 9px; border-radius: 12px; font-weight: 900;">
+                  <span id="pending-events-badge" style="font-size: 0.74rem; background: #352924; color: #d4a373; border: 1px solid #4a3b34; padding: 2px 9px; border-radius: 12px; font-weight: 900;">
                     승인 대기 0건
                   </span>
                 </div>
@@ -960,7 +960,7 @@
 
             <!-- 우측 액션 & 접기/펼치기 아이콘 -->
             <div style="display: flex; align-items: center; gap: 8px;" onclick="event.stopPropagation()">
-              <button type="button" onclick="approveAllPendingEvents()" style="background: #ecfdf5; color: #047857; border: 1.5px solid #a7f3d0; padding: 4px 10px; border-radius: 6px; font-size: 0.72rem; font-weight: 800; cursor: pointer;">
+              <button type="button" onclick="approveAllPendingEvents()" style="background: #ecfdf5; color: #a89f91; border: 1.5px solid #a7f3d0; padding: 4px 10px; border-radius: 6px; font-size: 0.72rem; font-weight: 800; cursor: pointer;">
                 ✔ 모두 승인
               </button>
               <button type="button" onclick="rejectAllPendingEvents()" style="background: #fef2f2; color: #b91c1c; border: 1.5px solid #fecaca; padding: 4px 10px; border-radius: 6px; font-size: 0.72rem; font-weight: 800; cursor: pointer;">
@@ -990,7 +990,7 @@
                 </div>
               </div>
             </div>
-            <button type="button" id="btn-sync-stock-calendar" onclick="refreshStockCalendarLive()" title="실시간 증시 캘린더 및 AI 일정 최신화" style="background: #f0fdf4; color: #059669; border: 1px solid #a7f3d0; padding: 5px 12px; border-radius: 8px; font-size: 0.76rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;" onmouseover="this.style.background='#dcfce7'; this.style.borderColor='#34d399';" onmouseout="this.style.background='#f0fdf4'; this.style.borderColor='#a7f3d0';">
+            <button type="button" id="btn-sync-stock-calendar" onclick="refreshStockCalendarLive()" title="실시간 증시 캘린더 및 AI 일정 최신화" style="background: #3e312b; color: #f5ebe0; border: 1px solid #4a3b34; padding: 5px 12px; border-radius: 8px; font-size: 0.76rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;" onmouseover="this.style.background='#dcfce7'; this.style.borderColor='#34d399';" onmouseout="this.style.background='#f0fdf4'; this.style.borderColor='#a7f3d0';">
               <span id="calendar-sync-icon">🔄</span>
               <span>LIVE 일정 갱신</span>
             </button>
@@ -1002,7 +1002,7 @@
           <!-- 이번 주 일정 -->
           <div class="kc-box-white-card" style="background: #ffffff; border: 1px solid #e2e8f0; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px;">
-              <span style="font-size: 1rem; font-weight: 800; color: #0284c7;">📌 이번 주 핵심 일정 (D-Day 임박)</span>
+              <span style="font-size: 1rem; font-weight: 800; color: #d4a373;">📌 이번 주 핵심 일정 (D-Day 임박)</span>
               <span style="font-size: 0.76rem; color: #64748b;" id="stock-events-week-count">0건</span>
             </div>
             <div id="stock-events-week" style="display: flex; flex-direction: column; gap: 10px;"></div>
@@ -1011,7 +1011,7 @@
           <!-- 이번 달 / 다음 달 중장기 일정 -->
           <div class="kc-box-white-card" style="background: #ffffff; border: 1px solid #e2e8f0; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px;">
-              <span style="font-size: 1rem; font-weight: 800; color: #059669;">🔭 이번 달~다음 달 예정 주요 모멘텀</span>
+              <span style="font-size: 1rem; font-weight: 800; color: #d4a373;">🔭 이번 달~다음 달 예정 주요 모멘텀</span>
               <span style="font-size: 0.76rem; color: #64748b;" id="stock-events-month-count">0건</span>
             </div>
             <div id="stock-events-month" style="display: flex; flex-direction: column; gap: 10px;"></div>
@@ -1039,10 +1039,10 @@
           </div>
 
           <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-            <button type="button" class="imggen-style-chip" onclick="saveDailyMarketClosing()" style="padding: 7px 16px; background: #f0fdf4; color: #059669; border: 1px solid #a7f3d0; font-weight: 800; font-size: 0.78rem; cursor: pointer; border-radius: 8px; display: inline-flex; align-items: center; gap: 6px;" title="오늘 장마감 특징주와 글로벌 시황을 일일 아카이브로 자동 저장">
+            <button type="button" class="imggen-style-chip" onclick="saveDailyMarketClosing()" style="padding: 7px 16px; background: #3e312b; color: #f5ebe0; border: 1px solid #4a3b34; font-weight: 800; font-size: 0.78rem; cursor: pointer; border-radius: 8px; display: inline-flex; align-items: center; gap: 6px;" title="오늘 장마감 특징주와 글로벌 시황을 일일 아카이브로 자동 저장">
               💾 오늘 마감 브리핑 누적 저장
             </button>
-            <button type="button" class="imggen-style-chip" onclick="loadMarketHistoryReview()" style="padding: 7px 14px; background: #f8fafc; color: #0284c7; border: 1px solid #e2e8f0; font-weight: 800; font-size: 0.78rem; cursor: pointer; border-radius: 8px; display: inline-flex; align-items: center; gap: 5px;">
+            <button type="button" class="imggen-style-chip" onclick="loadMarketHistoryReview()" style="padding: 7px 14px; background: #f8fafc; color: #d4a373; border: 1px solid #e2e8f0; font-weight: 800; font-size: 0.78rem; cursor: pointer; border-radius: 8px; display: inline-flex; align-items: center; gap: 5px;">
               🔄 리포트 동기화
             </button>
           </div>
@@ -1060,7 +1060,7 @@
                   이번 주 주간 복기 & 차주 증시 예측 리포트 (10월 1주차 / 10.02 마감)
                 </h4>
               </div>
-              <span id="weekly-status-badge" style="font-size: 0.74rem; background: #f0fdf4; color: #059669; padding: 3px 8px; border-radius: 6px; font-weight: 800; border: 1px solid #bbf7d0;">
+              <span id="weekly-status-badge" style="font-size: 0.74rem; background: #352924; color: #d4a373; padding: 3px 8px; border-radius: 6px; font-weight: 800; border: 1px solid #4a3b34;">
                 실체적 재료 팩트 집계 완료
               </span>
             </div>
@@ -1079,7 +1079,7 @@
                     • <strong>원자력/SMR:</strong> 체코 원전 24조원 본계약 세부 조율 완료 및 美 SMR 파운드리 협약으로 두산에너빌리티·대한전선에 기관 6,000억 이상 연속 순매수 유입.
                   </div>
                   <div style="padding: 10px 12px; background: #ffffff; border-left: 3px solid #0284c7; border: 1px solid #e2e8f0; border-left-width: 3px; border-radius: 0 6px 6px 0;">
-                    <strong style="color: #0369a1;">📡 수급 총합:</strong><br>
+                    <strong style="color: #d4a373;">📡 수급 총합:</strong><br>
                     외국인 (+7,800억원) · 기관 (+6,510억원) 주간 양매수 우위. 반도체 소부장과 원자력·우주항공 중심의 '숫자 찍히는 수출 섹터'에 선택과 집중 지속.
                   </div>
                 </div>
@@ -1087,12 +1087,12 @@
 
               <!-- 우측: 다음 주 예측 엔진 (인과관계 기반) -->
               <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px;">
-                <div style="font-size: 0.95rem; font-weight: 800; color: #0284c7; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
+                <div style="font-size: 0.95rem; font-weight: 800; color: #d4a373; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
                   <span>🚀</span> [다음 주 예측 엔진]: 인과관계 기반 시나리오
                 </div>
                 <div id="next-week-prediction-content" style="font-size: 0.83rem; color: #334155; line-height: 1.65; display: flex; flex-direction: column; gap: 10px;">
                   <div style="padding: 12px 14px; background: #ffffff; border-left: 3px solid #0284c7; border: 1px solid #e2e8f0; border-left-width: 3px; border-radius: 0 6px 6px 0;">
-                    <strong style="color: #0284c7; font-size: 0.86rem;">⚡ 인과관계 공식 기반 시나리오:</strong><br>
+                    <strong style="color: #d4a373; font-size: 0.86rem;">⚡ 인과관계 공식 기반 시나리오:</strong><br>
                     "이번 주 <strong>미국 연준 9월 FOMC 50bp 빅컷 단행 및 달러 약세(환율 1,320원대 안착)</strong> 결과 때문에, 다음 주는 <strong>외국인 패시브 자금의 아시아 신흥국 유입 가속화 및 10월 초 테슬라 로보택시 공개 일정 카운트다운</strong>이 도래하여 <strong>온디바이스 AI 자율주행 칩 및 바이오 파이프라인 섹터</strong>에 자금이 쏠릴 가능성이 높습니다."
                   </div>
                   <div style="font-size: 0.78rem; color: #64748b; padding-left: 4px;">
@@ -1133,7 +1133,7 @@
 
               <!-- 차월(10월) 대전망 -->
               <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px;">
-                <div style="font-size: 0.92rem; font-weight: 800; color: #059669; margin-bottom: 8px;">
+                <div style="font-size: 0.92rem; font-weight: 800; color: #d4a373; margin-bottom: 8px;">
                   🔭 [10월 대형 글로벌 매크로 & 사전 유망 테마]
                 </div>
                 <div style="font-size: 0.82rem; color: #334155; line-height: 1.65;">
@@ -1159,7 +1159,7 @@
                   달을 클릭하면 그달의 핵심 사건, 주도 테마, 대표 대장주 및 시장 교훈이 하단 상세 패널에 즉시 브리핑됩니다.
                 </p>
               </div>
-              <span style="font-size: 0.74rem; background: #eff6ff; color: #0284c7; padding: 3px 8px; border-radius: 6px; font-weight: 800; border: 1px solid #bae6fd;">
+              <span style="font-size: 0.74rem; background: #eff6ff; color: #d4a373; padding: 3px 8px; border-radius: 6px; font-weight: 800; border: 1px solid #bae6fd;">
                 현재 9월 17일 기준 라이브
               </span>
             </div>
@@ -1195,7 +1195,7 @@
               <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
                 <span style="background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; font-size: 0.74rem; font-weight: 900; padding: 3px 9px; border-radius: 6px;">
                   🚀 10월 2일(금) 모닝 브리핑 (현지시각 10월 1일 뉴욕 마감)</span>
-<span style="font-size: 0.78rem; color: #0284c7; font-weight: 700;">외신 종합 리포트 (블룸버그 · 로이터 · WSJ 취합)</span>
+<span style="font-size: 0.78rem; color: #d4a373; font-weight: 700;">외신 종합 리포트 (블룸버그 · 로이터 · WSJ 취합)</span>
               </div>
               <h4 id="us-market-briefing-title" style="font-size: 1.25rem; font-weight: 900; color: #1e293b; margin: 0;">
                 실시간 뉴욕증시 마감 브리핑 집계 중...
@@ -1210,7 +1210,7 @@
                 <div id="index-dji-diff" style="font-size: 0.7rem; color: #64748b; font-weight: 800;">집계중...</div>
               </div>
               <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 8px 14px; border-radius: 10px; text-align: center;">
-                <div style="font-size: 0.7rem; color: #0284c7; font-weight: 700;">나스닥 (NASDAQ)</div>
+                <div style="font-size: 0.7rem; color: #d4a373; font-weight: 700;">나스닥 (NASDAQ)</div>
                 <div id="index-nasdaq-val" style="font-size: 0.95rem; font-weight: 900; color: #dc2626;">--</div>
                 <div id="index-nasdaq-diff" style="font-size: 0.7rem; color: #64748b; font-weight: 800;">집계중...</div>
               </div>
@@ -1229,7 +1229,7 @@
 
           <!-- B. 핵심 요약 3줄 한눈에 보기 (실시간 자동 브리핑 영역) -->
           <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 18px; margin-bottom: 20px;">
-            <div style="font-size: 0.82rem; font-weight: 900; color: #0284c7; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+            <div style="font-size: 0.82rem; font-weight: 900; color: #d4a373; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
               <span>💡</span> [초보자 3초 요약] 어제 미국 장은 왜 이렇게 움직였을까?
             </div>
             <div id="us-market-briefing-summary" style="font-size: 0.88rem; color: #1e293b; line-height: 1.65;">
@@ -1298,7 +1298,7 @@
                 </div>
                 <ul style="font-size: 0.77rem; color: #475569; line-height: 1.65; margin: 0; padding-left: 16px;">
                   <li>미국 디젤 갤런당 <strong style="color: #dc2626;">6달러 사상 최고</strong> — 유가발 인플레 재점화 우려</li>
-                  <li>브렌트유 <strong style="color: #dc2626;">+2.67%(108.50)</strong> / 금 <strong style="color: #0284c7;">-0.43%(4,333.40)</strong> / VIX <strong style="color: #dc2626;">+0.58%(17.20)</strong></li>
+                  <li>브렌트유 <strong style="color: #dc2626;">+2.67%(108.50)</strong> / 금 <strong style="color: #d4a373;">-0.43%(4,333.40)</strong> / VIX <strong style="color: #dc2626;">+0.58%(17.20)</strong></li>
                   <li>야간장 고저 변동폭 <strong>1.94%</strong> (고 1,050.30 / 저 1,030.30)로 등락 심화</li>
                 </ul>
               </div>
@@ -1310,9 +1310,9 @@
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px dashed #7dd3fc; padding-bottom: 10px;">
                 <div style="display: flex; align-items: center; gap: 8px;">
                   <span style="font-size: 1.15rem;">📉</span>
-                  <span style="font-size: 1rem; font-weight: 900; color: #0369a1;">약세 업종 TOP 5</span>
+                  <span style="font-size: 1rem; font-weight: 900; color: #d4a373;">약세 업종 TOP 5</span>
                 </div>
-                <span style="font-size: 0.72rem; background: #e0f2fe; color: #0284c7; border: 1px solid #7dd3fc; padding: 2px 8px; border-radius: 6px; font-weight: 800;">
+                <span style="font-size: 0.72rem; background: #e0f2fe; color: #d4a373; border: 1px solid #7dd3fc; padding: 2px 8px; border-radius: 6px; font-weight: 800;">
                   하락 상위
                 </span>
               </div>
@@ -1324,13 +1324,13 @@
                 <div style="background: #ffffff; border: 1px solid #bae6fd; border-radius: 8px; padding: 10px 12px;">
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
                     <div style="font-size: 0.88rem; font-weight: 800; color: #1e293b;">
-                      <span style="color: #0284c7; font-weight: 900;">1위</span> 경기소비재 (XLY)
+                      <span style="color: #d4a373; font-weight: 900;">1위</span> 경기소비재 (XLY)
                     </div>
-                    <span style="font-size: 0.88rem; font-weight: 900; color: #0284c7;">-1.75% ▼</span>
+                    <span style="font-size: 0.88rem; font-weight: 900; color: #d4a373;">-1.75% ▼</span>
                   </div>
                   <div style="font-size: 0.77rem; color: #64748b; line-height: 1.5;">
                     유가 급등에 따른 소비 여력 위축 및 금리 인상 가능성<br>
-                    <span style="color: #475569;">(스타벅스 <strong style="color: #0284c7;">-2.51%</strong>, 나이키 <strong style="color: #0284c7;">-2.24%</strong>, 아마존 <strong style="color: #0284c7;">-2.02%</strong>, 맥도날드 <strong style="color: #0284c7;">-1.83%</strong>)</span>
+                    <span style="color: #475569;">(스타벅스 <strong style="color: #d4a373;">-2.51%</strong>, 나이키 <strong style="color: #d4a373;">-2.24%</strong>, 아마존 <strong style="color: #d4a373;">-2.02%</strong>, 맥도날드 <strong style="color: #d4a373;">-1.83%</strong>)</span>
                   </div>
                 </div>
 
@@ -1338,13 +1338,13 @@
                 <div style="background: #ffffff; border: 1px solid #bae6fd; border-radius: 8px; padding: 10px 12px;">
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
                     <div style="font-size: 0.88rem; font-weight: 800; color: #1e293b;">
-                      <span style="color: #0284c7; font-weight: 900;">2위</span> 유틸리티 (XLU)
+                      <span style="color: #d4a373; font-weight: 900;">2위</span> 유틸리티 (XLU)
                     </div>
-                    <span style="font-size: 0.88rem; font-weight: 900; color: #0284c7;">-1.20% ▼</span>
+                    <span style="font-size: 0.88rem; font-weight: 900; color: #d4a373;">-1.20% ▼</span>
                   </div>
                   <div style="font-size: 0.77rem; color: #64748b; line-height: 1.5;">
                     금리 상승기에 배당주 매력 감소<br>
-                    <span style="color: #475569;">(SO <strong style="color: #0284c7;">-1.21%</strong>, DUK <strong style="color: #0284c7;">-1.05%</strong>, NEE <strong style="color: #0284c7;">-0.69%</strong>)</span>
+                    <span style="color: #475569;">(SO <strong style="color: #d4a373;">-1.21%</strong>, DUK <strong style="color: #d4a373;">-1.05%</strong>, NEE <strong style="color: #d4a373;">-0.69%</strong>)</span>
                   </div>
                 </div>
 
@@ -1352,13 +1352,13 @@
                 <div style="background: #ffffff; border: 1px solid #bae6fd; border-radius: 8px; padding: 10px 12px;">
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
                     <div style="font-size: 0.88rem; font-weight: 800; color: #1e293b;">
-                      <span style="color: #0284c7; font-weight: 900;">3위</span> 커뮤니케이션 (XLC)
+                      <span style="color: #d4a373; font-weight: 900;">3위</span> 커뮤니케이션 (XLC)
                     </div>
-                    <span style="font-size: 0.88rem; font-weight: 900; color: #0284c7;">-0.90% ▼</span>
+                    <span style="font-size: 0.88rem; font-weight: 900; color: #d4a373;">-0.90% ▼</span>
                   </div>
                   <div style="font-size: 0.77rem; color: #64748b; line-height: 1.5;">
                     대형 기술주 차익실현<br>
-                    <span style="color: #475569;">(넷플릭스 <strong style="color: #0284c7;">-3.01%</strong>, 디즈니 <strong style="color: #0284c7;">-2.00%</strong>, 알파벳 <strong style="color: #0284c7;">-1.26%</strong> / 메타 <strong style="color: #dc2626;">+0.70%</strong>)</span>
+                    <span style="color: #475569;">(넷플릭스 <strong style="color: #d4a373;">-3.01%</strong>, 디즈니 <strong style="color: #d4a373;">-2.00%</strong>, 알파벳 <strong style="color: #d4a373;">-1.26%</strong> / 메타 <strong style="color: #dc2626;">+0.70%</strong>)</span>
                   </div>
                 </div>
 
@@ -1366,13 +1366,13 @@
                 <div style="background: #ffffff; border: 1px solid #bae6fd; border-radius: 8px; padding: 10px 12px;">
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
                     <div style="font-size: 0.88rem; font-weight: 800; color: #1e293b;">
-                      <span style="color: #0284c7; font-weight: 900;">4위</span> 필수소비재 (XLP)
+                      <span style="color: #d4a373; font-weight: 900;">4위</span> 필수소비재 (XLP)
                     </div>
-                    <span style="font-size: 0.88rem; font-weight: 900; color: #0284c7;">-0.82% ▼</span>
+                    <span style="font-size: 0.88rem; font-weight: 900; color: #d4a373;">-0.82% ▼</span>
                   </div>
                   <div style="font-size: 0.77rem; color: #64748b; line-height: 1.5;">
                     유통 대형주 중심 약세<br>
-                    <span style="color: #475569;">(코스트코 <strong style="color: #0284c7;">-1.91%</strong>, 월마트 <strong style="color: #0284c7;">-0.91%</strong>, KO <strong style="color: #0284c7;">-0.72%</strong>)</span>
+                    <span style="color: #475569;">(코스트코 <strong style="color: #d4a373;">-1.91%</strong>, 월마트 <strong style="color: #d4a373;">-0.91%</strong>, KO <strong style="color: #d4a373;">-0.72%</strong>)</span>
                   </div>
                 </div>
 
@@ -1380,13 +1380,13 @@
                 <div style="background: #ffffff; border: 1px solid #bae6fd; border-radius: 8px; padding: 10px 12px;">
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
                     <div style="font-size: 0.88rem; font-weight: 800; color: #1e293b;">
-                      <span style="color: #0284c7; font-weight: 900;">5위</span> 산업재 (XLI)
+                      <span style="color: #d4a373; font-weight: 900;">5위</span> 산업재 (XLI)
                     </div>
-                    <span style="font-size: 0.88rem; font-weight: 900; color: #0284c7;">-0.64% ▼</span>
+                    <span style="font-size: 0.88rem; font-weight: 900; color: #d4a373;">-0.64% ▼</span>
                   </div>
                   <div style="font-size: 0.77rem; color: #64748b; line-height: 1.5;">
                     전력 인프라 약세<br>
-                    <span style="color: #475569;">(콴타서비스 <strong style="color: #0284c7;">-1.39%</strong>, 허벨 <strong style="color: #0284c7;">-0.87%</strong>)</span>
+                    <span style="color: #475569;">(콴타서비스 <strong style="color: #d4a373;">-1.39%</strong>, 허벨 <strong style="color: #d4a373;">-0.87%</strong>)</span>
                   </div>
                 </div>
 
@@ -1401,7 +1401,7 @@
               ※ 매일 오전 미국 정규장 및 애프터마켓 종료 후 전일 외신 전체 기사를 AI가 종합 분석하여 자동 리포팅합니다.
             </span>
             <div style="display: flex; gap: 8px;">
-              <a href="https://search.naver.com/search.naver?where=news&query=%EB%89%B4%EC%9A%95%EC%A6%9D%EC%8B%9C+%EB%A7%88%EA%B0%90" target="_blank" rel="noopener noreferrer" style="background: #eff6ff; color: #0284c7; border: 1px solid #bfdbfe; padding: 4px 12px; border-radius: 6px; font-size: 0.76rem; text-decoration: none; font-weight: 700;">
+              <a href="https://search.naver.com/search.naver?where=news&query=%EB%89%B4%EC%9A%95%EC%A6%9D%EC%8B%9C+%EB%A7%88%EA%B0%90" target="_blank" rel="noopener noreferrer" style="background: #3e312b; color: #f5ebe0; border: 1px solid #4a3b34; padding: 4px 12px; border-radius: 6px; font-size: 0.76rem; text-decoration: none; font-weight: 700;">
                 네이버 뉴욕증시 속보 전체 ↗
               </a>
               <a href="https://www.google.com/finance/quote/.INX:INDEXSP" target="_blank" rel="noopener noreferrer" style="background: #f8fafc; color: #334155; border: 1px solid #e2e8f0; padding: 4px 12px; border-radius: 6px; font-size: 0.76rem; text-decoration: none; font-weight: 700;">
@@ -1420,7 +1420,7 @@
                 <h4 style="font-size: 1.15rem; font-weight: 900; color: #1e293b; margin: 0;">
                   실시간 미국 증시 & 글로벌 외신 한국어 속보 피드
                 </h4>
-                <span style="font-size: 0.72rem; background: #eff6ff; color: #0284c7; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 6px; font-weight: 700;">
+                <span style="font-size: 0.72rem; background: #352924; color: #d4a373; border: 1px solid #4a3b34; padding: 2px 8px; border-radius: 6px; font-weight: 700;">
                   국내 주요 경제지 실시간 번역 속보
                 </span>
               </div>
@@ -1444,7 +1444,7 @@
         <div class="stock-technique-grid" style="margin-top: 24px;">
           <!-- 1. 아침 장 시작 전 3분 시황 체크법 -->
           <div class="kc-box-white-card" style="background: #ffffff; border: 1px solid #e2e8f0; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-            <div style="font-size: 1.02rem; font-weight: 800; color: #0284c7; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
+            <div style="font-size: 1.02rem; font-weight: 800; color: #d4a373; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
               <span>🌅</span> 1. 장 시작 전(08:30~09:00) 3분 체크리스트
             </div>
             <ul style="padding-left: 20px; font-size: 0.88rem; color: #334155; line-height: 1.8; margin: 0;">
@@ -1456,7 +1456,7 @@
 
           <!-- 2. 주도주 눌림목 돌파 매매법 -->
           <div class="kc-box-white-card" style="background: #ffffff; border: 1px solid #e2e8f0; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-            <div style="font-size: 1.02rem; font-weight: 800; color: #059669; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
+            <div style="font-size: 1.02rem; font-weight: 800; color: #d4a373; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
               <span>🎯</span> 2. 승률 80% 주도주 1차 눌림목 기법
             </div>
             <ul style="padding-left: 20px; font-size: 0.88rem; color: #334155; line-height: 1.8; margin: 0;">
@@ -1502,7 +1502,7 @@
               <h3 style="font-size: 1.2rem; font-weight: 900; color: #1e293b; margin: 0;">
                 종목 심층 딥분석 센터 (Deep Research Center)
               </h3>
-              <span style="font-size: 0.74rem; background: #eff6ff; color: #0284c7; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 6px; font-weight: 700;">
+              <span style="font-size: 0.74rem; background: #352924; color: #d4a373; border: 1px solid #4a3b34; padding: 2px 8px; border-radius: 6px; font-weight: 700;">
                 공시 · 실적 · BM · 미래총집합
               </span>
             </div>
@@ -1514,9 +1514,9 @@
         <!-- 종목 빠른 전환 칩 및 검색 -->
           <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
             <div style="display: flex; gap: 6px; align-items: center; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 4px 10px;">
-              <span style="color: #0284c7; font-size: 0.85rem;">🔍</span>
+              <span style="color: #d4a373; font-size: 0.85rem;">🔍</span>
               <input type="text" id="stock-deep-search-input" placeholder="분석할 종목명 (예: SK하이닉스, 삼천당제약)" style="background: transparent; border: none; color: #1e293b; font-size: 0.82rem; outline: none; width: 180px;" onkeydown="if(event.key==='Enter') searchStockDeepAnalysis()">
-              <button type="button" class="imggen-style-chip" onclick="searchStockDeepAnalysis()" style="padding: 2px 8px; font-size: 0.72rem; background: #eff6ff; color: #0284c7; border: 1px solid #bfdbfe;">분석</button>
+              <button type="button" class="imggen-style-chip" onclick="searchStockDeepAnalysis()" style="padding: 2px 8px; font-size: 0.72rem; background: #3e312b; color: #f5ebe0; border: 1px solid #4a3b34;">분석</button>
             </div>
             <div style="display: flex; gap: 6px; flex-wrap: wrap;" id="stock-deep-quick-chips">
               <!-- JS에서 종목 칩 동적 렌더링 -->
@@ -1558,7 +1558,7 @@
             </p>
           </div>
           <div>
-            <button type="button" class="imggen-style-chip" onclick="renderYoutubeBriefingFeed()" style="padding: 4px 12px; font-size: 0.75rem; background: #f8fafc; color: #0284c7; border: 1px solid #e2e8f0;">
+            <button type="button" class="imggen-style-chip" onclick="renderYoutubeBriefingFeed()" style="padding: 4px 12px; font-size: 0.75rem; background: #f8fafc; color: #d4a373; border: 1px solid #e2e8f0;">
               🔄 영상 피드 새로고침
             </button>
           </div>
@@ -1588,7 +1588,7 @@
 
         <!-- 1. 네이버 뉴스 검색 API -->
         <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;">
-          <div style="font-size: 0.88rem; font-weight: 800; color: #059669; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
+          <div style="font-size: 0.88rem; font-weight: 800; color: #d4a373; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
             <span>📰</span> 1. 네이버 뉴스 검색 API (실시간 특징주 기사)
           </div>
           <div class="form-group" style="margin-bottom: 8px;">
@@ -1603,7 +1603,7 @@
 
         <!-- 2. 한국투자증권 KIS Open API (선택사항) -->
         <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; margin-bottom: 20px;">
-          <div style="font-size: 0.88rem; font-weight: 800; color: #0284c7; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
+          <div style="font-size: 0.88rem; font-weight: 800; color: #d4a373; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
             <span>📈</span> 2. 한국투자증권 실시간 호가/수급 API (선택사항)
           </div>
           <div class="form-group" style="margin-bottom: 8px;">
@@ -1625,7 +1625,7 @@
             <button type="button" onclick="clearStockApiKeys()" style="background: #f1f5f9; border: 1px solid #cbd5e1; color: #475569; padding: 8px 16px; border-radius: 6px; font-size: 0.85rem; font-weight: 700; cursor: pointer;">
               초기화
             </button>
-            <button type="button" onclick="saveStockApiKeys()" style="background: #0284c7; border: none; color: #ffffff; padding: 8px 18px; border-radius: 6px; font-size: 0.85rem; font-weight: 800; cursor: pointer;">
+            <button type="button" onclick="saveStockApiKeys()" style="background: #c7926b; border: 1px solid #d4a373; color: #1a1412; padding: 8px 18px; border-radius: 6px; font-size: 0.85rem; font-weight: 800; cursor: pointer;">
               저장 및 즉시 적용
             </button>
           </div>
@@ -1657,7 +1657,7 @@
 
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js"></script>
-  <script src="js/stock.js?v=v13_simple_channel_briefing"></script>
+  <script src="js/stock.js?v=deep_brown_v9"></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" onclick="if(event.target===this) closeDailyStockReportModal()">
@@ -1718,14 +1718,14 @@
 <!-- ================= [신규] 주식 인텔리전스 시스템 전 기능 자체 검수봇 모달 ================= -->
 <div id="systemInspectorBotModal" class="inspector-bot-modal-backdrop" onclick="if(event.target===this) closeSystemInspectorBot()">
   <div class="inspector-bot-modal-content">
-    <div class="inspector-bot-header" style="background: linear-gradient(135deg, #064e3b, #0f172a) !important; color: #ffffff !important; padding: 18px 24px; border-top-left-radius: 16px; border-top-right-radius: 16px; border-bottom: 1.5px solid #047857; display: flex; justify-content: space-between; align-items: center;">
+    <div class="inspector-bot-header" style="background: #241c18 !important; color: #ffffff !important; padding: 18px 24px; border-top-left-radius: 16px; border-top-right-radius: 16px; border-bottom: 1px solid #4a3b34; display: flex; justify-content: space-between; align-items: center;">
       <div style="display: flex; align-items: center; gap: 10px;">
         <span style="font-size: 1.5rem;">🤖</span>
         <div>
           <div style="font-size: 1.15rem; font-weight: 900; color: #ffffff !important;">
             주식 인텔리전스 시스템 자체 검수봇 (Inspector Bot)
           </div>
-          <div style="font-size: 0.8rem; color: #6ee7b7 !important; font-weight: 700; margin-top: 2px;">
+          <div style="font-size: 0.8rem; color: #d4a373 !important; font-weight: 700; margin-top: 2px;">
             2026.10.02(금) 기준 5대 주요 탭 데이터 연동 및 UI 정상 작동 자가진단
           </div>
         </div>
@@ -1736,14 +1736,14 @@
     </div>
 
     <!-- 검수 종합 상태 요약 바 -->
-    <div style="padding: 14px 24px; background: #ecfdf5; border-bottom: 1px solid #a7f3d0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+    <div style="padding: 14px 24px; background: #352924; border-bottom: 1px solid #4a3b34; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
       <div style="display: flex; align-items: center; gap: 8px;">
         <span style="font-size: 1.1rem;">⚡</span>
-        <span id="inspector-summary-text" style="font-size: 0.88rem; font-weight: 800; color: #065f46;">
+        <span id="inspector-summary-text" style="font-size: 0.88rem; font-weight: 800; color: #d4a373;">
           전체 5개 탭 7개 항목 점검: 진단 중...
         </span>
       </div>
-      <span id="inspector-timestamp" style="font-size: 0.76rem; color: #047857; font-weight: 700;"></span>
+      <span id="inspector-timestamp" style="font-size: 0.76rem; color: #a89f91; font-weight: 700;"></span>
     </div>
 
     <!-- 검수 리포트 목록 본문 -->
@@ -1756,7 +1756,7 @@
     <!-- 모달 푸터 버튼 -->
     <div class="inspector-bot-footer">
       <button type="button" onclick="runSystemInspectorBot()" id="btn-retest-inspector"
-        style="display: inline-flex; align-items: center; gap: 6px; background: #059669; color: #ffffff; border: 1px solid #047857; padding: 9px 18px; border-radius: 8px; font-size: 0.86rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(5, 150, 105, 0.25);">
+        style="display: inline-flex; align-items: center; gap: 6px; background: #c7926b; color: #1a1412; border: 1px solid #d4a373; padding: 9px 18px; border-radius: 8px; font-size: 0.86rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(5, 150, 105, 0.25);">
         <span>🔄</span> 즉시 재검수 실행
       </button>
       <button type="button" onclick="closeSystemInspectorBot()"

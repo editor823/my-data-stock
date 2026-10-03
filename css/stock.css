@@ -1,50 +1,49 @@
 /* ==========================================================================
-   ORYZO AI — Soft Warm Walnut & Warm Beige Typography System
+   DEEP BROWN & WARM BEIGE UNIFIED DESIGN SYSTEM
    Applied to Stock Intelligence Center (css/stock.css)
    
-   [주요 반영 사항]
-   1. 5열 실시간 뉴스 멀티컬럼 피드 하얀박스 -> 따뜻하고 부드러운 '웜 베이지(#f4ecdf)' 박스로 변경
-      (베이지 박스 내부 텍스트는 짙은 흑갈색으로 인쇄물처럼 또렷하게 가독성 확보)
-   2. 전 페이지의 어두운 회색 글씨 -> 선명하고 따뜻한 '베이지색(#f5e6d3, #ffedd7)' 글자로 전면 교체
-      (눌림목 공략 사유, 주도 테마 재료 본문, 캘린더 피드 기사 내용, 회색 라벨 전면 보정)
+   [지정 컬러 팔레트]
+   - 전체 배경 (Body Background): #1a1412 (매우 짙은 딥 에스프레소)
+   - 박스/카드/모달/컨테이너 배경 (Card Background): #2a201c (어두운 고동색 박스)
+   - 서브 카드/내부 입력창/리스트 아이템 배경 (Nested Card): #352924
+   - 테두리 선 (Border): #4a3b34 (서브/미세 테두리: #3e312b)
+   - 메인 텍스트 (Title & Heading): #f5ebe0 (톤다운 크림 베이지)
+   - 서브/본문 텍스트 (Body Text): #d7ccc8 (소프트 베이지)
+   - 설명/날짜/메타 텍스트 (Muted Text): #a89f91 (어두운 베이지)
+   - 강조/포인트/골든베이지 (Accent): #d4a373 또는 #c7926b
+   - 기본 버튼: 배경 #3e312b / 텍스트 #f5ebe0 / 테두리 #4a3b34
    ========================================================================== */
 
 :root {
-  /* Colors */
-  --color-warm-cream: #ffedd7;
-  --color-warm-beige: #f5e6d3;
-  --color-card-beige: #f4ecdf;
-  --color-walnut-shadow: #100904;
-  --color-bark-brown: #382416;
-  --color-cork-border: #4a3d31;
-  --color-driftwood: #d8c7b5;
-  --color-ember-accent: #ff6b1a;
-  --color-pure-black: #000000;
+  /* Design Tokens */
+  --bg-body: #1a1412;
+  --bg-card: #2a201c;
+  --bg-nested: #352924;
+  --border-main: #4a3b34;
+  --border-subtle: #3e312b;
+  --text-title: #f5ebe0;
+  --text-body: #d7ccc8;
+  --text-muted: #a89f91;
+  --color-accent: #c7926b;
+  --color-accent-light: #d4a373;
+  --color-btn-bg: #3e312b;
 
   /* Typography */
   --font-halyard-display-variable: 'halyard-display-variable', 'Inter', -apple-system, BlinkMacSystemFont, "Pretendard Variable", Pretendard, sans-serif;
-  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
-
-  /* Named Radii */
-  --radius-cards: 12px;
-  --radius-inputs: 0px;
-  --radius-full-round: 9999px;
-  --radius-buttons-pill: 36px;
-  --radius-buttons-outlined: 22.5px;
 }
 
 /* 텍스트 드래그 선택 영역 */
 ::selection {
-  background: rgba(255, 107, 26, 0.45);
+  background: rgba(212, 163, 115, 0.4);
   color: #ffffff;
 }
 
 /* ==========================================================================
-   1. 글로벌 바디 & 최상단 GNB
+   1. 전체 페이지 배경 & 상단 GNB
    ========================================================================== */
 html, body {
-  background-color: #100904 !important;
-  color: #f5e6d3 !important;
+  background-color: #1a1412 !important;
+  color: #d7ccc8 !important;
   font-family: var(--font-halyard-display-variable) !important;
   letter-spacing: 0px !important;
   -webkit-font-smoothing: antialiased;
@@ -55,10 +54,10 @@ html, body {
   position: sticky !important;
   top: 0 !important;
   z-index: 1000 !important;
-  background: rgba(16, 9, 4, 0.94) !important;
-  backdrop-filter: blur(24px) saturate(160%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(160%) !important;
-  border-bottom: 1px solid #4a3d31 !important;
+  background: rgba(26, 20, 18, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid #4a3b34 !important;
   box-shadow: none !important;
 }
 
@@ -73,11 +72,9 @@ html, body {
 }
 
 .stock-brand {
-  color: #ffffff !important;
-  font-family: var(--font-halyard-display-variable) !important;
-  font-weight: 600 !important;
+  color: #f5ebe0 !important;
+  font-weight: 700 !important;
   font-size: 1.08rem !important;
-  letter-spacing: 0.3px !important;
   display: flex !important;
   align-items: center !important;
   gap: 8px !important;
@@ -85,20 +82,19 @@ html, body {
 }
 
 .stock-brand-badge {
-  background: rgba(255, 107, 26, 0.2) !important;
-  color: #ff6b1a !important;
-  border: 1px solid rgba(255, 107, 26, 0.5) !important;
+  background: #352924 !important;
+  color: #d4a373 !important;
+  border: 1px solid #4a3b34 !important;
   font-size: 0.72rem !important;
   font-weight: 700 !important;
   padding: 2px 8px !important;
   border-radius: 9999px !important;
-  letter-spacing: 0.5px !important;
 }
 
 #btn-run-inspector-bot {
-  background: rgba(255, 237, 215, 0.08) !important;
-  color: #ffffff !important;
-  border: 1px solid #ffedd7 !important;
+  background: #352924 !important;
+  color: #f5ebe0 !important;
+  border: 1px solid #4a3b34 !important;
   border-radius: 22.5px !important;
   font-size: 0.82rem !important;
   font-weight: 600 !important;
@@ -108,14 +104,15 @@ html, body {
 }
 
 #btn-run-inspector-bot:hover {
-  background: rgba(255, 237, 215, 0.18) !important;
-  transform: translateY(-1px) !important;
+  background: #3e312b !important;
+  border-color: #d4a373 !important;
+  color: #ffffff !important;
 }
 
 .nav-external-link {
-  background: #382416 !important;
-  color: #ffffff !important;
-  border: 1px solid #4a3d31 !important;
+  background: #3e312b !important;
+  color: #f5ebe0 !important;
+  border: 1px solid #4a3b34 !important;
   border-radius: 36px !important;
   font-size: 0.82rem !important;
   font-weight: 600 !important;
@@ -125,19 +122,17 @@ html, body {
 }
 
 .nav-external-link:hover {
-  background: #4e301c !important;
-  border-color: #ffedd7 !important;
+  background: #4a3b34 !important;
+  border-color: #d4a373 !important;
   color: #ffffff !important;
-  transform: translateY(-1px) !important;
 }
 
 /* ==========================================================================
    2. 메인 헤더 박스
    ========================================================================== */
 #tab-stock {
-  color: #f5e6d3 !important;
+  color: #d7ccc8 !important;
   display: block !important;
-  opacity: 1 !important;
 }
 
 .main-content {
@@ -147,8 +142,8 @@ html, body {
 }
 
 #tab-stock .kc-header-box {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
+  background: #2a201c !important;
+  border: 1px solid #4a3b34 !important;
   border-radius: 12px !important;
   padding: 28px 32px 24px !important;
   box-shadow: none !important;
@@ -156,12 +151,11 @@ html, body {
 }
 
 .kc-badge-daily {
-  background: rgba(255, 107, 26, 0.12) !important;
-  border: 1px solid rgba(255, 107, 26, 0.4) !important;
-  color: #ff6b1a !important;
+  background: #352924 !important;
+  border: 1px solid #4a3b34 !important;
+  color: #d4a373 !important;
   font-size: 0.75rem !important;
   font-weight: 700 !important;
-  letter-spacing: 0.5px !important;
   padding: 4px 12px !important;
   border-radius: 9999px !important;
   display: inline-block !important;
@@ -169,24 +163,23 @@ html, body {
 }
 
 #tab-stock .kc-main-title {
-  color: #ffffff !important;
-  font-family: var(--font-halyard-display-variable) !important;
+  color: #f5ebe0 !important;
   font-size: 2rem !important;
-  font-weight: 700 !important;
+  font-weight: 800 !important;
   letter-spacing: -0.3px !important;
   margin: 4px 0 8px 0 !important;
 }
 
 #tab-stock .kc-header-box p {
-  color: #f5e6d3 !important;
+  color: #d7ccc8 !important;
   font-size: 0.92rem !important;
   line-height: 1.55 !important;
 }
 
 .kc-header-btn {
-  background: rgba(255, 237, 215, 0.06) !important;
-  border: 1px solid #d8c7b5 !important;
-  color: #ffffff !important;
+  background: #3e312b !important;
+  border: 1px solid #4a3b34 !important;
+  color: #f5ebe0 !important;
   border-radius: 22.5px !important;
   padding: 7px 16px !important;
   font-size: 0.82rem !important;
@@ -196,12 +189,13 @@ html, body {
 }
 
 .kc-header-btn:hover {
-  background: rgba(255, 237, 215, 0.15) !important;
-  border-color: #ffffff !important;
+  background: #4a3b34 !important;
+  border-color: #d4a373 !important;
+  color: #ffffff !important;
 }
 
 #stock-api-status-badge {
-  color: #ffaa66 !important;
+  color: #d4a373 !important;
   font-size: 0.84rem !important;
   font-weight: 600 !important;
 }
@@ -215,8 +209,8 @@ html, body {
 }
 
 .stock-indicator-card {
-  background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
+  background: #2a201c !important;
+  border: 1px solid #4a3b34 !important;
   border-radius: 12px !important;
   padding: 12px 18px !important;
   text-align: center !important;
@@ -226,15 +220,15 @@ html, body {
 
 .stock-indicator-title {
   font-size: 0.74rem !important;
-  color: #d8c7b5 !important;
+  color: #a89f91 !important;
   font-weight: 600 !important;
   margin-bottom: 2px !important;
 }
 
 .stock-indicator-val {
   font-size: 1.3rem !important;
-  font-weight: 700 !important;
-  color: #ffffff !important;
+  font-weight: 800 !important;
+  color: #f5ebe0 !important;
   margin: 2px 0 !important;
 }
 
@@ -246,15 +240,15 @@ html, body {
 }
 
 .stock-indicator-diff.is-up {
-  color: #ff5252 !important;
+  color: #e06d53 !important;
 }
 
 .stock-indicator-diff.is-down {
-  color: #4da6ff !important;
+  color: #7ba3c4 !important;
 }
 
 .stock-indicator-diff.is-zero {
-  color: #d8c7b5 !important;
+  color: #a89f91 !important;
 }
 
 /* ==========================================================================
@@ -262,7 +256,7 @@ html, body {
    ========================================================================== */
 .stock-subtabs-scroll-wrap {
   margin-top: 22px !important;
-  border-top: 1px dashed #4a3d31 !important;
+  border-top: 1px dashed #4a3b34 !important;
   padding-top: 16px !important;
 }
 
@@ -274,15 +268,10 @@ html, body {
   scrollbar-width: none !important;
 }
 
-.stock-subtabs-grid::-webkit-scrollbar {
-  display: none !important;
-}
-
 .stock-sub-tab {
-  background: rgba(255, 237, 215, 0.05) !important;
-  border: 1px solid #4a3d31 !important;
-  color: #f5e6d3 !important;
-  font-family: var(--font-halyard-display-variable) !important;
+  background: #2a201c !important;
+  border: 1px solid #4a3b34 !important;
+  color: #d7ccc8 !important;
   font-size: 13.5px !important;
   font-weight: 600 !important;
   padding: 8px 16px !important;
@@ -297,399 +286,370 @@ html, body {
 }
 
 .stock-sub-tab:hover {
-  background: rgba(255, 237, 215, 0.12) !important;
-  color: #ffffff !important;
-  border-color: #ffedd7 !important;
+  background: #352924 !important;
+  color: #f5ebe0 !important;
+  border-color: #d4a373 !important;
 }
 
 .stock-sub-tab.active {
-  background: #382416 !important;
-  color: #ffffff !important;
-  border-color: #ffedd7 !important;
+  background: #3e312b !important;
+  color: #f5ebe0 !important;
+  border-color: #d4a373 !important;
   border-radius: 36px !important;
-  font-weight: 700 !important;
-  box-shadow: 0 0 14px rgba(255, 237, 215, 0.15) !important;
+  font-weight: 800 !important;
+  box-shadow: 0 0 10px rgba(212, 163, 115, 0.18) !important;
 }
 
 /* ==========================================================================
-   5. [사용자 핵심 요청 1] 5열 뉴스 카드 하얀박스 -> '베이지색' 박스로 전환
+   5. [세부 변경 ①] 모든 카드/박스를 '어두운 고동색(#2a201c)'으로 교체
+      흰색(#fff) 및 밝은 회색(#f8fafc 등) 100% 영구 제거
    ========================================================================== */
+
+/* 5-1. 1번째 탭 5열 실시간 뉴스 멀티컬럼 피드 카드 */
 #domestic-news-5col-container .news-item-compact-card,
 .news-col-box .news-item-compact-card,
 .news-item-compact-card {
-  background: #f4ecdf !important; /* 부드럽고 따뜻한 웜 베이지 */
-  border: 1px solid #d8c7b5 !important;
+  background: #2a201c !important; /* 어두운 고동색 박스 */
+  border: 1px solid #4a3b34 !important;
   border-radius: 9px !important;
   padding: 10px 12px !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: none !important;
   transition: all 0.2s ease !important;
 }
 
-#domestic-news-5col-container .news-item-compact-card:hover,
-.news-col-box .news-item-compact-card:hover,
 .news-item-compact-card:hover {
-  background: #faf3ea !important;
-  border-color: #c4b09c !important;
+  background: #352924 !important;
+  border-color: #d4a373 !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.14) !important;
 }
 
-/* 베이지색 카드 내부 텍스트: 인쇄물처럼 선명한 다크 월넛 브라운 */
+/* 고동색 카드 내부 텍스트 */
 .news-item-compact-card div[title],
 .news-item-compact-card [style*="color: #0f172a"],
-.news-item-compact-card [style*="color:#0f172a"] {
-  color: #150a04 !important; /* 기사 헤드라인: 짙은 흑갈색 */
+.news-item-compact-card [style*="color:#0f172a"],
+.news-item-compact-card strong {
+  color: #f5ebe0 !important; /* 제목: 톤다운 크림 베이지 */
   font-weight: 700 !important;
   line-height: 1.42 !important;
 }
 
 .news-item-compact-card [style*="color: #475569"],
-.news-item-compact-card [style*="color:#475569"] {
-  color: #382416 !important; /* 기사 본문 요약: 진한 브라운 */
+.news-item-compact-card [style*="color:#475569"],
+.news-item-compact-card div {
+  color: #d7ccc8 !important; /* 본문: 소프트 베이지 */
   line-height: 1.4 !important;
 }
 
 .news-item-compact-card [style*="color: #64748b"],
 .news-item-compact-card [style*="color:#64748b"],
 .news-item-compact-card span[style*="color: #475569"] {
-  color: #5c4331 !important; /* 언론사, 시간: 세련된 웜 브라운 */
+  color: #a89f91 !important; /* 언론사/시간: 어두운 베이지 */
   font-weight: 600 !important;
 }
 
 .news-item-compact-card div[style*="border-top"],
 .news-item-compact-card [style*="border-top: 1px solid #f1f5f9"] {
-  border-top: 1px solid #ded0c0 !important; /* 베이지 카드 하단 구분선 */
+  border-top: 1px solid #3e312b !important;
 }
 
-/* 베이지 카드 내부 '기사보기 ↗' 링크 버튼: 세련된 다크 브라운 버튼 */
+/* 뉴스 카드 '기사보기 ↗' 링크 버튼 */
 .news-item-compact-card a,
 .news-item-compact-card a[href*="http"],
 .news-item-compact-card a[style*="background: #eff6ff"] {
-  background: #382416 !important;
-  color: #ffedd7 !important;
-  border: 1px solid #5a3e2a !important;
-  border-radius: 5px !important;
-  padding: 4px 9px !important;
+  background: #3e312b !important;
+  color: #f5ebe0 !important;
+  border: 1px solid #4a3b34 !important;
+  border-radius: 6px !important;
+  padding: 4px 10px !important;
   font-size: 0.72rem !important;
-  font-weight: 800 !important;
+  font-weight: 700 !important;
   text-decoration: none !important;
   transition: all 0.15s ease !important;
 }
 
 .news-item-compact-card a:hover {
-  background: #4e331f !important;
-  border-color: #ffaa66 !important;
-  color: #ffffff !important;
+  background: #c7926b !important;
+  border-color: #d4a373 !important;
+  color: #1a1412 !important;
+}
+
+/* 5-2. 전 페이지 모든 흰색 / 밝은 회색 박스 강제 오버라이드 */
+#tab-stock [style*="background: #ffffff"],
+#tab-stock [style*="background:#ffffff"],
+#tab-stock [style*="background: #fff"],
+#tab-stock [style*="background:#fff"],
+#tab-stock [style*="background: white"],
+#tab-stock [style*="background:white"],
+.kc-box-white-card,
+.white-box,
+.bg-white {
+  background: #2a201c !important;
+  border-color: #4a3b34 !important;
+  color: #d7ccc8 !important;
+}
+
+/* 서브 카드 / 중첩 박스 / 밝은 파스텔톤 배경 강제 오버라이드 -> #352924 */
+#tab-stock [style*="background: #f8fafc"],
+#tab-stock [style*="background:#f8fafc"],
+#tab-stock [style*="background: #f1f5f9"],
+#tab-stock [style*="background:#f1f5f9"],
+#tab-stock [style*="background: #eff6ff"],
+#tab-stock [style*="background:#eff6ff"],
+#tab-stock [style*="background: #f0f9ff"],
+#tab-stock [style*="background:#f0f9ff"],
+#tab-stock [style*="background: #fef2f2"],
+#tab-stock [style*="background:#fef2f2"],
+#tab-stock [style*="background: #fffbeb"],
+#tab-stock [style*="background:#fffbeb"],
+#tab-stock [style*="background: #ecfdf5"],
+#tab-stock [style*="background:#ecfdf5"],
+#tab-stock [style*="background: #f5f3ff"],
+#tab-stock [style*="background:#f5f3ff"],
+#tab-stock [style*="background: #fdf2f8"],
+#tab-stock [style*="background:#fdf2f8"] {
+  background: #352924 !important;
+  border-color: #4a3b34 !important;
+  color: #d7ccc8 !important;
+}
+
+/* 5-3. 대형 리스트 카드 / 서브패널 카드 공통 (#2a201c) */
+#stock-deep-list .kc-card,
+.kc-card,
+.card,
+.pullback-theme-card,
+#past-pullback-themes-container [id^="pullback-item-"],
+#leading-dual-radar-container > div,
+#stock-calendar-container > div,
+.calendar-feed-card,
+.stock-panel-overview,
+.stock-technique-grid > div {
+  background: #2a201c !important;
+  border: 1px solid #4a3b34 !important;
+  border-radius: 12px !important;
+  color: #d7ccc8 !important;
+  box-shadow: none !important;
+}
+
+#stock-deep-list .kc-card:hover,
+#past-pullback-themes-container [id^="pullback-item-"]:hover,
+#leading-dual-radar-container > div:hover,
+#stock-calendar-container > div:hover {
+  background: #312520 !important;
+  border-color: #d4a373 !important;
 }
 
 /* ==========================================================================
-   6. [사용자 핵심 요청 2] 전 페이지 회색 글씨 -> '베이지색(#f5e6d3, #ffedd7)' 글자로 전면 교체
+   6. [세부 변경 ②] 보라색 / 녹색 / 청록색 / 네이비 계열 전면 정리
    ========================================================================== */
 
-/* 6-1. 어두운 배경에 묻히는 모든 회색 계열 인라인 스타일을 선명한 베이지로 통일 
-   (단, 베이지 박스인 .news-item-compact-card 내부는 제외) */
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #64748b"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#64748b"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #475569"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#475569"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #94a3b8"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#94a3b8"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #334155"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#334155"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #6c5f51"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#6c5f51"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #86868b"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#86868b"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #1e293b"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#1e293b"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #0f172a"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#0f172a"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #4b5563"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#4b5563"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #6b7280"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#6b7280"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #9ca3af"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#9ca3af"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #555"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#555"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #666"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#666"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #777"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#777"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #888"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#888"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #999"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#999"] {
-  color: #f5e6d3 !important; /* 환하고 읽기 편한 베이지색 글자 */
+/* 6-1. 검수봇 모달 헤더 & 종합 상태 바 고동색 통일 */
+.inspector-bot-modal-content,
+#systemInspectorBotModal .inspector-bot-modal-content {
+  background: #2a201c !important;
+  border: 1px solid #4a3b34 !important;
+  color: #d7ccc8 !important;
 }
 
-/* 6-2. [테마 눌림목 추적 리스트 (이미지 2, 4)] 가독성 극대화 */
-#past-pullback-themes-container {
-  color: #f5e6d3 !important;
+.inspector-bot-header,
+#systemInspectorBotModal .inspector-bot-header {
+  background: #241c18 !important;
+  border-bottom: 1px solid #4a3b34 !important;
 }
 
-#past-pullback-themes-container [id^="pullback-item-"] {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
+#systemInspectorBotModal .inspector-bot-header * {
+  color: #f5ebe0 !important;
 }
 
-#past-pullback-themes-container [id^="pullback-item-"]:hover {
-  background: #22150c !important;
-  border-color: #d8c7b5 !important;
+/* 검수봇 종합 상태 요약 바 */
+#systemInspectorBotModal div[style*="background: #ecfdf5"],
+#systemInspectorBotModal div[style*="background:#ecfdf5"] {
+  background: #352924 !important;
+  border-bottom: 1px solid #4a3b34 !important;
 }
 
-/* 대장주 / 기준봉 대비 눌림폭 라벨 및 텍스트 */
-#past-pullback-themes-container [id^="pullback-item-"] span,
-#past-pullback-themes-container [id^="pullback-item-"] div {
-  color: #f5e6d3 !important;
+#inspector-summary-text {
+  color: #d4a373 !important;
 }
 
-/* [📌 최초 상승 이유] 및 [🚀 향후 반등 모멘텀] 박스 & 텍스트 */
-#past-pullback-themes-container div[style*="background: #f8fafc"],
-#past-pullback-themes-container div[style*="background:#f8fafc"] {
-  background: #20130a !important;
-  border: 1px solid #4a3d31 !important;
+#inspector-timestamp {
+  color: #a89f91 !important;
 }
 
-#past-pullback-themes-container span[style*="color: #be123c"],
-#past-pullback-themes-container span[style*="color:#be123c"] {
-  background: rgba(255, 107, 26, 0.15) !important;
-  color: #ff8544 !important;
-  border: 1px solid rgba(255, 107, 26, 0.45) !important;
+/* 검수봇 아이템 카드 */
+.inspector-item-card {
+  background: #352924 !important;
+  border: 1px solid #4a3b34 !important;
+  border-radius: 8px !important;
+  padding: 12px 14px !important;
+  color: #d7ccc8 !important;
+}
+
+.inspector-badge-ok {
+  background: #2a201c !important;
+  color: #d4a373 !important;
+  border: 1px solid #4a3b34 !important;
   font-weight: 700 !important;
 }
 
-#past-pullback-themes-container span[style*="color: #0369a1"],
-#past-pullback-themes-container span[style*="color:#0369a1"] {
-  background: rgba(77, 166, 255, 0.15) !important;
-  color: #66b5ff !important;
-  border: 1px solid rgba(77, 166, 255, 0.45) !important;
+.inspector-badge-fail {
+  background: #3e2621 !important;
+  color: #fca5a5 !important;
+  border: 1px solid #7f1d1d !important;
   font-weight: 700 !important;
 }
 
-/* 설명 본문 글씨를 선명한 웜 베이지로 */
-#past-pullback-themes-container span[style*="color: #334155"],
-#past-pullback-themes-container span[style*="color:#334155"] {
-  color: #ffedd7 !important;
-  font-size: 0.82rem !important;
-  line-height: 1.55 !important;
+/* 6-2. 모든 뱃지 / 태그 / 칩의 보라색/녹색/파란색 제거 -> 톤온톤 고동 & 베이지 */
+#tab-stock span[style*="color: #6b21a8"],
+#tab-stock span[style*="color:#6b21a8"],
+#tab-stock span[style*="color: #047857"],
+#tab-stock span[style*="color:#047857"],
+#tab-stock span[style*="color: #0284c7"],
+#tab-stock span[style*="color:#0284c7"],
+#tab-stock span[style*="color: #0369a1"],
+#tab-stock span[style*="color:#0369a1"],
+#tab-stock span[style*="color: #be185d"],
+#tab-stock span[style*="color:#be185d"],
+#tab-stock span[style*="color: #be123c"],
+#tab-stock span[style*="color:#be123c"] {
+  background: #352924 !important;
+  border-color: #4a3b34 !important;
+  color: #d4a373 !important;
+  font-weight: 700 !important;
 }
 
-/* 우측 액션 버튼들 */
-#past-pullback-themes-container button {
-  background: #251810 !important;
-  border: 1px solid #4a3d31 !important;
-  color: #ffedd7 !important;
+/* 카테고리 헤더 뱃지 톤다운 */
+.news-col-header-badge,
+.news-col-box .badge {
+  background: #352924 !important;
+  border: 1px solid #4a3b34 !important;
+  color: #d4a373 !important;
+}
+
+/* ==========================================================================
+   7. [세부 변경 ③] 버튼 및 인터랙션 요소 (고동색 #3e312b & 골든베이지 #c7926b)
+   ========================================================================== */
+
+/* 7-1. 일반 액션 버튼 */
+#tab-stock button,
+.btn-action,
+.imggen-style-chip,
+.deep-tab-btn,
+.kc-detail-nav button,
+#theme-selector-chips button,
+button[onclick*="openCalendarDetail"],
+button[onclick*="saveDailyMarketClosing"],
+button[onclick*="loadMarketHistoryReview"] {
+  background: #3e312b !important;
+  border: 1px solid #4a3b34 !important;
+  color: #f5ebe0 !important;
+  border-radius: 6px !important;
   font-weight: 600 !important;
   transition: all 0.2s ease !important;
 }
 
-#past-pullback-themes-container button:hover {
-  background: #382416 !important;
-  border-color: #ffaa66 !important;
+#tab-stock button:hover,
+.imggen-style-chip:hover {
+  background: #4a3b34 !important;
+  border-color: #d4a373 !important;
   color: #ffffff !important;
 }
 
-/* 6-3. [오늘의 주도 테마 카드 (이미지 3)] 가독성 극대화 */
-#leading-dual-radar-container > div,
-.leading-theme-dual-card {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f5e6d3 !important;
+/* 활성화(Active) 버튼 */
+#tab-stock button.active,
+.imggen-style-chip.active {
+  background: #c7926b !important;
+  color: #1a1412 !important;
+  border-color: #d4a373 !important;
+  font-weight: 800 !important;
 }
 
-#leading-dual-radar-container div[style*="background: #f8fafc"],
-#leading-dual-radar-container div[style*="background:#f8fafc"] {
-  background: #20130a !important;
-  border: 1px solid #4a3d31 !important;
+/* 7-2. 강조용 버튼 (예: 재검수, 저장, 주요 CTA) */
+#btn-retest-inspector,
+button[onclick*="saveStockApiKeys"],
+button.btn-accent,
+button.btn-primary {
+  background: #c7926b !important;
+  color: #1a1412 !important;
+  border: 1px solid #d4a373 !important;
+  border-radius: 8px !important;
+  font-weight: 800 !important;
+  box-shadow: none !important;
+  transition: all 0.2s ease !important;
 }
 
-#leading-dual-radar-container span[style*="color: #64748b"],
-#leading-dual-radar-container span[style*="color:#64748b"] {
-  color: #d8c7b5 !important; /* 대장주:, 거래대금:, 핵심 관련주:, 부대장: 라벨 베이지색 */
-}
-
-#leading-dual-radar-container strong[style*="color: #0284c7"],
-#leading-dual-radar-container span[style*="color: #0284c7"] {
-  color: #ffaa66 !important; /* 대장주 이름 강조색 */
-}
-
-#leading-dual-radar-container strong[style*="color: #b45309"] {
-  color: #ffd199 !important; /* 거래대금 강조 */
-}
-
-/* 📌 당일 급등 이유 & 핵심 재료 팩트 박스 */
-#leading-dual-radar-container div[style*="background: #fef2f2"],
-#leading-dual-radar-container div[style*="background:#fef2f2"] {
-  background: #24140b !important;
-  border: 1px solid #4a3d31 !important;
-  border-left: 3px solid #ff6b1a !important;
-}
-
-#leading-dual-radar-container strong[style*="color: #b91c1c"] {
-  color: #ff8544 !important; /* 헤더 주황 */
-}
-
-#leading-dual-radar-container div[style*="color: #1e293b"],
-#leading-dual-radar-container div[style*="color:#1e293b"] {
-  color: #ffedd7 !important; /* 급등 이유 본문 텍스트: 선명한 크림 베이지 */
-  line-height: 1.55 !important;
-}
-
-/* 눌림목 추적 등록 버튼 */
-#leading-dual-radar-container button {
-  background: #251810 !important;
-  border: 1px solid #4a3d31 !important;
-  color: #ffedd7 !important;
-  font-weight: 700 !important;
-}
-
-#leading-dual-radar-container button:hover {
-  background: #382416 !important;
-  border-color: #ffaa66 !important;
+#btn-retest-inspector:hover,
+button[onclick*="saveStockApiKeys"]:hover,
+button.btn-accent:hover {
+  background: #b88358 !important;
   color: #ffffff !important;
 }
 
-/* 6-4. [실시간 증시 핵심 일정 & 모멘텀 피드 (이미지 5, 탭 3)] */
-#stock-calendar-container > div {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f5e6d3 !important;
+/* ==========================================================================
+   8. 타이포그래피 계층 (Title #f5ebe0 / Body #d7ccc8 / Muted #a89f91)
+   ========================================================================== */
+#tab-stock h1, #tab-stock h2, #tab-stock h3, #tab-stock h4, #tab-stock h5, #tab-stock h6,
+#tab-stock strong, #tab-stock b {
+  color: #f5ebe0 !important;
 }
 
-#stock-calendar-container > div:hover {
-  background: #22150c !important;
-  border-color: #d8c7b5 !important;
+#tab-stock p, #tab-stock li, #tab-stock td, #tab-stock div {
+  color: #d7ccc8 !important;
 }
 
-/* 캘린더 피드 기사 본문 요약 (기존 #334155 어두운 글씨 -> 베이지) */
-#stock-calendar-container div[style*="color: #334155"],
-#stock-calendar-container div[style*="color:#334155"],
-#stock-calendar-container div[style*="color: #0f172a"],
-#stock-calendar-container div[style*="color:#0f172a"] {
-  color: #ffedd7 !important; /* 선명하고 따뜻한 크림 베이지 */
-  line-height: 1.55 !important;
-}
-
-#stock-calendar-container span[style*="color: #64748b"],
-#stock-calendar-container span[style*="color:#64748b"],
-#stock-calendar-container strong[style*="color: #0f172a"] {
-  color: #d8c7b5 !important; /* 출처: 한국경제 등 베이지 */
-}
-
-#stock-calendar-container a,
-#stock-calendar-container button {
-  background: #251810 !important;
-  border: 1px solid #4a3d31 !important;
-  color: #ffaa66 !important;
-  font-weight: 700 !important;
-  text-decoration: none !important;
-}
-
-#stock-calendar-container a:hover,
-#stock-calendar-container button:hover {
-  background: #382416 !important;
-  border-color: #ffaa66 !important;
-  color: #ffffff !important;
-}
-
-/* 6-5. [5번 탭 종목 상세정보] */
-#stock-deep-list .kc-card {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f5e6d3 !important;
-}
-
-#stock-deep-list .kc-card:hover {
-  background: #23160c !important;
-  border-color: #d8c7b5 !important;
-}
-
-#stock-deep-list .kc-card.active {
-  background: #2a180e !important;
-  border: 1.5px solid #ffaa66 !important;
-}
-
-#stock-deep-quick-chips button,
-#stock-deep-detail button {
-  background: #20140c !important;
-  border: 1px solid #4a3d31 !important;
-  color: #ffedd7 !important;
-}
-
-#stock-deep-quick-chips button.active,
-#stock-deep-detail button.active {
-  background: #382416 !important;
-  border-color: #ffaa66 !important;
-  color: #ffffff !important;
-}
-
-/* 6-6. [전체 탭 일반 본문 텍스트들] */
-#tab-stock p,
-#tab-stock li,
-#tab-stock td,
 #tab-stock small,
 #tab-stock label,
 #tab-stock .text-muted,
 #tab-stock .text-secondary {
-  color: #f5e6d3 !important;
-  line-height: 1.6 !important;
+  color: #a89f91 !important;
 }
 
-#tab-stock h1, #tab-stock h2, #tab-stock h3, #tab-stock h4, #tab-stock h5, #tab-stock h6,
-#tab-stock strong, #tab-stock b {
-  color: #ffffff !important;
+/* 인라인 스타일로 박힌 모든 회색/어두운 글씨 오버라이드 */
+#tab-stock [style*="color: #64748b"],
+#tab-stock [style*="color:#64748b"],
+#tab-stock [style*="color: #475569"],
+#tab-stock [style*="color:#475569"],
+#tab-stock [style*="color: #94a3b8"],
+#tab-stock [style*="color:#94a3b8"],
+#tab-stock [style*="color: #334155"],
+#tab-stock [style*="color:#334155"],
+#tab-stock [style*="color: #6c5f51"],
+#tab-stock [style*="color:#6c5f51"],
+#tab-stock [style*="color: #86868b"],
+#tab-stock [style*="color:#86868b"],
+#tab-stock [style*="color: #1e293b"],
+#tab-stock [style*="color:#1e293b"],
+#tab-stock [style*="color: #0f172a"],
+#tab-stock [style*="color:#0f172a"],
+#tab-stock [style*="color: #4b5563"],
+#tab-stock [style*="color:#4b5563"],
+#tab-stock [style*="color: #6b7280"],
+#tab-stock [style*="color:#6b7280"] {
+  color: #d7ccc8 !important;
 }
 
-#tab-stock th {
-  background: #100904 !important;
-  color: #ffffff !important;
-  font-weight: 700 !important;
+/* 폼 입력창 스타일 */
+#tab-stock input[type="text"],
+#tab-stock input[type="password"],
+#tab-stock select,
+#tab-stock textarea {
+  background: #352924 !important;
+  border: 1px solid #4a3b34 !important;
+  color: #f5ebe0 !important;
+  border-radius: 6px !important;
+  padding: 6px 12px !important;
 }
 
-/* ==========================================================================
-   7. 모든 인라인 흰색/파스텔 박스 톤다운 (5열 뉴스 카드 제외)
-   ========================================================================== */
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #ffffff"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#ffffff"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #fff"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#fff"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: white"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:white"] {
-  background: #180f08 !important;
-  border-color: #4a3d31 !important;
-  color: #f5e6d3 !important;
+#tab-stock input:focus,
+#tab-stock textarea:focus {
+  border-color: #d4a373 !important;
+  outline: none !important;
 }
 
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #f8fafc"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#f8fafc"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #f1f5f9"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#f1f5f9"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #f0f9ff"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#f0f9ff"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #f0fdf4"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#f0fdf4"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #eff6ff"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#eff6ff"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #fef2f2"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#fef2f2"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #fffbeb"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#fffbeb"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #fff1f2"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#fff1f2"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #fff5f5"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#fff5f5"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #ecfdf5"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#ecfdf5"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #e0f2fe"],
-#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#e0f2fe"] {
-  background: #1e130a !important;
-  border-color: #4a3d31 !important;
-  color: #f5e6d3 !important;
+/* 모달 배경 오버레이 */
+.inspector-bot-modal-backdrop,
+.modal-backdrop {
+  background: rgba(15, 10, 8, 0.75) !important;
+  backdrop-filter: blur(6px) !important;
 }
 
 /* 슬림 스크롤바 */
@@ -698,12 +658,12 @@ html, body {
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #100904;
+  background: #1a1412;
 }
 ::-webkit-scrollbar-thumb {
-  background: #4a3d31;
+  background: #4a3b34;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffaa66;
+  background: #d4a373;
 }

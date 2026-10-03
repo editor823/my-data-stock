@@ -46,22 +46,10 @@ function getMarketCloseTimestamp(referenceDate = new Date()) {
 // [고대비 색상 유틸리티] 화이트 배경 전용 선명한 뱃지 스타일 판별기 (파스텔톤 방지)
 function getHighContrastBadgeStyle(badgeText, fallbackHex) {
   const text = (badgeText || '').toLowerCase();
-  if (text.includes('ipo') || text.includes('급등') || text.includes('공모') || text.includes('상장') || text.includes('보호예수') || text.includes('특징주') || fallbackHex === '#ef4444' || fallbackHex === '#dc2626') {
-    return { color: '#b91c1c', bg: '#fef2f2', border: '#fca5a5' };
+  if (text.includes('ipo') || text.includes('급등') || text.includes('상장') || text.includes('특징주')) {
+    return { color: '#f5ebe0', bg: '#3e2621', border: '#7f1d1d' };
   }
-  if (text.includes('거시') || text.includes('fomc') || text.includes('금리') || text.includes('환율') || text.includes('정책') || text.includes('물가') || text.includes('통화') || fallbackHex === '#f59e0b' || fallbackHex === '#d97706') {
-    return { color: '#92400e', bg: '#fffbeb', border: '#fde68a' };
-  }
-  if (text.includes('실적') || text.includes('어닝') || text.includes('공급') || text.includes('수주') || text.includes('계약') || text.includes('dart') || fallbackHex === '#34d399' || fallbackHex === '#10b981' || fallbackHex === '#059669') {
-    return { color: '#047857', bg: '#ecfdf5', border: '#a7f3d0' };
-  }
-  if (text.includes('바이오') || text.includes('임상') || text.includes('블로그') || text.includes('학회') || text.includes('제약') || fallbackHex === '#c084fc' || fallbackHex === '#818cf8' || fallbackHex === '#a855f7') {
-    return { color: '#6b21a8', bg: '#f5f3ff', border: '#d8b4fe' };
-  }
-  if (text.includes('우주') || text.includes('항공') || text.includes('방산') || fallbackHex === '#f472b6' || fallbackHex === '#fb7185' || fallbackHex === '#ec4899') {
-    return { color: '#be185d', bg: '#fdf2f8', border: '#fbcfe8' };
-  }
-  return { color: '#0369a1', bg: '#e0f2fe', border: '#7dd3fc' };
+  return { color: '#d4a373', bg: '#352924', border: '#4a3b34' };
 }
 
 // ========================================================
@@ -8213,10 +8201,10 @@ function renderDomesticNewsTimeline(filterCategory = 'all') {
   // 카테고리 메타 정보 정의
   const colDefs = [
     { key: 'feature', name: '특징주 & 급등 모멘텀', icon: '🔴', color: '#dc2626', bg: '#fef2f2' },
-    { key: 'macro', name: '거시 경제 & 금리/환율', icon: '🔵', color: '#0284c7', bg: '#e0f2fe' },
-    { key: 'industry', name: '산업 동향 & 정부 정책', icon: '🟢', color: '#047857', bg: '#ecfdf5' },
-    { key: 'disclosure', name: 'DART 공시 & 기업 실적', icon: '🟣', color: '#6b21a8', bg: '#f5f3ff' },
-    { key: 'global', name: '글로벌 & 코인/원자재', icon: '🟡', color: '#b45309', bg: '#fffbeb' }
+    { key: 'macro', name: '거시 경제 & 금리/환율', icon: '🌐', color: '#d4a373', bg: '#352924' },
+    { key: 'industry', name: '산업 동향 & 정부 정책', icon: '📜', color: '#d4a373', bg: '#352924' },
+    { key: 'disclosure', name: 'DART 공시 & 기업 실적', icon: '📊', color: '#d4a373', bg: '#352924' },
+    { key: 'global', name: '글로벌 & 코인/원자재', icon: '🪙', color: '#d4a373', bg: '#352924' }
   ];
 
     // 단일 카테고리 필터 시 1열 100% 폭 확장, 'all'일 때는 기존 5열 그리드 복원

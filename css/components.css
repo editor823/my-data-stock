@@ -5073,8 +5073,8 @@ p, li {
 }
 
 .news-item-compact-card {
-  background: #f4ecdf;
-  border: 1px solid #d8c7b5;
+  background: #2a201c;
+  border: 1px solid #4a3b34;
   border-radius: 9px;
   padding: 10px 12px;
   display: flex;
@@ -5082,14 +5082,13 @@ p, li {
   justify-content: space-between;
   gap: 6px;
   transition: all 0.2s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: none;
 }
 
 .news-item-compact-card:hover {
-  background: #faf4ec;
-  border-color: #c4b09c;
-  transform: translateY(-1px);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  background: #352924;
+  border-color: #d4a373;
+  transform: translateY(-2px);
 }
 
 /* ===== 애드센스 & 황금키워드 듀얼레인 신규 스타일 ===== */
