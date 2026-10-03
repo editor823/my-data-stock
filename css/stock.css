@@ -1,13 +1,10 @@
 /* ==========================================================================
-   ORYZO AI — High-Contrast Darkroom Editorial Design System
+   ORYZO AI — 100% Anti-Glare High-Contrast Darkroom Design System
    Applied to Stock Intelligence Center (css/stock.css)
    
-   [Text Visibility Enhancement]
-   - All text contrast enhanced for 100% crystal-clear readability.
-   - Headings & Primary Titles: #ffffff / #ffedd7 (Pure White & Bright Warm Cream)
-   - Body copy, Reasons, Explanations: #f3e8dc (High-contrast Soft Cream, ~90% luminance)
-   - Secondary labels, Dates, Metadata: #d8c7b5 (Clear Warm Slate, ~78% luminance)
-   - Accent Tags & Emphasis: #ff6b1a / #dc5000 (Vivid Ember Orange)
+   [Complete Light-Box Elimination]
+   - All glaring white & pastel background boxes/buttons/badges converted to dark.
+   - Text contrast guaranteed: 100% crisp, readable cream/white (#ffffff / #ffedd7).
    ========================================================================== */
 
 :root {
@@ -16,8 +13,8 @@
   --color-walnut-shadow: #100904;
   --color-bark-brown: #382416;
   --color-cork-border: #4a3d31;
-  --color-driftwood: #d8c7b5;       /* 대폭 밝게 보정 (어두운 회색 -> 선명한 크림 그레이) */
-  --color-ember-accent: #ff6b1a;    /* 더 눈에 띄는 선명한 엠버 오렌지 */
+  --color-driftwood: #d8c7b5;
+  --color-ember-accent: #ff6b1a;
   --color-pure-black: #000000;
 
   /* Typography */
@@ -39,7 +36,7 @@
 }
 
 /* ==========================================================================
-   1. 글로벌 바디 & 최상단 GNB
+   1. 글로벌 기본 레이아웃 & 최상단 GNB
    ========================================================================== */
 html, body {
   background-color: #100904 !important;
@@ -54,7 +51,7 @@ html, body {
   position: sticky !important;
   top: 0 !important;
   z-index: 1000 !important;
-  background: rgba(16, 9, 4, 0.92) !important;
+  background: rgba(16, 9, 4, 0.94) !important;
   backdrop-filter: blur(24px) saturate(160%) !important;
   -webkit-backdrop-filter: blur(24px) saturate(160%) !important;
   border-bottom: 1px solid #4a3d31 !important;
@@ -131,7 +128,7 @@ html, body {
 }
 
 /* ==========================================================================
-   2. 메인 헤더 박스 (글자 선명도 극대화)
+   2. 메인 헤더 박스
    ========================================================================== */
 #tab-stock {
   color: #f3e8dc !important;
@@ -177,7 +174,7 @@ html, body {
 }
 
 #tab-stock .kc-header-box p {
-  color: #e2d5c5 !important; /* 선명하고 밝은 크림 설명문 */
+  color: #e2d5c5 !important;
   font-size: 0.92rem !important;
   line-height: 1.55 !important;
 }
@@ -200,13 +197,13 @@ html, body {
 }
 
 #stock-api-status-badge {
-  color: #ffaa66 !important; /* 밝고 따뜻한 오렌지 골드 */
+  color: #ffaa66 !important;
   font-size: 0.84rem !important;
   font-weight: 600 !important;
 }
 
 /* ==========================================================================
-   3. 시장 지표 전광판 (코스피 / 코스닥 / 환율)
+   3. 시장 지표 전광판
    ========================================================================== */
 .stock-market-indicators {
   display: flex !important;
@@ -221,43 +218,35 @@ html, body {
   text-align: center !important;
   min-width: 110px !important;
   box-shadow: none !important;
-  transition: border-color 0.2s ease !important;
-}
-
-.stock-indicator-card:hover {
-  border-color: #d8c7b5 !important;
 }
 
 .stock-indicator-title {
   font-size: 0.74rem !important;
-  color: #d8c7b5 !important; /* 선명한 라벨 */
+  color: #d8c7b5 !important;
   font-weight: 600 !important;
-  letter-spacing: 0.3px !important;
   margin-bottom: 2px !important;
 }
 
 .stock-indicator-val {
   font-size: 1.3rem !important;
   font-weight: 700 !important;
-  color: #ffffff !important; /* 완전 선명한 화이트 */
-  letter-spacing: 0px !important;
+  color: #ffffff !important;
   margin: 2px 0 !important;
 }
 
 .stock-indicator-diff {
   font-size: 0.98rem !important;
   font-weight: 700 !important;
-  letter-spacing: 0px !important;
   margin-top: 2px !important;
   display: block !important;
 }
 
 .stock-indicator-diff.is-up {
-  color: #ff5252 !important; /* 밝고 선명한 레드 */
+  color: #ff5252 !important;
 }
 
 .stock-indicator-diff.is-down {
-  color: #4da6ff !important; /* 밝고 선명한 스카이블루 */
+  color: #4da6ff !important;
 }
 
 .stock-indicator-diff.is-zero {
@@ -265,7 +254,7 @@ html, body {
 }
 
 /* ==========================================================================
-   4. 상단 서브 탭 내비게이션 (글자가 아주 또렷하게 잘 보이도록 보정)
+   4. 상단 서브 탭 내비게이션
    ========================================================================== */
 .stock-subtabs-scroll-wrap {
   margin-top: 22px !important;
@@ -285,15 +274,13 @@ html, body {
   display: none !important;
 }
 
-/* 비활성 탭 글자색을 어두운 색(#6c5f51)에서 아주 잘 보이는 크림 화이트로 전면 상향! */
 .stock-sub-tab {
   background: rgba(255, 237, 215, 0.05) !important;
   border: 1px solid #4a3d31 !important;
-  color: #f3e8dc !important; /* 이제 0~6번 메뉴 글씨가 선명하게 다 보입니다! */
+  color: #f3e8dc !important;
   font-family: var(--font-halyard-display-variable) !important;
   font-size: 13.5px !important;
   font-weight: 600 !important;
-  letter-spacing: 0.2px !important;
   padding: 8px 16px !important;
   border-radius: 22.5px !important;
   cursor: pointer !important;
@@ -309,11 +296,10 @@ html, body {
   background: rgba(255, 237, 215, 0.12) !important;
   color: #ffffff !important;
   border-color: #ffedd7 !important;
-  transform: none !important;
 }
 
 .stock-sub-tab.active {
-  background: #382416 !important; /* Bark Brown Filled */
+  background: #382416 !important;
   color: #ffffff !important;
   border-color: #ffedd7 !important;
   border-radius: 36px !important;
@@ -322,637 +308,252 @@ html, body {
 }
 
 /* ==========================================================================
-   5. 카드 & 패널 공통 고대비 텍스트 시스템
+   5. [핵심] 눈부신 흰색/파스텔 박스를 100% 다크룸 톤으로 강제 진화!
+   모든 밝은 배경을 어둡게 치환하여 '흰 바탕에 흰 글씨' 현상을 원천 박멸합니다.
    ========================================================================== */
-#tab-stock .kc-box-white-card,
-#tab-stock .stock-panel-content > div,
+
+/* 5-1. 모든 밝은 파스텔 배경 박스 & 흰색 박스 일괄 다크화 */
 #tab-stock div[style*="background: #ffffff"],
 #tab-stock div[style*="background:#ffffff"],
-#tab-stock div[style*="background: #0f172a"],
-#tab-stock div[style*="background:#0f172a"],
+#tab-stock div[style*="background: #fff"],
+#tab-stock div[style*="background:#fff"],
 #tab-stock div[style*="background: #f8fafc"],
 #tab-stock div[style*="background:#f8fafc"],
-#tab-stock div[style*="background: #f5f6f1"],
-#tab-stock div[style*="background:#f5f6f1"],
-#tab-stock div[style*="background: #1d1d1f"],
-#tab-stock div[style*="background:#1d1d1f"],
-.kc-white-report-container,
-.stock-technique-card {
+#tab-stock div[style*="background: #f1f5f9"],
+#tab-stock div[style*="background:#f1f5f9"],
+#tab-stock div[style*="background: #f0f9ff"],
+#tab-stock div[style*="background:#f0f9ff"],
+#tab-stock div[style*="background: #f0fdf4"],
+#tab-stock div[style*="background:#f0fdf4"],
+#tab-stock div[style*="background: #eff6ff"],
+#tab-stock div[style*="background:#eff6ff"],
+#tab-stock div[style*="background: #fef2f2"],
+#tab-stock div[style*="background:#fef2f2"],
+#tab-stock div[style*="background: #fffbeb"],
+#tab-stock div[style*="background:#fffbeb"],
+#tab-stock div[style*="background: #fff1f2"],
+#tab-stock div[style*="background:#fff1f2"],
+#tab-stock div[style*="background: #fff5f5"],
+#tab-stock div[style*="background:#fff5f5"],
+#tab-stock div[style*="background: #ecfdf5"],
+#tab-stock div[style*="background:#ecfdf5"],
+#tab-stock div[style*="background: #e0f2fe"],
+#tab-stock div[style*="background:#e0f2fe"] {
+  background: #180f08 !important;
+  border-color: #4a3d31 !important;
+  color: #f3e8dc !important;
+}
+
+/* 5-2. 오늘의 주도 테마 카드 내 [📌 당일 급등 이유 & 핵심 재료 팩트:] 박스 */
+#today-leading-themes-container div[style*="background: #fef2f2"],
+#today-leading-themes-container div[style*="background:#fef2f2"],
+#today-leading-themes-container [style*="border-left: 3px solid #ef4444"] {
+  background: #24140b !important;
+  border: 1px solid #4a3d31 !important;
+  border-left: 4px solid #ff6b1a !important;
+  color: #ffffff !important;
+}
+
+#today-leading-themes-container div[style*="background: #fef2f2"] strong,
+#today-leading-themes-container div[style*="background:#fef2f2"] strong {
+  color: #ffaa66 !important;
+  font-weight: 700 !important;
+}
+
+/* 5-3. 모든 밝은 뱃지 & 칩 (span, a, button) 어두운 톤으로 일체화 */
+#tab-stock span[style*="background: #ffffff"],
+#tab-stock span[style*="background:#ffffff"],
+#tab-stock span[style*="background: #f1f5f9"],
+#tab-stock span[style*="background:#f1f5f9"],
+#tab-stock span[style*="background: #ecfdf5"],
+#tab-stock span[style*="background:#ecfdf5"],
+#tab-stock span[style*="background: #fffbeb"],
+#tab-stock span[style*="background:#fffbeb"],
+#tab-stock span[style*="background: #fff1f2"],
+#tab-stock span[style*="background:#fff1f2"],
+#tab-stock span[style*="background: #e0f2fe"],
+#tab-stock span[style*="background:#e0f2fe"],
+#tab-stock span[style*="background: #f0f9ff"],
+#tab-stock span[style*="background:#f0f9ff"] {
+  background: #251810 !important;
+  border: 1px solid #4a3d31 !important;
+  color: #ffedd7 !important;
+}
+
+/* [5일선 재돌파 ✓] 뱃지 */
+span:has-text("5일선 재돌파"),
+span[style*="color: #065f46"],
+span[style*="color:#065f46"] {
+  background: rgba(34, 197, 94, 0.15) !important;
+  border: 1px solid rgba(34, 197, 94, 0.45) !important;
+  color: #4ade80 !important;
+}
+
+/* [5일선 지지 테스트 중] 뱃지 */
+span[style*="color: #b45309"],
+span[style*="color:#b45309"] {
+  background: rgba(245, 158, 11, 0.15) !important;
+  border: 1px solid rgba(245, 158, 11, 0.45) !important;
+  color: #fbbf24 !important;
+}
+
+/* 5-4. 눌림목 공략 [✓ 추적 승인] & [✕ 소멸 삭제] 버튼 */
+button[onclick*="approvePullbackTheme"] {
+  background: #1e3820 !important;
+  border: 1px solid #34d399 !important;
+  color: #34d399 !important;
+  font-weight: 700 !important;
+}
+
+button[onclick*="approvePullbackTheme"]:hover {
+  background: #274d2b !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="deletePullbackTheme"] {
+  background: #381a18 !important;
+  border: 1px solid #f87171 !important;
+  color: #f87171 !important;
+  font-weight: 700 !important;
+}
+
+button[onclick*="deletePullbackTheme"]:hover {
+  background: #4d2320 !important;
+  color: #ffffff !important;
+}
+
+/* [기사보기 ↗] 버튼 */
+.news-item-compact-card a[href],
+.news-item-card a[href],
+a:has-text("기사보기"),
+a[style*="background: #ffffff"],
+a[style*="background:#ffffff"] {
+  background: #251810 !important;
+  border: 1px solid #4a3d31 !important;
+  color: #ffaa66 !important;
+  font-weight: 700 !important;
+  padding: 4px 12px !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.news-item-compact-card a[href]:hover,
+.news-item-card a[href]:hover {
+  background: #382416 !important;
+  border-color: #ffaa66 !important;
+  color: #ffffff !important;
+}
+
+/* 5-5. 상단 카테고리 헤더 뱃지들 (특징주 22건, 거시 13건 등) */
+#domestic-news-filter-chips .imggen-style-chip,
+.news-col-box > div:first-child,
+div[style*="border-radius: 20px"][style*="background: #ffffff"],
+div[style*="border-radius: 20px"][style*="background:#ffffff"] {
   background: #180f08 !important;
   border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f3e8dc !important;
-  box-shadow: none !important;
+  color: #ffffff !important;
 }
 
-#tab-stock div[style*="background: rgba(255, 255, 255, 0.05)"],
-#tab-stock div[style*="background: rgba(0, 0, 0"],
-#tab-stock div[style*="background:rgba(0,0,0"],
-#tab-stock div[style*="background: rgba(15, 23, 42"],
-#tab-stock div[style*="background:rgba(15,23,42"] {
-  background: #100904 !important;
+/* 5-6. [5번 탭 종목 상세정보] 산업 유형 분류 & 매출 포트폴리오 비중 박스 */
+#stock-deep-container div[style*="background: #f0f9ff"],
+#stock-deep-container div[style*="background:#f0f9ff"],
+#stock-deep-container div[style*="background: #f0fdf4"],
+#stock-deep-container div[style*="background:#f0fdf4"],
+#stock-deep-container div[style*="background: #eff6ff"],
+#stock-deep-container div[style*="background:#eff6ff"],
+#stock-deep-container div[style*="background: #ffffff"],
+#stock-deep-container div[style*="background:#ffffff"] {
+  background: #180f08 !important;
   border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f3e8dc !important;
+  color: #ffffff !important;
 }
 
-/* 모든 헤딩 및 서브타이틀 */
+#stock-deep-container div[style*="color: #0284c7"],
+#stock-deep-container div[style*="color: #16a34a"],
+#stock-deep-container div[style*="color: #2563eb"],
+#stock-deep-container div[style*="color: #c2410c"] {
+  color: #ffaa66 !important;
+  font-weight: 700 !important;
+}
+
+/* 5-7. [4번 탭 2026 연간 캘린더] 1월 ~ 12월 월별 카드 & 뱃지 */
+#year-calendar-grid > div,
+div[onclick*="selectHistoryMonth"] {
+  background: #180f08 !important;
+  border: 1.5px solid #4a3d31 !important;
+  color: #ffffff !important;
+}
+
+div[onclick*="selectHistoryMonth"]:hover {
+  background: #251810 !important;
+  border-color: #ffaa66 !important;
+}
+
+div[onclick*="selectHistoryMonth"] strong {
+  color: #ffffff !important;
+  font-size: 1rem !important;
+}
+
+div[onclick*="selectHistoryMonth"] span {
+  background: #2a1b12 !important;
+  border: 1px solid #4a3d31 !important;
+  color: #ffaa66 !important;
+  font-weight: 700 !important;
+}
+
+div[onclick*="selectHistoryMonth"] div:last-child {
+  color: #e2d5c5 !important;
+}
+
+/* 5-8. 상단 우측 날짜 뱃지들 (2026년 10월 2일, 실제적 재료 팩트 집계 등) */
+#tab-stock span[style*="background: #ffffff"],
+#tab-stock div[style*="background: #ffffff"],
+.badge-light,
+[style*="background: #ffffff;"][style*="border-radius:"] {
+  background: #22150d !important;
+  border: 1px solid #4a3d31 !important;
+  color: #ffedd7 !important;
+}
+
+/* ==========================================================================
+   6. 전 페이지 텍스트 고대비 보정 총괄
+   ========================================================================== */
 #tab-stock h1, #tab-stock h2, #tab-stock h3, #tab-stock h4, #tab-stock h5, #tab-stock h6 {
   color: #ffffff !important;
   font-family: var(--font-halyard-display-variable) !important;
-  letter-spacing: -0.2px !important;
   font-weight: 700 !important;
 }
 
-/* 본문, 문단, 스팬, 라벨 모두 잘 보이도록 고대비 컬러 일괄 지정 */
-#tab-stock p, 
-#tab-stock span, 
-#tab-stock label, 
-#tab-stock li,
-#tab-stock td,
-#tab-stock th {
+#tab-stock strong, #tab-stock b {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+#tab-stock p, #tab-stock li, #tab-stock td {
   color: #f3e8dc !important;
-}
-
-/* 이전에 너무 어두웠던 회색 클래스들을 선명하고 밝은 웜 크림(#e2d5c5)으로 교정 */
-#tab-stock .text-muted,
-#tab-stock [style*="color: #64748b"],
-#tab-stock [style*="color:#64748b"],
-#tab-stock [style*="color: #475569"],
-#tab-stock [style*="color:#475569"],
-#tab-stock [style*="color: #94a3b8"],
-#tab-stock [style*="color:#94a3b8"],
-#tab-stock [style*="color: #86868b"],
-#tab-stock [style*="color:#86868b"],
-#tab-stock [style*="color: #6c5f51"],
-#tab-stock [style*="color:#6c5f51"],
-#tab-stock [style*="color: #1e293b"],
-#tab-stock [style*="color:#1e293b"],
-#tab-stock [style*="color: #0f172a"],
-#tab-stock [style*="color:#0f172a"] {
-  color: #e2d5c5 !important; /* 이제 묻히지 않고 아주 뚜렷하게 보입니다! */
-}
-
-#tab-stock strong,
-#tab-stock b,
-#tab-stock .text-strong {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-}
-
-/* ==========================================================================
-   6. [전체 탭 동적 렌더링 컨테이너 전담 스타일링]
-   ========================================================================== */
-#stock-material-timeline-list > div,
-#theme-timeline-container > div,
-#modal-stock-badges-container > div,
-#today-reports-feed-container > div,
-#detective-case-logs-grid > div,
-#radar-top-themes-grid > div,
-#custom-tracked-tags-list > div,
-#theme-timeline-list > div,
-#stock-theme-list > div,
-#ai-pending-events-list > div,
-#stock-deep-list > div,
-#us-live-feed-container > div,
-#global-news-container > div,
-#us-sector-briefing-container > div,
-#domestic-news-5col-container > div,
-#today-leading-themes-container > div,
-#past-pullback-themes-container > div,
-#theme-material-container > div,
-#stock-calendar-container > div,
-#leading-theme-container > div,
-#stock-deep-container > div,
-#youtube-briefing-container > div,
-#year-calendar-grid > div,
-#inspector-results-container > div,
-.news-item-compact-card,
-.news-col-box,
-.news-item-card {
-  background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f3e8dc !important;
-  transition: all 0.2s ease !important;
-}
-
-#stock-calendar-container > div:hover,
-#us-sector-briefing-container > div:hover,
-#today-leading-themes-container > div:hover,
-#past-pullback-themes-container > div:hover,
-#youtube-briefing-container > div:hover,
-.news-item-compact-card:hover,
-.news-col-box:hover,
-.news-item-card:hover {
-  background: #180f08 !important;
-  border-color: #d8c7b5 !important;
-  transform: translateY(-1px) !important;
-}
-
-/* ==========================================================================
-   7. [0번 탭] 실시간 국내 주식 뉴스 센터 (세부 텍스트 시인성 확보)
-   ========================================================================== */
-#stock-panel-news > div:first-child {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  padding: 20px 24px !important;
-  box-shadow: none !important;
-  margin-bottom: 24px !important;
-}
-
-#domestic-news-filter-chips .imggen-style-chip {
-  background: rgba(255, 237, 215, 0.06) !important;
-  border: 1px solid #4a3d31 !important;
-  color: #f3e8dc !important;
-  font-size: 13px !important;
-  font-weight: 600 !important;
-  padding: 6px 14px !important;
-  border-radius: 22.5px !important;
-  cursor: pointer !important;
-  transition: all 0.2s ease !important;
-}
-
-#domestic-news-filter-chips .imggen-style-chip:hover {
-  background: rgba(255, 237, 215, 0.14) !important;
-  color: #ffffff !important;
-  border-color: #ffedd7 !important;
-}
-
-#domestic-news-filter-chips .imggen-style-chip.active {
-  background: #382416 !important;
-  color: #ffffff !important;
-  border-color: #ffedd7 !important;
-  border-radius: 36px !important;
-  font-weight: 700 !important;
-}
-
-/* Q&A 자연어 질의응답 바 */
-#stock-detective-qa-bar {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  box-shadow: none !important;
-  padding: 22px 26px !important;
-  margin-bottom: 24px !important;
-}
-
-#stock-qa-input {
-  background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
-  border-bottom: 2px solid #ffedd7 !important;
-  color: #ffffff !important;
-  border-radius: 8px !important;
-  padding: 12px 20px !important;
-  font-size: 14.5px !important;
-  transition: all 0.2s ease !important;
-}
-
-#stock-qa-input::placeholder {
-  color: #b5a492 !important; /* 흐리지 않은 플레이스홀더 */
-}
-
-#stock-qa-input:focus {
-  border-color: #ffedd7 !important;
-  outline: none !important;
-  background: #160d06 !important;
-}
-
-#stock-detective-qa-bar button[onclick*="handleStockDetectiveQA"],
-#stock-detective-qa-bar .btn-primary,
-#stock-detective-qa-bar button:has(svg) {
-  background: #382416 !important;
-  color: #ffffff !important;
-  border: 1px solid #ffedd7 !important;
-  border-radius: 36px !important;
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  padding: 10px 24px !important;
-  transition: all 0.2s ease !important;
-}
-
-#stock-detective-qa-bar button[onclick*="handleStockDetectiveQA"]:hover {
-  background: #4e301c !important;
-  transform: translateY(-1px) !important;
-}
-
-.stock-qa-preset-chip {
-  background: rgba(255, 237, 215, 0.05) !important;
-  border: 1px dashed #4a3d31 !important;
-  color: #e2d5c5 !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  border-radius: 9999px !important;
-  padding: 5px 14px !important;
-  transition: all 0.2s ease !important;
-}
-
-.stock-qa-preset-chip:hover {
-  background: rgba(255, 237, 215, 0.12) !important;
-  color: #ffffff !important;
-  border-color: #ffedd7 !important;
-}
-
-/* 오늘의 주도 테마 레이더 & 눌림목 공략 */
-#today-leading-theme-radar,
-#leading-theme-dual-radar-section,
-#theme-timeline-viewer-section,
-#today-research-reports-widget {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  box-shadow: none !important;
-  margin-bottom: 24px !important;
-}
-
-/* 테마 카드 제목 (광통신 & 초고속 통신장비 등) */
-#today-leading-themes-container h4,
-#today-leading-themes-container h5,
-#today-leading-themes-container > div > div:first-child {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  font-size: 1.05rem !important;
-}
-
-/* 테마 카드 내부 대장주, 거래대금, 핵심 관련주 라벨 */
-#today-leading-themes-container span,
-#today-leading-themes-container div {
-  color: #f3e8dc !important;
-}
-
-/* 테마 카드 하단 흰색/밝은 박스 내부 텍스트 대비 확보 */
-#today-leading-themes-container [style*="background: #ffffff"],
-#today-leading-themes-container [style*="background:#ffffff"],
-#today-leading-themes-container [style*="background: #fff"],
-#today-leading-themes-container [style*="background:#fff"] {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-}
-
-#today-leading-themes-container [style*="background: #ffffff"] *,
-#today-leading-themes-container [style*="background:#ffffff"] * {
-  color: #f3e8dc !important;
-}
-
-/* 뉴스 카드 본문 및 기사 제목 */
-.news-item-compact-card,
-.news-col-box,
-.news-item-card {
-  color: #f3e8dc !important;
-}
-
-.news-item-compact-card a,
-.news-item-card a {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  text-decoration: none !important;
-}
-
-.news-item-compact-card a:hover,
-.news-item-card a:hover {
-  color: #ff6b1a !important; /* Ember Accent */
-}
-
-/* 기사 요약 본문 */
-.news-item-compact-card p,
-.news-item-card p,
-.news-col-box p {
-  color: #e2d5c5 !important;
-  line-height: 1.5 !important;
-}
-
-/* 기사 출처 및 시간 (MBN · 4시간 전 등) */
-.news-item-compact-card span,
-.news-item-card span,
-.news-col-box span {
-  color: #c9b9a6 !important;
-}
-
-/* ==========================================================================
-   8. [1번 탭] 미국 증시 총정리 & 시황 (패널 헤더 및 섹터 브리핑 글자 선명화)
-   ========================================================================== */
-#stock-panel-technique > div:first-child,
-#stock-panel-technique .panel-header-box {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  padding: 20px 24px !important;
-}
-
-/* "us 1. 전날 미국 증시 심층 총정리 & 시황 매매기법" 헤더 텍스트 완전 선명화! */
-#stock-panel-technique h2,
-#stock-panel-technique h3, 
-#stock-panel-technique h4, 
-#stock-panel-technique h5 {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-}
-
-#stock-panel-technique p, 
-#stock-panel-technique li {
-  color: #e2d5c5 !important;
   line-height: 1.6 !important;
 }
 
-#stock-panel-technique .stock-technique-card,
-#stock-panel-technique div[style*="background:"] {
+#tab-stock th {
   background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f3e8dc !important;
-}
-
-/* 강세 / 약세 업종 설명글 ("상승 사유:", "관련 종목:" 등) */
-#us-sector-briefing-container span,
-#us-sector-briefing-container div,
-#us-sector-briefing-container li {
-  color: #f3e8dc !important;
-}
-
-#us-sector-briefing-container strong,
-#us-sector-briefing-container b {
-  color: #ffffff !important;
-}
-
-/* ==========================================================================
-   9. [역대 주도 테마 눌림목 공략] 세부 텍스트 시인성 확보
-   ========================================================================== */
-#past-pullback-themes-container > div,
-.pullback-theme-card {
-  background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
-  color: #f3e8dc !important;
-}
-
-/* "대장주:", "기준봉 대비 눌림폭:", "최초 상승 이유", "향후 반등 모멘텀" 라벨 */
-#past-pullback-themes-container strong,
-#past-pullback-themes-container b,
-.pullback-theme-card strong {
   color: #ffffff !important;
   font-weight: 700 !important;
 }
 
-/* 설명글 ("한화에어로스페이스, K-방산...", "한화에어로스페이스의 후속...") */
-#past-pullback-themes-container p,
-#past-pullback-themes-container span,
-.pullback-theme-card p,
-.pullback-theme-card span {
-  color: #e2d5c5 !important; /* 더 이상 어두운 색으로 묻히지 않고 아주 잘 읽힙니다! */
-}
-
-/* ==========================================================================
-   10. [2번 탭] 재료 모음 - 팀장 7대 체크리스트
-   ========================================================================== */
-#stock-panel-compare table {
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
-  width: 100% !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  overflow: hidden !important;
-}
-
-#stock-panel-compare th {
-  background: #100904 !important;
-  color: #ffffff !important;
-  border-bottom: 1px solid #4a3d31 !important;
-  padding: 12px 16px !important;
-  font-size: 13.5px !important;
-  font-weight: 700 !important;
-}
-
-#stock-panel-compare td {
-  background: #180f08 !important;
-  color: #f3e8dc !important;
-  border-bottom: 1px solid #2e2015 !important;
-  padding: 12px 16px !important;
-  font-size: 13.5px !important;
-}
-
-#stock-panel-compare tr:last-child td {
-  border-bottom: none !important;
-}
-
-#stock-panel-compare tr:hover td {
-  background: #23160c !important;
-}
-
-/* ==========================================================================
-   11. [3번 탭] 일정 관리 & 증시 캘린더
-   ========================================================================== */
-#stock-panel-calendar .calendar-container,
-#stock-panel-calendar div[style*="background:"] {
-  background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f3e8dc !important;
-}
-
-.calendar-day-cell {
-  background: #100904 !important;
-  border: 1px solid #2e2015 !important;
-  color: #f3e8dc !important;
-}
-
-.calendar-day-cell:hover {
-  background: #180f08 !important;
-  border-color: #d8c7b5 !important;
-}
-
-.calendar-event-badge {
-  background: rgba(255, 107, 26, 0.15) !important;
-  border: 1px solid rgba(255, 107, 26, 0.45) !important;
-  color: #ffaa66 !important;
-  border-radius: 4px !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-}
-
-/* ==========================================================================
-   12. [4번 탭] 주간·월간 복기 & 2026 캘린더
-   ========================================================================== */
-#stock-panel-review div[style*="background:"] {
-  background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f3e8dc !important;
-}
-
-#stock-panel-review p,
-#stock-panel-review span {
-  color: #e2d5c5 !important;
-}
-
-/* ==========================================================================
-   13. [5번 탭] 종목 상세정보 - 심층분석
-   ========================================================================== */
-.kc-white-report-container {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f3e8dc !important;
-}
-
-.kc-report-main-title {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-}
-
-.kc-report-sub-meta {
-  color: #d8c7b5 !important;
-}
-
-.kc-big-score-card {
-  background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #ffffff !important;
-}
-
-.deep-section-block {
-  background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f3e8dc !important;
-}
-
-#deep-sec-future {
-  background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-}
-
-/* ==========================================================================
-   14. [6번 탭] 증시 유튜브 브리핑 & 모달 팝업
-   ========================================================================== */
-#stock-panel-youtube div[style*="background:"] {
-  background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f3e8dc !important;
-}
-
-#stock-panel-youtube p,
-#stock-panel-youtube span {
-  color: #e2d5c5 !important;
-}
-
-#tab8VideoModal .modal-box,
-.daily-report-modal-content,
-.inspector-bot-modal-content {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f3e8dc !important;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9) !important;
-}
-
-.inspector-bot-modal-backdrop,
-.daily-report-modal-backdrop {
-  background: rgba(16, 9, 4, 0.88) !important;
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
-}
-
-.daily-report-header,
-.inspector-bot-header {
-  background: #100904 !important;
-  border-bottom: 1px dashed #4a3d31 !important;
-  color: #ffffff !important;
-}
-
-.daily-report-body,
-.inspector-bot-body {
-  background: #180f08 !important;
-  color: #f3e8dc !important;
-}
-
-.daily-report-preview-box {
-  background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f3e8dc !important;
-}
-
-.daily-report-footer,
-.inspector-bot-footer {
-  background: #100904 !important;
-  border-top: 1px dashed #4a3d31 !important;
-}
-
-.inspector-item-card {
-  background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f3e8dc !important;
-}
-
-.inspector-item-card:hover {
-  background: #180f08 !important;
-  border-color: #d8c7b5 !important;
-}
-
-/* ==========================================================================
-   15. 입력 폼 & 셀렉트 박스
-   ========================================================================== */
-input[type="text"],
-input[type="search"],
-select,
-textarea,
-#theme-timeline-select,
-#theme-db-autocomplete-dropdown,
-.stock-select-box {
-  background: #100904 !important;
-  border: 1px solid #4a3d31 !important;
-  color: #ffffff !important;
-  border-radius: 8px !important;
-  font-family: inherit !important;
-  outline: none !important;
-  transition: all 0.2s ease !important;
-}
-
-select {
-  border-radius: 8px !important;
-  padding: 8px 16px !important;
-}
-
-select option {
-  background: #180f08 !important;
-  color: #ffffff !important;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  border-color: #ffedd7 !important;
-  background: #160d06 !important;
-}
-
-#theme-db-autocomplete-dropdown {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9) !important;
-}
-
-/* ==========================================================================
-   16. 웜 다크 슬림 스크롤바
-   ========================================================================== */
+/* 슬림 스크롤바 */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
-
 ::-webkit-scrollbar-track {
   background: #100904;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #4a3d31;
   border-radius: 9999px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: #d8c7b5;
+  background: #ffaa66;
 }
