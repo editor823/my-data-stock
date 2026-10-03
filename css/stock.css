@@ -1,62 +1,67 @@
 /* ==========================================================================
-   Apple iPhone 18 Pro — Midnight Hardware Gallery Design System
+   ORYZO AI — Darkroom Product Editorial Design System
    Applied to Stock Intelligence Center (css/stock.css)
    
    [Design Philosophy]
-   - Midnight hardware gallery: treat each section as a dark, museum-like plinth.
-   - Dark Stages: Obsidian (#000000), Graphite (#0e0e0e), Carbon (#1d1d1f).
-   - Precision Keylines: Steel (#333336 hairline 1px), Slate (#6e6e73).
-   - High-contrast Typography: Porcelain (#f5f5f7), Ash (#86868b), White (#ffffff).
-   - Restrained Blue Controls: Apple Blue (#0071e3), Electric Link (#2997ff).
-   - Generous Apple Radii: 28px Panels, 20px Cards/Tiles, 170px Buttons, 9999px Pills.
+   - Darkroom product editorial: warm darkness with cream typography.
+   - Canvas: Walnut Shadow (#100904) - warm near-black void.
+   - Elevated Solid: Bark Brown (#382416) - the single chromatic step above canvas.
+   - Hairlines & Dividers: Cork Border (#40372e) - dashed and solid subtle borders.
+   - Typography: Warm Cream (#ffedd7) - light text on dark surfaces, never pure white.
+   - Mid-tone: Driftwood (#6c5f51) - secondary structural elements and muted copy.
+   - Rarity Accent: Ember Accent (#dc5000) - orange text accent for credit & key tags.
+   - Geometry: 12px Cards, 36px Pill Buttons, 22.5px Outlined Buttons, 0px Underlines.
    ========================================================================== */
 
 :root {
   /* Colors */
-  --color-obsidian: #000000;
-  --color-graphite: #0e0e0e;
-  --color-carbon: #1d1d1f;
-  --gradient-carbon: linear-gradient(#1d1d1f, #000000 288px);
-  --color-steel: #333336;
-  --color-slate: #6e6e73;
-  --color-ash: #86868b;
-  --color-porcelain: #f5f5f7;
-  --color-white: #ffffff;
-  --color-apple-blue: #0071e3;
-  --color-electric-link: #2997ff;
-  --color-cobalt-link: #0066cc;
-  --color-copper-new: #b64400;
-  --color-optical-yellow: #ffd500;
+  --color-warm-cream: #ffedd7;
+  --color-walnut-shadow: #100904;
+  --color-bark-brown: #382416;
+  --color-cork-border: #40372e;
+  --color-driftwood: #6c5f51;
+  --color-ember-accent: #dc5000;
+  --color-pure-black: #000000;
 
   /* Typography */
-  --font-sf-pro-text: 'SF Pro Text', 'Inter', -apple-system, BlinkMacSystemFont, "Pretendard Variable", Pretendard, system-ui, sans-serif;
-  --font-sf-pro-display: 'SF Pro Display', 'Inter', -apple-system, BlinkMacSystemFont, "Pretendard Variable", Pretendard, system-ui, sans-serif;
+  --font-halyard-display-variable: 'halyard-display-variable', 'Inter', -apple-system, BlinkMacSystemFont, "Pretendard Variable", Pretendard, sans-serif;
+  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
+
+  /* Typography Scale */
+  --text-subheading: 18px;
+  --text-heading-sm: 24px;
+  --text-body: 29px;
+  --text-heading: 41px;
+  --text-display: 51px;
 
   /* Named Radii */
-  --radius-cards: 28px;
-  --radius-links: 10px;
-  --radius-pills: 9999px;
-  --radius-images: 28px;
-  --radius-inputs: 980px;
-  --radius-buttons: 170px;
-  --radius-navigation: 20px;
-  --radius-compactbuttons: 36px;
+  --radius-cards: 12px;
+  --radius-inputs: 0px;
+  --radius-full-round: 9999px;
+  --radius-buttons-pill: 36px;
+  --radius-buttons-outlined: 22.5px;
+
+  /* Surfaces */
+  --surface-walnut-shadow: #100904;
+  --surface-bark-brown: #382416;
+  --surface-cork-border: #40372e;
+  --surface-warm-cream: #ffedd7;
 }
 
 /* 텍스트 드래그 선택 영역 */
 ::selection {
-  background: rgba(0, 113, 227, 0.4);
-  color: #ffffff;
+  background: rgba(220, 80, 0, 0.4);
+  color: #ffedd7;
 }
 
 /* ==========================================================================
-   1. 글로벌 기본 레이아웃 & 최상단 GNB (Graphite Chrome)
+   1. 글로벌 바디 & 최상단 GNB (Walnut Shadow & Fixed Top Navigation)
    ========================================================================== */
 html, body {
-  background-color: #000000 !important;
-  color: #f5f5f7 !important;
-  font-family: var(--font-sf-pro-text) !important;
-  letter-spacing: -0.224px !important;
+  background-color: #100904 !important;
+  color: #ffedd7 !important;
+  font-family: var(--font-halyard-display-variable) !important;
+  letter-spacing: 0px !important;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
@@ -65,10 +70,10 @@ html, body {
   position: sticky !important;
   top: 0 !important;
   z-index: 1000 !important;
-  background: rgba(14, 14, 14, 0.85) !important;
-  backdrop-filter: blur(24px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
-  border-bottom: 1px solid #333336 !important;
+  background: rgba(16, 9, 4, 0.88) !important;
+  backdrop-filter: blur(24px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(160%) !important;
+  border-bottom: 1px solid #40372e !important;
   box-shadow: none !important;
 }
 
@@ -76,18 +81,18 @@ html, body {
   max-width: 1440px !important;
   margin: 0 auto !important;
   padding: 0 24px !important;
-  height: 52px !important;
+  height: 54px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
 }
 
 .stock-brand {
-  color: #f5f5f7 !important;
-  font-family: var(--font-sf-pro-display) !important;
-  font-weight: 600 !important;
+  color: #ffedd7 !important;
+  font-family: var(--font-halyard-display-variable) !important;
+  font-weight: 500 !important;
   font-size: 1.05rem !important;
-  letter-spacing: -0.2px !important;
+  letter-spacing: 0.5px !important;
   display: flex !important;
   align-items: center !important;
   gap: 8px !important;
@@ -95,60 +100,61 @@ html, body {
 }
 
 .stock-brand-badge {
-  background: rgba(0, 113, 227, 0.18) !important;
-  color: #2997ff !important;
-  border: 1px solid rgba(41, 151, 255, 0.35) !important;
+  background: rgba(220, 80, 0, 0.15) !important;
+  color: #dc5000 !important;
+  border: 1px solid rgba(220, 80, 0, 0.35) !important;
   font-size: 0.68rem !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   padding: 2px 8px !important;
   border-radius: 9999px !important;
   letter-spacing: 0.5px !important;
 }
 
-/* 상단 버튼군 */
+/* 검수봇 작동 버튼 (ORYZO Outlined Ghost Button) */
 #btn-run-inspector-bot {
-  background: rgba(255, 255, 255, 0.06) !important;
-  color: #f5f5f7 !important;
-  border: 1px solid #333336 !important;
-  border-radius: 170px !important;
-  font-size: 0.8rem !important;
-  font-weight: 500 !important;
-  padding: 6px 14px !important;
-  box-shadow: none !important;
-  transition: all 0.2s ease !important;
-}
-
-#btn-run-inspector-bot:hover {
-  background: rgba(255, 255, 255, 0.12) !important;
-  border-color: #6e6e73 !important;
-  transform: translateY(-1px) !important;
-}
-
-.nav-external-link {
-  background: #0071e3 !important;
-  color: #ffffff !important;
-  border: 1px solid #0071e3 !important;
-  border-radius: 170px !important;
+  background: transparent !important;
+  color: #ffedd7 !important;
+  border: 1px solid #ffedd7 !important;
+  border-radius: 22.5px !important;
   font-size: 0.8rem !important;
   font-weight: 500 !important;
   padding: 6px 16px !important;
+  box-shadow: none !important;
+  transition: all 0.2s ease !important;
+  letter-spacing: 0.3px !important;
+}
+
+#btn-run-inspector-bot:hover {
+  background: rgba(255, 237, 215, 0.1) !important;
+  border-color: #ffedd7 !important;
+  transform: translateY(-1px) !important;
+}
+
+/* 블로그 허브 바로가기 (ORYZO Pill Button - Bark Brown) */
+.nav-external-link {
+  background: #382416 !important;
+  color: #ffedd7 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 36px !important;
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  padding: 6px 18px !important;
   text-decoration: none !important;
   transition: all 0.2s ease !important;
 }
 
 .nav-external-link:hover {
-  background: #0077ed !important;
-  border-color: #0077ed !important;
-  color: #ffffff !important;
-  box-shadow: 0 0 16px rgba(0, 113, 227, 0.4) !important;
+  background: #472d1c !important;
+  border-color: #ffedd7 !important;
+  color: #ffedd7 !important;
   transform: translateY(-1px) !important;
 }
 
 /* ==========================================================================
-   2. 메인 헤더 박스 (Carbon Panel #1d1d1f & 28px Corners)
+   2. 메인 헤더 박스 (Walnut/Bark Tone & 12px Card Radius)
    ========================================================================== */
 #tab-stock {
-  color: #f5f5f7 !important;
+  color: #ffedd7 !important;
   display: block !important;
   opacity: 1 !important;
 }
@@ -160,20 +166,20 @@ html, body {
 }
 
 #tab-stock .kc-header-box {
-  background: #1d1d1f !important;
-  border: 1px solid #333336 !important;
-  border-radius: 28px !important;
+  background: #180f08 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
   padding: 28px 32px 24px !important;
   box-shadow: none !important;
   margin-bottom: 24px !important;
 }
 
 .kc-badge-daily {
-  background: rgba(255, 255, 255, 0.05) !important;
-  border: 1px solid #333336 !important;
-  color: #86868b !important;
+  background: rgba(220, 80, 0, 0.08) !important;
+  border: 1px dashed #40372e !important;
+  color: #dc5000 !important;
   font-size: 0.72rem !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   letter-spacing: 0.5px !important;
   padding: 4px 12px !important;
   border-radius: 9999px !important;
@@ -182,25 +188,26 @@ html, body {
 }
 
 #tab-stock .kc-main-title {
-  color: #f5f5f7 !important;
-  font-family: var(--font-sf-pro-display) !important;
+  color: #ffedd7 !important;
+  font-family: var(--font-halyard-display-variable) !important;
   font-size: 1.95rem !important;
-  font-weight: 600 !important;
-  letter-spacing: -0.5px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0px !important;
   margin: 4px 0 8px 0 !important;
 }
 
 #tab-stock .kc-header-box p {
-  color: #86868b !important;
+  color: #6c5f51 !important;
   font-size: 0.88rem !important;
   line-height: 1.5 !important;
 }
 
+/* API 설정 버튼 (Outlined Ghost) */
 .kc-header-btn {
-  background: rgba(255, 255, 255, 0.04) !important;
-  border: 1px solid #6e6e73 !important;
-  color: #f5f5f7 !important;
-  border-radius: 9999px !important;
+  background: transparent !important;
+  border: 1px solid #ffedd7 !important;
+  color: #ffedd7 !important;
+  border-radius: 22.5px !important;
   padding: 6px 14px !important;
   font-size: 0.8rem !important;
   font-weight: 500 !important;
@@ -209,19 +216,17 @@ html, body {
 }
 
 .kc-header-btn:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border-color: #86868b !important;
-  color: #ffffff !important;
+  background: rgba(255, 237, 215, 0.08) !important;
 }
 
 #stock-api-status-badge {
-  color: #34c759 !important; /* Apple Green */
+  color: #dc5000 !important; /* Ember Accent */
   font-size: 0.8rem !important;
   font-weight: 500 !important;
 }
 
 /* ==========================================================================
-   3. 시장 지표 전광판 (Obsidian Feature Tiles #000000 & 20px Radius)
+   3. 시장 지표 전광판 (Walnut Shadow Tiles #100904 & 12px Radius)
    ========================================================================== */
 .stock-market-indicators {
   display: flex !important;
@@ -229,9 +234,9 @@ html, body {
 }
 
 .stock-indicator-card {
-  background: #000000 !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
   padding: 12px 18px !important;
   text-align: center !important;
   min-width: 110px !important;
@@ -240,51 +245,51 @@ html, body {
 }
 
 .stock-indicator-card:hover {
-  border-color: #6e6e73 !important;
+  border-color: #6c5f51 !important;
 }
 
 .stock-indicator-title {
   font-size: 0.72rem !important;
-  color: #86868b !important;
+  color: #6c5f51 !important;
   font-weight: 500 !important;
-  letter-spacing: -0.12px !important;
+  letter-spacing: 0.5px !important;
   margin-bottom: 2px !important;
 }
 
 .stock-indicator-val {
   font-size: 1.25rem !important;
-  font-weight: 600 !important;
-  color: #ffffff !important;
-  letter-spacing: -0.3px !important;
+  font-weight: 500 !important;
+  color: #ffedd7 !important;
+  letter-spacing: 0px !important;
   margin: 2px 0 !important;
 }
 
 .stock-indicator-diff {
   font-size: 0.95rem !important;
-  font-weight: 600 !important;
-  letter-spacing: -0.2px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0px !important;
   margin-top: 2px !important;
   display: block !important;
 }
 
 .stock-indicator-diff.is-up {
-  color: #ff453a !important; /* Apple Red */
+  color: #dc5000 !important; /* Ember Orange */
 }
 
 .stock-indicator-diff.is-down {
-  color: #2997ff !important; /* Apple Blue */
+  color: #c4976c !important; /* Warm Ochre/Brown */
 }
 
 .stock-indicator-diff.is-zero {
-  color: #86868b !important;
+  color: #6c5f51 !important;
 }
 
 /* ==========================================================================
-   4. 상단 서브 탭 내비게이션 (0번~6번 메뉴)
+   4. 상단 서브 탭 내비게이션 (Pill Button & Outlined Buttons)
    ========================================================================== */
 .stock-subtabs-scroll-wrap {
   margin-top: 22px !important;
-  border-top: 1px solid #333336 !important;
+  border-top: 1px dashed #40372e !important;
   padding-top: 16px !important;
 }
 
@@ -301,15 +306,15 @@ html, body {
 }
 
 .stock-sub-tab {
-  background: rgba(255, 255, 255, 0.04) !important;
-  border: 1px solid #333336 !important;
-  color: #86868b !important;
-  font-family: var(--font-sf-pro-text) !important;
+  background: transparent !important;
+  border: 1px solid #40372e !important;
+  color: #6c5f51 !important;
+  font-family: var(--font-halyard-display-variable) !important;
   font-size: 13px !important;
   font-weight: 500 !important;
-  letter-spacing: -0.12px !important;
+  letter-spacing: 0.3px !important;
   padding: 8px 16px !important;
-  border-radius: 9999px !important;
+  border-radius: 22.5px !important;
   cursor: pointer !important;
   white-space: nowrap !important;
   display: inline-flex !important;
@@ -320,22 +325,23 @@ html, body {
 }
 
 .stock-sub-tab:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
-  color: #f5f5f7 !important;
-  border-color: #6e6e73 !important;
+  background: rgba(255, 237, 215, 0.05) !important;
+  color: #ffedd7 !important;
+  border-color: #6c5f51 !important;
   transform: none !important;
 }
 
 .stock-sub-tab.active {
-  background: #0071e3 !important; /* Apple Blue Purchase Pill */
-  color: #ffffff !important;
-  border-color: #0071e3 !important;
-  font-weight: 600 !important;
-  box-shadow: 0 0 16px rgba(0, 113, 227, 0.4) !important;
+  background: #382416 !important; /* Bark Brown Filled */
+  color: #ffedd7 !important;
+  border-color: #ffedd7 !important;
+  border-radius: 36px !important;
+  font-weight: 500 !important;
+  box-shadow: none !important;
 }
 
 /* ==========================================================================
-   5. 카드 & 패널 공통 시스템 (Carbon #1d1d1f & 28px Radius)
+   5. 카드 & 패널 공통 시스템 (Walnut/Bark Tones & 12px Radius)
    ========================================================================== */
 #tab-stock .kc-box-white-card,
 #tab-stock .stock-panel-content > div,
@@ -347,32 +353,35 @@ html, body {
 #tab-stock div[style*="background:#f8fafc"],
 #tab-stock div[style*="background: #f5f6f1"],
 #tab-stock div[style*="background:#f5f6f1"],
+#tab-stock div[style*="background: #1d1d1f"],
+#tab-stock div[style*="background:#1d1d1f"],
 .kc-white-report-container,
 .stock-technique-card {
-  background: #1d1d1f !important;
-  border: 1px solid #333336 !important;
-  border-radius: 28px !important;
-  color: #f5f5f7 !important;
+  background: #180f08 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
   box-shadow: none !important;
 }
 
-/* 내부 중첩 타일 (Obsidian #000000 & 20px Radius) */
+/* 내부 중첩 타일 (Walnut Shadow #100904 & 12px Radius) */
 #tab-stock div[style*="background: rgba(255, 255, 255, 0.05)"],
 #tab-stock div[style*="background: rgba(0, 0, 0"],
 #tab-stock div[style*="background:rgba(0,0,0"],
 #tab-stock div[style*="background: rgba(15, 23, 42"],
 #tab-stock div[style*="background:rgba(15,23,42"] {
-  background: #000000 !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
-  color: #f5f5f7 !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
 }
 
 /* 헤더 및 타이틀 통일 */
 #tab-stock h1, #tab-stock h2, #tab-stock h3, #tab-stock h4, #tab-stock h5, #tab-stock h6 {
-  color: #f5f5f7 !important;
-  font-family: var(--font-sf-pro-display) !important;
-  letter-spacing: -0.2px !important;
+  color: #ffedd7 !important;
+  font-family: var(--font-halyard-display-variable) !important;
+  letter-spacing: 0px !important;
+  font-weight: 500 !important;
 }
 
 #tab-stock p, #tab-stock span, #tab-stock label {
@@ -386,22 +395,23 @@ html, body {
 #tab-stock [style*="color:#475569"],
 #tab-stock [style*="color: #94a3b8"],
 #tab-stock [style*="color:#94a3b8"],
+#tab-stock [style*="color: #86868b"],
+#tab-stock [style*="color:#86868b"],
 #tab-stock [style*="color: #1e293b"],
 #tab-stock [style*="color:#1e293b"],
 #tab-stock [style*="color: #0f172a"],
 #tab-stock [style*="color:#0f172a"] {
-  color: #86868b !important;
+  color: #6c5f51 !important; /* Driftwood */
 }
 
 #tab-stock strong,
 #tab-stock b,
 #tab-stock .text-strong {
-  color: #ffffff !important;
+  color: #ffedd7 !important;
 }
 
 /* ==========================================================================
-   6. [전체 탭 동적 렌더링 컨테이너 전담 스타일링]
-   모든 서브탭을 눌렀을 때 나타나는 내부 동적 카드들을 완벽한 애플 타일로 변환
+   6. [전체 탭 동적 렌더링 컨테이너 스타일링]
    ========================================================================== */
 #stock-material-timeline-list > div,
 #theme-timeline-container > div,
@@ -430,10 +440,10 @@ html, body {
 .news-item-compact-card,
 .news-col-box,
 .news-item-card {
-  background: #000000 !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
-  color: #f5f5f7 !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
   transition: all 0.2s ease !important;
 }
 
@@ -445,8 +455,8 @@ html, body {
 .news-item-compact-card:hover,
 .news-col-box:hover,
 .news-item-card:hover {
-  background: #0e0e0e !important;
-  border-color: #6e6e73 !important;
+  background: #180f08 !important;
+  border-color: #6c5f51 !important;
   transform: translateY(-1px) !important;
 }
 
@@ -454,94 +464,93 @@ html, body {
    7. [0번 탭] 실시간 국내 주식 뉴스 센터
    ========================================================================== */
 #stock-panel-news > div:first-child {
-  background: #1d1d1f !important;
-  border: 1px solid #333336 !important;
-  border-radius: 28px !important;
+  background: #180f08 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
   padding: 20px 24px !important;
   box-shadow: none !important;
   margin-bottom: 24px !important;
 }
 
 #domestic-news-filter-chips .imggen-style-chip {
-  background: rgba(255, 255, 255, 0.04) !important;
-  border: 1px solid #333336 !important;
-  color: #86868b !important;
+  background: transparent !important;
+  border: 1px solid #40372e !important;
+  color: #6c5f51 !important;
   font-size: 13px !important;
   font-weight: 500 !important;
   padding: 6px 14px !important;
-  border-radius: 9999px !important;
+  border-radius: 22.5px !important;
   cursor: pointer !important;
   transition: all 0.2s ease !important;
 }
 
 #domestic-news-filter-chips .imggen-style-chip:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
-  color: #f5f5f7 !important;
-  border-color: #6e6e73 !important;
+  background: rgba(255, 237, 215, 0.05) !important;
+  color: #ffedd7 !important;
+  border-color: #6c5f51 !important;
 }
 
 #domestic-news-filter-chips .imggen-style-chip.active {
-  background: #0071e3 !important;
-  color: #ffffff !important;
-  border-color: #0071e3 !important;
-  font-weight: 600 !important;
-  box-shadow: 0 0 14px rgba(0, 113, 227, 0.3) !important;
+  background: #382416 !important;
+  color: #ffedd7 !important;
+  border-color: #ffedd7 !important;
+  border-radius: 36px !important;
+  font-weight: 500 !important;
 }
 
 /* Q&A 자연어 질의응답 바 */
 #stock-detective-qa-bar {
-  background: #1d1d1f !important;
-  border: 1px solid #333336 !important;
-  border-radius: 28px !important;
+  background: #180f08 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
   box-shadow: none !important;
   padding: 22px 26px !important;
   margin-bottom: 24px !important;
 }
 
 #stock-qa-input {
-  background: rgba(255, 255, 255, 0.04) !important;
-  border: 1px solid #6e6e73 !important;
-  color: #f5f5f7 !important;
-  border-radius: 980px !important;
-  padding: 12px 22px !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-bottom: 2px solid #ffedd7 !important;
+  color: #ffedd7 !important;
+  border-radius: 8px !important;
+  padding: 12px 20px !important;
   font-size: 14px !important;
   transition: all 0.2s ease !important;
 }
 
 #stock-qa-input::placeholder {
-  color: #86868b !important;
+  color: #6c5f51 !important;
 }
 
 #stock-qa-input:focus {
-  border-color: #0071e3 !important;
-  outline: 1px solid #0071e3 !important;
-  outline-offset: 1px !important;
-  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: #ffedd7 !important;
+  outline: none !important;
+  background: #150c05 !important;
 }
 
 #stock-detective-qa-bar button[onclick*="handleStockDetectiveQA"],
 #stock-detective-qa-bar .btn-primary,
 #stock-detective-qa-bar button:has(svg) {
-  background: #0071e3 !important;
-  color: #ffffff !important;
-  border: 1px solid #0071e3 !important;
-  border-radius: 170px !important;
+  background: #382416 !important;
+  color: #ffedd7 !important;
+  border: 1px solid #ffedd7 !important;
+  border-radius: 36px !important;
   font-size: 14px !important;
   font-weight: 500 !important;
   padding: 10px 24px !important;
   transition: all 0.2s ease !important;
-  box-shadow: 0 0 14px rgba(0, 113, 227, 0.3) !important;
 }
 
 #stock-detective-qa-bar button[onclick*="handleStockDetectiveQA"]:hover {
-  background: #0077ed !important;
-  box-shadow: 0 0 20px rgba(0, 113, 227, 0.5) !important;
+  background: #472d1c !important;
+  transform: translateY(-1px) !important;
 }
 
 .stock-qa-preset-chip {
-  background: rgba(255, 255, 255, 0.04) !important;
-  border: 1px solid #333336 !important;
-  color: #86868b !important;
+  background: transparent !important;
+  border: 1px dashed #40372e !important;
+  color: #6c5f51 !important;
   font-size: 12px !important;
   font-weight: 500 !important;
   border-radius: 9999px !important;
@@ -550,9 +559,9 @@ html, body {
 }
 
 .stock-qa-preset-chip:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
-  color: #f5f5f7 !important;
-  border-color: #6e6e73 !important;
+  background: rgba(255, 237, 215, 0.06) !important;
+  color: #ffedd7 !important;
+  border-color: #ffedd7 !important;
 }
 
 /* 오늘의 주도 테마 레이더 & 눌림목 */
@@ -560,9 +569,9 @@ html, body {
 #leading-theme-dual-radar-section,
 #theme-timeline-viewer-section,
 #today-research-reports-widget {
-  background: #1d1d1f !important;
-  border: 1px solid #333336 !important;
-  border-radius: 28px !important;
+  background: #180f08 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
   box-shadow: none !important;
   margin-bottom: 24px !important;
 }
@@ -570,21 +579,21 @@ html, body {
 #today-leading-themes-container > div,
 .today-leading-loading-box,
 #radar-market-health-bar {
-  background: #000000 !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
-  color: #f5f5f7 !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
 }
 
 .news-item-compact-card a,
 .news-item-card a {
-  color: #f5f5f7 !important;
+  color: #ffedd7 !important;
   text-decoration: none !important;
 }
 
 .news-item-compact-card a:hover,
 .news-item-card a:hover {
-  color: #2997ff !important;
+  color: #dc5000 !important; /* Ember Accent */
 }
 
 /* ==========================================================================
@@ -592,21 +601,21 @@ html, body {
    ========================================================================== */
 #stock-panel-technique .stock-technique-card,
 #stock-panel-technique div[style*="background:"] {
-  background: #000000 !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
-  color: #f5f5f7 !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
 }
 
 #stock-panel-technique h3, 
 #stock-panel-technique h4, 
 #stock-panel-technique h5 {
-  color: #f5f5f7 !important;
+  color: #ffedd7 !important;
 }
 
 #stock-panel-technique p, 
 #stock-panel-technique li {
-  color: #86868b !important;
+  color: #6c5f51 !important;
 }
 
 /* ==========================================================================
@@ -616,24 +625,24 @@ html, body {
   border-collapse: separate !important;
   border-spacing: 0 !important;
   width: 100% !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
   overflow: hidden !important;
 }
 
 #stock-panel-compare th {
-  background: #0e0e0e !important;
-  color: #86868b !important;
-  border-bottom: 1px solid #333336 !important;
+  background: #100904 !important;
+  color: #6c5f51 !important;
+  border-bottom: 1px solid #40372e !important;
   padding: 12px 16px !important;
   font-size: 13px !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
 }
 
 #stock-panel-compare td {
-  background: #000000 !important;
-  color: #f5f5f7 !important;
-  border-bottom: 1px solid #282828 !important;
+  background: #180f08 !important;
+  color: #ffedd7 !important;
+  border-bottom: 1px solid #291b10 !important;
   padding: 12px 16px !important;
   font-size: 13.5px !important;
 }
@@ -643,7 +652,7 @@ html, body {
 }
 
 #stock-panel-compare tr:hover td {
-  background: #0e0e0e !important;
+  background: #23160c !important;
 }
 
 /* ==========================================================================
@@ -651,28 +660,28 @@ html, body {
    ========================================================================== */
 #stock-panel-calendar .calendar-container,
 #stock-panel-calendar div[style*="background:"] {
-  background: #000000 !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
-  color: #f5f5f7 !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
 }
 
 .calendar-day-cell {
-  background: #000000 !important;
-  border: 1px solid #282828 !important;
-  color: #f5f5f7 !important;
+  background: #100904 !important;
+  border: 1px solid #291b10 !important;
+  color: #ffedd7 !important;
 }
 
 .calendar-day-cell:hover {
-  background: #0e0e0e !important;
-  border-color: #333336 !important;
+  background: #180f08 !important;
+  border-color: #40372e !important;
 }
 
 .calendar-event-badge {
-  background: rgba(0, 113, 227, 0.15) !important;
-  border: 1px solid rgba(41, 151, 255, 0.35) !important;
-  color: #2997ff !important;
-  border-radius: 6px !important;
+  background: rgba(220, 80, 0, 0.12) !important;
+  border: 1px solid rgba(220, 80, 0, 0.35) !important;
+  color: #dc5000 !important;
+  border-radius: 4px !important;
   font-size: 12px !important;
 }
 
@@ -680,117 +689,117 @@ html, body {
    11. [4번 탭] 주간·월간 복기 & 2026 캘린더 (review)
    ========================================================================== */
 #stock-panel-review div[style*="background:"] {
-  background: #000000 !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
-  color: #f5f5f7 !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
 }
 
 /* ==========================================================================
    12. [5번 탭] 종목 상세정보 - 심층분석 (deep)
    ========================================================================== */
 .kc-white-report-container {
-  background: #1d1d1f !important;
-  border: 1px solid #333336 !important;
-  border-radius: 28px !important;
-  color: #f5f5f7 !important;
+  background: #180f08 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
 }
 
 .kc-report-main-title {
-  color: #f5f5f7 !important;
+  color: #ffedd7 !important;
 }
 
 .kc-report-sub-meta {
-  color: #86868b !important;
+  color: #6c5f51 !important;
 }
 
 .kc-big-score-card {
-  background: #000000 !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
-  color: #ffffff !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
 }
 
 .deep-section-block {
-  background: #0e0e0e !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
-  color: #f5f5f7 !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
 }
 
 #deep-sec-future {
-  background: #000000 !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
 }
 
 /* ==========================================================================
    13. [6번 탭] 증시 유튜브 브리핑 & 모달 팝업
    ========================================================================== */
 #stock-panel-youtube div[style*="background:"] {
-  background: #000000 !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
-  color: #f5f5f7 !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
 }
 
 #tab8VideoModal .modal-box,
 .daily-report-modal-content,
 .inspector-bot-modal-content {
-  background: #1d1d1f !important;
-  border: 1px solid #333336 !important;
-  border-radius: 28px !important;
-  color: #f5f5f7 !important;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8) !important;
+  background: #180f08 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9) !important;
 }
 
 .inspector-bot-modal-backdrop,
 .daily-report-modal-backdrop {
-  background: rgba(0, 0, 0, 0.85) !important;
+  background: rgba(16, 9, 4, 0.88) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
 }
 
 .daily-report-header,
 .inspector-bot-header {
-  background: #0e0e0e !important;
-  border-bottom: 1px solid #333336 !important;
-  color: #f5f5f7 !important;
+  background: #100904 !important;
+  border-bottom: 1px dashed #40372e !important;
+  color: #ffedd7 !important;
 }
 
 .daily-report-body,
 .inspector-bot-body {
-  background: #1d1d1f !important;
-  color: #f5f5f7 !important;
+  background: #180f08 !important;
+  color: #ffedd7 !important;
 }
 
 .daily-report-preview-box {
-  background: #000000 !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
-  color: #f5f5f7 !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
 }
 
 .daily-report-footer,
 .inspector-bot-footer {
-  background: #0e0e0e !important;
-  border-top: 1px solid #333336 !important;
+  background: #100904 !important;
+  border-top: 1px dashed #40372e !important;
 }
 
 .inspector-item-card {
-  background: #000000 !important;
-  border: 1px solid #333336 !important;
-  border-radius: 16px !important;
-  color: #f5f5f7 !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  color: #ffedd7 !important;
 }
 
 .inspector-item-card:hover {
-  background: #0e0e0e !important;
-  border-color: #6e6e73 !important;
+  background: #180f08 !important;
+  border-color: #6c5f51 !important;
 }
 
 /* ==========================================================================
-   14. 입력 폼 & 셀렉트 박스 (Apple Device Selector Input)
+   14. 입력 폼 & 셀렉트 박스
    ========================================================================== */
 input[type="text"],
 input[type="search"],
@@ -799,43 +808,41 @@ textarea,
 #theme-timeline-select,
 #theme-db-autocomplete-dropdown,
 .stock-select-box {
-  background: rgba(255, 255, 255, 0.04) !important;
-  border: 1px solid #6e6e73 !important;
-  color: #f5f5f7 !important;
-  border-radius: 980px !important;
+  background: #100904 !important;
+  border: 1px solid #40372e !important;
+  color: #ffedd7 !important;
+  border-radius: 8px !important;
   font-family: inherit !important;
   outline: none !important;
   transition: all 0.2s ease !important;
 }
 
 select {
-  border-radius: 980px !important;
+  border-radius: 8px !important;
   padding: 8px 16px !important;
 }
 
 select option {
-  background: #1d1d1f !important;
-  color: #f5f5f7 !important;
+  background: #180f08 !important;
+  color: #ffedd7 !important;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: #0071e3 !important;
-  outline: 1px solid #0071e3 !important;
-  outline-offset: 1px !important;
-  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: #ffedd7 !important;
+  background: #150c05 !important;
 }
 
 #theme-db-autocomplete-dropdown {
-  background: #1d1d1f !important;
-  border: 1px solid #333336 !important;
-  border-radius: 20px !important;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8) !important;
+  background: #180f08 !important;
+  border: 1px solid #40372e !important;
+  border-radius: 12px !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9) !important;
 }
 
 /* ==========================================================================
-   15. 다크 슬림 스크롤바
+   15. 웜 다크 슬림 스크롤바
    ========================================================================== */
 ::-webkit-scrollbar {
   width: 8px;
@@ -843,14 +850,14 @@ textarea:focus {
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #100904;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333336;
+  background: #40372e;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6e6e73;
+  background: #6c5f51;
 }

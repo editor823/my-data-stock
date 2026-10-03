@@ -18,14 +18,14 @@
   <!-- 스타일시트 로드 -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/stock.css?v=apple_dark_pro_v1">
+  <link rel="stylesheet" href="css/stock.css?v=oryzo_ai_v2">
 
   <style>
-    /* Apple iPhone 18 Pro — Midnight Hardware Gallery Style */
+    /* ORYZO AI — Darkroom Product Editorial Style */
     body {
-      background-color: #000000 !important;
-      color: #f5f5f7 !important;
-      font-family: 'SF Pro Text', 'Inter', -apple-system, BlinkMacSystemFont, 'Pretendard Variable', Pretendard, sans-serif;
+      background-color: #100904 !important;
+      color: #ffedd7 !important;
+      font-family: 'halyard-display-variable', 'Inter', -apple-system, BlinkMacSystemFont, 'Pretendard Variable', Pretendard, sans-serif;
       margin: 0;
       padding: 0;
       -webkit-font-smoothing: antialiased;
@@ -34,10 +34,10 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(14, 14, 14, 0.85) !important;
-      backdrop-filter: blur(20px) saturate(180%);
-      -webkit-backdrop-filter: blur(20px) saturate(180%);
-      border-bottom: 1px solid #333336 !important;
+      background: rgba(16, 9, 4, 0.88) !important;
+      backdrop-filter: blur(24px) saturate(160%);
+      -webkit-backdrop-filter: blur(24px) saturate(160%);
+      border-bottom: 1px solid #40372e !important;
       box-shadow: none !important;
     }
     .stock-standalone-nav-inner {
@@ -54,54 +54,53 @@
       align-items: center;
       gap: 10px;
       text-decoration: none;
-      color: #f5f5f7 !important;
-      font-weight: 600;
+      color: #ffedd7 !important;
+      font-weight: 500;
       font-size: 1.05rem;
-      letter-spacing: -0.2px;
+      letter-spacing: 0.3px;
     }
     .stock-brand-badge {
-      background: rgba(0, 113, 227, 0.18) !important;
-      color: #2997ff !important;
-      border: 1px solid rgba(41, 151, 255, 0.35) !important;
+      background: rgba(220, 80, 0, 0.15) !important;
+      color: #dc5000 !important;
+      border: 1px solid rgba(220, 80, 0, 0.35) !important;
       font-size: 0.68rem;
       padding: 3px 9px;
       border-radius: 9999px;
-      font-weight: 600;
+      font-weight: 500;
       letter-spacing: 0.5px;
     }
     .nav-external-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      color: #ffffff !important;
+      color: #ffedd7 !important;
       text-decoration: none;
       font-size: 0.8rem;
       font-weight: 500;
-      padding: 6px 16px;
-      border-radius: 170px;
-      border: 1px solid #0071e3 !important;
-      background: #0071e3 !important;
+      padding: 6px 18px;
+      border-radius: 36px;
+      border: 1px solid #40372e !important;
+      background: #382416 !important;
       transition: all 0.2s;
     }
     .nav-external-link:hover {
-      background: #0077ed !important;
-      box-shadow: 0 0 16px rgba(0, 113, 227, 0.4);
+      background: #472d1c !important;
+      border-color: #ffedd7 !important;
       transform: translateY(-1px);
     }
     #btn-run-inspector-bot {
-      background: rgba(255, 255, 255, 0.06) !important;
-      color: #f5f5f7 !important;
-      border: 1px solid #333336 !important;
-      border-radius: 170px !important;
+      background: transparent !important;
+      color: #ffedd7 !important;
+      border: 1px solid #ffedd7 !important;
+      border-radius: 22.5px !important;
       font-size: 0.8rem;
       font-weight: 500;
-      padding: 6px 14px;
+      padding: 6px 16px;
       cursor: pointer;
       transition: all 0.2s;
     }
     #btn-run-inspector-bot:hover {
-      background: rgba(255, 255, 255, 0.12) !important;
-      border-color: #6e6e73 !important;
+      background: rgba(255, 237, 215, 0.1) !important;
     }
     #tab-stock {
       display: block !important;
@@ -145,13 +144,13 @@
 <!-- [TAB 3.8] 📈 주식분석센터 (Stock Intelligence Center) 화면 -->
     <section id="tab-stock" class="tab-section active">
       <!-- 1. 주식 헤더 카드 (DAILY STOCK INTELLIGENCE + 타이틀 + 우측 상단 지수 카드) -->
-      <div class="kc-header-box" style="border: 1px solid #333336; background: #1d1d1f; border-radius: 28px;">
+      <div class="kc-header-box" style="border: 1px solid #40372e; background: #180f08; border-radius: 12px;">
         <div class="kc-header-top-row">
           <div>
-            <span class="kc-badge-daily" style="background: rgba(255, 255, 255, 0.05); border: 1px solid #333336; color: #86868b; border-radius: 9999px;">
+            <span class="kc-badge-daily" style="background: rgba(220, 80, 0, 0.08); border: 1px dashed #40372e; color: #dc5000; border-radius: 9999px;">
               DAILY STOCK & THEME INTELLIGENCE
             </span>
-            <h1 class="kc-main-title" style="display: flex; align-items: center; gap: 10px; color: #f5f5f7;">
+            <h1 class="kc-main-title" style="display: flex; align-items: center; gap: 10px; color: #ffedd7;">
               <span>📈</span> 주식 인텔리전스 분석센터
             </h1>
             <p style="font-size: 0.88rem; color: #86868b; margin: 6px 0 0 0;">
@@ -244,7 +243,7 @@
         </div>
 
         <!-- ================= [신규] 0번 탭 최상단: 🔎 실시간 주식 탐정 Q&A 바 ================= -->
-        <div id="stock-detective-qa-bar" class="kc-box-white-card" style="background: #ffffff; border: 1.5px solid #bfdbfe; border-radius: 14px; padding: 18px 20px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);">
+        <div id="stock-detective-qa-bar" style="background: #180f08; border: 1px solid #40372e; border-radius: 12px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
             <div style="display: flex; align-items: center; gap: 8px;">
               <span style="font-size: 1.25rem;">🔎</span>
