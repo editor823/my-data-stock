@@ -1297,3 +1297,69 @@ span[id^="news-col-count-"],
   padding: 5px 12px !important;
   font-weight: 800 !important;
 }
+
+/* ==========================================================================
+   [긴급 수정] 5열 실시간 뉴스 컬럼 배경 & 내부 흰색 완전 제거 -> 어두운 베이지/고동색 단일화
+   ========================================================================== */
+
+/* 5열 카드 컬럼 전체 배경 (어두운 베이지 #241c18) */
+.news-col-card,
+#domestic-news-5col-container .news-col-card,
+div[id^="news-col-"] {
+  background: #241c18 !important;
+  border: 1.5px solid #d4a373 !important; /* 골든 베이지 테두리 */
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 5열 뉴스 카드 목록 감싸는 본문 바디 (기존 흰색 #ffffff 영구 제거 -> #241c18) */
+.news-col-body,
+#domestic-news-5col-container .news-col-body,
+div[id^="news-list-"] {
+  background: #241c18 !important; /* 어두운 베이지 배경 */
+  padding: 12px !important;
+  gap: 10px !important;
+}
+
+/* 5열 스크롤바 트랙 흰색(#f1f5f9) 제거 */
+.news-col-body::-webkit-scrollbar-track,
+#domestic-news-5col-container .news-col-body::-webkit-scrollbar-track {
+  background: #1f1714 !important;
+}
+
+.news-col-body::-webkit-scrollbar-thumb,
+#domestic-news-5col-container .news-col-body::-webkit-scrollbar-thumb {
+  background: #4a3b34 !important;
+  border-radius: 4px !important;
+}
+
+.news-col-body::-webkit-scrollbar-thumb:hover,
+#domestic-news-5col-container .news-col-body::-webkit-scrollbar-thumb:hover {
+  background: #d4a373 !important;
+}
+
+/* 5열 내부 개별 뉴스 카드 (어두운 고동/베이지 #2a201c & 골든베이지 테두리) */
+.news-item-compact-card,
+#domestic-news-5col-container .news-item-compact-card,
+.news-col-box .news-item-compact-card {
+  background: #2a201c !important;
+  border: 1.5px solid #4a3b34 !important;
+  border-radius: 9px !important;
+  padding: 12px 14px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+.news-item-compact-card:hover,
+#domestic-news-5col-container .news-item-compact-card:hover {
+  background: #352924 !important;
+  border-color: #d4a373 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* 5열 전체를 감싸는 상위 박스 (흰색 inline 스타일 덮어쓰기) */
+#stock-panel-news .kc-box-white-card {
+  background: #2a201c !important;
+  border: 1.5px solid #d4a373 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+}

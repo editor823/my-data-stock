@@ -8497,7 +8497,7 @@ function renderTodayLeadingThemes(themes) {
     const rawThemeJson = encodeURIComponent(JSON.stringify(item));
 
     return `
-      <div style="background: #ffffff; border: 1px solid #fee2e2; border-radius: 12px; padding: 16px; position: relative; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+      <div style="background: #2a201c; border: 1.5px solid #d4a373; border-radius: 12px; padding: 16px; position: relative; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
         <div>
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
             <div>
@@ -8821,7 +8821,7 @@ async function renderPastPullbackThemes(currentTopThemes = []) {
     const encodedThemeData = encodeURIComponent(JSON.stringify(item));
 
     return `
-      <div id="pullback-item-${escapeHtml(themeId)}" style="display: flex; flex-direction: column; justify-content: space-between; padding: 16px 18px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; gap: 12px; transition: all 0.2s ease; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
+      <div id="pullback-item-${escapeHtml(themeId)}" style="display: flex; flex-direction: column; justify-content: space-between; padding: 16px 18px; background: #2a201c; border: 1.5px solid #d4a373; border-radius: 12px; gap: 12px; transition: all 0.2s ease; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
         <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap;">
           <div>
             <div style="display: flex; align-items: center; gap: 8px;">

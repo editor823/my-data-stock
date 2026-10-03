@@ -5056,14 +5056,14 @@ p, li {
   gap: 8px;
   max-height: 720px;
   overflow-y: auto;
-  background: #ffffff;
+  background: #241c18;
 }
 
 .news-col-body::-webkit-scrollbar {
   width: 5px;
 }
 .news-col-body::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #1f1714;
 }
 .news-col-body::-webkit-scrollbar-thumb {
   background: #cbd5e1;
