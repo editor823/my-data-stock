@@ -1,15 +1,19 @@
 /* ==========================================================================
-   ORYZO AI — Soft Warm Tone-Down & Anti-Glare Design System
+   ORYZO AI — Soft Warm Walnut & Warm Beige Typography System
    Applied to Stock Intelligence Center (css/stock.css)
    
-   [100% Elimination of Harsh White Boxes & High-Contrast Soft Darkening]
-   - All glaring white cards/boxes/chips/buttons toned down to soft warm walnut.
-   - Restful on the eyes while keeping all typography crystal-clear.
+   [주요 반영 사항]
+   1. 5열 실시간 뉴스 멀티컬럼 피드 하얀박스 -> 따뜻하고 부드러운 '웜 베이지(#f4ecdf)' 박스로 변경
+      (베이지 박스 내부 텍스트는 짙은 흑갈색으로 인쇄물처럼 또렷하게 가독성 확보)
+   2. 전 페이지의 어두운 회색 글씨 -> 선명하고 따뜻한 '베이지색(#f5e6d3, #ffedd7)' 글자로 전면 교체
+      (눌림목 공략 사유, 주도 테마 재료 본문, 캘린더 피드 기사 내용, 회색 라벨 전면 보정)
    ========================================================================== */
 
 :root {
   /* Colors */
   --color-warm-cream: #ffedd7;
+  --color-warm-beige: #f5e6d3;
+  --color-card-beige: #f4ecdf;
   --color-walnut-shadow: #100904;
   --color-bark-brown: #382416;
   --color-cork-border: #4a3d31;
@@ -40,7 +44,7 @@
    ========================================================================== */
 html, body {
   background-color: #100904 !important;
-  color: #f3e8dc !important;
+  color: #f5e6d3 !important;
   font-family: var(--font-halyard-display-variable) !important;
   letter-spacing: 0px !important;
   -webkit-font-smoothing: antialiased;
@@ -131,7 +135,7 @@ html, body {
    2. 메인 헤더 박스
    ========================================================================== */
 #tab-stock {
-  color: #f3e8dc !important;
+  color: #f5e6d3 !important;
   display: block !important;
   opacity: 1 !important;
 }
@@ -174,7 +178,7 @@ html, body {
 }
 
 #tab-stock .kc-header-box p {
-  color: #e2d5c5 !important;
+  color: #f5e6d3 !important;
   font-size: 0.92rem !important;
   line-height: 1.55 !important;
 }
@@ -277,7 +281,7 @@ html, body {
 .stock-sub-tab {
   background: rgba(255, 237, 215, 0.05) !important;
   border: 1px solid #4a3d31 !important;
-  color: #f3e8dc !important;
+  color: #f5e6d3 !important;
   font-family: var(--font-halyard-display-variable) !important;
   font-size: 13.5px !important;
   font-weight: 600 !important;
@@ -308,268 +312,384 @@ html, body {
 }
 
 /* ==========================================================================
-   5. [전수 톤다운] 모든 눈 아픈 흰색 박스 & 칩 & 카드를 부드러운 다크로 전환
+   5. [사용자 핵심 요청 1] 5열 뉴스 카드 하얀박스 -> '베이지색' 박스로 전환
    ========================================================================== */
-
-/* 5-1. [5번 탭 종목 상세정보] 좌측 1~5번 대형 종목 카드 (kc-card) 전면 다크화 */
-#stock-deep-list .kc-card,
-.kc-card,
-.card,
-.kc-list-col .kc-card {
-  background: #180f08 !important;
-  border: 1px solid #4a3d31 !important;
-  border-radius: 12px !important;
-  color: #f3e8dc !important;
-  box-shadow: none !important;
+#domestic-news-5col-container .news-item-compact-card,
+.news-col-box .news-item-compact-card,
+.news-item-compact-card {
+  background: #f4ecdf !important; /* 부드럽고 따뜻한 웜 베이지 */
+  border: 1px solid #d8c7b5 !important;
+  border-radius: 9px !important;
+  padding: 10px 12px !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
   transition: all 0.2s ease !important;
 }
 
-#stock-deep-list .kc-card:hover,
-.kc-card:hover {
-  background: #23160c !important;
-  border-color: #d8c7b5 !important;
+#domestic-news-5col-container .news-item-compact-card:hover,
+.news-col-box .news-item-compact-card:hover,
+.news-item-compact-card:hover {
+  background: #faf3ea !important;
+  border-color: #c4b09c !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.14) !important;
 }
 
-#stock-deep-list .kc-card.active,
-.kc-card.active {
-  background: #2a180e !important;
-  border: 1.5px solid #ffaa66 !important;
-  box-shadow: 0 0 12px rgba(255, 170, 102, 0.25) !important;
-}
-
-#stock-deep-list .kc-card-num {
-  background: #251810 !important;
-  border: 1px solid #4a3d31 !important;
-  color: #ffaa66 !important;
-}
-
-#stock-deep-list .kc-card-kw-title span:first-child {
-  color: #ffffff !important;
+/* 베이지색 카드 내부 텍스트: 인쇄물처럼 선명한 다크 월넛 브라운 */
+.news-item-compact-card div[title],
+.news-item-compact-card [style*="color: #0f172a"],
+.news-item-compact-card [style*="color:#0f172a"] {
+  color: #150a04 !important; /* 기사 헤드라인: 짙은 흑갈색 */
   font-weight: 700 !important;
+  line-height: 1.42 !important;
 }
 
-#stock-deep-list .kc-badge-tag {
-  background: #251810 !important;
-  border: 1px solid #4a3d31 !important;
-  color: #ffaa66 !important;
+.news-item-compact-card [style*="color: #475569"],
+.news-item-compact-card [style*="color:#475569"] {
+  color: #382416 !important; /* 기사 본문 요약: 진한 브라운 */
+  line-height: 1.4 !important;
 }
 
-#stock-deep-list .kc-badge-vol {
-  color: #b5a492 !important;
-}
-
-/* 5-2. [5번 탭] 상단 추천 종목 칩 & 서브 탭 버튼 */
-#stock-deep-quick-chips button,
-#stock-deep-quick-chips .imggen-style-chip,
-.deep-tab-btn,
-.kc-detail-nav button,
-#stock-deep-detail button.imggen-style-chip,
-#stock-deep-detail button {
-  background: #20140c !important;
-  border: 1px solid #4a3d31 !important;
-  color: #ffedd7 !important;
-  border-radius: 22.5px !important;
-  padding: 6px 14px !important;
-  font-size: 0.8rem !important;
+.news-item-compact-card [style*="color: #64748b"],
+.news-item-compact-card [style*="color:#64748b"],
+.news-item-compact-card span[style*="color: #475569"] {
+  color: #5c4331 !important; /* 언론사, 시간: 세련된 웜 브라운 */
   font-weight: 600 !important;
-  box-shadow: none !important;
 }
 
-#stock-deep-quick-chips button:hover,
-#stock-deep-detail button:hover {
-  background: #2e1d12 !important;
-  border-color: #ffaa66 !important;
+.news-item-compact-card div[style*="border-top"],
+.news-item-compact-card [style*="border-top: 1px solid #f1f5f9"] {
+  border-top: 1px solid #ded0c0 !important; /* 베이지 카드 하단 구분선 */
 }
 
-#stock-deep-detail button.active,
-#stock-deep-quick-chips button.active {
+/* 베이지 카드 내부 '기사보기 ↗' 링크 버튼: 세련된 다크 브라운 버튼 */
+.news-item-compact-card a,
+.news-item-compact-card a[href*="http"],
+.news-item-compact-card a[style*="background: #eff6ff"] {
   background: #382416 !important;
+  color: #ffedd7 !important;
+  border: 1px solid #5a3e2a !important;
+  border-radius: 5px !important;
+  padding: 4px 9px !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  transition: all 0.15s ease !important;
+}
+
+.news-item-compact-card a:hover {
+  background: #4e331f !important;
   border-color: #ffaa66 !important;
   color: #ffffff !important;
-  box-shadow: 0 0 10px rgba(255, 170, 102, 0.2) !important;
 }
 
-/* 5-3. [3번 탭 실시간 증시 캘린더] 8개 대형 일정 카드 & 버튼 일괄 다크화 */
-#stock-calendar-container > div,
-.calendar-feed-card,
-.stock-technique-grid > div {
+/* ==========================================================================
+   6. [사용자 핵심 요청 2] 전 페이지 회색 글씨 -> '베이지색(#f5e6d3, #ffedd7)' 글자로 전면 교체
+   ========================================================================== */
+
+/* 6-1. 어두운 배경에 묻히는 모든 회색 계열 인라인 스타일을 선명한 베이지로 통일 
+   (단, 베이지 박스인 .news-item-compact-card 내부는 제외) */
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #64748b"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#64748b"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #475569"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#475569"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #94a3b8"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#94a3b8"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #334155"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#334155"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #6c5f51"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#6c5f51"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #86868b"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#86868b"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #1e293b"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#1e293b"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #0f172a"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#0f172a"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #4b5563"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#4b5563"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #6b7280"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#6b7280"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #9ca3af"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#9ca3af"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #555"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#555"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #666"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#666"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #777"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#777"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #888"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#888"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color: #999"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="color:#999"] {
+  color: #f5e6d3 !important; /* 환하고 읽기 편한 베이지색 글자 */
+}
+
+/* 6-2. [테마 눌림목 추적 리스트 (이미지 2, 4)] 가독성 극대화 */
+#past-pullback-themes-container {
+  color: #f5e6d3 !important;
+}
+
+#past-pullback-themes-container [id^="pullback-item-"] {
   background: #180f08 !important;
   border: 1px solid #4a3d31 !important;
   border-radius: 12px !important;
-  color: #f3e8dc !important;
-  box-shadow: none !important;
-  padding: 16px 18px !important;
 }
 
-#stock-calendar-container > div:hover {
-  background: #20140c !important;
+#past-pullback-themes-container [id^="pullback-item-"]:hover {
+  background: #22150c !important;
   border-color: #d8c7b5 !important;
 }
 
-/* [상세 일정 ↗] 버튼 톤다운 */
-#stock-calendar-container button,
+/* 대장주 / 기준봉 대비 눌림폭 라벨 및 텍스트 */
+#past-pullback-themes-container [id^="pullback-item-"] span,
+#past-pullback-themes-container [id^="pullback-item-"] div {
+  color: #f5e6d3 !important;
+}
+
+/* [📌 최초 상승 이유] 및 [🚀 향후 반등 모멘텀] 박스 & 텍스트 */
+#past-pullback-themes-container div[style*="background: #f8fafc"],
+#past-pullback-themes-container div[style*="background:#f8fafc"] {
+  background: #20130a !important;
+  border: 1px solid #4a3d31 !important;
+}
+
+#past-pullback-themes-container span[style*="color: #be123c"],
+#past-pullback-themes-container span[style*="color:#be123c"] {
+  background: rgba(255, 107, 26, 0.15) !important;
+  color: #ff8544 !important;
+  border: 1px solid rgba(255, 107, 26, 0.45) !important;
+  font-weight: 700 !important;
+}
+
+#past-pullback-themes-container span[style*="color: #0369a1"],
+#past-pullback-themes-container span[style*="color:#0369a1"] {
+  background: rgba(77, 166, 255, 0.15) !important;
+  color: #66b5ff !important;
+  border: 1px solid rgba(77, 166, 255, 0.45) !important;
+  font-weight: 700 !important;
+}
+
+/* 설명 본문 글씨를 선명한 웜 베이지로 */
+#past-pullback-themes-container span[style*="color: #334155"],
+#past-pullback-themes-container span[style*="color:#334155"] {
+  color: #ffedd7 !important;
+  font-size: 0.82rem !important;
+  line-height: 1.55 !important;
+}
+
+/* 우측 액션 버튼들 */
+#past-pullback-themes-container button {
+  background: #251810 !important;
+  border: 1px solid #4a3d31 !important;
+  color: #ffedd7 !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+#past-pullback-themes-container button:hover {
+  background: #382416 !important;
+  border-color: #ffaa66 !important;
+  color: #ffffff !important;
+}
+
+/* 6-3. [오늘의 주도 테마 카드 (이미지 3)] 가독성 극대화 */
+#leading-dual-radar-container > div,
+.leading-theme-dual-card {
+  background: #180f08 !important;
+  border: 1px solid #4a3d31 !important;
+  border-radius: 12px !important;
+  color: #f5e6d3 !important;
+}
+
+#leading-dual-radar-container div[style*="background: #f8fafc"],
+#leading-dual-radar-container div[style*="background:#f8fafc"] {
+  background: #20130a !important;
+  border: 1px solid #4a3d31 !important;
+}
+
+#leading-dual-radar-container span[style*="color: #64748b"],
+#leading-dual-radar-container span[style*="color:#64748b"] {
+  color: #d8c7b5 !important; /* 대장주:, 거래대금:, 핵심 관련주:, 부대장: 라벨 베이지색 */
+}
+
+#leading-dual-radar-container strong[style*="color: #0284c7"],
+#leading-dual-radar-container span[style*="color: #0284c7"] {
+  color: #ffaa66 !important; /* 대장주 이름 강조색 */
+}
+
+#leading-dual-radar-container strong[style*="color: #b45309"] {
+  color: #ffd199 !important; /* 거래대금 강조 */
+}
+
+/* 📌 당일 급등 이유 & 핵심 재료 팩트 박스 */
+#leading-dual-radar-container div[style*="background: #fef2f2"],
+#leading-dual-radar-container div[style*="background:#fef2f2"] {
+  background: #24140b !important;
+  border: 1px solid #4a3d31 !important;
+  border-left: 3px solid #ff6b1a !important;
+}
+
+#leading-dual-radar-container strong[style*="color: #b91c1c"] {
+  color: #ff8544 !important; /* 헤더 주황 */
+}
+
+#leading-dual-radar-container div[style*="color: #1e293b"],
+#leading-dual-radar-container div[style*="color:#1e293b"] {
+  color: #ffedd7 !important; /* 급등 이유 본문 텍스트: 선명한 크림 베이지 */
+  line-height: 1.55 !important;
+}
+
+/* 눌림목 추적 등록 버튼 */
+#leading-dual-radar-container button {
+  background: #251810 !important;
+  border: 1px solid #4a3d31 !important;
+  color: #ffedd7 !important;
+  font-weight: 700 !important;
+}
+
+#leading-dual-radar-container button:hover {
+  background: #382416 !important;
+  border-color: #ffaa66 !important;
+  color: #ffffff !important;
+}
+
+/* 6-4. [실시간 증시 핵심 일정 & 모멘텀 피드 (이미지 5, 탭 3)] */
+#stock-calendar-container > div {
+  background: #180f08 !important;
+  border: 1px solid #4a3d31 !important;
+  border-radius: 12px !important;
+  color: #f5e6d3 !important;
+}
+
+#stock-calendar-container > div:hover {
+  background: #22150c !important;
+  border-color: #d8c7b5 !important;
+}
+
+/* 캘린더 피드 기사 본문 요약 (기존 #334155 어두운 글씨 -> 베이지) */
+#stock-calendar-container div[style*="color: #334155"],
+#stock-calendar-container div[style*="color:#334155"],
+#stock-calendar-container div[style*="color: #0f172a"],
+#stock-calendar-container div[style*="color:#0f172a"] {
+  color: #ffedd7 !important; /* 선명하고 따뜻한 크림 베이지 */
+  line-height: 1.55 !important;
+}
+
+#stock-calendar-container span[style*="color: #64748b"],
+#stock-calendar-container span[style*="color:#64748b"],
+#stock-calendar-container strong[style*="color: #0f172a"] {
+  color: #d8c7b5 !important; /* 출처: 한국경제 등 베이지 */
+}
+
 #stock-calendar-container a,
-button[onclick*="openCalendarDetail"],
-a:has-text("상세 일정"),
-a:has-text("기사보기") {
+#stock-calendar-container button {
   background: #251810 !important;
   border: 1px solid #4a3d31 !important;
   color: #ffaa66 !important;
-  border-radius: 6px !important;
   font-weight: 700 !important;
   text-decoration: none !important;
 }
 
-#stock-calendar-container button:hover,
-#stock-calendar-container a:hover {
+#stock-calendar-container a:hover,
+#stock-calendar-container button:hover {
   background: #382416 !important;
   border-color: #ffaa66 !important;
   color: #ffffff !important;
 }
 
-/* [LIVE 일정 갱신] 버튼 */
-#btn-sync-stock-calendar {
-  background: #251810 !important;
+/* 6-5. [5번 탭 종목 상세정보] */
+#stock-deep-list .kc-card {
+  background: #180f08 !important;
   border: 1px solid #4a3d31 !important;
-  color: #ffaa66 !important;
-  border-radius: 8px !important;
+  border-radius: 12px !important;
+  color: #f5e6d3 !important;
 }
 
-#btn-sync-stock-calendar:hover {
-  background: #382416 !important;
-  border-color: #ffaa66 !important;
+#stock-deep-list .kc-card:hover {
+  background: #23160c !important;
+  border-color: #d8c7b5 !important;
 }
 
-/* 5-4. [4번 탭 복기] 상단 우측 버튼 & 뱃지 톤다운 */
-button[onclick*="saveDailyMarketClosing"],
-button[onclick*="loadMarketHistoryReview"] {
-  background: #251810 !important;
-  border: 1px solid #4a3d31 !important;
-  color: #ffedd7 !important;
-  border-radius: 8px !important;
+#stock-deep-list .kc-card.active {
+  background: #2a180e !important;
+  border: 1.5px solid #ffaa66 !important;
 }
 
-button[onclick*="saveDailyMarketClosing"]:hover,
-button[onclick*="loadMarketHistoryReview"]:hover {
-  background: #382416 !important;
-  border-color: #ffaa66 !important;
-}
-
-/* 5-5. [2번 탭] 관심 테마 선택 칩들 (반도체, AI, 로봇, 바이오 등) 톤다운 */
-#theme-selector-chips button,
-.theme-tag-chip,
-.theme-tag-btn,
-button[onclick*="toggleInterestTheme"] {
+#stock-deep-quick-chips button,
+#stock-deep-detail button {
   background: #20140c !important;
   border: 1px solid #4a3d31 !important;
   color: #ffedd7 !important;
-  border-radius: 22.5px !important;
-  font-weight: 600 !important;
-  box-shadow: none !important;
 }
 
-#theme-selector-chips button:hover,
-button[onclick*="toggleInterestTheme"]:hover {
-  background: #2e1d12 !important;
-  border-color: #ffaa66 !important;
-}
-
-#theme-selector-chips button.active,
-button[onclick*="toggleInterestTheme"].active {
+#stock-deep-quick-chips button.active,
+#stock-deep-detail button.active {
   background: #382416 !important;
   border-color: #ffaa66 !important;
-  color: #ffaa66 !important;
-  font-weight: 700 !important;
-}
-
-/* 5-6. [하단 데일리 모달 & 리포트 바] 흰색 긴 바 톤다운 */
-.daily-report-nav-tab,
-div[style*="background: #ffffff"][style*="20:00"],
-div[style*="background:#ffffff"][style*="20:00"],
-button:has-text("닫기"),
-.btn-close-modal {
-  background: #251810 !important;
-  border: 1px solid #4a3d31 !important;
-  color: #ffedd7 !important;
-}
-
-/* 5-7. 모든 인라인 흰색(#ffffff, #fff, white) 배경 박스/버튼 전면 무력화 */
-#tab-stock [style*="background: #ffffff"],
-#tab-stock [style*="background:#ffffff"],
-#tab-stock [style*="background: #fff"],
-#tab-stock [style*="background:#fff"],
-#tab-stock [style*="background: white"],
-#tab-stock [style*="background:white"] {
-  background: #180f08 !important;
-  border-color: #4a3d31 !important;
-  color: #f3e8dc !important;
-}
-
-#tab-stock button[style*="background: #ffffff"],
-#tab-stock button[style*="background:#ffffff"],
-#tab-stock button[style*="background: white"],
-#tab-stock a[style*="background: #ffffff"],
-#tab-stock a[style*="background:#ffffff"],
-#tab-stock a[style*="background: white"],
-#tab-stock span[style*="background: #ffffff"],
-#tab-stock span[style*="background:#ffffff"],
-#tab-stock span[style*="background: white"] {
-  background: #251810 !important;
-  border-color: #4a3d31 !important;
-  color: #ffedd7 !important;
-}
-
-/* 5-8. 모든 밝은 파스텔톤 배경 박스 톤다운 */
-#tab-stock [style*="background: #f8fafc"],
-#tab-stock [style*="background:#f8fafc"],
-#tab-stock [style*="background: #f1f5f9"],
-#tab-stock [style*="background:#f1f5f9"],
-#tab-stock [style*="background: #f0f9ff"],
-#tab-stock [style*="background:#f0f9ff"],
-#tab-stock [style*="background: #f0fdf4"],
-#tab-stock [style*="background:#f0fdf4"],
-#tab-stock [style*="background: #eff6ff"],
-#tab-stock [style*="background:#eff6ff"],
-#tab-stock [style*="background: #fef2f2"],
-#tab-stock [style*="background:#fef2f2"],
-#tab-stock [style*="background: #fffbeb"],
-#tab-stock [style*="background:#fffbeb"],
-#tab-stock [style*="background: #fff1f2"],
-#tab-stock [style*="background:#fff1f2"],
-#tab-stock [style*="background: #fff5f5"],
-#tab-stock [style*="background:#fff5f5"],
-#tab-stock [style*="background: #ecfdf5"],
-#tab-stock [style*="background:#ecfdf5"],
-#tab-stock [style*="background: #e0f2fe"],
-#tab-stock [style*="background:#e0f2fe"] {
-  background: #1e130a !important;
-  border-color: #4a3d31 !important;
-  color: #f3e8dc !important;
-}
-
-/* ==========================================================================
-   6. 전 페이지 텍스트 고대비 보정 총괄
-   ========================================================================== */
-#tab-stock h1, #tab-stock h2, #tab-stock h3, #tab-stock h4, #tab-stock h5, #tab-stock h6 {
   color: #ffffff !important;
-  font-family: var(--font-halyard-display-variable) !important;
-  font-weight: 700 !important;
 }
 
+/* 6-6. [전체 탭 일반 본문 텍스트들] */
+#tab-stock p,
+#tab-stock li,
+#tab-stock td,
+#tab-stock small,
+#tab-stock label,
+#tab-stock .text-muted,
+#tab-stock .text-secondary {
+  color: #f5e6d3 !important;
+  line-height: 1.6 !important;
+}
+
+#tab-stock h1, #tab-stock h2, #tab-stock h3, #tab-stock h4, #tab-stock h5, #tab-stock h6,
 #tab-stock strong, #tab-stock b {
   color: #ffffff !important;
-  font-weight: 700 !important;
-}
-
-#tab-stock p, #tab-stock li, #tab-stock td {
-  color: #f3e8dc !important;
-  line-height: 1.6 !important;
 }
 
 #tab-stock th {
   background: #100904 !important;
   color: #ffffff !important;
   font-weight: 700 !important;
+}
+
+/* ==========================================================================
+   7. 모든 인라인 흰색/파스텔 박스 톤다운 (5열 뉴스 카드 제외)
+   ========================================================================== */
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #ffffff"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#ffffff"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #fff"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#fff"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: white"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:white"] {
+  background: #180f08 !important;
+  border-color: #4a3d31 !important;
+  color: #f5e6d3 !important;
+}
+
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #f8fafc"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#f8fafc"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #f1f5f9"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#f1f5f9"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #f0f9ff"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#f0f9ff"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #f0fdf4"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#f0fdf4"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #eff6ff"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#eff6ff"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #fef2f2"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#fef2f2"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #fffbeb"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#fffbeb"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #fff1f2"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#fff1f2"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #fff5f5"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#fff5f5"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #ecfdf5"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#ecfdf5"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background: #e0f2fe"],
+#tab-stock :not(.news-item-compact-card):not(.news-item-compact-card *)[style*="background:#e0f2fe"] {
+  background: #1e130a !important;
+  border-color: #4a3d31 !important;
+  color: #f5e6d3 !important;
 }
 
 /* 슬림 스크롤바 */
