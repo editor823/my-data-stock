@@ -667,3 +667,115 @@ button.btn-accent:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: #d4a373;
 }
+
+/* ==========================================================================
+   [골든 베이지 테두리 강화 룰 - 최우선 순위]
+   ========================================================================== */
+
+/* 1. 5열 실시간 뉴스 멀티컬럼 피드: 컬럼 박스 & 헤더 & 카드 골든베이지 테두리 */
+.news-col-card,
+#domestic-news-5col-container .news-col-card,
+div[id^="news-col-"] {
+  background: #2a201c !important;
+  border: 1.5px solid #d4a373 !important; /* 골든 베이지 테두리 */
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
+}
+
+.news-col-header {
+  background: #241c18 !important;
+  border-bottom: 1.5px solid #d4a373 !important; /* 헤더 구분선 골든베이지 */
+}
+
+.news-col-header span,
+.news-col-title-wrap span {
+  color: #f5ebe0 !important;
+  font-weight: 800 !important;
+}
+
+/* 5열 각 카테고리 건수 뱃지 골든베이지 테두리 */
+span[id^="news-col-count-"],
+.news-col-header-badge {
+  background: #352924 !important;
+  border: 1px solid #d4a373 !important; /* 골든 베이지 테두리 */
+  color: #d4a373 !important;
+  font-weight: 800 !important;
+  border-radius: 4px !important;
+}
+
+/* 5열 개별 뉴스 카드 골든베이지 테두리 */
+#domestic-news-5col-container .news-item-compact-card,
+.news-col-box .news-item-compact-card,
+.news-item-compact-card {
+  background: #2a201c !important;
+  border: 1px solid #d4a373 !important; /* 골든 베이지 테두리 */
+  border-radius: 9px !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15) !important;
+}
+
+#domestic-news-5col-container .news-item-compact-card:hover,
+.news-col-box .news-item-compact-card:hover,
+.news-item-compact-card:hover {
+  background: #352924 !important;
+  border-color: #f5ebe0 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* 뉴스 카드 내부 '기사보기 ↗' 링크 버튼 골든베이지 테두리 */
+.news-item-compact-card a,
+.news-item-compact-card a[href*="http"] {
+  background: #3e312b !important;
+  color: #f5ebe0 !important;
+  border: 1px solid #d4a373 !important; /* 골든 베이지 테두리 */
+}
+
+/* 2. 데일리 마감 브리핑 모달 및 상단 2개 탭 버튼 골든베이지 테두리 */
+.daily-report-modal-content,
+#dailyStockReportModal .daily-report-modal-content {
+  background: #2a201c !important;
+  border: 1.5px solid #d4a373 !important; /* 골든 베이지 테두리 */
+  border-radius: 16px !important;
+}
+
+#btn-report-mode-morning,
+#btn-report-mode-closing,
+.daily-report-nav-tab button {
+  background: #2a201c !important;
+  border: 1.5px solid #d4a373 !important; /* 골든 베이지 테두리 */
+  color: #f5ebe0 !important;
+  border-radius: 8px !important;
+  font-weight: 800 !important;
+}
+
+#btn-report-mode-morning:hover,
+#btn-report-mode-closing:hover {
+  background: #3e312b !important;
+  border-color: #f5ebe0 !important;
+}
+
+#daily-report-mode-badge {
+  background: #352924 !important;
+  border: 1px solid #d4a373 !important;
+  color: #d4a373 !important;
+}
+
+#btn-copy-daily-report {
+  background: #c7926b !important;
+  color: #1a1412 !important;
+  border: 1px solid #d4a373 !important;
+  font-weight: 800 !important;
+}
+
+#daily-report-content-preview {
+  background: #1a1412 !important;
+  border: 1px solid #4a3b34 !important;
+  color: #d7ccc8 !important;
+}
+
+/* 3. 검수봇 모달 골든베이지 테두리 */
+.inspector-bot-modal-content,
+#systemInspectorBotModal .inspector-bot-modal-content {
+  background: #2a201c !important;
+  border: 1.5px solid #d4a373 !important; /* 골든 베이지 테두리 */
+  border-radius: 16px !important;
+}

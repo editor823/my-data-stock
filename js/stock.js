@@ -10966,36 +10966,26 @@ window.switchDailyReportMode = function(mode) {
 
   if (mode === 'morning') {
     if (btnMorning) {
-      btnMorning.style.background = '#fff7ed';
-      btnMorning.style.borderColor = '#ea580c';
-      btnMorning.style.color = '#c2410c';
+      btnMorning.style.background = '#3e312b'; btnMorning.style.borderColor = '#d4a373'; btnMorning.style.color = '#f5ebe0';
     }
     if (btnClosing) {
-      btnClosing.style.background = '#ffffff';
-      btnClosing.style.borderColor = '#cbd5e1';
-      btnClosing.style.color = '#64748b';
+      btnClosing.style.background = '#2a201c'; btnClosing.style.borderColor = '#4a3b34'; btnClosing.style.color = '#a89f91';
     }
     if (modeBadge) {
       modeBadge.textContent = '🌅 08:30 장시작 모닝 브리핑 (당일 관심테마)';
-      modeBadge.style.background = '#ffedd5';
-      modeBadge.style.color = '#9a3412';
+      modeBadge.style.background = '#352924'; modeBadge.style.color = '#d4a373'; modeBadge.style.border = '1px solid #4a3b34';
     }
     if (timestampEl) timestampEl.textContent = `${timeMeta.fullDateStr} 08:30 기준`;
   } else {
     if (btnClosing) {
-      btnClosing.style.background = '#eff6ff';
-      btnClosing.style.borderColor = '#2563eb';
-      btnClosing.style.color = '#1d4ed8';
+      btnClosing.style.background = '#3e312b'; btnClosing.style.borderColor = '#d4a373'; btnClosing.style.color = '#f5ebe0';
     }
     if (btnMorning) {
-      btnMorning.style.background = '#ffffff';
-      btnMorning.style.borderColor = '#cbd5e1';
-      btnMorning.style.color = '#64748b';
+      btnMorning.style.background = '#2a201c'; btnMorning.style.borderColor = '#4a3b34'; btnMorning.style.color = '#a89f91';
     }
     if (modeBadge) {
       modeBadge.textContent = '🌆 20:00 장마감 심화 종합 보고서 (주도테마 복기)';
-      modeBadge.style.background = '#dbeafe';
-      modeBadge.style.color = '#1e40af';
+      modeBadge.style.background = '#352924'; modeBadge.style.color = '#d4a373'; modeBadge.style.border = '1px solid #4a3b34';
     }
     if (timestampEl) timestampEl.textContent = `${timeMeta.fullDateStr} 20:00 기준`;
   }
