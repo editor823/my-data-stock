@@ -2455,7 +2455,7 @@ window.renderDetectiveCard = function(theme, period = 'all') {
         return `
           <div style="display:flex; align-items:center; justify-content:space-between; background:#2a201c; border:1.5px solid #4a3b34; border-radius:10px; padding:14px 18px; margin-bottom:10px; gap:14px; transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
             <div style="min-width:92px; text-align:center;">
-              <div style="font-size: 1.02rem; font-weight: 700; color:${dateColor};">${tl.date || ''}</div>
+              <div style="font-size: 1.12rem; font-weight: 800; color:${dateColor};">${tl.date || ''}</div>
               <div style="font-size:0.7rem; color:#94a3b8; margin-top:2px;">${tl.stage || (isReport ? '증권사 리서치' : (isDart ? '공식 공시' : '전개'))}</div>
             </div>
             <div style="flex:1; min-width:0;">
@@ -4363,7 +4363,7 @@ function renderThemeTimelineView(themeId = 'hbm_glass', period = 'all') {
         <div style="text-align: center; padding: 40px 20px; color: #94a3b8; background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px dashed rgba(255,255,255,0.08);">
           <div style="font-size: 1.5rem; margin-bottom: 8px;">🗑️</div>
           <div style="font-size: 0.95rem; font-weight: 800; color: #475569;">모든 테마가 삭제되었습니다.</div>
-          <div style="font-size: 0.78rem; color: #64748b; margin-top: 6px;">
+          <div style="font-size: 0.92rem; color: #d7ccc8; margin-top: 6px;">
             상단의 <strong>[🎯 계층형 키워드 정밀 추적 / 관심 종목 추가]</strong>에서 종목을 입력하여 나만의 테마 타임라인을 생성하세요.
           </div>
         </div>
@@ -6455,7 +6455,7 @@ window.refreshThemePortfolioStreaming = async function() {
             </a>
 
             ${itemDesc ? `
-              <div style="font-size: 0.92rem; color: #d7ccc8; line-height: 1.65; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; word-break: break-word;">
+              <div style="font-size: 1.02rem; color: #d7ccc8; line-height: 1.65; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; word-break: break-word;">
                 ${escapeHtml(itemDesc)}
               </div>
             ` : ''}
@@ -7108,7 +7108,7 @@ window.selectStockDeepItem = function (idx) {
     <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 12px 14px; margin-bottom: 8px;">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
         <span style="font-size: 0.92rem; font-weight: 800; color: #0284c7;">${escapeHtml(t.name)}</span>
-        <span style="font-size: 0.74rem; background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 4px; font-weight: 800;">${escapeHtml(t.relation)}</span>
+        <span style="font-size: 0.86rem; background: #352924; color: #0369a1; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 4px; font-weight: 800;">${escapeHtml(t.relation)}</span>
       </div>
       <div style="font-size: 0.82rem; color: #475569; line-height: 1.5;">
         🤝 함께 엮여 움직이는 관련주: <strong style="color: #0f172a;">${escapeHtml(t.peers)}</strong>
@@ -7762,7 +7762,7 @@ async function renderUSSectorBriefing() {
               <span style="font-size: 1.08rem; font-weight: 900; color: #e06d53;">${secRatioStr}</span>
             </div>
             ${sec.reason ? `
-              <div style="font-size: 0.92rem; color: #d7ccc8; line-height: 1.65; margin-bottom: 8px;">
+              <div style="font-size: 1.02rem; color: #d7ccc8; line-height: 1.65; margin-bottom: 8px;">
                 • <strong>상승 사유:</strong> ${sec.reason}
               </div>
             ` : ''}
@@ -8252,19 +8252,19 @@ function renderDomesticNewsTimeline(filterCategory = 'all') {
       return `
         <div class="news-item-compact-card">
           <div>
-            <div style="font-size: 1.02rem; font-weight: 700; color: #0f172a; line-height: 1.42; margin-bottom: 5px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;" title="${escapeHtml(item.title)}">
+            <div style="font-size: 1.12rem; font-weight: 800; color: #0f172a; line-height: 1.42; margin-bottom: 5px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;" title="${escapeHtml(item.title)}">
               ${symbolPrefix}${escapeHtml(item.title)}
             </div>
-            <div style="font-size: 0.92rem; color: #d7ccc8; line-height: 1.65; margin-bottom: 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+            <div style="font-size: 1.02rem; color: #d7ccc8; line-height: 1.65; margin-bottom: 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
               ${escapeHtml(item.summary || '')}
             </div>
           </div>
 
-          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 8px; font-size: 0.82rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 8px; font-size: 0.92rem;">
             <div style="color: #64748b; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 140px;">
               <span style="color: #475569; font-weight: 700;">${escapeHtml(mediaDisplay)}</span> · ${escapeHtml(timeDisplay)}
             </div>
-            <a href="${directUrl}" target="_blank" rel="noopener noreferrer" style="background: #eff6ff; color: #0284c7; border: 1px solid #bfdbfe; padding: 4px 10px; border-radius: 6px; font-size: 0.82rem; text-decoration: none; font-weight: 800; white-space: nowrap; transition: all 0.15s ease;">
+            <a href="${directUrl}" target="_blank" rel="noopener noreferrer" style="background: #eff6ff; color: #0284c7; border: 1px solid #bfdbfe; padding: 4px 10px; border-radius: 6px; font-size: 0.92rem; text-decoration: none; font-weight: 800; white-space: nowrap; transition: all 0.15s ease;">
               기사보기 ↗
             </a>
           </div>
@@ -8471,9 +8471,9 @@ function renderTodayLeadingThemes(themes) {
           const isUp = !String(s.rate).includes('-');
           const rateColor = isUp ? '#f87171' : '#60a5fa';
           return `
-            <span style="display: inline-flex; align-items: center; gap: 4px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); padding: 2px 7px; border-radius: 5px; font-size: 0.72rem; color: #e2e8f0;">
+            <span style="display: inline-flex; align-items: center; gap: 4px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); padding: 2px 7px; border-radius: 5px; font-size: 0.86rem; color: #e2e8f0;">
               <span style="font-weight: 700;">${escapeHtml(s.name)}</span>
-              <span style="color: ${rateColor}; font-weight: 800; font-size: 0.68rem;">${escapeHtml(s.rate)}</span>
+              <span style="color: ${rateColor}; font-weight: 800; font-size: 0.84rem;">${escapeHtml(s.rate)}</span>
             </span>
           `;
         }).join('')
@@ -8501,22 +8501,22 @@ function renderTodayLeadingThemes(themes) {
         <div>
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
             <div>
-              <h5 style="font-size: 1.1rem; font-weight: 900; color: #0f172a; margin: 2px 0 0 0; letter-spacing: -0.2px;">
+              <h5 style="font-size: 1.22rem; font-weight: 900; color: #0f172a; margin: 2px 0 0 0; letter-spacing: -0.2px;">
                 ${escapeHtml(item.theme_name)}
               </h5>
             </div>
             <div style="text-align: right;">
-              <span style="font-size: 1.05rem; font-weight: 900; color: #dc2626;">
+              <span style="font-size: 1.18rem; font-weight: 900; color: #dc2626;">
                 ${escapeHtml(item.change_rate || '+0.00%')}
               </span>
-              <div style="font-size: 0.7rem; color: #64748b; margin-top: 2px;">
+              <div style="font-size: 0.84rem; color: #a89f91; margin-top: 2px;">
                 복합강도 ${item.composite_score || 95}점
               </div>
             </div>
           </div>
 
           <!-- 대장주 및 거래대금 메트릭 바 -->
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px 10px; margin-bottom: 8px; font-size: 0.78rem; display: flex; justify-content: space-between; align-items: center;">
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px 10px; margin-bottom: 8px; font-size: 0.92rem; display: flex; justify-content: space-between; align-items: center;">
             <div>
               <span style="color: #64748b;">대장주:</span>
               <strong style="color: #0284c7; font-weight: 800; margin-left: 4px;">${escapeHtml(item.leader_stock)}</strong>
@@ -8530,23 +8530,22 @@ function renderTodayLeadingThemes(themes) {
 
           <!-- 핵심 관련주 3개 뱃지 바 -->
           <div style="margin-bottom: 10px; display: flex; align-items: center; gap: 5px; flex-wrap: wrap;">
-            <span style="font-size: 0.7rem; color: #64748b; font-weight: 700;">핵심 관련주:</span>
+            <span style="font-size: 0.84rem; color: #d4a373; font-weight: 700;">핵심 관련주:</span>
             ${relatedBadgesHtml}
           </div>
 
           <!-- 상승 재료 및 구체적 팩트 (2~3줄 명시) -->
-          <div style="font-size: 0.78rem; color: #1e293b; line-height: 1.5; margin-bottom: 12px; background: #fef2f2; border: 1px solid #fecaca; border-left: 3px solid #ef4444; padding: 8px 10px; border-radius: 6px;">
-            <strong style="color: #b91c1c; font-size: 0.73rem; display: block; margin-bottom: 2px;">📌 당일 급등 이유 & 핵심 재료 팩트:</strong>
+          <div style="font-size: 0.92rem; color: #d7ccc8; line-height: 1.65; margin-bottom: 12px; background: #fef2f2; border: 1px solid #fecaca; border-left: 3px solid #ef4444; padding: 8px 10px; border-radius: 6px;">
+            <strong style="color: #f87171; font-size: 0.84rem; display: block; margin-bottom: 2px;">📌 당일 급등 이유 & 핵심 재료 팩트:</strong>
             ${escapeHtml(detailedTriggerFact)}
           </div>
         </div>
 
         <!-- 하단 액션 버튼들 -->
         <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 10px;">
-          <span style="font-size: 0.72rem; color: #64748b;">
-            부대장: ${escapeHtml(item.sub_leader_stock || '관련주')}
+          <span style="font-size: 0.86rem; color: #d7ccc8;"> 부대장: ${escapeHtml(item.sub_leader_stock || '관련주')}
           </span>
-          <button type="button" class="imggen-style-chip" onclick="registerPullbackFromToday('${rawThemeJson}')" style="padding: 5px 12px; font-size: 0.74rem; background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; font-weight: 800; cursor: pointer; border-radius: 6px; display: inline-flex; align-items: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#bae6fd';" onmouseout="this.style.background='#e0f2fe';">
+          <button type="button" class="imggen-style-chip" onclick="registerPullbackFromToday('${rawThemeJson}')" style="padding: 5px 12px; font-size: 0.86rem; background: #352924; color: #0284c7; border: 1px solid #bae6fd; font-weight: 800; cursor: pointer; border-radius: 6px; display: inline-flex; align-items: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#bae6fd';" onmouseout="this.style.background='#e0f2fe';">
             ✓ 눌림목 추적 등록
           </button>
         </div>
@@ -8827,13 +8826,13 @@ async function renderPastPullbackThemes(currentTopThemes = []) {
           <div>
             <div style="display: flex; align-items: center; gap: 8px;">
               <span style="font-size: 1.1rem;">🎯</span>
-              <strong style="font-size: 1.02rem; color: #0f172a; font-weight: 900;">${escapeHtml(item.theme_name)}</strong>
+              <strong style="font-size: 1.18rem; color: #f5ebe0; font-weight: 900;">${escapeHtml(item.theme_name)}</strong>
               ${ma5Badge}
               <span style="font-size: 0.72rem; color: #475569; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 2px 7px; border-radius: 4px; font-weight: 600;">
                 ${escapeHtml(item.period_range || '최근 1~3개월 눌림')}
               </span>
             </div>
-            <div style="font-size: 0.78rem; color: #64748b; margin-top: 6px; display: flex; align-items: center; gap: 14px;">
+            <div style="font-size: 0.92rem; color: #d7ccc8; margin-top: 6px; display: flex; align-items: center; gap: 14px;">
               <span>대장주: <strong style="color: #0284c7; font-weight: 800;">${escapeHtml(item.leader_stock)}</strong></span>
               <span>기준봉 대비 눌림폭: <strong style="color: ${fibColor}; font-weight: 800;">${escapeHtml(item.pullback_rate || '-38.2%')}</strong></span>
             </div>
@@ -8841,17 +8840,17 @@ async function renderPastPullbackThemes(currentTopThemes = []) {
 
           <!-- 트레이더 컨트롤 버튼 탑재 [✓ 추적 승인] & [✕ 소멸 삭제] -->
           <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
-            <button type="button" onclick="approvePullbackTheme('${escapeHtml(item.theme_name)}', '${escapeHtml(item.leader_stock)}', '${encodedThemeData}')" class="imggen-style-chip" style="padding: 6px 14px; font-size: 0.76rem; background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; font-weight: 800; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; border-radius: 6px; transition: all 0.15s ease;" title="2번 탭 탐정 7대 체크리스트로 즉시 이동">
+            <button type="button" onclick="approvePullbackTheme('${escapeHtml(item.theme_name)}', '${escapeHtml(item.leader_stock)}', '${encodedThemeData}')" class="imggen-style-chip" style="padding: 6px 14px; font-size: 0.88rem; background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; font-weight: 800; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; border-radius: 6px; transition: all 0.15s ease;" title="2번 탭 탐정 7대 체크리스트로 즉시 이동">
               ✓ 추적 승인 (2번 탭 정밀 분석)
             </button>
-            <button type="button" onclick="deletePullbackTheme('${escapeHtml(themeId)}', '${escapeHtml(item.theme_name)}')" class="imggen-style-chip" style="padding: 6px 10px; font-size: 0.74rem; background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; font-weight: 800; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; border-radius: 6px;" title="재료 소멸 테마 영구 제거">
+            <button type="button" onclick="deletePullbackTheme('${escapeHtml(themeId)}', '${escapeHtml(item.theme_name)}')" class="imggen-style-chip" style="padding: 6px 10px; font-size: 0.86rem; background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; font-weight: 800; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; border-radius: 6px;" title="재료 소멸 테마 영구 제거">
               ✕ 소멸 삭제
             </button>
           </div>
         </div>
 
         <!-- 2줄 핵심 데이터 카드: 최초 상승 이유(실제 재료 팩트) & 향후 반등 모멘텀(실체적 기대감) -->
-        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 14px; font-size: 0.78rem; line-height: 1.55; display: flex; flex-direction: column; gap: 6px;">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 14px; font-size: 0.92rem; line-height: 1.65; display: flex; flex-direction: column; gap: 6px;">
           <div style="color: #334155; display: flex; align-items: flex-start; gap: 6px;">
             <span style="color: #be123c; font-weight: 700; background: #fff1f2; border: 1px solid #fecdd3; padding: 1px 6px; border-radius: 4px; white-space: nowrap; flex-shrink: 0;">[📌 최초 상승 이유]</span>
             <span style="color: #334155;">${escapeHtml(pastTrigger)}</span>

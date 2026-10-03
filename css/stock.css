@@ -1135,3 +1135,165 @@ span[id^="news-col-count-"],
   line-height: 1.75 !important;
   color: #d7ccc8 !important;
 }
+
+/* ==========================================================================
+   [신규 강화] 0번 탭 (실시간 국내 주식뉴스) 전체 글자 크기 +1단계 상향 & 5열 헤더 정렬
+   ========================================================================== */
+
+/* 1. 5열 실시간 뉴스 컬럼 헤더 & 건수 뱃지 (줄바꿈 방지 및 가독성 최적화) */
+.news-col-header {
+  background: #241c18 !important;
+  border-bottom: 1.5px solid #d4a373 !important;
+  padding: 12px 14px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-wrap: nowrap !important;
+  box-sizing: border-box !important;
+}
+
+.news-col-title-wrap {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  min-width: 0 !important;
+  flex: 1 1 auto !important;
+  overflow: hidden !important;
+}
+
+.news-col-title-wrap span:first-child {
+  font-size: 1.05rem !important;
+  flex-shrink: 0 !important;
+}
+
+.news-col-title-wrap span:last-child {
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  color: #f5ebe0 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  letter-spacing: -0.3px !important;
+}
+
+/* 5열 카테고리별 건수 뱃지: 줄바꿈 완벽 차단, 골든베이지 단일화 */
+span[id^="news-col-count-"],
+.news-col-count-badge,
+.news-col-header-badge {
+  background: #352924 !important;
+  border: 1px solid #d4a373 !important;
+  color: #d4a373 !important;
+  font-size: 13.5px !important;
+  font-weight: 800 !important;
+  padding: 3px 8px !important;
+  border-radius: 5px !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 36px !important;
+  box-sizing: border-box !important;
+  line-height: 1.3 !important;
+}
+
+/* 2. 0번 탭 최상단 헤더 & 필터 바 글자 크기 상향 */
+#stock-panel-news h3 {
+  font-size: 1.35rem !important;
+  color: #f5ebe0 !important;
+  font-weight: 900 !important;
+}
+
+#stock-panel-news #domestic-news-date-badge {
+  font-size: 0.88rem !important;
+  background: #352924 !important;
+  color: #d4a373 !important;
+  border: 1px solid #d4a373 !important;
+  padding: 4px 10px !important;
+}
+
+#stock-panel-news p {
+  font-size: 0.95rem !important;
+  color: #d7ccc8 !important;
+  line-height: 1.6 !important;
+}
+
+/* 필터 버튼들 (5열 전체 보기, 특징주/급등 등) */
+#domestic-news-filter-chips button,
+.domestic-filter-chips-enlarged button {
+  font-size: 0.90rem !important;
+  padding: 7px 15px !important;
+  font-weight: 700 !important;
+}
+
+/* 3. 실시간 주식 탐정 질의응답 (Q&A) 영역 글자 상향 */
+#stock-panel-news #stock-qa-input {
+  font-size: 1.02rem !important;
+  padding: 12px 16px !important;
+  background: #2a201c !important;
+  color: #f5ebe0 !important;
+  border: 1.5px solid #d4a373 !important;
+}
+
+#stock-panel-news #stock-qa-submit-btn {
+  font-size: 1.02rem !important;
+  padding: 12px 22px !important;
+  font-weight: 800 !important;
+}
+
+#stock-panel-news .stock-qa-preset-chip {
+  font-size: 0.88rem !important;
+  padding: 6px 14px !important;
+  font-weight: 700 !important;
+  background: #2a201c !important;
+  border-color: #d4a373 !important;
+  color: #f5ebe0 !important;
+}
+
+#stock-panel-news .imggen-style-chip {
+  font-size: 0.86rem !important;
+  padding: 5px 12px !important;
+}
+
+/* 4. 오늘의 주도 테마 & 역대 주도 테마 (1단, 2단 레이더) 글자 상향 */
+#stock-panel-news #today-leading-themes-container h5 {
+  font-size: 1.22rem !important;
+  font-weight: 900 !important;
+  color: #f5ebe0 !important;
+}
+
+#stock-panel-news #today-leading-themes-container,
+#stock-panel-news #past-pullback-themes-container {
+  font-size: 0.92rem !important;
+}
+
+#stock-panel-news #today-leading-status-badge {
+  font-size: 0.88rem !important;
+  padding: 4px 10px !important;
+}
+
+/* 5. 5열 실시간 뉴스 목록 기사 카드 글자 상향 */
+#domestic-news-5col-container .news-item-compact-card {
+  padding: 12px 14px !important;
+}
+
+#domestic-news-5col-container .news-item-compact-card > div:first-child > div:first-child {
+  font-size: 1.12rem !important;
+  font-weight: 800 !important;
+  color: #f5ebe0 !important;
+  line-height: 1.45 !important;
+}
+
+#domestic-news-5col-container .news-item-compact-card > div:first-child > div:nth-child(2) {
+  font-size: 1.02rem !important;
+  color: #d7ccc8 !important;
+  line-height: 1.65 !important;
+}
+
+#domestic-news-5col-container .news-item-compact-card a {
+  font-size: 0.90rem !important;
+  padding: 5px 12px !important;
+  font-weight: 800 !important;
+}
