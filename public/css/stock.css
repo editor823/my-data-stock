@@ -851,3 +851,101 @@ span[id^="news-col-count-"],
   border: 1.5px solid #d4a373 !important;
   color: #f5ebe0 !important;
 }
+
+/* ==========================================================================
+   [사용자 요청 5개 정밀 타겟 교정 룰]
+   ========================================================================== */
+
+/* 1. 종목 심층 분석 탭: 매출 포트폴리오 비중 & 실적 종합 총평 박스 완벽 보정 */
+#tab-stock div[style*="background: #f0fdf4"],
+#tab-stock div[style*="background:#f0fdf4"],
+#tab-stock div[style*="border: 1px solid #bbf7d0"],
+#tab-stock div[style*="border:1px solid #bbf7d0"] {
+  background: #352924 !important;
+  border: 1.5px solid #d4a373 !important;
+  color: #f5ebe0 !important;
+}
+
+#tab-stock div[style*="color: #16a34a"],
+#tab-stock div[style*="color:#16a34a"] {
+  color: #d4a373 !important;
+  font-weight: 800 !important;
+}
+
+#tab-stock div[style*="color: #166534"],
+#tab-stock div[style*="color:#166534"] {
+  color: #f5ebe0 !important;
+}
+
+/* 2. 1~5번 숫자 뱃지 kc-card-num-box 골든베이지 테두리 */
+.kc-card-num-box,
+.kc-card-num,
+#stock-deep-list .kc-card-num-box {
+  background: #352924 !important;
+  border: 1.5px solid #d4a373 !important;
+  color: #d4a373 !important;
+  font-weight: 800 !important;
+}
+
+.kc-card.active .kc-card-num-box {
+  background: #c7926b !important;
+  color: #1a1412 !important;
+  border: 1.5px solid #d4a373 !important;
+}
+
+/* 3. API 넣는 곳 모달 (#apiStockModal) 전면 고동색 & 골든베이지 테두리 */
+#apiStockModal .modal-box {
+  background: #2a201c !important;
+  border: 1.5px solid #d4a373 !important;
+  color: #f5ebe0 !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6) !important;
+}
+
+#apiStockModal input[type="text"],
+#apiStockModal input[type="password"] {
+  background: #1a1412 !important;
+  border: 1px solid #4a3b34 !important;
+  color: #f5ebe0 !important;
+}
+
+#apiStockModal input:focus {
+  border-color: #d4a373 !important;
+}
+
+#apiStockModal button[onclick*="saveStockApiKeys"] {
+  background: #c7926b !important;
+  color: #1a1412 !important;
+  border: 1px solid #d4a373 !important;
+}
+
+/* 4. 7대 체크리스트 2번 박스 보라색 글씨 -> 골든 베이지 강제 통일 */
+#tab-stock span[style*="color: #6d28d9"],
+#tab-stock span[style*="color:#6d28d9"],
+#tab-stock [style*="color: #7c3aed"],
+#tab-stock [style*="color:#7c3aed"] {
+  color: #d4a373 !important;
+}
+
+/* 5. 사건의 전개 과정 타임라인 제목 링크 (어두워서 안 보이던 파란 글씨 -> 선명한 크림 베이지) */
+#timeline-feed-container a,
+.timeline-item a,
+#tab-stock a[style*="color:#0f172a"],
+#tab-stock a[style*="color: #0f172a"],
+#tab-stock a[style*="color:#0369a1"],
+#tab-stock a[style*="color: #0369a1"],
+#tab-stock a[style*="color:#0284c7"],
+#tab-stock a[style*="color: #0284c7"] {
+  color: #f5ebe0 !important;
+  font-weight: 800 !important;
+}
+
+#timeline-feed-container a:hover,
+.timeline-item a:hover {
+  color: #d4a373 !important;
+}
+
+.timeline-calendar-btn {
+  background: #3e312b !important;
+  border: 1px solid #d4a373 !important;
+  color: #f5ebe0 !important;
+}

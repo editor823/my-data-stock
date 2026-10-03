@@ -17,8 +17,8 @@
 
   <!-- 스타일시트 로드 -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/components.css?v=all_golden_v11">
-  <link rel="stylesheet" href="css/stock.css?v=all_golden_v11">
+  <link rel="stylesheet" href="css/components.css?v=perfect_golden_v12">
+  <link rel="stylesheet" href="css/stock.css?v=perfect_golden_v12">
 
   <style>
     /* ORYZO AI — Darkroom Product Editorial Style */
@@ -419,7 +419,7 @@
               <button type="button" id="btn-refresh-domestic-news" class="imggen-style-chip" onclick="refreshLiveDomesticNews()" style="padding: 4px 10px; font-size: 0.74rem; background: rgba(56, 189, 248, 0.12); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">
                 🔄 네이버 실시간 뉴스 즉시 동기화
               </button>
-              <span id="domestic-news-sync-time" style="font-size: 0.74rem; background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 2px 8px; border-radius: 4px; font-weight: 700;">⏱️ 2026-10-02 15:30:00 (장마감 집계 완료)</span>
+              <span id="domestic-news-sync-time" style="font-size: 0.74rem; background: #3e312b; color: #d7ccc8; border: 1px solid #4a3b34; padding: 2px 8px; border-radius: 4px; font-weight: 700;">⏱️ 2026-10-02 15:30:00 (장마감 집계 완료)</span>
 <span style="font-size: 0.74rem; color: #94a3b8;">
                 클릭 시 원문 즉시 이동 ↗
               </span>
@@ -1573,46 +1573,46 @@
   <!-- 주식 API 연동 모달 -->
 <!-- ===== [모달 3] 📈 주식/뉴스 API 연동 키 설정 팝업 ===== -->
     <div id="apiStockModal" class="modal-backdrop" style="display: none;">
-      <div class="modal-box" style="max-width: 520px; background: #ffffff; color: #1e293b; border-radius: 16px; padding: 28px; box-shadow: 0 20px 40px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;">
+      <div class="modal-box" style="max-width: 520px; background: #2a201c; color: #f5ebe0; border-radius: 16px; padding: 28px; box-shadow: 0 20px 50px rgba(0,0,0,0.6); border: 1.5px solid #d4a373;">
         <!-- 헤더 -->
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a; margin: 0; display: flex; align-items: center; gap: 8px;">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: #f5ebe0; margin: 0; display: flex; align-items: center; gap: 8px;">
             <span>🔑</span> 주식/뉴스 실시간 API 연동 설정
           </h3>
           <button type="button" onclick="closeStockApiModal()" style="background: none; border: none; color: #64748b; font-size: 1.5rem; cursor: pointer; padding: 0; line-height: 1;">✕</button>
         </div>
 
-        <p style="font-size: 0.84rem; color: #475569; margin: 0 0 18px 0; line-height: 1.6;">
+        <p style="font-size: 0.84rem; color: #d7ccc8; margin: 0 0 18px 0; line-height: 1.6;">
           실시간 언론사 뉴스 기사 검색과 공공데이터 시황을 제한 없이 동기화하기 위한 키를 저장합니다. <strong>키가 없어도 기본 모의 시황 및 네이버 금융 공식 실시간 차트는 100% 무료 작동합니다.</strong>
         </p>
 
         <!-- 1. 네이버 뉴스 검색 API -->
-        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;">
+        <div style="background: #352924; border: 1px solid #4a3b34; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;">
           <div style="font-size: 0.88rem; font-weight: 800; color: #d4a373; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
             <span>📰</span> 1. 네이버 뉴스 검색 API (실시간 특징주 기사)
           </div>
           <div class="form-group" style="margin-bottom: 8px;">
-            <label class="form-label" style="font-size: 0.76rem; color: #334155; margin-bottom: 4px; display: block; font-weight: 700;">Client ID</label>
-            <input type="text" id="stockNaverClientId" class="form-input" placeholder="네이버 개발자센터 Client ID" style="width: 100%; background: #ffffff; border: 1px solid #cbd5e1; color: #0f172a; border-radius: 6px; padding: 8px 12px; font-size: 0.88rem;">
+            <label class="form-label" style="font-size: 0.76rem; color: #d4a373; margin-bottom: 4px; display: block; font-weight: 700;">Client ID</label>
+            <input type="text" id="stockNaverClientId" class="form-input" placeholder="네이버 개발자센터 Client ID" style="width: 100%; background: #1a1412; border: 1px solid #4a3b34; color: #f5ebe0; border-radius: 6px; padding: 8px 12px; font-size: 0.88rem;">
           </div>
           <div class="form-group" style="margin-bottom: 4px;">
-            <label class="form-label" style="font-size: 0.76rem; color: #334155; margin-bottom: 4px; display: block; font-weight: 700;">Client Secret</label>
-            <input type="password" id="stockNaverClientSecret" class="form-input" placeholder="Client Secret" style="width: 100%; background: #ffffff; border: 1px solid #cbd5e1; color: #0f172a; border-radius: 6px; padding: 8px 12px; font-size: 0.88rem;">
+            <label class="form-label" style="font-size: 0.76rem; color: #d4a373; margin-bottom: 4px; display: block; font-weight: 700;">Client Secret</label>
+            <input type="password" id="stockNaverClientSecret" class="form-input" placeholder="Client Secret" style="width: 100%; background: #1a1412; border: 1px solid #4a3b34; color: #f5ebe0; border-radius: 6px; padding: 8px 12px; font-size: 0.88rem;">
           </div>
         </div>
 
         <!-- 2. 한국투자증권 KIS Open API (선택사항) -->
-        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; margin-bottom: 20px;">
+        <div style="background: #352924; border: 1px solid #4a3b34; border-radius: 10px; padding: 14px 16px; margin-bottom: 20px;">
           <div style="font-size: 0.88rem; font-weight: 800; color: #d4a373; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
             <span>📈</span> 2. 한국투자증권 실시간 호가/수급 API (선택사항)
           </div>
           <div class="form-group" style="margin-bottom: 8px;">
-            <label class="form-label" style="font-size: 0.76rem; color: #334155; margin-bottom: 4px; display: block; font-weight: 700;">App Key</label>
-            <input type="text" id="stockKisAppKey" class="form-input" placeholder="KIS Developers AppKey" style="width: 100%; background: #ffffff; border: 1px solid #cbd5e1; color: #0f172a; border-radius: 6px; padding: 8px 12px; font-size: 0.88rem;">
+            <label class="form-label" style="font-size: 0.76rem; color: #d4a373; margin-bottom: 4px; display: block; font-weight: 700;">App Key</label>
+            <input type="text" id="stockKisAppKey" class="form-input" placeholder="KIS Developers AppKey" style="width: 100%; background: #1a1412; border: 1px solid #4a3b34; color: #f5ebe0; border-radius: 6px; padding: 8px 12px; font-size: 0.88rem;">
           </div>
           <div class="form-group" style="margin-bottom: 4px;">
-            <label class="form-label" style="font-size: 0.76rem; color: #334155; margin-bottom: 4px; display: block; font-weight: 700;">App Secret</label>
-            <input type="password" id="stockKisAppSecret" class="form-input" placeholder="KIS Developers AppSecret" style="width: 100%; background: #ffffff; border: 1px solid #cbd5e1; color: #0f172a; border-radius: 6px; padding: 8px 12px; font-size: 0.88rem;">
+            <label class="form-label" style="font-size: 0.76rem; color: #d4a373; margin-bottom: 4px; display: block; font-weight: 700;">App Secret</label>
+            <input type="password" id="stockKisAppSecret" class="form-input" placeholder="KIS Developers AppSecret" style="width: 100%; background: #1a1412; border: 1px solid #4a3b34; color: #f5ebe0; border-radius: 6px; padding: 8px 12px; font-size: 0.88rem;">
           </div>
         </div>
 
@@ -1657,7 +1657,7 @@
 
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js"></script>
-  <script src="js/stock.js?v=all_golden_v11"></script>
+  <script src="js/stock.js?v=perfect_golden_v12"></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" onclick="if(event.target===this) closeDailyStockReportModal()">
@@ -1757,7 +1757,7 @@
         <span>🔄</span> 즉시 재검수 실행
       </button>
       <button type="button" onclick="closeSystemInspectorBot()"
-        style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 9px 18px; border-radius: 8px; font-size: 0.86rem; font-weight: 700; cursor: pointer;">
+        style="background: #3e312b; color: #d7ccc8; border: 1px solid #4a3b34; padding: 9px 18px; border-radius: 8px; font-size: 0.86rem; font-weight: 700; cursor: pointer;">
         닫기
       </button>
     </div>

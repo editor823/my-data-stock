@@ -1041,7 +1041,7 @@ window.loadTodayHkReportsWidget = async function() {
               </span>
             </div>
             <div style="font-size: 0.88rem; font-weight: 800; color: #0f172a; line-height: 1.4; margin-bottom: 4px;">
-              <a href="${escapeHtml(safeReportUrl)}" target="_blank" rel="noopener noreferrer" style="color: #0f172a; text-decoration: none; transition: color 0.15s;" onmouseover="this.style.color='#34d399';" onmouseout="this.style.color='#0f172a';">
+              <a href="${escapeHtml(safeReportUrl)}" target="_blank" rel="noopener noreferrer" style="color: #0f172a; text-decoration: none; transition: color 0.15s;" onmouseover="this.style.color='#34d399';" onmouseout="this.style.color='#f5ebe0';">
                 ${targetCorp ? `<span style="color: #38bdf8;">[${escapeHtml(targetCorp)}]</span> ` : ''}${escapeHtml(reportTitle)}
               </a>
             </div>
@@ -2177,11 +2177,11 @@ window.renderDetectiveCard = function(theme, period = 'all') {
         <!-- 2) 대장주 & 3) 관련성 -->
         <div style="background:#352924; border:1.5px solid #d4a373; border-radius:10px; padding:14px 16px; border-left:4px solid #d4a373; box-shadow:none;">
           <div>
-            <div style="font-size:0.83rem; font-weight:800; color:#6d28d9; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+            <div style="font-size:0.83rem; font-weight:800; color:#d4a373; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
               <span style="background:#2a201c; color:#d4a373; border:1px solid #d4a373; padding:2px 7px; border-radius:4px; font-weight:800;">2) 대장주 & 3) 관련성</span>
             </div>
             <div style="font-size:0.86rem; color:#1e293b; line-height:1.45;">
-              <span style="color:#6d28d9; font-weight:900;">👑 ${leaders.lead || '-'}</span> 
+              <span style="color:#d4a373; font-weight:900;">👑 ${leaders.lead || '-'}</span> 
               ${leaders.sub ? `<span style="color:#64748b; font-size:0.8rem; font-weight:600;">(부대장: ${leaders.sub})</span>` : ''}
             </div>
             <div style="font-size:0.82rem; color:#475569; margin-top:6px; line-height:1.45; word-break: break-all;">
@@ -2453,7 +2453,7 @@ window.renderDetectiveCard = function(theme, period = 'all') {
         const signalBadgeHtml = getStockSignalBadgeHtml(scoreObj);
 
         return `
-          <div style="display:flex; align-items:center; justify-content:space-between; background:#ffffff; border:1px solid #e2e8f0; ${cardBorder} border-radius:10px; padding:14px 18px; margin-bottom:10px; gap:14px; transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+          <div style="display:flex; align-items:center; justify-content:space-between; background:#2a201c; border:1.5px solid #4a3b34; border-radius:10px; padding:14px 18px; margin-bottom:10px; gap:14px; transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
             <div style="min-width:92px; text-align:center;">
               <div style="font-size:0.84rem; font-weight:700; color:${dateColor};">${tl.date || ''}</div>
               <div style="font-size:0.7rem; color:#94a3b8; margin-top:2px;">${tl.stage || (isReport ? '증권사 리서치' : (isDart ? '공식 공시' : '전개'))}</div>
@@ -2467,7 +2467,7 @@ window.renderDetectiveCard = function(theme, period = 'all') {
                 ${stockTags.map(tag => `<span style="font-size:0.7rem; padding:1px 6px; background:#f1f5f9; color:#0369a1; border:1px solid #cbd5e1; border-radius:4px; font-weight:700;">${tag}</span>`).join('')}
               </div>
               <div style="font-size:0.95rem; font-weight:800; color:#0f172a; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">
-                <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" style="color:#0f172a; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='${isReport ? '#34d399' : '#38bdf8'}';" onmouseout="this.style.color='#0f172a';">
+                <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" style="color: #f5ebe0; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#d4a373';" onmouseout="this.style.color='#f5ebe0';">
                   ${displayTitle}
                 </a>
               </div>
@@ -2478,7 +2478,7 @@ window.renderDetectiveCard = function(theme, period = 'all') {
               </div>
             </div>
             <div style="display:flex; align-items:center; gap:6px; flex-shrink:0;">
-              <button type="button" class="timeline-calendar-btn" onclick="addTimelineToCalendar('${tl.id || tl.date}')" style="background: #eef2ff; border: 1.5px solid #c7d2fe; color: #4338ca; padding: 5px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all 0.2s; white-space: nowrap;" onmouseover="this.style.background='rgba(99, 102, 241, 0.3)'; this.style.color='#fff';" onmouseout="this.style.background='rgba(99, 102, 241, 0.15)'; this.style.color='#818cf8';">
+              <button type="button" class="timeline-calendar-btn" onclick="addTimelineToCalendar('${tl.id || tl.date}')" style="background: #3e312b; border: 1.5px solid #d4a373; color: #f5ebe0; padding: 5px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all 0.2s; white-space: nowrap;" onmouseover="this.style.background='rgba(99, 102, 241, 0.3)'; this.style.color='#fff';" onmouseout="this.style.background='rgba(99, 102, 241, 0.15)'; this.style.color='#818cf8';">
                 📅 캘린더 등록
               </button>
               <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" class="timeline-link-btn" style="display:inline-flex; align-items:center; padding:6px 12px; ${actionBtnBg} border-radius:6px; font-size:0.8rem; font-weight:600; text-decoration:none; white-space:nowrap;">
@@ -2648,7 +2648,7 @@ window.renderTimelineCards = function(articles, period = 'all') {
             ${isReport ? '<span style="font-size:0.7rem; padding:1px 6px; background:#dcfce7; color:#15803d; border-radius:4px; font-weight:700;">목표주가 단서</span>' : (isDart ? '<span style="font-size:0.7rem; padding:1px 6px; background:#ffedd5; color:#c2410c; border-radius:4px; font-weight:700;">금감원 원문</span>' : '<span style="font-size: 0.72rem; padding: 2px 7px; background: #fef2f2; color: #b91c1c; border-radius: 4px; font-weight: 600;">상승 모멘텀</span>')}
           </div>
           <div style="font-size: 0.92rem; font-weight: 700; color: #0f172a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-            <a href="${targetUrl}" target="_blank" rel="noopener noreferrer" style="color: #0f172a; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#0284c7';" onmouseout="this.style.color='#0f172a';">
+            <a href="${targetUrl}" target="_blank" rel="noopener noreferrer" style="color: #f5ebe0; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#0284c7';" onmouseout="this.style.color='#f5ebe0';">
               ${cleanTitle}
             </a>
           </div>
@@ -6450,7 +6450,7 @@ window.refreshThemePortfolioStreaming = async function() {
               </span>
             </div>
 
-            <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" style="font-size: 0.84rem; font-weight: 800; color: #0f172a; text-decoration: none; line-height: 1.38; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; word-break: break-word;" onmouseover="this.style.color='${accentColor}';" onmouseout="this.style.color='#0f172a';">
+            <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" style="font-size: 0.84rem; font-weight: 800; color: #0f172a; text-decoration: none; line-height: 1.38; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; word-break: break-word;" onmouseover="this.style.color='${accentColor}';" onmouseout="this.style.color='#f5ebe0';">
               ${escapeHtml(itemTitle || '상세 소식 확인하기')}
             </a>
 
@@ -7037,7 +7037,7 @@ function renderStockDeepList() {
 
   listWrap.innerHTML = STOCK_DEEP_DATA.map((item, idx) => `
     <div class="kc-card ${idx === currentDeepIdx ? 'active' : ''}" onclick="selectStockDeepItem(${idx})" style="cursor: pointer; margin-bottom: 10px;">
-      <div class="kc-card-num-box" style="background: #e0f2fe; color: #0369a1; font-size: 0.78rem; font-weight: 800;">
+      <div class="kc-card-num-box" style="background: #352924; color: #d4a373; border: 1.5px solid #d4a373; font-size: 0.78rem; font-weight: 800;">
         ${idx + 1}
       </div>
       <div class="kc-card-body">
@@ -7180,9 +7180,9 @@ window.selectStockDeepItem = function (idx) {
               <div style="font-size: 0.76rem; color: #0284c7; font-weight: 800; margin-bottom: 4px;">산업 유형 분류</div>
               <div style="font-size: 0.92rem; font-weight: 900; color: #0f172a;">${escapeHtml(item.bm.type)}</div>
             </div>
-            <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 12px; border-radius: 8px;">
-              <div style="font-size: 0.76rem; color: #16a34a; font-weight: 800; margin-bottom: 4px;">매출 포트폴리오 비중</div>
-              <div style="font-size: 0.92rem; font-weight: 800; color: #0f172a;">${escapeHtml(item.bm.structure)}</div>
+            <div style="background: #352924; border: 1.5px solid #d4a373; padding: 12px; border-radius: 8px;">
+              <div style="font-size: 0.76rem; color: #d4a373; font-weight: 800; margin-bottom: 4px;">매출 포트폴리오 비중</div>
+              <div style="font-size: 0.92rem; font-weight: 800; color: #f5ebe0;">${escapeHtml(item.bm.structure)}</div>
             </div>
           </div>
           <div style="margin-bottom: 12px;">
@@ -7219,7 +7219,7 @@ window.selectStockDeepItem = function (idx) {
             <div style="font-size: 0.78rem; color: #dc2626; font-weight: 800;">영업익 ${item.financials.q24_3E.profit} (${item.financials.q24_3E.margin})</div>
           </div>
         </div>
-        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 10px 14px; font-size: 0.84rem; color: #166534; margin-bottom: 14px;">
+        <div style="background: #352924; border: 1.5px solid #d4a373; border-radius: 8px; padding: 10px 14px; font-size: 0.84rem; color: #f5ebe0; margin-bottom: 14px;">
           📈 <strong>실적 종합 총평:</strong> ${escapeHtml(item.financials.annual2024E)} · ${escapeHtml(item.financials.point)}
         </div>
         <!-- 공시 목록 -->
