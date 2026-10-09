@@ -31,6 +31,16 @@ jobs:
       - name: 심플 관심종목 TV 최신 영상 브리핑 데이터 수집
         run: node scripts/update_simple_channel_briefing.js
 
+      - name: Python 환경 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 미국 섹터 브리핑 데이터 수집 및 갱신
+        run: |
+          pip install requests beautifulsoup4 yfinance
+          python scripts/fetch_us_sector.py
+
       - name: 텔레그램 주식 브리핑 자동 발송
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -41,5 +51,5 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/js/live_domestic_news_seed.js js/live_domestic_news_seed.js public/data/live_domestic_news.json public/data/simple_channel_briefing.json data/simple_channel_briefing.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): update live domestic news & YouTube briefing [skip ci]" && git push)
+          git add public/js/live_domestic_news_seed.js js/live_domestic_news_seed.js public/data/live_domestic_news.json public/data/simple_channel_briefing.json data/simple_channel_briefing.json public/data/us_sector_briefing.json data/us_sector_briefing.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): update live domestic news, US sector & YouTube briefing [skip ci]" && git push)

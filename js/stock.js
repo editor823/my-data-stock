@@ -7717,6 +7717,25 @@ async function renderUSSectorBriefing() {
     const data = await res.json();
     usSectorBriefingCache = data;
 
+    // 1-A. 날짜 및 기준일 뱃지 동적 동기화
+    if (data.updated_at || data.updated_date_str) {
+      try {
+        const d = data.updated_at ? new Date(data.updated_at) : new Date();
+        const m = d.getMonth() + 1;
+        const day = d.getDate();
+        const dayNames = ['일', '월', '화', '수', '목', '금', '토'];
+        const dayName = dayNames[d.getDay()];
+        const badgeEl = document.getElementById('us-market-briefing-date-badge');
+        if (badgeEl) {
+          badgeEl.textContent = `🚀 ${m}월 ${day}일(${dayName}) 모닝 브리핑 (현지시각 뉴욕 마감)`;
+        }
+        const baseDateEl = document.getElementById('us-indices-base-date-badge');
+        if (baseDateEl) {
+          baseDateEl.textContent = `기준일: ${d.getFullYear()}년 ${m}월 ${day}일(${dayName}) 뉴욕 정규장 마감`;
+        }
+      } catch (e) {}
+    }
+
     // 1. 헤드라인 및 3줄 요약 동기화 (존재할 경우)
     if (data.headline) {
       const titleEl = document.getElementById('us-market-briefing-title');
