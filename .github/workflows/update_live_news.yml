@@ -1,0 +1,36 @@
+name: Live Stock News Auto Update (네이버 증시 뉴스 100건 자동 동기화)
+
+on:
+  schedule:
+    # 한국 시간 기준: 
+    # 08:30 (장시작 전) -> UTC 23:30 (전일)
+    # 12:30 (장중 점심) -> UTC 03:30
+    # 16:30 (장마감 후) -> UTC 07:30
+    # 21:00 (야간 종합) -> UTC 12:00
+    - cron: '30 23,3,7,12 * * *'
+  workflow_dispatch: # 수동 즉시 실행 지원
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 최신 증시 뉴스 100건 수집 및 시드 갱신
+        run: node scripts/update_live_domestic_news.js
+
+      - name: 변경사항 자동 커밋 및 푸시
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/js/live_domestic_news_seed.js js/live_domestic_news_seed.js public/data/live_domestic_news.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): update live domestic news 100 [skip ci]" && git push)
