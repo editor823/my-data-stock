@@ -1,0 +1,309 @@
+{
+  "status": "000",
+  "success": true,
+  "updated_at": "2026-10-09T16:27:52.202Z",
+  "updated_date_str": "2026. 10. 10. (토)",
+  "market_health": {
+    "kospi": {
+      "val": "2,680.50",
+      "changeRate": "-2.62%",
+      "isUp": false,
+      "foreigner": "+1,240억",
+      "organ": "-420억"
+    },
+    "kosdaq": {
+      "val": "875.20",
+      "changeRate": "-0.69%",
+      "isUp": false,
+      "foreigner": "+680억",
+      "organ": "+310억"
+    },
+    "totalForeigner": "+1,920억",
+    "totalOrgan": "-110억",
+    "estimatedTradingValue": "18조 4,500억원",
+    "moodTag": "개별 테마 순환매 우세",
+    "moodDesc": "대형주 지수 관망세 속 실적 및 재료가 강력한 중소형 주도 테마로 자금 급속 쏠림"
+  },
+  "top_themes": [
+    {
+      "theme_id": "radar_591",
+      "theme_name": "서울고속버스터미널 재개발 수혜",
+      "full_theme_name": "서울고속버스터미널 재개발 수혜",
+      "change_rate": "+7.24%",
+      "composite_score": 93,
+      "total_stocks_count": 5,
+      "leader_stock": "동양고속",
+      "leader_ratio": 27.18,
+      "sub_leader_stock": "천일고속",
+      "other_stocks": [
+        "동원산업",
+        "신세계",
+        "대성산업"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "천일고속",
+          "rate": "+22.6%"
+        },
+        {
+          "name": "동원산업",
+          "rate": "-0.3%"
+        },
+        {
+          "name": "신세계",
+          "rate": "-4.4%"
+        }
+      ],
+      "past_trigger_reason": "동양고속, 서울고속버스터미널 재개발 수혜 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "서울고속버스터미널 재개발 수혜 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1509,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "동양고속, 서울고속버스터미널 재개발 수혜 시장 거래대금 쏠림",
+      "today_rising_fact": "동양고속, 서울고속버스터미널 재개발 수혜 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "동양고속, 서울고속버스터미널 재개발 수혜 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "동양고속",
+          "sub": "천일고속, 동원산업, 신세계, 대성산업"
+        },
+        "correlation": "[사업 팩트 매핑] 동양고속는 서울고속버스터미널 재개발 수혜 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "서울고속버스터미널 재개발 수혜 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_501",
+      "theme_name": "리비안",
+      "full_theme_name": "리비안(RIVIAN)",
+      "change_rate": "+3.51%",
+      "composite_score": 80,
+      "total_stocks_count": 21,
+      "leader_stock": "유진테크놀로지",
+      "leader_ratio": 30,
+      "sub_leader_stock": "알멕",
+      "other_stocks": [
+        "대원화성",
+        "아모그린텍",
+        "상신이디피"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "알멕",
+          "rate": "+14.9%"
+        },
+        {
+          "name": "대원화성",
+          "rate": "+11.5%"
+        },
+        {
+          "name": "아모그린텍",
+          "rate": "+5.5%"
+        }
+      ],
+      "past_trigger_reason": "유진테크놀로지, 리비안 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "리비안 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 584,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "유진테크놀로지, 리비안 시장 거래대금 쏠림",
+      "today_rising_fact": "유진테크놀로지, 리비안 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "유진테크놀로지, 리비안 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "유진테크놀로지",
+          "sub": "알멕, 대원화성, 아모그린텍, 상신이디피"
+        },
+        "correlation": "[사업 팩트 매핑] 유진테크놀로지는 리비안 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "리비안 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_287",
+      "theme_name": "PCB",
+      "full_theme_name": "PCB(FPCB 등)",
+      "change_rate": "+2.06%",
+      "composite_score": 79,
+      "total_stocks_count": 31,
+      "leader_stock": "에이엔피",
+      "leader_ratio": 29.69,
+      "sub_leader_stock": "네오티스",
+      "other_stocks": [
+        "성우테크론",
+        "아모그린텍",
+        "티엘비"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "네오티스",
+          "rate": "+6.8%"
+        },
+        {
+          "name": "성우테크론",
+          "rate": "+5.7%"
+        },
+        {
+          "name": "아모그린텍",
+          "rate": "+5.5%"
+        }
+      ],
+      "past_trigger_reason": "에이엔피, PCB 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "PCB 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3288,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "에이엔피, PCB 시장 거래대금 쏠림",
+      "today_rising_fact": "에이엔피, PCB 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "에이엔피, PCB 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "에이엔피",
+          "sub": "네오티스, 성우테크론, 아모그린텍, 티엘비"
+        },
+        "correlation": "[사업 팩트 매핑] 에이엔피는 PCB 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "PCB 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_446",
+      "theme_name": "2차전지",
+      "full_theme_name": "2차전지(소재/부품)",
+      "change_rate": "+1.86%",
+      "composite_score": 77,
+      "total_stocks_count": 73,
+      "leader_stock": "유진테크놀로지",
+      "leader_ratio": 30,
+      "sub_leader_stock": "삼기에너지솔루션즈",
+      "other_stocks": [
+        "피노",
+        "알멕",
+        "삼아알미늄"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "삼기에너지솔루션즈",
+          "rate": "+29.9%"
+        },
+        {
+          "name": "피노",
+          "rate": "+16.4%"
+        },
+        {
+          "name": "알멕",
+          "rate": "+14.9%"
+        }
+      ],
+      "past_trigger_reason": "유진테크놀로지, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2416,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "유진테크놀로지, 2차전지 시장 거래대금 쏠림",
+      "today_rising_fact": "유진테크놀로지, 2차전지 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "유진테크놀로지, 2차전지 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "유진테크놀로지",
+          "sub": "삼기에너지솔루션즈, 피노, 알멕, 삼아알미늄"
+        },
+        "correlation": "[사업 팩트 매핑] 유진테크놀로지는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_9",
+      "theme_name": "OLED",
+      "full_theme_name": "OLED(유기 발광 다이오드)",
+      "change_rate": "+1.72%",
+      "composite_score": 76,
+      "total_stocks_count": 80,
+      "leader_stock": "예선테크",
+      "leader_ratio": 29.9,
+      "sub_leader_stock": "디바이스",
+      "other_stocks": [
+        "에프엔에스테크",
+        "웰킵스하이텍",
+        "나래나노텍"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "디바이스",
+          "rate": "+18.9%"
+        },
+        {
+          "name": "에프엔에스테크",
+          "rate": "+14.3%"
+        },
+        {
+          "name": "웰킵스하이텍",
+          "rate": "+13.8%"
+        }
+      ],
+      "past_trigger_reason": "예선테크, OLED 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "OLED 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 11318,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "예선테크, OLED 시장 거래대금 쏠림",
+      "today_rising_fact": "예선테크, OLED 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "예선테크, OLED 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "예선테크",
+          "sub": "디바이스, 에프엔에스테크, 웰킵스하이텍, 나래나노텍"
+        },
+        "correlation": "[사업 팩트 매핑] 예선테크는 OLED 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "OLED 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    }
+  ]
+}

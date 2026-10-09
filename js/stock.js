@@ -3413,6 +3413,34 @@ window.loadMarketOverviewRadar = async function(forceRefresh = false) {
     grid.innerHTML = `
       <div style="grid-column: 1 / -1; text-align: center; padding: 24px 16px; color: #38bdf8; background: rgba(56,189,248,0.04); border-radius: 10px; border: 1px dashed rgba(56,189,248,0.25);">
         <div style="font-size: 1.4rem; margin-bottom: 6px;">📡</div>
+        <div style="font-weight: 800; font-size: 0.92rem; color: #ffedd7;">시장 전체 자금 흐름 & 당일 주도 테마 전수 스캔 중...</div>
+        <div style="font-size: 0.74rem; color: #94a3b8; margin-top: 3px;">코스피/코스닥 체력, 수급 및 거래대금 급증 주도 섹터를 복합 판정하고 있습니다.</div>
+      </div>
+    `;
+  }
+
+  // A. 정적 JSON 파일 우선 로드 (Cloudflare Pages 100% 호환 보장)
+  try {
+    const staticRes = await fetch(`data/market_overview_radar.json?t=${Date.now()}`);
+    if (staticRes.ok) {
+      const staticData = await staticRes.json();
+      if (staticData && (staticData.success || staticData.status === '000')) {
+        window.marketOverviewRadarData = staticData;
+        window.renderMarketOverviewRadar(staticData);
+        if (window.showToast && forceRefresh) {
+          window.showToast('당일 시장 판도 및 주도 테마 TOP 5가 최신화되었습니다!', '🌐');
+        }
+        return staticData;
+      }
+    }
+  } catch (errStatic) {
+    console.warn('[MarketOverviewRadar Static Fetch Fallback]', errStatic);
+  }
+  const grid = document.getElementById('radar-top-themes-grid');
+  if (grid && (!window.marketOverviewRadarData || forceRefresh)) {
+    grid.innerHTML = `
+      <div style="grid-column: 1 / -1; text-align: center; padding: 24px 16px; color: #38bdf8; background: rgba(56,189,248,0.04); border-radius: 10px; border: 1px dashed rgba(56,189,248,0.25);">
+        <div style="font-size: 1.4rem; margin-bottom: 6px;">📡</div>
         <div style="font-weight: 800; font-size: 0.92rem; color: #0f172a;">시장 전체 자금 흐름 & 당일 주도 테마 전수 스캔 중...</div>
         <div style="font-size: 0.74rem; color: #94a3b8; margin-top: 3px;">코스피/코스닥 체력, 수급 및 거래대금 급증 주도 섹터를 복합 판정하고 있습니다.</div>
       </div>
@@ -3477,6 +3505,20 @@ window.refreshTodayShootingThemes = window.refreshMarketOverviewRadar;
 // 레이더 화면 렌더링 함수
 window.renderMarketOverviewRadar = function(data) {
   if (!data) return;
+
+  // 상단 뱃지 날짜 동적 업데이트
+  const radarBadgeEl = document.getElementById('market-radar-badge');
+  if (radarBadgeEl) {
+    try {
+      const d = data.updated_at ? new Date(data.updated_at) : new Date();
+      const y = d.getFullYear();
+      const m = String(d.getMonth() + 1).padStart(2, '0');
+      const day = String(d.getDate()).padStart(2, '0');
+      const dayNames = ['일', '월', '화', '수', '목', '금', '토'];
+      const dayName = dayNames[d.getDay()];
+      radarBadgeEl.textContent = `⚡ ${y}.${m}.${day}(${dayName}) 당일 급등 재료 & 공시 타임라인`;
+    } catch (e) {}
+  }
 
   const market = data.market_health || data.market;
   const themes = Array.isArray(data.top_themes) ? data.top_themes : [];
