@@ -8507,7 +8507,6 @@ function renderTodayLeadingThemes(themes) {
       statusBadge.style.color = '#d4a373';
     }
   }
-  }
 
   // [필수 예외 처리]: 조건 충족 테마가 없을 경우 억지 추천 없이 경고 안내 표출
   if (qualifiedThemes.length === 0) {
