@@ -3436,16 +3436,7 @@ window.loadMarketOverviewRadar = async function(forceRefresh = false) {
   } catch (errStatic) {
     console.warn('[MarketOverviewRadar Static Fetch Fallback]', errStatic);
   }
-  const grid = document.getElementById('radar-top-themes-grid');
-  if (grid && (!window.marketOverviewRadarData || forceRefresh)) {
-    grid.innerHTML = `
-      <div style="grid-column: 1 / -1; text-align: center; padding: 24px 16px; color: #38bdf8; background: rgba(56,189,248,0.04); border-radius: 10px; border: 1px dashed rgba(56,189,248,0.25);">
-        <div style="font-size: 1.4rem; margin-bottom: 6px;">📡</div>
-        <div style="font-weight: 800; font-size: 0.92rem; color: #0f172a;">시장 전체 자금 흐름 & 당일 주도 테마 전수 스캔 중...</div>
-        <div style="font-size: 0.74rem; color: #94a3b8; margin-top: 3px;">코스피/코스닥 체력, 수급 및 거래대금 급증 주도 섹터를 복합 판정하고 있습니다.</div>
-      </div>
-    `;
-  }
+
 
   try {
     const res = await fetch(`${BACKEND_API_BASE}/api/market/overview-radar?t=${Date.now()}`);
