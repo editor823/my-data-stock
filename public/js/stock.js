@@ -3610,16 +3610,16 @@ window.renderMarketOverviewRadar = function(data) {
     const jsonStr = encodeURIComponent(JSON.stringify(t));
 
     return `
-      <div onclick="selectThemeFromRadar('${jsonStr}')" style="background: #ffffff; border: 1.5px solid ${rankNum === 1 ? '#f59e0b' : '#e2e8f0'}; border-radius: 14px; padding: 16px 18px; min-width: 220px; box-sizing: border-box; cursor: pointer; transition: all 0.2s ease; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 1px 4px rgba(0,0,0,0.04);" onmouseover="this.style.borderColor='#0284c7'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(2,132,199,0.12)';" onmouseout="this.style.borderColor='${rankNum === 1 ? '#f59e0b' : '#e2e8f0'}'; this.style.transform='none'; this.style.boxShadow='0 1px 4px rgba(0,0,0,0.04)';">
+            <div onclick="selectThemeFromRadar('${jsonStr}')" style="background: #201713; border: 1.5px solid ${rankNum === 1 ? '#d4a373' : '#3d2e27'}; border-radius: 14px; padding: 18px 20px; min-width: 250px; box-sizing: border-box; cursor: pointer; transition: all 0.25s ease; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 16px rgba(0,0,0,0.4);" onmouseover="this.style.background='#2a1f1a'; this.style.borderColor='#d4a373'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 24px rgba(212,163,115,0.22)';" onmouseout="this.style.background='#201713'; this.style.borderColor='${rankNum === 1 ? '#d4a373' : '#3d2e27'}'; this.style.transform='none'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.4)';">
         
-        <!-- 상단 헤더: 순위 & 테마명 (16px+) & 등락률 (15px) -->
+        <!-- 상단 헤더: 순위 & 테마명 & 등락률 -->
         <div>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
             <div style="display: flex; align-items: center; gap: 8px;">
               <span style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 6px; background: ${rankColor}; color: #ffffff; font-weight: 900; font-size: 13px;">
                 ${rankNum}
               </span>
-              <h5 style="margin: 0; font-size: 16px; font-weight: 800; color: #0f172a; letter-spacing: -0.3px;">
+              <h5 style="margin: 0; font-size: 16px; font-weight: 800; color: #ffedd7; letter-spacing: -0.3px;">
                 ${escapeHtml(t.theme_name)}
               </h5>
             </div>
@@ -3628,36 +3628,36 @@ window.renderMarketOverviewRadar = function(data) {
             </span>
           </div>
 
-          <!-- 대장주 & 부대장주 뱃지 (최소 12px, 여백 확보, 종목명 13~14px 선명) -->
+          <!-- 대장주 & 부대장주 뱃지 -->
           <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 12px;">
-            <span style="font-size: 12px; background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; padding: 3px 8px; border-radius: 6px; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
-              👑 <span style="font-weight: 800; color: #b91c1c;">대장:</span> <strong style="font-size: 13.5px; color: #0f172a; font-weight: 900;">${escapeHtml(t.leader_stock || '대장주')}</strong>
+            <span style="font-size: 12px; background: rgba(239,68,68,0.18); color: #fca5a5; border: 1px solid rgba(239,68,68,0.35); padding: 3px 8px; border-radius: 6px; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+              👑 <span style="font-weight: 800; color: #f87171;">대장:</span> <strong style="font-size: 13.5px; color: #ffedd7; font-weight: 900;">${escapeHtml(t.leader_stock || '대장주')}</strong>
             </span>
             ${t.sub_leader_stock ? `
-              <span style="font-size: 12px; background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; padding: 3px 8px; border-radius: 6px; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
-                ⚡ <span style="font-weight: 800; color: #0284c7;">부대:</span> <strong style="font-size: 13px; color: #0f172a; font-weight: 800;">${escapeHtml(t.sub_leader_stock)}</strong>
+              <span style="font-size: 12px; background: rgba(56,189,248,0.18); color: #7dd3fc; border: 1px solid rgba(56,189,248,0.35); padding: 3px 8px; border-radius: 6px; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+                ⚡ <span style="font-weight: 800; color: #38bdf8;">부대:</span> <strong style="font-size: 13px; color: #ffedd7; font-weight: 800;">${escapeHtml(t.sub_leader_stock)}</strong>
               </span>
             ` : ''}
           </div>
 
-          <!-- 상승 트리거 / 뉴스 사유 요약 (13px, leading-relaxed, text-slate-700) -->
-          <div style="font-size: 13px; color: #334155; line-height: 1.6; background: #f8fafc; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; border: 1px solid #e2e8f0; border-left: 4px solid ${rankColor}; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;" title="${escapeHtml(triggerText)}">
+          <!-- 상승 사유 요약 (다크베이지 배경 & 선명한 텍스트) -->
+          <div style="font-size: 13px; color: #e2d3c5; line-height: 1.6; background: #160e0b; border-radius: 8px; padding: 10px 12px; margin-bottom: 14px; border: 1px solid #362922; border-left: 4px solid ${rankColor}; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;" title="${escapeHtml(triggerText)}">
             💡 ${escapeHtml(triggerText)}
           </div>
         </div>
 
-        <!-- 하단 바: 복합 주도 스코어 & 버튼 (12~13px, 패딩 여유) -->
-        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 10px; margin-top: 4px;">
-          <div style="display: flex; align-items: center; gap: 5px;">
-            <span style="font-size: 12px; color: #64748b; font-weight: 600;">주도점수</span>
-            <span style="font-size: 14px; font-weight: 900; color: #0284c7;">${scoreVal}점</span>
-            <span style="font-size: 12px; color: #64748b;">(${escapeHtml(badgeText)})</span>
+        <!-- 하단 바: 복합 주도 스코어 & 버튼 (줄바꿈 찌그러짐 방지) -->
+        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #362922; padding-top: 12px; margin-top: 4px;">
+          <div style="display: flex; align-items: center; gap: 6px; white-space: nowrap;">
+            <span style="font-size: 12px; color: #a8978a; font-weight: 600;">주도점수</span>
+            <span style="font-size: 14px; font-weight: 900; color: #d4a373;">${scoreVal}점</span>
+            <span style="font-size: 11px; color: #8c7b6f;">(${escapeHtml(badgeText)})</span>
           </div>
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <button class="btn-pin-theme-card" onclick="event.stopPropagation(); pinThemeToDossier('${escapeHtml(t.theme_name)}', '${escapeHtml(t.leader_stock || '')}', '${escapeHtml(t.sub_leader_stock || '')}', '${escapeHtml(rateStr)}')" style="background: #eef2ff; border: 1px solid #c7d2fe; color: #4338ca; padding: 5px 10px; border-radius: 6px; font-size: 12px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; transition: all 0.15s ease;" onmouseover="this.style.background='#e0e7ff';" onmouseout="this.style.background='#eef2ff';">
+          <div style="display: flex; align-items: center; gap: 6px; white-space: nowrap;">
+            <button class="btn-pin-theme-card" onclick="event.stopPropagation(); pinThemeToDossier('${escapeHtml(t.theme_name)}', '${escapeHtml(t.leader_stock || '')}', '${escapeHtml(t.sub_leader_stock || '')}', '${escapeHtml(rateStr)}')" style="background: #382416; border: 1px solid #54433a; color: #ffedd7; padding: 5px 9px; border-radius: 6px; font-size: 12px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; transition: all 0.15s ease;" onmouseover="this.style.background='#4a3020'; this.style.borderColor='#d4a373';" onmouseout="this.style.background='#382416'; this.style.borderColor='#54433a';">
               📌 수첩에 박제
             </button>
-            <span style="font-size: 12.5px; color: #0284c7; font-weight: 800; display: inline-flex; align-items: center; gap: 2px; white-space: nowrap;">
+            <span style="font-size: 12px; color: #d4a373; font-weight: 800; display: inline-flex; align-items: center; gap: 2px; white-space: nowrap;">
               분석 보기 ➔
             </span>
           </div>
