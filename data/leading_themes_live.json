@@ -1,0 +1,94 @@
+{
+  "updatedAt": "2026-10-08T15:30:00+09:00",
+  "lastTradingDate": "2026-10-08",
+  "isHoliday": true,
+  "marketStatus": "closed",
+  "statusLabel": "📅 10/08(수) 장마감 주도 테마 (휴장일 기준)",
+  "top_themes": [
+    {
+      "theme_name": "서울고속버스터미널 재개발 수혜",
+      "change_rate": "+7.24%",
+      "composite_score": 97,
+      "is_real_leading": true,
+      "trading_value_eok": 524,
+      "leader_ratio": 27.18,
+      "leader_stock": "동양고속",
+      "sub_leader_stock": "천일고속",
+      "sub_stocks_top3": [
+        { "name": "천일고속", "rate": "+22.57%" },
+        { "name": "동원산업", "rate": "-0.28%" },
+        { "name": "신세계", "rate": "-4.38%" }
+      ],
+      "today_rising_fact": "서울시 반포동 서울고속버스터미널 부지 복합 개발 프로젝트 및 초고층 랜드마크 조성 추진 발표로 인해 관련 테마 상승세 견인",
+      "material_summary": "서울시 서초구 반포동 터미널 부지 대규모 현대화 복합개발 사업 인허가 및 모멘텀 집중"
+    },
+    {
+      "theme_name": "리비안(RIVIAN) & 차세대 배터리",
+      "change_rate": "+3.51%",
+      "composite_score": 95,
+      "is_real_leading": true,
+      "trading_value_eok": 539,
+      "leader_ratio": 29.93,
+      "leader_stock": "삼기에너지솔루션즈",
+      "sub_leader_stock": "알멕",
+      "sub_stocks_top3": [
+        { "name": "유진테크놀로지", "rate": "+30.00%" },
+        { "name": "알멕", "rate": "+14.87%" },
+        { "name": "대원화성", "rate": "+11.48%" }
+      ],
+      "today_rising_fact": "리비안 신차 라인업 확대 및 원통형 46파이 배터리 부품/케이스 공급 계약 체결 발표로 인해 관련 테마 상승세 견인",
+      "material_summary": "리비안 신규 모델 양산 소식과 원통형 배터리 부품사들의 독점 공급망 수혜"
+    },
+    {
+      "theme_name": "반도체 기판 & FC-BGA 유리기판",
+      "change_rate": "+2.93%",
+      "composite_score": 94,
+      "is_real_leading": true,
+      "trading_value_eok": 424,
+      "leader_ratio": 18.72,
+      "leader_stock": "다원넥스뷰",
+      "sub_leader_stock": "네오티스",
+      "sub_stocks_top3": [
+        { "name": "네오티스", "rate": "+6.77%" },
+        { "name": "티엘비", "rate": "+5.17%" },
+        { "name": "태성", "rate": "+4.69%" }
+      ],
+      "today_rising_fact": "AI 데이터센터발 차세대 패키징 FC-BGA 및 유리기판 레이저 장비 공급 가시화 발표로 인해 관련 테마 상승세 견인",
+      "material_summary": "초고성능 AI 가속기용 유리기판 공정 도입 본격화에 따른 검사/드릴/레이저 장비주 강세"
+    },
+    {
+      "theme_name": "2차전지 나트륨이온 & 차세대 ESS",
+      "change_rate": "+2.50%",
+      "composite_score": 93,
+      "is_real_leading": true,
+      "trading_value_eok": 1254,
+      "leader_ratio": 10.66,
+      "leader_stock": "더블유씨피",
+      "sub_leader_stock": "LG에너지솔루션",
+      "sub_stocks_top3": [
+        { "name": "애경케미칼", "rate": "+3.33%" },
+        { "name": "LG에너지솔루션", "rate": "+3.07%" },
+        { "name": "나인테크", "rate": "+2.96%" }
+      ],
+      "today_rising_fact": "저가형 ESS 및 차세대 나트륨이온 배터리 상용화 기술 개발 및 대형 수주 모멘텀 발표로 인해 관련 테마 상승세 견인",
+      "material_summary": "리튬 대비 가격 경쟁력이 탁월한 나트륨이온 배터리 조기 양산 및 에너지저장장치 수혜"
+    },
+    {
+      "theme_name": "OLED & 차세대 디스플레이",
+      "change_rate": "+1.72%",
+      "composite_score": 91,
+      "is_real_leading": true,
+      "trading_value_eok": 991,
+      "leader_ratio": 18.88,
+      "leader_stock": "디바이스",
+      "sub_leader_stock": "에프엔에스테크",
+      "sub_stocks_top3": [
+        { "name": "예선테크", "rate": "+29.90%" },
+        { "name": "에프엔에스테크", "rate": "+14.29%" },
+        { "name": "웰킵스하이텍", "rate": "+13.85%" }
+      ],
+      "today_rising_fact": "글로벌 IT 제조사 태블릿·노트북 라인업 OLED 채택 본격화 및 패널 제조 장비 수주 모멘텀 발표로 인해 관련 테마 상승세 견인",
+      "material_summary": "IT 기기용 8.6세대 OLED 패널 투자 재개와 관련 장비/소재주 턴어라운드"
+    }
+  ]
+}
