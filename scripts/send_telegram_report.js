@@ -96,7 +96,6 @@ function getLatestThemeTimeline() {
       try {
         const data = JSON.parse(fs.readFileSync(p, 'utf-8'));
         if (Array.isArray(data) && data.length > 0) {
-          // 가장 상세한 분석이 들어있는 최근 테마 선정
           return data[data.length - 1];
         }
       } catch (e) {}
@@ -133,13 +132,13 @@ async function run() {
     const kosdaqRate = indices.kosdaq ? (indices.kosdaq.fluctuationsRatio >= 0 ? `+${indices.kosdaq.fluctuationsRatio}%` : `${indices.kosdaq.fluctuationsRatio}%`) : '-';
     const usd = indices.usdKrw ? `${indices.usdKrw.closePrice}원` : '-';
 
-    marketSection = `📈 <b>[1. 시장 핵심 지표 요약]</b>\n` +
+    marketSection = `📈 <b>[1. 시장 핵심 지표]</b>\n` +
       `• 코스피: <b>${indices.kospi?.closePrice || '-'}</b> (${kospiRate})\n` +
       `• 코스닥: <b>${indices.kosdaq?.closePrice || '-'}</b> (${kosdaqRate})\n` +
       `• 원/달러 환율: <b>${usd}</b>\n\n`;
   }
 
-  // 2. 주도 테마 심층 분석 (심플관심종목TV 제거 및 테마 분석 대폭 강화)
+  // 2. 주도 테마 심층 분석 및 근거 기사 링크
   const theme = getLatestThemeTimeline();
   let themeSection = '';
   if (theme) {
@@ -153,31 +152,47 @@ async function run() {
     const bullish = escapeHtml(cl.conditions?.bullish || '기관/외인 순매수 유입 및 추가 수주');
     const bearish = escapeHtml(cl.conditions?.bearish || '단기 차익 실현 및 시장 변동성');
 
+    // 테마 근거 기사 링크 추출
+    let evidenceNews = '';
+    if (Array.isArray(theme.timeline) && theme.timeline.length > 0) {
+      const topNews = theme.timeline[0];
+      const nTitle = escapeHtml(topNews.news_title || '테마 핵심 보도');
+      const nUrl = topNews.news_url || `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(theme.theme_name)}`;
+      const nPress = topNews.press ? ` (${escapeHtml(topNews.press)})` : '';
+      const nKey = topNews.key_point ? `\n   ↳ <i>분석: ${escapeHtml(topNews.key_point)}</i>` : '';
+      evidenceNews = `\n📰 <b>테마 근거 기사:</b> <a href="${nUrl}"><b>${nTitle}</b></a>${nPress}${nKey}\n`;
+    }
+
     themeSection = `🎯 <b>[2. 오늘의 핵심 주도 테마 심층 분석]</b>\n` +
       `🔥 <b>테마:</b> ${themeName} (${sector})\n` +
-      `📰 <b>핵심 재료:</b> ${material}\n\n` +
-      `👑 <b>대장주:</b> <code>${leadStocks}</code>\n` +
+      `💡 <b>핵심 재료:</b> ${material}\n` +
+      evidenceNews +
+      `\n👑 <b>대장주:</b> <code>${leadStocks}</code>\n` +
       `🏃 <b>부대장/후발주:</b> ${subStocks}\n\n` +
       `📊 <b>기술적 위치:</b> ${chartPhase}\n` +
       `🟢 <b>상승 촉매:</b> ${bullish}\n` +
       `🔴 <b>주의 리스크:</b> ${bearish}\n\n`;
   }
 
-  // 3. 증시 실시간 속보 TOP 3
+  // 3. 증시 실시간 속보 TOP 3 + 네이버 뉴스 본문 링크 연동
   const newsList = getLatestNewsItems();
   let newsSection = '';
   if (newsList.length > 0) {
     const newsLines = newsList.map((n, i) => {
       const press = n.ohnm ? `[${escapeHtml(n.ohnm)}] ` : '';
       const title = escapeHtml(n.tit || n.title || '속보');
-      const sub = n.subcontent ? `\n   ↳ <i>${escapeHtml(n.subcontent.trim().slice(0, 60))}...</i>` : '';
-      return `<b>${i + 1}.</b> ${press}${title}${sub}`;
+      // 네이버 뉴스 모바일 원문 링크 생성
+      const newsUrl = (n.oid && n.aid) 
+        ? `https://n.news.naver.com/mnews/article/${n.oid}/${n.aid}`
+        : `https://finance.naver.com/news/`;
+      const sub = n.subcontent ? `\n   ↳ <i>${escapeHtml(n.subcontent.trim().slice(0, 65))}...</i>` : '';
+      return `<b>${i + 1}.</b> ${press}<a href="${newsUrl}"><b>${title}</b></a>${sub}\n   🔗 <a href="${newsUrl}">👉 [기사 원문 읽기]</a>`;
     }).join('\n\n');
 
-    newsSection = `📰 <b>[3. 증시 핵심 속보 & 특징주 헤드라인]</b>\n${newsLines}\n\n`;
+    newsSection = `📰 <b>[3. 증시 핵심 속보 & 특징주 헤드라인 (클릭시 기사 원문)]</b>\n${newsLines}\n\n`;
   }
 
-  // 4. 투자 대응 전략
+  // 4. 실전 투자 대응 전략
   const strategySection = `💡 <b>[4. 실전 투자 대응 전략]</b>\n` +
     `• 주도 테마 대장주 위주의 <b>눌림목 분할 접근</b> 원칙 준수\n` +
     `• 급등 추격 매수 지양 및 거래대금 실린 종목 선별 대응\n` +
@@ -195,7 +210,7 @@ async function run() {
 
   try {
     await sendTelegramMessage(fullReport);
-    console.log('✅ 심층 분석 주식 보고서 발송 성공!');
+    console.log('✅ 근거 기사 링크가 포함된 심층 분석 주식 보고서 발송 성공!');
   } catch (err) {
     console.error('❌ 발송 실패:', err.message);
   }
