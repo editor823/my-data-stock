@@ -28,9 +28,12 @@ jobs:
       - name: 최신 증시 뉴스 100건 수집 및 시드 갱신
         run: node scripts/update_live_domestic_news.js
 
+      - name: 심플 관심종목 TV 최신 영상 브리핑 데이터 수집
+        run: node scripts/update_simple_channel_briefing.js
+
       - name: 변경사항 자동 커밋 및 푸시
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/js/live_domestic_news_seed.js js/live_domestic_news_seed.js public/data/live_domestic_news.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): update live domestic news 100 [skip ci]" && git push)
+          git add public/js/live_domestic_news_seed.js js/live_domestic_news_seed.js public/data/live_domestic_news.json public/data/simple_channel_briefing.json data/simple_channel_briefing.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): update live domestic news & YouTube briefing [skip ci]" && git push)
