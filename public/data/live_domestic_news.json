@@ -1,5 +1,4 @@
-// [자동 생성] 네이버 실시간 증시 뉴스 최신 100건 시드 데이터 (수집 시각: 2026-10-09T15:05:22.235Z)
-const LIVE_NAVER_SEED_DATA = [
+[
   {
     "type": 1,
     "subcontent": "아마존의 대규모 할인 행사에 K뷰티 브랜드들이 잇따라 등장하면서 국내 화장품 업체들의 해외 성장세가 주목받고 있다. 에이피알(278470)과 아모레퍼시픽(090430) 등이 미국과 유럽에서 외형을 키우는 가운데 코스 ",
@@ -1000,7 +999,4 @@ const LIVE_NAVER_SEED_DATA = [
     "tit": "고위험 단일종목 레버리지 ETF 심사 29일…이억원 “상품마다 기간 달라”",
     "dt": "20261008200914"
   }
-];
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = LIVE_NAVER_SEED_DATA;
-}
+]
