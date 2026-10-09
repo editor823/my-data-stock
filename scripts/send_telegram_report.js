@@ -17,6 +17,16 @@ function loadConfig() {
   throw new Error('Telegram bot credentials not found in env or config file.');
 }
 
+function escapeHtml(text) {
+  if (!text) return '';
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 function sendTelegramMessage(text, parseMode = 'HTML') {
   return new Promise((resolve, reject) => {
     const config = loadConfig();
@@ -60,11 +70,20 @@ function sendTelegramMessage(text, parseMode = 'HTML') {
 
 function getLatestNewsSummary() {
   try {
-    const filePath = path.join(__dirname, '..', 'public', 'data', 'live_domestic_news.json');
-    if (fs.existsSync(filePath)) {
-      const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-      if (Array.isArray(data) && data.length > 0) {
-        return data.slice(0, 3).map(n => `• 📰 ${n.title}`).join('\n');
+    const paths = [
+      path.join(__dirname, '..', 'public', 'data', 'live_domestic_news.json'),
+      path.join(__dirname, '..', 'data', 'live_domestic_news.json')
+    ];
+    for (const p of paths) {
+      if (fs.existsSync(p)) {
+        const data = JSON.parse(fs.readFileSync(p, 'utf-8'));
+        if (Array.isArray(data) && data.length > 0) {
+          return data.slice(0, 3).map((n, idx) => {
+            const title = escapeHtml(n.tit || n.title || '속보');
+            const press = n.ohnm ? `[${escapeHtml(n.ohnm)}] ` : '';
+            return `${idx + 1}. ${press}${title}`;
+          }).join('\n');
+        }
       }
     }
   } catch (e) {}
@@ -98,10 +117,13 @@ async function run() {
 
   let simpleText = '';
   if (simple && simple.latestVideo) {
+    const vTitle = escapeHtml(simple.latestVideo.title || '최신 분석 영상');
+    const vDate = escapeHtml(simple.latestVideo.date || '최신');
+    const vSummary = escapeHtml(simple.latestVideo.summary || '주요 수급 및 테마 동향');
     simpleText = `\n\n📺 <b>[심플 관심종목 TV 최신 브리핑]</b>\n` +
-      `• <b>영상:</b> ${simple.latestVideo.title || '최신 분석 영상'}\n` +
-      `• <b>업로드:</b> ${simple.latestVideo.date || '최신'}\n` +
-      `• <b>핵심 요약:</b> ${simple.latestVideo.summary || '주요 수급 및 테마 동향'}`;
+      `• <b>영상:</b> ${vTitle}\n` +
+      `• <b>업로드:</b> ${vDate}\n` +
+      `• <b>핵심 요약:</b> ${vSummary}`;
   }
 
   let newsText = '';
@@ -112,7 +134,7 @@ async function run() {
   const msg = `📊 <b>[주식 인텔리전스 센터 - 실시간 브리핑 리포트]</b>\n\n` +
     `📅 <b>기준일시:</b> ${dateStr} ${timeStr}\n` +
     `⚡ <b>상태:</b> 깃허브 액션(GitHub Actions) 자동 분석 완료${newsText}${simpleText}\n\n` +
-    `🌐 <a href="https://stock-intelligence.pages.dev">주식센터 실시간 대시보드 바로가기</a>`;
+    `🌐 <a href="https://my-data-stock.pages.dev">주식센터 실시간 대시보드 바로가기</a>`;
 
   try {
     await sendTelegramMessage(msg);
