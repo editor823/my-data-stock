@@ -31,6 +31,12 @@ jobs:
       - name: 심플 관심종목 TV 최신 영상 브리핑 데이터 수집
         run: node scripts/update_simple_channel_briefing.js
 
+      - name: 텔레그램 주식 브리핑 자동 발송
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node scripts/send_telegram_report.js report
+
       - name: 변경사항 자동 커밋 및 푸시
         run: |
           git config --global user.name "github-actions[bot]"
