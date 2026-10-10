@@ -2769,7 +2769,15 @@ function initStockSubTabs() {
     youtube: document.getElementById('stock-panel-youtube')
   };
 
-  function activateSubTab(targetSub) {
+  let currentActiveSubTab = 'news';
+  let previousActiveSubTab = 'youtube';
+
+  function activateSubTab(targetSub, pushHistory = true) {
+    if (targetSub !== currentActiveSubTab) {
+      previousActiveSubTab = currentActiveSubTab;
+      currentActiveSubTab = targetSub;
+    }
+
     tabs.forEach(t => {
       if (t.getAttribute('data-sub') === targetSub) {
         t.classList.add('active');
@@ -2787,8 +2795,37 @@ function initStockSubTabs() {
     try {
       localStorage.setItem('antigravity_stock_subtab', targetSub);
     } catch (e) { }
+
+    // 브라우저 뒤로가기(History API) 완벽 연동
+    if (pushHistory) {
+      try {
+        history.pushState({ subtab: targetSub }, '', '#' + targetSub);
+      } catch (e) { }
+    }
   }
   window.activateStockSubTab = activateSubTab;
+
+  // 브라우저 뒤로가기/앞으로가기 누를 때 사이트 이탈 방지 및 이전 서브탭 복원
+  window.addEventListener('popstate', (event) => {
+    let targetSub = 'news';
+    if (event.state && event.state.subtab) {
+      targetSub = event.state.subtab;
+    } else if (location.hash) {
+      targetSub = location.hash.replace('#', '');
+    } else {
+      targetSub = previousActiveSubTab || 'youtube';
+    }
+
+    if (panels[targetSub]) {
+      activateSubTab(targetSub, false);
+      if (targetSub === 'youtube' && typeof renderYoutubeBriefingFeed === 'function') {
+        renderYoutubeBriefingFeed();
+      }
+      if (targetSub === 'deep' && typeof renderStockDeepAnalysis === 'function') {
+        renderStockDeepAnalysis('SK하이닉스', false);
+      }
+    }
+  });
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -8710,12 +8747,66 @@ ${(item.keyPoints || []).map(k => `- ${k}`).join('\n')}
   }
 };
 
+function showDeepReturnBanner(stockName) {
+  let banner = document.getElementById('deep-return-nav-banner');
+  const deepPanel = document.getElementById('stock-panel-deep');
+  if (!deepPanel) return;
+
+  if (!banner) {
+    banner = document.createElement('div');
+    banner.id = 'deep-return-nav-banner';
+    deepPanel.insertBefore(banner, deepPanel.firstChild);
+  }
+
+  banner.style.display = 'block';
+  banner.innerHTML = `
+    <div style="background: linear-gradient(135deg, #2a201c, #1f1613); border: 1.5px solid #d4a373; border-radius: 12px; padding: 14px 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.3);">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="font-size: 1.3rem;">📺</span>
+        <div>
+          <div style="font-size: 0.92rem; font-weight: 800; color: #f5ebe0;">
+            '심플 관심종목 TV' 영상 브리핑에서 <span style="color: #d4a373;">[${escapeHtml(stockName)}]</span> 분석으로 이동했습니다.
+          </div>
+          <div style="font-size: 0.78rem; color: #c5b8b1; margin-top: 2px;">
+            브라우저의 <strong>[뒤로가기]</strong> 버튼을 누르거나, 오른쪽 버튼을 누르면 보시던 유튜브 브리핑 화면으로 즉시 복귀합니다.
+          </div>
+        </div>
+      </div>
+      <button type="button" onclick="returnToPreviousSubTab()" style="display: inline-flex; align-items: center; gap: 6px; background: #d4a373; color: #1a1412; border: none; padding: 8px 18px; border-radius: 8px; font-weight: 900; font-size: 0.86rem; cursor: pointer; box-shadow: 0 2px 8px rgba(212,163,115,0.4); transition: transform 0.15s ease;">
+        <span>⬅️</span> 증시 유튜브 브리핑으로 돌아가기
+      </button>
+    </div>
+  `;
+}
+
+window.returnToPreviousSubTab = function() {
+  const banner = document.getElementById('deep-return-nav-banner');
+  if (banner) banner.style.display = 'none';
+
+  const returnSub = window._deepReturnSubTab || 'youtube';
+  if (typeof window.activateStockSubTab === 'function') {
+    window.activateStockSubTab(returnSub, true);
+  }
+  if (returnSub === 'youtube' && typeof renderYoutubeBriefingFeed === 'function') {
+    renderYoutubeBriefingFeed();
+  }
+  setTimeout(() => {
+    const targetPanel = document.getElementById('stock-panel-' + returnSub);
+    if (targetPanel) {
+      targetPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 100);
+};
+
 window.jumpToStockDeepAnalysis = function(stockName) {
   if (!stockName) return;
 
-  // 1. 5번 탭(종목 상세정보 딥분석)으로 전환
+  // 이전 탭 위치 기억
+  window._deepReturnSubTab = 'youtube';
+
+  // 1. 5번 탭(종목 상세정보 딥분석)으로 전환 (히스토리에 기록)
   if (typeof window.activateStockSubTab === 'function') {
-    window.activateStockSubTab('deep');
+    window.activateStockSubTab('deep', true);
   } else {
     const deepTab = document.querySelector('.stock-sub-tab[data-sub="deep"]');
     if (deepTab) deepTab.click();
@@ -8727,12 +8818,15 @@ window.jumpToStockDeepAnalysis = function(stockName) {
     input.value = stockName;
   }
 
-  // 3. 해당 종목 딥분석 리포트 즉시 로드 (isManual = true)
+  // 3. 딥분석 상단에 전용 복귀 배너 출력
+  showDeepReturnBanner(stockName);
+
+  // 4. 해당 종목 딥분석 리포트 즉시 로드 (isManual = true)
   if (typeof window.renderStockDeepAnalysis === 'function') {
     window.renderStockDeepAnalysis(stockName, true);
   }
 
-  // 4. 화면을 딥분석 패널로 부드럽게 스크롤
+  // 5. 화면을 딥분석 패널로 부드럽게 스크롤
   setTimeout(() => {
     const deepPanel = document.getElementById('stock-panel-deep');
     if (deepPanel) {
