@@ -2657,6 +2657,7 @@ function initStockSubTabs() {
         }
       }
       if (targetSub === 'calendar') {
+        initCalendarEventSystem();
         renderStockCalendarFeed();
       }
       if (targetSub === 'review') {
@@ -3337,6 +3338,7 @@ async function loadCalendarEventsFromStorage(forceRefresh = false) {
     if (monthCountEl) monthCountEl.textContent = '...';
   }
 
+  // 1차 시도: 백엔드 API
   try {
     const res = await fetch(`${BACKEND_API_BASE}/api/calendar/schedules?t=${Date.now()}`);
     if (res.ok) {
@@ -3345,39 +3347,21 @@ async function loadCalendarEventsFromStorage(forceRefresh = false) {
         const approvedFromApi = Array.isArray(data.approved_events) ? data.approved_events : [];
         const pendingFromApi = Array.isArray(data.pending_events) ? data.pending_events : [];
 
-        // 링크 안전 검증 적용
-        approvedFromApi.forEach(e => {
-          e.sourceUrl = getSafeNewsUrl(e.sourceUrl, e.title);
-        });
-        pendingFromApi.forEach(e => {
-          e.sourceUrl = getSafeNewsUrl(e.sourceUrl, e.title);
-        });
+        approvedFromApi.forEach(e => { e.sourceUrl = getSafeNewsUrl(e.sourceUrl, e.title); });
+        pendingFromApi.forEach(e => { e.sourceUrl = getSafeNewsUrl(e.sourceUrl, e.title); });
 
-        // 사용자가 직접 추가한 커스텀 일정 보존
         const rawLocalApproved = localStorage.getItem('stock_calendar_approved_events');
         const localApproved = rawLocalApproved ? JSON.parse(rawLocalApproved) : [];
         const userCustomEvents = localApproved.filter(e => e.id && e.id.startsWith('custom_evt_'));
-
         const rejectedList = JSON.parse(localStorage.getItem('stock_calendar_rejected_events') || '[]');
 
-        // [자동 즉시 승인]: 공모주/IPO 배제 후 하단 캘린더에 즉시 등록
         calendarApprovedEvents = [...userCustomEvents].filter(e => !isIpoNoiseEvent(e));
-
-        // 1) 공식 확정 일정 자동 등록 (IPO 노이즈 완벽 차단)
         approvedFromApi.forEach(apiEv => {
           if (!isIpoNoiseEvent(apiEv) && !rejectedList.includes(apiEv.id) && !calendarApprovedEvents.some(e => e.id === apiEv.id || (e.date === apiEv.date && e.title === apiEv.title))) {
             calendarApprovedEvents.push(apiEv);
           }
         });
 
-        // 2) AI 감지 일정 자동 즉시 승인 병합 (IPO 노이즈 완벽 차단)
-        pendingFromApi.forEach(pEv => {
-          if (!isIpoNoiseEvent(pEv) && !rejectedList.includes(pEv.id) && !calendarApprovedEvents.some(e => e.id === pEv.id || (e.date === pEv.date && e.title === pEv.title))) {
-            calendarApprovedEvents.push(pEv);
-          }
-        });
-
-        // 대기열은 사용자가 확인하거나 취소할 수 있도록 보존 (IPO 노이즈 완벽 차단)
         calendarPendingEvents = [];
         pendingFromApi.forEach(pEv => {
           if (!isIpoNoiseEvent(pEv) && !rejectedList.includes(pEv.id)) {
@@ -3385,21 +3369,62 @@ async function loadCalendarEventsFromStorage(forceRefresh = false) {
           }
         });
 
-        // 최종 IPO 필터링 보장
         calendarApprovedEvents = calendarApprovedEvents.filter(e => !isIpoNoiseEvent(e));
         calendarPendingEvents = calendarPendingEvents.filter(e => !isIpoNoiseEvent(e));
 
-        // 로컬스토리지 업데이트
         localStorage.setItem('stock_calendar_approved_events', JSON.stringify(calendarApprovedEvents));
         localStorage.setItem('stock_calendar_pending_events', JSON.stringify(calendarPendingEvents));
         return;
       }
     }
   } catch (err) {
-    console.warn('[Calendar API Error, using fallback]', err);
+    console.warn('[Calendar API Error, trying static JSON fallback]', err);
   }
 
-  // API 실패 시 로컬스토리지 폴백 (IPO 배제 및 링크 정화 포함)
+  // 2차 시도: 정적 JSON 폴백 (/data/calendar_schedules.json) - Cloudflare Pages 핵심 보장
+  try {
+    const fbRes = await fetch('/data/calendar_schedules.json?v=' + Date.now());
+    if (fbRes.ok) {
+      const fbData = await fbRes.json();
+      if (fbData && (Array.isArray(fbData.approved_events) || Array.isArray(fbData.pending_events))) {
+        const approvedFromStatic = Array.isArray(fbData.approved_events) ? fbData.approved_events : [];
+        const pendingFromStatic = Array.isArray(fbData.pending_events) ? fbData.pending_events : [];
+
+        approvedFromStatic.forEach(e => { e.sourceUrl = getSafeNewsUrl(e.sourceUrl, e.title); });
+        pendingFromStatic.forEach(e => { e.sourceUrl = getSafeNewsUrl(e.sourceUrl, e.title); });
+
+        const rawLocalApproved = localStorage.getItem('stock_calendar_approved_events');
+        const localApproved = rawLocalApproved ? JSON.parse(rawLocalApproved) : [];
+        const userCustomEvents = localApproved.filter(e => e.id && e.id.startsWith('custom_evt_'));
+        const rejectedList = JSON.parse(localStorage.getItem('stock_calendar_rejected_events') || '[]');
+
+        calendarApprovedEvents = [...userCustomEvents].filter(e => !isIpoNoiseEvent(e));
+        approvedFromStatic.forEach(apiEv => {
+          if (!isIpoNoiseEvent(apiEv) && !rejectedList.includes(apiEv.id) && !calendarApprovedEvents.some(e => e.id === apiEv.id || (e.date === apiEv.date && e.title === apiEv.title))) {
+            calendarApprovedEvents.push(apiEv);
+          }
+        });
+
+        calendarPendingEvents = [];
+        pendingFromStatic.forEach(pEv => {
+          if (!isIpoNoiseEvent(pEv) && !rejectedList.includes(pEv.id)) {
+            calendarPendingEvents.push(pEv);
+          }
+        });
+
+        calendarApprovedEvents = calendarApprovedEvents.filter(e => !isIpoNoiseEvent(e));
+        calendarPendingEvents = calendarPendingEvents.filter(e => !isIpoNoiseEvent(e));
+
+        localStorage.setItem('stock_calendar_approved_events', JSON.stringify(calendarApprovedEvents));
+        localStorage.setItem('stock_calendar_pending_events', JSON.stringify(calendarPendingEvents));
+        return;
+      }
+    }
+  } catch (err) {
+    console.warn('[Calendar Static JSON Fallback Error]', err);
+  }
+
+  // 3차 시도: 로컬스토리지 보조 데이터
   try {
     const rawApproved = localStorage.getItem('stock_calendar_approved_events');
     calendarApprovedEvents = (rawApproved ? JSON.parse(rawApproved) : [])
@@ -3525,39 +3550,39 @@ function renderPendingEventsUI() {
 
   if (safePending.length === 0) {
     listEl.innerHTML = `
-      <div style="text-align: center; padding: 24px 14px; background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px dashed rgba(168,85,247,0.25);">
+      <div style="text-align: center; padding: 24px 14px; background: #1f1613; border-radius: 10px; border: 1px dashed #4a3b34;">
         <div style="font-size: 1.3rem; margin-bottom: 6px;">🎉</div>
-        <div style="font-size: 0.88rem; font-weight: 700; color: #475569;">현재 대기 중인 AI 추천 일정이 모두 처리되었습니다.</div>
-        <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 4px;">새로운 뉴스가 수집되면 AI가 미래 날짜와 일정을 자동으로 탐지하여 이곳에 표시합니다.</div>
+        <div style="font-size: 0.88rem; font-weight: 700; color: #f5ebe0;">현재 대기 중인 AI 추천 일정이 모두 처리되었습니다.</div>
+        <div style="font-size: 0.75rem; color: #a89f91; margin-top: 4px;">새로운 뉴스가 수집되면 AI가 미래 날짜와 일정을 자동으로 탐지하여 이곳에 표시합니다.</div>
       </div>
     `;
     return;
   }
 
   listEl.innerHTML = safePending.map((item, idx) => `
-    <div style="display: flex; justify-content: space-between; align-items: center; background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 10px; padding: 12px 16px; gap: 12px; transition: all 0.2s ease; flex-wrap: wrap; box-shadow: 0 1px 3px rgba(0,0,0,0.02);" onmouseover="this.style.borderColor='#cbd5e1';" onmouseout="this.style.borderColor='#4a3b34';">
+    <div style="display: flex; justify-content: space-between; align-items: center; background: #1f1613; border: 1.5px solid #3e312b; border-radius: 10px; padding: 12px 16px; gap: 12px; transition: all 0.2s ease; flex-wrap: wrap; box-shadow: 0 2px 6px rgba(0,0,0,0.2);" onmouseover="this.style.borderColor='#d4a373';" onmouseout="this.style.borderColor='#3e312b';">
       <!-- 좌측 메타 및 내용 -->
       <div style="display: flex; align-items: center; gap: 14px; flex: 1; min-width: 260px;">
         <!-- 날짜 박스 -->
-        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 6px 10px; text-align: center; min-width: 90px; flex-shrink: 0;">
-          <div style="font-size: 0.78rem; font-weight: 800; color: #7c3aed;">${escapeHtml(item.dateDisplay || item.date)}</div>
-          <div style="font-size: 0.68rem; color: #64748b;">AI 감지 일정</div>
+        <div style="background: #2a201c; border: 1px solid #4a3b34; border-radius: 8px; padding: 6px 10px; text-align: center; min-width: 90px; flex-shrink: 0;">
+          <div style="font-size: 0.78rem; font-weight: 800; color: #d4a373;">${escapeHtml(item.dateDisplay || item.date)}</div>
+          <div style="font-size: 0.68rem; color: #a89f91;">AI 감지 일정</div>
         </div>
 
         <div style="flex: 1; min-width: 0;">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px; flex-wrap: wrap;">
-            <span style="font-size: 0.7rem; background: #f3e8ff; color: #7e22ce; border: 1px solid #d8b4fe; padding: 1px 7px; border-radius: 4px; font-weight: 800;">
+            <span style="font-size: 0.7rem; background: rgba(212, 163, 115, 0.15); color: #d4a373; border: 1px solid rgba(212, 163, 115, 0.3); padding: 1px 7px; border-radius: 4px; font-weight: 800;">
               ${escapeHtml(item.tag || '일정')}
             </span>
-            <span style="font-size: 0.7rem; color: #64748b;">
+            <span style="font-size: 0.7rem; color: #a89f91;">
               출처: ${escapeHtml(item.press || '언론사')}
             </span>
           </div>
-          <div style="font-size: 0.92rem; font-weight: 800; color: #0f172a; margin-bottom: 2px;">
+          <div style="font-size: 0.92rem; font-weight: 800; color: #f5ebe0; margin-bottom: 2px;">
             ${escapeHtml(item.title)}
           </div>
-          <div style="font-size: 0.76rem; color: #64748b; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-            <a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: none; font-weight: 700;">
+          <div style="font-size: 0.76rem; color: #a89f91; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+            <a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: none; font-weight: 700;">
               📰 원문: ${escapeHtml(item.sourceTitle || item.title)} ↗
             </a>
           </div>
@@ -3566,10 +3591,10 @@ function renderPendingEventsUI() {
 
       <!-- 우측 승인 / 거절 액션 버튼 -->
       <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
-        <button type="button" onclick="approvePendingEvent(${idx})" style="background: #dcfce7; color: #15803d; border: 1px solid #86efac; padding: 6px 14px; border-radius: 6px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: all 0.2s;" onmouseover="this.style.background='#15803d'; this.style.color='#fff';" onmouseout="this.style.background='#dcfce7'; this.style.color='#15803d';">
+        <button type="button" onclick="approvePendingEvent(${idx})" style="background: #1f1613; color: #34d399; border: 1.5px solid #059669; padding: 6px 14px; border-radius: 6px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: all 0.2s;" onmouseover="this.style.background='#059669'; this.style.color='#fff';" onmouseout="this.style.background='#1f1613'; this.style.color='#34d399';">
           <span>✔</span> 승인
         </button>
-        <button type="button" onclick="rejectPendingEvent(${idx})" style="background: #fee2e2; color: #dc2626; border: 1px solid #fca5a5; padding: 6px 12px; border-radius: 6px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: all 0.2s;" onmouseover="this.style.background='#dc2626'; this.style.color='#fff';" onmouseout="this.style.background='#fee2e2'; this.style.color='#dc2626';">
+        <button type="button" onclick="rejectPendingEvent(${idx})" style="background: #1f1613; color: #f87171; border: 1.5px solid #dc2626; padding: 6px 12px; border-radius: 6px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: all 0.2s;" onmouseover="this.style.background='#dc2626'; this.style.color='#fff';" onmouseout="this.style.background='#1f1613'; this.style.color='#f87171';">
           <span>✖</span> 거절
         </button>
       </div>
@@ -3686,14 +3711,11 @@ function renderApprovedCalendarUI() {
 
   if (!weekWrap || !monthWrap) return;
 
-  // [원천 차단 강력 블랙리스트 필터] 공모주, IPO, 청약, 공모가 관련 데이터 원천 제외
   const safeApproved = (Array.isArray(calendarApprovedEvents) ? calendarApprovedEvents : [])
     .filter(e => !isIpoNoiseEvent(e));
 
-  // 날짜 오름차순(가까운 날짜 순서) 정렬
   const sorted = [...safeApproved].sort((a, b) => (a.date || '').localeCompare(b.date || ''));
 
-  // 이번 주(D-7 이내) vs 중장기(D-8 이상 또는 미래) 분기
   const weekEvents = [];
   const monthEvents = [];
 
@@ -3710,30 +3732,29 @@ function renderApprovedCalendarUI() {
   if (monthCountEl) monthCountEl.textContent = `${monthEvents.length}건`;
 
   const renderCard = (e, isWeek = true) => {
-    const { dDayStr, diffDays } = calculateDDay(e.date);
-    const color = isWeek ? '#0284c7' : '#047857';
-    const bg = isWeek ? '#e0f2fe' : '#ecfdf5';
-    const border = isWeek ? '#7dd3fc' : '#a7f3d0';
+    const { dDayStr } = calculateDDay(e.date);
+    const color = isWeek ? '#38bdf8' : '#34d399';
+    const bg = isWeek ? 'rgba(56, 189, 248, 0.15)' : 'rgba(52, 211, 153, 0.15)';
+    const border = isWeek ? 'rgba(56, 189, 248, 0.35)' : 'rgba(52, 211, 153, 0.35)';
 
-    // 카테고리별 뱃지 스타일 매핑 ([정부정책], [항공/우주], [바이오/임상], [본계약/수주], [글로벌 이벤트])
     const categoryName = e.category || e.tag || '모멘텀';
-    let catBadgeColor = '#0369a1';
-    let catBadgeBg = '#e0f2fe';
-    let catBadgeBorder = '#bae6fd';
+    let catBadgeColor = '#d4a373';
+    let catBadgeBg = 'rgba(212, 163, 115, 0.15)';
+    let catBadgeBorder = 'rgba(212, 163, 115, 0.35)';
 
-    if (categoryName.includes('정부정책')) {
+    if (categoryName.includes('정부정책') || categoryName.includes('매크로')) {
       catBadgeColor = '#f59e0b';
       catBadgeBg = 'rgba(245, 158, 11, 0.15)';
       catBadgeBorder = 'rgba(245, 158, 11, 0.35)';
     } else if (categoryName.includes('항공') || categoryName.includes('우주')) {
-      catBadgeColor = '#4338ca';
-      catBadgeBg = '#e0e7ff';
-      catBadgeBorder = '#c7d2fe';
+      catBadgeColor = '#818cf8';
+      catBadgeBg = 'rgba(129, 140, 248, 0.15)';
+      catBadgeBorder = 'rgba(129, 140, 248, 0.35)';
     } else if (categoryName.includes('바이오') || categoryName.includes('임상')) {
-      catBadgeColor = '#ec4899';
-      catBadgeBg = 'rgba(236, 72, 153, 0.15)';
-      catBadgeBorder = 'rgba(236, 72, 153, 0.35)';
-    } else if (categoryName.includes('본계약') || categoryName.includes('수주')) {
+      catBadgeColor = '#f472b6';
+      catBadgeBg = 'rgba(244, 114, 182, 0.15)';
+      catBadgeBorder = 'rgba(244, 114, 182, 0.35)';
+    } else if (categoryName.includes('원자력') || categoryName.includes('SMR') || categoryName.includes('수주') || categoryName.includes('방산')) {
       catBadgeColor = '#10b981';
       catBadgeBg = 'rgba(16, 185, 129, 0.15)';
       catBadgeBorder = 'rgba(16, 185, 129, 0.35)';
@@ -3743,12 +3764,11 @@ function renderApprovedCalendarUI() {
     const newsLink = getSafeNewsUrl(e.sourceUrl || e.news_url, e.title);
 
     return `
-      <div style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 12px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; transition: all 0.2s ease; box-shadow: 0 1px 3px rgba(0,0,0,0.03);" onmouseover="this.style.borderColor='#93c5fd';" onmouseout="this.style.borderColor='#4a3b34';">
+      <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 12px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.2);" onmouseover="this.style.borderColor='#d4a373';" onmouseout="this.style.borderColor='#3e312b';">
         <div style="flex: 1; min-width: 0;">
-          <!-- 1. 날짜 + D-Day + 카테고리 뱃지 -->
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 6px;">
             <div style="display: flex; align-items: center; gap: 6px;">
-              <span style="font-size: 0.88rem; font-weight: 900; color: ${color};">${escapeHtml(e.dateDisplay || e.date)}</span>
+              <span style="font-size: 0.88rem; font-weight: 900; color: #f5ebe0;">${escapeHtml(e.dateDisplay || e.date)}</span>
               <span style="font-size: 0.72rem; background: ${bg}; color: ${color}; border: 1px solid ${border}; padding: 2px 8px; border-radius: 6px; font-weight: 800;">
                 ${escapeHtml(dDayStr)}
               </span>
@@ -3758,55 +3778,36 @@ function renderApprovedCalendarUI() {
             </span>
           </div>
 
-          <!-- 2. 이벤트명 -->
-          <div style="font-size: 0.95rem; font-weight: 800; color: #0f172a; margin-bottom: 6px; line-height: 1.45;">
+          <div style="font-size: 0.95rem; font-weight: 800; color: #f5ebe0; margin-bottom: 6px; line-height: 1.45;">
             ${escapeHtml(e.title)}
           </div>
 
-          <!-- 3. 재료 출처 및 요약 발췌 -->
-          <div style="font-size: 0.78rem; color: #334155; line-height: 1.55; margin-bottom: 8px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 8px 10px; border-radius: 6px; border-left: 3px solid ${catBadgeColor};">
+          <div style="font-size: 0.8rem; color: #d7ccc8; line-height: 1.55; margin-bottom: 8px; background: #2a201c; border: 1.5px solid #4a3b34; padding: 10px 12px; border-radius: 8px; border-left: 3px solid ${catBadgeColor};">
             ${escapeHtml(descText)}
           </div>
 
-          <!-- 4. 기사 원문 직결 링크 -->
           <div style="font-size: 0.75rem; display: flex; justify-content: space-between; align-items: center;">
-            <a href="${escapeHtml(newsLink)}" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: none; font-weight: 800; display: inline-flex; align-items: center; gap: 4px; transition: color 0.15s;" onmouseover="this.style.color='#0369a1';" onmouseout="this.style.color='#0284c7';">
-              <span>📰 기사 원문 확인</span> <span>↗</span>
+            <a href="${escapeHtml(newsLink)}" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: none; font-weight: 800; display: inline-flex; align-items: center; gap: 4px; transition: color 0.15s;" onmouseover="this.style.color='#7dd3fc';" onmouseout="this.style.color='#38bdf8';">
+              <span>📰 모멘텀 상세 확인</span> <span>↗</span>
             </a>
-            <span style="font-size: 0.7rem; color: #64748b;">${escapeHtml(e.press || '언론 종합')}</span>
+            <span style="font-size: 0.7rem; color: #a89f91;">${escapeHtml(e.press || '언론 종합')}</span>
           </div>
         </div>
 
-        <!-- 삭제 버튼 -->
-        <button type="button" onclick="deleteApprovedEvent('${e.id}')" title="캘린더에서 삭제" style="background: transparent; border: none; color: #64748b; font-size: 0.95rem; cursor: pointer; padding: 2px 6px; border-radius: 4px; transition: color 0.15s;" onmouseover="this.style.color='#ef4444';" onmouseout="this.style.color='#64748b';">
-          🗑️
+        <button type="button" onclick="deleteApprovedEvent('${e.id}')" title="이 일정 삭제" style="background: transparent; border: none; color: #a89f91; cursor: pointer; font-size: 0.95rem; padding: 4px; line-height: 1; transition: color 0.15s;" onmouseover="this.style.color='#ef4444';" onmouseout="this.style.color='#a89f91';">
+          ✕
         </button>
       </div>
     `;
   };
 
-  if (weekEvents.length === 0) {
-    weekWrap.innerHTML = `
-      <div style="text-align: center; padding: 30px 14px; color: #94a3b8; background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px dashed rgba(255,255,255,0.06);">
-        <div style="font-size: 1.2rem; margin-bottom: 4px;">📭</div>
-        <div style="font-size: 0.82rem; font-weight: 700; color: #475569;">이번 주 등록된 임박 일정이 없습니다.</div>
-        <div style="font-size: 0.74rem; color: #64748b; margin-top: 2px;">상단 AI 탐지 대기열에서 일정을 승인하거나 직접 추가해보세요.</div>
-      </div>
-    `;
-  } else {
-    weekWrap.innerHTML = weekEvents.map(e => renderCard(e, true)).join('');
-  }
+  weekWrap.innerHTML = weekEvents.length > 0
+    ? weekEvents.map(e => renderCard(e, true)).join('')
+    : '<div style="color: #a89f91; font-size: 0.85rem; padding: 24px; text-align: center; background: #1f1613; border: 1px dashed #4a3b34; border-radius: 8px;">이번 주 D-7 이내 예정된 일정이 없습니다.</div>';
 
-  if (monthEvents.length === 0) {
-    monthWrap.innerHTML = `
-      <div style="text-align: center; padding: 30px 14px; color: #94a3b8; background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px dashed rgba(255,255,255,0.06);">
-        <div style="font-size: 1.2rem; margin-bottom: 4px;">🔭</div>
-        <div style="font-size: 0.82rem; font-weight: 700; color: #475569;">중장기 예정 일정이 없습니다.</div>
-      </div>
-    `;
-  } else {
-    monthWrap.innerHTML = monthEvents.map(e => renderCard(e, false)).join('');
-  }
+  monthWrap.innerHTML = monthEvents.length > 0
+    ? monthEvents.map(e => renderCard(e, false)).join('')
+    : '<div style="color: #a89f91; font-size: 0.85rem; padding: 24px; text-align: center; background: #1f1613; border: 1px dashed #4a3b34; border-radius: 8px;">이번 달~다음 달 예정된 중장기 모멘텀이 없습니다.</div>';
 }
 
 // [➕ 나만의 관심 일정 추가] 수동 모달 연동
@@ -7107,22 +7108,21 @@ async function renderStockCalendarFeed() {
   const container = document.getElementById('stock-calendar-container');
   if (!container) return;
 
-  // 이미 캐시가 존재하는 경우 즉시 렌더링
   if (liveStockCalendarCache && liveStockCalendarCache.length > 0) {
     renderStockCalendarCards(container, liveStockCalendarCache);
     return;
   }
 
   container.innerHTML = `
-    <div style="grid-column: 1 / -1; padding: 28px; text-align: center; color: #94a3b8; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.1); border-radius: 12px;">
-      <div style="font-size: 1.1rem; margin-bottom: 8px;">⏳ 증시 핵심 일정 및 실시간 모멘텀 캘린더를 불러오는 중...</div>
-      <div style="font-size: 0.78rem; color: #64748b;">FOMC, 금통위, 실적 발표, 주요 공시 및 학회 일정을 실시간 연동하고 있습니다.</div>
+    <div style="grid-column: 1 / -1; padding: 28px; text-align: center; color: #d7ccc8; background: #1f1613; border: 1px dashed #4a3b34; border-radius: 12px;">
+      <div style="font-size: 1.1rem; margin-bottom: 8px; color: #f5ebe0;">⏳ 증시 핵심 일정 및 실시간 모멘텀 캘린더를 불러오는 중...</div>
+      <div style="font-size: 0.78rem; color: #a89f91;">FOMC, 금통위, 실적 발표, 주요 공시 및 학회 일정을 실시간 연동하고 있습니다.</div>
     </div>
   `;
 
   let items = [];
 
-  // 1차 시도: 최신 공식 캘린더 데이터 (/api/calendar/schedules) 최우선 직접 연동
+  // 1차 시도: 백엔드 API
   try {
     const resp = await fetch(`${BACKEND_API_BASE}/api/calendar/schedules?t=${Date.now()}`);
     if (resp.ok) {
@@ -7140,13 +7140,33 @@ async function renderStockCalendarFeed() {
         }));
       }
     }
-  } catch (e) {
-    console.warn('1차 증시 일정 API 호출 지연:', e);
+  } catch (e) { }
+
+  // 2차 시도: 정적 JSON 폴백 (/data/calendar_schedules.json) - Cloudflare Pages
+  if (!items || items.length === 0) {
+    try {
+      const fbResp = await fetch('/data/calendar_schedules.json?v=' + Date.now());
+      if (fbResp.ok) {
+        const fbData = await fbResp.json();
+        if (fbData && Array.isArray(fbData.approved_events) && fbData.approved_events.length > 0) {
+          items = fbData.approved_events.map(ev => ({
+            title: ev.title,
+            description: ev.desc,
+            time: ev.dateDisplay || ev.date,
+            media: ev.press || '증시캘린더',
+            link: ev.sourceUrl,
+            originallink: ev.sourceUrl,
+            badge: ev.tag || '주요 일정',
+            date: ev.date
+          }));
+        }
+      }
+    } catch (err) { }
   }
 
-  // 2차 시도: 동기화된 캘린더 시스템 데이터 (calendarApprovedEvents 및 calendarPendingEvents)
+  // 3차 시도: 로컬 저장소
   if (!items || items.length === 0) {
-    const localEvents = [...(calendarApprovedEvents || []), ...(calendarPendingEvents || [])];
+    const localEvents = [...(calendarApprovedEvents || [])];
     if (localEvents.length > 0) {
       items = localEvents.map(ev => ({
         title: ev.title,
@@ -7161,36 +7181,11 @@ async function renderStockCalendarFeed() {
     }
   }
 
-  // 3차 시도: 네이버 실시간 뉴스 캐시에서 일정 키워드 매칭 (공모주/청약 제외)
-  if (!items || items.length === 0) {
-    if (typeof liveDomesticNewsCache !== 'undefined' && Array.isArray(liveDomesticNewsCache) && liveDomesticNewsCache.length > 0) {
-      const scheduleKeywords = /일정|발표|개최|서명|공개|착공|준공|임상|승인|수주|FOMC|금통위|실적|주총/i;
-      const matched = liveDomesticNewsCache.filter(n => {
-        if (isIpoNoiseEvent(n)) return false;
-        return scheduleKeywords.test(n.title) || scheduleKeywords.test(n.summary);
-      });
-      if (matched.length > 0) {
-        items = matched.map(n => ({
-          title: n.title,
-          description: n.summary,
-          time: n.time,
-          media: n.media,
-          link: n.directUrl,
-          originallink: n.directUrl,
-          badge: n.tag || '일정 속보'
-        }));
-      }
-    }
-  }
-
-  // 최종 강력 블랙리스트 필터링 적용 (공모주/IPO 원천 차단)
   items = (items || []).filter(it => !isIpoNoiseEvent(it));
 
-  // 데이터 정규화 및 캐싱 (최신 8건)
   if (items && items.length > 0) {
     liveStockCalendarCache = parseStockCalendarItems(items).slice(0, 8);
   } else {
-    // 기본 모멘텀 캘린더 8건
     liveStockCalendarCache = getFallbackStockCalendarItems();
   }
 
@@ -7311,7 +7306,7 @@ function renderStockCalendarCards(container, list) {
 
   if (!list || list.length === 0) {
     container.innerHTML = `
-      <div style="grid-column: 1 / -1; padding: 24px; text-align: center; color: #475569; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; font-weight: 700;">
+      <div style="grid-column: 1 / -1; padding: 24px; text-align: center; color: #a89f91; background: #1f1613; border: 1px solid #4a3b34; border-radius: 10px; font-weight: 700;">
         표시할 실시간 증시 일정이 없습니다.
       </div>
     `;
@@ -7321,28 +7316,28 @@ function renderStockCalendarCards(container, list) {
   container.innerHTML = list.map(news => {
     const badgeStyle = getHighContrastBadgeStyle(news.badge, news.badgeColor);
     return `
-      <div style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; box-shadow: 0 1px 3px rgba(0,0,0,0.03);" onmouseover="this.style.borderColor='#94a3b8'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)';" onmouseout="this.style.borderColor='#4a3b34'; this.style.boxShadow='0 1px 3px rgba(0,0,0,0.03)';">
+      <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.2);" onmouseover="this.style.borderColor='#d4a373';" onmouseout="this.style.borderColor='#3e312b';">
         <div>
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
             <span style="font-size: 0.74rem; background: ${badgeStyle.bg}; color: ${badgeStyle.color}; border: 1.5px solid ${badgeStyle.border}; padding: 2px 8px; border-radius: 4px; font-weight: 900;">
               ${escapeHtml(news.badge)}
             </span>
-            <span style="font-size: 0.74rem; color: #0369a1; font-weight: 800; background: #e0f2fe; border: 1px solid #bae6fd; padding: 2px 7px; border-radius: 4px;">
+            <span style="font-size: 0.74rem; color: #d4a373; font-weight: 800; background: #352924; border: 1px solid #4a3b34; padding: 2px 7px; border-radius: 4px;">
               ${escapeHtml(news.time)}
             </span>
           </div>
-          <div style="font-size: 0.95rem; font-weight: 900; color: #0f172a; line-height: 1.45; margin-bottom: 8px;">
+          <div style="font-size: 0.95rem; font-weight: 900; color: #f5ebe0; line-height: 1.45; margin-bottom: 8px;">
             ${escapeHtml(news.title)}
           </div>
-          <div style="font-size: 0.82rem; color: #334155; font-weight: 500; line-height: 1.55; margin-bottom: 12px;">
+          <div style="font-size: 0.82rem; color: #d7ccc8; font-weight: 500; line-height: 1.55; margin-bottom: 12px;">
             ${escapeHtml(news.summary)}
           </div>
         </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 10px;">
-          <span style="font-size: 0.74rem; color: #64748b;">
-            출처: <strong style="color: #0f172a; font-weight: 800;">${escapeHtml(news.source)}</strong>
+        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #3e312b; padding-top: 10px;">
+          <span style="font-size: 0.74rem; color: #a89f91;">
+            출처: <strong style="color: #f5ebe0; font-weight: 800;">${escapeHtml(news.source)}</strong>
           </span>
-          <a href="${news.directUrl}" target="_blank" rel="noopener noreferrer" style="background: #eff6ff; color: #0284c7; border: 1.5px solid #bfdbfe; padding: 4px 11px; border-radius: 6px; font-size: 0.76rem; text-decoration: none; font-weight: 800; white-space: nowrap; transition: all 0.15s;" onmouseover="this.style.background='#0284c7'; this.style.color='#ffffff';" onmouseout="this.style.background='#eff6ff'; this.style.color='#0284c7';">
+          <a href="${news.directUrl}" target="_blank" rel="noopener noreferrer" style="background: #352924; color: #d4a373; border: 1.5px solid #4a3b34; padding: 4px 11px; border-radius: 6px; font-size: 0.76rem; text-decoration: none; font-weight: 800; white-space: nowrap; transition: all 0.15s;" onmouseover="this.style.background='#d4a373'; this.style.color='#1a1412';" onmouseout="this.style.background='#352924'; this.style.color='#d4a373';">
             상세 일정 ↗
           </a>
         </div>
