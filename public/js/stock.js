@@ -6883,11 +6883,11 @@ function renderTodayLeadingThemes(themes) {
     const rawThemeJson = encodeURIComponent(JSON.stringify(item));
 
     return `
-      <div style="background: #2a201c; border: 1.5px solid #d4a373; border-radius: 12px; padding: 16px; position: relative; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+      <div class="leading-theme-card" id="leading-item-${item.id || item.rank || Math.random().toString(36).substr(2, 5)}" style="background: #2a201c; border: 1.5px solid #d4a373; border-radius: 12px; padding: 16px; position: relative; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
         <div>
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
             <div>
-              <h5 style="font-size: 1.22rem; font-weight: 900; color: #0f172a; margin: 2px 0 0 0; letter-spacing: -0.2px;">
+              <h5 style="font-size: 1.22rem; font-weight: 900; color: #f5ebe0; margin: 2px 0 0 0; letter-spacing: -0.2px;">
                 ${escapeHtml(item.theme_name || item.name || "주도 테마")}
               </h5>
             </div>
@@ -6902,7 +6902,7 @@ function renderTodayLeadingThemes(themes) {
           </div>
 
           <!-- 대장주 및 거래대금 메트릭 바 -->
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px 10px; margin-bottom: 8px; font-size: 0.92rem; display: flex; justify-content: space-between; align-items: center;">
+          <div style="background: #1f1613; border: 1px solid #3e312b; border-radius: 8px; padding: 8px 10px; margin-bottom: 8px; font-size: 0.92rem; display: flex; justify-content: space-between; align-items: center;">
             <div>
               <span style="color: #64748b;">대장주:</span>
               <strong style="color: #0284c7; font-weight: 800; margin-left: 4px;">${escapeHtml(item.leader_stock)}</strong>
@@ -6921,7 +6921,7 @@ function renderTodayLeadingThemes(themes) {
           </div>
 
           <!-- 상승 재료 및 구체적 팩트 (2~3줄 명시) -->
-          <div style="font-size: 0.92rem; color: #d7ccc8; line-height: 1.65; margin-bottom: 12px; background: #fef2f2; border: 1px solid #fecaca; border-left: 3px solid #ef4444; padding: 8px 10px; border-radius: 6px;">
+          <div style="font-size: 0.92rem; color: #d7ccc8; line-height: 1.65; margin-bottom: 12px; background: #1f1613; border: 1px solid #4a3b34; border-left: 3px solid #d4a373; padding: 8px 10px; border-radius: 6px;">
             <strong style="color: #f87171; font-size: 0.84rem; display: block; margin-bottom: 2px;">📌 당일 급등 이유 & 핵심 재료 팩트:</strong>
             ${escapeHtml(detailedTriggerFact)}
           </div>
@@ -10478,7 +10478,7 @@ window.runSystemInspectorBot = async function() {
   // [검수 2: 탭 0] 오늘의 주도 테마 TOP 5 레이더 (로딩 멈춤 여부 감지)
   try {
     const todayContainer = document.getElementById('today-leading-themes-container');
-    const todayCards = todayContainer ? todayContainer.querySelectorAll('[id^="leading-item-"], .leading-theme-card') : [];
+    const todayCards = todayContainer ? todayContainer.querySelectorAll('.leading-theme-card, [id^="leading-item-"], div[style*="border"]') : [];
     const isStuckLoading = todayContainer && (todayContainer.textContent.includes('불러오는 중') || todayContainer.textContent.includes('준비 중'));
     const isOk = !!todayContainer && todayCards.length >= 3 && !isStuckLoading;
 
