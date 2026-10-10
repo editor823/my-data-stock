@@ -23,14 +23,102 @@
     "timeline": [
       {
         "date": "2026-09-18",
-        "stage": "실시간 보도",
+        "stage": "증권사 리포트",
         "press": "NH투자증권 리포트",
         "news_title": "[리포트] 체코 30조 원전 주기기 공급 확정 및 미국 SMR 뉴스케일 파워 수주 (목표가: 32,000원)",
         "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%91%90%EC%82%B0%EC%97%90%EB%84%88%EB%B9%8C%EB%A6%AC%ED%8B%B0",
-        "key_point": "투자의견: Buy(유지) | 애널리스트 분석 및 목표주가 단서",
-        "is_dart": false
+        "key_point": "투자의견: Buy(유지) | 두산에너빌리티 주기기 제작 독점 파이프라인 가동",
+        "stockName": "두산에너빌리티",
+        "is_dart": false,
+        "is_report": true,
+        "tag": "증권사 리서치"
+      },
+      {
+        "date": "2026-09-14",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 두산에너빌리티, 체코 신규 원전 2기 주기기 우선협상대상 공급 계약 체결",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EB%91%90%EC%82%B0%EC%97%90%EB%84%88%EB%B9%8C%EB%A6%AC%ED%8B%B0",
+        "key_point": "계약금액: 약 4조 5,000억원 규모 | 체코 두코바니 5·6호기 원자로 및 터빈 주기기 턴키 납품",
+        "stockName": "두산에너빌리티",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-09-09",
+        "stage": "실시간 보도",
+        "press": "서울경제",
+        "news_title": "우진엔텍, 원전 해체 및 계측제어설비(MMIS) 정비 독점 수주 확대",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%9A%B0%EC%A7%84%EC%97%94%ED%85%8D",
+        "key_point": "국내 가동 원전 25기 대상 경상정비 유지보수 용역 수주 및 원전 안전 시스템 핵심 국산화",
+        "stockName": "우진엔텍",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
+      },
+      {
+        "date": "2026-09-02",
+        "stage": "증권사 리포트",
+        "press": "하나증권 리포트",
+        "news_title": "[리포트] 비에이치아이, 글로벌 원전 르네상스 복수기(Condenser) 수주 랠리 본격화",
+        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%B9%84%EC%97%90%EC%9D%B4%EC%B9%98%EC%95%84%EC%9D%B4",
+        "key_point": "투자의견: Buy(상향) | 목표주가: 18,500원 | 웨스팅하우스 및 한수원 동시 공급 벤더 지위",
+        "stockName": "비에이치아이",
+        "is_dart": false,
+        "is_report": true,
+        "tag": "증권사 리서치"
+      },
+      {
+        "date": "2026-08-25",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 한신기계, 원자력발전소용 무급유식 공기압축기 장기 공급 계약 체결",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%ED%95%9C%EC%8B%A0%EA%B8%B0%EA%B3%84",
+        "key_point": "신한울 3·4호기 건설용 특수 컴프레서 공급 건으로 총 185억원 규모",
+        "stockName": "한신기계",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-08-16",
+        "stage": "실시간 보도",
+        "press": "매일경제",
+        "news_title": "우리기술, SMR 분산형 전력망 제어시스템 국책과제 주관기관 단독 선정",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%9A%B0%EB%A6%AC%EA%B8%B0%EC%88%A0",
+        "key_point": "차세대 혁신형 SMR i-SMR 계측제어 소프트웨어 개발 주도, 상용화 시 글로벌 수출 기대",
+        "stockName": "우리기술",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
+      },
+      {
+        "date": "2026-08-05",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 보성파워텍, 한수원향 원자력발전소 철골 구조물 및 송전철탑 단일공급계약 (128억원)",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EB%B3%B4%EC%84%B1%ED%8C%8C%EC%9B%8C%ED%85%8D",
+        "key_point": "신규 원전 건설 핵심 인프라 철골 납품, 최근 매출액 대비 18.2% 규모 수주",
+        "stockName": "보성파워텍",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-07-22",
+        "stage": "핵심 이벤트",
+        "press": "한국수력원자력",
+        "news_title": "[이벤트] 팀코리아, 체코 두코바니 신규 원전 수주 본계약 최종 협상 착수",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%B2%B4%EC%BD%94%20%EC%9B%90%EC%A0%84%20%ED%8C%80%EC%BD%94%EB%A6%AC%EC%95%84",
+        "key_point": "체코 산업부 및 발주사(EDU II) 대표단 방한 및 창원 원전 공장 실사 진행",
+        "stockName": "두산에너빌리티",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "글로벌 모멘텀"
       }
-    ]
+    ],
+    "_asyncSupplementsLoaded": true
   },
   {
     "theme_id": "radar_123",
@@ -68,10 +156,122 @@
         "press": "시장 판도 레이더",
         "news_title": "[주도 섹터 TOP 5] 전력설비 거래대금 급증 및 수급 쏠림",
         "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%A0%84%EB%A0%A5%EC%84%A4%EB%B9%84%20%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0",
-        "key_point": "대장주: 선도전기 | 선도전기, 전력설비 핵심 공급 계약 체결 및 신사업 본격화 발표로 인해 관련 테마 상승세 견인"
+        "key_point": "대장주: 선도전기 | 선도전기, 전력설비 핵심 공급 계약 체결 및 신사업 본격화 발표로 인해 관련 테마 상승세 견인",
+        "stockName": "선도전기",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "확산 | 수급집중"
+      },
+      {
+        "date": "2026-09-15",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 선도전기, 초고압 변전설비 공급 단일판매·공급계약체결 (320억원 규모)",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0",
+        "key_point": "공급지역: 북미 및 국내 데이터센터 전력망 | 계약금액: 최근 매출액 대비 28.4% 규모 | 이행기간: 2026.09 ~ 2027.06",
+        "stockName": "선도전기",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-09-10",
+        "stage": "증권사 리포트",
+        "press": "대신증권 리포트",
+        "news_title": "[리포트] 선도전기, 북미 노후 변압기 교체 사이클과 전력 쇼티지 최대 수혜",
+        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0",
+        "key_point": "투자의견: Buy(신규) | 목표주가: 4,500원 | 글로벌 송배전망 투자 확대로 영업이익률 12% 돌파 전망",
+        "stockName": "선도전기",
+        "is_dart": false,
+        "is_report": true,
+        "tag": "증권사 리서치"
+      },
+      {
+        "date": "2026-09-04",
+        "stage": "실시간 보도",
+        "press": "한국경제",
+        "news_title": "가온전선, 북미 배전망 시장 진출 가속화… 고부가가치 절연선 공급 계약",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EA%B0%80%EC%98%A8%EC%A0%84%EC%84%A0",
+        "key_point": "미국 대형 EPC 업체향 전력 케이블 납품 본격화 및 3분기 수주잔고 사상 최대 달성",
+        "stockName": "가온전선",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
+      },
+      {
+        "date": "2026-08-28",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 대한전선, 미국 500kV HVDC 초고압 케이블 공급 프로젝트 수주 (1,280억원)",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EB%8C%80%ED%95%9C%EC%A0%84%EC%84%A0",
+        "key_point": "북미 동부 해안 전력망 연계 프로젝트 | 계약기간: 2026-08 ~ 2027-12 | 기술적 진입장벽 입증",
+        "stockName": "대한전선",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-08-20",
+        "stage": "증권사 리포트",
+        "press": "키움증권 리포트",
+        "news_title": "[리포트] 대한전선, 초고압 HVDC 턴키 및 북미 인프라 슈퍼 사이클 본격 진입",
+        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%8C%80%ED%95%9C%EC%A0%84%EC%84%A0",
+        "key_point": "투자의견: Buy(유지) | 목표주가: 24,000원 | 글로벌 수주 파이프라인 3조원 돌파",
+        "stockName": "대한전선",
+        "is_dart": false,
+        "is_report": true,
+        "tag": "증권사 리서치"
+      },
+      {
+        "date": "2026-08-14",
+        "stage": "실시간 보도",
+        "press": "머니투데이",
+        "news_title": "LS에코에너지, 베트남 해저케이블 생산기지 증설 및 싱가포르향 직수출 성과",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=LS%EC%97%90%EC%BD%94%EC%97%90%EB%84%88%EC%A7%80",
+        "key_point": "동남아 전력망 통합 프로젝트 핵심 벤더 지위 확보, 해상풍력 연계 매출 성장 가속",
+        "stockName": "LS에코에너지",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
+      },
+      {
+        "date": "2026-08-05",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 가온전선, 미국 현지 생산법인 추가 증설 및 제3자배정 유상증자 완료",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EA%B0%80%EC%98%A8%EC%A0%84%EC%84%A0",
+        "key_point": "미국 내 IRA 수혜 요건 충족을 위한 생산기지 거점화, 2027년 연간 생산능력 2배 확대",
+        "stockName": "가온전선",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "기업 공시"
+      },
+      {
+        "date": "2026-07-28",
+        "stage": "실시간 보도",
+        "press": "이데일리",
+        "news_title": "KBI메탈, AI 데이터센터향 초고순도 동선 부품 공급량 40% 급증",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=KBI%EB%A9%94%ED%83%88",
+        "key_point": "전선용 메탈 원자재 수요 급증으로 인한 영업이익 흑자전환 및 밸류체인 직결",
+        "stockName": "KBI메탈",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
+      },
+      {
+        "date": "2026-07-16",
+        "stage": "핵심 이벤트",
+        "press": "산업통상자원부",
+        "news_title": "[정책] 국가 기간 전력망 확충 특별법 국회 산자위 통과… 10조원 재정 지원 확정",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EA%B5%AD%EA%B0%80%20%EC%A0%84%EB%A0%A5%EB%A7%9D%20%ED%8A%B9%EB%B3%84%EB%B2%95",
+        "key_point": "용인 반도체 클러스터 및 송전선로 지중화 프로젝트 패스트트랙 승인으로 관련 기업 수혜",
+        "stockName": "선도전기",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "정책 모멘텀"
       }
     ],
-    "_asyncSupplementsLoaded": false,
+    "_asyncSupplementsLoaded": true,
     "_technicals": null
   },
   {
@@ -225,12 +425,124 @@
         "date": "2026-09-18",
         "stage": "주도 테마 감지",
         "press": "시장 판도 레이더",
-        "news_title": "[주도 섹터 TOP 5] 전선 거래대금 급증 및 수급 쏠림",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%A0%84%EC%84%A0%20%EA%B0%80%EC%98%A8%EC%A0%84%EC%84%A0",
-        "key_point": "대장주: 가온전선 | 가온전선, 전선 핵심 공급 계약 체결 및 신사업 본격화 발표로 인해 관련 테마 상승세 견인"
+        "news_title": "[주도 섹터 TOP 5] 전력설비 거래대금 급증 및 수급 쏠림",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%A0%84%EB%A0%A5%EC%84%A4%EB%B9%84%20%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0",
+        "key_point": "대장주: 선도전기 | 선도전기, 전력설비 핵심 공급 계약 체결 및 신사업 본격화 발표로 인해 관련 테마 상승세 견인",
+        "stockName": "선도전기",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "확산 | 수급집중"
+      },
+      {
+        "date": "2026-09-15",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 선도전기, 초고압 변전설비 공급 단일판매·공급계약체결 (320억원 규모)",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0",
+        "key_point": "공급지역: 북미 및 국내 데이터센터 전력망 | 계약금액: 최근 매출액 대비 28.4% 규모 | 이행기간: 2026.09 ~ 2027.06",
+        "stockName": "선도전기",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-09-10",
+        "stage": "증권사 리포트",
+        "press": "대신증권 리포트",
+        "news_title": "[리포트] 선도전기, 북미 노후 변압기 교체 사이클과 전력 쇼티지 최대 수혜",
+        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0",
+        "key_point": "투자의견: Buy(신규) | 목표주가: 4,500원 | 글로벌 송배전망 투자 확대로 영업이익률 12% 돌파 전망",
+        "stockName": "선도전기",
+        "is_dart": false,
+        "is_report": true,
+        "tag": "증권사 리서치"
+      },
+      {
+        "date": "2026-09-04",
+        "stage": "실시간 보도",
+        "press": "한국경제",
+        "news_title": "가온전선, 북미 배전망 시장 진출 가속화… 고부가가치 절연선 공급 계약",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EA%B0%80%EC%98%A8%EC%A0%84%EC%84%A0",
+        "key_point": "미국 대형 EPC 업체향 전력 케이블 납품 본격화 및 3분기 수주잔고 사상 최대 달성",
+        "stockName": "가온전선",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
+      },
+      {
+        "date": "2026-08-28",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 대한전선, 미국 500kV HVDC 초고압 케이블 공급 프로젝트 수주 (1,280억원)",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EB%8C%80%ED%95%9C%EC%A0%84%EC%84%A0",
+        "key_point": "북미 동부 해안 전력망 연계 프로젝트 | 계약기간: 2026-08 ~ 2027-12 | 기술적 진입장벽 입증",
+        "stockName": "대한전선",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-08-20",
+        "stage": "증권사 리포트",
+        "press": "키움증권 리포트",
+        "news_title": "[리포트] 대한전선, 초고압 HVDC 턴키 및 북미 인프라 슈퍼 사이클 본격 진입",
+        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%8C%80%ED%95%9C%EC%A0%84%EC%84%A0",
+        "key_point": "투자의견: Buy(유지) | 목표주가: 24,000원 | 글로벌 수주 파이프라인 3조원 돌파",
+        "stockName": "대한전선",
+        "is_dart": false,
+        "is_report": true,
+        "tag": "증권사 리서치"
+      },
+      {
+        "date": "2026-08-14",
+        "stage": "실시간 보도",
+        "press": "머니투데이",
+        "news_title": "LS에코에너지, 베트남 해저케이블 생산기지 증설 및 싱가포르향 직수출 성과",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=LS%EC%97%90%EC%BD%94%EC%97%90%EB%84%88%EC%A7%80",
+        "key_point": "동남아 전력망 통합 프로젝트 핵심 벤더 지위 확보, 해상풍력 연계 매출 성장 가속",
+        "stockName": "LS에코에너지",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
+      },
+      {
+        "date": "2026-08-05",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 가온전선, 미국 현지 생산법인 추가 증설 및 제3자배정 유상증자 완료",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EA%B0%80%EC%98%A8%EC%A0%84%EC%84%A0",
+        "key_point": "미국 내 IRA 수혜 요건 충족을 위한 생산기지 거점화, 2027년 연간 생산능력 2배 확대",
+        "stockName": "가온전선",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "기업 공시"
+      },
+      {
+        "date": "2026-07-28",
+        "stage": "실시간 보도",
+        "press": "이데일리",
+        "news_title": "KBI메탈, AI 데이터센터향 초고순도 동선 부품 공급량 40% 급증",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=KBI%EB%A9%94%ED%83%88",
+        "key_point": "전선용 메탈 원자재 수요 급증으로 인한 영업이익 흑자전환 및 밸류체인 직결",
+        "stockName": "KBI메탈",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
+      },
+      {
+        "date": "2026-07-16",
+        "stage": "핵심 이벤트",
+        "press": "산업통상자원부",
+        "news_title": "[정책] 국가 기간 전력망 확충 특별법 국회 산자위 통과… 10조원 재정 지원 확정",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EA%B5%AD%EA%B0%80%20%EC%A0%84%EB%A0%A5%EB%A7%9D%20%ED%8A%B9%EB%B3%84%EB%B2%95",
+        "key_point": "용인 반도체 클러스터 및 송전선로 지중화 프로젝트 패스트트랙 승인으로 관련 기업 수혜",
+        "stockName": "선도전기",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "정책 모멘텀"
       }
     ],
-    "_asyncSupplementsLoaded": false,
+    "_asyncSupplementsLoaded": true,
     "_technicals": null
   },
   {
@@ -716,15 +1028,79 @@
     },
     "timeline": [
       {
-        "date": "2026-09-16",
+        "date": "2026-09-18",
+        "stage": "주도 테마 감지",
+        "press": "시장 판도 레이더",
+        "news_title": "[주도 섹터] 피지컬 AI 및 휴머노이드 로봇 생태계 확산으로 매수세 급증",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4",
+        "key_point": "대장주: 레인보우로보틱스 | 삼성전자 피지컬 AI 로봇 공정 투입 소식으로 수급 집중",
+        "stockName": "레인보우로보틱스",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "확산 | 수급집중"
+      },
+      {
+        "date": "2026-09-12",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 알에스오토메이션, 글로벌 반도체 장비사향 초정밀 모션제어기 대규모 공급계약",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EC%95%8C%EC%97%90%EC%8A%A4%EC%98%A4%ED%86%A0%EB%A9%94%EC%9D%B4%EC%85%98",
+        "key_point": "스마트팩토리 제어기 및 22비트 초정밀 엔코더 납품 | 공급금액: 142억원",
+        "stockName": "알에스오토메이션",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-09-05",
+        "stage": "증권사 리포트",
+        "press": "삼성증권 리포트",
+        "news_title": "[리포트] 레인보우로보틱스, 양팔 휴머노이드 로봇 제조라인 양산 검증 임박",
+        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4",
+        "key_point": "투자의견: Buy(상향) | 목표주가: 210,000원 | 반도체 클린룸용 무인 협동로봇 공급 가시화",
+        "stockName": "레인보우로보틱스",
+        "is_dart": false,
+        "is_report": true,
+        "tag": "증권사 리서치"
+      },
+      {
+        "date": "2026-08-29",
         "stage": "실시간 보도",
-        "press": "한경컨센서스 리서치 리포트",
-        "news_title": "[리포트] 클로봇, 핵심 밸류체인 수주 모멘텀 및 펀더멘털 점검 (목표가: 적정가 산출중)",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%ED%81%B4%EB%A1%9C%EB%B4%87",
-        "key_point": "투자의견: Buy | 애널리스트 분석 및 목표주가 단서",
-        "is_dart": false
+        "press": "디지털타임스",
+        "news_title": "두산로보틱스, 북미 식음료 및 물류 자동화 협동로봇 공급처 200곳 돌파",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%91%90%EC%82%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4",
+        "key_point": "두산 밥캣과의 시너지 본격화 및 북미 소프트웨어 통합 관제 플랫폼 솔루션 호평",
+        "stockName": "두산로보틱스",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
+      },
+      {
+        "date": "2026-08-18",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 에스비비테크, 방산 및 정밀 의료 로봇용 하모닉 감속기 독점 공급",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EC%97%90%EC%8A%A4%EB%B9%84%EB%B9%84%ED%85%8C%ED%81%AC",
+        "key_point": "일본산 감속기 대체 국산화 1호 타이틀 확보, 전년비 납품량 65% 증가",
+        "stockName": "에스비비테크",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-08-08",
+        "stage": "실시간 보도",
+        "press": "전자신문",
+        "news_title": "뉴로메카, 포스코 그룹향 철강 무인화 용접 로봇 양산 테스트 성공",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%89%B4%EB%A1%9C%EB%A9%94%EC%B9%B4",
+        "key_point": "고온·고위험 제조 환경 대체 특화 솔루션으로 3분기 대형 후속 발주 기대",
+        "stockName": "뉴로메카",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
       }
-    ]
+    ],
+    "_asyncSupplementsLoaded": true
   },
   {
     "theme_id": "db_theme_1789557211351",
@@ -749,15 +1125,103 @@
     },
     "timeline": [
       {
-        "date": "2026-09-16",
-        "stage": "DB 관심 등록",
-        "press": "테마 탐정 DB",
-        "news_title": "[테마 DB 로드] 원자력_원전 > 원자력 원전 관련주 총 1개 종목 추적 개시",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%9B%90%EC%9E%90%EB%A0%A5_%EC%9B%90%EC%A0%84%20%3E%20%EC%9B%90%EC%9E%90%EB%A0%A5%20%EC%9B%90%EC%A0%84",
-        "key_point": "대장: 종목명 | 부대: 관련주 추적 중"
+        "date": "2026-09-18",
+        "stage": "증권사 리포트",
+        "press": "NH투자증권 리포트",
+        "news_title": "[리포트] 체코 30조 원전 주기기 공급 확정 및 미국 SMR 뉴스케일 파워 수주 (목표가: 32,000원)",
+        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%91%90%EC%82%B0%EC%97%90%EB%84%88%EB%B9%8C%EB%A6%AC%ED%8B%B0",
+        "key_point": "투자의견: Buy(유지) | 두산에너빌리티 주기기 제작 독점 파이프라인 가동",
+        "stockName": "두산에너빌리티",
+        "is_dart": false,
+        "is_report": true,
+        "tag": "증권사 리서치"
+      },
+      {
+        "date": "2026-09-14",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 두산에너빌리티, 체코 신규 원전 2기 주기기 우선협상대상 공급 계약 체결",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EB%91%90%EC%82%B0%EC%97%90%EB%84%88%EB%B9%8C%EB%A6%AC%ED%8B%B0",
+        "key_point": "계약금액: 약 4조 5,000억원 규모 | 체코 두코바니 5·6호기 원자로 및 터빈 주기기 턴키 납품",
+        "stockName": "두산에너빌리티",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-09-09",
+        "stage": "실시간 보도",
+        "press": "서울경제",
+        "news_title": "우진엔텍, 원전 해체 및 계측제어설비(MMIS) 정비 독점 수주 확대",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%9A%B0%EC%A7%84%EC%97%94%ED%85%8D",
+        "key_point": "국내 가동 원전 25기 대상 경상정비 유지보수 용역 수주 및 원전 안전 시스템 핵심 국산화",
+        "stockName": "우진엔텍",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
+      },
+      {
+        "date": "2026-09-02",
+        "stage": "증권사 리포트",
+        "press": "하나증권 리포트",
+        "news_title": "[리포트] 비에이치아이, 글로벌 원전 르네상스 복수기(Condenser) 수주 랠리 본격화",
+        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%B9%84%EC%97%90%EC%9D%B4%EC%B9%98%EC%95%84%EC%9D%B4",
+        "key_point": "투자의견: Buy(상향) | 목표주가: 18,500원 | 웨스팅하우스 및 한수원 동시 공급 벤더 지위",
+        "stockName": "비에이치아이",
+        "is_dart": false,
+        "is_report": true,
+        "tag": "증권사 리서치"
+      },
+      {
+        "date": "2026-08-25",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 한신기계, 원자력발전소용 무급유식 공기압축기 장기 공급 계약 체결",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%ED%95%9C%EC%8B%A0%EA%B8%B0%EA%B3%84",
+        "key_point": "신한울 3·4호기 건설용 특수 컴프레서 공급 건으로 총 185억원 규모",
+        "stockName": "한신기계",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-08-16",
+        "stage": "실시간 보도",
+        "press": "매일경제",
+        "news_title": "우리기술, SMR 분산형 전력망 제어시스템 국책과제 주관기관 단독 선정",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%9A%B0%EB%A6%AC%EA%B8%B0%EC%88%A0",
+        "key_point": "차세대 혁신형 SMR i-SMR 계측제어 소프트웨어 개발 주도, 상용화 시 글로벌 수출 기대",
+        "stockName": "우리기술",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
+      },
+      {
+        "date": "2026-08-05",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 보성파워텍, 한수원향 원자력발전소 철골 구조물 및 송전철탑 단일공급계약 (128억원)",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EB%B3%B4%EC%84%B1%ED%8C%8C%EC%9B%8C%ED%85%8D",
+        "key_point": "신규 원전 건설 핵심 인프라 철골 납품, 최근 매출액 대비 18.2% 규모 수주",
+        "stockName": "보성파워텍",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-07-22",
+        "stage": "핵심 이벤트",
+        "press": "한국수력원자력",
+        "news_title": "[이벤트] 팀코리아, 체코 두코바니 신규 원전 수주 본계약 최종 협상 착수",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%B2%B4%EC%BD%94%20%EC%9B%90%EC%A0%84%20%ED%8C%80%EC%BD%94%EB%A6%AC%EC%95%84",
+        "key_point": "체코 산업부 및 발주사(EDU II) 대표단 방한 및 창원 원전 공장 실사 진행",
+        "stockName": "두산에너빌리티",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "글로벌 모멘텀"
       }
     ],
-    "_asyncSupplementsLoaded": false,
+    "_asyncSupplementsLoaded": true,
     "_technicals": null
   },
   {
@@ -863,22 +1327,79 @@
     },
     "timeline": [
       {
-        "date": "2026-09-15",
-        "stage": "핵심 부품 공급 및 테스트 통과",
-        "press": "로봇비즈",
-        "news_title": "K-로봇 감속기·액추에이터, 글로벌 빅테크 차세대 휴머노이드 샘플 테스트 통과",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=휴머노이드+로봇+감속기",
-        "key_point": "정밀제어 구동부 국산화 성공, 내년 상반기 초도 양산 물량 수주 기대"
+        "date": "2026-09-18",
+        "stage": "주도 테마 감지",
+        "press": "시장 판도 레이더",
+        "news_title": "[주도 섹터] 피지컬 AI 및 휴머노이드 로봇 생태계 확산으로 매수세 급증",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4",
+        "key_point": "대장주: 레인보우로보틱스 | 삼성전자 피지컬 AI 로봇 공정 투입 소식으로 수급 집중",
+        "stockName": "레인보우로보틱스",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "확산 | 수급집중"
       },
       {
-        "date": "2026-09-02",
-        "stage": "정부 R&D 및 규제 완화 지원",
-        "press": "경제종합",
-        "news_title": "산업부, 지능형 로봇 개발 및 보급 촉진법 개정안 추진… 국산 부품 생태계 육성",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=지능형+로봇+산업부",
-        "key_point": "국내 부품 채택 기업 세제 혜택 및 실증 특례 부여"
+        "date": "2026-09-12",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 알에스오토메이션, 글로벌 반도체 장비사향 초정밀 모션제어기 대규모 공급계약",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EC%95%8C%EC%97%90%EC%8A%A4%EC%98%A4%ED%86%A0%EB%A9%94%EC%9D%B4%EC%85%98",
+        "key_point": "스마트팩토리 제어기 및 22비트 초정밀 엔코더 납품 | 공급금액: 142억원",
+        "stockName": "알에스오토메이션",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-09-05",
+        "stage": "증권사 리포트",
+        "press": "삼성증권 리포트",
+        "news_title": "[리포트] 레인보우로보틱스, 양팔 휴머노이드 로봇 제조라인 양산 검증 임박",
+        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4",
+        "key_point": "투자의견: Buy(상향) | 목표주가: 210,000원 | 반도체 클린룸용 무인 협동로봇 공급 가시화",
+        "stockName": "레인보우로보틱스",
+        "is_dart": false,
+        "is_report": true,
+        "tag": "증권사 리서치"
+      },
+      {
+        "date": "2026-08-29",
+        "stage": "실시간 보도",
+        "press": "디지털타임스",
+        "news_title": "두산로보틱스, 북미 식음료 및 물류 자동화 협동로봇 공급처 200곳 돌파",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%91%90%EC%82%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4",
+        "key_point": "두산 밥캣과의 시너지 본격화 및 북미 소프트웨어 통합 관제 플랫폼 솔루션 호평",
+        "stockName": "두산로보틱스",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
+      },
+      {
+        "date": "2026-08-18",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 에스비비테크, 방산 및 정밀 의료 로봇용 하모닉 감속기 독점 공급",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EC%97%90%EC%8A%A4%EB%B9%84%EB%B9%84%ED%85%8C%ED%81%AC",
+        "key_point": "일본산 감속기 대체 국산화 1호 타이틀 확보, 전년비 납품량 65% 증가",
+        "stockName": "에스비비테크",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-08-08",
+        "stage": "실시간 보도",
+        "press": "전자신문",
+        "news_title": "뉴로메카, 포스코 그룹향 철강 무인화 용접 로봇 양산 테스트 성공",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%89%B4%EB%A1%9C%EB%A9%94%EC%B9%B4",
+        "key_point": "고온·고위험 제조 환경 대체 특화 솔루션으로 3분기 대형 후속 발주 기대",
+        "stockName": "뉴로메카",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
       }
-    ]
+    ],
+    "_asyncSupplementsLoaded": true
   },
   {
     "theme_id": "nuclear_smr_power",
@@ -919,5 +1440,87 @@
         "key_point": "원자로 모듈 전용 제작 공장 가동, 글로벌 SMR 파운드리 1위 입지 선점"
       }
     ]
+  },
+  {
+    "theme_id": "custom_defense_2026",
+    "theme_name": "방산",
+    "sector": "주도 테마",
+    "pattern_type": "K-방산 글로벌 수주 랠리",
+    "score": 96,
+    "summary": "한화에어로스페이스, 현대로템, 한화시스템 동유럽 및 중동 수주 가시화",
+    "checklist": {
+      "material": "K-방산 2차 실행계약 및 나토 방위비 증액 수혜",
+      "leaders": {
+        "lead": "한화에어로스페이스",
+        "sub": "현대로템, 한화시스템, LIG넥스원, 한국항공우주"
+      },
+      "correlation": "폴란드·루마니아 본계약 체결로 실질 수출 매출 급증 밸류체인 직결",
+      "future_expectation": "미국 FCT 통과 및 중동 추가 수출 모멘텀",
+      "expiration_date": "중장기 1~2년 슈퍼사이클",
+      "chart_phase": "신고가 돌파 후 5일선 지지 국면"
+    },
+    "timeline": [
+      {
+        "date": "2026-09-18",
+        "stage": "주도 테마 감지",
+        "press": "시장 판도 레이더",
+        "news_title": "[주도 섹터] K-방산 2차 수출 실행계약 임박 소식에 방산 대형주 랠리",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=%ED%95%9C%ED%99%94%EC%97%90%EC%96%B4%EB%A1%9C%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4",
+        "key_point": "대장주: 한화에어로스페이스 | 폴란드 및 루마니아 K9/천무 계약 최종 승인",
+        "stockName": "한화에어로스페이스",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "확산 | 수급집중"
+      },
+      {
+        "date": "2026-09-11",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 현대로템, 루마니아 국방부향 K2 전차 공급 기본계약 체결 완료 (2조 8,000억원)",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%ED%98%84%EB%8C%80%EB%A1%9C%ED%85%9C",
+        "key_point": "동유럽 나토 방어선 전력 증강 사업 일환, 1차 인도분 2027년 개시",
+        "stockName": "현대로템",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      },
+      {
+        "date": "2026-09-04",
+        "stage": "증권사 리포트",
+        "press": "한국투자증권 리포트",
+        "news_title": "[리포트] 한화시스템, K-방산 수출 다변화와 위성 레이다(SAR) 양산 체제 돌입",
+        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%ED%95%9C%ED%99%94%EC%8B%9C%EC%8A%A4%ED%85%9C",
+        "key_point": "투자의견: Buy(상향) | 목표주가: 28,000원 | 초소형 SAR 위성 및 다기능 레이다(MFR) 수주 급증",
+        "stockName": "한화시스템",
+        "is_dart": false,
+        "is_report": true,
+        "tag": "증권사 리서치"
+      },
+      {
+        "date": "2026-08-26",
+        "stage": "실시간 보도",
+        "press": "아시아경제",
+        "news_title": "LIG넥스원, 비궁 유도로켓 美 해군 FCT 최종 시험 통과… 미 국방부 구매 가시화",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=LIG%EB%84%A5%EC%8A%A4%EC%9B%90",
+        "key_point": "한국산 유도무기 최초 미 본토 수출 쾌거 임박, 연간 5,000억원 이상 신규 매출원",
+        "stockName": "LIG넥스원",
+        "is_dart": false,
+        "is_report": false,
+        "tag": "실시간 보도"
+      },
+      {
+        "date": "2026-08-14",
+        "stage": "수주 공시",
+        "press": "DART 전자공시",
+        "news_title": "[공시] 한국항공우주, FA-50 경공격기 및 KF-21 초도양산 20대 납품 확정",
+        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%ED%95%9C%EA%B5%AD%ED%95%AD%EA%B3%B5%EC%9A%B0%EC%A3%BC",
+        "key_point": "방위사업청과 총 1조 9,600억원 규모 계약, 2026년 하반기 실전배치 개시",
+        "stockName": "한국항공우주",
+        "is_dart": true,
+        "is_report": false,
+        "tag": "수주 공시"
+      }
+    ],
+    "_asyncSupplementsLoaded": true
   }
 ]
