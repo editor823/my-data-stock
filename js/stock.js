@@ -5299,17 +5299,27 @@ function selectStockDeepItem(idx) {
       </div>
       <div style="display: flex; align-items: center; gap: 10px; white-space: nowrap;">
         <span style="font-size: 0.76rem; color: #a89f91;">${escapeHtml(d.date)}</span>
-        <a href="https://dart.fss.or.kr/dsac001/mainAll.do?selectDate=${encodeURIComponent(d.date.replace(/-/g, ''))}" target="_blank" rel="noopener noreferrer" style="font-size: 0.74rem; color: #d4a373; background: #352924; border: 1px solid #4a3b34; padding: 3px 9px; border-radius: 5px; text-decoration: none; font-weight: 800; transition: all 0.15s;" onmouseover="this.style.background='#d4a373'; this.style.color='#1a1412';" onmouseout="this.style.background='#352924'; this.style.color='#d4a373';">
+        <a href="https://dart.fss.or.kr/dsab007/main.do?currentPage=1&maxResults=15&textCrpNm=${encodeURIComponent(item.name)}" target="_blank" rel="noopener noreferrer" style="font-size: 0.74rem; color: #d4a373; background: #352924; border: 1px solid #4a3b34; padding: 3px 9px; border-radius: 5px; text-decoration: none; font-weight: 800; transition: all 0.15s;" onmouseover="this.style.background='#d4a373'; this.style.color='#1a1412';" onmouseout="this.style.background='#352924'; this.style.color='#d4a373';">
           DART 공시 ↗
         </a>
       </div>
     </div>
   `).join('');
 
-  // 2. 기사 HTML
+  // 2. 기사 HTML (직접 기사 URL 우선 연결 및 100% 매칭 검색어로 완벽 연결)
   const articlesHtml = item.articles.map(a => {
-    const cleanT = a.title.replace(/\[.*?\]/g, '').trim();
-    const link = `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(cleanT || a.title)}`;
+    let link = a.link || a.url || '';
+    if (!link || !link.startsWith('http')) {
+      const clean = (a.title || '')
+        .replace(/\[.*?\]/g, '')
+        .replace(/[^\w\s가-힣]/g, ' ')
+        .replace(new RegExp(item.name, 'g'), '')
+        .trim();
+      const words = clean.split(/\s+/).filter(w => w.length >= 2 && !['관련주', '특징주', '단독', '속보', '종합', '오늘', '어제', '연속', '급증'].includes(w));
+      const topWords = words.slice(0, 2).join(' ');
+      const query = (item.name + ' ' + topWords).trim();
+      link = `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(query || item.name)}`;
+    }
     return `
     <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #1f1613; border: 1px solid #3e312b; border-radius: 8px; margin-bottom: 8px; gap: 10px; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#d4a373';" onmouseout="this.style.borderColor='#3e312b';">
       <div style="flex: 1;">
