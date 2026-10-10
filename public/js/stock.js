@@ -7885,7 +7885,7 @@ window.renderYoutubeBriefingFeed = renderYoutubeBriefingFeed;
    ========================================================================== */
 
 let currentMarketHistoryData = null;
-let selectedHistoryMonth = 9; // 기본값: 현재 9월
+let selectedHistoryMonth = 10; // 기본값: 현재 10월 진행
 
 // 1) 당일 일일 마감 종합 브리핑 자동 생성 및 로컬스토리지 & 서버 누적 저장
 window.saveDailyMarketClosing = async function () {
@@ -7912,19 +7912,19 @@ window.saveDailyMarketClosing = async function () {
     } else {
       leadingThemes = [
         {
-          theme_name: '스페이스X',
+          theme_name: '원자력발전/SMR',
+          leader_stock: '두산에너빌리티',
+          fact: '체코 두코바니 24조원 원전 최종 계약 세부 조율 및 뉴스케일파워 SMR 파운드리 2.8조원 일감 착수 확정'
+        },
+        {
+          theme_name: '우주항공/스페이스X',
           leader_stock: '와이제이링크',
-          fact: '와이제이링크, 美 스페이스X 위성용 SMT 라인 단독 공급 협의 착수 소식 발표로 인해 관련 테마 상승세 견인'
+          fact: '美 스페이스X 차세대 스타링크 위성 PCB 자동화 SMT 라인 단독 공급 협의 체결 및 나라스페이스 아르테미스 탑재체 확정'
         },
         {
-          theme_name: '우주항공산업',
-          leader_stock: '나라스페이스테크놀로지',
-          fact: 'NASA 아르테미스 프로젝트 탑재체 최종 선정 및 초소형 군집 위성 발사 성공 발표로 인해 관련 테마 상승세 견인'
-        },
-        {
-          theme_name: '통신장비',
-          leader_stock: '빛샘전자',
-          fact: '빛샘전자, 5G·6G 통신망 광선로 모듈 대규모 공급 계약 체결 발표로 인해 관련 테마 상승세 견인'
+          theme_name: '지능형로봇/자율주행',
+          leader_stock: '에스피지',
+          fact: '테슬라 로보택시(Cybercab) 실물 공개 및 삼성·현대차 휴머노이드 로봇 정밀 감속기 핵심 벤더 양산 테스트 통과'
         }
       ];
     }
@@ -7980,6 +7980,7 @@ window.saveDailyMarketClosing = async function () {
 window.loadMarketHistoryReview = async function () {
   try {
     let data = null;
+    // 1차: 백엔드 API
     try {
       const res = await fetch(`${BACKEND_API_BASE}/api/market/history`);
       if (res.ok) {
@@ -7990,7 +7991,22 @@ window.loadMarketHistoryReview = async function () {
       }
     } catch (e) { }
 
-    // 폴백 기본 데이터
+    // 2차: 정적 JSON 폴백 (/data/market_history.json)
+    if (!data || !Array.isArray(data.year_history_2026) || data.year_history_2026.length === 0) {
+      try {
+        const fallbackRes = await fetch('/data/market_history.json?v=' + Date.now());
+        if (fallbackRes.ok) {
+          const fbJson = await fallbackRes.json();
+          if (fbJson && fbJson.data) {
+            data = fbJson.data;
+          } else if (fbJson && fbJson.year_history_2026) {
+            data = fbJson;
+          }
+        }
+      } catch (err) { }
+    }
+
+    // 3차: 로컬스토리지 기본 보조
     if (!data || !Array.isArray(data.year_history_2026) || data.year_history_2026.length === 0) {
       data = {
         daily_briefings: JSON.parse(localStorage.getItem('stock_daily_closing_history') || '[]'),
@@ -8013,8 +8029,6 @@ window.loadMarketHistoryReview = async function () {
 // 3) 주간/월간 리포트 동적 갱신
 function renderWeeklyAndMonthlyReview(historyData) {
   const weeklyRetroEl = document.getElementById('weekly-retrospective-content');
-  const nextWeekPredEl = document.getElementById('next-week-prediction-content');
-
   const briefings = historyData.daily_briefings || [];
   if (briefings.length > 0 && weeklyRetroEl) {
     const topThemesAll = [];
@@ -8031,17 +8045,17 @@ function renderWeeklyAndMonthlyReview(historyData) {
     const uniqueThemes = Array.from(uniqueMap.values()).slice(0, 4);
 
     let themesHtml = uniqueThemes.map(t => `
-      • <strong>${escapeHtml(t.theme_name)} (${escapeHtml(t.leader_stock)}):</strong> ${escapeHtml(t.fact)}
+      • <strong style="color: #f5ebe0;">${escapeHtml(t.theme_name)} (${escapeHtml(t.leader_stock)}):</strong> <span style="color: #d7ccc8;">${escapeHtml(t.fact)}</span>
     `).join('<br>');
 
     weeklyRetroEl.innerHTML = `
-      <div style="padding: 12px 14px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #f59e0b; border-radius: 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.02); margin-bottom: 8px; color: #1e293b; line-height: 1.6;">
-        <strong style="color: #b45309; font-size: 0.86rem;">🔥 누적 일일 마감 팩트 (${briefings.length}일치 집계)</strong><br>
-        <span style="font-size: 0.82rem; color: #334155;">${themesHtml || '당일 주도주 특징주 및 공시 팩트 추적 중'}</span>
+      <div style="padding: 12px 14px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #f59e0b; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); margin-bottom: 8px; color: #f5ebe0; line-height: 1.6;">
+        <strong style="color: #f59e0b; font-size: 0.86rem;">🔥 누적 일일 마감 팩트 (${briefings.length}일치 집계)</strong><br>
+        <span style="font-size: 0.82rem; color: #d7ccc8;">${themesHtml || '당일 주도주 특징주 및 공시 팩트 추적 중'}</span>
       </div>
-      <div style="padding: 12px 14px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #0284c7; border-radius: 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.02); color: #1e293b; line-height: 1.6;">
-        <strong style="color: #0369a1; font-size: 0.86rem;">📡 주간 수급 총합</strong><br>
-        <span style="font-size: 0.82rem; color: #334155;">외국인·기관의 반도체 소부장과 원자력·우주항공 중심 '확정 수주잔고 보유 섹터' 양매수 우위 지속.</span>
+      <div style="padding: 12px 14px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #38bdf8; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); color: #f5ebe0; line-height: 1.6;">
+        <strong style="color: #38bdf8; font-size: 0.86rem;">📡 주간 수급 총합</strong><br>
+        <span style="font-size: 0.82rem; color: #d7ccc8;">외국인(+7,800억원)·기관(+6,510억원) 주간 양매수 우위. 반도체 소부장과 원자력·우주항공 중심 '확정 수주잔고 보유 섹터' 선별 집중.</span>
       </div>
     `;
   }
@@ -8052,33 +8066,35 @@ function renderYearHistoryCalendarGrid(yearList) {
   const gridEl = document.getElementById('year-calendar-grid');
   if (!gridEl) return;
 
-  // 1월부터 12월까지 기본 타일 생성
   let html = '';
   for (let m = 1; m <= 12; m++) {
     const mData = yearList.find(y => y.month === m);
-    const isCurrent = (m === 10); // 2026년 10월 현재 (기준일 2026.10.02)
-    const isPast = (m < 9);
-    const isFuture = (m > 9);
+    const isCurrent = (m === 10); // 2026년 10월 현재
+    const isPast = (m < 10);
+    const isFuture = (m > 10);
     const isSelected = (m === selectedHistoryMonth);
 
     let badgeText = isCurrent ? '🔥 현재 진행' : (isPast ? '✓ 복기 완료' : '🔭 전망 대기');
-    let badgeColor = isCurrent ? '#dc2626' : (isPast ? '#059669' : '#7c3aed');
-    let borderColor = isSelected ? '#0284c7' : (isCurrent ? '#fca5a5' : '#e2e8f0');
+    let badgeColor = isCurrent ? '#f59e0b' : (isPast ? '#10b981' : '#a855f7');
+    let badgeBg = isCurrent ? 'rgba(245, 158, 11, 0.15)' : (isPast ? 'rgba(16, 185, 129, 0.15)' : 'rgba(168, 85, 247, 0.15)');
+    let badgeBorder = isCurrent ? 'rgba(245, 158, 11, 0.3)' : (isPast ? 'rgba(16, 185, 129, 0.3)' : 'rgba(168, 85, 247, 0.3)');
+
+    let borderColor = isSelected ? '#d4a373' : (isCurrent ? '#f59e0b' : '#4a3b34');
     let bgStyle = isSelected
-      ? 'background: #eff6ff;'
-      : (isCurrent ? 'background: #fff5f5;' : 'background: #ffffff;');
+      ? 'background: #352924; box-shadow: 0 0 10px rgba(212, 163, 115, 0.35); border: 2px solid #d4a373;'
+      : (isCurrent ? 'background: #2e221c; border: 1.5px solid #f59e0b;' : 'background: #2a201c; border: 1.5px solid #4a3b34;');
 
     const shortTitle = mData ? mData.theme_title.split('&')[0].trim() : `${m}월 증시`;
 
     html += `
-      <div onclick="selectHistoryMonth(${m})" style="${bgStyle} border: 1.5px solid ${borderColor}; border-radius: 10px; padding: 10px; cursor: pointer; transition: all 0.15s ease; display: flex; flex-direction: column; justify-content: space-between; min-height: 86px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='none';">
+      <div onclick="selectHistoryMonth(${m})" style="${bgStyle} border-radius: 10px; padding: 10px; cursor: pointer; transition: all 0.2s ease; display: flex; flex-direction: column; justify-content: space-between; min-height: 86px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='none';">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-          <strong style="font-size: 0.95rem; color: #0f172a; font-weight: 900;">${m}월</strong>
-          <span style="font-size: 0.65rem; color: ${badgeColor}; font-weight: 800; background: #f1f5f9; padding: 1px 5px; border-radius: 4px; border: 1px solid #e2e8f0;">
+          <strong style="font-size: 0.95rem; color: #f5ebe0; font-weight: 900;">${m}월</strong>
+          <span style="font-size: 0.65rem; color: ${badgeColor}; font-weight: 800; background: ${badgeBg}; padding: 2px 6px; border-radius: 4px; border: 1px solid ${badgeBorder};">
             ${badgeText}
           </span>
         </div>
-        <div style="font-size: 0.73rem; color: #475569; line-height: 1.35; font-weight: 600; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+        <div style="font-size: 0.73rem; color: #d7ccc8; line-height: 1.35; font-weight: 600; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
           ${escapeHtml(shortTitle)}
         </div>
       </div>
@@ -8096,72 +8112,76 @@ window.selectHistoryMonth = function (monthNum) {
   selectedHistoryMonth = monthNum;
   if (currentMarketHistoryData) {
     renderYearHistoryCalendarGrid(currentMarketHistoryData.year_history_2026 || []);
+  } else {
+    renderMonthDetailCard(monthNum);
   }
 };
 
 function renderMonthDetailCard(monthNum) {
   const cardEl = document.getElementById('month-detail-card');
-  if (!cardEl || !currentMarketHistoryData) return;
+  if (!cardEl) return;
 
-  const yearList = currentMarketHistoryData.year_history_2026 || [];
+  const yearList = (currentMarketHistoryData && currentMarketHistoryData.year_history_2026) ? currentMarketHistoryData.year_history_2026 : [];
   const mData = yearList.find(y => y.month === monthNum);
 
   if (!mData) {
-    cardEl.innerHTML = `<div style="color: #94a3b8; font-size: 0.85rem;">해당 월의 데이터가 준비 중입니다.</div>`;
+    cardEl.innerHTML = `<div style="color: #a89f91; font-size: 0.85rem; padding: 20px; text-align: center; background: #2a201c; border-radius: 8px; border: 1px solid #4a3b34;">해당 ${monthNum}월의 데이터가 준비 중입니다.</div>`;
     return;
   }
 
-  const isCurrent = (monthNum === 9);
-  const tagColor = isCurrent ? '#dc2626' : (monthNum < 9 ? '#047857' : '#6b21a8');
-  const tagBg = isCurrent ? '#fef2f2' : (monthNum < 9 ? '#ecfdf5' : '#f5f3ff');
-  const tagBorder = isCurrent ? '#fca5a5' : (monthNum < 9 ? '#a7f3d0' : '#d8b4fe');
-  const statusLabel = isCurrent ? '🔥 현재 실시간 진행 중인 9월 증시' : (monthNum < 9 ? `📌 2026년 ${monthNum}월 팩트 복기` : `🔭 2026년 ${monthNum}월 차월 매크로 전망`);
+  const isCurrent = (monthNum === 10);
+  const tagColor = isCurrent ? '#f59e0b' : (monthNum < 10 ? '#10b981' : '#a855f7');
+  const tagBg = isCurrent ? 'rgba(245, 158, 11, 0.15)' : (monthNum < 10 ? 'rgba(16, 185, 129, 0.15)' : 'rgba(168, 85, 247, 0.15)');
+  const tagBorder = isCurrent ? 'rgba(245, 158, 11, 0.3)' : (monthNum < 10 ? 'rgba(16, 185, 129, 0.3)' : 'rgba(168, 85, 247, 0.3)');
+  const statusLabel = isCurrent ? '🔥 현재 실시간 진행 중인 10월 증시' : (monthNum < 10 ? `📌 2026년 ${monthNum}월 팩트 복기 완료` : `🔭 2026년 ${monthNum}월 차월 매크로 대전망`);
 
   cardEl.innerHTML = `
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; border-bottom: 1px dashed rgba(255,255,255,0.12); padding-bottom: 10px; flex-wrap: wrap; gap: 10px;">
-      <div>
-        <div style="display: flex; align-items: center; gap: 8px;">
-          <span style="font-size: 1.25rem; font-weight: 900; color: #0284c7;">${monthNum}월 아카이브:</span>
-          <h4 style="font-size: 1.15rem; font-weight: 900; color: #0f172a; margin: 0;">
-            ${escapeHtml(mData.theme_title)}
-          </h4>
-          <span style="font-size: 0.72rem; background: ${tagBg}; color: ${tagColor}; border: 1.5px solid ${tagBorder}; padding: 2px 8px; border-radius: 4px; font-weight: 800;">
-            ${statusLabel}
-          </span>
+    <div style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 10px; padding: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; border-bottom: 1px dashed rgba(212, 163, 115, 0.2); padding-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <span style="font-size: 1.2rem; font-weight: 900; color: #d4a373;">${monthNum}월 아카이브:</span>
+            <h4 style="font-size: 1.15rem; font-weight: 900; color: #f5ebe0; margin: 0;">
+              ${escapeHtml(mData.theme_title)}
+            </h4>
+            <span style="font-size: 0.72rem; background: ${tagBg}; color: ${tagColor}; border: 1.5px solid ${tagBorder}; padding: 2px 8px; border-radius: 4px; font-weight: 800;">
+              ${statusLabel}
+            </span>
+          </div>
+          <div style="font-size: 0.8rem; color: #d7ccc8; margin-top: 6px;">
+            📈 지수 흐름: <strong style="color: #f5ebe0;">${escapeHtml(mData.index_flow)}</strong>
+          </div>
         </div>
-        <div style="font-size: 0.78rem; color: #475569; margin-top: 4px;">
-          📈 지수 흐름: <strong style="color: #0f172a;">${escapeHtml(mData.index_flow)}</strong>
+        <div style="text-align: right;">
+          <span style="font-size: 0.75rem; color: #a89f91;">2026 대한민국 증시 실전 아카이브</span>
         </div>
       </div>
-      <div style="text-align: right;">
-        <span style="font-size: 0.75rem; color: #64748b;">한국 증시 2026 히스토리</span>
-      </div>
-    </div>
 
-    <!-- 4개 핵심 그리드: 핵심 사건, 주도 테마, 대표 대장주, 시장의 교훈 -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
-      <!-- 1. 핵심 사건 -->
-      <div style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 8px; padding: 12px; border-left: 3px solid #0284c7; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
-        <strong style="color: #0369a1; font-size: 0.82rem; display: block; margin-bottom: 4px;">⚡ 그달의 핵심 사건 & 재료:</strong>
-        <div style="font-size: 0.8rem; color: #334155; line-height: 1.5;">${escapeHtml(mData.key_event)}</div>
-      </div>
+      <!-- 4개 핵심 그리드: 핵심 사건, 주도 테마, 대표 대장주, 시장의 교훈 -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
+        <!-- 1. 핵심 사건 -->
+        <div style="background: #1f1613; border: 1.5px solid #4a3b34; border-radius: 8px; padding: 12px; border-left: 3px solid #38bdf8; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+          <strong style="color: #38bdf8; font-size: 0.82rem; display: block; margin-bottom: 5px;">⚡ 그달의 핵심 사건 & 재료:</strong>
+          <div style="font-size: 0.82rem; color: #f5ebe0; line-height: 1.55;">${escapeHtml(mData.key_event)}</div>
+        </div>
 
-      <!-- 2. 주도 테마 -->
-      <div style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 8px; padding: 12px; border-left: 3px solid #f59e0b; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
-        <strong style="color: #b45309; font-size: 0.82rem; display: block; margin-bottom: 4px;">👑 시장을 지배한 주도 테마:</strong>
-        <div style="font-size: 0.8rem; color: #334155; line-height: 1.5;">${escapeHtml(mData.leading_themes)}</div>
-      </div>
+        <!-- 2. 주도 테마 -->
+        <div style="background: #1f1613; border: 1.5px solid #4a3b34; border-radius: 8px; padding: 12px; border-left: 3px solid #f59e0b; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+          <strong style="color: #f59e0b; font-size: 0.82rem; display: block; margin-bottom: 5px;">👑 시장을 지배한 주도 테마:</strong>
+          <div style="font-size: 0.82rem; color: #f5ebe0; line-height: 1.55;">${escapeHtml(mData.leading_themes)}</div>
+        </div>
 
-      <!-- 3. 대표 대장주 -->
-      <div style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 8px; padding: 12px; border-left: 3px solid #db2777; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
-        <strong style="color: #be185d; font-size: 0.82rem; display: block; margin-bottom: 4px;">🚀 대표 대장주 & 상승률:</strong>
-        <div style="font-size: 0.8rem; color: #9d174d; line-height: 1.5; font-weight: 700;">${escapeHtml(mData.leader_stocks)}</div>
-      </div>
+        <!-- 3. 대표 대장주 -->
+        <div style="background: #1f1613; border: 1.5px solid #4a3b34; border-radius: 8px; padding: 12px; border-left: 3px solid #ec4899; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+          <strong style="color: #f472b6; font-size: 0.82rem; display: block; margin-bottom: 5px;">🚀 대표 대장주 & 상승률:</strong>
+          <div style="font-size: 0.82rem; color: #f5ebe0; line-height: 1.55; font-weight: 700;">${escapeHtml(mData.leader_stocks)}</div>
+        </div>
 
-      <!-- 4. 실전 트레이딩 교훈 -->
-      <div style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 8px; padding: 12px; border-left: 3px solid #059669; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
-        <strong style="color: #047857; font-size: 0.82rem; display: block; margin-bottom: 4px;">💡 실전 투자의 핵심 교훈:</strong>
-        <div style="font-size: 0.8rem; color: #065f46; line-height: 1.5;">${escapeHtml(mData.lesson)}</div>
+        <!-- 4. 실전 트레이딩 교훈 -->
+        <div style="background: #1f1613; border: 1.5px solid #4a3b34; border-radius: 8px; padding: 12px; border-left: 3px solid #10b981; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+          <strong style="color: #34d399; font-size: 0.82rem; display: block; margin-bottom: 5px;">💡 실전 투자의 핵심 교훈:</strong>
+          <div style="font-size: 0.82rem; color: #f5ebe0; line-height: 1.55;">${escapeHtml(mData.lesson)}</div>
+        </div>
       </div>
     </div>
   `;

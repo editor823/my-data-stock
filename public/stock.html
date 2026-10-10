@@ -1014,30 +1014,30 @@
         </div>
       </div>
 
-      <!-- ================= [서브 패널 4] 주간·월간 증시 복기 & 2026 연간 매크로 캘린더 아카이브 ================= -->
+            <!-- ================= [서브 패널 4] 주간·월간 증시 복기 & 2026 연간 매크로 캘린더 아카이브 ================= -->
       <div id="stock-panel-review" class="stock-panel-content" style="display: none;">
         <!-- 상단 헤더 & 일일 마감 즉시 저장 버튼 바 -->
-        <div style="display: flex; justify-content: space-between; align-items: center; background: #ffffff; border: 1px solid #e2e8f0; padding: 18px 22px; border-radius: 14px; margin-bottom: 22px; flex-wrap: wrap; gap: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        <div style="display: flex; justify-content: space-between; align-items: center; background: #2a201c; border: 1.5px solid #4a3b34; padding: 18px 22px; border-radius: 14px; margin-bottom: 22px; flex-wrap: wrap; gap: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
           <div>
             <div style="display: flex; align-items: center; gap: 8px;">
               <span style="font-size: 1.35rem;">🗓️</span>
-              <h3 style="font-size: 1.25rem; font-weight: 900; color: #1e293b; margin: 0;">
+              <h3 style="font-size: 1.25rem; font-weight: 900; color: #f5ebe0; margin: 0;">
                 주간·월간 증시 복기 & 2026 연간 매크로 캘린더 아카이브
               </h3>
-              <span style="font-size: 0.72rem; background: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; padding: 2px 8px; border-radius: 6px; font-weight: 800;">
+              <span style="font-size: 0.72rem; background: rgba(212, 163, 115, 0.18); color: #d4a373; border: 1px solid rgba(212, 163, 115, 0.35); padding: 2px 8px; border-radius: 6px; font-weight: 800;">
                 인과관계 예측 엔진 탑재
               </span>
             </div>
-            <p style="font-size: 0.82rem; color: #64748b; margin: 5px 0 0 0;">
+            <p style="font-size: 0.82rem; color: #a89f91; margin: 5px 0 0 0;">
               매일의 일일 분석이 축적되어 주간/월간 복기로 이어지며, 2026년 한국 증시의 주요 테마와 인과관계를 한눈에 조망합니다.
             </p>
           </div>
 
           <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-            <button type="button" class="imggen-style-chip" onclick="saveDailyMarketClosing()" style="padding: 7px 16px; background: #3e312b; color: #f5ebe0; border: 1px solid #4a3b34; font-weight: 800; font-size: 0.78rem; cursor: pointer; border-radius: 8px; display: inline-flex; align-items: center; gap: 6px;" title="오늘 장마감 특징주와 글로벌 시황을 일일 아카이브로 자동 저장">
+            <button type="button" class="imggen-style-chip" onclick="saveDailyMarketClosing()" style="padding: 8px 16px; background: #c7926b; color: #1a1412; border: 1px solid #d4a373; font-weight: 800; font-size: 0.8rem; cursor: pointer; border-radius: 8px; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" title="오늘 장마감 특징주와 글로벌 시황을 일일 아카이브로 자동 저장">
               💾 오늘 마감 브리핑 누적 저장
             </button>
-            <button type="button" class="imggen-style-chip" onclick="loadMarketHistoryReview()" style="padding: 7px 14px; background: #f8fafc; color: #d4a373; border: 1px solid #e2e8f0; font-weight: 800; font-size: 0.78rem; cursor: pointer; border-radius: 8px; display: inline-flex; align-items: center; gap: 5px;">
+            <button type="button" class="imggen-style-chip" onclick="loadMarketHistoryReview()" style="padding: 8px 14px; background: #352924; color: #f5ebe0; border: 1px solid #4a3b34; font-weight: 800; font-size: 0.8rem; cursor: pointer; border-radius: 8px; display: inline-flex; align-items: center; gap: 5px;">
               🔄 리포트 동기화
             </button>
           </div>
@@ -1046,13 +1046,13 @@
         <!-- 3단 레이아웃 그리드 -->
         <div style="display: flex; flex-direction: column; gap: 24px;">
 
-          <!-- [1단 상단] 📅 이번 주 주간 분석 & 차주 증시 예측 리포트 -->
-          <div class="kc-box-white-card" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px 22px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+          <!-- [1단 상단] 📅 이번 주 주간 분석 & 차주 증시 예측 리포트 (최신 10월 2주차 / 10.10 마감) -->
+          <div class="kc-box-white-card" style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 14px; padding: 20px 22px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid #352924; padding-bottom: 12px; flex-wrap: wrap; gap: 10px;">
               <div style="display: flex; align-items: center; gap: 8px;">
                 <span style="font-size: 1.2rem;">📅</span>
-                <h4 style="font-size: 1.1rem; font-weight: 900; color: #1e293b; margin: 0;">
-                  이번 주 주간 복기 & 차주 증시 예측 리포트 (10월 1주차 / 10.02 마감)
+                <h4 style="font-size: 1.1rem; font-weight: 900; color: #f5ebe0; margin: 0;">
+                  이번 주 주간 복기 & 차주 증시 예측 리포트 (10월 2주차 / 10.10 마감)
                 </h4>
               </div>
               <span id="weekly-status-badge" style="font-size: 0.74rem; background: #352924; color: #d4a373; padding: 3px 8px; border-radius: 6px; font-weight: 800; border: 1px solid #4a3b34;">
@@ -1063,51 +1063,52 @@
             <!-- 주간 복기 & 차주 예측 2열 분할 카드 -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px;">
               <!-- 좌측: 이번 주 복기 -->
-              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px;">
-                <div style="font-size: 0.95rem; font-weight: 800; color: #b45309; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
+              <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 10px; padding: 16px;">
+                <div style="font-size: 0.95rem; font-weight: 800; color: #d4a373; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
                   <span>📋</span> [이번 주 복기]: 월~금 누적 주도 테마 & 외인·기관 순매수 총정리
                 </div>
-                <div id="weekly-retrospective-content" style="font-size: 0.83rem; color: #334155; line-height: 1.65; display: flex; flex-direction: column; gap: 10px;">
-                  <div style="padding: 10px 12px; background: #ffffff; border-left: 3px solid #f59e0b; border: 1px solid #e2e8f0; border-left-width: 3px; border-radius: 0 6px 6px 0;">
-                    <strong style="color: #b45309;">🔥 실체적 재료 주도 테마:</strong><br>
-                    • <strong>스페이스X/우주항공:</strong> 와이제이링크 美 스페이스X 단독 SMT 라인 공급 협의 및 나라스페이스 아르테미스 탑재체 최종 선정 팩트로 섹터 거래대금 3,200억 집중.<br>
-                    • <strong>원자력/SMR:</strong> 체코 원전 24조원 본계약 세부 조율 완료 및 美 SMR 파운드리 협약으로 두산에너빌리티·대한전선에 기관 6,000억 이상 연속 순매수 유입.
+                <div id="weekly-retrospective-content" style="font-size: 0.83rem; color: #d7ccc8; line-height: 1.65; display: flex; flex-direction: column; gap: 10px;">
+                  <div style="padding: 12px 14px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #d4a373; border-radius: 6px;">
+                    <strong style="color: #d4a373;">🔥 실체적 재료 주도 테마:</strong><br>
+                    • <strong>전력설비/초고압 전선:</strong> 선도전기 320억원 공급계약 공시 및 북미 AI 데이터센터 전력 쇼티지 부각으로 상한가 분출.<br>
+                    • <strong>원자력/SMR:</strong> 체코 두코바니 2기 원전 주기기 우선협상 계약 체결 공시 및 美 SMR 파운드리 협약으로 두산에너빌리티·대한전선에 기관 순매수 유입.<br>
+                    • <strong>K-방산 수출:</strong> 루마니아 K2 전차 2.8조원 공급 기본계약 체결 및 폴란드 2차 실행계약 가시화로 한화에어로스페이스·현대로템 랠리.
                   </div>
-                  <div style="padding: 10px 12px; background: #ffffff; border-left: 3px solid #0284c7; border: 1px solid #e2e8f0; border-left-width: 3px; border-radius: 0 6px 6px 0;">
-                    <strong style="color: #d4a373;">📡 수급 총합:</strong><br>
-                    외국인 (+7,800억원) · 기관 (+6,510억원) 주간 양매수 우위. 반도체 소부장과 원자력·우주항공 중심의 '숫자 찍히는 수출 섹터'에 선택과 집중 지속.
+                  <div style="padding: 12px 14px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #c7926b; border-radius: 6px;">
+                    <strong style="color: #f5ebe0;">📡 주간 수급 총합:</strong><br>
+                    외국인 (+2,850억원) · 기관 (+3,420억원) 주간 양매수 우위. 3분기 실적 발표 시즌을 앞두고 '실제 영업이익 턴어라운드 및 수주잔고 보유 기업'에 선택과 집중 지속.
                   </div>
                 </div>
               </div>
 
               <!-- 우측: 다음 주 예측 엔진 (인과관계 기반) -->
-              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px;">
+              <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 10px; padding: 16px;">
                 <div style="font-size: 0.95rem; font-weight: 800; color: #d4a373; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
                   <span>🚀</span> [다음 주 예측 엔진]: 인과관계 기반 시나리오
                 </div>
-                <div id="next-week-prediction-content" style="font-size: 0.83rem; color: #334155; line-height: 1.65; display: flex; flex-direction: column; gap: 10px;">
-                  <div style="padding: 12px 14px; background: #ffffff; border-left: 3px solid #0284c7; border: 1px solid #e2e8f0; border-left-width: 3px; border-radius: 0 6px 6px 0;">
+                <div id="next-week-prediction-content" style="font-size: 0.83rem; color: #d7ccc8; line-height: 1.65; display: flex; flex-direction: column; gap: 10px;">
+                  <div style="padding: 12px 14px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #d4a373; border-radius: 6px;">
                     <strong style="color: #d4a373; font-size: 0.86rem;">⚡ 인과관계 공식 기반 시나리오:</strong><br>
-                    "이번 주 <strong>미국 연준 9월 FOMC 50bp 빅컷 단행 및 달러 약세(환율 1,320원대 안착)</strong> 결과 때문에, 다음 주는 <strong>외국인 패시브 자금의 아시아 신흥국 유입 가속화 및 10월 초 테슬라 로보택시 공개 일정 카운트다운</strong>이 도래하여 <strong>온디바이스 AI 자율주행 칩 및 바이오 파이프라인 섹터</strong>에 자금이 쏠릴 가능성이 높습니다."
+                    "이번 주 <strong>테슬라 로보택시 공개와 국정감사 착수 및 3분기 어닝시즌 개막 카운트다운</strong> 결과 때문에, 다음 주는 <strong>실적 서프라이즈가 예상되는 반도체 소부장·전력 인프라 및 체코 원전 후속 실사단 수혜주</strong>에 메이저 수급이 쏠릴 가능성이 높습니다."
                   </div>
-                  <div style="font-size: 0.78rem; color: #64748b; padding-left: 4px;">
-                    ※ 전략: 주말 간 지수 추종 대형주보다는 5일선 지지 후 2차 파동 타점에 진입한 로봇/자율주행 눌림목 종목을 선취매하는 전략이 유효합니다.
+                  <div style="font-size: 0.78rem; color: #a89f91; padding-left: 4px;">
+                    ※ 전략: 지수 추종 대형주보다는 5일선 지지 후 2차 파동 타점에 진입한 전력설비·원전·자율주행 눌림목 종목을 선취매하는 전략이 유효합니다.
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- [2단 중단] 📊 이번 달 월간 분석 & 차월 증시 대전망 -->
-          <div class="kc-box-white-card" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px 22px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; flex-wrap: wrap; gap: 10px;">
-              <div style="display: flex; align-items: gap: 8px;">
+          <!-- [2단 중단] 📊 이번 달(10월) 월간 중간 종합 평가 & 차월(11월) 증시 대전망 (美 대선 결전) -->
+          <div class="kc-box-white-card" style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 14px; padding: 20px 22px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid #352924; padding-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+              <div style="display: flex; align-items: center; gap: 8px;">
                 <span style="font-size: 1.2rem;">📊</span>
-                <h4 style="font-size: 1.1rem; font-weight: 900; color: #1e293b; margin: 0;">
-                  이번 달(9월) 월간 종합 평가 & 차월(10월) 증시 대전망
+                <h4 style="font-size: 1.1rem; font-weight: 900; color: #f5ebe0; margin: 0;">
+                  이번 달(10월) 월간 중간 종합 평가 & 차월(11월) 증시 대전망 (美 대선 결전)
                 </h4>
               </div>
-              <span style="font-size: 0.74rem; background: #faf5ff; color: #9333ea; padding: 3px 8px; border-radius: 6px; font-weight: 800; border: 1px solid #e9d5ff;">
+              <span style="font-size: 0.74rem; background: #352924; color: #d4a373; padding: 3px 8px; border-radius: 6px; font-weight: 800; border: 1px solid #4a3b34;">
                 월간 매크로 사이클
               </span>
             </div>
@@ -1115,47 +1116,47 @@
             <!-- 월간 분석 2열 -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px;">
               <!-- 이번 달 사후 평가 -->
-              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px;">
-                <div style="font-size: 0.92rem; font-weight: 800; color: #9333ea; margin-bottom: 8px;">
-                  📌 [9월 한 달간 지수 궤적 & 최대 상승 vs 소멸 섹터]
+              <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 10px; padding: 16px;">
+                <div style="font-size: 0.92rem; font-weight: 800; color: #d4a373; margin-bottom: 8px;">
+                  📌 [10월 중간 지수 궤적 & 주도 vs 소멸 섹터]
                 </div>
-                <div style="font-size: 0.82rem; color: #334155; line-height: 1.65;">
-                  • <strong>지수 궤적:</strong> 8월 급락 여파를 딛고 2,550선에서 2,620선으로 +2.7% 완만한 우상향 회복세 안착.<br>
-                  • <strong>최대 상승 테마:</strong> 스페이스X 및 위성 공급망 (+28.4%), 원전 본계약 및 SMR (+18.2%), 제약·바이오 (+14.5%).<br>
-                  • <strong>재료 소멸 섹터:</strong> 여름철 폭염·코로나/엠폭스 단발성 테마는 8월 말 이후 거래량 80% 급감하며 소멸 확인.
+                <div style="font-size: 0.82rem; color: #d7ccc8; line-height: 1.65;">
+                  • <strong>지수 궤적:</strong> 9월 말 회복세를 이어받아 코스피 2,600선 안착 공방전 전개 중.<br>
+                  • <strong>최대 주도 테마:</strong> 전력설비/HVDC (+38.5%), 원자력/SMR (+24.0%), K-방산 수출 (+31.2%), 자율주행 소부장.<br>
+                  • <strong>재료 소멸 섹터:</strong> 단발성 정치 테마 및 실적 없는 기대감 급등주는 3분기 어닝시즌 개막과 함께 급격한 차익 매물 출회.
                 </div>
               </div>
 
-              <!-- 차월(10월) 대전망 -->
-              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px;">
+              <!-- 차월(11월) 대전망 -->
+              <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 10px; padding: 16px;">
                 <div style="font-size: 0.92rem; font-weight: 800; color: #d4a373; margin-bottom: 8px;">
-                  🔭 [10월 대형 글로벌 매크로 & 사전 유망 테마]
+                  🔭 [11월 대형 글로벌 매크로 & 美 대선 결전 유망 테마]
                 </div>
-                <div style="font-size: 0.82rem; color: #334155; line-height: 1.65;">
-                  • <strong>핵심 매크로 이벤트:</strong> 10월 10일 테슬라 로보택시(Cybercab) 실물 공개, 국정감사(원전 수출·밸류업 세법 심사), 3분기 어닝시즌 개막.<br>
-                  • <strong>사전 예측 유망 테마:</strong> 자율주행 센서/카메라 소부장, 원전 후속 실사단 방문 수혜주, 3분기 영업이익 턴어라운드 반도체 장비주.<br>
-                  • <strong>주의 리스크:</strong> 11월 초 미국 대선 직전 관망세로 인한 10월 하순 일시적 변동성 확대 대비.
+                <div style="font-size: 0.82rem; color: #d7ccc8; line-height: 1.65;">
+                  • <strong>핵심 매크로 이벤트:</strong> 11월 5일 미국 대선(트럼프 vs 해리스) 본투표 및 결과 확정, 미 연준 11월 FOMC 금리 결정.<br>
+                  • <strong>사전 예측 유망 테마:</strong> 양측 공통 수혜인 AI 데이터센터·초고압 송전망, K-방산 추가 파이프라인, 우주항공 스타십 후속 발사.<br>
+                  • <strong>주의 리스크:</strong> 대선 직전 10월 하순 관망세로 인한 변동성 확대 대비 및 현금 비중 20% 유연 조절.
                 </div>
               </div>
             </div>
           </div>
 
           <!-- [3단 하단] 🗓️ 2026 연간 증시 히스토리 캘린더 (1월 ~ 12월 전수 아카이브) -->
-          <div class="kc-box-white-card" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px 22px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+          <div class="kc-box-white-card" style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 14px; padding: 20px 22px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: 1px solid #352924; padding-bottom: 12px; flex-wrap: wrap; gap: 10px;">
               <div>
                 <div style="display: flex; align-items: center; gap: 8px;">
                   <span style="font-size: 1.25rem;">🏛️</span>
-                  <h4 style="font-size: 1.15rem; font-weight: 900; color: #1e293b; margin: 0;">
-                    2026 연간 증시 히스토리 캘린더 (1월 ~ 현재 9월 ~ 12월)
+                  <h4 style="font-size: 1.15rem; font-weight: 900; color: #f5ebe0; margin: 0;">
+                    2026 연간 증시 히스토리 캘린더 (1월 ~ 현재 10월 ~ 12월)
                   </h4>
                 </div>
-                <p style="font-size: 0.8rem; color: #64748b; margin: 4px 0 0 0;">
+                <p style="font-size: 0.8rem; color: #a89f91; margin: 4px 0 0 0;">
                   달을 클릭하면 그달의 핵심 사건, 주도 테마, 대표 대장주 및 시장 교훈이 하단 상세 패널에 즉시 브리핑됩니다.
                 </p>
               </div>
-              <span style="font-size: 0.74rem; background: #eff6ff; color: #d4a373; padding: 3px 8px; border-radius: 6px; font-weight: 800; border: 1px solid #bae6fd;">
-                현재 9월 17일 기준 라이브
+              <span style="font-size: 0.74rem; background: #352924; color: #d4a373; padding: 3px 8px; border-radius: 6px; font-weight: 800; border: 1px solid #4a3b34;">
+                현재 10월 10일 기준 라이브
               </span>
             </div>
 
@@ -1163,7 +1164,7 @@
             <div id="year-calendar-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 18px;"></div>
 
             <!-- 선택된 달 심층 브리핑 카드 -->
-            <div id="month-detail-card" style="background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 12px; padding: 18px 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
+            <div id="month-detail-card" style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 12px; padding: 18px 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
               <!-- 동적 렌더링 영역 -->
             </div>
           </div>
