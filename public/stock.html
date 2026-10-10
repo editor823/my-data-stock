@@ -1526,28 +1526,28 @@
       <!-- ================= [서브 패널 5] 종목 상세정보 (딥분석 인텔리전스 센터) ================= -->
       <div id="stock-panel-deep" class="stock-panel-content" style="display: none;">
         <!-- 상단 헤더 & 종목 셀렉터/검색 -->
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 14px; background: #ffffff; border: 1px solid #e2e8f0; padding: 16px 20px; border-radius: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 14px; background: #2a201c; border: 1.5px solid #4a3b34; padding: 18px 22px; border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
           <div>
             <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
               <span style="font-size: 1.25rem;">🔬</span>
-              <h3 style="font-size: 1.2rem; font-weight: 900; color: #1e293b; margin: 0;">
+              <h3 style="font-size: 1.25rem; font-weight: 900; color: #f5ebe0; margin: 0;">
                 종목 심층 딥분석 센터 (Deep Research Center)
               </h3>
-              <span style="font-size: 0.74rem; background: #352924; color: #d4a373; border: 1px solid #4a3b34; padding: 2px 8px; border-radius: 6px; font-weight: 700;">
+              <span style="font-size: 0.74rem; background: #352924; color: #d4a373; border: 1px solid #4a3b34; padding: 2px 8px; border-radius: 6px; font-weight: 800;">
                 공시 · 실적 · BM · 미래총집합
               </span>
             </div>
-            <p style="font-size: 0.84rem; color: #64748b; margin: 0;">
-              현재 어떻게 돈을 버는지(BM), 수주/제조업 여부, 공시 히스토리, 엮인 테마 종목군 및 향후 미래 로드맵까지 총집합 분석합니다.
+            <p style="font-size: 0.86rem; color: #d7ccc8; margin: 0;">
+              현재 어떻게 돈을 버는지(BM), 수주/제조업 구분, DART 공시 히스토리, 엮인 테마 종목군 및 향후 미래 로드맵까지 총집합 분석합니다.
             </p>
           </div>
 
-        <!-- 종목 빠른 전환 칩 및 검색 -->
+          <!-- 종목 빠른 전환 칩 및 검색 -->
           <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
-            <div style="display: flex; gap: 6px; align-items: center; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 4px 10px;">
-              <span style="color: #d4a373; font-size: 0.85rem;">🔍</span>
-              <input type="text" id="stock-deep-search-input" placeholder="분석할 종목명 (예: SK하이닉스, 삼천당제약)" style="background: transparent; border: none; color: #1e293b; font-size: 0.82rem; outline: none; width: 180px;" onkeydown="if(event.key==='Enter') searchStockDeepAnalysis()">
-              <button type="button" class="imggen-style-chip" onclick="searchStockDeepAnalysis()" style="padding: 2px 8px; font-size: 0.72rem; background: #3e312b; color: #f5ebe0; border: 1px solid #4a3b34;">분석</button>
+            <div style="display: flex; gap: 6px; align-items: center; background: #1f1613; border: 1px solid #4a3b34; border-radius: 8px; padding: 5px 12px;">
+              <span style="color: #d4a373; font-size: 0.88rem;">🔍</span>
+              <input type="text" id="stock-deep-search-input" placeholder="분석할 종목명 (예: 삼성전자, 알테오젠)" style="background: transparent; border: none; color: #f5ebe0; font-size: 0.84rem; outline: none; width: 190px;" onkeydown="if(event.key==='Enter') searchStockDeepAnalysis()">
+              <button type="button" class="imggen-style-chip" onclick="searchStockDeepAnalysis()" style="padding: 3px 10px; font-size: 0.76rem; background: #352924; color: #d4a373; border: 1px solid #4a3b34; font-weight: 800; cursor: pointer;">분석</button>
             </div>
             <div style="display: flex; gap: 6px; flex-wrap: wrap;" id="stock-deep-quick-chips">
               <!-- JS에서 종목 칩 동적 렌더링 -->
@@ -1688,7 +1688,7 @@
 
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js?v=live_news_1010_v2"></script>
-  <script src="js/stock.js?v=review_upgrade_20261010_1510"></script>
+  <script src="js/stock.js?v=deep_research_v1"></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" onclick="if(event.target===this) closeDailyStockReportModal()">

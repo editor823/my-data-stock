@@ -4710,14 +4710,14 @@ window.selectStockDeepItem = function (idx) {
 
   // 1. 공시 HTML
   const disclosuresHtml = item.disclosures.map(d => `
-    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; margin-bottom: 6px;">
-      <div style="display: flex; align-items: center; gap: 8px; flex: 1;">
-        <span style="font-size: 0.72rem; color: #0284c7; background: #e0f2fe; border: 1px solid #bae6fd; padding: 2px 6px; border-radius: 4px; font-weight: 800; white-space: nowrap;">${escapeHtml(d.tag)}</span>
-        <span style="font-size: 0.84rem; color: #0f172a; font-weight: 700;">${escapeHtml(d.title)}</span>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #1f1613; border: 1px solid #3e312b; border-radius: 8px; margin-bottom: 8px; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#d4a373';" onmouseout="this.style.borderColor='#3e312b';">
+      <div style="display: flex; align-items: center; gap: 10px; flex: 1;">
+        <span style="font-size: 0.74rem; color: #38bdf8; background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.3); padding: 2px 7px; border-radius: 4px; font-weight: 800; white-space: nowrap;">${escapeHtml(d.tag)}</span>
+        <span style="font-size: 0.88rem; color: #f5ebe0; font-weight: 700;">${escapeHtml(d.title)}</span>
       </div>
-      <div style="display: flex; align-items: center; gap: 8px; white-space: nowrap;">
-        <span style="font-size: 0.74rem; color: #94a3b8;">${escapeHtml(d.date)}</span>
-        <a href="https://dart.fss.or.kr/dsac001/mainAll.do?selectDate=${encodeURIComponent(d.date.replace(/-/g, ''))}" target="_blank" rel="noopener noreferrer" style="font-size: 0.72rem; color: #38bdf8; text-decoration: none; font-weight: 700;">
+      <div style="display: flex; align-items: center; gap: 10px; white-space: nowrap;">
+        <span style="font-size: 0.76rem; color: #a89f91;">${escapeHtml(d.date)}</span>
+        <a href="https://dart.fss.or.kr/dsac001/mainAll.do?selectDate=${encodeURIComponent(d.date.replace(/-/g, ''))}" target="_blank" rel="noopener noreferrer" style="font-size: 0.74rem; color: #d4a373; background: #352924; border: 1px solid #4a3b34; padding: 3px 9px; border-radius: 5px; text-decoration: none; font-weight: 800; transition: all 0.15s;" onmouseover="this.style.background='#d4a373'; this.style.color='#1a1412';" onmouseout="this.style.background='#352924'; this.style.color='#d4a373';">
           DART 공시 ↗
         </a>
       </div>
@@ -4729,12 +4729,12 @@ window.selectStockDeepItem = function (idx) {
     const cleanT = a.title.replace(/\[.*?\]/g, '').trim();
     const link = `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(cleanT || a.title)}`;
     return `
-    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; margin-bottom: 6px; gap: 8px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #1f1613; border: 1px solid #3e312b; border-radius: 8px; margin-bottom: 8px; gap: 10px; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#d4a373';" onmouseout="this.style.borderColor='#3e312b';">
       <div style="flex: 1;">
-        <div style="font-size: 0.84rem; color: #0f172a; font-weight: 700; line-height: 1.4;">${escapeHtml(a.title)}</div>
-        <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 2px;">${escapeHtml(a.media)} · ${escapeHtml(a.time)}</div>
+        <div style="font-size: 0.88rem; color: #f5ebe0; font-weight: 700; line-height: 1.45;">${escapeHtml(a.title)}</div>
+        <div style="font-size: 0.74rem; color: #a89f91; margin-top: 3px;">${escapeHtml(a.media)} · ${escapeHtml(a.time)}</div>
       </div>
-      <a href="${link}" target="_blank" rel="noopener noreferrer" style="font-size: 0.72rem; color: #38bdf8; background: rgba(56,189,248,0.12); border: 1px solid rgba(56,189,248,0.3); padding: 4px 10px; border-radius: 6px; text-decoration: none; font-weight: 700; white-space: nowrap;">
+      <a href="${link}" target="_blank" rel="noopener noreferrer" style="font-size: 0.74rem; color: #38bdf8; background: rgba(56,189,248,0.12); border: 1px solid rgba(56,189,248,0.3); padding: 4px 10px; border-radius: 6px; text-decoration: none; font-weight: 800; white-space: nowrap; transition: all 0.15s;" onmouseover="this.style.background='rgba(56,189,248,0.25)';" onmouseout="this.style.background='rgba(56,189,248,0.12)';">
         기사 보기 ↗
       </a>
     </div>
@@ -4743,137 +4743,137 @@ window.selectStockDeepItem = function (idx) {
 
   // 3. 엮인 테마 종목군 HTML
   const themesHtml = item.themes.map(t => `
-    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 12px 14px; margin-bottom: 8px;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-        <span style="font-size: 0.92rem; font-weight: 800; color: #0284c7;">${escapeHtml(t.name)}</span>
-        <span style="font-size: 0.86rem; background: #352924; color: #0369a1; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 4px; font-weight: 800;">${escapeHtml(t.relation)}</span>
+    <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 6px;">
+        <span style="font-size: 0.95rem; font-weight: 900; color: #d4a373;">${escapeHtml(t.name)}</span>
+        <span style="font-size: 0.78rem; background: #352924; color: #f5ebe0; border: 1px solid #4a3b34; padding: 2px 8px; border-radius: 4px; font-weight: 800;">${escapeHtml(t.relation)}</span>
       </div>
-      <div style="font-size: 0.82rem; color: #475569; line-height: 1.5;">
-        🤝 함께 엮여 움직이는 관련주: <strong style="color: #0f172a;">${escapeHtml(t.peers)}</strong>
+      <div style="font-size: 0.86rem; color: #d7ccc8; line-height: 1.55;">
+        🤝 함께 엮여 움직이는 관련주: <strong style="color: #f5ebe0; font-weight: 800;">${escapeHtml(t.peers)}</strong>
       </div>
     </div>
   `).join('');
 
   // 4. 주요 일정 HTML
   const eventsHtml = item.events.map(e => `
-    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 8px; margin-bottom: 6px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: #1f1613; border: 1.5px solid #3e312b; border-radius: 10px; margin-bottom: 8px;">
       <div>
-        <div style="font-size: 0.88rem; font-weight: 800; color: #0f172a; margin-bottom: 2px;">${escapeHtml(e.title)}</div>
-        <div style="font-size: 0.76rem; color: #94a3b8;">${escapeHtml(e.impact)}</div>
+        <div style="font-size: 0.92rem; font-weight: 800; color: #f5ebe0; margin-bottom: 3px;">${escapeHtml(e.title)}</div>
+        <div style="font-size: 0.78rem; color: #a89f91;">${escapeHtml(e.impact)}</div>
       </div>
       <div style="text-align: right;">
-        <span style="font-size: 0.92rem; font-weight: 900; color: #047857; background: #2a201c; border: 1px solid #4a3b34; padding: 3px 8px; border-radius: 6px;">${escapeHtml(e.dday)}</span>
-        <div style="font-size: 0.72rem; color: #64748b; margin-top: 4px;">${escapeHtml(e.date)}</div>
+        <span style="font-size: 0.88rem; font-weight: 900; color: #34d399; background: rgba(52, 211, 153, 0.15); border: 1px solid rgba(52, 211, 153, 0.35); padding: 3px 9px; border-radius: 6px;">${escapeHtml(e.dday)}</span>
+        <div style="font-size: 0.74rem; color: #a89f91; margin-top: 4px;">${escapeHtml(e.date)}</div>
       </div>
     </div>
   `).join('');
 
   detailPanel.innerHTML = `
-    <div class="kc-white-report-container" style="background: #2a201c; border: 1.5px solid #4a3b34; box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
+    <div class="kc-white-report-container" style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 14px; padding: 22px 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
       <!-- A. 최상단 종목 프로필 헤더 -->
-      <div class="kc-detail-header-row" style="margin-bottom: 20px;">
+      <div class="kc-detail-header-row" style="margin-bottom: 20px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap;">
         <div>
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-            <span class="kc-report-pill-badge" style="background: #eff6ff; border-color: #bfdbfe; color: #0284c7;">
+            <span class="kc-report-pill-badge" style="background: #352924; border: 1px solid #4a3b34; color: #d4a373; font-weight: 800; font-size: 0.76rem; padding: 2px 8px; border-radius: 4px;">
               ${escapeHtml(item.market)}
             </span>
-            <span style="font-size: 0.76rem; color: #64748b; font-weight: 700;">종목코드: ${item.symbol}</span>
+            <span style="font-size: 0.78rem; color: #a89f91; font-weight: 700;">종목코드: ${item.symbol}</span>
           </div>
-          <h2 class="kc-report-main-title" style="color: #1e293b; margin-bottom: 6px;">
-            ${escapeHtml(item.name)} <span style="font-size: 1.1rem; color: #dc2626; font-weight: 900;">${item.currentPrice} (${item.changeRate})</span>
+          <h2 class="kc-report-main-title" style="color: #f5ebe0; font-size: 1.45rem; font-weight: 900; margin: 4px 0 6px 0;">
+            ${escapeHtml(item.name)} <span style="font-size: 1.2rem; color: #ef4444; font-weight: 900; margin-left: 6px;">${item.currentPrice} (${item.changeRate})</span>
           </h2>
-          <div class="kc-report-sub-meta" style="color: #64748b;">
-            시가총액: <strong style="color: #1e293b;">${item.marketCap}</strong> · 외국인 지분율: <strong style="color: #0284c7;">${item.foreignRate}</strong>
+          <div class="kc-report-sub-meta" style="color: #d7ccc8; font-size: 0.86rem;">
+            시가총액: <strong style="color: #f5ebe0;">${item.marketCap}</strong> · 외국인 지분율: <strong style="color: #38bdf8;">${item.foreignRate}</strong>
           </div>
-          <div style="font-size: 0.8rem; color: #64748b; margin-top: 4px;">
+          <div style="font-size: 0.82rem; color: #a89f91; margin-top: 4px;">
             밸류에이션: ${item.perPbr}
           </div>
         </div>
 
-        <div class="kc-big-score-card" style="background: #eff6ff; border-color: #bfdbfe; text-align: center;">
-          <div class="kc-score-head-title" style="color: #0284c7;">미래 지속성 점수</div>
-          <div class="kc-score-big-val" style="color: #0284c7;">${item.futureOutlook.targetScore}<span class="kc-score-denom" style="color: #64748b;"> / 100</span></div>
-          <div class="kc-score-bottom-note" style="color: #059669; font-weight: 800;">${escapeHtml(item.futureOutlook.rating)}</div>
+        <div class="kc-big-score-card" style="background: #1f1613; border: 1.5px solid #d4a373; border-radius: 12px; padding: 12px 18px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+          <div class="kc-score-head-title" style="color: #d4a373; font-size: 0.76rem; font-weight: 800; margin-bottom: 2px;">미래 지속성 점수</div>
+          <div class="kc-score-big-val" style="color: #f5ebe0; font-size: 1.8rem; font-weight: 900;">${item.futureOutlook.targetScore}<span class="kc-score-denom" style="color: #a89f91; font-size: 0.95rem;"> / 100</span></div>
+          <div class="kc-score-bottom-note" style="color: #34d399; font-weight: 800; font-size: 0.78rem;">${escapeHtml(item.futureOutlook.rating)}</div>
         </div>
       </div>
 
       <!-- B. 딥분석 6대 핵심 영역 탭 바 -->
-      <div style="display: flex; gap: 6px; margin-bottom: 20px; overflow-x: auto; padding-bottom: 4px;">
-        <button type="button" class="imggen-style-chip ${currentDeepTab === 'all' ? 'active' : ''}" onclick="switchDeepTab('all', this)">📋 전체 종합 분석</button>
-        <button type="button" class="imggen-style-chip ${currentDeepTab === 'bm' ? 'active' : ''}" onclick="switchDeepTab('bm', this)">💰 비즈니스 모델(BM/돈 버는 법)</button>
-        <button type="button" class="imggen-style-chip ${currentDeepTab === 'finance' ? 'active' : ''}" onclick="switchDeepTab('finance', this)">📊 실적 & 공시</button>
-        <button type="button" class="imggen-style-chip ${currentDeepTab === 'news' ? 'active' : ''}" onclick="switchDeepTab('news', this)">📰 관련 기사 모음</button>
-        <button type="button" class="imggen-style-chip ${currentDeepTab === 'theme' ? 'active' : ''}" onclick="switchDeepTab('theme', this)">🌐 엮인 테마 & 관련주</button>
-        <button type="button" class="imggen-style-chip ${currentDeepTab === 'future' ? 'active' : ''}" onclick="switchDeepTab('future', this)">🔮 미래 총집합소</button>
+      <div style="display: flex; gap: 8px; margin-bottom: 22px; overflow-x: auto; padding-bottom: 4px;">
+        <button type="button" class="imggen-style-chip ${currentDeepTab === 'all' ? 'active' : ''}" onclick="switchDeepTab('all', this)" style="padding: 6px 14px; font-size: 0.82rem; font-weight: 800; cursor: pointer;">📋 전체 종합 분석</button>
+        <button type="button" class="imggen-style-chip ${currentDeepTab === 'bm' ? 'active' : ''}" onclick="switchDeepTab('bm', this)" style="padding: 6px 14px; font-size: 0.82rem; font-weight: 800; cursor: pointer;">💰 비즈니스 모델(BM/돈 버는 법)</button>
+        <button type="button" class="imggen-style-chip ${currentDeepTab === 'finance' ? 'active' : ''}" onclick="switchDeepTab('finance', this)" style="padding: 6px 14px; font-size: 0.82rem; font-weight: 800; cursor: pointer;">📊 실적 & 공시</button>
+        <button type="button" class="imggen-style-chip ${currentDeepTab === 'news' ? 'active' : ''}" onclick="switchDeepTab('news', this)" style="padding: 6px 14px; font-size: 0.82rem; font-weight: 800; cursor: pointer;">📰 관련 기사 모음</button>
+        <button type="button" class="imggen-style-chip ${currentDeepTab === 'theme' ? 'active' : ''}" onclick="switchDeepTab('theme', this)" style="padding: 6px 14px; font-size: 0.82rem; font-weight: 800; cursor: pointer;">🌐 엮인 테마 & 관련주</button>
+        <button type="button" class="imggen-style-chip ${currentDeepTab === 'future' ? 'active' : ''}" onclick="switchDeepTab('future', this)" style="padding: 6px 14px; font-size: 0.82rem; font-weight: 800; cursor: pointer;">🔮 미래 총집합소</button>
       </div>
 
       <!-- C. 영역 1: 비즈니스 모델 (어떻게 돈을 벌고 있는가? 수주/제조업 구분) -->
       <div class="deep-section-block" id="deep-sec-bm" style="margin-bottom: 24px;">
-        <div style="font-size: 0.98rem; font-weight: 800; color: #1e293b; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+        <div style="font-size: 1.05rem; font-weight: 900; color: #d4a373; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
           <span>💰</span> 1. 비즈니스 모델 분석 (현재 어떻게 돈을 버는가?)
         </div>
-        <div style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 12px; padding: 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px;">
-            <div style="background: #f0f9ff; border: 1px solid #bae6fd; padding: 12px; border-radius: 8px;">
-              <div style="font-size: 0.76rem; color: #0284c7; font-weight: 800; margin-bottom: 4px;">산업 유형 분류</div>
-              <div style="font-size: 0.92rem; font-weight: 900; color: #0f172a;">${escapeHtml(item.bm.type)}</div>
+        <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 12px; padding: 18px 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-bottom: 14px;">
+            <div style="background: #2a201c; border: 1.5px solid #4a3b34; padding: 14px; border-radius: 8px;">
+              <div style="font-size: 0.78rem; color: #38bdf8; font-weight: 800; margin-bottom: 4px;">산업 유형 분류</div>
+              <div style="font-size: 0.95rem; font-weight: 900; color: #f5ebe0;">${escapeHtml(item.bm.type)}</div>
             </div>
-            <div style="background: #352924; border: 1.5px solid #d4a373; padding: 12px; border-radius: 8px;">
-              <div style="font-size: 0.76rem; color: #d4a373; font-weight: 800; margin-bottom: 4px;">매출 포트폴리오 비중</div>
-              <div style="font-size: 0.92rem; font-weight: 800; color: #f5ebe0;">${escapeHtml(item.bm.structure)}</div>
+            <div style="background: #352924; border: 1.5px solid #d4a373; padding: 14px; border-radius: 8px;">
+              <div style="font-size: 0.78rem; color: #d4a373; font-weight: 800; margin-bottom: 4px;">매출 포트폴리오 비중</div>
+              <div style="font-size: 0.95rem; font-weight: 900; color: #f5ebe0;">${escapeHtml(item.bm.structure)}</div>
             </div>
           </div>
-          <div style="margin-bottom: 12px;">
-            <div style="font-size: 0.84rem; font-weight: 800; color: #c2410c; margin-bottom: 4px;">💵 핵심 캐시카우 (수익 창출 엔진):</div>
-            <div style="font-size: 0.86rem; color: #334155; line-height: 1.6;">${escapeHtml(item.bm.cashCow)}</div>
+          <div style="margin-bottom: 14px; background: #2a201c; border: 1px solid #4a3b34; border-left: 4px solid #f59e0b; padding: 12px 14px; border-radius: 8px;">
+            <div style="font-size: 0.88rem; font-weight: 800; color: #f59e0b; margin-bottom: 4px;">💵 핵심 캐시카우 (수익 창출 엔진):</div>
+            <div style="font-size: 0.9rem; color: #d7ccc8; line-height: 1.65;">${escapeHtml(item.bm.cashCow)}</div>
           </div>
-          <div>
-            <div style="font-size: 0.84rem; font-weight: 800; color: #475569; margin-bottom: 4px;">⚙️ 원가 구조 및 마진 레버리지:</div>
-            <div style="font-size: 0.86rem; color: #475569; line-height: 1.6;">${escapeHtml(item.bm.costStructure)}</div>
+          <div style="background: #2a201c; border: 1px solid #4a3b34; border-left: 4px solid #a89f91; padding: 12px 14px; border-radius: 8px;">
+            <div style="font-size: 0.88rem; font-weight: 800; color: #f5ebe0; margin-bottom: 4px;">⚙️ 원가 구조 및 마진 레버리지:</div>
+            <div style="font-size: 0.9rem; color: #d7ccc8; line-height: 1.65;">${escapeHtml(item.bm.costStructure)}</div>
           </div>
         </div>
       </div>
 
       <!-- D. 영역 2: 실적 & 공시 히스토리 -->
       <div class="deep-section-block" id="deep-sec-finance" style="margin-bottom: 24px;">
-        <div style="font-size: 0.98rem; font-weight: 800; color: #1e293b; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+        <div style="font-size: 1.05rem; font-weight: 900; color: #d4a373; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
           <span>📊</span> 2. 분기별 실적 추이 & DART 핵심 공시
         </div>
         <!-- 분기 실적 3단 카드 -->
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px;">
-          <div style="background: #2a201c; border: 1.5px solid #4a3b34; padding: 12px; border-radius: 8px; text-align: center; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
-            <div style="font-size: 0.74rem; color: #64748b; font-weight: 700;">2024년 1분기</div>
-            <div style="font-size: 0.92rem; font-weight: 900; color: #0f172a; margin: 2px 0;">매출 ${item.financials.q24_1.sales}</div>
-            <div style="font-size: 0.78rem; color: #dc2626; font-weight: 800;">영업익 ${item.financials.q24_1.profit} (${item.financials.q24_1.margin})</div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 14px;">
+          <div style="background: #1f1613; border: 1.5px solid #3e312b; padding: 14px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 0.76rem; color: #a89f91; font-weight: 700;">2024년 1분기</div>
+            <div style="font-size: 0.95rem; font-weight: 900; color: #f5ebe0; margin: 3px 0;">매출 ${item.financials.q24_1.sales}</div>
+            <div style="font-size: 0.82rem; color: #34d399; font-weight: 800;">영업익 ${item.financials.q24_1.profit} (${item.financials.q24_1.margin})</div>
           </div>
-          <div style="background: #2a201c; border: 1.5px solid #4a3b34; padding: 12px; border-radius: 8px; text-align: center; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
-            <div style="font-size: 0.74rem; color: #64748b; font-weight: 700;">2024년 2분기</div>
-            <div style="font-size: 0.92rem; font-weight: 900; color: #0f172a; margin: 2px 0;">매출 ${item.financials.q24_2.sales}</div>
-            <div style="font-size: 0.78rem; color: #dc2626; font-weight: 800;">영업익 ${item.financials.q24_2.profit} (${item.financials.q24_2.margin})</div>
+          <div style="background: #1f1613; border: 1.5px solid #3e312b; padding: 14px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 0.76rem; color: #a89f91; font-weight: 700;">2024년 2분기</div>
+            <div style="font-size: 0.95rem; font-weight: 900; color: #f5ebe0; margin: 3px 0;">매출 ${item.financials.q24_2.sales}</div>
+            <div style="font-size: 0.82rem; color: #34d399; font-weight: 800;">영업익 ${item.financials.q24_2.profit} (${item.financials.q24_2.margin})</div>
           </div>
-          <div style="background: #eff6ff; border: 1px solid #93c5fd; padding: 12px; border-radius: 8px; text-align: center;">
-            <div style="font-size: 0.74rem; color: #2563eb; font-weight: 800;">2024년 3분기 (컨센서스)</div>
-            <div style="font-size: 0.92rem; font-weight: 900; color: #0f172a; margin: 2px 0;">매출 ${item.financials.q24_3E.sales}</div>
-            <div style="font-size: 0.78rem; color: #dc2626; font-weight: 800;">영업익 ${item.financials.q24_3E.profit} (${item.financials.q24_3E.margin})</div>
+          <div style="background: #352924; border: 1.5px solid #d4a373; padding: 14px; border-radius: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.25);">
+            <div style="font-size: 0.76rem; color: #d4a373; font-weight: 800;">2024년 3분기 (컨센서스)</div>
+            <div style="font-size: 0.95rem; font-weight: 900; color: #f5ebe0; margin: 3px 0;">매출 ${item.financials.q24_3E.sales}</div>
+            <div style="font-size: 0.82rem; color: #34d399; font-weight: 800;">영업익 ${item.financials.q24_3E.profit} (${item.financials.q24_3E.margin})</div>
           </div>
         </div>
-        <div style="background: #352924; border: 1.5px solid #d4a373; border-radius: 8px; padding: 10px 14px; font-size: 0.84rem; color: #f5ebe0; margin-bottom: 14px;">
-          📈 <strong>실적 종합 총평:</strong> ${escapeHtml(item.financials.annual2024E)} · ${escapeHtml(item.financials.point)}
+        <div style="background: #352924; border: 1.5px solid #d4a373; border-radius: 8px; padding: 12px 16px; font-size: 0.88rem; color: #f5ebe0; margin-bottom: 14px; line-height: 1.6;">
+          📈 <strong style="color: #d4a373;">실적 종합 총평:</strong> ${escapeHtml(item.financials.annual2024E)} · ${escapeHtml(item.financials.point)}
         </div>
         <!-- 공시 목록 -->
-        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 12px 14px;">
-          <div style="font-size: 0.82rem; font-weight: 800; color: #0284c7; margin-bottom: 8px;">📑 최근 DART 전자공시 주요 내역:</div>
+        <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 10px; padding: 14px 16px;">
+          <div style="font-size: 0.86rem; font-weight: 800; color: #38bdf8; margin-bottom: 10px;">📑 최근 DART 전자공시 주요 내역:</div>
           ${disclosuresHtml}
         </div>
       </div>
 
       <!-- E. 영역 3: 그 종목에 관련된 모든 기사 모음 -->
       <div class="deep-section-block" id="deep-sec-news" style="margin-bottom: 24px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-          <div style="font-size: 0.98rem; font-weight: 800; color: #1e293b; display: flex; align-items: center; gap: 8px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+          <div style="font-size: 1.05rem; font-weight: 900; color: #d4a373; display: flex; align-items: center; gap: 8px;">
             <span>📰</span> 3. 이 종목 관련 모든 기사 모아보기
           </div>
-          <a href="https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(item.name + ' 주가 실적')}" target="_blank" rel="noopener noreferrer" style="font-size: 0.74rem; color: #0284c7; text-decoration: none; font-weight: 700;">
+          <a href="https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(item.name + ' 주가 실적')}" target="_blank" rel="noopener noreferrer" style="font-size: 0.78rem; color: #38bdf8; text-decoration: none; font-weight: 800; background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.3); padding: 4px 10px; border-radius: 6px;">
             네이버 실시간 뉴스 전체 ↗
           </a>
         </div>
@@ -4884,7 +4884,7 @@ window.selectStockDeepItem = function (idx) {
 
       <!-- F. 영역 4: 엮여있는 테마 및 관련 종목군 맵 -->
       <div class="deep-section-block" id="deep-sec-theme" style="margin-bottom: 24px;">
-        <div style="font-size: 0.98rem; font-weight: 800; color: #1e293b; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+        <div style="font-size: 1.05rem; font-weight: 900; color: #d4a373; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
           <span>🌐</span> 4. 엮여있는 테마 및 관련주 에코시스템
         </div>
         <div>
@@ -4894,7 +4894,7 @@ window.selectStockDeepItem = function (idx) {
 
       <!-- G. 영역 5: 증시 캘린더 D-Day 일정 -->
       <div class="deep-section-block" id="deep-sec-events" style="margin-bottom: 24px;">
-        <div style="font-size: 0.98rem; font-weight: 800; color: #1e293b; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+        <div style="font-size: 1.05rem; font-weight: 900; color: #d4a373; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
           <span>📅</span> 5. 향후 주요 일정 및 D-Day 카운트다운
         </div>
         <div>
@@ -4903,43 +4903,42 @@ window.selectStockDeepItem = function (idx) {
       </div>
 
       <!-- H. 영역 6: 이 종목의 미래 종집합소 (미래 지속성 & 투자 전략) -->
-      <div class="deep-section-block" id="deep-sec-future" style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 12px; padding: 18px 20px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-        <div style="font-size: 1.05rem; font-weight: 900; color: #0284c7; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-          <span>🔮</span> 6. 미래 종집합소 (Future Synthesis Report)
+      <div class="deep-section-block" id="deep-sec-future" style="background: #1f1613; border: 1.5px solid #4a3b34; border-radius: 12px; padding: 20px 22px; margin-bottom: 22px; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+        <div style="font-size: 1.1rem; font-weight: 900; color: #d4a373; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+          <span>🔮</span> 6. 미래 총집합소 (Future Synthesis Report)
         </div>
-        <div style="font-size: 0.95rem; font-weight: 800; color: #0f172a; margin-bottom: 8px; line-height: 1.5;">
+        <div style="font-size: 0.96rem; font-weight: 800; color: #f5ebe0; margin-bottom: 12px; line-height: 1.55; background: #2a201c; border-left: 4px solid #d4a373; padding: 12px 14px; border-radius: 6px;">
           ${escapeHtml(item.futureOutlook.summary)}
         </div>
-        <div style="margin-bottom: 10px;">
-          <div style="font-size: 0.82rem; font-weight: 800; color: #059669; margin-bottom: 3px;">🚀 미래 핵심 성장 동력 (Catalyst):</div>
-          <div style="font-size: 0.85rem; color: #334155; line-height: 1.6;">${escapeHtml(item.futureOutlook.catalyst)}</div>
+        <div style="margin-bottom: 12px; background: #2a201c; border: 1px solid #4a3b34; border-left: 4px solid #10b981; padding: 12px 14px; border-radius: 6px;">
+          <div style="font-size: 0.86rem; font-weight: 800; color: #10b981; margin-bottom: 4px;">🚀 미래 핵심 성장 동력 (Catalyst):</div>
+          <div style="font-size: 0.9rem; color: #d7ccc8; line-height: 1.65;">${escapeHtml(item.futureOutlook.catalyst)}</div>
         </div>
-        <div>
-          <div style="font-size: 0.82rem; font-weight: 800; color: #dc2626; margin-bottom: 3px;">⚠️ 주의해야 할 리스크 (Risk Factor):</div>
-          <div style="font-size: 0.85rem; color: #475569; line-height: 1.6;">${escapeHtml(item.futureOutlook.riskCheck)}</div>
+        <div style="background: #2a201c; border: 1px solid #4a3b34; border-left: 4px solid #ef4444; padding: 12px 14px; border-radius: 6px;">
+          <div style="font-size: 0.86rem; font-weight: 800; color: #ef4444; margin-bottom: 4px;">⚠️ 주의해야 할 리스크 (Risk Factor):</div>
+          <div style="font-size: 0.9rem; color: #d7ccc8; line-height: 1.65;">${escapeHtml(item.futureOutlook.riskCheck)}</div>
         </div>
       </div>
 
       <!-- I. 포털 바로가기 그리드 -->
-      <div class="kc-portals-btn-grid">
-        <a href="https://finance.naver.com/item/main.naver?code=${item.symbol}" target="_blank" rel="noopener noreferrer" class="kc-portal-btn portal-green">
-          네이버 증권 시세
+      <div class="kc-portals-btn-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px;">
+        <a href="https://finance.naver.com/item/main.naver?code=${item.symbol}" target="_blank" rel="noopener noreferrer" style="background: #352924; color: #d4a373; border: 1.5px solid #4a3b34; padding: 10px 14px; border-radius: 8px; text-decoration: none; font-size: 0.82rem; font-weight: 800; text-align: center; transition: all 0.2s;" onmouseover="this.style.background='#d4a373'; this.style.color='#1a1412';" onmouseout="this.style.background='#352924'; this.style.color='#d4a373';">
+          네이버 증권 시세 ↗
         </a>
-        <a href="https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(item.name)}" target="_blank" rel="noopener noreferrer" class="kc-portal-btn">
+        <a href="https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(item.name)}" target="_blank" rel="noopener noreferrer" style="background: #352924; color: #d4a373; border: 1.5px solid #4a3b34; padding: 10px 14px; border-radius: 8px; text-decoration: none; font-size: 0.82rem; font-weight: 800; text-align: center; transition: all 0.2s;" onmouseover="this.style.background='#d4a373'; this.style.color='#1a1412';" onmouseout="this.style.background='#352924'; this.style.color='#d4a373';">
           관련 뉴스 전체보기 ↗
         </a>
-        <a href="https://dart.fss.or.kr/" target="_blank" rel="noopener noreferrer" class="kc-portal-btn">
-          DART 전자공시
+        <a href="https://dart.fss.or.kr/" target="_blank" rel="noopener noreferrer" style="background: #352924; color: #d4a373; border: 1.5px solid #4a3b34; padding: 10px 14px; border-radius: 8px; text-decoration: none; font-size: 0.82rem; font-weight: 800; text-align: center; transition: all 0.2s;" onmouseover="this.style.background='#d4a373'; this.style.color='#1a1412';" onmouseout="this.style.background='#352924'; this.style.color='#d4a373';">
+          DART 전자공시 ↗
         </a>
-        <a href="https://www.google.com/finance/quote/${item.symbol}:KRX" target="_blank" rel="noopener noreferrer" class="kc-portal-btn">
-          구글 파이낸스
+        <a href="https://www.google.com/finance/quote/${item.symbol}:KRX" target="_blank" rel="noopener noreferrer" style="background: #352924; color: #d4a373; border: 1.5px solid #4a3b34; padding: 10px 14px; border-radius: 8px; text-decoration: none; font-size: 0.82rem; font-weight: 800; text-align: center; transition: all 0.2s;" onmouseover="this.style.background='#d4a373'; this.style.color='#1a1412';" onmouseout="this.style.background='#352924'; this.style.color='#d4a373';">
+          구글 파이낸스 ↗
         </a>
       </div>
     </div>
   `;
 };
 
-// 딥분석 탭 전환 함수
 window.switchDeepTab = function (tabName, btn) {
   currentDeepTab = tabName;
   if (btn && btn.parentElement) {
