@@ -15,7 +15,7 @@
  *   → 출력된 긴 영문/숫자 값을 아래 ADMIN_HASH 에 붙여넣기 (블로그·주식센터 파일 모두)
  */
 (function () {
-  const ADMIN_HASH = '923b1a34ef5548e32018ca1dbc5fcaee0a4844eaf6a208d7e09d489ce6cd3db1';
+  const ADMIN_HASH = '1d913a35e66ff2c6bc4d6c7c4eec8d7f744138d5ed917531162b1e854be8e291';
   const SESSION_KEY = 'inspector_admin_ok';
   const MAX_TRIES = 5;
   let tries = 0;
