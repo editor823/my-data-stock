@@ -1633,7 +1633,10 @@
           </div>
           <div class="form-group" style="margin-bottom: 4px;">
             <label class="form-label" style="font-size: 0.76rem; color: #d4a373; margin-bottom: 4px; display: block; font-weight: 700;">Client Secret</label>
-            <input type="password" id="stockNaverClientSecret" class="form-input" placeholder="Client Secret" style="width: 100%; background: #1a1412; border: 1px solid #4a3b34; color: #f5ebe0; border-radius: 6px; padding: 8px 12px; font-size: 0.88rem;">
+            <div style="position: relative; display: flex; align-items: center;">
+              <input type="password" id="stockNaverClientSecret" class="form-input" placeholder="Client Secret" style="width: 100%; background: #1a1412; border: 1px solid #4a3b34; color: #f5ebe0; border-radius: 6px; padding: 8px 36px 8px 12px; font-size: 0.88rem; box-sizing: border-box;">
+              <button type="button" onclick="toggleStockPasswordVisibility('stockNaverClientSecret', this)" style="position: absolute; right: 8px; background: none; border: none; cursor: pointer; font-size: 1.1rem; color: #d4a373; padding: 4px; display: flex; align-items: center; justify-content: center;" title="비밀번호 보기/숨기기" aria-label="비밀번호 표시 토글">👁️</button>
+            </div>
           </div>
         </div>
 
@@ -1648,7 +1651,10 @@
           </div>
           <div class="form-group" style="margin-bottom: 4px;">
             <label class="form-label" style="font-size: 0.76rem; color: #d4a373; margin-bottom: 4px; display: block; font-weight: 700;">App Secret</label>
-            <input type="password" id="stockKisAppSecret" class="form-input" placeholder="KIS Developers AppSecret" style="width: 100%; background: #1a1412; border: 1px solid #4a3b34; color: #f5ebe0; border-radius: 6px; padding: 8px 12px; font-size: 0.88rem;">
+            <div style="position: relative; display: flex; align-items: center;">
+              <input type="password" id="stockKisAppSecret" class="form-input" placeholder="KIS Developers AppSecret" style="width: 100%; background: #1a1412; border: 1px solid #4a3b34; color: #f5ebe0; border-radius: 6px; padding: 8px 36px 8px 12px; font-size: 0.88rem; box-sizing: border-box;">
+              <button type="button" onclick="toggleStockPasswordVisibility('stockKisAppSecret', this)" style="position: absolute; right: 8px; background: none; border: none; cursor: pointer; font-size: 1.1rem; color: #d4a373; padding: 4px; display: flex; align-items: center; justify-content: center;" title="비밀번호 보기/숨기기" aria-label="비밀번호 표시 토글">👁️</button>
+            </div>
           </div>
         </div>
 
@@ -1689,6 +1695,19 @@
       }, 2500);
     }
     window.showToast = showToast;
+
+    function toggleStockPasswordVisibility(inputId, btn) {
+      const input = document.getElementById(inputId);
+      if (!input) return;
+      if (input.type === 'password') {
+        input.type = 'text';
+        if (btn) btn.textContent = '🙈';
+      } else {
+        input.type = 'password';
+        if (btn) btn.textContent = '👁️';
+      }
+    }
+    window.toggleStockPasswordVisibility = toggleStockPasswordVisibility;
   </script>
 
   <!-- 필수 스크립트 로드 -->
