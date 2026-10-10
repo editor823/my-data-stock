@@ -118,7 +118,7 @@
   <!-- 독립 상단 글로벌 헤더 -->
   <nav class="stock-standalone-nav">
     <div class="stock-standalone-nav-inner">
-      <a href="javascript:void(0);" onclick="if(typeof switchSubTab==='function'){switchSubTab('news');}window.scrollTo({top:0,behavior:'smooth'});return false;" class="stock-brand" title="주식 인텔리전스 분석센터 홈으로 이동">
+      <a href="javascript:void(0);" onclick="if(typeof goToHomeNewsTab==='function'){goToHomeNewsTab();}else if(typeof activateStockSubTab==='function'){activateStockSubTab('news');window.scrollTo({top:0,behavior:'smooth'});}return false;" class="stock-brand" title="홈(0. 실시간 국내 주식 뉴스)으로 이동" style="cursor: pointer; text-decoration: none;">
         <span style="font-size: 1.4rem;">📈</span>
         <span>주식 인텔리전스 분석센터</span>
         <span class="stock-brand-badge">LIVE INTELLIGENCE</span>
@@ -150,7 +150,7 @@
             <span class="kc-badge-daily" style="background: rgba(220, 80, 0, 0.08); border: 1px dashed #40372e; color: #dc5000; border-radius: 9999px;">
               DAILY STOCK & THEME INTELLIGENCE
             </span>
-            <h1 class="kc-main-title" style="display: flex; align-items: center; gap: 10px; color: #ffedd7;">
+            <h1 class="kc-main-title" onclick="if(typeof goToHomeNewsTab==='function'){goToHomeNewsTab();}else if(typeof activateStockSubTab==='function'){activateStockSubTab('news');window.scrollTo({top:0,behavior:'smooth'});}" title="홈(0. 실시간 국내 주식 뉴스)으로 이동" style="display: flex; align-items: center; gap: 10px; color: #ffedd7; cursor: pointer; user-select: none;">
               <span>📈</span> 주식 인텔리전스 분석센터
             </h1>
             <p style="font-size: 0.88rem; color: #86868b; margin: 6px 0 0 0;">
@@ -1691,7 +1691,7 @@
 
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js?v=live_news_1010_v6"></script>
-  <script src="js/stock.js?v=100pct_pass_1010_v15"></script>
+  <script src="js/stock.js?v=home_link_1010_v16"></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" style="display: none;" onclick="if(event.target===this) closeDailyStockReportModal()">

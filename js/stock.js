@@ -10680,3 +10680,18 @@ window.runSystemInspectorBot = async function() {
     </div>
   `;
 };
+
+
+// [홈 바로가기] 최상단 로고 및 타이틀 클릭 시 0. 실시간 국내 주식 뉴스(홈 화면)로 이동
+window.goToHomeNewsTab = function() {
+  if (typeof window.activateStockSubTab === 'function') {
+    window.activateStockSubTab('news', true);
+  } else {
+    const newsTab = document.querySelector('.stock-sub-tab[data-sub="news"]');
+    if (newsTab) newsTab.click();
+  }
+  if (typeof window.loadLeadingThemeDualRadar === 'function') {
+    window.loadLeadingThemeDualRadar();
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
