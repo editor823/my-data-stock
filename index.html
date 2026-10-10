@@ -126,11 +126,13 @@
 
       <div style="display: flex; align-items: center; gap: 12px;">
         
+        <span data-admin-only style="display: none;">
         <button type="button" id="btn-run-inspector-bot" onclick="openSystemInspectorBot()"
           style="display: inline-flex; align-items: center; gap: 6px; background: #3e312b; color: #ffffff; border: 1px solid #4a3b34; padding: 7px 14px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; box-shadow: none; transition: all 0.2s;"
           onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
           <span>🤖</span> 기능 검수봇 작동
         </button>
+        </span>
 
 <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer" class="nav-external-link">
           <span>⚡</span> 블로그 자동화 허브 바로가기 ↗
@@ -1692,6 +1694,7 @@
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js?v=live_news_1010_v6"></script>
   <script src="js/stock.js?v=home_link_1010_v16"></script>
+  <script src="js/inspector_admin_gate.js?v=20261010_gate"></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" style="display: none;" onclick="if(event.target===this) closeDailyStockReportModal()">
