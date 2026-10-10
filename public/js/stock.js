@@ -8394,141 +8394,12 @@ window.searchStockDeepAnalysis = searchStockDeepAnalysis;
 
 // ============================================================================
 // ============================================================================
-// [서브 패널 6] 심플 관심종목 TV 단독 증시 브리핑 & 영상 분석 보고서 시스템
+// ============================================================================
+// [서브 패널 6] 심플 관심종목 TV 모든 최신 영상 순차 정밀 분석 보고서 시스템
 // ============================================================================
 
-let currentSimpleBriefingTab = 'morning';
+let currentTimelineCategoryFilter = 'all';
 let simpleBriefingCache = null;
-
-// 보고서 기본 폴백 데이터 (오직 '심플 관심종목 TV' 전용)
-const DEFAULT_SIMPLE_BRIEFING_DATA = {
-  channelTitle: "심플 관심종목 TV",
-  channelId: "UChQIBrXk5QMyJjF3Hl_5-kQ",
-  channelUrl: "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
-  channelHandle: "@simple_stock_tv",
-  targetDate: "2026-10-10",
-  briefingSummary: "심플 관심종목 TV 데일리 증시 주도 테마 및 핵심 공략 종목 정밀 분석 보고서",
-  tradingRules: [
-    "시초가 갭상승 종목 무리한 추격 매수 절대 금지 (오전 9시 30분 이후 눌림목 지지 확인)",
-    "당일 거래대금 최소 1,000억 원 이상 시장 주도 섹터 대장주 압축 매매",
-    "지수 조정 시 지지선 이탈 없는 강한 수급(외인·기관 양매수) 보유 종목 분할 접근",
-    "개별 재료주는 일정 발표 1~2일 전 선제적 차익 실현 원칙 준수"
-  ],
-  morningVideo: {
-    hasVideo: true,
-    id: "kCrlauDice4",
-    briefingType: "모닝 개장전 주도주 브리핑 (08:30)",
-    title: "당일 관심테마! 반도체,소부장,비만치료제,페스트,개별주/삼성전자,SK하이닉스,주성엔지니어링,한미사이언스,펩트론,신풍제약,삼성전기,성호전자,심텍,코리아써키트,이수페타시스,한미반도체",
-    published_kst: "2026-10-10 08:15:00",
-    url: "https://www.youtube.com/watch?v=kCrlauDice4",
-    thumbnail: "https://i.ytimg.com/vi/kCrlauDice4/hqdefault.jpg",
-    executiveSummary: "미국 기술주 변동성 확대 국면에서 HBM 소부장과 국산 비만치료제 임상 모멘텀 보유주 중심의 선별적 수급 쏠림 예상. 갭상승 시 추격 자제하고 시초 분할 대응 권고.",
-    themes: [
-      { name: "AI 반도체 & 소부장", intensity: "최강", reason: "HBM4 조기 양산 및 차세대 CXL/유리기판 장비 수요 증가" },
-      { name: "비만치료제 & 바이오", intensity: "강", reason: "국산 GLP-1 비만치료제 유럽 기술이전 및 10월 학회 모멘텀" },
-      { name: "PCB / 기판", intensity: "중립", reason: "AI 가속기용 다층 FC-BGA 쇼티지 지속 수혜" },
-      { name: "개별 재료주", intensity: "선별적", reason: "원전·방산 추가 수출 MOU 체결 및 실적 턴어라운드" }
-    ],
-    targetStocks: [
-      { code: "000660", name: "SK하이닉스", theme: "AI 반도체", strategy: "HBM3E 12단 독점 공급 지배력 유지. 20일선 눌림목 지지 시 분할 매수 유리.", targetPrice: "215,000원", stopLoss: "180,000원" },
-      { code: "005930", name: "삼성전자", theme: "반도체 대형주", strategy: "엔비디아 HBM3E 퀄테스트 승인 기대감 및 밸류에이션 바닥권 반등 국면.", targetPrice: "72,000원", stopLoss: "58,000원" },
-      { code: "036930", name: "주성엔지니어링", theme: "반도체 소부장", strategy: "ALD 증착 장비 독보적 경쟁력. 인적분할 이슈 후 기관 순매수 유입 지속.", targetPrice: "42,000원", stopLoss: "34,000원" },
-      { code: "042700", name: "한미반도체", theme: "반도체 소부장", strategy: "TC 본더 글로벌 시장점유율 1위. 110,000원 지지 확인 후 기술적 반등 타진.", targetPrice: "135,000원", stopLoss: "105,000원" },
-      { code: "087010", name: "펩트론", theme: "비만치료제", strategy: "스마트데포 플랫폼 기반 글로벌 빅파마 공동연구 모멘텀. 5일선 추세 매매 권장.", targetPrice: "95,000원", stopLoss: "76,000원" },
-      { code: "008930", name: "한미사이언스", theme: "바이오 / 경영권", strategy: "임시주총 앞두고 경영권 분쟁 격화로 대량 거래대금 발생. 변동성 매매 유효.", targetPrice: "48,000원", stopLoss: "38,500원" },
-      { code: "009150", name: "삼성전기", theme: "PCB / MLCC", strategy: "AI 서버향 고부가 MLCC 및 FC-BGA 수주 본격화. 저점 매수세 견조.", targetPrice: "165,000원", stopLoss: "138,000원" },
-      { code: "105630", name: "한세실업", theme: "개별주 / 실적", strategy: "미국 소비 회복 및 바이어 오더 증가 기대감. 바닥권 거래량 회복.", targetPrice: "23,000원", stopLoss: "18,500원" }
-    ],
-    key_points: [
-      "반도체 & 소부장: HBM 검사장비 및 차세대 CXL 수혜주 집중 점검",
-      "비만치료제: 국산 비만약 허가 및 유럽 독점공급 계약 모멘텀 지속",
-      "개별주 & 방산: 원전·방산 후속 수주 및 개별 재료 보유주 분할 접근"
-    ]
-  },
-  closingVideo: {
-    hasVideo: true,
-    id: "meODvYg93wY",
-    briefingType: "장마감 결산 & 익일 대응 보고서 (20:00)",
-    title: "내일 관심테마! 반도체,소부장,비만치료제,페스트,개별주/삼성전자,SK하이닉스,주성엔지니어링,한미사이언스,펩트론,신풍제약,삼성전기,성호전자,심텍,코리아써키트,이수페타시스,한미반도체",
-    published_kst: "2026-10-09 20:30:00",
-    url: "https://www.youtube.com/watch?v=meODvYg93wY",
-    thumbnail: "https://i.ytimg.com/vi/meODvYg93wY/hqdefault.jpg",
-    executiveSummary: "장 후반 선물옵션 만기일 영향과 외인 매도로 지수 변동성 있었으나, 반도체 소부장 대장주와 바이오 특정 종목군으로의 기관 메이저 수급 방어력 돋보임.",
-    themes: [
-      { name: "시간외 특징주", intensity: "강", reason: "반도체 부품주 실적 호조 공시 후 시간외 단일가 강세 마감" },
-      { name: "바이오 / 플랫폼", intensity: "강", reason: "외국인 순매수 지속 유입 및 학회 기대감 지속" },
-      { name: "원전 & 전력인프라", intensity: "중립", reason: "변압기·전선주 가격 조정 후 60일선 반등 지지력 테스트" }
-    ],
-    targetStocks: [
-      { code: "000660", name: "SK하이닉스", theme: "AI 반도체", strategy: "장마감 외인 400억 순매수 복귀. 지수 하방 경직성 확보 역할.", targetPrice: "210,000원", stopLoss: "182,000원" },
-      { code: "087010", name: "펩트론", theme: "비만치료제", strategy: "거래대금 3,200억 터지며 전고점 돌파 시도. 익일 시초가 눌림목 공략.", targetPrice: "98,000원", stopLoss: "79,000원" },
-      { code: "036930", name: "주성엔지니어링", theme: "반도체 소부장", strategy: "기관 3거래일 연속 순매수. 분할 이후 사업 가치 재평가 지속.", targetPrice: "43,000원", stopLoss: "35,000원" },
-      { code: "008930", name: "한미사이언스", theme: "지배구조", strategy: "시간외 거래대금 급증. 갭상승 시 쫓아가지 말고 음봉 꼬리 확인 후 진입.", targetPrice: "49,000원", stopLoss: "39,000원" }
-    ],
-    key_points: [
-      "당일 거래대금 상위 주도주(와이씨, 비에이치아이 등) 수급 주체 매매 분석",
-      "장마감 후 외인·기관 실질 순매수 섹터와 시간외 단일가 특징주 복기",
-      "익일 개장 시 갭상승 추격 매수 금지 및 눌림목 지지선 확인 전략 제시"
-    ]
-  },
-  latestVideo: {
-    hasVideo: true,
-    id: "_TZucU26Nb8",
-    briefingType: "최신 긴급 매크로/섹터 심층 분석",
-    title: "오픈AI 매출 논란으로 흔들린 반도체 & 미국 증시 !!",
-    published_kst: "2026-10-09 13:41:36",
-    url: "https://www.youtube.com/watch?v=_TZucU26Nb8",
-    thumbnail: "https://i.ytimg.com/vi/_TZucU26Nb8/hqdefault.jpg",
-    executiveSummary: "오픈AI의 데이터센터 비용 부담 이슈로 인한 나스닥 기술주 단기 조정 원인 해부. 실질적인 AI 수요(CSP 기업들의 CAPEX 투자)는 꺾이지 않았으므로 공포 구간에서의 분할 매수 기회 분석.",
-    key_points: [
-      "오픈AI 운영비용 논란이 엔비디아 및 국내 반도체 밸류체인에 미치는 실질적 영향 점검",
-      "단기 차익실현 매물 소화 후 실적 시즌(TSMC, SK하이닉스 실적발표) 반등 트리거 분석",
-      "지수 흔들릴 때 오히려 수급이 쏠리는 고수익 틈새 테마 선별"
-    ]
-  },
-  curatedVideos: [
-    {
-      id: "kCrlauDice4",
-      title: "당일 관심테마! 반도체,소부장,비만치료제,페스트,개별주/삼성전자,SK하이닉스,주성엔지니어링,한미사이언스,펩트론",
-      channel: "심플 관심종목 TV",
-      views: "조회수 1.8만회",
-      published: "오늘 08:15",
-      category: "모닝 브리핑",
-      url: "https://www.youtube.com/watch?v=kCrlauDice4",
-      thumbnail: "https://i.ytimg.com/vi/kCrlauDice4/hqdefault.jpg"
-    },
-    {
-      id: "meODvYg93wY",
-      title: "내일 관심테마! 반도체,소부장,비만치료제,페스트,개별주/삼성전자,SK하이닉스,주성엔지니어링,한미사이언스,펩트론",
-      channel: "심플 관심종목 TV",
-      views: "조회수 2.4만회",
-      published: "어제 20:30",
-      category: "장마감 복기",
-      url: "https://www.youtube.com/watch?v=meODvYg93wY",
-      thumbnail: "https://i.ytimg.com/vi/meODvYg93wY/hqdefault.jpg"
-    },
-    {
-      id: "_TZucU26Nb8",
-      title: "오픈AI 매출 논란으로 흔들린 반도체 & 미국 증시 !!",
-      channel: "심플 관심종목 TV",
-      views: "조회수 2.1만회",
-      published: "어제 13:41",
-      category: "긴급 심층",
-      url: "https://www.youtube.com/watch?v=_TZucU26Nb8",
-      thumbnail: "https://i.ytimg.com/vi/_TZucU26Nb8/hqdefault.jpg"
-    },
-    {
-      id: "simple_playlist_live",
-      title: "심플 관심종목 TV 주간 관심섹터 및 거래대금 주도주 완전정복 라이브",
-      channel: "심플 관심종목 TV",
-      views: "조회수 3.1만회",
-      published: "이번 주",
-      category: "주간 라이브",
-      url: "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
-      thumbnail: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80"
-    }
-  ]
-};
 
 async function loadSimpleBriefingData() {
   if (simpleBriefingCache) return simpleBriefingCache;
@@ -8536,85 +8407,75 @@ async function loadSimpleBriefingData() {
     const res = await fetch('data/simple_channel_briefing.json');
     if (res.ok) {
       const data = await res.json();
-      if (data && data.channelId) {
+      if (data && data.timeline && data.timeline.length > 0) {
         simpleBriefingCache = data;
         return data;
       }
     }
   } catch (err) {
-    console.warn('data/simple_channel_briefing.json 로드 실패, 기본 데이터셋 사용:', err);
+    console.warn('data/simple_channel_briefing.json 로드 실패, 기본 데이터 사용:', err);
   }
-  simpleBriefingCache = DEFAULT_SIMPLE_BRIEFING_DATA;
-  return simpleBriefingCache;
+  return null;
 }
 
-window.switchSimpleBriefingTab = function(tabName) {
-  currentSimpleBriefingTab = tabName;
+window.filterTimelineCategory = function(catCode) {
+  currentTimelineCategoryFilter = catCode;
   renderYoutubeBriefingFeed();
 };
 
-window.copySimpleBriefingReport = function(type) {
-  if (!simpleBriefingCache) return;
-  const data = simpleBriefingCache;
-  let reportText = '';
+window.copySingleBriefingReport = function(idx) {
+  if (!simpleBriefingCache || !simpleBriefingCache.timeline) return;
+  const item = simpleBriefingCache.timeline[idx];
+  if (!item) return;
 
-  if (type === 'morning' && data.morningVideo) {
-    const v = data.morningVideo;
-    reportText = `[심플 관심종목 TV] 🌅 08:30 모닝 주도주 브리핑 보고서
-기준일자: ${data.targetDate || '2026-10-10'}
-영상제목: ${v.title}
-영상링크: ${v.url}
+  const text = `[심플 관심종목 TV 영상 정밀 분석 보고서]
+■ 영상: ${item.title}
+■ 구분: ${item.category} (${item.dateFormatted || item.published_kst})
+■ 영상링크: ${item.url}
 
-■ 시장 핵심 요약
-${v.executiveSummary || ''}
+1. 핵심 시장 요약
+${item.executiveSummary || ''}
 
-■ 주도 테마 & 모멘텀
-${(v.themes || []).map(t => `- [${t.intensity}] ${t.name}: ${t.reason}`).join('\n')}
+2. 주도 테마 & 모멘텀
+${(item.themes || []).map(t => `- [${t.intensity}] ${t.name}: ${t.reason}`).join('\n')}
 
-■ 집중 공략 대상 종목
-${(v.targetStocks || []).map(s => `- ${s.name}(${s.code}) [${s.theme}]: ${s.strategy} (목표: ${s.targetPrice || '-'} / 손절: ${s.stopLoss || '-'})`).join('\n')}
+3. 집중 공략 대상 종목
+${(item.targetStocks || []).map(s => `- ${s.name}(${s.code}) [${s.theme}]: ${s.strategy} (목표: ${s.targetPrice || '-'} / 손절: ${s.stopLoss || '-'})`).join('\n')}
 
-■ 심플 관심종목 TV 매매 원칙
-${(data.tradingRules || []).map((r, i) => `${i+1}. ${r}`).join('\n')}
+4. 영상 속 핵심 매매 체크포인트
+${(item.keyPoints || []).map((k, i) => `${i+1}. ${k}`).join('\n')}
 `;
-  } else if (type === 'closing' && data.closingVideo) {
-    const v = data.closingVideo;
-    reportText = `[심플 관심종목 TV] 🌆 20:00 장마감 결산 & 익일 전략 보고서
-기준일자: ${data.targetDate || '2026-10-10'}
-영상제목: ${v.title}
-영상링크: ${v.url}
 
-■ 장마감 핵심 결산
-${v.executiveSummary || ''}
-
-■ 시간외/익일 주목 테마
-${(v.themes || []).map(t => `- [${t.intensity}] ${t.name}: ${t.reason}`).join('\n')}
-
-■ 익일 대응 관심종목
-${(v.targetStocks || []).map(s => `- ${s.name}(${s.code}) [${s.theme}]: ${s.strategy} (목표: ${s.targetPrice || '-'} / 손절: ${s.stopLoss || '-'})`).join('\n')}
-
-■ 실전 매매 원칙
-${(data.tradingRules || []).map((r, i) => `${i+1}. ${r}`).join('\n')}
-`;
-  } else if (type === 'latest' && data.latestVideo) {
-    const v = data.latestVideo;
-    reportText = `[심플 관심종목 TV] ⚡ 긴급 심층 분석 보고서
-영상제목: ${v.title}
-영상링크: ${v.url}
-
-■ 심층 분석 요약
-${v.executiveSummary || ''}
-
-■ 핵심 인사이트 포인트
-${(v.key_points || []).map(p => `- ${p}`).join('\n')}
-`;
-  }
-
-  if (navigator.clipboard && reportText) {
-    navigator.clipboard.writeText(reportText).then(() => {
-      alert('📋 심플 관심종목 TV 브리핑 보고서 텍스트가 클립보드에 복사되었습니다!\n원하는 곳에 바로 붙여넣기(Ctrl+V)하세요.');
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).then(() => {
+      alert(`📋 '${item.category}' 영상의 분석 보고서가 복사되었습니다!\n원하는 곳에 바로 붙여넣기(Ctrl+V)하세요.`);
     }).catch(() => {
-      alert('클립보드 복사에 실패했습니다. 수동으로 복사해주세요.');
+      alert('클립보드 복사에 실패했습니다.');
+    });
+  }
+};
+
+window.copyAllBriefingReports = function() {
+  if (!simpleBriefingCache || !simpleBriefingCache.timeline) return;
+  const list = simpleBriefingCache.timeline;
+  let allText = `==================================================
+[심플 관심종목 TV] 최신 영상 전수 정밀 분석 종합 보고서
+기준일: ${simpleBriefingCache.targetDate || '2026-10-10'} | 총 ${list.length}편 분석
+==================================================\n\n`;
+
+  list.forEach((item, idx) => {
+    allText += `[${idx + 1}] ${item.category} : ${item.title}
+일시: ${item.dateFormatted || item.published_kst} | 링크: ${item.url}
+요약: ${item.executiveSummary || ''}
+언급 종목: ${(item.targetStocks || []).map(s => s.name).join(', ')}
+체크포인트:
+${(item.keyPoints || []).map(k => `- ${k}`).join('\n')}
+--------------------------------------------------\n\n`;
+  });
+
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(allText).then(() => {
+      alert('📋 전체 영상의 순차 분석 종합 보고서가 클립보드에 복사되었습니다!\n메모장이나 메신저에 바로 붙여넣기(Ctrl+V)하세요.');
     });
   }
 };
@@ -8642,305 +8503,255 @@ async function renderYoutubeBriefingFeed() {
   if (!container) return;
 
   const data = await loadSimpleBriefingData();
+  if (!data || !data.timeline) {
+    container.innerHTML = '<div style="text-align: center; padding: 40px; color: #a89f91;">심플 관심종목 TV 분석 데이터를 불러오는 중입니다...</div>';
+    return;
+  }
 
-  // 상단 채널 브랜딩 & 탭 내비게이션 바 HTML
-  const topNavHtml = `
-    <div style="background: #251c19; border: 1.5px solid #4a3b34; border-radius: 14px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; border-bottom: 1px solid #3e312b; padding-bottom: 16px; margin-bottom: 16px;">
+  const allList = data.timeline;
+  const filteredList = currentTimelineCategoryFilter === 'all'
+    ? allList
+    : allList.filter(item => {
+        if (currentTimelineCategoryFilter === 'morning') return item.categoryCode === 'morning';
+        if (currentTimelineCategoryFilter === 'closing') return item.categoryCode === 'closing';
+        if (currentTimelineCategoryFilter === 'special') return item.categoryCode === 'special';
+        if (currentTimelineCategoryFilter === 'weekly') return item.categoryCode === 'weekly' || item.categoryCode === 'lecture';
+        return true;
+      });
+
+  // 상단 채널 브랜딩 & 필터 컨트롤 바
+  const headerHtml = `
+    <div style="background: #251c19; border: 1.5px solid #4a3b34; border-radius: 14px; padding: 22px; margin-bottom: 24px; box-shadow: 0 4px 18px rgba(0,0,0,0.3);">
+      <!-- 채널 정보 행 -->
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; border-bottom: 1px solid #3e312b; padding-bottom: 18px; margin-bottom: 18px;">
         <div style="display: flex; align-items: center; gap: 14px;">
-          <div style="width: 46px; height: 46px; border-radius: 50%; background: linear-gradient(135deg, #ef4444, #991b1b); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.5rem; font-weight: 900; box-shadow: 0 2px 8px rgba(239,68,68,0.4);">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #ef4444, #991b1b); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.6rem; font-weight: 900; box-shadow: 0 2px 10px rgba(239,68,68,0.4);">
             ▶
           </div>
           <div>
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span style="font-size: 1.15rem; font-weight: 900; color: #f5ebe0;">${escapeHtml(data.channelTitle)}</span>
-              <span style="font-size: 0.72rem; background: rgba(212, 163, 115, 0.15); color: #d4a373; border: 1px solid #d4a373; padding: 2px 8px; border-radius: 999px; font-weight: 800;">
+            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <span style="font-size: 1.25rem; font-weight: 900; color: #f5ebe0;">${escapeHtml(data.channelTitle)}</span>
+              <span style="font-size: 0.74rem; background: rgba(212, 163, 115, 0.2); color: #d4a373; border: 1px solid #d4a373; padding: 2px 8px; border-radius: 999px; font-weight: 800;">
                 ★ 단독 공식 연동
               </span>
-              <span style="font-size: 0.72rem; background: #3e312b; color: #d7ccc8; padding: 2px 8px; border-radius: 6px;">
+              <span style="font-size: 0.74rem; background: #3e312b; color: #d7ccc8; padding: 2px 8px; border-radius: 6px;">
                 ${escapeHtml(data.channelHandle || '@simple_stock_tv')}
               </span>
             </div>
-            <div style="font-size: 0.8rem; color: #c5b8b1; margin-top: 3px;">
-              이상한 알고리즘 잡영상을 전면 차단하고, <strong>심플 관심종목 TV</strong>의 핵심 증시 브리핑 영상만을 구조화된 보고서로 독점 제공합니다.
+            <div style="font-size: 0.84rem; color: #c5b8b1; margin-top: 4px;">
+              이상한 알고리즘 잡영상을 전면 차단하고, <strong>심플 관심종목 TV에서 나오는 모든 최신 영상을 순차적으로 전수 나열하여 정밀 분석 보고서</strong>로 제공합니다.
             </div>
           </div>
         </div>
-        <div style="display: flex; gap: 8px;">
-          <a href="${escapeHtml(data.channelUrl)}" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; background: #ef4444; color: #ffffff; padding: 8px 16px; border-radius: 8px; font-size: 0.82rem; font-weight: 800; text-decoration: none; box-shadow: 0 2px 8px rgba(239,68,68,0.3);">
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <button type="button" onclick="copyAllBriefingReports()" style="background: #3e312b; color: #f5ebe0; border: 1.5px solid #d4a373; padding: 8px 16px; border-radius: 8px; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+            📋 전체 분석 일괄 복사
+          </button>
+          <a href="${escapeHtml(data.channelUrl)}" target="_blank" rel="noopener noreferrer" style="background: #ef4444; color: #ffffff; padding: 8px 16px; border-radius: 8px; font-size: 0.82rem; font-weight: 800; text-decoration: none; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(239,68,68,0.3);">
             <span>📺</span> 유튜브 공식채널 방문 ↗
           </a>
         </div>
       </div>
 
-      <!-- 보고서 모드 전환 탭 버튼 -->
-      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-        <button type="button" onclick="switchSimpleBriefingTab('morning')" style="flex: 1; min-width: 170px; padding: 10px 14px; border-radius: 10px; font-size: 0.86rem; font-weight: 800; cursor: pointer; transition: all 0.2s; border: 1.5px solid ${currentSimpleBriefingTab === 'morning' ? '#d4a373' : '#3e312b'}; background: ${currentSimpleBriefingTab === 'morning' ? 'linear-gradient(135deg, #3e312b, #2a201c)' : '#1f1613'}; color: ${currentSimpleBriefingTab === 'morning' ? '#f5ebe0' : '#a89f91'};">
-          🌅 08:30 모닝 주도주 보고서
-        </button>
-        <button type="button" onclick="switchSimpleBriefingTab('closing')" style="flex: 1; min-width: 170px; padding: 10px 14px; border-radius: 10px; font-size: 0.86rem; font-weight: 800; cursor: pointer; transition: all 0.2s; border: 1.5px solid ${currentSimpleBriefingTab === 'closing' ? '#d4a373' : '#3e312b'}; background: ${currentSimpleBriefingTab === 'closing' ? 'linear-gradient(135deg, #3e312b, #2a201c)' : '#1f1613'}; color: ${currentSimpleBriefingTab === 'closing' ? '#f5ebe0' : '#a89f91'};">
-          🌆 20:00 장마감 결산 보고서
-        </button>
-        <button type="button" onclick="switchSimpleBriefingTab('latest')" style="flex: 1; min-width: 170px; padding: 10px 14px; border-radius: 10px; font-size: 0.86rem; font-weight: 800; cursor: pointer; transition: all 0.2s; border: 1.5px solid ${currentSimpleBriefingTab === 'latest' ? '#d4a373' : '#3e312b'}; background: ${currentSimpleBriefingTab === 'latest' ? 'linear-gradient(135deg, #3e312b, #2a201c)' : '#1f1613'}; color: ${currentSimpleBriefingTab === 'latest' ? '#f5ebe0' : '#a89f91'};">
-          ⚡ 긴급 매크로 심층 분석
-        </button>
-        <button type="button" onclick="switchSimpleBriefingTab('videos')" style="flex: 1; min-width: 170px; padding: 10px 14px; border-radius: 10px; font-size: 0.86rem; font-weight: 800; cursor: pointer; transition: all 0.2s; border: 1.5px solid ${currentSimpleBriefingTab === 'videos' ? '#d4a373' : '#3e312b'}; background: ${currentSimpleBriefingTab === 'videos' ? 'linear-gradient(135deg, #3e312b, #2a201c)' : '#1f1613'}; color: ${currentSimpleBriefingTab === 'videos' ? '#f5ebe0' : '#a89f91'};">
-          📺 추천 핵심 영상 (4선)
-        </button>
+      <!-- 카테고리 필터 탭 -->
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <button type="button" onclick="filterTimelineCategory('all')" style="padding: 8px 16px; border-radius: 8px; font-size: 0.84rem; font-weight: 800; cursor: pointer; transition: all 0.2s; border: 1.5px solid ${currentTimelineCategoryFilter === 'all' ? '#d4a373' : '#3e312b'}; background: ${currentTimelineCategoryFilter === 'all' ? '#3e312b' : '#1f1613'}; color: ${currentTimelineCategoryFilter === 'all' ? '#f5ebe0' : '#a89f91'};">
+            🔘 전체 영상 순차 분석 (${allList.length}편)
+          </button>
+          <button type="button" onclick="filterTimelineCategory('morning')" style="padding: 8px 16px; border-radius: 8px; font-size: 0.84rem; font-weight: 800; cursor: pointer; transition: all 0.2s; border: 1.5px solid ${currentTimelineCategoryFilter === 'morning' ? '#d4a373' : '#3e312b'}; background: ${currentTimelineCategoryFilter === 'morning' ? '#3e312b' : '#1f1613'}; color: ${currentTimelineCategoryFilter === 'morning' ? '#f5ebe0' : '#a89f91'};">
+            🌅 모닝 브리핑 (장전)
+          </button>
+          <button type="button" onclick="filterTimelineCategory('closing')" style="padding: 8px 16px; border-radius: 8px; font-size: 0.84rem; font-weight: 800; cursor: pointer; transition: all 0.2s; border: 1.5px solid ${currentTimelineCategoryFilter === 'closing' ? '#d4a373' : '#3e312b'}; background: ${currentTimelineCategoryFilter === 'closing' ? '#3e312b' : '#1f1613'}; color: ${currentTimelineCategoryFilter === 'closing' ? '#f5ebe0' : '#a89f91'};">
+            🌆 장마감 복기 (장후)
+          </button>
+          <button type="button" onclick="filterTimelineCategory('special')" style="padding: 8px 16px; border-radius: 8px; font-size: 0.84rem; font-weight: 800; cursor: pointer; transition: all 0.2s; border: 1.5px solid ${currentTimelineCategoryFilter === 'special' ? '#d4a373' : '#3e312b'}; background: ${currentTimelineCategoryFilter === 'special' ? '#3e312b' : '#1f1613'}; color: ${currentTimelineCategoryFilter === 'special' ? '#f5ebe0' : '#a89f91'};">
+            ⚡ 긴급 이슈 & 심층
+          </button>
+          <button type="button" onclick="filterTimelineCategory('weekly')" style="padding: 8px 16px; border-radius: 8px; font-size: 0.84rem; font-weight: 800; cursor: pointer; transition: all 0.2s; border: 1.5px solid ${currentTimelineCategoryFilter === 'weekly' ? '#d4a373' : '#3e312b'}; background: ${currentTimelineCategoryFilter === 'weekly' ? '#3e312b' : '#1f1613'}; color: ${currentTimelineCategoryFilter === 'weekly' ? '#f5ebe0' : '#a89f91'};">
+            📊 주간 라이브 & 기법
+          </button>
+        </div>
+        <div style="font-size: 0.78rem; color: #d4a373; font-weight: 700;">
+          ⏱️ 최신 순서대로 자동 정렬됨 (총 ${filteredList.length}편 표시 중)
+        </div>
       </div>
     </div>
   `;
 
-  // 모닝 또는 장마감 보고서 렌더링 헬퍼
-  function renderReportBody(v, typeTitle, typeCode) {
-    if (!v) {
-      return `<div style="text-align: center; padding: 40px; color: #a89f91;">해당 브리핑 데이터가 준비 중입니다.</div>`;
-    }
+  // 순차 타임라인 카드 목록 렌더링
+  const timelineHtml = `
+    <div style="display: flex; flex-direction: column; gap: 24px;">
+      ${filteredList.map((item, idx) => {
+        const catBadgeBg = item.categoryCode === 'morning' ? 'rgba(245, 158, 11, 0.15)' :
+                           item.categoryCode === 'closing' ? 'rgba(56, 189, 248, 0.15)' :
+                           item.categoryCode === 'special' ? 'rgba(239, 68, 68, 0.15)' : 'rgba(16, 185, 129, 0.15)';
+        const catBadgeColor = item.categoryCode === 'morning' ? '#f59e0b' :
+                             item.categoryCode === 'closing' ? '#38bdf8' :
+                             item.categoryCode === 'special' ? '#f87171' : '#10b981';
+        const themesList = item.themes || [];
+        const stockList = item.targetStocks || [];
+        const keyPoints = item.keyPoints || [];
 
-    const themesList = v.themes || [];
-    const stockList = v.targetStocks || [];
-    const keyPoints = v.key_points || [];
-
-    return `
-      <!-- 보고서 헤더 카드 -->
-      <div style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 14px; padding: 22px; margin-bottom: 20px;">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 18px;">
-          <div>
-            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-              <span style="background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239,68,68,0.4); font-size: 0.76rem; font-weight: 800; padding: 3px 10px; border-radius: 6px;">
-                ${typeTitle}
-              </span>
-              <span style="font-size: 0.78rem; color: #c5b8b1;">게시: ${escapeHtml(v.published_kst || '금일')}</span>
-            </div>
-            <h4 style="font-size: 1.15rem; font-weight: 900; color: #f5ebe0; margin: 0; line-height: 1.5;">
-              ${escapeHtml(v.title)}
-            </h4>
-          </div>
-          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-            <button type="button" onclick="copySimpleBriefingReport('${typeCode}')" style="background: #3e312b; color: #f5ebe0; border: 1px solid #d4a373; padding: 8px 14px; border-radius: 8px; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; gap: 6px;">
-              📋 보고서 텍스트 복사
-            </button>
-            <a href="${escapeHtml(v.url)}" target="_blank" rel="noopener noreferrer" style="background: #ef4444; color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 0.8rem; font-weight: 800; text-decoration: none; display: flex; align-items: center; gap: 6px;">
-              🎬 영상 시청 ↗
-            </a>
-          </div>
-        </div>
-
-        <!-- 1. 핵심 시장 요약 -->
-        <div style="background: #1f1613; border-left: 4px solid #d4a373; padding: 14px 18px; border-radius: 0 10px 10px 0; margin-bottom: 20px;">
-          <div style="font-size: 0.78rem; font-weight: 800; color: #d4a373; margin-bottom: 4px; text-transform: uppercase;">
-            📌 핵심 시장 요약 (Executive Summary)
-          </div>
-          <div style="font-size: 0.92rem; color: #f5ebe0; line-height: 1.6; font-weight: 600;">
-            ${escapeHtml(v.executiveSummary || '주도 섹터 수급 유입 및 눌림목 지지 여부를 최우선 점검해야 하는 장세입니다.')}
-          </div>
-        </div>
-
-        <!-- 2. 주도 테마 & 모멘텀 그리드 -->
-        <div style="margin-bottom: 22px;">
-          <div style="font-size: 0.92rem; font-weight: 900; color: #f5ebe0; margin-bottom: 12px; display: flex; align-items: center; gap: 6px;">
-            <span>⚡</span> 시장 주도 관심 테마 & 모멘텀 강도
-          </div>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
-            ${themesList.map(t => {
-              const intensityColor = t.intensity === '최강' ? '#ef4444' : t.intensity === '강' ? '#f59e0b' : '#38bdf8';
-              return `
-                <div style="background: #1f1613; border: 1px solid #3e312b; border-radius: 10px; padding: 12px 14px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                    <span style="font-size: 0.88rem; font-weight: 800; color: #f5ebe0;">${escapeHtml(t.name)}</span>
-                    <span style="font-size: 0.7rem; font-weight: 800; color: ${intensityColor}; background: rgba(0,0,0,0.3); border: 1px solid ${intensityColor}; padding: 1px 6px; border-radius: 4px;">
-                      강도: ${escapeHtml(t.intensity)}
-                    </span>
-                  </div>
-                  <div style="font-size: 0.78rem; color: #c5b8b1; line-height: 1.4;">
-                    ${escapeHtml(t.reason)}
-                  </div>
-                </div>
-              `;
-            }).join('')}
-          </div>
-        </div>
-
-        <!-- 3. 집중 공략 대상 종목 테이블 -->
-        <div style="margin-bottom: 22px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-            <div style="font-size: 0.92rem; font-weight: 900; color: #f5ebe0; display: flex; align-items: center; gap: 6px;">
-              <span>🎯</span> 심플 관심종목 TV 집중 공략 대상 종목
-            </div>
-            <span style="font-size: 0.74rem; color: #d4a373;">
-              ※ 종목명을 클릭하면 5번 탭(딥분석)으로 자동 이동합니다.
-            </span>
-          </div>
-          <div style="overflow-x: auto; border: 1px solid #3e312b; border-radius: 10px; background: #1f1613;">
-            <table style="width: 100%; border-collapse: collapse; font-size: 0.82rem; text-align: left;">
-              <thead>
-                <tr style="background: #251c19; border-bottom: 1px solid #3e312b; color: #d7ccc8; font-size: 0.76rem;">
-                  <th style="padding: 10px 12px; font-weight: 800;">종목명 (코드)</th>
-                  <th style="padding: 10px 12px; font-weight: 800;">테마 분류</th>
-                  <th style="padding: 10px 12px; font-weight: 800;">공략 포인트 및 매매 전략</th>
-                  <th style="padding: 10px 12px; font-weight: 800; text-align: right;">목표가 / 지지선</th>
-                  <th style="padding: 10px 12px; font-weight: 800; text-align: center;">상세분석</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${stockList.map((s, idx) => `
-                  <tr style="border-bottom: 1px solid #2a201c; ${idx % 2 === 1 ? 'background: #221815;' : ''}">
-                    <td style="padding: 10px 12px; font-weight: 800; color: #f5ebe0; white-space: nowrap;">
-                      <a href="javascript:void(0)" onclick="jumpToStockDeepAnalysis('${escapeHtml(s.name)}')" style="color: #f5ebe0; text-decoration: none; border-bottom: 1px dashed #d4a373;" title="딥분석 바로가기">
-                        ${escapeHtml(s.name)}
-                      </a>
-                      <span style="font-size: 0.72rem; color: #8d7b73; margin-left: 4px;">${escapeHtml(s.code)}</span>
-                    </td>
-                    <td style="padding: 10px 12px; color: #d4a373; font-weight: 700; white-space: nowrap;">
-                      ${escapeHtml(s.theme)}
-                    </td>
-                    <td style="padding: 10px 12px; color: #e8ded4; line-height: 1.4;">
-                      ${escapeHtml(s.strategy)}
-                    </td>
-                    <td style="padding: 10px 12px; text-align: right; white-space: nowrap;">
-                      <div style="color: #ef4444; font-weight: 800;">${escapeHtml(s.targetPrice || '-')}</div>
-                      <div style="font-size: 0.72rem; color: #8d7b73;">손절: ${escapeHtml(s.stopLoss || '-')}</div>
-                    </td>
-                    <td style="padding: 10px 12px; text-align: center; white-space: nowrap;">
-                      <button type="button" onclick="jumpToStockDeepAnalysis('${escapeHtml(s.name)}')" style="background: #3e312b; color: #d4a373; border: 1px solid #5a453d; padding: 3px 8px; border-radius: 6px; font-size: 0.72rem; font-weight: 800; cursor: pointer;">
-                        분석 🔍
-                      </button>
-                    </td>
-                  </tr>
-                `).join('')}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- 4. 핵심 매매 원칙 체크리스트 -->
-        <div style="background: #221815; border: 1px solid #3e312b; border-radius: 10px; padding: 16px;">
-          <div style="font-size: 0.88rem; font-weight: 800; color: #d4a373; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
-            <span>💡</span> 심플 관심종목 TV 실전 매매 원칙 & 체크리스트
-          </div>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 8px;">
-            ${(data.tradingRules || []).map((rule, idx) => `
-              <div style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.8rem; color: #d7ccc8; line-height: 1.4;">
-                <span style="color: #10b981; font-weight: 900;">✓</span>
-                <span>${escapeHtml(rule)}</span>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      </div>
-    `;
-  }
-
-  // 최신 긴급 분석 탭
-  function renderLatestBody(v) {
-    if (!v) return `<div style="text-align: center; padding: 40px; color: #a89f91;">최신 분석 데이터가 없습니다.</div>`;
-    return `
-      <div style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 14px; padding: 22px; margin-bottom: 20px;">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 18px;">
-          <div>
-            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-              <span style="background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239,68,68,0.4); font-size: 0.76rem; font-weight: 800; padding: 3px 10px; border-radius: 6px;">
-                ⚡ 긴급 매크로 심층 분석
-              </span>
-              <span style="font-size: 0.78rem; color: #c5b8b1;">게시: ${escapeHtml(v.published_kst || '최근')}</span>
-            </div>
-            <h4 style="font-size: 1.15rem; font-weight: 900; color: #f5ebe0; margin: 0; line-height: 1.5;">
-              ${escapeHtml(v.title)}
-            </h4>
-          </div>
-          <div style="display: flex; gap: 8px;">
-            <button type="button" onclick="copySimpleBriefingReport('latest')" style="background: #3e312b; color: #f5ebe0; border: 1px solid #d4a373; padding: 8px 14px; border-radius: 8px; font-size: 0.8rem; font-weight: 800; cursor: pointer;">
-              📋 요약 복사
-            </button>
-            <a href="${escapeHtml(v.url)}" target="_blank" rel="noopener noreferrer" style="background: #ef4444; color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 0.8rem; font-weight: 800; text-decoration: none;">
-              🎬 영상 시청 ↗
-            </a>
-          </div>
-        </div>
-
-        <div style="background: #1f1613; border-left: 4px solid #ef4444; padding: 14px 18px; border-radius: 0 10px 10px 0; margin-bottom: 20px;">
-          <div style="font-size: 0.78rem; font-weight: 800; color: #f87171; margin-bottom: 4px;">
-            📌 분석 개요 (Analysis Overview)
-          </div>
-          <div style="font-size: 0.92rem; color: #f5ebe0; line-height: 1.6; font-weight: 600;">
-            ${escapeHtml(v.executiveSummary || '')}
-          </div>
-        </div>
-
-        <div>
-          <div style="font-size: 0.92rem; font-weight: 900; color: #f5ebe0; margin-bottom: 12px; display: flex; align-items: center; gap: 6px;">
-            <span>💡</span> 핵심 인사이트 포인트
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 10px;">
-            ${(v.key_points || []).map((point, idx) => `
-              <div style="background: #1f1613; border: 1px solid #3e312b; border-radius: 8px; padding: 12px 14px; display: flex; align-items: flex-start; gap: 10px;">
-                <span style="background: #d4a373; color: #1f1613; font-weight: 900; font-size: 0.75rem; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">${idx + 1}</span>
-                <span style="font-size: 0.84rem; color: #e8ded4; line-height: 1.5;">${escapeHtml(point)}</span>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      </div>
-    `;
-  }
-
-  // 최근 핵심 영상 (4선) 그리드 - 오직 심플 관심종목 TV 영상만 노출
-  function renderVideosBody() {
-    const list = data.curatedVideos || [];
-    return `
-      <div style="margin-bottom: 20px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
-          <div style="font-size: 0.96rem; font-weight: 900; color: #f5ebe0; display: flex; align-items: center; gap: 6px;">
-            <span>📺</span> 심플 관심종목 TV 최근 핵심 영상 모아보기
-          </div>
-          <span style="font-size: 0.76rem; color: #a89f91;">※ 다른 이상한 채널 영상은 전면 차단되었습니다.</span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
-          ${list.map(video => `
-            <div style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
-              <div style="position: relative; width: 100%; aspect-ratio: 16/9; background: #1f1613; overflow: hidden;">
-                <img src="${escapeHtml(video.thumbnail)}" alt="${escapeHtml(video.title)}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80'">
-                <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.85); color: #fff; font-size: 0.7rem; font-weight: 800; padding: 2px 8px; border-radius: 4px;">
-                  ${escapeHtml(video.category || '심플 브리핑')}
-                </div>
-              </div>
-              <div style="padding: 14px; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
-                <div>
-                  <div style="font-size: 0.74rem; color: #ef4444; font-weight: 800; margin-bottom: 4px; display: flex; align-items: center; gap: 4px;">
-                    <span>▶</span> ${escapeHtml(video.channel || '심플 관심종목 TV')}
-                  </div>
-                  <div style="font-size: 0.88rem; font-weight: 800; color: #f5ebe0; line-height: 1.4; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-                    ${escapeHtml(video.title)}
-                  </div>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #3e312b; padding-top: 10px; margin-top: 8px;">
-                  <span style="font-size: 0.72rem; color: #a89f91;">
-                    ${escapeHtml(video.views || video.published || '실시간')}
+        return `
+          <!-- 영상 순차 분석 카드 #${idx + 1} -->
+          <div style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 14px; padding: 22px; box-shadow: 0 4px 16px rgba(0,0,0,0.25); transition: transform 0.2s ease;">
+            <!-- 카드 상단 바 -->
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 14px; border-bottom: 1px solid #3e312b; padding-bottom: 16px; margin-bottom: 16px;">
+              <div style="flex: 1; min-width: 280px;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap;">
+                  <span style="background: #3e312b; color: #d4a373; font-size: 0.74rem; font-weight: 800; padding: 3px 8px; border-radius: 6px;">
+                    #${idx + 1} 최신순
                   </span>
-                  <a href="${escapeHtml(video.url)}" target="_blank" rel="noopener noreferrer" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4); padding: 4px 10px; border-radius: 6px; font-size: 0.76rem; text-decoration: none; font-weight: 800;">
-                    영상 시청 ↗
-                  </a>
+                  <span style="background: ${catBadgeBg}; color: ${catBadgeColor}; border: 1px solid ${catBadgeColor}; font-size: 0.74rem; font-weight: 800; padding: 2px 8px; border-radius: 6px;">
+                    ${escapeHtml(item.category)}
+                  </span>
+                  <span style="font-size: 0.78rem; color: #c5b8b1;">
+                    📅 ${escapeHtml(item.dateFormatted || item.published_kst)}
+                  </span>
+                  <span style="font-size: 0.74rem; color: #8d7b73;">
+                    ${escapeHtml(item.views || '')}
+                  </span>
+                </div>
+                <h4 style="font-size: 1.15rem; font-weight: 900; color: #f5ebe0; margin: 0; line-height: 1.5;">
+                  ${escapeHtml(item.title)}
+                </h4>
+              </div>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <button type="button" onclick="copySingleBriefingReport(${idx})" style="background: #3e312b; color: #f5ebe0; border: 1px solid #d4a373; padding: 6px 12px; border-radius: 8px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; gap: 4px;">
+                  📋 이 영상 분석 복사
+                </button>
+                <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" style="background: #ef4444; color: #fff; padding: 6px 12px; border-radius: 8px; font-size: 0.78rem; font-weight: 800; text-decoration: none; display: flex; align-items: center; gap: 4px;">
+                  🎬 영상 시청 ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- 카드 본문: 썸네일 & 핵심 시장 요약 2열 그리드 -->
+            <div style="display: grid; grid-template-columns: minmax(220px, 280px) 1fr; gap: 18px; margin-bottom: 20px; align-items: stretch;" class="timeline-row-grid">
+              <!-- 썸네일 영역 -->
+              <div style="position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 16/9; background: #1f1613; border: 1px solid #3e312b;">
+                <img src="${escapeHtml(item.thumbnail)}" alt="${escapeHtml(item.title)}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80'">
+                <div style="position: absolute; bottom: 6px; right: 6px; background: rgba(0,0,0,0.85); color: #fff; font-size: 0.7rem; font-weight: 800; padding: 2px 6px; border-radius: 4px;">
+                  ▶ 심플TV
+                </div>
+              </div>
+
+              <!-- 핵심 요약 박스 -->
+              <div style="background: #1f1613; border-left: 4px solid #d4a373; padding: 14px 18px; border-radius: 0 10px 10px 0; display: flex; flex-direction: column; justify-content: center;">
+                <div style="font-size: 0.78rem; font-weight: 800; color: #d4a373; margin-bottom: 6px; text-transform: uppercase;">
+                  📌 영상 핵심 분석 요약 (Executive Summary)
+                </div>
+                <div style="font-size: 0.92rem; color: #f5ebe0; line-height: 1.6; font-weight: 600;">
+                  ${escapeHtml(item.executiveSummary || '')}
                 </div>
               </div>
             </div>
-          `).join('')}
-        </div>
-      </div>
-    `;
-  }
 
-  let contentHtml = '';
-  if (currentSimpleBriefingTab === 'morning') {
-    contentHtml = renderReportBody(data.morningVideo, '🌅 08:30 모닝 주도주 브리핑 보고서', 'morning');
-  } else if (currentSimpleBriefingTab === 'closing') {
-    contentHtml = renderReportBody(data.closingVideo, '🌆 20:00 장마감 결산 & 익일 전략 보고서', 'closing');
-  } else if (currentSimpleBriefingTab === 'latest') {
-    contentHtml = renderLatestBody(data.latestVideo);
-  } else if (currentSimpleBriefingTab === 'videos') {
-    contentHtml = renderVideosBody();
-  }
+            <!-- 영상 속 주도 테마 & 모멘텀 배지 -->
+            ${themesList.length > 0 ? `
+              <div style="margin-bottom: 18px;">
+                <div style="font-size: 0.88rem; font-weight: 800; color: #f5ebe0; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                  <span>⚡</span> 영상 속 언급 핵심 테마 & 모멘텀
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px;">
+                  ${themesList.map(t => {
+                    const intColor = t.intensity === '최강' ? '#ef4444' : t.intensity === '강' ? '#f59e0b' : '#38bdf8';
+                    return `
+                      <div style="background: #1f1613; border: 1px solid #3e312b; border-radius: 8px; padding: 10px 12px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                          <span style="font-size: 0.84rem; font-weight: 800; color: #f5ebe0;">${escapeHtml(t.name)}</span>
+                          <span style="font-size: 0.68rem; font-weight: 800; color: ${intColor}; border: 1px solid ${intColor}; padding: 1px 6px; border-radius: 4px;">
+                            강도: ${escapeHtml(t.intensity)}
+                          </span>
+                        </div>
+                        <div style="font-size: 0.76rem; color: #c5b8b1; line-height: 1.4;">
+                          ${escapeHtml(t.reason)}
+                        </div>
+                      </div>
+                    `;
+                  }).join('')}
+                </div>
+              </div>
+            ` : ''}
 
-  container.innerHTML = topNavHtml + contentHtml;
+            <!-- 영상 속 포커스 공략 종목 일람표 -->
+            ${stockList.length > 0 ? `
+              <div style="margin-bottom: 18px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+                  <div style="font-size: 0.88rem; font-weight: 800; color: #f5ebe0; display: flex; align-items: center; gap: 6px;">
+                    <span>🎯</span> 포커스 공략 종목 및 세부 전략 (${stockList.length}선)
+                  </div>
+                  <span style="font-size: 0.72rem; color: #d4a373;">
+                    ※ 종목명 클릭 시 5번 탭(딥분석)으로 즉시 이동합니다.
+                  </span>
+                </div>
+                <div style="overflow-x: auto; border: 1px solid #3e312b; border-radius: 8px; background: #1f1613;">
+                  <table style="width: 100%; border-collapse: collapse; font-size: 0.8rem; text-align: left;">
+                    <thead>
+                      <tr style="background: #251c19; border-bottom: 1px solid #3e312b; color: #d7ccc8; font-size: 0.74rem;">
+                        <th style="padding: 8px 10px; font-weight: 800;">종목명 (코드)</th>
+                        <th style="padding: 8px 10px; font-weight: 800;">테마 분류</th>
+                        <th style="padding: 8px 10px; font-weight: 800;">공략 포인트 및 매매 전략</th>
+                        <th style="padding: 8px 10px; font-weight: 800; text-align: right;">목표가 / 지지선</th>
+                        <th style="padding: 8px 10px; font-weight: 800; text-align: center;">상세분석</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${stockList.map((s, sIdx) => `
+                        <tr style="border-bottom: 1px solid #2a201c; ${sIdx % 2 === 1 ? 'background: #221815;' : ''}">
+                          <td style="padding: 8px 10px; font-weight: 800; color: #f5ebe0; white-space: nowrap;">
+                            <a href="javascript:void(0)" onclick="jumpToStockDeepAnalysis('${escapeHtml(s.name)}')" style="color: #f5ebe0; text-decoration: none; border-bottom: 1px dashed #d4a373;" title="딥분석 바로가기">
+                              ${escapeHtml(s.name)}
+                            </a>
+                            <span style="font-size: 0.7rem; color: #8d7b73; margin-left: 4px;">${escapeHtml(s.code)}</span>
+                          </td>
+                          <td style="padding: 8px 10px; color: #d4a373; font-weight: 700; white-space: nowrap;">
+                            ${escapeHtml(s.theme)}
+                          </td>
+                          <td style="padding: 8px 10px; color: #e8ded4; line-height: 1.4;">
+                            ${escapeHtml(s.strategy)}
+                          </td>
+                          <td style="padding: 8px 10px; text-align: right; white-space: nowrap;">
+                            <div style="color: #ef4444; font-weight: 800;">${escapeHtml(s.targetPrice || '-')}</div>
+                            <div style="font-size: 0.7rem; color: #8d7b73;">손절: ${escapeHtml(s.stopLoss || '-')}</div>
+                          </td>
+                          <td style="padding: 8px 10px; text-align: center; white-space: nowrap;">
+                            <button type="button" onclick="jumpToStockDeepAnalysis('${escapeHtml(s.name)}')" style="background: #3e312b; color: #d4a373; border: 1px solid #5a453d; padding: 2px 7px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; cursor: pointer;">
+                              분석 🔍
+                            </button>
+                          </td>
+                        </tr>
+                      `).join('')}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            ` : ''}
+
+            <!-- 영상 속 핵심 체크포인트 -->
+            ${keyPoints.length > 0 ? `
+              <div style="background: #221815; border: 1px solid #3e312b; border-radius: 8px; padding: 12px 16px;">
+                <div style="font-size: 0.82rem; font-weight: 800; color: #d4a373; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+                  <span>💡</span> 영상 속 핵심 체크포인트 & 매매 유의사항
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 4px;">
+                  ${keyPoints.map((k, kIdx) => `
+                    <div style="display: flex; align-items: flex-start; gap: 6px; font-size: 0.78rem; color: #d7ccc8; line-height: 1.4;">
+                      <span style="color: #10b981; font-weight: 900;">✓</span>
+                      <span>${escapeHtml(k)}</span>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            ` : ''}
+          </div>
+        `;
+      }).join('')}
+    </div>
+  `;
+
+  container.innerHTML = headerHtml + timelineHtml;
 }
 
 window.renderYoutubeBriefingFeed = renderYoutubeBriefingFeed;
