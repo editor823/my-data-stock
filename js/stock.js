@@ -8421,7 +8421,7 @@ const DEFAULT_SIMPLE_TIMELINE_DATA = {
       category: "모닝 브리핑",
       categoryCode: "morning",
       published_kst: "2026-10-10 08:15:00",
-      dateFormatted: "10월 10일 (금) 08:15",
+      dateFormatted: "10월 10일 (토) 08:15",
       url: "https://www.youtube.com/watch?v=kCrlauDice4",
       thumbnail: "https://i.ytimg.com/vi/kCrlauDice4/hqdefault.jpg",
       views: "조회수 1.9만회",
@@ -8452,7 +8452,7 @@ const DEFAULT_SIMPLE_TIMELINE_DATA = {
       category: "장마감 복기",
       categoryCode: "closing",
       published_kst: "2026-10-09 20:30:00",
-      dateFormatted: "10월 9일 (목) 20:30",
+      dateFormatted: "10월 9일 (금) 20:30",
       url: "https://www.youtube.com/watch?v=meODvYg93wY",
       thumbnail: "https://i.ytimg.com/vi/meODvYg93wY/hqdefault.jpg",
       views: "조회수 2.5만회",
@@ -8480,7 +8480,7 @@ const DEFAULT_SIMPLE_TIMELINE_DATA = {
       category: "긴급 심층",
       categoryCode: "special",
       published_kst: "2026-10-09 13:41:36",
-      dateFormatted: "10월 9일 (목) 13:41",
+      dateFormatted: "10월 9일 (금) 13:41",
       url: "https://www.youtube.com/watch?v=_TZucU26Nb8",
       thumbnail: "https://i.ytimg.com/vi/_TZucU26Nb8/hqdefault.jpg",
       views: "조회수 2.2만회",
@@ -8506,7 +8506,7 @@ const DEFAULT_SIMPLE_TIMELINE_DATA = {
       category: "장마감 복기",
       categoryCode: "closing",
       published_kst: "2026-10-08 20:20:00",
-      dateFormatted: "10월 8일 (수) 20:20",
+      dateFormatted: "10월 8일 (목) 20:20",
       url: "https://www.youtube.com/watch?v=kCrlauDice4",
       thumbnail: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80",
       views: "조회수 2.7만회",
@@ -8531,7 +8531,7 @@ const DEFAULT_SIMPLE_TIMELINE_DATA = {
       category: "모닝 브리핑",
       categoryCode: "morning",
       published_kst: "2026-10-08 08:20:00",
-      dateFormatted: "10월 8일 (수) 08:20",
+      dateFormatted: "10월 8일 (목) 08:20",
       url: "https://www.youtube.com/watch?v=meODvYg93wY",
       thumbnail: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=600&q=80",
       views: "조회수 2.1만회",
@@ -8556,7 +8556,7 @@ const DEFAULT_SIMPLE_TIMELINE_DATA = {
       category: "장마감 복기",
       categoryCode: "closing",
       published_kst: "2026-10-07 20:30:00",
-      dateFormatted: "10월 7일 (화) 20:30",
+      dateFormatted: "10월 7일 (수) 20:30",
       url: "https://www.youtube.com/watch?v=kCrlauDice4",
       thumbnail: "https://images.unsplash.com/photo-1579165466791-788226ab77b6?auto=format&fit=crop&w=600&q=80",
       views: "조회수 2.8만회",
@@ -8581,7 +8581,7 @@ const DEFAULT_SIMPLE_TIMELINE_DATA = {
       category: "주간 라이브",
       categoryCode: "weekly",
       published_kst: "2026-10-06 19:30:00",
-      dateFormatted: "10월 6일 (월) 19:30",
+      dateFormatted: "10월 6일 (화) 19:30",
       url: "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
       thumbnail: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80",
       views: "조회수 3.4만회",
@@ -8606,7 +8606,7 @@ const DEFAULT_SIMPLE_TIMELINE_DATA = {
       category: "기법 특강",
       categoryCode: "lecture",
       published_kst: "2026-10-05 14:00:00",
-      dateFormatted: "10월 5일 (일) 14:00",
+      dateFormatted: "10월 5일 (월) 14:00",
       url: "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
       thumbnail: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=600&q=80",
       views: "조회수 4.2만회",
@@ -8711,21 +8711,34 @@ ${(item.keyPoints || []).map(k => `- ${k}`).join('\n')}
 };
 
 window.jumpToStockDeepAnalysis = function(stockName) {
-  // 5번 탭(종목 상세정보 딥분석)으로 전환
-  const tabBtns = document.querySelectorAll('.stock-subtab-btn');
-  if (tabBtns && tabBtns[5]) {
-    tabBtns[5].click();
+  if (!stockName) return;
+
+  // 1. 5번 탭(종목 상세정보 딥분석)으로 전환
+  if (typeof window.activateStockSubTab === 'function') {
+    window.activateStockSubTab('deep');
+  } else {
+    const deepTab = document.querySelector('.stock-sub-tab[data-sub="deep"]');
+    if (deepTab) deepTab.click();
   }
-  // 검색창에 종목명 입력 후 검색 실행
+
+  // 2. 검색창에 종목명 동기화
+  const input = document.getElementById('stock-deep-search-input');
+  if (input) {
+    input.value = stockName;
+  }
+
+  // 3. 해당 종목 딥분석 리포트 즉시 로드 (isManual = true)
+  if (typeof window.renderStockDeepAnalysis === 'function') {
+    window.renderStockDeepAnalysis(stockName, true);
+  }
+
+  // 4. 화면을 딥분석 패널로 부드럽게 스크롤
   setTimeout(() => {
-    const input = document.getElementById('deep-stock-search-input');
-    if (input) {
-      input.value = stockName;
-      if (typeof window.searchStockDeepAnalysis === 'function') {
-        window.renderStockDeepAnalysis(stockName, true);
-      }
+    const deepPanel = document.getElementById('stock-panel-deep');
+    if (deepPanel) {
+      deepPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-  }, 150);
+  }, 100);
 };
 
 async function renderYoutubeBriefingFeed() {
