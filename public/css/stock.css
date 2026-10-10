@@ -651,11 +651,39 @@ button.btn-accent:hover {
   outline: none !important;
 }
 
-/* 모달 배경 오버레이 */
+/* 모달 배경 오버레이 및 팝업창 레이아웃 */
+.daily-report-modal-backdrop,
 .inspector-bot-modal-backdrop,
 .modal-backdrop {
-  background: rgba(15, 10, 8, 0.75) !important;
-  backdrop-filter: blur(6px) !important;
+  display: none;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(15, 10, 8, 0.8) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  z-index: 99999 !important;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.daily-report-modal-content,
+.inspector-bot-modal-content {
+  background: #241c18 !important;
+  border: 1.5px solid #d4a373 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7) !important;
+  width: 100%;
+  max-width: 860px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 /* 슬림 스크롤바 */

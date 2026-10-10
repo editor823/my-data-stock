@@ -1670,6 +1670,164 @@ window.addAndFetchCustomStock = async function () {
 let calendarApprovedEvents = [];
 let calendarPendingEvents = [];
 
+// 1. 국내 증시 5대 주도 테마 핵심 데이터셋
+const STOCK_THEMES_DATA = [
+  {
+    id: 'theme-01',
+    rank: 1,
+    name: '차세대 HBM4 & 유리기판',
+    category: 'semicon',
+    rate: '+8.45%',
+    rateType: 'up',
+    tradeAmount: '1조 8,400억',
+    leader: 'SK하이닉스, 와이씨, 한미반도체',
+    symbol: '000660',
+    tvSymbol: 'KRX:000660',
+    desc: '엔비디아 차세대 루빈 칩 조기 공급 승인 및 유리기판 상용화 수혜',
+    badge: '1등 주도주',
+    badgeColor: '#38bdf8',
+    reason: '엔비디아 차세대 루빈(Rubin) 아키텍처 양산 로드맵 발표에 따라 SK하이닉스의 16단 HBM4 독점 공급망 유지와 유리기판 진영의 외인/기관 5천억 이상 양매수 집중 유입.',
+    news: [
+      { title: '[단독] 엔비디아 루빈 AI 가속기 탑재 SK하이닉스 HBM4 조기 승인', source: '한국경제', time: '18분 전' },
+      { title: 'SK하이닉스, HBM 기술 격차 1등 수성… 목표주가 28만원 상향', source: '매일경제', time: '42분 전' },
+      { title: '유리기판 관련주 대장주 와이씨, 기관 4일 연속 순매수 행진', source: '머니투데이', time: '1시간 전' }
+    ],
+    strategy: '단기 과열권 진입. 장중 5% 이상 갭상승 시 추격매수 금지하며, 3일 이평선 터치 시 분할 접근 추천.'
+  },
+  {
+    id: 'theme-02',
+    rank: 2,
+    name: '비만치료제 GLP-1 & 경구용 펩타이드',
+    category: 'bio',
+    rate: '+6.12%',
+    rateType: 'up',
+    tradeAmount: '9,200억',
+    leader: '삼천당제약, 인벤티지랩, 디앤디파마텍',
+    symbol: '000250',
+    tvSymbol: 'KRX:000250',
+    desc: '글로벌 제약사 기술수출(L/O) 본계약 협상 및 경구형 캡슐 임상 1상 성공',
+    badge: '외인 매집',
+    badgeColor: '#34d399',
+    reason: '주사제 일색이던 비만/당뇨 치료제 시장에서 먹는 알약(경구용) 제형 변경 특허 기술을 보유한 국내 바이오텍으로 글로벌 판권 계약 체결 소식 임박.',
+    news: [
+      { title: '삼천당제약, 경구용 GLP-1 유럽 5개국 공급 독점 계약 체결 공시', source: '연합뉴스', time: '25분 전' },
+      { title: '노보노디스크·일라이릴리 실적 서프라이즈… 비만약 테마 재점화', source: '이데일리', time: '1시간 전' }
+    ],
+    strategy: '추세 추종 유효. 전고점 돌파 후 거래량 실린 지지선 형성 중이므로 스윙 관점 홀딩.'
+  },
+  {
+    id: 'theme-03',
+    rank: 3,
+    name: '체코 30조 원전 수주 & SMR',
+    category: 'policy',
+    rate: '+4.85%',
+    rateType: 'up',
+    tradeAmount: '7,600억',
+    leader: '두산에너빌리티, 한신기계, 우진엔텍',
+    symbol: '034020',
+    tvSymbol: 'KRX:034020',
+    desc: '체코 두코바니 신규 원전 최종 우선협상대상자 선정 및 10월 본계약 조율',
+    badge: '정책 모멘텀',
+    badgeColor: '#a855f7',
+    reason: '체코 원전 수출에 이어 폴란드, UAE 등 중동/동유럽 후속 수주 기대감과 미국 빅테크의 AI 데이터센터 전력 공급용 SMR(소형원자로) 파트너십 부각.',
+    news: [
+      { title: '팀코리아 체코 원전 실무협상단 현지 파견… 연내 본계약 마무리 박차', source: '서울경제', time: '2시간 전' },
+      { title: '두산에너빌리티, 美 뉴스케일파워 SMR 핵심 단조품 추가 제작 돌입', source: '조선비즈', time: '3시간 전' }
+    ],
+    strategy: '눌림목 매집 구간. 일정 매매(D-Day 본계약 체결일) 타깃으로 20일선 지지선에서 매수.'
+  },
+  {
+    id: 'theme-04',
+    rank: 4,
+    name: '로봇용 액추에이터 & 휴머노이드',
+    category: 'semicon',
+    rate: '+3.90%',
+    rateType: 'up',
+    tradeAmount: '5,400억',
+    leader: '레인보우로보틱스, 에스피지, 로보티즈',
+    symbol: '277810',
+    tvSymbol: 'KRX:277810',
+    desc: '테슬라 옵티머스 3세대 연내 상용화 및 삼성전자 보핏 양산 확대',
+    badge: '기술 트렌드',
+    badgeColor: '#fb923c',
+    reason: '글로벌 완성차 및 빅테크의 제조 라인 내 휴머노이드 투입 소식으로 감속기 및 액추에이터 핵심 부품사들의 구조적 실적 턴어라운드 기대감 증폭.',
+    news: [
+      { title: '테슬라, 공장 투입용 옵티머스 수천 대 양산 공장 부지 확정', source: '헤럴드경제', time: '3시간 전' },
+      { title: '에스피지, 정밀 감속기 수율 95% 달성… 국산화 대체 가속도', source: '전자신문', time: '4시간 전' }
+    ],
+    strategy: '박스권 상단 돌파 시도 중. 대장주 레인보우로보틱스의 기관 수급 유입 확인 후 진입.'
+  },
+  {
+    id: 'theme-05',
+    rank: 5,
+    name: '밸류업 지배구조 & 금융/지주사',
+    category: 'policy',
+    rate: '+2.10%',
+    rateType: 'up',
+    tradeAmount: '6,100억',
+    leader: 'KB금융, 메리츠금융지주, 삼성물산',
+    symbol: '105560',
+    tvSymbol: 'KRX:105560',
+    desc: '코리아 디스카운트 해소를 위한 밸류업 지수 9월 발표 및 자사주 소각',
+    badge: '안정 배당',
+    badgeColor: '#60a5fa',
+    reason: '정부의 기업 밸류업 지수 런칭 및 연기금 패시브 자금 유입 기대감으로 주주환원율 40% 이상 고배당 금융 지주사로 지속적 기관 러브콜.',
+    news: [
+      { title: '거래소, 9월 밸류업 지수 베일 벗는다… 금융·자동차 편입 유력', source: '파이낸셜뉴스', time: '2시간 전' }
+    ],
+    strategy: '안정적인 배당 성향 투자자에게 최적. 시장 조정 시 하방 경직성이 뛰어남.'
+  }
+];
+
+// 2. 1주일 vs 1개월 재료 비교분석 데이터
+const STOCK_COMPARE_DATA = [
+  {
+    theme: '🔥 HBM · 차세대 패키징',
+    leaders: 'SK하이닉스 · 와이씨',
+    weekRate: '+14.2%',
+    monthRate: '+38.5%',
+    buyer: '외인 · 기관 양매수',
+    strength: '⭐⭐⭐⭐⭐ 최상',
+    strategy: '엔비디아 실적 발표 전까지 강한 상방 랠리 유지 가능성. 대장주 위주 보유.'
+  },
+  {
+    theme: '💊 경구용 비만치료제',
+    leaders: '삼천당제약 · 디앤디파마텍',
+    weekRate: '+18.6%',
+    monthRate: '+42.1%',
+    buyer: '사모펀드 · 투신',
+    strength: '⭐⭐⭐⭐☆ 상',
+    strategy: '글로벌 빅파마 계약 공시 기대감. 5일 이평선 깨지기 전까지 홀딩.'
+  },
+  {
+    theme: '⚡ 체코 원전 & 소형 SMR',
+    leaders: '두산에너빌리티 · 우진엔텍',
+    weekRate: '+7.8%',
+    monthRate: '+26.4%',
+    buyer: '연기금 순매수',
+    strength: '⭐⭐⭐⭐☆ 상',
+    strategy: '본계약 D-Day(10월) 이전까지 소문 단계에서 매집 후 당일 뉴스에 전량 매도.'
+  },
+  {
+    theme: '🤖 피지컬 AI & 휴머노이드',
+    leaders: '레인보우로보틱스 · 에스피지',
+    weekRate: '+4.5%',
+    monthRate: '+12.0%',
+    buyer: '개인 위주 수급',
+    strength: '⭐⭐⭐☆☆ 중',
+    strategy: '박스권 등락 반복. 저점 매수 고점 매도 단타 플레이 추천.'
+  },
+  {
+    theme: '🏛️ 저PBR 기업 밸류업',
+    leaders: 'KB금융 · 메리츠금융',
+    weekRate: '+2.1%',
+    monthRate: '+9.8%',
+    buyer: '외인 지속 매수',
+    strength: '⭐⭐⭐☆☆ 중',
+    strategy: '시장 하락장 방어주로 포트폴리오 20% 비중 편입 적합.'
+  }
+];
+
 let currentThemeIdx = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -4696,7 +4854,8 @@ function renderStockDeepList() {
 }
 
 // 우측 딥분석 종합 리포트 렌더링
-window.selectStockDeepItem = function (idx) {
+function selectStockDeepItem(idx) {
+  window.selectStockDeepItem = selectStockDeepItem;
   currentDeepIdx = idx;
   const item = STOCK_DEEP_DATA[idx] || STOCK_DEEP_DATA[0];
   const detailPanel = document.getElementById('stock-deep-detail');
@@ -4939,7 +5098,8 @@ window.selectStockDeepItem = function (idx) {
   `;
 };
 
-window.switchDeepTab = function (tabName, btn) {
+function switchDeepTab(tabName, btn) {
+  window.switchDeepTab = switchDeepTab;
   currentDeepTab = tabName;
   if (btn && btn.parentElement) {
     btn.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active'));
@@ -5644,6 +5804,7 @@ function parseNaverStockNewsItems(rawItems) {
 
 // 네이버 실시간 증시 뉴스 라이브 호출 (서버 엔드포인트 /api/news 우선 호출 및 다중 프록시 폴백)
 async function fetchLiveNaverNews(silent = true) {
+  let fetchedData = null;
   const refreshBtn = document.getElementById('btn-refresh-domestic-news');
   const liveTag = document.getElementById('domestic-news-live-tag');
 
