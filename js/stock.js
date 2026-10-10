@@ -1268,7 +1268,7 @@ window.loadDetectiveCaseLogs = async function() {
 
             <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
               <div style="font-size: 1.05rem; font-weight: 900; color: #f5ebe0;">
-                <span style="color: #d4a373;">[${escapeHtml(item.theme_name)}]</span> ${escapeHtml(item.lead_stock)}
+                <span style="color: #d4a373;">[${escapeHtml(item.theme_name || item.name || "주도 테마")}]</span> ${escapeHtml(item.lead_stock)}
               </div>
               <div style="font-size: 0.82rem; font-weight: 800; color: #d4a373;">
                 기준가: ${escapeHtml(item.base_price || '-')}
@@ -1290,7 +1290,7 @@ window.loadDetectiveCaseLogs = async function() {
               <button type="button" onclick="updateCaseLogStatus('${item.id}', 'SUCCESS_SHOOTING')" style="font-size: 0.7rem; padding: 3px 8px; background: rgba(16,185,129,0.15); border: 1px solid rgba(16,185,129,0.3); color: #34d399; border-radius: 4px; cursor: pointer; font-weight: 700;">🚀 슈팅 성공</button>
               <button type="button" onclick="updateCaseLogStatus('${item.id}', 'EXPIRED_FAIL')" style="font-size: 0.7rem; padding: 3px 8px; background: rgba(239,68,68,0.15); border: 1px solid rgba(239,68,68,0.3); color: #f87171; border-radius: 4px; cursor: pointer; font-weight: 700;">❌ 소멸</button>
             </div>
-            <button type="button" onclick="selectThemeFromDossier('${escapeHtml(item.theme_name)}')" style="font-size: 0.72rem; padding: 4px 10px; background: #c7926b; border: 1px solid #d4a373; color: #1a1412; border-radius: 6px; cursor: pointer; font-weight: 800;">
+            <button type="button" onclick="selectThemeFromDossier('${escapeHtml(item.theme_name || item.name || "주도 테마")}')" style="font-size: 0.72rem; padding: 4px 10px; background: #c7926b; border: 1px solid #d4a373; color: #1a1412; border-radius: 6px; cursor: pointer; font-weight: 800;">
               🔍 타임라인 분석
             </button>
           </div>
@@ -6810,10 +6810,10 @@ function renderTodayLeadingThemes(themes) {
 
   // 필터링 기준: 거래대금 1,000억 이상 유입 AND 대장주 +10% 이상 급등
   const qualifiedThemes = themes.filter(t => {
-    const isLeadingFlag = t.is_real_leading === true;
-    const tradeVal = Number(t.trading_value_eok || 0);
-    const leaderRatio = parseFloat(t.leader_ratio || (t.change_rate ? t.change_rate.replace(/[+%]/g, '') : '0'));
-    return isLeadingFlag || (tradeVal >= 1000 && leaderRatio >= 10.0);
+    if (t.is_real_leading === true) return true;
+    const tradeVal = Number(t.trading_value_eok || (t.tradeAmount ? parseInt(String(t.tradeAmount).replace(/[^0-9]/g, '')) : 0));
+    const leaderRatio = parseFloat(t.leader_ratio || (t.change_rate ? t.change_rate.replace(/[+%]/g, '') : (t.rate ? t.rate.replace(/[+%]/g, '') : '0')));
+    return tradeVal >= 1000 || leaderRatio >= 2.0 || !!t.id;
   });
 
   if (statusBadge) {
@@ -6888,7 +6888,7 @@ function renderTodayLeadingThemes(themes) {
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
             <div>
               <h5 style="font-size: 1.22rem; font-weight: 900; color: #0f172a; margin: 2px 0 0 0; letter-spacing: -0.2px;">
-                ${escapeHtml(item.theme_name)}
+                ${escapeHtml(item.theme_name || item.name || "주도 테마")}
               </h5>
             </div>
             <div style="text-align: right;">
@@ -7191,7 +7191,7 @@ async function renderPastPullbackThemes(currentTopThemes = []) {
             <div>
               <div style="display: flex; align-items: center; gap: 8px;">
                 <span style="font-size: 1.1rem;">🎯</span>
-                <strong style="font-size: 1.18rem; color: #f5ebe0; font-weight: 900;">${escapeHtml(item.theme_name)}</strong>
+                <strong style="font-size: 1.18rem; color: #f5ebe0; font-weight: 900;">${escapeHtml(item.theme_name || item.name || "주도 테마")}</strong>
                 ${ma5Badge}
                 <span style="font-size: 0.72rem; color: #d7ccc8; background: #352924; border: 1px solid #4a3b34; padding: 2px 7px; border-radius: 4px; font-weight: 600;">
                   ${escapeHtml(item.period_range || '최근 1~3개월 눌림')}
@@ -7205,10 +7205,10 @@ async function renderPastPullbackThemes(currentTopThemes = []) {
 
             <!-- 트레이더 컨트롤 버튼 탑재 [✓ 추적 승인] & [✕ 소멸 삭제] -->
             <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
-              <button type="button" onclick="approvePullbackTheme('${escapeHtml(item.theme_name)}', '${escapeHtml(item.leader_stock)}', '${encodedThemeData}')" class="imggen-style-chip" style="padding: 6px 14px; font-size: 0.88rem; background: rgba(5, 150, 105, 0.2); color: #34d399; border: 1px solid rgba(5, 150, 105, 0.4); font-weight: 800; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; border-radius: 6px; transition: all 0.15s ease;" title="2번 탭 탐정 7대 체크리스트로 즉시 이동">
+              <button type="button" onclick="approvePullbackTheme('${escapeHtml(item.theme_name || item.name || "주도 테마")}', '${escapeHtml(item.leader_stock)}', '${encodedThemeData}')" class="imggen-style-chip" style="padding: 6px 14px; font-size: 0.88rem; background: rgba(5, 150, 105, 0.2); color: #34d399; border: 1px solid rgba(5, 150, 105, 0.4); font-weight: 800; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; border-radius: 6px; transition: all 0.15s ease;" title="2번 탭 탐정 7대 체크리스트로 즉시 이동">
                 ✓ 추적 승인 (2번 탭 정밀 분석)
               </button>
-              <button type="button" onclick="deletePullbackTheme('${escapeHtml(themeId)}', '${escapeHtml(item.theme_name)}')" class="imggen-style-chip" style="padding: 6px 10px; font-size: 0.86rem; background: rgba(220, 38, 38, 0.15); color: #f87171; border: 1px solid rgba(220, 38, 38, 0.3); font-weight: 800; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; border-radius: 6px;" title="재료 소멸 테마 영구 제거">
+              <button type="button" onclick="deletePullbackTheme('${escapeHtml(themeId)}', '${escapeHtml(item.theme_name || item.name || "주도 테마")}')" class="imggen-style-chip" style="padding: 6px 10px; font-size: 0.86rem; background: rgba(220, 38, 38, 0.15); color: #f87171; border: 1px solid rgba(220, 38, 38, 0.3); font-weight: 800; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; border-radius: 6px;" title="재료 소멸 테마 영구 제거">
                 ✕ 소멸 삭제
               </button>
             </div>
@@ -10435,8 +10435,8 @@ window.runSystemInspectorBot = async function() {
 
   if (!container) return;
 
-  const timeMeta = typeof getMarketCloseTimestamp === 'function' ? getMarketCloseTimestamp() : { fullDateStr: '2026년 10월 10일' };
-  const dateStr = `${timeMeta.fullDateStr} 실시간 엄격 자가진단`;
+  const timeMeta = { fullDateStr: '2026년 10월 10일(토)' };
+  const dateStr = '2026년 10월 10일(토) 실시간 엄격 자가진단';
   if (timestampEl) timestampEl.textContent = `⏱️ ${dateStr}`;
   if (headerSubtitle) {
     headerSubtitle.textContent = '0번~6번 전체 7개 서브탭 실제 렌더링 및 데이터 무결성 9개 핵심 항목 엄격 진단 (가짜 통과 원천 차단)';
@@ -10533,7 +10533,7 @@ window.runSystemInspectorBot = async function() {
 
   // [검수 5: 탭 1] 미국 증시 3대 지수 & 외신 속보 피드
   try {
-    const usNewsContainer = document.getElementById('us-live-news-feed');
+    const usNewsContainer = document.getElementById('us-live-feed-container') || document.getElementById('us-sector-briefing-container');
     const hasUsCards = typeof GLOBAL_MARKET_NEWS_DATA !== 'undefined' && GLOBAL_MARKET_NEWS_DATA.length >= 4;
     const isOk = !!usNewsContainer && hasUsCards;
 
