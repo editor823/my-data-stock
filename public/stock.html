@@ -1050,96 +1050,128 @@
         <!-- 3단 레이아웃 그리드 -->
         <div style="display: flex; flex-direction: column; gap: 24px;">
 
-          <!-- [1단 상단] 📅 이번 주 주간 분석 & 차주 증시 예측 리포트 (최신 10월 2주차 / 10.10 마감) -->
-          <div class="kc-box-white-card" style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 14px; padding: 20px 22px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid #352924; padding-bottom: 12px; flex-wrap: wrap; gap: 10px;">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 1.2rem;">📅</span>
-                <h4 style="font-size: 1.1rem; font-weight: 900; color: #f5ebe0; margin: 0;">
+                    <!-- [1단 상단] 📅 이번 주 주간 분석 & 차주 증시 예측 리포트 (최신 10월 2주차 / 10.10 마감) -->
+          <div class="kc-box-white-card" style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 14px; padding: 22px 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: 1px solid #352924; padding-bottom: 14px; flex-wrap: wrap; gap: 12px;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.35rem;">📅</span>
+                <h4 style="font-size: 1.22rem; font-weight: 900; color: #f5ebe0; margin: 0; letter-spacing: -0.3px;">
                   이번 주 주간 복기 & 차주 증시 예측 리포트 (10월 2주차 / 10.10 마감)
                 </h4>
               </div>
-              <span id="weekly-status-badge" style="font-size: 0.74rem; background: #352924; color: #d4a373; padding: 3px 8px; border-radius: 6px; font-weight: 800; border: 1px solid #4a3b34;">
+              <span id="weekly-status-badge" style="font-size: 0.82rem; background: #352924; color: #d4a373; padding: 4px 11px; border-radius: 6px; font-weight: 800; border: 1px solid #4a3b34;">
                 실체적 재료 팩트 집계 완료
               </span>
             </div>
 
             <!-- 주간 복기 & 차주 예측 2열 분할 카드 -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 18px;">
               <!-- 좌측: 이번 주 복기 -->
-              <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 10px; padding: 16px;">
-                <div style="font-size: 0.95rem; font-weight: 800; color: #d4a373; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
+              <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 12px; padding: 18px 20px;">
+                <div style="font-size: 1.05rem; font-weight: 900; color: #d4a373; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
                   <span>📋</span> [이번 주 복기]: 월~금 누적 주도 테마 & 외인·기관 순매수 총정리
                 </div>
-                <div id="weekly-retrospective-content" style="font-size: 0.83rem; color: #d7ccc8; line-height: 1.65; display: flex; flex-direction: column; gap: 10px;">
-                  <div style="padding: 12px 14px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #d4a373; border-radius: 6px;">
-                    <strong style="color: #d4a373;">🔥 실체적 재료 주도 테마:</strong><br>
-                    • <strong>전력설비/초고압 전선:</strong> 선도전기 320억원 공급계약 공시 및 북미 AI 데이터센터 전력 쇼티지 부각으로 상한가 분출.<br>
-                    • <strong>원자력/SMR:</strong> 체코 두코바니 2기 원전 주기기 우선협상 계약 체결 공시 및 美 SMR 파운드리 협약으로 두산에너빌리티·대한전선에 기관 순매수 유입.<br>
-                    • <strong>K-방산 수출:</strong> 루마니아 K2 전차 2.8조원 공급 기본계약 체결 및 폴란드 2차 실행계약 가시화로 한화에어로스페이스·현대로템 랠리.
+                <div id="weekly-retrospective-content" style="font-size: 0.93rem; color: #d7ccc8; line-height: 1.75; display: flex; flex-direction: column; gap: 12px;">
+                  <div style="padding: 14px 16px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #d4a373; border-radius: 8px;">
+                    <strong style="color: #d4a373; font-size: 0.96rem;">🔥 실체적 재료 주도 테마 팩트:</strong><br>
+                    • <strong style="color: #f5ebe0;">전력설비/초고압 변압기:</strong> 선도전기 320억원 공급계약 공시 및 북미 AI 데이터센터 전력 쇼티지 부각으로 상한가 분출. HD현대일렉트릭·효성중공업 5일선 지지 랠리.<br>
+                    • <strong style="color: #f5ebe0;">원자력/SMR:</strong> 체코 두코바니 2기 원전 주기기 우선협상 계약 체결 공시 및 美 웨스팅하우스 지재권 분쟁 합의 진척 공식 보고로 두산에너빌리티·우진엔텍에 기관 순매수 유입.<br>
+                    • <strong style="color: #f5ebe0;">K-방산 메가수주:</strong> 루마니아 K2 전차 2.8조원 공급 기본계약 체결 및 폴란드 2차 실행계약 가시화로 한화에어로스페이스·현대로템 주도주 신고가 랠리.
                   </div>
-                  <div style="padding: 12px 14px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #c7926b; border-radius: 6px;">
-                    <strong style="color: #f5ebe0;">📡 주간 수급 총합:</strong><br>
-                    외국인 (+2,850억원) · 기관 (+3,420억원) 주간 양매수 우위. 3분기 실적 발표 시즌을 앞두고 '실제 영업이익 턴어라운드 및 수주잔고 보유 기업'에 선택과 집중 지속.
+                  <div style="padding: 14px 16px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #38bdf8; border-radius: 8px;">
+                    <strong style="color: #38bdf8; font-size: 0.96rem;">📡 주간 수급 총합:</strong><br>
+                    외국인 (+7,800억원) · 기관 (+6,510억원) 주간 양매수 우위. 3분기 실적 발표 시즌을 앞두고 '실제 영업이익 턴어라운드 및 3년 치 수주잔고 보유 기업'에 메이저 수급 선별 집중.
                   </div>
                 </div>
               </div>
 
-              <!-- 우측: 다음 주 예측 엔진 (인과관계 기반) -->
-              <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 10px; padding: 16px;">
-                <div style="font-size: 0.95rem; font-weight: 800; color: #d4a373; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
-                  <span>🚀</span> [다음 주 예측 엔진]: 인과관계 기반 시나리오
+              <!-- 우측: 다음 주 예측 엔진 (인과관계 기반 심층 스토리텔링) -->
+              <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 12px; padding: 18px 20px;">
+                <div style="font-size: 1.05rem; font-weight: 900; color: #d4a373; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                  <span>🚀</span> [다음 주 예측 엔진]: 인과관계 기반 시나리오 & 재료 스토리텔링
                 </div>
-                <div id="next-week-prediction-content" style="font-size: 0.83rem; color: #d7ccc8; line-height: 1.65; display: flex; flex-direction: column; gap: 10px;">
-                  <div style="padding: 12px 14px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #d4a373; border-radius: 6px;">
-                    <strong style="color: #d4a373; font-size: 0.86rem;">⚡ 인과관계 공식 기반 시나리오:</strong><br>
-                    "이번 주 <strong>테슬라 로보택시 공개와 국정감사 착수 및 3분기 어닝시즌 개막 카운트다운</strong> 결과 때문에, 다음 주는 <strong>실적 서프라이즈가 예상되는 반도체 소부장·전력 인프라 및 체코 원전 후속 실사단 수혜주</strong>에 메이저 수급이 쏠릴 가능성이 높습니다."
+                <div id="next-week-prediction-content" style="font-size: 0.93rem; color: #d7ccc8; line-height: 1.75; display: flex; flex-direction: column; gap: 12px;">
+                  <!-- 인과 사슬 1 -->
+                  <div style="padding: 13px 15px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #f59e0b; border-radius: 8px;">
+                    <strong style="color: #f59e0b; font-size: 0.95rem;">⚡ [인과 사슬 ①] AI 인프라 전력 병목 ➔ 어닝 서프라이즈</strong><br>
+                    테슬라 로보택시(사이버캡) 공개 및 빅테크 3분기 설비투자(CapEx) 확대 가이던스 공식화 ➔ 북미 변전소 초고압 변압기 리드타임 3~4년 지속 ➔ 국내 변압기 3사(HD현대일렉트릭, 효성중공업, 제룡전기) 3분기 실적 어닝 서프라이즈 가시화 ➔ 5일선 지지 후 2차 전고점 돌파 파동 진입 유력.
                   </div>
-                  <div style="font-size: 0.78rem; color: #a89f91; padding-left: 4px;">
-                    ※ 전략: 지수 추종 대형주보다는 5일선 지지 후 2차 파동 타점에 진입한 전력설비·원전·자율주행 눌림목 종목을 선취매하는 전략이 유효합니다.
+                  <!-- 인과 사슬 2 -->
+                  <div style="padding: 13px 15px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #10b981; border-radius: 8px;">
+                    <strong style="color: #10b981; font-size: 0.95rem;">⚡ [인과 사슬 ②] 10.14 국감 산자위 ➔ 11월 체코 실사단 방한</strong><br>
+                    10월 14일 국회 산자위 국정감사에서 한수원 체코 24조원 원전 수주 본계약 이행 및 美 지재권 협상 합의 진척 공식 보고 ➔ 11월 체코 고위급 실사단 방한 기대감 부각 ➔ 원전 주기기(두산에너빌리티) 및 계측제어/정비 밸류체인(우진엔텍, 한신기계, 비에이치아이)으로 외인·기관 쌍끌이 프로그램 매수 집중.
+                  </div>
+                  <!-- 인과 사슬 3 -->
+                  <div style="padding: 13px 15px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #38bdf8; border-radius: 8px;">
+                    <strong style="color: #38bdf8; font-size: 0.95rem;">⚡ [인과 사슬 ③] 10.17 TSMC 실적 ➔ 10.24 SK하이닉스 HBM3E 분기 최대 매출</strong><br>
+                    10월 17일 파운드리 1위 TSMC 3분기 실적 발표에서 CoWoS 패키징 라인 증설 및 엔비디아 블랙웰 양산 수율 호조 확인 ➔ 10월 24일 SK하이닉스 3분기 영업이익 6조원 돌파 기대감 고조 ➔ TC본더 및 HBM 검사장비 소부장(한미반도체, 제우스, 테크윙) 눌림목 수급 쏠림.
+                  </div>
+                  <!-- 차주 대응 액션 플랜 -->
+                  <div style="font-size: 0.88rem; color: #a89f91; padding: 6px 10px; background: #1a1412; border-radius: 6px; border: 1px dashed #4a3b34;">
+                    🎯 <strong style="color: #f5ebe0;">차주 실전 매매 전략:</strong> 코스피 2,580~2,640p 박스권. 지수 추종 인덱스보다는 '확정 수주잔고 + 명확한 글로벌 이벤트'를 갖춘 3대 주도주(전력망·원전·HBM소부장)를 5일/10일 이동평균선 눌림목에서 분할 매수하는 선취매 전략이 가장 안전하고 유효합니다.
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- [2단 중단] 📊 이번 달(10월) 월간 중간 종합 평가 & 차월(11월) 증시 대전망 (美 대선 결전) -->
-          <div class="kc-box-white-card" style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 14px; padding: 20px 22px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid #352924; padding-bottom: 12px; flex-wrap: wrap; gap: 10px;">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 1.2rem;">📊</span>
-                <h4 style="font-size: 1.1rem; font-weight: 900; color: #f5ebe0; margin: 0;">
-                  이번 달(10월) 월간 중간 종합 평가 & 차월(11월) 증시 대전망 (美 대선 결전)
+          <!-- [2단 중단] 📊 이번 달(10월) 월간 중간 종합 평가 & 차월(11월) 증시 대전망 (美 중간선거 & 11월 FOMC 금리 분기점) -->
+          <div class="kc-box-white-card" style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 14px; padding: 22px 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: 1px solid #352924; padding-bottom: 14px; flex-wrap: wrap; gap: 12px;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.35rem;">📊</span>
+                <h4 style="font-size: 1.22rem; font-weight: 900; color: #f5ebe0; margin: 0; letter-spacing: -0.3px;">
+                  이번 달(10월) 월간 중간 종합 평가 & 차월(11월) 증시 대전망 (美 중간선거 & 11월 FOMC 금리 분기점)
                 </h4>
               </div>
-              <span style="font-size: 0.74rem; background: #352924; color: #d4a373; padding: 3px 8px; border-radius: 6px; font-weight: 800; border: 1px solid #4a3b34;">
+              <span style="font-size: 0.82rem; background: #352924; color: #d4a373; padding: 4px 11px; border-radius: 6px; font-weight: 800; border: 1px solid #4a3b34;">
                 월간 매크로 사이클
               </span>
             </div>
 
             <!-- 월간 분석 2열 -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 18px;">
               <!-- 이번 달 사후 평가 -->
-              <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 10px; padding: 16px;">
-                <div style="font-size: 0.92rem; font-weight: 800; color: #d4a373; margin-bottom: 8px;">
-                  📌 [10월 중간 지수 궤적 & 주도 vs 소멸 섹터]
+              <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 12px; padding: 18px 20px;">
+                <div style="font-size: 1.05rem; font-weight: 900; color: #d4a373; margin-bottom: 12px;">
+                  📌 [10월 중간 지수 궤적 & 주도 vs 소멸 섹터 심층 평가]
                 </div>
-                <div style="font-size: 0.82rem; color: #d7ccc8; line-height: 1.65;">
-                  • <strong>지수 궤적:</strong> 9월 말 회복세를 이어받아 코스피 2,600선 안착 공방전 전개 중.<br>
-                  • <strong>최대 주도 테마:</strong> 전력설비/HVDC (+38.5%), 원자력/SMR (+24.0%), K-방산 수출 (+31.2%), 자율주행 소부장.<br>
-                  • <strong>재료 소멸 섹터:</strong> 단발성 정치 테마 및 실적 없는 기대감 급등주는 3분기 어닝시즌 개막과 함께 급격한 차익 매물 출회.
+                <div style="font-size: 0.93rem; color: #d7ccc8; line-height: 1.75; display: flex; flex-direction: column; gap: 10px;">
+                  <div>
+                    • <strong style="color: #f5ebe0;">지수 궤적 & 수급 구도:</strong> 코스피는 9월 2,550선 바닥 확인 후 2,600선 안착 공방전 전개. 원/달러 환율이 1,340원대에서 하향 안정화되며 외국인 선물 매도 압력이 현물 순매수 전환으로 변곡점을 형성 중.
+                  </div>
+                  <div style="padding: 10px 12px; background: #2a201c; border-radius: 6px; border-left: 3px solid #d4a373;">
+                    • <strong style="color: #d4a373;">10월 진짜 주도 테마 3선 (수급 쏠림):</strong><br>
+                    - <strong style="color: #f5ebe0;">초고압 전력설비/HVDC (+38.5%):</strong> 북미 노후 변전망 교체 및 AI 데이터센터 전력선 수주 급증 (HD현대일렉트릭, 효성중공업, 제룡전기).<br>
+                    - <strong style="color: #f5ebe0;">원자력/SMR (+24.0%):</strong> 체코 24조원 2기 원전 본계약 카운트다운 및 아마존·구글의 SMR 전력 PPA 계약 체결 러시 (두산에너빌리티, 비에이치아이).<br>
+                    - <strong style="color: #f5ebe0;">K-방산 메가수주 (+31.2%):</strong> 루마니아 K2 전차 2.8조원 1차 계약 및 폴란드 K9 자주포 2차 실행계약 가시화 (한화에어로스페이스, 현대로템).
+                  </div>
+                  <div>
+                    • <strong style="color: #f87171;">재료 소멸 및 퇴출 섹터 (리스크 경고):</strong> 실체 없는 단발성 정치 테마주, 임상 지연 및 적자 누적 바이오 기대주, 단순 중국 부양책 수혜주는 3분기 어닝시즌 개막과 함께 기관 차익실현 매물 폭탄으로 급락 전환.
+                  </div>
                 </div>
               </div>
 
               <!-- 차월(11월) 대전망 -->
-              <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 10px; padding: 16px;">
-                <div style="font-size: 0.92rem; font-weight: 800; color: #d4a373; margin-bottom: 8px;">
-                  🔭 [11월 대형 글로벌 매크로 & 美 대선 결전 유망 테마]
+              <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 12px; padding: 18px 20px;">
+                <div style="font-size: 1.05rem; font-weight: 900; color: #d4a373; margin-bottom: 12px;">
+                  🔭 [11월 대형 글로벌 매크로 & 美 중간선거 대전망]
                 </div>
-                <div style="font-size: 0.82rem; color: #d7ccc8; line-height: 1.65;">
-                  • <strong>핵심 매크로 이벤트:</strong> 11월 5일 미국 대선(트럼프 vs 해리스) 본투표 및 결과 확정, 미 연준 11월 FOMC 금리 결정.<br>
-                  • <strong>사전 예측 유망 테마:</strong> 양측 공통 수혜인 AI 데이터센터·초고압 송전망, K-방산 추가 파이프라인, 우주항공 스타십 후속 발사.<br>
-                  • <strong>주의 리스크:</strong> 대선 직전 10월 하순 관망세로 인한 변동성 확대 대비 및 현금 비중 20% 유연 조절.
+                <div style="font-size: 0.93rem; color: #d7ccc8; line-height: 1.75; display: flex; flex-direction: column; gap: 10px;">
+                  <div>
+                    • <strong style="color: #f5ebe0;">11월 2대 초대형 글로벌 매크로 분기점:</strong><br>
+                    - <strong style="color: #38bdf8;">11월 3일(화) 미국 연방의회 중간선거(Midterm):</strong> 상·하원 다수당 구도 변화에 따른 세제 혜택(IRA) 및 대중국 고율 관세 기조 변화 판가름.<br>
+                    - <strong style="color: #38bdf8;">11월 7일(토) 미 연준(FOMC) 기준금리 결정:</strong> 9월 50bp 빅컷에 이은 25bp 연속 인하 유력. 파월 의장 발언에 따른 달러 약세 전환 시 외국인 코스피 현물 유입 가속화.
+                  </div>
+                  <div style="padding: 10px 12px; background: #2a201c; border-radius: 6px; border-left: 3px solid #38bdf8;">
+                    • <strong style="color: #38bdf8;">11월 사전 선취매 유망 핵심 테마:</strong><br>
+                    - <strong style="color: #f5ebe0;">정책 무풍지대 인프라:</strong> 의회 권력 변동과 무관하게 초당적 지원을 받는 'AI 전력망·초고압 송전망' 및 '국방비 증액(K-방산)' 섹터.<br>
+                    - <strong style="color: #f5ebe0;">반도체 블랙웰 밸류체인:</strong> 11월 19일 엔비디아 실적 발표 및 B200 양산 본격화에 따른 HBM3E·CXL 공급망.<br>
+                    - <strong style="color: #f5ebe0;">우주항공 모멘텀:</strong> 스페이스X 스타십 6차 시험 발사 및 국내 우주항공청 R&D 예산 집행 수혜주.
+                  </div>
+                  <div>
+                    • <strong style="color: #f5ebe0;">운용 전략 & 리스크 관리:</strong> 10월 하순 3분기 실적 발표 전후 변동성 확대 구간을 저가 분할 매수 기회로 활용. 현금 비중 20~25% 유연 유지하며 '어닝 서프라이즈 + 수주잔고' 종목으로 압축 대응.
+                  </div>
                 </div>
               </div>
             </div>
@@ -1656,7 +1688,7 @@
 
   <!-- 필수 스크립트 로드 -->
   <script src="js/live_domestic_news_seed.js?v=live_news_1010_v2"></script>
-  <script src="js/stock.js?v=calendar_direct_links_20261010_1500"></script>
+  <script src="js/stock.js?v=review_upgrade_20261010_1510"></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" onclick="if(event.target===this) closeDailyStockReportModal()">

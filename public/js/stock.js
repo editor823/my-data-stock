@@ -8037,13 +8037,13 @@ function renderWeeklyAndMonthlyReview(historyData) {
     `).join('<br>');
 
     weeklyRetroEl.innerHTML = `
-      <div style="padding: 12px 14px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #f59e0b; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); margin-bottom: 8px; color: #f5ebe0; line-height: 1.6;">
-        <strong style="color: #f59e0b; font-size: 0.86rem;">🔥 누적 일일 마감 팩트 (${briefings.length}일치 집계)</strong><br>
-        <span style="font-size: 0.82rem; color: #d7ccc8;">${themesHtml || '당일 주도주 특징주 및 공시 팩트 추적 중'}</span>
+      <div style="padding: 14px 16px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #f59e0b; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); margin-bottom: 10px; color: #f5ebe0; line-height: 1.75;">
+        <strong style="color: #f59e0b; font-size: 0.98rem;">🔥 누적 일일 마감 팩트 (${briefings.length}일치 집계)</strong><br>
+        <span style="font-size: 0.92rem; color: #d7ccc8;">${themesHtml || '당일 주도주 특징주 및 공시 팩트 추적 중'}</span>
       </div>
-      <div style="padding: 12px 14px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #38bdf8; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); color: #f5ebe0; line-height: 1.6;">
-        <strong style="color: #38bdf8; font-size: 0.86rem;">📡 주간 수급 총합</strong><br>
-        <span style="font-size: 0.82rem; color: #d7ccc8;">외국인(+7,800억원)·기관(+6,510억원) 주간 양매수 우위. 반도체 소부장과 원자력·우주항공 중심 '확정 수주잔고 보유 섹터' 선별 집중.</span>
+      <div style="padding: 14px 16px; background: #2a201c; border: 1.5px solid #4a3b34; border-left: 4px solid #38bdf8; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); color: #f5ebe0; line-height: 1.75;">
+        <strong style="color: #38bdf8; font-size: 0.98rem;">📡 주간 수급 총합</strong><br>
+        <span style="font-size: 0.92rem; color: #d7ccc8;">외국인(+7,800억원)·기관(+6,510억원) 주간 양매수 우위. 반도체 소부장과 원자력·우주항공 중심 '확정 수주잔고 보유 섹터' 선별 집중.</span>
       </div>
     `;
   }
