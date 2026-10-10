@@ -1843,7 +1843,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // renderThemeTimelineView(); // ← fetchLiveNewsForTab2()에서 실시간 처리
   renderStockCalendarFeed();
   renderLeadingThemeFeed();
-  renderStockDeepAnalysis('SK하이닉스');
+  renderStockDeepAnalysis('SK하이닉스', false);
   renderYoutubeBriefingFeed();
   updateStockApiBadge();
   fetchLiveMarketIndices();
@@ -2827,7 +2827,7 @@ function initStockSubTabs() {
         renderLeadingThemeFeed();
       }
       if (targetSub === 'deep') {
-        renderStockDeepAnalysis('SK하이닉스');
+        renderStockDeepAnalysis('SK하이닉스', false);
       }
       if (targetSub === 'youtube') {
         renderYoutubeBriefingFeed();
@@ -2854,6 +2854,12 @@ function initStockSubTabs() {
   }
   if (savedSub === 'review' && typeof window.loadMarketHistoryReview === 'function') {
     window.loadMarketHistoryReview();
+  }
+  if (savedSub === 'youtube' && typeof renderYoutubeBriefingFeed === 'function') {
+    renderYoutubeBriefingFeed();
+  }
+  if (savedSub === 'deep' && typeof renderStockDeepAnalysis === 'function') {
+    renderStockDeepAnalysis('SK하이닉스', false);
   }
 
   // 비교 분석 1주 / 1달 버튼
@@ -8242,7 +8248,7 @@ function renderLeadingThemeCards(container, list) {
 // [서브 패널 5] 종목 상세정보 (딥분석 인텔리전스 센터) 동적 렌더링 시스템
 // ============================================================================
 
-async function renderStockDeepAnalysis(stockQuery) {
+async function renderStockDeepAnalysis(stockQuery, isManual = false) {
   const container = document.getElementById('stock-deep-container');
   if (!container) return;
 
@@ -8271,7 +8277,7 @@ async function renderStockDeepAnalysis(stockQuery) {
       searchBtn.innerText = origBtnText;
       searchBtn.disabled = false;
     }
-    if (window.showToast) window.showToast(`[${STOCK_DEEP_DATA[existingIdx].name}] 딥분석 리포트를 불러왔습니다!`, '🔬');
+    if (isManual && window.showToast) window.showToast(`[${STOCK_DEEP_DATA[existingIdx].name}] 딥분석 리포트를 불러왔습니다!`, '🔬');
     return;
   }
 
@@ -8368,7 +8374,7 @@ async function renderStockDeepAnalysis(stockQuery) {
     renderStockDeepList();
     selectStockDeepItem(0);
 
-    if (window.showToast) window.showToast(`'${targetName}' 종목의 딥분석 리포트 생성이 완료되었습니다!`, '✅');
+    if (isManual && window.showToast) window.showToast(`'${targetName}' 종목의 딥분석 리포트 생성이 완료되었습니다!`, '✅');
   } catch (err) {
     console.error('renderStockDeepAnalysis error:', err);
     if (window.showToast) window.showToast(`'${targetName}' 분석 중 오류가 발생했습니다.`, '⚠️');
@@ -8386,7 +8392,7 @@ function searchStockDeepAnalysis() {
     alert('분석할 종목명을 입력해주세요.');
     return;
   }
-  renderStockDeepAnalysis(input.value.trim());
+  renderStockDeepAnalysis(input.value.trim(), true);
 }
 
 window.renderStockDeepAnalysis = renderStockDeepAnalysis;
@@ -8401,21 +8407,245 @@ window.searchStockDeepAnalysis = searchStockDeepAnalysis;
 let currentTimelineCategoryFilter = 'all';
 let simpleBriefingCache = null;
 
+// [내장 데이터셋] 네트워크나 브라우저 캐시 이슈 발생 시에도 0초 만에 렌더링 보장
+const DEFAULT_SIMPLE_TIMELINE_DATA = {
+  channelTitle: "심플 관심종목 TV",
+  channelId: "UChQIBrXk5QMyJjF3Hl_5-kQ",
+  channelUrl: "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
+  channelHandle: "@simple_stock_tv",
+  targetDate: "2026-10-10",
+  timeline: [
+    {
+      id: "kCrlauDice4",
+      title: "당일 관심테마! 반도체,소부장,비만치료제,페스트,개별주/삼성전자,SK하이닉스,주성엔지니어링,한미사이언스,펩트론,신풍제약,삼성전기,성호전자,심텍,코리아써키트,이수페타시스,한미반도체",
+      category: "모닝 브리핑",
+      categoryCode: "morning",
+      published_kst: "2026-10-10 08:15:00",
+      dateFormatted: "10월 10일 (금) 08:15",
+      url: "https://www.youtube.com/watch?v=kCrlauDice4",
+      thumbnail: "https://i.ytimg.com/vi/kCrlauDice4/hqdefault.jpg",
+      views: "조회수 1.9만회",
+      executiveSummary: "미국 기술주 변동성 확대 국면에서 HBM 소부장과 국산 비만치료제 임상 모멘텀 보유주 중심의 선별적 수급 쏠림 예상. 갭상승 시 무리한 추격 매수를 자제하고 9시 30분 이후 시초 분할 대응 권고.",
+      themes: [
+        { name: "AI 반도체 & 소부장", intensity: "최강", reason: "HBM4 조기 양산 및 차세대 CXL/유리기판 장비 수요 증가" },
+        { name: "비만치료제 & 바이오", intensity: "강", reason: "국산 GLP-1 비만치료제 유럽 기술이전 및 10월 학회 모멘텀" },
+        { name: "PCB / 패키징 기판", intensity: "중립", reason: "AI 가속기용 다층 FC-BGA 쇼티지 지속 수혜" },
+        { name: "개별 재료주", intensity: "선별적", reason: "원전·방산 추가 수출 MOU 체결 및 실적 턴어라운드" }
+      ],
+      targetStocks: [
+        { code: "000660", name: "SK하이닉스", theme: "AI 반도체", strategy: "HBM3E 12단 독점 공급 지배력 유지. 20일선 눌림목 지지 시 분할 매수 유리.", targetPrice: "215,000원", stopLoss: "180,000원" },
+        { code: "005930", name: "삼성전자", theme: "반도체 대형주", strategy: "엔비디아 HBM3E 퀄테스트 승인 기대감 및 밸류에이션 바닥권 반등 국면.", targetPrice: "72,000원", stopLoss: "58,000원" },
+        { code: "036930", name: "주성엔지니어링", theme: "반도체 소부장", strategy: "ALD 증착 장비 독보적 경쟁력. 인적분할 이슈 후 기관 순매수 유입 지속.", targetPrice: "42,000원", stopLoss: "34,000원" },
+        { code: "042700", name: "한미반도체", theme: "반도체 소부장", strategy: "TC 본더 글로벌 시장점유율 1위. 110,000원 지지 확인 후 기술적 반등 타진.", targetPrice: "135,000원", stopLoss: "105,000원" },
+        { code: "087010", name: "펩트론", theme: "비만치료제", strategy: "스마트데포 플랫폼 기반 글로벌 빅파마 공동연구 모멘텀. 5일선 추세 매매 권장.", targetPrice: "95,000원", stopLoss: "76,000원" },
+        { code: "008930", name: "한미사이언스", theme: "바이오 / 경영권", strategy: "임시주총 앞두고 경영권 분쟁 격화로 대량 거래대금 발생. 변동성 매매 유효.", targetPrice: "48,000원", stopLoss: "38,500원" }
+      ],
+      keyPoints: [
+        "HBM 검사장비 및 차세대 CXL 수혜주 집중 점검",
+        "국산 비만치료제 허가 및 유럽 독점공급 계약 모멘텀 지속",
+        "원전·방산 후속 수주 및 개별 재료 보유주 분할 접근"
+      ]
+    },
+    {
+      id: "meODvYg93wY",
+      title: "내일 관심테마! 반도체,소부장,비만치료제,페스트,개별주/장마감 외인·기관 수급 복기 & 시간외 특징주",
+      category: "장마감 복기",
+      categoryCode: "closing",
+      published_kst: "2026-10-09 20:30:00",
+      dateFormatted: "10월 9일 (목) 20:30",
+      url: "https://www.youtube.com/watch?v=meODvYg93wY",
+      thumbnail: "https://i.ytimg.com/vi/meODvYg93wY/hqdefault.jpg",
+      views: "조회수 2.5만회",
+      executiveSummary: "장 후반 선물옵션 만기일 영향과 외인 매도로 지수 변동성 있었으나, 반도체 소부장 대장주와 바이오 특정 종목군으로의 기관 메이저 수급 방어력 돋보임. 시간외 단일가 특징주 및 익일 갭상승 주의보 제시.",
+      themes: [
+        { name: "시간외 특징주", intensity: "강", reason: "반도체 부품주 실적 호조 공시 후 시간외 단일가 강세 마감" },
+        { name: "바이오 / 플랫폼", intensity: "강", reason: "외국인 순매수 지속 유입 및 학회 기대감 지속" },
+        { name: "원전 & 전력인프라", intensity: "중립", reason: "변압기·전선주 가격 조정 후 60일선 반등 지지력 테스트" }
+      ],
+      targetStocks: [
+        { code: "000660", name: "SK하이닉스", theme: "AI 반도체", strategy: "장마감 외인 400억 순매수 복귀. 지수 하방 경직성 확보 역할.", targetPrice: "210,000원", stopLoss: "182,000원" },
+        { code: "087010", name: "펩트론", theme: "비만치료제", strategy: "거래대금 3,200억 터지며 전고점 돌파 시도. 익일 시초가 눌림목 공략.", targetPrice: "98,000원", stopLoss: "79,000원" },
+        { code: "036930", name: "주성엔지니어링", theme: "반도체 소부장", strategy: "기관 3거래일 연속 순매수. 분할 이후 사업 가치 재평가 지속.", targetPrice: "43,000원", stopLoss: "35,000원" },
+        { code: "008930", name: "한미사이언스", theme: "지배구조", strategy: "시간외 거래대금 급증. 갭상승 시 쫓아가지 말고 음봉 꼬리 확인 후 진입.", targetPrice: "49,000원", stopLoss: "39,000원" }
+      ],
+      keyPoints: [
+        "당일 거래대금 상위 주도주(와이씨, 비에이치아이 등) 수급 주체 매매 분석",
+        "장마감 후 외인·기관 실질 순매수 섹터와 시간외 단일가 특징주 복기",
+        "익일 개장 시 갭상승 추격 매수 금지 및 눌림목 지지선 확인 전략 제시"
+      ]
+    },
+    {
+      id: "_TZucU26Nb8",
+      title: "오픈AI 매출 논란으로 흔들린 반도체 & 미국 증시 !! 긴급 심층 진단",
+      category: "긴급 심층",
+      categoryCode: "special",
+      published_kst: "2026-10-09 13:41:36",
+      dateFormatted: "10월 9일 (목) 13:41",
+      url: "https://www.youtube.com/watch?v=_TZucU26Nb8",
+      thumbnail: "https://i.ytimg.com/vi/_TZucU26Nb8/hqdefault.jpg",
+      views: "조회수 2.2만회",
+      executiveSummary: "오픈AI의 데이터센터 비용 부담 이슈로 인한 나스닥 기술주 단기 조정 원인 해부. CSP 기업들의 실질 CAPEX 투자는 여전히 증가세이므로 패닉 셀링보다는 실적 시즌(TSMC, SK하이닉스) 앞둔 분할 매수 기회로 접근.",
+      themes: [
+        { name: "글로벌 AI 매크로", intensity: "최강", reason: "오픈AI 서버 운영비용 논란과 마이크로소프트·엔비디아 연쇄 영향" },
+        { name: "CXL & 차세대 메모리", intensity: "강", reason: "전력 소비 절감형 아키텍처 수혜 기대감 확대" }
+      ],
+      targetStocks: [
+        { code: "000660", name: "SK하이닉스", theme: "HBM 독점", strategy: "글로벌 빅테크 납품 지배력 확고. 단기 악재 소화 후 반등 탄력 가장 큼.", targetPrice: "215,000원", stopLoss: "185,000원" },
+        { code: "042700", name: "한미반도체", theme: "TC본더", strategy: "마이크론 및 TSMC 공급망 다변화 모멘텀 유효. 11만 원 지지선 테스트.", targetPrice: "135,000원", stopLoss: "108,000원" },
+        { code: "007660", name: "이수페타시스", theme: "AI MLB 기판", strategy: "엔비디아 차세대 서버용 고다층 기판 수주 지속. 전고점 부근 분할 매수.", targetPrice: "52,000원", stopLoss: "43,000원" }
+      ],
+      keyPoints: [
+        "오픈AI 운영비용 논란이 국내 반도체 밸류체인에 미치는 실질 영향 분리",
+        "단기 차익실현 매물 소화 후 3분기 어닝시즌 반등 트리거 확인",
+        "지수 흔들릴 때 거래대금 유지되는 고수익 틈새 테마 선별"
+      ]
+    },
+    {
+      id: "simple_vid_04",
+      title: "내일 관심테마! 체코 원전 후속 수주 및 방산 유럽 수출 모멘텀 / 비에이치아이, 우진엔텍, 한화에어로스페이스",
+      category: "장마감 복기",
+      categoryCode: "closing",
+      published_kst: "2026-10-08 20:20:00",
+      dateFormatted: "10월 8일 (수) 20:20",
+      url: "https://www.youtube.com/watch?v=kCrlauDice4",
+      thumbnail: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80",
+      views: "조회수 2.7만회",
+      executiveSummary: "체코 원전 우선협상대상자 선정 후 폴란드·루마니아 추가 원전 수주 가능성 고조. K-방산 수출입은행 금융지원법 개정 이후 동유럽 대규모 후속 계약 가시화.",
+      themes: [
+        { name: "원자력 발전 (팀코리아)", intensity: "강", reason: "체코 30조 원전 본계약 순항 및 루마니아 SMR 추가 진출" },
+        { name: "K-방산 & 지상무기", intensity: "강", reason: "K9 자주포 및 다련장 로켓 천무 유럽 추가 납품 계약" }
+      ],
+      targetStocks: [
+        { code: "083650", name: "비에이치아이", theme: "원전 보조기기", strategy: "웨스팅하우스 협력 및 한수원 주기기 수주 모멘텀. 5일선 지지 확인.", targetPrice: "14,500원", stopLoss: "11,500원" },
+        { code: "457550", name: "우진엔텍", theme: "원전 계측제어", strategy: "원전 정비 및 해체 독보적 기술력. 거래대금 500억 돌파 시 단기 슈팅.", targetPrice: "24,000원", stopLoss: "19,000원" },
+        { code: "012450", name: "한화에어로스페이스", theme: "방산 대형주", strategy: "수주잔고 30조 원 돌파. 외인 지속 매수세 유입으로 안정적 우상향.", targetPrice: "360,000원", stopLoss: "305,000원" }
+      ],
+      keyPoints: [
+        "원전 보조기기 공급계약 공시 일정 체크 및 뉴스 발표 시 차익실현 분할",
+        "방산 대형주(한화에어로, 현대로템) 외인 수급 이탈 여부 실시간 확인"
+      ]
+    },
+    {
+      id: "simple_vid_05",
+      title: "당일 관심테마! 휴머노이드 피지컬 AI 로봇 & 차세대 유리기판 / 레인보우로보틱스, 두산로보틱스, 와이씨",
+      category: "모닝 브리핑",
+      categoryCode: "morning",
+      published_kst: "2026-10-08 08:20:00",
+      dateFormatted: "10월 8일 (수) 08:20",
+      url: "https://www.youtube.com/watch?v=meODvYg93wY",
+      thumbnail: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=600&q=80",
+      views: "조회수 2.1만회",
+      executiveSummary: "테슬라 '위, 로봇' 행사 및 글로벌 완성차 공장 휴머노이드 로봇 투입 가속화. 반도체 패키징 유리기판 파일럿 양산 라인 가동 기대감으로 소부장 신기술 테마 형성.",
+      themes: [
+        { name: "휴머노이드 & 로봇 감속기", intensity: "강", reason: "제조업 현장 피지컬 AI 도입 및 삼성·현대차 로봇 투자 확대" },
+        { name: "유리기판 & 반도체 신소재", intensity: "강", reason: "인텔·엔비디아 차세대 칩 유리기판 채택 공식화 수혜" }
+      ],
+      targetStocks: [
+        { code: "277810", name: "레인보우로보틱스", theme: "로봇 대장주", strategy: "삼성전자 인수 가능성 및 휴머노이드 협동로봇 신제품 발표 기대감.", targetPrice: "165,000원", stopLoss: "135,000원" },
+        { code: "454910", name: "두산로보틱스", theme: "협동 로봇", strategy: "두산밥캣 합병 재추진 불확실성 해소 국면. 바닥권 거래량 실린 반등.", targetPrice: "78,000원", stopLoss: "62,000원" },
+        { code: "232140", name: "와이씨", theme: "고속 메모리 테스터", strategy: "HBM용 고속 테스터 독점 납품 퀄 기대감. 20일선 추세 복귀.", targetPrice: "19,000원", stopLoss: "14,800원" }
+      ],
+      keyPoints: [
+        "로봇 테마는 정책 및 대기업 투자 이벤트에 따른 갭상승 빈번 (추격 금지)",
+        "유리기판 테마는 실질 장비 수주 공시를 확인하며 분할 접근 필수"
+      ]
+    },
+    {
+      id: "simple_vid_06",
+      title: "내일 관심테마! 바이오 대형주 알테오젠 독주와 학회 모멘텀 후속주 / 리가켐바이오, 에스티팜",
+      category: "장마감 복기",
+      categoryCode: "closing",
+      published_kst: "2026-10-07 20:30:00",
+      dateFormatted: "10월 7일 (화) 20:30",
+      url: "https://www.youtube.com/watch?v=kCrlauDice4",
+      thumbnail: "https://images.unsplash.com/photo-1579165466791-788226ab77b6?auto=format&fit=crop&w=600&q=80",
+      views: "조회수 2.8만회",
+      executiveSummary: "알테오젠이 코스닥 대장주 자리를 확고히 굳히면서 바이오 섹터 전반으로 글로벌 기술수출 온기 확산. ADC(항체약물접합체) 및 올리고핵산 원료의약품 CDMO 수혜주 집중 점검.",
+      themes: [
+        { name: "바이오 플랫폼 & SC제형", intensity: "최강", reason: "머크 키트루다SC 글로벌 독점 계약 마일스톤 본격 유입" },
+        { name: "ADC & 차세대 항암제", intensity: "강", reason: "빅파마들의 ADC 플랫폼 기술 도입 열풍 지속" }
+      ],
+      targetStocks: [
+        { code: "196170", name: "알테오젠", theme: "SC 플랫폼 대장주", strategy: "코스닥 시총 1위 굳히기. 외인·기관 쌍끌이 매수 지속. 5일선 지지.", targetPrice: "420,000원", stopLoss: "350,000원" },
+        { code: "141080", name: "리가켐바이오", theme: "ADC 플랫폼", strategy: "글로벌 얀센 기술수출 이후 추가 파이프라인 L/O 기대감.", targetPrice: "135,000원", stopLoss: "108,000원" },
+        { code: "237690", name: "에스티팜", theme: "올리고 CDMO", strategy: "미국 생물보안법 통과에 따른 중국 CDMO 반사이익 가시화.", targetPrice: "115,000원", stopLoss: "92,000원" }
+      ],
+      keyPoints: [
+        "바이오 섹터는 개별 임상 실패 리스크가 상존하므로 플랫폼 기술 보유주 압축",
+        "학회 발표 직전 '뉴스에 팔아라' 매물 출회 가능성 선제적 체크"
+      ]
+    },
+    {
+      id: "simple_vid_07",
+      title: "[주간 라이브 복기] 10월 증시 변동성 돌파를 위한 주도섹터 거래대금 매매 원칙 총정리",
+      category: "주간 라이브",
+      categoryCode: "weekly",
+      published_kst: "2026-10-06 19:30:00",
+      dateFormatted: "10월 6일 (월) 19:30",
+      url: "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
+      thumbnail: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80",
+      views: "조회수 3.4만회",
+      executiveSummary: "미국 대선 격전 및 금리 인하 사이클 도래에 따른 10월 증시 변동성 관리법. 테마 순환매가 극심할 때일수록 당일 거래대금 1,000억 미만 잡주를 배제하고 주도 섹터 대장주에만 집중하는 실전 원칙 제시.",
+      themes: [
+        { name: "시장 주도 거래대금 분석", intensity: "최강", reason: "거래대금 집중 없는 가짜 반등주 필터링" },
+        { name: "미국 대선 시나리오별 수혜", intensity: "강", reason: "트럼프 vs 해리스 정책 차별화 테마 점검" }
+      ],
+      targetStocks: [
+        { code: "000660", name: "SK하이닉스", theme: "HBM3E", strategy: "거래대금 1위 유지 종목. 외국인 지분율 추이와 연동 매매.", targetPrice: "210,000원", stopLoss: "180,000원" },
+        { code: "196170", name: "알테오젠", theme: "바이오 주도주", strategy: "코스닥 거래대금 4,000억 상회. 지수 방어 대장주 역할.", targetPrice: "400,000원", stopLoss: "340,000원" },
+        { code: "087010", name: "펩트론", theme: "비만치료제", strategy: "거래대금 폭발 구간에서만 스윙 트레이딩 권장.", targetPrice: "95,000원", stopLoss: "78,000원" }
+      ],
+      keyPoints: [
+        "거래대금 1,000억 미만 종목은 시장 급락 시 반등 탄력 현저히 저하",
+        "지수 흐름 역행 종목은 기계적 손절 라인(평균 3~4%) 엄격 준수"
+      ]
+    },
+    {
+      id: "simple_vid_08",
+      title: "[실전 특강] 외인·기관 양매수 눌림목 지지선 잡는 법 & 갭상승 뇌동매매 방지 실전 가이드",
+      category: "기법 특강",
+      categoryCode: "lecture",
+      published_kst: "2026-10-05 14:00:00",
+      dateFormatted: "10월 5일 (일) 14:00",
+      url: "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
+      thumbnail: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=600&q=80",
+      views: "조회수 4.2만회",
+      executiveSummary: "개인 투자자가 가장 많이 물리는 '오전 9시 10분 갭상승 추격 매수'의 위험성을 경고하고, 메이저 수급 주체(외인·기관)의 당일 잠정치 추적과 20일선 눌림목 반등 타점 공략 실전 기법 강의.",
+      themes: [
+        { name: "수급 주체 입체 분석", intensity: "최강", reason: "단순 프로그램 매수와 실질 기관 펀드 매수의 구별법" },
+        { name: "지지선 이탈과 복귀", intensity: "강", reason: "속임수 음봉(트랩) 후 양봉 전환 지점 포착" }
+      ],
+      targetStocks: [
+        { code: "036930", name: "주성엔지니어링", theme: "수급 패턴 사례", strategy: "기관 3거래일 연속 순매수 시 5일선 지지 반등 타점 실전 분석.", targetPrice: "42,000원", stopLoss: "34,000원" },
+        { code: "009150", name: "삼성전기", theme: "대형주 눌림목", strategy: "외인 양매수 유입 시 60일 이평선 지지 반등 분할 매수 타점.", targetPrice: "165,000원", stopLoss: "140,000원" }
+      ],
+      keyPoints: [
+        "장 개시 후 최소 30분(09:30까지)은 관망하며 지지선 형성 확인",
+        "외인·기관 동시 순매수 상위 종목에서 음봉 눌림 발생 시 분할 진입"
+      ]
+    }
+  ]
+};
+
 async function loadSimpleBriefingData() {
-  if (simpleBriefingCache) return simpleBriefingCache;
+  if (simpleBriefingCache && simpleBriefingCache.timeline && simpleBriefingCache.timeline.length > 0) {
+    return simpleBriefingCache;
+  }
   try {
-    const res = await fetch('data/simple_channel_briefing.json');
+    const res = await fetch('data/simple_channel_briefing.json?v=' + Date.now());
     if (res.ok) {
       const data = await res.json();
-      if (data && data.timeline && data.timeline.length > 0) {
+      if (data && Array.isArray(data.timeline) && data.timeline.length > 0) {
         simpleBriefingCache = data;
-        return data;
+        return simpleBriefingCache;
       }
     }
   } catch (err) {
-    console.warn('data/simple_channel_briefing.json 로드 실패, 기본 데이터 사용:', err);
+    console.warn('data/simple_channel_briefing.json 비동기 fetch 지연, 즉시 기본 내장 데이터로 전환:', err);
   }
-  return null;
+  // 절대 null을 반환하지 않고 0.001초 만에 렌더링 가능한 DEFAULT_SIMPLE_TIMELINE_DATA 반환!
+  simpleBriefingCache = DEFAULT_SIMPLE_TIMELINE_DATA;
+  return simpleBriefingCache;
 }
 
 window.filterTimelineCategory = function(catCode) {
@@ -8492,7 +8722,7 @@ window.jumpToStockDeepAnalysis = function(stockName) {
     if (input) {
       input.value = stockName;
       if (typeof window.searchStockDeepAnalysis === 'function') {
-        window.searchStockDeepAnalysis();
+        window.renderStockDeepAnalysis(stockName, true);
       }
     }
   }, 150);
