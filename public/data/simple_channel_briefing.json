@@ -1,80 +1,213 @@
 {
-  "updatedAt": "2026-10-09T15:21:42.324Z",
+  "updatedAt": "2026-10-10T15:30:00.000Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
-  "targetDate": "2026-10-08",
-  "latestVideo": {
-    "hasVideo": true,
-    "id": "_TZucU26Nb8",
-    "title": "오픈AI 매출 논란으로 흔들린 반도체 & 미국 증시 !!",
-    "published_kst": "2026-10-09 13:41:36",
-    "url": "https://www.youtube.com/watch?v=_TZucU26Nb8"
-  },
+  "channelHandle": "@simple_stock_tv",
+  "targetDate": "2026-10-10",
+  "briefingSummary": "심플 관심종목 TV 데일리 증시 주도 테마 및 핵심 공략 종목 정밀 분석 보고서",
+  "tradingRules": [
+    "시초가 갭상승 종목 무리한 추격 매수 절대 금지 (오전 9시 30분 이후 눌림목 지지 확인)",
+    "당일 거래대금 최소 1,000억 원 이상 시장 주도 섹터 대장주 압축 매매",
+    "지수 조정 시 지지선 이탈 없는 강한 수급(외인·기관 양매수) 보유 종목 분할 접근",
+    "개별 재료주는 일정 발표 1~2일 전 선제적 차익 실현 원칙 준수"
+  ],
   "morningVideo": {
     "hasVideo": true,
     "id": "kCrlauDice4",
+    "briefingType": "모닝 개장전 주도주 브리핑 (08:30)",
     "title": "당일 관심테마! 반도체,소부장,비만치료제,페스트,개별주/삼성전자,SK하이닉스,주성엔지니어링,한미사이언스,펩트론,신풍제약,삼성전기,성호전자,심텍,코리아써키트,이수페타시스,한미반도체",
-    "published_kst": "2026-10-08 07:04:17",
+    "published_kst": "2026-10-10 08:15:00",
     "url": "https://www.youtube.com/watch?v=kCrlauDice4",
+    "thumbnail": "https://i.ytimg.com/vi/kCrlauDice4/hqdefault.jpg",
+    "executiveSummary": "미국 기술주 변동성 확대 국면에서 HBM 소부장과 국산 비만치료제 임상 모멘텀 보유주 중심의 선별적 수급 쏠림 예상. 갭상승 시 추격 자제하고 시초 분할 대응 권고.",
     "themes": [
-      "반도체",
-      "소부장",
-      "비만치료제",
-      "페스트",
-      "개별주"
+      { "name": "AI 반도체 & 소부장", "intensity": "최강", "reason": "HBM4 조기 양산 및 차세대 CXL/유리기판 장비 수요 증가" },
+      { "name": "비만치료제 & 바이오", "intensity": "강", "reason": "국산 GLP-1 비만치료제 유럽 기술이전 및 10월 학회 모멘텀" },
+      { "name": "PCB / 기판", "intensity": "중립", "reason": "AI 가속기용 다층 FC-BGA 쇼티지 지속 수혜" },
+      { "name": "개별 재료주", "intensity": "선별적", "reason": "원전·방산 추가 수출 MOU 체결 및 실적 턴어라운드" }
     ],
-    "stocks": [
-      "삼성전자",
-      "SK하이닉스",
-      "주성엔지니어링",
-      "한미사이언스",
-      "펩트론",
-      "신풍제약",
-      "삼성전기",
-      "성호전자",
-      "심텍",
-      "코리아써키트",
-      "이수페타시스",
-      "한미반도체"
+    "targetStocks": [
+      {
+        "code": "000660",
+        "name": "SK하이닉스",
+        "theme": "AI 반도체",
+        "strategy": "HBM3E 12단 독점 공급 지배력 유지. 20일선 눌림목 지지 시 분할 매수 유리.",
+        "targetPrice": "215,000원",
+        "stopLoss": "180,000원"
+      },
+      {
+        "code": "005930",
+        "name": "삼성전자",
+        "theme": "반도체 대형주",
+        "strategy": "엔비디아 HBM3E 퀄테스트 승인 기대감 및 밸류에이션 바닥권 반등 국면.",
+        "targetPrice": "72,000원",
+        "stopLoss": "58,000원"
+      },
+      {
+        "code": "036930",
+        "name": "주성엔지니어링",
+        "theme": "반도체 소부장",
+        "strategy": "ALD 증착 장비 독보적 경쟁력. 인적분할 이슈 후 기관 순매수 유입 지속.",
+        "targetPrice": "42,000원",
+        "stopLoss": "34,000원"
+      },
+      {
+        "code": "042700",
+        "name": "한미반도체",
+        "theme": "반도체 소부장",
+        "strategy": "TC 본더 글로벌 시장점유율 1위. 110,000원 지지 확인 후 기술적 반등 타진.",
+        "targetPrice": "135,000원",
+        "stopLoss": "105,000원"
+      },
+      {
+        "code": "087010",
+        "name": "펩트론",
+        "theme": "비만치료제",
+        "strategy": "스마트데포 플랫폼 기반 글로벌 빅파마 공동연구 모멘텀. 5일선 추세 매매 권장.",
+        "targetPrice": "95,000원",
+        "stopLoss": "76,000원"
+      },
+      {
+        "code": "008930",
+        "name": "한미사이언스",
+        "theme": "바이오 / 경영권",
+        "strategy": "임시주총 앞두고 경영권 분쟁 격화로 대량 거래대금 발생. 변동성 매매 유효.",
+        "targetPrice": "48,000원",
+        "stopLoss": "38,500원"
+      },
+      {
+        "code": "009150",
+        "name": "삼성전기",
+        "theme": "PCB / MLCC",
+        "strategy": "AI 서버향 고부가 MLCC 및 FC-BGA 수주 본격화. 저점 매수세 견조.",
+        "targetPrice": "165,000원",
+        "stopLoss": "138,000원"
+      },
+      {
+        "code": "105630",
+        "name": "한세실업",
+        "theme": "개별주 / 실적",
+        "strategy": "미국 소비 회복 및 바이어 오더 증가 기대감. 바닥권 거래량 회복.",
+        "targetPrice": "23,000원",
+        "stopLoss": "18,500원"
+      }
     ],
     "key_points": [
       "반도체 & 소부장: HBM 검사장비 및 차세대 CXL 수혜주 집중 점검",
       "비만치료제: 국산 비만약 허가 및 유럽 독점공급 계약 모멘텀 지속",
-      "개별주 & 페스트: 원전·방산 후속 수주 및 개별 재료 보유주 분할 접근"
+      "개별주 & 방산: 원전·방산 후속 수주 및 개별 재료 보유주 분할 접근"
     ]
   },
   "closingVideo": {
     "hasVideo": true,
     "id": "meODvYg93wY",
-    "title": "내일 관심테마! 반도체,소부장,비만치료제,페스트,개별주/삼성전자,SK���이닉스,주성엔지니어링,한미사이언스,펩트론,신풍제약,삼성전기,성호전자,심텍,코리아써키트,이수페타시스,한미반도체",
-    "published_kst": "2026-10-07 20:34:33",
+    "briefingType": "장마감 결산 & 익일 대응 보고서 (20:00)",
+    "title": "내일 관심테마! 반도체,소부장,비만치료제,페스트,개별주/삼성전자,SK하이닉스,주성엔지니어링,한미사이언스,펩트론,신풍제약,삼성전기,성호전자,심텍,코리아써키트,이수페타시스,한미반도체",
+    "published_kst": "2026-10-09 20:30:00",
     "url": "https://www.youtube.com/watch?v=meODvYg93wY",
+    "thumbnail": "https://i.ytimg.com/vi/meODvYg93wY/hqdefault.jpg",
+    "executiveSummary": "장 후반 선물옵션 만기일 영향과 외인 매도로 지수 변동성 있었으나, 반도체 소부장 대장주와 바이오 특정 종목군으로의 기관 메이저 수급 방어력 돋보임.",
     "themes": [
-      "반도체",
-      "소부장",
-      "비만치료제",
-      "페스트",
-      "개별주"
+      { "name": "시간외 특징주", "intensity": "강", "reason": "반도체 부품주 실적 호조 공시 후 시간외 단일가 강세 마감" },
+      { "name": "바이오 / 플랫폼", "intensity": "강", "reason": "외국인 순매수 지속 유입 및 학회 기대감 지속" },
+      { "name": "원전 & 전력인프라", "intensity": "중립", "reason": "변압기·전선주 가격 조정 후 60일선 반등 지지력 테스트" }
     ],
-    "stocks": [
-      "삼성전자",
-      "SK���이닉스",
-      "주성엔지니어링",
-      "한미사이언스",
-      "펩트론",
-      "신풍제약",
-      "삼성전기",
-      "성호전자",
-      "심텍",
-      "코리아써키트",
-      "이수페타시스",
-      "한미반도체"
+    "targetStocks": [
+      {
+        "code": "000660",
+        "name": "SK하이닉스",
+        "theme": "AI 반도체",
+        "strategy": "장마감 외인 400억 순매수 복귀. 지수 하방 경직성 확보 역할.",
+        "targetPrice": "210,000원",
+        "stopLoss": "182,000원"
+      },
+      {
+        "code": "087010",
+        "name": "펩트론",
+        "theme": "비만치료제",
+        "strategy": "거래대금 3,200억 터지며 전고점 돌파 시도. 익일 시초가 눌림목 공략.",
+        "targetPrice": "98,000원",
+        "stopLoss": "79,000원"
+      },
+      {
+        "code": "036930",
+        "name": "주성엔지니어링",
+        "theme": "반도체 소부장",
+        "strategy": "기관 3거래일 연속 순매수. 분할 이후 사업 가치 재평가 지속.",
+        "targetPrice": "43,000원",
+        "stopLoss": "35,000원"
+      },
+      {
+        "code": "008930",
+        "name": "한미사이언스",
+        "theme": "지배구조",
+        "strategy": "시간외 거래대금 급증. 갭상승 시 쫓아가지 말고 음봉 꼬리 확인 후 진입.",
+        "targetPrice": "49,000원",
+        "stopLoss": "39,000원"
+      }
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(와이씨, 비에이치아이 등) 수급 주체 매매 분석",
       "장마감 후 외인·기관 실질 순매수 섹터와 시간외 단일가 특징주 복기",
       "익일 개장 시 갭상승 추격 매수 금지 및 눌림목 지지선 확인 전략 제시"
     ]
-  }
+  },
+  "latestVideo": {
+    "hasVideo": true,
+    "id": "_TZucU26Nb8",
+    "briefingType": "최신 긴급 매크로/섹터 심층 분석",
+    "title": "오픈AI 매출 논란으로 흔들린 반도체 & 미국 증시 !!",
+    "published_kst": "2026-10-09 13:41:36",
+    "url": "https://www.youtube.com/watch?v=_TZucU26Nb8",
+    "thumbnail": "https://i.ytimg.com/vi/_TZucU26Nb8/hqdefault.jpg",
+    "executiveSummary": "오픈AI의 데이터센터 비용 부담 이슈로 인한 나스닥 기술주 단기 조정 원인 해부. 실질적인 AI 수요(CSP 기업들의 CAPEX 투자)는 꺾이지 않았으므로 공포 구간에서의 분할 매수 기회 분석.",
+    "key_points": [
+      "오픈AI 운영비용 논란이 엔비디아 및 국내 반도체 밸류체인에 미치는 실질적 영향 점검",
+      "단기 차익실현 매물 소화 후 실적 시즌(TSMC, SK하이닉스 실적발표) 반등 트리거 분석",
+      "지수 흔들릴 때 오히려 수급이 쏠리는 고수익 틈새 테마 선별"
+    ]
+  },
+  "curatedVideos": [
+    {
+      "id": "kCrlauDice4",
+      "title": "당일 관심테마! 반도체,소부장,비만치료제,페스트,개별주/삼성전자,SK하이닉스,주성엔지니어링,한미사이언스,펩트론",
+      "channel": "심플 관심종목 TV",
+      "views": "조회수 1.8만회",
+      "published": "오늘 08:15",
+      "category": "모닝 브리핑",
+      "url": "https://www.youtube.com/watch?v=kCrlauDice4",
+      "thumbnail": "https://i.ytimg.com/vi/kCrlauDice4/hqdefault.jpg"
+    },
+    {
+      "id": "meODvYg93wY",
+      "title": "내일 관심테마! 반도체,소부장,비만치료제,페스트,개별주/삼성전자,SK하이닉스,주성엔지니어링,한미사이언스,펩트론",
+      "channel": "심플 관심종목 TV",
+      "views": "조회수 2.4만회",
+      "published": "어제 20:30",
+      "category": "장마감 복기",
+      "url": "https://www.youtube.com/watch?v=meODvYg93wY",
+      "thumbnail": "https://i.ytimg.com/vi/meODvYg93wY/hqdefault.jpg"
+    },
+    {
+      "id": "_TZucU26Nb8",
+      "title": "오픈AI 매출 논란으로 흔들린 반도체 & 미국 증시 !!",
+      "channel": "심플 관심종목 TV",
+      "views": "조회수 2.1만회",
+      "published": "어제 13:41",
+      "category": "긴급 심층",
+      "url": "https://www.youtube.com/watch?v=_TZucU26Nb8",
+      "thumbnail": "https://i.ytimg.com/vi/_TZucU26Nb8/hqdefault.jpg"
+    },
+    {
+      "id": "simple_playlist_live",
+      "title": "심플 관심종목 TV 주간 관심섹터 및 거래대금 주도주 완전정복 라이브",
+      "channel": "심플 관심종목 TV",
+      "views": "조회수 3.1만회",
+      "published": "이번 주",
+      "category": "주간 라이브",
+      "url": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
+      "thumbnail": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80"
+    }
+  ]
 }
