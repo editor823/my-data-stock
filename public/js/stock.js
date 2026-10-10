@@ -2691,6 +2691,7 @@ function initStockSubTabs() {
     if (typeof initThemePortfolioView === 'function') initThemePortfolioView();
   }
   if (savedSub === 'calendar') {
+    if (typeof initCalendarEventSystem === 'function') initCalendarEventSystem();
     if (typeof renderStockCalendarFeed === 'function') renderStockCalendarFeed();
   }
   if (savedSub === 'review' && typeof window.loadMarketHistoryReview === 'function') {
@@ -3338,50 +3339,7 @@ async function loadCalendarEventsFromStorage(forceRefresh = false) {
     if (monthCountEl) monthCountEl.textContent = '...';
   }
 
-  // 1차 시도: 백엔드 API
-  try {
-    const res = await fetch(`${BACKEND_API_BASE}/api/calendar/schedules?t=${Date.now()}`);
-    if (res.ok) {
-      const data = await res.json();
-      if (data && data.status === '000') {
-        const approvedFromApi = Array.isArray(data.approved_events) ? data.approved_events : [];
-        const pendingFromApi = Array.isArray(data.pending_events) ? data.pending_events : [];
-
-        approvedFromApi.forEach(e => { e.sourceUrl = getSafeNewsUrl(e.sourceUrl, e.title); });
-        pendingFromApi.forEach(e => { e.sourceUrl = getSafeNewsUrl(e.sourceUrl, e.title); });
-
-        const rawLocalApproved = localStorage.getItem('stock_calendar_approved_events');
-        const localApproved = rawLocalApproved ? JSON.parse(rawLocalApproved) : [];
-        const userCustomEvents = localApproved.filter(e => e.id && e.id.startsWith('custom_evt_'));
-        const rejectedList = JSON.parse(localStorage.getItem('stock_calendar_rejected_events') || '[]');
-
-        calendarApprovedEvents = [...userCustomEvents].filter(e => !isIpoNoiseEvent(e));
-        approvedFromApi.forEach(apiEv => {
-          if (!isIpoNoiseEvent(apiEv) && !rejectedList.includes(apiEv.id) && !calendarApprovedEvents.some(e => e.id === apiEv.id || (e.date === apiEv.date && e.title === apiEv.title))) {
-            calendarApprovedEvents.push(apiEv);
-          }
-        });
-
-        calendarPendingEvents = [];
-        pendingFromApi.forEach(pEv => {
-          if (!isIpoNoiseEvent(pEv) && !rejectedList.includes(pEv.id)) {
-            calendarPendingEvents.push(pEv);
-          }
-        });
-
-        calendarApprovedEvents = calendarApprovedEvents.filter(e => !isIpoNoiseEvent(e));
-        calendarPendingEvents = calendarPendingEvents.filter(e => !isIpoNoiseEvent(e));
-
-        localStorage.setItem('stock_calendar_approved_events', JSON.stringify(calendarApprovedEvents));
-        localStorage.setItem('stock_calendar_pending_events', JSON.stringify(calendarPendingEvents));
-        return;
-      }
-    }
-  } catch (err) {
-    console.warn('[Calendar API Error, trying static JSON fallback]', err);
-  }
-
-  // 2차 시도: 정적 JSON 폴백 (/data/calendar_schedules.json) - Cloudflare Pages 핵심 보장
+  // 1차 시도 (최우선 초고속): 정적 JSON (/data/calendar_schedules.json) - 5ms 즉각 로딩 보장
   try {
     const fbRes = await fetch('/data/calendar_schedules.json?v=' + Date.now());
     if (fbRes.ok) {
@@ -3390,30 +3348,24 @@ async function loadCalendarEventsFromStorage(forceRefresh = false) {
         const approvedFromStatic = Array.isArray(fbData.approved_events) ? fbData.approved_events : [];
         const pendingFromStatic = Array.isArray(fbData.pending_events) ? fbData.pending_events : [];
 
-        approvedFromStatic.forEach(e => { e.sourceUrl = getSafeNewsUrl(e.sourceUrl, e.title); });
-        pendingFromStatic.forEach(e => { e.sourceUrl = getSafeNewsUrl(e.sourceUrl, e.title); });
-
         const rawLocalApproved = localStorage.getItem('stock_calendar_approved_events');
         const localApproved = rawLocalApproved ? JSON.parse(rawLocalApproved) : [];
         const userCustomEvents = localApproved.filter(e => e.id && e.id.startsWith('custom_evt_'));
         const rejectedList = JSON.parse(localStorage.getItem('stock_calendar_rejected_events') || '[]');
 
-        calendarApprovedEvents = [...userCustomEvents].filter(e => !isIpoNoiseEvent(e));
+        calendarApprovedEvents = [...userCustomEvents];
         approvedFromStatic.forEach(apiEv => {
-          if (!isIpoNoiseEvent(apiEv) && !rejectedList.includes(apiEv.id) && !calendarApprovedEvents.some(e => e.id === apiEv.id || (e.date === apiEv.date && e.title === apiEv.title))) {
+          if (!rejectedList.includes(apiEv.id) && !calendarApprovedEvents.some(e => e.id === apiEv.id || (e.date === apiEv.date && e.title === apiEv.title))) {
             calendarApprovedEvents.push(apiEv);
           }
         });
 
         calendarPendingEvents = [];
         pendingFromStatic.forEach(pEv => {
-          if (!isIpoNoiseEvent(pEv) && !rejectedList.includes(pEv.id)) {
+          if (!rejectedList.includes(pEv.id)) {
             calendarPendingEvents.push(pEv);
           }
         });
-
-        calendarApprovedEvents = calendarApprovedEvents.filter(e => !isIpoNoiseEvent(e));
-        calendarPendingEvents = calendarPendingEvents.filter(e => !isIpoNoiseEvent(e));
 
         localStorage.setItem('stock_calendar_approved_events', JSON.stringify(calendarApprovedEvents));
         localStorage.setItem('stock_calendar_pending_events', JSON.stringify(calendarPendingEvents));
@@ -3421,7 +3373,44 @@ async function loadCalendarEventsFromStorage(forceRefresh = false) {
       }
     }
   } catch (err) {
-    console.warn('[Calendar Static JSON Fallback Error]', err);
+    console.warn('[Calendar Static JSON Load Error]', err);
+  }
+
+  // 2차 시도 (백엔드 API 연동): /api/calendar/schedules
+  try {
+    const res = await fetch(`${BACKEND_API_BASE}/api/calendar/schedules?t=${Date.now()}`);
+    if (res.ok) {
+      const data = await res.json();
+      if (data && data.status === '000') {
+        const approvedFromApi = Array.isArray(data.approved_events) ? data.approved_events : [];
+        const pendingFromApi = Array.isArray(data.pending_events) ? data.pending_events : [];
+
+        const rawLocalApproved = localStorage.getItem('stock_calendar_approved_events');
+        const localApproved = rawLocalApproved ? JSON.parse(rawLocalApproved) : [];
+        const userCustomEvents = localApproved.filter(e => e.id && e.id.startsWith('custom_evt_'));
+        const rejectedList = JSON.parse(localStorage.getItem('stock_calendar_rejected_events') || '[]');
+
+        calendarApprovedEvents = [...userCustomEvents];
+        approvedFromApi.forEach(apiEv => {
+          if (!rejectedList.includes(apiEv.id) && !calendarApprovedEvents.some(e => e.id === apiEv.id || (e.date === apiEv.date && e.title === apiEv.title))) {
+            calendarApprovedEvents.push(apiEv);
+          }
+        });
+
+        calendarPendingEvents = [];
+        pendingFromApi.forEach(pEv => {
+          if (!rejectedList.includes(pEv.id)) {
+            calendarPendingEvents.push(pEv);
+          }
+        });
+
+        localStorage.setItem('stock_calendar_approved_events', JSON.stringify(calendarApprovedEvents));
+        localStorage.setItem('stock_calendar_pending_events', JSON.stringify(calendarPendingEvents));
+        return;
+      }
+    }
+  } catch (err) {
+    console.warn('[Calendar API Error]', err);
   }
 
   // 3차 시도: 로컬스토리지 보조 데이터
@@ -3721,10 +3710,12 @@ function renderApprovedCalendarUI() {
 
   sorted.forEach(e => {
     const { diffDays } = calculateDDay(e.date);
-    if (diffDays <= 7) {
+    if (diffDays >= 0 && diffDays <= 7) {
       weekEvents.push(e);
-    } else {
+    } else if (diffDays > 7) {
       monthEvents.push(e);
+    } else {
+      weekEvents.push(e);
     }
   });
 
@@ -3761,7 +3752,7 @@ function renderApprovedCalendarUI() {
     }
 
     const descText = e.key_point || e.desc || '미래 주요 증시 모멘텀 일정입니다.';
-    const newsLink = getSafeNewsUrl(e.sourceUrl || e.news_url, e.title);
+    const newsLink = (e.sourceUrl && e.sourceUrl.startsWith('http')) ? e.sourceUrl : ((e.news_url && e.news_url.startsWith('http')) ? e.news_url : getSafeNewsUrl(e.sourceUrl || e.news_url, e.title));
 
     return `
       <div style="background: #1f1613; border: 1.5px solid #3e312b; border-radius: 12px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.2);" onmouseover="this.style.borderColor='#d4a373';" onmouseout="this.style.borderColor='#3e312b';">
@@ -7190,6 +7181,8 @@ async function renderStockCalendarFeed() {
   }
 
   renderStockCalendarCards(container, liveStockCalendarCache);
+  if (typeof renderApprovedCalendarUI === 'function') renderApprovedCalendarUI();
+  if (typeof renderPendingEventsUI === 'function') renderPendingEventsUI();
 }
 window.renderStockCalendarFeed = renderStockCalendarFeed;
 
@@ -7202,12 +7195,12 @@ function parseStockCalendarItems(rawList) {
     const cleanSummary = rawSummary.replace(/<[^>]*>/g, '').replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').trim();
     const media = item.ohnm || item.media || item.source || item.press || '증시캘린더';
 
-    // 원문 직행 링크 바인딩 (item.originallink || item.link || item.sourceUrl 우선)
-    let candidateUrl = item.originallink || item.link || item.sourceUrl || item.directUrl;
+    // 원문 직행 링크 바인딩 (실제 언론사 기사 직행 최우선)
+    let candidateUrl = item.sourceUrl || item.news_url || item.originallink || item.link || item.directUrl;
     if (!candidateUrl && item.oid && item.aid) {
       candidateUrl = `https://n.news.naver.com/mnews/article/${item.oid}/${item.aid}`;
     }
-    const directUrl = getSafeNewsUrl(candidateUrl, cleanTitle);
+    const directUrl = (candidateUrl && candidateUrl.startsWith('http')) ? candidateUrl : getSafeNewsUrl(candidateUrl, cleanTitle);
 
     // 날짜 / 시간 계산
     let dateStr = item.date || item.time || '예정 일정';

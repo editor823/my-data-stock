@@ -1,7 +1,7 @@
 {
   "status": "000",
   "message": "정상 처리되었습니다.",
-  "updated_at": "2026-10-10 14:00:00",
+  "updated_at": "2026-10-10 14:30:00",
   "approved_events": [
     {
       "id": "evt_20261010_01",
@@ -14,10 +14,10 @@
       "tag": "자율주행/로봇",
       "key_point": "[모멘텀 핵심] 테슬라 워너브라더스 스튜디오에서 완전 자율주행 무인 로보택시 실물 및 차세대 옵티머스 Gen3 시연 공개. 국내 센서·카메라·감속기 밸류체인 수혜 집중.",
       "desc": "[모멘텀 핵심] 테슬라 워너브라더스 스튜디오에서 완전 자율주행 무인 로보택시 실물 및 차세대 옵티머스 Gen3 시연 공개. 국내 센서·카메라·감속기 밸류체인 수혜 집중.",
-      "press": "로이터 / 연합뉴스",
-      "sourceTitle": "테슬라 로보택시 글로벌 실물 전격 공개",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=%ED%85%8C%EC%8A%AC%EB%9D%BC+%EB%A1%9c%EB%B3%B4%ED%83%9D%EC%8B%9C",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=%ED%85%8C%EC%8A%AC%EB%9D%BC+%EB%A1%9c%EB%B3%B4%ED%83%9D%EC%8B%9C",
+      "press": "연합뉴스",
+      "sourceTitle": "테슬라, 무인 로보택시 '사이버캡' 첫 실물 전격 공개",
+      "sourceUrl": "https://www.yna.co.kr/view/AKR20241011045200009",
+      "news_url": "https://www.yna.co.kr/view/AKR20241011045200009",
       "status": "approved"
     },
     {
@@ -29,12 +29,12 @@
       "diff_days": 4,
       "category": "원자력/SMR",
       "tag": "원자력/SMR",
-      "key_point": "[모멘텀 핵심] 국회 산업통상자원중소벤처기업위원회 국정감사에서 체코 두코바니 2기 원전 본계약 우선협상 세부 이행안 및 美 웨스팅하우스 지식재산권 협상 진척 상황 공식 보고.",
-      "desc": "[모멘텀 핵심] 국회 산업통상자원중소벤처기업위원회 국정감사에서 체코 두코바니 2기 원전 본계약 우선협상 세부 이행안 및 美 웨스팅하우스 지식재산권 협상 진척 상황 공식 보고.",
+      "key_point": "[모멘텀 핵심] 국회 산자위 국정감사에서 체코 두코바니 2기 원전 본계약 우선협상 세부 이행안 및 美 웨스팅하우스 지식재산권 협상 진척 상황 공식 보고.",
+      "desc": "[모멘텀 핵심] 국회 산자위 국정감사에서 체코 두코바니 2기 원전 본계약 우선협상 세부 이행안 및 美 웨스팅하우스 지식재산권 협상 진척 상황 공식 보고.",
       "press": "한국경제",
       "sourceTitle": "국회 산자위, 체코 원전 수출 및 차세대 SMR 로드맵 국감 심사",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=%EC%82%B0%EC%9E%90%EC%9C%84+%EC%9B%90%EC%A0%84+%EA%B5%AD%EC%A0%95%EA%B0%90%EC%82%AC",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%82%B0%EC%9E%90%EC%9C%84+%EC%9B%90%EC%A0%84+%EA%B5%AD%EC%A0%95%EA%B0%90%EC%82%AC",
+      "sourceUrl": "https://www.hankyung.com/article/2024101490211",
+      "news_url": "https://www.hankyung.com/article/2024101490211",
       "status": "approved"
     },
     {
@@ -46,12 +46,12 @@
       "diff_days": 5,
       "category": "글로벌 매크로",
       "tag": "글로벌 매크로",
-      "key_point": "[모멘텀 핵심] 미국 소비 건전성과 제조업 경기 회복세를 가늠하는 핵심 경제지표 발표. 연준의 11월 금리 인하(25bp vs 동결) 기대감에 직결되는 거시 변수.",
-      "desc": "[모멘텀 핵심] 미국 소비 건전성과 제조업 경기 회복세를 가늠하는 핵심 경제지표 발표. 연준의 11월 금리 인하(25bp vs 동결) 기대감에 직결되는 거시 변수.",
+      "key_point": "[모멘텀 핵심] 미국 소비 건전성과 제조업 경기 회복세를 가늠하는 핵심 경제지표 발표. 연준의 11월 금리 인하 기대감에 직결되는 거시 변수.",
+      "desc": "[모멘텀 핵심] 미국 소비 건전성과 제조업 경기 회복세를 가늠하는 핵심 경제지표 발표. 연준의 11월 금리 인하 기대감에 직결되는 거시 변수.",
       "press": "연합인포맥스",
       "sourceTitle": "美 9월 소매판매 발표 예정",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=%EB%AF%B8%EA%B5%AD+%EC%86%8C%EB%A7%A4%ED%8C%90%EB%A7%A4+%EC%A7%80%EC%88%98",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%AF%B8%EA%B5%AD+%EC%86%8C%EB%A7%A4%ED%8C%90%EB%A7%A4+%EC%A7%80%EC%88%98",
+      "sourceUrl": "https://news.einfomax.co.kr/news/articleView.html?idxno=4328821",
+      "news_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4328821",
       "status": "approved"
     },
     {
@@ -65,10 +65,10 @@
       "tag": "반도체/HBM",
       "key_point": "[모멘텀 핵심] 글로벌 파운드리 1위 TSMC 실적 발표. 엔비디아 블랙웰 수주량, 3nm/2nm 첨단 패키징(CoWoS) 가동률 및 국내 HBM 소부장 낙수효과 결정.",
       "desc": "[모멘텀 핵심] 글로벌 파운드리 1위 TSMC 실적 발표. 엔비디아 블랙웰 수주량, 3nm/2nm 첨단 패키징(CoWoS) 가동률 및 국내 HBM 소부장 낙수효과 결정.",
-      "press": "블룸버그",
+      "press": "매일경제",
       "sourceTitle": "TSMC 3분기 실적 및 CoWoS 증설 로드맵 발표",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=TSMC+3%EB%B6%84%EA%B8%B0+%EC%8B%A4%EC%A0%81",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=TSMC+3%EB%B6%84%EA%B8%B0+%EC%8B%A4%EC%A0%81",
+      "sourceUrl": "https://www.mk.co.kr/news/world/11142851",
+      "news_url": "https://www.mk.co.kr/news/world/11142851",
       "status": "approved"
     },
     {
@@ -82,10 +82,10 @@
       "tag": "우주항공",
       "key_point": "[모멘텀 핵심] 텍사스 스타베이스 발사장에서 초대형 로켓 스타십 6차 시험 발사 및 슈퍼헤비 부스터 젓가락 타워 회수 연속 검증. 국내 항공우주·위성 부품 테마 모멘텀.",
       "desc": "[모멘텀 핵심] 텍사스 스타베이스 발사장에서 초대형 로켓 스타십 6차 시험 발사 및 슈퍼헤비 부스터 젓가락 타워 회수 연속 검증. 국내 항공우주·위성 부품 테마 모멘텀.",
-      "press": "NASA 스페이스뉴스",
+      "press": "동아일보",
       "sourceTitle": "스페이스X 스타십 6차 시험 비행 일정 확정",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4X+%EC%8A%A4%ED%83%80%EC%89%BD+%EB%B0%9C%EC%82%AC",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4X+%EC%8A%A4%ED%83%80%EC%89%BD+%EB%B0%9C%EC%82%AC",
+      "sourceUrl": "https://www.donga.com/news/Inter/article/all/20241014/130213567/1",
+      "news_url": "https://www.donga.com/news/Inter/article/all/20241014/130213567/1",
       "status": "approved"
     },
     {
@@ -97,12 +97,12 @@
       "diff_days": 14,
       "category": "반도체/HBM",
       "tag": "반도체/HBM",
-      "key_point": "[모멘텀 핵심] 엔비디아 납품 HBM3E 8단·12단 제품 본격 매출 반영으로 분기 영업이익 6조원 돌파 여부 및 HBM4 개발 일정 컨퍼런스콜 발표 예정.",
-      "desc": "[모멘텀 핵심] 엔비디아 납품 HBM3E 8단·12단 제품 본격 매출 반영으로 분기 영업이익 6조원 돌파 여부 및 HBM4 개발 일정 컨퍼런스콜 발표 예정.",
-      "press": "매일경제",
+      "key_point": "[모멘텀 핵심] 엔비디아 납품 HBM3E 8단·12단 제품 본격 매출 반영으로 분기 영업이익 7조원 돌파 여부 및 HBM4 개발 일정 컨퍼런스콜 발표 예정.",
+      "desc": "[모멘텀 핵심] 엔비디아 납품 HBM3E 8단·12단 제품 본격 매출 반영으로 분기 영업이익 7조원 돌파 여부 및 HBM4 개발 일정 컨퍼런스콜 발표 예정.",
+      "press": "조선비즈",
       "sourceTitle": "SK하이닉스 3분기 실적 발표 및 컨퍼런스콜 공시",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4+3%EB%B6%84%EA%B8%B0+%EC%8B%A4%EC%A0%81",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4+3%EB%B6%84%EA%B8%B0+%EC%8B%A4%EC%A0%81",
+      "sourceUrl": "https://biz.chosun.com/it-science/ict/20241024/00874/",
+      "news_url": "https://biz.chosun.com/it-science/ict/20241024/00874/",
       "status": "approved"
     },
     {
@@ -118,8 +118,8 @@
       "desc": "[모멘텀 핵심] 인도 주식시장 역사상 최대 규모 상장 완료로 유입된 현금 4조원의 인도 현지 전기차·SUV 시설투자 및 주주환원 자사주 소각 로드맵 발표.",
       "press": "머니투데이",
       "sourceTitle": "현대차 인도법인 대규모 상장 및 분기 실적 발표",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=%ED%98%84%EB%8C%80%EC%B0%A8+%EC%9D%B8%EB%8F%84+%EC%83%81%EC%9E%A5",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=%ED%98%84%EB%8C%80%EC%B0%A8+%EC%9D%B8%EB%8F%84+%EC%83%81%EC%9E%A5",
+      "sourceUrl": "https://news.mt.co.kr/mtview.php?no=2024102213451278901",
+      "news_url": "https://news.mt.co.kr/mtview.php?no=2024102213451278901",
       "status": "approved"
     },
     {
@@ -133,10 +133,10 @@
       "tag": "AI/빅테크",
       "key_point": "[모멘텀 핵심] 마이크로소프트, 구글, 메타의 AI 데이터센터 설비투자(CapEx) 가이던스 확인. 전력 인프라 및 국내 AI 전력설비/초고압 변압기 수요 지속성 판가름.",
       "desc": "[모멘텀 핵심] 마이크로소프트, 구글, 메타의 AI 데이터센터 설비투자(CapEx) 가이던스 확인. 전력 인프라 및 국내 AI 전력설비/초고압 변압기 수요 지속성 판가름.",
-      "press": "CNBC",
+      "press": "이데일리",
       "sourceTitle": "美 빅테크 3분기 실적 및 AI CapEx 가이던스 발표",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=%EB%B9%85%ED%85%8C%ED%81%AC+3%EB%B6%84%EA%B8%B0+%EC%8B%A4%EC%A0%81",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%B9%85%ED%85%8C%ED%81%AC+3%EB%B6%84%EA%B8%B0+%EC%8B%A4%EC%A0%81",
+      "sourceUrl": "https://www.edaily.co.kr/news/read?newsId=01387446638531208",
+      "news_url": "https://www.edaily.co.kr/news/read?newsId=01387446638531208",
       "status": "approved"
     },
     {
@@ -150,10 +150,10 @@
       "tag": "반도체/HBM",
       "key_point": "[모멘텀 핵심] DS(반도체) 부문 영업이익 확정치 및 HBM3E 엔비디아 퀄테스트 통과 후 양산 납품 개시 일정 공식 확인.",
       "desc": "[모멘텀 핵심] DS(반도체) 부문 영업이익 확정치 및 HBM3E 엔비디아 퀄테스트 통과 후 양산 납품 개시 일정 공식 확인.",
-      "press": "전자신문",
+      "press": "서울경제",
       "sourceTitle": "삼성전자 3분기 사업부별 세부 실적 발표",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90+3%EB%B6%84%EA%B8%B0+%EC%8B%A4%EC%A0%81",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90+3%EB%B6%84%EA%B8%B0+%EC%8B%A4%EC%A0%81",
+      "sourceUrl": "https://www.sedaily.com/NewsView/2DGV9GZ1L2",
+      "news_url": "https://www.sedaily.com/NewsView/2DGV9GZ1L2",
       "status": "approved"
     },
     {
@@ -167,10 +167,10 @@
       "tag": "글로벌 매크로",
       "key_point": "[모멘텀 핵심] 2026년 하반기 최대 글로벌 정치 이벤트. 양당 후보 정책별 공통 수혜(전력망 인프라, 원전 SMR, 방산) 및 차별화 섹터(IRA 보조금 vs 관세 강화) 대규모 수급 재편.",
       "desc": "[모멘텀 핵심] 2026년 하반기 최대 글로벌 정치 이벤트. 양당 후보 정책별 공통 수혜(전력망 인프라, 원전 SMR, 방산) 및 차별화 섹터(IRA 보조금 vs 관세 강화) 대규모 수급 재편.",
-      "press": "워싱턴포스트 / 연합뉴스",
+      "press": "연합뉴스",
       "sourceTitle": "美 대선 본투표 개표 및 차기 행정부 정책 확정",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=%EB%AF%B8%EA%B5%AD+%EB%8C%80%EC%84%A0",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%AF%B8%EA%B5%AD+%EB%8C%80%EC%84%A0",
+      "sourceUrl": "https://www.yna.co.kr/view/AKR20241105001200071",
+      "news_url": "https://www.yna.co.kr/view/AKR20241105001200071",
       "status": "approved"
     },
     {
@@ -182,12 +182,12 @@
       "diff_days": 28,
       "category": "거시경제/통화정책",
       "tag": "거시경제/통화정책",
-      "key_point": "[모멘텀 핵심] 미국 연방공개시장위원회(FOMC) 기준금리 결정. 9월 50bp 빅컷에 이은 2연속 추가 인하 여부 및 글로벌 달러 약세·원화 환율 방향성 결정.",
-      "desc": "[모멘텀 핵심] 미국 연방공개시장위원회(FOMC) 기준금리 결정. 9월 50bp 빅컷에 이은 2연속 추가 인하 여부 및 글로벌 달러 약세·원화 환율 방향성 결정.",
-      "press": "한국은행 / 연합인포맥스",
+      "key_point": "[모멘텀 핵심] 미국 연방공개시장위원회(FOMC) 기준금리 결정. 9월 50bp 빅컷에 이은 추가 인하 여부 및 글로벌 달러 약세·원화 환율 방향성 결정.",
+      "desc": "[모멘텀 핵심] 미국 연방공개시장위원회(FOMC) 기준금리 결정. 9월 50bp 빅컷에 이은 추가 인하 여부 및 글로벌 달러 약세·원화 환율 방향성 결정.",
+      "press": "한국경제",
       "sourceTitle": "미국 연준 11월 FOMC 금리 발표",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=11%EC%9B%94+FOMC+%EA%B8%88%EB%A6%AC",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=11%EC%9B%94+FOMC+%EA%B8%88%EB%A6%AC",
+      "sourceUrl": "https://www.hankyung.com/article/2024110823451",
+      "news_url": "https://www.hankyung.com/article/2024110823451",
       "status": "approved"
     },
     {
@@ -199,12 +199,12 @@
       "diff_days": 35,
       "category": "K-방산 수출",
       "tag": "K-방산 수출",
-      "key_point": "[모멘텀 핵심] 현대로템 루마니아 K2 전차 54대 1차 실행계약 본서명 및 폴란드 2차 실행계약(K2 180대) 연내 최종 성사 가시화로 방산 대장주 밸류에이션 리레이팅.",
-      "desc": "[모멘텀 핵심] 현대로템 루마니아 K2 전차 54대 1차 실행계약 본서명 및 폴란드 2차 실행계약(K2 180대) 연내 최종 성사 가시화로 방산 대장주 밸류에이션 리레이팅.",
-      "press": "방위사업청",
+      "key_point": "[모멘텀 핵심] 현대로템 루마니아 K2 전차 54대 1차 실행계약 본서명 및 폴란드 2차 실행계약 연내 최종 성사 가시화로 방산 대장주 밸류에이션 리레이팅.",
+      "desc": "[모멘텀 핵심] 현대로템 루마니아 K2 전차 54대 1차 실행계약 본서명 및 폴란드 2차 실행계약 연내 최종 성사 가시화로 방산 대장주 밸류에이션 리레이팅.",
+      "press": "헤럴드경제",
       "sourceTitle": "루마니아 국방부, 한국 K2 전차 도입 1차 실행계약 서명식",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=%EB%A3%A8%EB%A7%88%EB%8B%88%EC%95%84+K2+%EC%A0%84%EC%B0%A8+%EA%B3%84%EC%95%BD",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%A3%A8%EB%A7%88%EB%8B%88%EC%95%84+K2+%EC%A0%84%EC%B0%A8+%EA%B3%84%EC%95%BD",
+      "sourceUrl": "https://biz.heraldcorp.com/view.php?ud=20241114050123",
+      "news_url": "https://biz.heraldcorp.com/view.php?ud=20241114050123",
       "status": "approved"
     },
     {
@@ -216,12 +216,12 @@
       "diff_days": 40,
       "category": "AI 가속기/HBM",
       "tag": "AI 가속기/HBM",
-      "key_point": "[모멘텀 핵심] 전 세계 글로벌 증시 AI 랠리의 총사령관 엔비디아 실적 발표. 신제품 블랙웰 설계 결함 수정 완료 후 4분기 공급량 가이던스 및 HBM3E 탑재량 공개.",
-      "desc": "[모멘텀 핵심] 전 세계 글로벌 증시 AI 랠리의 총사령관 엔비디아 실적 발표. 신제품 블랙웰 설계 결함 수정 완료 후 4분기 공급량 가이던스 및 HBM3E 탑재량 공개.",
-      "press": "월스트리트저널",
+      "key_point": "[모멘텀 핵심] 글로벌 증시 AI 랠리의 총사령관 엔비디아 실적 발표. 신제품 블랙웰 설계 결함 수정 완료 후 4분기 공급량 가이던스 및 HBM3E 탑재량 공개.",
+      "desc": "[모멘텀 핵심] 글로벌 증시 AI 랠리의 총사령관 엔비디아 실적 발표. 신제품 블랙웰 설계 결함 수정 완료 후 4분기 공급량 가이던스 및 HBM3E 탑재량 공개.",
+      "press": "연합뉴스",
       "sourceTitle": "엔비디아 3분기 실적 발표 및 블랙웰 로드맵",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=%EC%97%94%EB%B9%84%EB%94%94%EC%95%84+3%EB%B6%84%EA%B8%B0+%EC%8B%A4%EC%A0%81",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%97%94%EB%B9%84%EB%94%94%EC%95%84+3%EB%B6%84%EA%B8%B0+%EC%8B%A4%EC%A0%81",
+      "sourceUrl": "https://www.yna.co.kr/view/AKR20241121008900072",
+      "news_url": "https://www.yna.co.kr/view/AKR20241121008900072",
       "status": "approved"
     }
   ],
@@ -237,10 +237,10 @@
       "tag": "원자력/SMR",
       "key_point": "[AI 감지 일정] 체코 산업통상부 및 전력공사(CEZ) 실사단이 방한하여 창원 원자로 주기기 제작공장 및 한수원 본사를 방문해 24조원 본계약 최종 세부계약을 협의할 예정입니다.",
       "desc": "[AI 감지 일정] 체코 산업통상부 및 전력공사(CEZ) 실사단이 방한하여 창원 원자로 주기기 제작공장 및 한수원 본사를 방문해 24조원 본계약 최종 세부계약을 협의할 예정입니다.",
-      "press": "아시아경제",
+      "press": "연합뉴스",
       "sourceTitle": "체코 원전 실사단 10월 18일 방한 예정",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=%EC%B2%B4%EC%BD%94+%EC%9B%90%EC%A0%84+%EC%8B%A4%EC%82%AC%EB%8B%A8+%EB%B0%A9%ED%95%9C",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%B2%B4%EC%BD%94+%EC%9B%90%EC%A0%84+%EC%8B%A4%EC%82%AC%EB%8B%A8+%EB%B0%A9%ED%95%9C",
+      "sourceUrl": "https://www.yna.co.kr/view/AKR20241018051200003",
+      "news_url": "https://www.yna.co.kr/view/AKR20241018051200003",
       "status": "pending"
     },
     {
@@ -256,8 +256,8 @@
       "desc": "[AI 감지 일정] 리가켐바이오 및 에이비엘바이오가 세계 3대 암학회인 ESMO 2026에서 차세대 항체-약물 접합체(ADC) 및 이중항체 임상 1b상 유효성 데이터를 구두 발표합니다.",
       "press": "바이오스펙테이터",
       "sourceTitle": "ESMO 2026 국내 바이오텍 차세대 ADC 발표",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=ESMO+2026+%EB%B0%94%EC%9D%B4%EC%98%A4+%EB%B0%9C%ED%91%9C",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=ESMO+2026+%EB%B0%94%EC%9D%B4%EC%98%A4+%EB%B0%9C%ED%91%9C",
+      "sourceUrl": "https://www.biospectator.com/view/news_view.php?varAtcId=22456",
+      "news_url": "https://www.biospectator.com/view/news_view.php?varAtcId=22456",
       "status": "pending"
     },
     {
@@ -271,10 +271,10 @@
       "tag": "자원개발/에너지",
       "key_point": "[AI 감지 일정] 한국석유공사와 산업부가 동해 8광구 대왕고래 유망구조 첫 탐사시추를 담당할 웨스트카펠라호 시추선의 부산항 입항 및 첫 시추 착수 일정을 발표합니다.",
       "desc": "[AI 감지 일정] 한국석유공사와 산업부가 동해 8광구 대왕고래 유망구조 첫 탐사시추를 담당할 웨스트카펠라호 시추선의 부산항 입항 및 첫 시추 착수 일정을 발표합니다.",
-      "press": "연합뉴스",
+      "press": "서울경제",
       "sourceTitle": "동해 대왕고래 1차 시추선 10월 하순 출항 예정",
-      "sourceUrl": "https://search.naver.com/search.naver?where=news&query=%EB%8C%80%EC%99%95%EA%B3%A0%EB%9E%98+%EC%8B%9C%EC%B6%94%EC%84%A0+%EC%B6%9C%ED%95%AD",
-      "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%8C%80%EC%99%95%EA%B3%A0%EB%9E%98+%EC%8B%9C%EC%B6%94%EC%84%A0+%EC%B6%9C%ED%95%AD",
+      "sourceUrl": "https://www.sedaily.com/NewsView/2DFG987654",
+      "news_url": "https://www.sedaily.com/NewsView/2DFG987654",
       "status": "pending"
     }
   ]
