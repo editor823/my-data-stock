@@ -1,19 +1,19 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-11T17:44:30.825Z",
-  "updated_date_str": "2026. 10. 11. (일)",
+  "updated_at": "2026-10-12T11:10:56.629Z",
+  "updated_date_str": "2026. 10. 12. (월)",
   "market_health": {
     "kospi": {
       "val": "2,680.50",
-      "changeRate": "-2.62%",
+      "changeRate": "-3.65%",
       "isUp": false,
       "foreigner": "+1,240억",
       "organ": "-420억"
     },
     "kosdaq": {
       "val": "875.20",
-      "changeRate": "-0.69%",
+      "changeRate": "-4.83%",
       "isUp": false,
       "foreigner": "+680억",
       "organ": "+310억"
@@ -26,107 +26,51 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_591",
-      "theme_name": "서울고속버스터미널 재개발 수혜",
-      "full_theme_name": "서울고속버스터미널 재개발 수혜",
-      "change_rate": "+7.24%",
-      "composite_score": 93,
-      "total_stocks_count": 5,
-      "leader_stock": "동양고속",
-      "leader_ratio": 27.18,
-      "sub_leader_stock": "천일고속",
+      "theme_id": "radar_36",
+      "theme_name": "해운",
+      "full_theme_name": "해운",
+      "change_rate": "+4.78%",
+      "composite_score": 73,
+      "total_stocks_count": 6,
+      "leader_stock": "STX그린로지스",
+      "leader_ratio": 8.99,
+      "sub_leader_stock": "팬오션",
       "other_stocks": [
-        "동원산업",
-        "신세계",
-        "대성산업"
+        "HMM",
+        "흥아해운",
+        "대한해운"
       ],
       "sub_stocks_top3": [
         {
-          "name": "천일고속",
-          "rate": "+22.6%"
+          "name": "팬오션",
+          "rate": "+8.3%"
         },
         {
-          "name": "동원산업",
-          "rate": "-0.3%"
+          "name": "HMM",
+          "rate": "+5.0%"
         },
         {
-          "name": "신세계",
-          "rate": "-4.4%"
+          "name": "흥아해운",
+          "rate": "+4.9%"
         }
       ],
-      "past_trigger_reason": "동양고속, 서울고속버스터미널 재개발 수혜 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "서울고속버스터미널 재개발 수혜 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1509,
+      "past_trigger_reason": "STX그린로지스, 해운 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "해운 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1794,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "동양고속, 서울고속버스터미널 재개발 수혜 시장 거래대금 쏠림",
-      "today_rising_fact": "동양고속, 서울고속버스터미널 재개발 수혜 시장 거래대금 쏠림",
+      "trigger_summary": "STX그린로지스, 해운 시장 거래대금 쏠림",
+      "today_rising_fact": "STX그린로지스, 해운 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "동양고속, 서울고속버스터미널 재개발 수혜 시장 거래대금 쏠림",
+        "material": "STX그린로지스, 해운 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "동양고속",
-          "sub": "천일고속, 동원산업, 신세계, 대성산업"
+          "lead": "STX그린로지스",
+          "sub": "팬오션, HMM, 흥아해운, 대한해운"
         },
-        "correlation": "[사업 팩트 매핑] 동양고속는 서울고속버스터미널 재개발 수혜 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "서울고속버스터미널 재개발 수혜 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_501",
-      "theme_name": "리비안",
-      "full_theme_name": "리비안(RIVIAN)",
-      "change_rate": "+3.51%",
-      "composite_score": 80,
-      "total_stocks_count": 21,
-      "leader_stock": "유진테크놀로지",
-      "leader_ratio": 30,
-      "sub_leader_stock": "알멕",
-      "other_stocks": [
-        "대원화성",
-        "아모그린텍",
-        "상신이디피"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "알멕",
-          "rate": "+14.9%"
-        },
-        {
-          "name": "대원화성",
-          "rate": "+11.5%"
-        },
-        {
-          "name": "아모그린텍",
-          "rate": "+5.5%"
-        }
-      ],
-      "past_trigger_reason": "유진테크놀로지, 리비안 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "리비안 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 584,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "유진테크놀로지, 리비안 시장 거래대금 쏠림",
-      "today_rising_fact": "유진테크놀로지, 리비안 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "유진테크놀로지, 리비안 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "유진테크놀로지",
-          "sub": "알멕, 대원화성, 아모그린텍, 상신이디피"
-        },
-        "correlation": "[사업 팩트 매핑] 유진테크놀로지는 리비안 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "리비안 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] STX그린로지스는 해운 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "해운 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
@@ -138,51 +82,51 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_287",
-      "theme_name": "PCB",
-      "full_theme_name": "PCB(FPCB 등)",
-      "change_rate": "+2.06%",
-      "composite_score": 79,
-      "total_stocks_count": 31,
-      "leader_stock": "에이엔피",
-      "leader_ratio": 29.69,
-      "sub_leader_stock": "네오티스",
+      "theme_id": "radar_44",
+      "theme_name": "시멘트/레미콘",
+      "full_theme_name": "시멘트/레미콘",
+      "change_rate": "+3.06%",
+      "composite_score": 69,
+      "total_stocks_count": 15,
+      "leader_stock": "서산",
+      "leader_ratio": 30,
+      "sub_leader_stock": "강동씨앤엘",
       "other_stocks": [
-        "성우테크론",
-        "아모그린텍",
-        "티엘비"
+        "HC보광산업",
+        "삼표시멘트",
+        "쎄니트"
       ],
       "sub_stocks_top3": [
         {
-          "name": "네오티스",
-          "rate": "+6.8%"
+          "name": "강동씨앤엘",
+          "rate": "+14.7%"
         },
         {
-          "name": "성우테크론",
-          "rate": "+5.7%"
+          "name": "HC보광산업",
+          "rate": "+12.6%"
         },
         {
-          "name": "아모그린텍",
-          "rate": "+5.5%"
+          "name": "삼표시멘트",
+          "rate": "+4.4%"
         }
       ],
-      "past_trigger_reason": "에이엔피, PCB 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "PCB 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3288,
+      "past_trigger_reason": "서산, 시멘트/레미콘 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "시멘트/레미콘 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1779,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "에이엔피, PCB 시장 거래대금 쏠림",
-      "today_rising_fact": "에이엔피, PCB 시장 거래대금 쏠림",
+      "trigger_summary": "서산, 시멘트/레미콘 시장 거래대금 쏠림",
+      "today_rising_fact": "서산, 시멘트/레미콘 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "에이엔피, PCB 시장 거래대금 쏠림",
+        "material": "서산, 시멘트/레미콘 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "에이엔피",
-          "sub": "네오티스, 성우테크론, 아모그린텍, 티엘비"
+          "lead": "서산",
+          "sub": "강동씨앤엘, HC보광산업, 삼표시멘트, 쎄니트"
         },
-        "correlation": "[사업 팩트 매핑] 에이엔피는 PCB 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "PCB 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 서산는 시멘트/레미콘 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "시멘트/레미콘 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
@@ -194,51 +138,51 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_446",
-      "theme_name": "2차전지",
-      "full_theme_name": "2차전지(소재/부품)",
-      "change_rate": "+1.86%",
-      "composite_score": 77,
-      "total_stocks_count": 73,
-      "leader_stock": "유진테크놀로지",
-      "leader_ratio": 30,
-      "sub_leader_stock": "삼기에너지솔루션즈",
+      "theme_id": "radar_322",
+      "theme_name": "건설 중소형",
+      "full_theme_name": "건설 중소형",
+      "change_rate": "-0.02%",
+      "composite_score": 56,
+      "total_stocks_count": 26,
+      "leader_stock": "금호건설",
+      "leader_ratio": 23.52,
+      "sub_leader_stock": "남화토건",
       "other_stocks": [
-        "피노",
-        "알멕",
-        "삼아알미늄"
+        "신원종합개발",
+        "남광토건",
+        "삼일기업공사"
       ],
       "sub_stocks_top3": [
         {
-          "name": "삼기에너지솔루션즈",
-          "rate": "+29.9%"
+          "name": "남화토건",
+          "rate": "+13.7%"
         },
         {
-          "name": "피노",
-          "rate": "+16.4%"
+          "name": "신원종합개발",
+          "rate": "+1.3%"
         },
         {
-          "name": "알멕",
-          "rate": "+14.9%"
+          "name": "남광토건",
+          "rate": "+1.0%"
         }
       ],
-      "past_trigger_reason": "유진테크놀로지, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2416,
+      "past_trigger_reason": "금호건설, 건설 중소형 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "건설 중소형 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2255,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "유진테크놀로지, 2차전지 시장 거래대금 쏠림",
-      "today_rising_fact": "유진테크놀로지, 2차전지 시장 거래대금 쏠림",
+      "trigger_summary": "금호건설, 건설 중소형 시장 거래대금 쏠림",
+      "today_rising_fact": "금호건설, 건설 중소형 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "유진테크놀로지, 2차전지 시장 거래대금 쏠림",
+        "material": "금호건설, 건설 중소형 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "유진테크놀로지",
-          "sub": "삼기에너지솔루션즈, 피노, 알멕, 삼아알미늄"
+          "lead": "금호건설",
+          "sub": "남화토건, 신원종합개발, 남광토건, 삼일기업공사"
         },
-        "correlation": "[사업 팩트 매핑] 유진테크놀로지는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 금호건설는 건설 중소형 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "건설 중소형 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
@@ -250,51 +194,107 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_9",
-      "theme_name": "OLED",
-      "full_theme_name": "OLED(유기 발광 다이오드)",
-      "change_rate": "+1.72%",
-      "composite_score": 76,
-      "total_stocks_count": 80,
-      "leader_stock": "예선테크",
-      "leader_ratio": 29.9,
-      "sub_leader_stock": "디바이스",
+      "theme_id": "radar_496",
+      "theme_name": "골프",
+      "full_theme_name": "골프",
+      "change_rate": "+1.12%",
+      "composite_score": 53,
+      "total_stocks_count": 15,
+      "leader_stock": "형지글로벌",
+      "leader_ratio": 26.69,
+      "sub_leader_stock": "브이씨",
       "other_stocks": [
-        "에프엔에스테크",
-        "웰킵스하이텍",
-        "나래나노텍"
+        "미스토홀딩스",
+        "골프존홀딩스",
+        "남화산업"
       ],
       "sub_stocks_top3": [
         {
-          "name": "디바이스",
-          "rate": "+18.9%"
+          "name": "브이씨",
+          "rate": "+3.3%"
         },
         {
-          "name": "에프엔에스테크",
-          "rate": "+14.3%"
+          "name": "미스토홀딩스",
+          "rate": "+2.6%"
         },
         {
-          "name": "웰킵스하이텍",
-          "rate": "+13.8%"
+          "name": "골프존홀딩스",
+          "rate": "+0.7%"
         }
       ],
-      "past_trigger_reason": "예선테크, OLED 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "OLED 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 11318,
+      "past_trigger_reason": "형지글로벌, 골프 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "골프 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 152,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "형지글로벌, 골프 시장 거래대금 쏠림",
+      "today_rising_fact": "형지글로벌, 골프 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "형지글로벌, 골프 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "형지글로벌",
+          "sub": "브이씨, 미스토홀딩스, 골프존홀딩스, 남화산업"
+        },
+        "correlation": "[사업 팩트 매핑] 형지글로벌는 골프 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "골프 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_407",
+      "theme_name": "호텔/리조트",
+      "full_theme_name": "호텔/리조트",
+      "change_rate": "+0.22%",
+      "composite_score": 44,
+      "total_stocks_count": 14,
+      "leader_stock": "한화머시너리앤서비스홀딩스",
+      "leader_ratio": 25.99,
+      "sub_leader_stock": "이마트",
+      "other_stocks": [
+        "강원랜드",
+        "서부T&D",
+        "호텔신라"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "이마트",
+          "rate": "+2.9%"
+        },
+        {
+          "name": "강원랜드",
+          "rate": "+1.3%"
+        },
+        {
+          "name": "서부T&D",
+          "rate": "+0.4%"
+        }
+      ],
+      "past_trigger_reason": "한화머시너리앤서비스홀딩스, 호텔/리조트 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "호텔/리조트 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1340,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "예선테크, OLED 시장 거래대금 쏠림",
-      "today_rising_fact": "예선테크, OLED 시장 거래대금 쏠림",
+      "trigger_summary": "한화머시너리앤서비스홀딩스, 호텔/리조트 시장 거래대금 쏠림",
+      "today_rising_fact": "한화머시너리앤서비스홀딩스, 호텔/리조트 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "예선테크, OLED 시장 거래대금 쏠림",
+        "material": "한화머시너리앤서비스홀딩스, 호텔/리조트 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "예선테크",
-          "sub": "디바이스, 에프엔에스테크, 웰킵스하이텍, 나래나노텍"
+          "lead": "한화머시너리앤서비스홀딩스",
+          "sub": "이마트, 강원랜드, 서부T&D, 호텔신라"
         },
-        "correlation": "[사업 팩트 매핑] 예선테크는 OLED 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "OLED 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 한화머시너리앤서비스홀딩스는 호텔/리조트 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "호텔/리조트 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
