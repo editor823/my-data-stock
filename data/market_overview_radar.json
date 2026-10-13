@@ -1,19 +1,19 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-12T21:21:13.468Z",
-  "updated_date_str": "2026. 10. 12. (월)",
+  "updated_at": "2026-10-13T15:11:29.248Z",
+  "updated_date_str": "2026. 10. 13. (화)",
   "market_health": {
     "kospi": {
       "val": "2,680.50",
-      "changeRate": "-3.65%",
+      "changeRate": "-5.46%",
       "isUp": false,
       "foreigner": "+1,240억",
       "organ": "-420억"
     },
     "kosdaq": {
       "val": "875.20",
-      "changeRate": "-4.83%",
+      "changeRate": "-1.43%",
       "isUp": false,
       "foreigner": "+680억",
       "organ": "+310억"
@@ -26,96 +26,40 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_36",
-      "theme_name": "해운",
-      "full_theme_name": "해운",
-      "change_rate": "+4.78%",
-      "composite_score": 73,
-      "total_stocks_count": 6,
-      "leader_stock": "STX그린로지스",
-      "leader_ratio": 8.99,
-      "sub_leader_stock": "팬오션",
-      "other_stocks": [
-        "HMM",
-        "흥아해운",
-        "대한해운"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "팬오션",
-          "rate": "+8.3%"
-        },
-        {
-          "name": "HMM",
-          "rate": "+5.0%"
-        },
-        {
-          "name": "흥아해운",
-          "rate": "+4.9%"
-        }
-      ],
-      "past_trigger_reason": "STX그린로지스, 해운 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "해운 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1794,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "STX그린로지스, 해운 시장 거래대금 쏠림",
-      "today_rising_fact": "STX그린로지스, 해운 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "STX그린로지스, 해운 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "STX그린로지스",
-          "sub": "팬오션, HMM, 흥아해운, 대한해운"
-        },
-        "correlation": "[사업 팩트 매핑] STX그린로지스는 해운 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "해운 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
       "theme_id": "radar_44",
       "theme_name": "시멘트/레미콘",
       "full_theme_name": "시멘트/레미콘",
-      "change_rate": "+3.06%",
-      "composite_score": 69,
+      "change_rate": "+2.00%",
+      "composite_score": 60,
       "total_stocks_count": 15,
       "leader_stock": "서산",
-      "leader_ratio": 30,
-      "sub_leader_stock": "강동씨앤엘",
+      "leader_ratio": 29.88,
+      "sub_leader_stock": "HC보광산업",
       "other_stocks": [
-        "HC보광산업",
-        "삼표시멘트",
-        "쎄니트"
+        "유니온",
+        "한일시멘트",
+        "성신양회"
       ],
       "sub_stocks_top3": [
         {
-          "name": "강동씨앤엘",
-          "rate": "+14.7%"
-        },
-        {
           "name": "HC보광산업",
-          "rate": "+12.6%"
+          "rate": "+9.9%"
         },
         {
-          "name": "삼표시멘트",
-          "rate": "+4.4%"
+          "name": "유니온",
+          "rate": "+3.0%"
+        },
+        {
+          "name": "한일시멘트",
+          "rate": "+3.0%"
         }
       ],
       "past_trigger_reason": "서산, 시멘트/레미콘 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "시멘트/레미콘 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1779,
+      "trading_value_eok": 1111,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
+      "ma5_recovered": false,
       "trigger_summary": "서산, 시멘트/레미콘 시장 거래대금 쏠림",
       "today_rising_fact": "서산, 시멘트/레미콘 시장 거래대금 쏠림",
       "top_article": null,
@@ -123,7 +67,7 @@
         "material": "서산, 시멘트/레미콘 시장 거래대금 쏠림",
         "leaders": {
           "lead": "서산",
-          "sub": "강동씨앤엘, HC보광산업, 삼표시멘트, 쎄니트"
+          "sub": "HC보광산업, 유니온, 한일시멘트, 성신양회"
         },
         "correlation": "[사업 팩트 매핑] 서산는 시멘트/레미콘 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "시멘트/레미콘 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -138,51 +82,51 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_322",
-      "theme_name": "건설 중소형",
-      "full_theme_name": "건설 중소형",
-      "change_rate": "-0.02%",
-      "composite_score": 56,
-      "total_stocks_count": 26,
-      "leader_stock": "금호건설",
-      "leader_ratio": 23.52,
-      "sub_leader_stock": "남화토건",
+      "theme_id": "radar_504",
+      "theme_name": "요소수",
+      "full_theme_name": "요소수",
+      "change_rate": "+2.74%",
+      "composite_score": 54,
+      "total_stocks_count": 5,
+      "leader_stock": "유니온머티리얼",
+      "leader_ratio": 11.82,
+      "sub_leader_stock": "유니온",
       "other_stocks": [
-        "신원종합개발",
-        "남광토건",
-        "삼일기업공사"
+        "KG케미칼",
+        "TKG휴켐스",
+        "롯데정밀화학"
       ],
       "sub_stocks_top3": [
         {
-          "name": "남화토건",
-          "rate": "+13.7%"
+          "name": "유니온",
+          "rate": "+3.0%"
         },
         {
-          "name": "신원종합개발",
-          "rate": "+1.3%"
+          "name": "KG케미칼",
+          "rate": "+0.6%"
         },
         {
-          "name": "남광토건",
-          "rate": "+1.0%"
+          "name": "TKG휴켐스",
+          "rate": "-0.7%"
         }
       ],
-      "past_trigger_reason": "금호건설, 건설 중소형 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "건설 중소형 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2255,
-      "is_real_leading": true,
+      "past_trigger_reason": "유니온머티리얼, 요소수 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "요소수 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 46,
+      "is_real_leading": false,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "금호건설, 건설 중소형 시장 거래대금 쏠림",
-      "today_rising_fact": "금호건설, 건설 중소형 시장 거래대금 쏠림",
+      "ma5_recovered": true,
+      "trigger_summary": "유니온머티리얼, 요소수 시장 거래대금 쏠림",
+      "today_rising_fact": "유니온머티리얼, 요소수 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "금호건설, 건설 중소형 시장 거래대금 쏠림",
+        "material": "유니온머티리얼, 요소수 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "금호건설",
-          "sub": "남화토건, 신원종합개발, 남광토건, 삼일기업공사"
+          "lead": "유니온머티리얼",
+          "sub": "유니온, KG케미칼, TKG휴켐스, 롯데정밀화학"
         },
-        "correlation": "[사업 팩트 매핑] 금호건설는 건설 중소형 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "건설 중소형 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 유니온머티리얼는 요소수 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "요소수 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
@@ -194,51 +138,51 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_496",
-      "theme_name": "골프",
-      "full_theme_name": "골프",
-      "change_rate": "+1.12%",
-      "composite_score": 53,
-      "total_stocks_count": 15,
-      "leader_stock": "형지글로벌",
-      "leader_ratio": 26.69,
-      "sub_leader_stock": "브이씨",
+      "theme_id": "radar_18",
+      "theme_name": "전자파",
+      "full_theme_name": "전자파",
+      "change_rate": "+1.72%",
+      "composite_score": 54,
+      "total_stocks_count": 12,
+      "leader_stock": "동일기연",
+      "leader_ratio": 18.64,
+      "sub_leader_stock": "다산솔루에타",
       "other_stocks": [
-        "미스토홀딩스",
-        "골프존홀딩스",
-        "남화산업"
+        "아모텍",
+        "제너셈",
+        "프로텍"
       ],
       "sub_stocks_top3": [
         {
-          "name": "브이씨",
-          "rate": "+3.3%"
+          "name": "다산솔루에타",
+          "rate": "+8.9%"
         },
         {
-          "name": "미스토홀딩스",
-          "rate": "+2.6%"
+          "name": "아모텍",
+          "rate": "+3.5%"
         },
         {
-          "name": "골프존홀딩스",
-          "rate": "+0.7%"
+          "name": "제너셈",
+          "rate": "+3.0%"
         }
       ],
-      "past_trigger_reason": "형지글로벌, 골프 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "골프 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 152,
+      "past_trigger_reason": "동일기연, 전자파 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "전자파 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 334,
       "is_real_leading": false,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "형지글로벌, 골프 시장 거래대금 쏠림",
-      "today_rising_fact": "형지글로벌, 골프 시장 거래대금 쏠림",
+      "trigger_summary": "동일기연, 전자파 시장 거래대금 쏠림",
+      "today_rising_fact": "동일기연, 전자파 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "형지글로벌, 골프 시장 거래대금 쏠림",
+        "material": "동일기연, 전자파 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "형지글로벌",
-          "sub": "브이씨, 미스토홀딩스, 골프존홀딩스, 남화산업"
+          "lead": "동일기연",
+          "sub": "다산솔루에타, 아모텍, 제너셈, 프로텍"
         },
-        "correlation": "[사업 팩트 매핑] 형지글로벌는 골프 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "골프 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 동일기연는 전자파 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "전자파 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
@@ -250,51 +194,107 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_407",
-      "theme_name": "호텔/리조트",
-      "full_theme_name": "호텔/리조트",
-      "change_rate": "+0.22%",
-      "composite_score": 44,
+      "theme_id": "radar_511",
+      "theme_name": "니켈",
+      "full_theme_name": "니켈",
+      "change_rate": "+1.29%",
+      "composite_score": 53,
       "total_stocks_count": 14,
-      "leader_stock": "한화머시너리앤서비스홀딩스",
-      "leader_ratio": 25.99,
-      "sub_leader_stock": "이마트",
+      "leader_stock": "대양금속",
+      "leader_ratio": 18.92,
+      "sub_leader_stock": "이지트로닉스",
       "other_stocks": [
-        "강원랜드",
-        "서부T&D",
-        "호텔신라"
+        "LG에너지솔루션",
+        "포스코인터내셔널",
+        "POSCO홀딩스"
       ],
       "sub_stocks_top3": [
         {
-          "name": "이마트",
-          "rate": "+2.9%"
+          "name": "이지트로닉스",
+          "rate": "+3.9%"
         },
         {
-          "name": "강원랜드",
-          "rate": "+1.3%"
+          "name": "LG에너지솔루션",
+          "rate": "+3.6%"
         },
         {
-          "name": "서부T&D",
-          "rate": "+0.4%"
+          "name": "포스코인터내셔널",
+          "rate": "+2.4%"
         }
       ],
-      "past_trigger_reason": "한화머시너리앤서비스홀딩스, 호텔/리조트 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "호텔/리조트 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1340,
+      "past_trigger_reason": "대양금속, 니켈 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "니켈 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 4975,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "한화머시너리앤서비스홀딩스, 호텔/리조트 시장 거래대금 쏠림",
-      "today_rising_fact": "한화머시너리앤서비스홀딩스, 호텔/리조트 시장 거래대금 쏠림",
+      "trigger_summary": "대양금속, 니켈 시장 거래대금 쏠림",
+      "today_rising_fact": "대양금속, 니켈 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "한화머시너리앤서비스홀딩스, 호텔/리조트 시장 거래대금 쏠림",
+        "material": "대양금속, 니켈 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "한화머시너리앤서비스홀딩스",
-          "sub": "이마트, 강원랜드, 서부T&D, 호텔신라"
+          "lead": "대양금속",
+          "sub": "이지트로닉스, LG에너지솔루션, 포스코인터내셔널, POSCO홀딩스"
         },
-        "correlation": "[사업 팩트 매핑] 한화머시너리앤서비스홀딩스는 호텔/리조트 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "호텔/리조트 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 대양금속는 니켈 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "니켈 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_82",
+      "theme_name": "태풍 및 장마",
+      "full_theme_name": "태풍 및 장마",
+      "change_rate": "+1.73%",
+      "composite_score": 52,
+      "total_stocks_count": 10,
+      "leader_stock": "뉴보텍",
+      "leader_ratio": 10.71,
+      "sub_leader_stock": "하이드로리튬",
+      "other_stocks": [
+        "파루",
+        "조비",
+        "동방아그로"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "하이드로리튬",
+          "rate": "+4.6%"
+        },
+        {
+          "name": "파루",
+          "rate": "+2.3%"
+        },
+        {
+          "name": "조비",
+          "rate": "+1.4%"
+        }
+      ],
+      "past_trigger_reason": "뉴보텍, 태풍 및 장마 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "태풍 및 장마 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 68,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "뉴보텍, 태풍 및 장마 시장 거래대금 쏠림",
+      "today_rising_fact": "뉴보텍, 태풍 및 장마 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "뉴보텍, 태풍 및 장마 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "뉴보텍",
+          "sub": "하이드로리튬, 파루, 조비, 동방아그로"
+        },
+        "correlation": "[사업 팩트 매핑] 뉴보텍는 태풍 및 장마 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "태풍 및 장마 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
