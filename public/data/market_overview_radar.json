@@ -1,7 +1,7 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-14T08:54:42.768Z",
+  "updated_at": "2026-10-14T17:25:14.290Z",
   "updated_date_str": "2026. 10. 14. (수)",
   "market_health": {
     "kospi": {
@@ -29,7 +29,7 @@
       "theme_id": "radar_591",
       "theme_name": "서울고속버스터미널 재개발 수혜",
       "full_theme_name": "서울고속버스터미널 재개발 수혜",
-      "change_rate": "+13.74%",
+      "change_rate": "+14.00%",
       "composite_score": 99,
       "total_stocks_count": 5,
       "leader_stock": "천일고속",
@@ -47,7 +47,7 @@
         },
         {
           "name": "대성산업",
-          "rate": "+18.4%"
+          "rate": "+19.5%"
         },
         {
           "name": "동원산업",
@@ -56,7 +56,7 @@
       ],
       "past_trigger_reason": "천일고속, 서울고속버스터미널 재개발 수혜 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "서울고속버스터미널 재개발 수혜 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1551,
+      "trading_value_eok": 1588,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -85,34 +85,34 @@
       "theme_id": "radar_520",
       "theme_name": "피팅",
       "full_theme_name": "피팅(관이음쇠)/밸브",
-      "change_rate": "+6.77%",
-      "composite_score": 93,
+      "change_rate": "+7.12%",
+      "composite_score": 96,
       "total_stocks_count": 9,
       "leader_stock": "한선엔지니어링",
-      "leader_ratio": 29.32,
+      "leader_ratio": 27.65,
       "sub_leader_stock": "화성밸브",
       "other_stocks": [
         "한국선재",
-        "성광벤드",
-        "태광"
+        "태광",
+        "성광벤드"
       ],
       "sub_stocks_top3": [
         {
           "name": "화성밸브",
-          "rate": "+17.4%"
+          "rate": "+17.6%"
         },
         {
           "name": "한국선재",
-          "rate": "+4.9%"
+          "rate": "+6.0%"
         },
         {
-          "name": "성광벤드",
-          "rate": "+4.7%"
+          "name": "태광",
+          "rate": "+5.4%"
         }
       ],
       "past_trigger_reason": "한선엔지니어링, 피팅 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "피팅 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1385,
+      "trading_value_eok": 1476,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -123,7 +123,7 @@
         "material": "한선엔지니어링, 피팅 시장 거래대금 쏠림",
         "leaders": {
           "lead": "한선엔지니어링",
-          "sub": "화성밸브, 한국선재, 성광벤드, 태광"
+          "sub": "화성밸브, 한국선재, 태광, 성광벤드"
         },
         "correlation": "[사업 팩트 매핑] 한선엔지니어링는 피팅 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "피팅 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -141,15 +141,15 @@
       "theme_id": "radar_592",
       "theme_name": "부동산 보유 자산주",
       "full_theme_name": "부동산 보유 자산주",
-      "change_rate": "+3.49%",
-      "composite_score": 81,
+      "change_rate": "+4.01%",
+      "composite_score": 85,
       "total_stocks_count": 22,
       "leader_stock": "천일고속",
       "leader_ratio": 29.78,
       "sub_leader_stock": "동양고속",
       "other_stocks": [
         "대성산업",
-        "삼표시멘트",
+        "신영와코루",
         "서부T&D"
       ],
       "sub_stocks_top3": [
@@ -159,16 +159,16 @@
         },
         {
           "name": "대성산업",
-          "rate": "+18.4%"
+          "rate": "+19.5%"
         },
         {
-          "name": "삼표시멘트",
-          "rate": "+2.1%"
+          "name": "신영와코루",
+          "rate": "+5.8%"
         }
       ],
       "past_trigger_reason": "천일고속, 부동산 보유 자산주 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "부동산 보유 자산주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2047,
+      "trading_value_eok": 2101,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -179,7 +179,7 @@
         "material": "천일고속, 부동산 보유 자산주 시장 거래대금 쏠림",
         "leaders": {
           "lead": "천일고속",
-          "sub": "동양고속, 대성산업, 삼표시멘트, 서부T&D"
+          "sub": "동양고속, 대성산업, 신영와코루, 서부T&D"
         },
         "correlation": "[사업 팩트 매핑] 천일고속는 부동산 보유 자산주 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "부동산 보유 자산주 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -194,75 +194,19 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_559",
-      "theme_name": "고체산화물 연료전지",
-      "full_theme_name": "고체산화물 연료전지(SOFC)",
-      "change_rate": "+3.64%",
-      "composite_score": 73,
-      "total_stocks_count": 14,
-      "leader_stock": "한선엔지니어링",
-      "leader_ratio": 29.32,
-      "sub_leader_stock": "비나텍",
-      "other_stocks": [
-        "LS머트리얼즈",
-        "범한퓨얼셀",
-        "두산퓨얼셀"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "비나텍",
-          "rate": "+11.1%"
-        },
-        {
-          "name": "LS머트리얼즈",
-          "rate": "+6.8%"
-        },
-        {
-          "name": "범한퓨얼셀",
-          "rate": "+4.8%"
-        }
-      ],
-      "past_trigger_reason": "한선엔지니어링, 고체산화물 연료전지 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "고체산화물 연료전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3608,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "한선엔지니어링, 고체산화물 연료전지 시장 거래대금 쏠림",
-      "today_rising_fact": "한선엔지니어링, 고체산화물 연료전지 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "한선엔지니어링, 고체산화물 연료전지 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "한선엔지니어링",
-          "sub": "비나텍, LS머트리얼즈, 범한퓨얼셀, 두산퓨얼셀"
-        },
-        "correlation": "[사업 팩트 매핑] 한선엔지니어링는 고체산화물 연료전지 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "고체산화물 연료전지 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
       "theme_id": "radar_36",
       "theme_name": "해운",
       "full_theme_name": "해운",
-      "change_rate": "+4.64%",
-      "composite_score": 72,
+      "change_rate": "+5.31%",
+      "composite_score": 77,
       "total_stocks_count": 6,
       "leader_stock": "팬오션",
-      "leader_ratio": 10.08,
+      "leader_ratio": 10.38,
       "sub_leader_stock": "STX그린로지스",
       "other_stocks": [
         "HMM",
-        "흥아해운",
-        "대한해운"
+        "대한해운",
+        "흥아해운"
       ],
       "sub_stocks_top3": [
         {
@@ -271,16 +215,16 @@
         },
         {
           "name": "HMM",
-          "rate": "+5.4%"
+          "rate": "+5.7%"
         },
         {
-          "name": "흥아해운",
-          "rate": "+3.1%"
+          "name": "대한해운",
+          "rate": "+4.1%"
         }
       ],
       "past_trigger_reason": "팬오션, 해운 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "해운 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2334,
+      "trading_value_eok": 2390,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -291,10 +235,66 @@
         "material": "팬오션, 해운 시장 거래대금 쏠림",
         "leaders": {
           "lead": "팬오션",
-          "sub": "STX그린로지스, HMM, 흥아해운, 대한해운"
+          "sub": "STX그린로지스, HMM, 대한해운, 흥아해운"
         },
         "correlation": "[사업 팩트 매핑] 팬오션는 해운 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "해운 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_511",
+      "theme_name": "니켈",
+      "full_theme_name": "니켈",
+      "change_rate": "+3.83%",
+      "composite_score": 74,
+      "total_stocks_count": 14,
+      "leader_stock": "대양금속",
+      "leader_ratio": 29.92,
+      "sub_leader_stock": "이지트로닉스",
+      "other_stocks": [
+        "에코프로머티",
+        "POSCO홀딩스",
+        "LG화학"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "이지트로닉스",
+          "rate": "+5.8%"
+        },
+        {
+          "name": "에코프로머티",
+          "rate": "+3.1%"
+        },
+        {
+          "name": "POSCO홀딩스",
+          "rate": "+3.0%"
+        }
+      ],
+      "past_trigger_reason": "대양금속, 니켈 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "니켈 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 5051,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "대양금속, 니켈 시장 거래대금 쏠림",
+      "today_rising_fact": "대양금속, 니켈 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "대양금속, 니켈 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "대양금속",
+          "sub": "이지트로닉스, 에코프로머티, POSCO홀딩스, LG화학"
+        },
+        "correlation": "[사업 팩트 매핑] 대양금속는 니켈 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "니켈 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
