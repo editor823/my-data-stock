@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-15T08:28:48.406Z",
+  "updatedAt": "2026-10-15T17:13:31.789Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-10-08",
   "latestVideo": {
     "hasVideo": true,
-    "id": "xmqMEP_8DAA",
-    "title": "온 우주가 우리나라 증시를, 개인들 다 무너지는걸 보고싶어하는건가..? 싶은 한국 증시",
-    "published_kst": "2026-10-15 17:09:53",
-    "url": "https://www.youtube.com/watch?v=xmqMEP_8DAA"
+    "id": "dRpLjJsfkvk",
+    "title": "지금 증시에서 절대 하면 안 되는 두 가지",
+    "published_kst": "2026-10-15 18:46:37",
+    "url": "https://www.youtube.com/watch?v=dRpLjJsfkvk"
   },
   "morningVideo": {
     "hasVideo": true,
@@ -38,7 +38,7 @@
   "closingVideo": {
     "hasVideo": true,
     "id": "W6x3R0bjLt0",
-    "title": "내일 관심테마! 반도체,소부장,보안,호남반도체,광통신,2차전지/삼성전자,SK하이닉스,금호전기,삼성전기,엘앤씨바이오,삼성SDI,주성엔지니어링,심텍,두산테스나,코리아써키트,라온시큐어",
+    "title": "내일 관심테마! 반도체,소부장,보안,호남반도체,광통신,2차전지/삼성전자,SK하이닉스,금호전기,삼성전기,엘앤씨바이오,삼성SDI,주성엔지니어링,심텍,두��테스나,코리아써키트,라온시큐어",
     "published_kst": "2026-10-12 20:36:08",
     "url": "https://www.youtube.com/watch?v=W6x3R0bjLt0",
     "themes": [
@@ -58,7 +58,7 @@
       "삼성SDI",
       "주성엔지니어링",
       "심텍",
-      "두산테스나",
+      "두��테스나",
       "코리아써키트",
       "라온시큐어"
     ],
