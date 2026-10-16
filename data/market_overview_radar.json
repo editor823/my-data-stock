@@ -1,20 +1,20 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-15T17:14:09.745Z",
-  "updated_date_str": "2026. 10. 15. (목)",
+  "updated_at": "2026-10-16T08:22:35.815Z",
+  "updated_date_str": "2026. 10. 16. (금)",
   "market_health": {
     "kospi": {
       "val": "2,680.50",
-      "changeRate": "-7.57%",
-      "isUp": false,
+      "changeRate": "+2.05%",
+      "isUp": true,
       "foreigner": "+1,240억",
       "organ": "-420억"
     },
     "kosdaq": {
       "val": "875.20",
-      "changeRate": "-7.65%",
-      "isUp": false,
+      "changeRate": "+4.46%",
+      "isUp": true,
       "foreigner": "+680억",
       "organ": "+310억"
     },
@@ -26,110 +26,54 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_284",
-      "theme_name": "기업인수목적회사",
-      "full_theme_name": "기업인수목적회사(SPAC)",
-      "change_rate": "-0.28%",
-      "composite_score": 59,
-      "total_stocks_count": 69,
-      "leader_stock": "한화플러스제5호스팩",
-      "leader_ratio": 2.13,
-      "sub_leader_stock": "IBKS제25호스팩",
+      "theme_id": "radar_506",
+      "theme_name": "탈모 치료",
+      "full_theme_name": "탈모 치료",
+      "change_rate": "+6.14%",
+      "composite_score": 99,
+      "total_stocks_count": 28,
+      "leader_stock": "TS트릴리온",
+      "leader_ratio": 30,
+      "sub_leader_stock": "프롬바이오",
       "other_stocks": [
-        "유안타제16호스팩",
-        "메리츠제1호스팩",
-        "삼성스팩12호"
+        "삼익제약",
+        "올릭스",
+        "메타랩스"
       ],
       "sub_stocks_top3": [
         {
-          "name": "IBKS제25호스팩",
-          "rate": "+2.0%"
+          "name": "프롬바이오",
+          "rate": "+30.0%"
         },
         {
-          "name": "유안타제16호스팩",
-          "rate": "+1.9%"
+          "name": "삼익제약",
+          "rate": "+18.9%"
         },
         {
-          "name": "메리츠제1호스팩",
-          "rate": "+1.0%"
+          "name": "올릭스",
+          "rate": "+11.9%"
         }
       ],
-      "past_trigger_reason": "한화플러스제5호스팩, 기업인수목적회사 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "기업인수목적회사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 7,
-      "is_real_leading": false,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "한화플러스제5호스팩, 기업인수목적회사 시장 거래대금 쏠림",
-      "today_rising_fact": "한화플러스제5호스팩, 기업인수목적회사 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "한화플러스제5호스팩, 기업인수목적회사 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "한화플러스제5호스팩",
-          "sub": "IBKS제25호스팩, 유안타제16호스팩, 메리츠제1호스팩, 삼성스팩12호"
-        },
-        "correlation": "[사업 팩트 매핑] 한화플러스제5호스팩는 기업인수목적회사 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "기업인수목적회사 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_266",
-      "theme_name": "겨울",
-      "full_theme_name": "겨울",
-      "change_rate": "-1.33%",
-      "composite_score": 40,
-      "total_stocks_count": 22,
-      "leader_stock": "유한양행",
-      "leader_ratio": 4.13,
-      "sub_leader_stock": "부스타",
-      "other_stocks": [
-        "영원무역",
-        "경동도시가스",
-        "광동제약"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "부스타",
-          "rate": "+2.2%"
-        },
-        {
-          "name": "영원무역",
-          "rate": "+1.5%"
-        },
-        {
-          "name": "경동도시가스",
-          "rate": "+1.2%"
-        }
-      ],
-      "past_trigger_reason": "유한양행, 겨울 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "겨울 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 527,
+      "past_trigger_reason": "TS트릴리온, 탈모 치료 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "탈모 치료 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 754,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "유한양행, 겨울 시장 거래대금 쏠림",
-      "today_rising_fact": "유한양행, 겨울 시장 거래대금 쏠림",
+      "ma5_recovered": true,
+      "trigger_summary": "TS트릴리온, 탈모 치료 시장 거래대금 쏠림",
+      "today_rising_fact": "TS트릴리온, 탈모 치료 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "유한양행, 겨울 시장 거래대금 쏠림",
+        "material": "TS트릴리온, 탈모 치료 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "유한양행",
-          "sub": "부스타, 영원무역, 경동도시가스, 광동제약"
+          "lead": "TS트릴리온",
+          "sub": "프롬바이오, 삼익제약, 올릭스, 메타랩스"
         },
-        "correlation": "[사업 팩트 매핑] 유한양행는 겨울 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "겨울 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] TS트릴리온는 탈모 치료 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "탈모 치료 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
         "conditions": {
           "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
           "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
@@ -138,54 +82,54 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_165",
-      "theme_name": "은행",
-      "full_theme_name": "은행",
-      "change_rate": "-0.10%",
-      "composite_score": 37,
-      "total_stocks_count": 11,
-      "leader_stock": "하나금융지주",
-      "leader_ratio": 1.97,
-      "sub_leader_stock": "우리금융지주",
+      "theme_id": "radar_389",
+      "theme_name": "면역항암제",
+      "full_theme_name": "면역항암제",
+      "change_rate": "+5.83%",
+      "composite_score": 99,
+      "total_stocks_count": 36,
+      "leader_stock": "앱클론",
+      "leader_ratio": 10.87,
+      "sub_leader_stock": "카나프테라퓨틱스",
       "other_stocks": [
-        "신한지주",
-        "JB금융지주",
-        "기업은행"
+        "리가켐바이오",
+        "아이엠바이오로직스",
+        "에임드바이오"
       ],
       "sub_stocks_top3": [
         {
-          "name": "우리금융지주",
-          "rate": "+1.3%"
+          "name": "카나프테라퓨틱스",
+          "rate": "+9.2%"
         },
         {
-          "name": "신한지주",
-          "rate": "+1.2%"
+          "name": "리가켐바이오",
+          "rate": "+9.1%"
         },
         {
-          "name": "JB금융지주",
-          "rate": "+1.1%"
+          "name": "아이엠바이오로직스",
+          "rate": "+8.9%"
         }
       ],
-      "past_trigger_reason": "하나금융지주, 은행 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "은행 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 6180,
+      "past_trigger_reason": "앱클론, 면역항암제 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "면역항암제 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 329,
       "is_real_leading": false,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "하나금융지주, 은행 시장 거래대금 쏠림",
-      "today_rising_fact": "하나금융지주, 은행 시장 거래대금 쏠림",
+      "ma5_recovered": true,
+      "trigger_summary": "앱클론, 면역항암제 시장 거래대금 쏠림",
+      "today_rising_fact": "앱클론, 면역항암제 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "하나금융지주, 은행 시장 거래대금 쏠림",
+        "material": "앱클론, 면역항암제 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "하나금융지주",
-          "sub": "우리금융지주, 신한지주, JB금융지주, 기업은행"
+          "lead": "앱클론",
+          "sub": "카나프테라퓨틱스, 리가켐바이오, 아이엠바이오로직스, 에임드바이오"
         },
-        "correlation": "[사업 팩트 매핑] 하나금융지주는 은행 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "은행 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 앱클론는 면역항암제 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "면역항암제 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
         "conditions": {
           "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
           "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
@@ -194,54 +138,54 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_86",
-      "theme_name": "주류업",
-      "full_theme_name": "주류업(주정, 에탄올 등)",
-      "change_rate": "-1.37%",
-      "composite_score": 29,
-      "total_stocks_count": 13,
-      "leader_stock": "하이트진로홀딩스",
-      "leader_ratio": 1.19,
-      "sub_leader_stock": "풍국주정",
+      "theme_id": "radar_536",
+      "theme_name": "HBM",
+      "full_theme_name": "HBM(고대역폭메모리)",
+      "change_rate": "+5.59%",
+      "composite_score": 99,
+      "total_stocks_count": 35,
+      "leader_stock": "엠케이전자",
+      "leader_ratio": 14.12,
+      "sub_leader_stock": "에스티아이",
       "other_stocks": [
-        "하이트진로",
-        "진로발효",
-        "롯데칠성"
+        "유니테스트",
+        "디아이",
+        "한미반도체"
       ],
       "sub_stocks_top3": [
         {
-          "name": "풍국주정",
-          "rate": "+1.1%"
+          "name": "에스티아이",
+          "rate": "+13.2%"
         },
         {
-          "name": "하이트진로",
-          "rate": "+0.8%"
+          "name": "유니테스트",
+          "rate": "+10.1%"
         },
         {
-          "name": "진로발효",
-          "rate": "-0.1%"
+          "name": "디아이",
+          "rate": "+10.0%"
         }
       ],
-      "past_trigger_reason": "하이트진로홀딩스, 주류업 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "주류업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 63,
-      "is_real_leading": false,
+      "past_trigger_reason": "엠케이전자, HBM 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "HBM 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2600,
+      "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "하이트진로홀딩스, 주류업 시장 거래대금 쏠림",
-      "today_rising_fact": "하이트진로홀딩스, 주류업 시장 거래대금 쏠림",
+      "ma5_recovered": true,
+      "trigger_summary": "엠케이전자, HBM 시장 거래대금 쏠림",
+      "today_rising_fact": "엠케이전자, HBM 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "하이트진로홀딩스, 주류업 시장 거래대금 쏠림",
+        "material": "엠케이전자, HBM 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "하이트진로홀딩스",
-          "sub": "풍국주정, 하이트진로, 진로발효, 롯데칠성"
+          "lead": "엠케이전자",
+          "sub": "에스티아이, 유니테스트, 디아이, 한미반도체"
         },
-        "correlation": "[사업 팩트 매핑] 하이트진로홀딩스는 주류업 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "주류업 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 엠케이전자는 HBM 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "HBM 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
         "conditions": {
           "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
           "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
@@ -250,48 +194,110 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_126",
-      "theme_name": "통신",
-      "full_theme_name": "통신",
-      "change_rate": "-0.18%",
-      "composite_score": 27,
-      "total_stocks_count": 3,
-      "leader_stock": "LG유플러스",
-      "leader_ratio": 2.38,
-      "sub_leader_stock": "KT",
+      "theme_id": "radar_376",
+      "theme_name": "유전자 치료제/분석",
+      "full_theme_name": "유전자 치료제/분석",
+      "change_rate": "+5.29%",
+      "composite_score": 99,
+      "total_stocks_count": 41,
+      "leader_stock": "HLB제넥스",
+      "leader_ratio": 16.43,
+      "sub_leader_stock": "앱클론",
       "other_stocks": [
-        "SK텔레콤"
+        "카나프테라퓨틱스",
+        "지놈앤컴퍼니",
+        "큐로셀"
       ],
       "sub_stocks_top3": [
         {
-          "name": "KT",
-          "rate": "+2.2%"
+          "name": "앱클론",
+          "rate": "+10.9%"
         },
         {
-          "name": "SK텔레콤",
-          "rate": "-5.1%"
+          "name": "카나프테라퓨틱스",
+          "rate": "+9.2%"
+        },
+        {
+          "name": "지놈앤컴퍼니",
+          "rate": "+8.7%"
         }
       ],
-      "past_trigger_reason": "LG유플러스, 통신 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "통신 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1186,
+      "past_trigger_reason": "HLB제넥스, 유전자 치료제/분석 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "유전자 치료제/분석 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 259,
       "is_real_leading": false,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "LG유플러스, 통신 시장 거래대금 쏠림",
-      "today_rising_fact": "LG유플러스, 통신 시장 거래대금 쏠림",
+      "ma5_recovered": true,
+      "trigger_summary": "HLB제넥스, 유전자 치료제/분석 시장 거래대금 쏠림",
+      "today_rising_fact": "HLB제넥스, 유전자 치료제/분석 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "LG유플러스, 통신 시장 거래대금 쏠림",
+        "material": "HLB제넥스, 유전자 치료제/분석 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "LG유플러스",
-          "sub": "KT, SK텔레콤"
+          "lead": "HLB제넥스",
+          "sub": "앱클론, 카나프테라퓨틱스, 지놈앤컴퍼니, 큐로셀"
         },
-        "correlation": "[사업 팩트 매핑] LG유플러스는 통신 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "통신 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] HLB제넥스는 유전자 치료제/분석 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "유전자 치료제/분석 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_175",
+      "theme_name": "의료기기",
+      "full_theme_name": "의료기기",
+      "change_rate": "+5.16%",
+      "composite_score": 99,
+      "total_stocks_count": 94,
+      "leader_stock": "한국비티비",
+      "leader_ratio": 29.93,
+      "sub_leader_stock": "리브스메드",
+      "other_stocks": [
+        "한스바이오메드",
+        "엘앤씨바이오",
+        "다이나믹솔루션"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "리브스메드",
+          "rate": "+29.9%"
+        },
+        {
+          "name": "한스바이오메드",
+          "rate": "+25.1%"
+        },
+        {
+          "name": "엘앤씨바이오",
+          "rate": "+25.0%"
+        }
+      ],
+      "past_trigger_reason": "한국비티비, 의료기기 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "의료기기 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1390,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "한국비티비, 의료기기 시장 거래대금 쏠림",
+      "today_rising_fact": "한국비티비, 의료기기 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "한국비티비, 의료기기 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "한국비티비",
+          "sub": "리브스메드, 한스바이오메드, 엘앤씨바이오, 다이나믹솔루션"
+        },
+        "correlation": "[사업 팩트 매핑] 한국비티비는 의료기기 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "의료기기 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
         "conditions": {
           "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
           "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
