@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-16T08:21:52.016Z",
+  "updatedAt": "2026-10-16T16:49:48.132Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-10-08",
   "latestVideo": {
     "hasVideo": true,
-    "id": "GH4p11MMv9o",
-    "title": "금요일이라 그런건가.. 미선물도 그렇고 조금 아쉬운 반등..? 기억에 남을 이번주 /반도체,바이오,개별주/삼성전자,SK하��닉스,우리로,우진엔텍,HT로보틱스,제주반도체,엘앤씨바이오",
-    "published_kst": "2026-10-16 16:50:05",
-    "url": "https://www.youtube.com/watch?v=GH4p11MMv9o"
+    "id": "gZCXu-9rxME",
+    "title": "진퇴양난에 빠진 한국 증시...회복 못하는 코스피, 삼성전자와 SK하이닉스 상반기와 너무 다른 모습",
+    "published_kst": "2026-10-16 21:21:36",
+    "url": "https://www.youtube.com/watch?v=gZCXu-9rxME"
   },
   "morningVideo": {
     "hasVideo": true,
@@ -32,7 +32,7 @@
   "closingVideo": {
     "hasVideo": true,
     "id": "W6x3R0bjLt0",
-    "title": "내일 관심테마! 반도체,소부장,보안,호남반도체,광통신,2차전지/삼성전자,SK하이닉스,금호전기,삼성전기,엘앤씨바이오,삼성SDI,주성엔지니어링,심텍,두산테스나,코리아���키트,라온시큐어",
+    "title": "내일 관심테마! 반도체,소부장,보안,호남반도체,광통신,2차전지/삼성전자,SK하이닉스,금호전기,삼성전기,엘앤씨바이오,삼성SDI,주성엔지니어링,심텍,두산테스나,코리아써키트,라온시큐어",
     "published_kst": "2026-10-12 20:36:08",
     "url": "https://www.youtube.com/watch?v=W6x3R0bjLt0",
     "themes": [
@@ -53,7 +53,7 @@
       "주성엔지니어링",
       "심텍",
       "두산테스나",
-      "코리아���키트",
+      "코리아써키트",
       "라온시큐어"
     ],
     "key_points": [
