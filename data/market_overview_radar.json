@@ -1,19 +1,19 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-18T16:02:01.664Z",
-  "updated_date_str": "2026. 10. 18. (일)",
+  "updated_at": "2026-10-19T09:10:18.732Z",
+  "updated_date_str": "2026. 10. 19. (월)",
   "market_health": {
     "kospi": {
       "val": "2,680.50",
-      "changeRate": "+2.05%",
+      "changeRate": "+1.76%",
       "isUp": true,
       "foreigner": "+1,240억",
       "organ": "-420억"
     },
     "kosdaq": {
       "val": "875.20",
-      "changeRate": "+4.46%",
+      "changeRate": "+1.78%",
       "isUp": true,
       "foreigner": "+680억",
       "organ": "+310억"
@@ -26,51 +26,51 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_506",
-      "theme_name": "탈모 치료",
-      "full_theme_name": "탈모 치료",
-      "change_rate": "+5.94%",
+      "theme_id": "radar_472",
+      "theme_name": "2차전지",
+      "full_theme_name": "2차전지(전고체)",
+      "change_rate": "+5.57%",
       "composite_score": 99,
-      "total_stocks_count": 28,
-      "leader_stock": "TS트릴리온",
-      "leader_ratio": 30,
-      "sub_leader_stock": "프롬바이오",
+      "total_stocks_count": 30,
+      "leader_stock": "롯데에너지머티리얼즈",
+      "leader_ratio": 17,
+      "sub_leader_stock": "삼성SDI",
       "other_stocks": [
-        "삼익제약",
-        "올릭스",
-        "제이투케이바이오"
+        "한농화성",
+        "나인테크",
+        "대주전자재료"
       ],
       "sub_stocks_top3": [
         {
-          "name": "프롬바이오",
-          "rate": "+30.0%"
+          "name": "삼성SDI",
+          "rate": "+10.4%"
         },
         {
-          "name": "삼익제약",
-          "rate": "+19.2%"
+          "name": "한농화성",
+          "rate": "+9.3%"
         },
         {
-          "name": "올릭스",
-          "rate": "+12.3%"
+          "name": "나인테크",
+          "rate": "+8.1%"
         }
       ],
-      "past_trigger_reason": "TS트릴리온, 탈모 치료 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "탈모 치료 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 764,
+      "past_trigger_reason": "롯데에너지머티리얼즈, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 6995,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "TS트릴리온, 탈모 치료 시장 거래대금 쏠림",
-      "today_rising_fact": "TS트릴리온, 탈모 치료 시장 거래대금 쏠림",
+      "trigger_summary": "롯데에너지머티리얼즈, 2차전지 시장 거래대금 쏠림",
+      "today_rising_fact": "롯데에너지머티리얼즈, 2차전지 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "TS트릴리온, 탈모 치료 시장 거래대금 쏠림",
+        "material": "롯데에너지머티리얼즈, 2차전지 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "TS트릴리온",
-          "sub": "프롬바이오, 삼익제약, 올릭스, 제이투케이바이오"
+          "lead": "롯데에너지머티리얼즈",
+          "sub": "삼성SDI, 한농화성, 나인테크, 대주전자재료"
         },
-        "correlation": "[사업 팩트 매핑] TS트릴리온는 탈모 치료 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "탈모 치료 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 롯데에너지머티리얼즈는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
@@ -82,51 +82,51 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_389",
-      "theme_name": "면역항암제",
-      "full_theme_name": "면역항암제",
-      "change_rate": "+5.78%",
+      "theme_id": "radar_446",
+      "theme_name": "2차전지",
+      "full_theme_name": "2차전지(소재/부품)",
+      "change_rate": "+5.39%",
       "composite_score": 99,
-      "total_stocks_count": 36,
-      "leader_stock": "큐라클",
-      "leader_ratio": 12.54,
-      "sub_leader_stock": "앱클론",
+      "total_stocks_count": 73,
+      "leader_stock": "삼기에너지솔루션즈",
+      "leader_ratio": 23.78,
+      "sub_leader_stock": "솔루스첨단소재",
       "other_stocks": [
-        "카나프테라퓨틱스",
-        "아이엠바이오로직스",
-        "리가켐바이오"
+        "알멕",
+        "롯데에너지머티리얼즈",
+        "삼아알미늄"
       ],
       "sub_stocks_top3": [
         {
-          "name": "앱클론",
-          "rate": "+10.2%"
+          "name": "솔루스첨단소재",
+          "rate": "+19.3%"
         },
         {
-          "name": "카나프테라퓨틱스",
-          "rate": "+10.0%"
+          "name": "알멕",
+          "rate": "+19.1%"
         },
         {
-          "name": "아이엠바이오로직스",
-          "rate": "+9.2%"
+          "name": "롯데에너지머티리얼즈",
+          "rate": "+17.0%"
         }
       ],
-      "past_trigger_reason": "큐라클, 면역항암제 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "면역항암제 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 507,
+      "past_trigger_reason": "삼기에너지솔루션즈, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3342,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "큐라클, 면역항암제 시장 거래대금 쏠림",
-      "today_rising_fact": "큐라클, 면역항암제 시장 거래대금 쏠림",
+      "trigger_summary": "삼기에너지솔루션즈, 2차전지 시장 거래대금 쏠림",
+      "today_rising_fact": "삼기에너지솔루션즈, 2차전지 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "큐라클, 면역항암제 시장 거래대금 쏠림",
+        "material": "삼기에너지솔루션즈, 2차전지 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "큐라클",
-          "sub": "앱클론, 카나프테라퓨틱스, 아이엠바이오로직스, 리가켐바이오"
+          "lead": "삼기에너지솔루션즈",
+          "sub": "솔루스첨단소재, 알멕, 롯데에너지머티리얼즈, 삼아알미늄"
         },
-        "correlation": "[사업 팩트 매핑] 큐라클는 면역항암제 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "면역항암제 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 삼기에너지솔루션즈는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
@@ -138,163 +138,163 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_536",
-      "theme_name": "HBM",
-      "full_theme_name": "HBM(고대역폭메모리)",
-      "change_rate": "+5.71%",
+      "theme_id": "radar_329",
+      "theme_name": "전력저장장치",
+      "full_theme_name": "전력저장장치(ESS)",
+      "change_rate": "+5.07%",
       "composite_score": 99,
-      "total_stocks_count": 35,
-      "leader_stock": "엠케이전자",
-      "leader_ratio": 12.99,
-      "sub_leader_stock": "에스티아이",
+      "total_stocks_count": 42,
+      "leader_stock": "에스엠벡셀",
+      "leader_ratio": 29.9,
+      "sub_leader_stock": "한중엔시에스",
       "other_stocks": [
-        "유니테스트",
-        "레이저쎌",
-        "한미반도체"
+        "더블유씨피",
+        "삼성SDI",
+        "엔켐"
       ],
       "sub_stocks_top3": [
         {
-          "name": "에스티아이",
-          "rate": "+12.4%"
+          "name": "한중엔시에스",
+          "rate": "+15.9%"
         },
         {
-          "name": "유니테스트",
-          "rate": "+10.3%"
+          "name": "더블유씨피",
+          "rate": "+10.5%"
         },
         {
-          "name": "레이저쎌",
+          "name": "삼성SDI",
+          "rate": "+10.4%"
+        }
+      ],
+      "past_trigger_reason": "에스엠벡셀, 전력저장장치 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "전력저장장치 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 7247,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "에스엠벡셀, 전력저장장치 시장 거래대금 쏠림",
+      "today_rising_fact": "에스엠벡셀, 전력저장장치 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "에스엠벡셀, 전력저장장치 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "에스엠벡셀",
+          "sub": "한중엔시에스, 더블유씨피, 삼성SDI, 엔켐"
+        },
+        "correlation": "[사업 팩트 매핑] 에스엠벡셀는 전력저장장치 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "전력저장장치 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_64",
+      "theme_name": "2차전지",
+      "full_theme_name": "2차전지",
+      "change_rate": "+4.74%",
+      "composite_score": 99,
+      "total_stocks_count": 143,
+      "leader_stock": "에스엠벡셀",
+      "leader_ratio": 29.9,
+      "sub_leader_stock": "삼기에너지솔루션즈",
+      "other_stocks": [
+        "솔루스첨단소재",
+        "알멕",
+        "롯데에너지머티리얼즈"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "삼기에너지솔루션즈",
+          "rate": "+23.8%"
+        },
+        {
+          "name": "솔루스첨단소재",
+          "rate": "+19.3%"
+        },
+        {
+          "name": "알멕",
+          "rate": "+19.1%"
+        }
+      ],
+      "past_trigger_reason": "에스엠벡셀, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 4267,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "에스엠벡셀, 2차전지 시장 거래대금 쏠림",
+      "today_rising_fact": "에스엠벡셀, 2차전지 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "에스엠벡셀, 2차전지 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "에스엠벡셀",
+          "sub": "삼기에너지솔루션즈, 솔루스첨단소재, 알멕, 롯데에너지머티리얼즈"
+        },
+        "correlation": "[사업 팩트 매핑] 에스엠벡셀는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_579",
+      "theme_name": "2차전지",
+      "full_theme_name": "2차전지(나트륨이온)",
+      "change_rate": "+7.37%",
+      "composite_score": 98,
+      "total_stocks_count": 9,
+      "leader_stock": "애경케미칼",
+      "leader_ratio": 10.68,
+      "sub_leader_stock": "더블유씨피",
+      "other_stocks": [
+        "삼성SDI",
+        "에코프로",
+        "나인테크"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "더블유씨피",
+          "rate": "+10.5%"
+        },
+        {
+          "name": "삼성SDI",
+          "rate": "+10.4%"
+        },
+        {
+          "name": "에코프로",
           "rate": "+9.6%"
         }
       ],
-      "past_trigger_reason": "엠케이전자, HBM 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "HBM 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2721,
+      "past_trigger_reason": "애경케미칼, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 10962,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "엠케이전자, HBM 시장 거래대금 쏠림",
-      "today_rising_fact": "엠케이전자, HBM 시장 거래대금 쏠림",
+      "trigger_summary": "애경케미칼, 2차전지 시장 거래대금 쏠림",
+      "today_rising_fact": "애경케미칼, 2차전지 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "엠케이전자, HBM 시장 거래대금 쏠림",
+        "material": "애경케미칼, 2차전지 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "엠케이전자",
-          "sub": "에스티아이, 유니테스트, 레이저쎌, 한미반도체"
+          "lead": "애경케미칼",
+          "sub": "더블유씨피, 삼성SDI, 에코프로, 나인테크"
         },
-        "correlation": "[사업 팩트 매핑] 엠케이전자는 HBM 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "HBM 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_376",
-      "theme_name": "유전자 치료제/분석",
-      "full_theme_name": "유전자 치료제/분석",
-      "change_rate": "+5.26%",
-      "composite_score": 99,
-      "total_stocks_count": 41,
-      "leader_stock": "HLB제넥스",
-      "leader_ratio": 17.61,
-      "sub_leader_stock": "지놈앤컴퍼니",
-      "other_stocks": [
-        "앱클론",
-        "카나프테라퓨틱스",
-        "아이엠비디엑스"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "지놈앤컴퍼니",
-          "rate": "+10.3%"
-        },
-        {
-          "name": "앱클론",
-          "rate": "+10.2%"
-        },
-        {
-          "name": "카나프테라퓨틱스",
-          "rate": "+10.0%"
-        }
-      ],
-      "past_trigger_reason": "HLB제넥스, 유전자 치료제/분석 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "유전자 치료제/분석 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 305,
-      "is_real_leading": false,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "HLB제넥스, 유전자 치료제/분석 시장 거래대금 쏠림",
-      "today_rising_fact": "HLB제넥스, 유전자 치료제/분석 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "HLB제넥스, 유전자 치료제/분석 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "HLB제넥스",
-          "sub": "지놈앤컴퍼니, 앱클론, 카나프테라퓨틱스, 아이엠비디엑스"
-        },
-        "correlation": "[사업 팩트 매핑] HLB제넥스는 유전자 치료제/분석 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "유전자 치료제/분석 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_513",
-      "theme_name": "미용기기",
-      "full_theme_name": "미용기기",
-      "change_rate": "+5.11%",
-      "composite_score": 91,
-      "total_stocks_count": 19,
-      "leader_stock": "한국비티비",
-      "leader_ratio": 29.93,
-      "sub_leader_stock": "달바글로벌",
-      "other_stocks": [
-        "에이피알",
-        "파마리서치",
-        "휴메딕스"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "달바글로벌",
-          "rate": "+9.6%"
-        },
-        {
-          "name": "에이피알",
-          "rate": "+9.6%"
-        },
-        {
-          "name": "파마리서치",
-          "rate": "+7.9%"
-        }
-      ],
-      "past_trigger_reason": "한국비티비, 미용기기 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "미용기기 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2409,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "한국비티비, 미용기기 시장 거래대금 쏠림",
-      "today_rising_fact": "한국비티비, 미용기기 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "한국비티비, 미용기기 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "한국비티비",
-          "sub": "달바글로벌, 에이피알, 파마리서치, 휴메딕스"
-        },
-        "correlation": "[사업 팩트 매핑] 한국비티비는 미용기기 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "미용기기 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 애경케미칼는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",

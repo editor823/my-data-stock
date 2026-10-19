@@ -1,27 +1,36 @@
 {
-  "updatedAt": "2026-10-18T16:01:23.773Z",
+  "updatedAt": "2026-10-19T09:09:42.012Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-10-08",
   "latestVideo": {
     "hasVideo": true,
-    "id": "nM1qbI2J-_0",
-    "title": "내일 관심테마! 긴장되는 월요일 5천피를 볼것인가... 악재뉴스 가득한 시황/ 삼성전자,SK하이닉스,HT로보틱스,우리로,셀���리온,라온시큐어,엘앤씨바이오,주성엔지니어링,삼성SDI",
-    "published_kst": "2026-10-18 16:38:05",
-    "url": "https://www.youtube.com/watch?v=nM1qbI2J-_0"
+    "id": "MJEhZ7BovjQ",
+    "title": "저번주는 계속 때리던 미선물의 도움과 외국인의 귀여운(?) 방어 수급 /반도체,2차전지ESS,태양광/삼성전자,SK하이닉스,지투지바이오,삼성SDI,삼성전기,삼기에너지솔루션,주성엔지",
+    "published_kst": "2026-10-19 16:45:59",
+    "url": "https://www.youtube.com/watch?v=MJEhZ7BovjQ"
   },
   "morningVideo": {
     "hasVideo": true,
-    "id": "pM8T1q0B-Pc",
-    "title": "당일 관심테마! 툭! 치니 억! 상승 / 젠슨 황 한마디에 코스피 야간선물 4% 급등 !  / 반도체,소부장,2차전지 /삼성전자,SK하이닉스,삼성전기,삼성SDI,멜콘,주성엔지니어링",
-    "published_kst": "2026-10-16 07:08:22",
-    "url": "https://www.youtube.com/watch?v=pM8T1q0B-Pc",
+    "id": "7sQP99fziw0",
+    "title": "당일 관심테마! 극단적인 변동성이 예상되는 이번주/ 삼성전자,SK하이닉스,HT로보틱스,우리로,셀트리온,라온시큐어,엘앤씨바이오,주성엔지니어링,삼성SDI,양지사",
+    "published_kst": "2026-10-19 07:10:36",
+    "url": "https://www.youtube.com/watch?v=7sQP99fziw0",
     "themes": [
-      "툭! 치니 억! 상승"
+      "극단적인 변동성이 예상되는 이번주"
     ],
     "stocks": [
-      "젠슨 황 한마디에 코스피 야간선물 4% 급등 !"
+      "삼성전자",
+      "SK하이닉스",
+      "HT로보틱스",
+      "우리로",
+      "셀트리온",
+      "라온시큐어",
+      "엘앤씨바이오",
+      "주성엔지니어링",
+      "삼성SDI",
+      "양지사"
     ],
     "key_points": [
       "반도체 & 소부장: HBM 검사장비 및 차세대 CXL 수혜주 집중 점검",
@@ -32,7 +41,7 @@
   "closingVideo": {
     "hasVideo": true,
     "id": "nM1qbI2J-_0",
-    "title": "내일 관심테마! 긴장되는 월요일 5천피를 볼것인가... 악재뉴스 가득한 시황/ 삼성전자,SK하이닉스,HT로보틱스,우리로,셀���리온,라온시큐어,엘앤씨바이오,주성엔지니어링,삼성SDI",
+    "title": "내일 관심테마! 긴장되는 월요일 5천피를 볼것인가... 악재뉴스 가득한 시황/ 삼성전자,SK하이닉스,HT로보틱스,우리로,셀트리온,라온시큐어,엘앤씨바이오,주성엔지니어링,삼성SDI",
     "published_kst": "2026-10-18 16:38:05",
     "url": "https://www.youtube.com/watch?v=nM1qbI2J-_0",
     "themes": [
@@ -43,7 +52,7 @@
       "SK하이닉스",
       "HT로보틱스",
       "우리로",
-      "셀���리온",
+      "셀트리온",
       "라온시큐어",
       "엘앤씨바이오",
       "주성엔지니어링",
