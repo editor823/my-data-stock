@@ -1,7 +1,7 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-19T09:10:18.732Z",
+  "updated_at": "2026-10-19T18:47:28.043Z",
   "updated_date_str": "2026. 10. 19. (월)",
   "market_health": {
     "kospi": {
@@ -26,37 +26,93 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_472",
+      "theme_id": "radar_579",
       "theme_name": "2차전지",
-      "full_theme_name": "2차전지(전고체)",
-      "change_rate": "+5.57%",
+      "full_theme_name": "2차전지(나트륨이온)",
+      "change_rate": "+8.29%",
       "composite_score": 99,
-      "total_stocks_count": 30,
-      "leader_stock": "롯데에너지머티리얼즈",
-      "leader_ratio": 17,
+      "total_stocks_count": 9,
+      "leader_stock": "애경케미칼",
+      "leader_ratio": 13.16,
       "sub_leader_stock": "삼성SDI",
       "other_stocks": [
-        "한농화성",
-        "나인테크",
-        "대주전자재료"
+        "더블유씨피",
+        "에코프로",
+        "에코프로비엠"
       ],
       "sub_stocks_top3": [
         {
           "name": "삼성SDI",
-          "rate": "+10.4%"
+          "rate": "+11.5%"
+        },
+        {
+          "name": "더블유씨피",
+          "rate": "+10.9%"
+        },
+        {
+          "name": "에코프로",
+          "rate": "+10.8%"
+        }
+      ],
+      "past_trigger_reason": "애경케미칼, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 11174,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "애경케미칼, 2차전지 시장 거래대금 쏠림",
+      "today_rising_fact": "애경케미칼, 2차전지 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "애경케미칼, 2차전지 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "애경케미칼",
+          "sub": "삼성SDI, 더블유씨피, 에코프로, 에코프로비엠"
+        },
+        "correlation": "[사업 팩트 매핑] 애경케미칼는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_472",
+      "theme_name": "2차전지",
+      "full_theme_name": "2차전지(전고체)",
+      "change_rate": "+6.13%",
+      "composite_score": 99,
+      "total_stocks_count": 30,
+      "leader_stock": "롯데에너지머티리얼즈",
+      "leader_ratio": 18.83,
+      "sub_leader_stock": "삼성SDI",
+      "other_stocks": [
+        "한농화성",
+        "대주전자재료",
+        "하나기술"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "삼성SDI",
+          "rate": "+11.5%"
         },
         {
           "name": "한농화성",
-          "rate": "+9.3%"
+          "rate": "+10.4%"
         },
         {
-          "name": "나인테크",
-          "rate": "+8.1%"
+          "name": "대주전자재료",
+          "rate": "+8.4%"
         }
       ],
       "past_trigger_reason": "롯데에너지머티리얼즈, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 6995,
+      "trading_value_eok": 7163,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -67,7 +123,7 @@
         "material": "롯데에너지머티리얼즈, 2차전지 시장 거래대금 쏠림",
         "leaders": {
           "lead": "롯데에너지머티리얼즈",
-          "sub": "삼성SDI, 한농화성, 나인테크, 대주전자재료"
+          "sub": "삼성SDI, 한농화성, 대주전자재료, 하나기술"
         },
         "correlation": "[사업 팩트 매핑] 롯데에너지머티리얼즈는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -85,47 +141,47 @@
       "theme_id": "radar_446",
       "theme_name": "2차전지",
       "full_theme_name": "2차전지(소재/부품)",
-      "change_rate": "+5.39%",
+      "change_rate": "+6.02%",
       "composite_score": 99,
       "total_stocks_count": 73,
-      "leader_stock": "삼기에너지솔루션즈",
-      "leader_ratio": 23.78,
-      "sub_leader_stock": "솔루스첨단소재",
+      "leader_stock": "솔루스첨단소재",
+      "leader_ratio": 23.94,
+      "sub_leader_stock": "삼기에너지솔루션즈",
       "other_stocks": [
         "알멕",
         "롯데에너지머티리얼즈",
-        "삼아알미늄"
+        "에코프로머티"
       ],
       "sub_stocks_top3": [
         {
-          "name": "솔루스첨단소재",
-          "rate": "+19.3%"
+          "name": "삼기에너지솔루션즈",
+          "rate": "+23.3%"
         },
         {
           "name": "알멕",
-          "rate": "+19.1%"
+          "rate": "+20.7%"
         },
         {
           "name": "롯데에너지머티리얼즈",
-          "rate": "+17.0%"
+          "rate": "+18.8%"
         }
       ],
-      "past_trigger_reason": "삼기에너지솔루션즈, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
+      "past_trigger_reason": "솔루스첨단소재, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3342,
+      "trading_value_eok": 4330,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "삼기에너지솔루션즈, 2차전지 시장 거래대금 쏠림",
-      "today_rising_fact": "삼기에너지솔루션즈, 2차전지 시장 거래대금 쏠림",
+      "trigger_summary": "솔루스첨단소재, 2차전지 시장 거래대금 쏠림",
+      "today_rising_fact": "솔루스첨단소재, 2차전지 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "삼기에너지솔루션즈, 2차전지 시장 거래대금 쏠림",
+        "material": "솔루스첨단소재, 2차전지 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "삼기에너지솔루션즈",
-          "sub": "솔루스첨단소재, 알멕, 롯데에너지머티리얼즈, 삼아알미늄"
+          "lead": "솔루스첨단소재",
+          "sub": "삼기에너지솔루션즈, 알멕, 롯데에너지머티리얼즈, 에코프로머티"
         },
-        "correlation": "[사업 팩트 매핑] 삼기에너지솔루션즈는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "correlation": "[사업 팩트 매핑] 솔루스첨단소재는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
@@ -141,34 +197,34 @@
       "theme_id": "radar_329",
       "theme_name": "전력저장장치",
       "full_theme_name": "전력저장장치(ESS)",
-      "change_rate": "+5.07%",
+      "change_rate": "+5.67%",
       "composite_score": 99,
       "total_stocks_count": 42,
       "leader_stock": "에스엠벡셀",
       "leader_ratio": 29.9,
       "sub_leader_stock": "한중엔시에스",
       "other_stocks": [
-        "더블유씨피",
         "삼성SDI",
-        "엔켐"
+        "더블유씨피",
+        "피엔티"
       ],
       "sub_stocks_top3": [
         {
           "name": "한중엔시에스",
-          "rate": "+15.9%"
-        },
-        {
-          "name": "더블유씨피",
-          "rate": "+10.5%"
+          "rate": "+16.2%"
         },
         {
           "name": "삼성SDI",
-          "rate": "+10.4%"
+          "rate": "+11.5%"
+        },
+        {
+          "name": "더블유씨피",
+          "rate": "+10.9%"
         }
       ],
       "past_trigger_reason": "에스엠벡셀, 전력저장장치 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "전력저장장치 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 7247,
+      "trading_value_eok": 7400,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -179,7 +235,7 @@
         "material": "에스엠벡셀, 전력저장장치 시장 거래대금 쏠림",
         "leaders": {
           "lead": "에스엠벡셀",
-          "sub": "한중엔시에스, 더블유씨피, 삼성SDI, 엔켐"
+          "sub": "한중엔시에스, 삼성SDI, 더블유씨피, 피엔티"
         },
         "correlation": "[사업 팩트 매핑] 에스엠벡셀는 전력저장장치 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "전력저장장치 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -197,34 +253,34 @@
       "theme_id": "radar_64",
       "theme_name": "2차전지",
       "full_theme_name": "2차전지",
-      "change_rate": "+4.74%",
+      "change_rate": "+5.28%",
       "composite_score": 99,
       "total_stocks_count": 143,
       "leader_stock": "에스엠벡셀",
       "leader_ratio": 29.9,
-      "sub_leader_stock": "삼기에너지솔루션즈",
+      "sub_leader_stock": "솔루스첨단소재",
       "other_stocks": [
-        "솔루스첨단소재",
+        "삼기에너지솔루션즈",
         "알멕",
         "롯데에너지머티리얼즈"
       ],
       "sub_stocks_top3": [
         {
-          "name": "삼기에너지솔루션즈",
-          "rate": "+23.8%"
+          "name": "솔루스첨단소재",
+          "rate": "+23.9%"
         },
         {
-          "name": "솔루스첨단소재",
-          "rate": "+19.3%"
+          "name": "삼기에너지솔루션즈",
+          "rate": "+23.3%"
         },
         {
           "name": "알멕",
-          "rate": "+19.1%"
+          "rate": "+20.7%"
         }
       ],
       "past_trigger_reason": "에스엠벡셀, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4267,
+      "trading_value_eok": 10219,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -235,65 +291,9 @@
         "material": "에스엠벡셀, 2차전지 시장 거래대금 쏠림",
         "leaders": {
           "lead": "에스엠벡셀",
-          "sub": "삼기에너지솔루션즈, 솔루스첨단소재, 알멕, 롯데에너지머티리얼즈"
+          "sub": "솔루스첨단소재, 삼기에너지솔루션즈, 알멕, 롯데에너지머티리얼즈"
         },
         "correlation": "[사업 팩트 매핑] 에스엠벡셀는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_579",
-      "theme_name": "2차전지",
-      "full_theme_name": "2차전지(나트륨이온)",
-      "change_rate": "+7.37%",
-      "composite_score": 98,
-      "total_stocks_count": 9,
-      "leader_stock": "애경케미칼",
-      "leader_ratio": 10.68,
-      "sub_leader_stock": "더블유씨피",
-      "other_stocks": [
-        "삼성SDI",
-        "에코프로",
-        "나인테크"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "더블유씨피",
-          "rate": "+10.5%"
-        },
-        {
-          "name": "삼성SDI",
-          "rate": "+10.4%"
-        },
-        {
-          "name": "에코프로",
-          "rate": "+9.6%"
-        }
-      ],
-      "past_trigger_reason": "애경케미칼, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 10962,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "애경케미칼, 2차전지 시장 거래대금 쏠림",
-      "today_rising_fact": "애경케미칼, 2차전지 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "애경케미칼, 2차전지 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "애경케미칼",
-          "sub": "더블유씨피, 삼성SDI, 에코프로, 나인테크"
-        },
-        "correlation": "[사업 팩트 매핑] 애경케미칼는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
