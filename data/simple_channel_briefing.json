@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-20T08:44:52.626Z",
+  "updatedAt": "2026-10-20T17:23:56.302Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-10-08",
   "latestVideo": {
     "hasVideo": true,
-    "id": "Y_eraryGL5g",
-    "title": "코스피가 반등을 못하는, 날마다 떨어지는 지옥같은 이유들 / 반등 트리거는 어디에..??",
-    "published_kst": "2026-10-20 17:44:18",
-    "url": "https://www.youtube.com/watch?v=Y_eraryGL5g"
+    "id": "82TUYN7TmNs",
+    "title": "내일 관심테마! 투심 박살내는 어려운 시장 지속. 반대매매를 어떻게든 만들겠다는 증시/ 반도체,소부장,개별주,햇지 /��성전자,SK하이닉스,HT로보틱스,코리아써키트,삼성SDI,양지사",
+    "published_kst": "2026-10-20 20:35:42",
+    "url": "https://www.youtube.com/watch?v=82TUYN7TmNs"
   },
   "morningVideo": {
     "hasVideo": true,
@@ -36,19 +36,18 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "MYs_U7uMAGI",
-    "title": "내일 관심테마! 한숨 돌린 증시 내일도 외국인 수급이...?? / 반도체,2차전지ESS,태양광,광통신,로봇 / 삼성전자,SK하이닉스,삼성SDI,삼기에너지솔루션,에코프로,주성엔지니어",
-    "published_kst": "2026-10-19 20:57:02",
-    "url": "https://www.youtube.com/watch?v=MYs_U7uMAGI",
+    "id": "82TUYN7TmNs",
+    "title": "내일 관심테마! 투심 박살내는 어려운 시장 지속. 반대매매를 어떻게든 만들겠다는 증시/ 반도체,소부장,개별주,햇지 /��성전자,SK하이닉스,HT로보틱스,코리아써키트,삼성SDI,양지사",
+    "published_kst": "2026-10-20 20:35:42",
+    "url": "https://www.youtube.com/watch?v=82TUYN7TmNs",
     "themes": [
-      "한숨 돌린 증시 내일도 외국인 수급이...??"
+      "투심 박살내는 어려운 시장 지속. 반대매매를 어떻게든 만들겠다는 증시"
     ],
     "stocks": [
       "반도체",
-      "2차전지ESS",
-      "태양광",
-      "광통신",
-      "로봇"
+      "소부장",
+      "개별주",
+      "햇지"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(와이씨, 비에이치아이 등) 수급 주체 매매 분석",
