@@ -1,20 +1,20 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-19T18:47:28.043Z",
-  "updated_date_str": "2026. 10. 19. (월)",
+  "updated_at": "2026-10-20T08:45:31.357Z",
+  "updated_date_str": "2026. 10. 20. (화)",
   "market_health": {
     "kospi": {
       "val": "2,680.50",
-      "changeRate": "+1.76%",
-      "isUp": true,
+      "changeRate": "-3.73%",
+      "isUp": false,
       "foreigner": "+1,240억",
       "organ": "-420억"
     },
     "kosdaq": {
       "val": "875.20",
-      "changeRate": "+1.78%",
-      "isUp": true,
+      "changeRate": "-3.33%",
+      "isUp": false,
       "foreigner": "+680억",
       "organ": "+310억"
     },
@@ -26,54 +26,54 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_579",
-      "theme_name": "2차전지",
-      "full_theme_name": "2차전지(나트륨이온)",
-      "change_rate": "+8.29%",
-      "composite_score": 99,
-      "total_stocks_count": 9,
-      "leader_stock": "애경케미칼",
-      "leader_ratio": 13.16,
-      "sub_leader_stock": "삼성SDI",
+      "theme_id": "radar_128",
+      "theme_name": "엔터테인먼트",
+      "full_theme_name": "엔터테인먼트",
+      "change_rate": "+1.31%",
+      "composite_score": 72,
+      "total_stocks_count": 31,
+      "leader_stock": "에스팀",
+      "leader_ratio": 29.97,
+      "sub_leader_stock": "티엔엔터테인먼트",
       "other_stocks": [
-        "더블유씨피",
-        "에코프로",
-        "에코프로비엠"
+        "블리츠웨이엔터테인먼트",
+        "키이스트",
+        "SM C&C"
       ],
       "sub_stocks_top3": [
         {
-          "name": "삼성SDI",
-          "rate": "+11.5%"
+          "name": "티엔엔터테인먼트",
+          "rate": "+16.5%"
         },
         {
-          "name": "더블유씨피",
-          "rate": "+10.9%"
+          "name": "블리츠웨이엔터테인먼트",
+          "rate": "+10.6%"
         },
         {
-          "name": "에코프로",
-          "rate": "+10.8%"
+          "name": "키이스트",
+          "rate": "+4.0%"
         }
       ],
-      "past_trigger_reason": "애경케미칼, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 11174,
-      "is_real_leading": true,
+      "past_trigger_reason": "에스팀, 엔터테인먼트 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "엔터테인먼트 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 91,
+      "is_real_leading": false,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "애경케미칼, 2차전지 시장 거래대금 쏠림",
-      "today_rising_fact": "애경케미칼, 2차전지 시장 거래대금 쏠림",
+      "ma5_recovered": false,
+      "trigger_summary": "에스팀, 엔터테인먼트 시장 거래대금 쏠림",
+      "today_rising_fact": "에스팀, 엔터테인먼트 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "애경케미칼, 2차전지 시장 거래대금 쏠림",
+        "material": "에스팀, 엔터테인먼트 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "애경케미칼",
-          "sub": "삼성SDI, 더블유씨피, 에코프로, 에코프로비엠"
+          "lead": "에스팀",
+          "sub": "티엔엔터테인먼트, 블리츠웨이엔터테인먼트, 키이스트, SM C&C"
         },
-        "correlation": "[사업 팩트 매핑] 애경케미칼는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 에스팀는 엔터테인먼트 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "엔터테인먼트 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
         "conditions": {
           "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
           "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
@@ -82,54 +82,54 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_472",
-      "theme_name": "2차전지",
-      "full_theme_name": "2차전지(전고체)",
-      "change_rate": "+6.13%",
-      "composite_score": 99,
-      "total_stocks_count": 30,
-      "leader_stock": "롯데에너지머티리얼즈",
-      "leader_ratio": 18.83,
-      "sub_leader_stock": "삼성SDI",
+      "theme_id": "radar_127",
+      "theme_name": "영상콘텐츠",
+      "full_theme_name": "영상콘텐츠",
+      "change_rate": "+0.71%",
+      "composite_score": 67,
+      "total_stocks_count": 33,
+      "leader_stock": "에스팀",
+      "leader_ratio": 29.97,
+      "sub_leader_stock": "자이언트스텝",
       "other_stocks": [
-        "한농화성",
-        "대주전자재료",
-        "하나기술"
+        "덱스터",
+        "키이스트",
+        "SM C&C"
       ],
       "sub_stocks_top3": [
         {
-          "name": "삼성SDI",
-          "rate": "+11.5%"
+          "name": "자이언트스텝",
+          "rate": "+29.9%"
         },
         {
-          "name": "한농화성",
-          "rate": "+10.4%"
+          "name": "덱스터",
+          "rate": "+5.8%"
         },
         {
-          "name": "대주전자재료",
-          "rate": "+8.4%"
+          "name": "키이스트",
+          "rate": "+4.0%"
         }
       ],
-      "past_trigger_reason": "롯데에너지머티리얼즈, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 7163,
-      "is_real_leading": true,
+      "past_trigger_reason": "에스팀, 영상콘텐츠 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "영상콘텐츠 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 118,
+      "is_real_leading": false,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "롯데에너지머티리얼즈, 2차전지 시장 거래대금 쏠림",
-      "today_rising_fact": "롯데에너지머티리얼즈, 2차전지 시장 거래대금 쏠림",
+      "ma5_recovered": false,
+      "trigger_summary": "에스팀, 영상콘텐츠 시장 거래대금 쏠림",
+      "today_rising_fact": "에스팀, 영상콘텐츠 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "롯데에너지머티리얼즈, 2차전지 시장 거래대금 쏠림",
+        "material": "에스팀, 영상콘텐츠 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "롯데에너지머티리얼즈",
-          "sub": "삼성SDI, 한농화성, 대주전자재료, 하나기술"
+          "lead": "에스팀",
+          "sub": "자이언트스텝, 덱스터, 키이스트, SM C&C"
         },
-        "correlation": "[사업 팩트 매핑] 롯데에너지머티리얼즈는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 에스팀는 영상콘텐츠 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "영상콘텐츠 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
         "conditions": {
           "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
           "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
@@ -138,54 +138,48 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_446",
-      "theme_name": "2차전지",
-      "full_theme_name": "2차전지(소재/부품)",
-      "change_rate": "+6.02%",
-      "composite_score": 99,
-      "total_stocks_count": 73,
-      "leader_stock": "솔루스첨단소재",
-      "leader_ratio": 23.94,
-      "sub_leader_stock": "삼기에너지솔루션즈",
+      "theme_id": "radar_210",
+      "theme_name": "자전거",
+      "full_theme_name": "자전거",
+      "change_rate": "+3.92%",
+      "composite_score": 62,
+      "total_stocks_count": 3,
+      "leader_stock": "빅텍",
+      "leader_ratio": 9.43,
+      "sub_leader_stock": "알톤",
       "other_stocks": [
-        "알멕",
-        "롯데에너지머티리얼즈",
-        "에코프로머티"
+        "삼천리자전거"
       ],
       "sub_stocks_top3": [
         {
-          "name": "삼기에너지솔루션즈",
-          "rate": "+23.3%"
+          "name": "알톤",
+          "rate": "+1.3%"
         },
         {
-          "name": "알멕",
-          "rate": "+20.7%"
-        },
-        {
-          "name": "롯데에너지머티리얼즈",
-          "rate": "+18.8%"
+          "name": "삼천리자전거",
+          "rate": "+0.9%"
         }
       ],
-      "past_trigger_reason": "솔루스첨단소재, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4330,
+      "past_trigger_reason": "빅텍, 자전거 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "자전거 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 739,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "솔루스첨단소재, 2차전지 시장 거래대금 쏠림",
-      "today_rising_fact": "솔루스첨단소재, 2차전지 시장 거래대금 쏠림",
+      "trigger_summary": "빅텍, 자전거 시장 거래대금 쏠림",
+      "today_rising_fact": "빅텍, 자전거 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "솔루스첨단소재, 2차전지 시장 거래대금 쏠림",
+        "material": "빅텍, 자전거 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "솔루스첨단소재",
-          "sub": "삼기에너지솔루션즈, 알멕, 롯데에너지머티리얼즈, 에코프로머티"
+          "lead": "빅텍",
+          "sub": "알톤, 삼천리자전거"
         },
-        "correlation": "[사업 팩트 매핑] 솔루스첨단소재는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 빅텍는 자전거 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "자전거 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
         "conditions": {
           "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
           "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
@@ -194,54 +188,54 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_329",
-      "theme_name": "전력저장장치",
-      "full_theme_name": "전력저장장치(ESS)",
-      "change_rate": "+5.67%",
-      "composite_score": 99,
-      "total_stocks_count": 42,
-      "leader_stock": "에스엠벡셀",
-      "leader_ratio": 29.9,
-      "sub_leader_stock": "한중엔시에스",
+      "theme_id": "radar_284",
+      "theme_name": "기업인수목적회사",
+      "full_theme_name": "기업인수목적회사(SPAC)",
+      "change_rate": "+0.11%",
+      "composite_score": 62,
+      "total_stocks_count": 69,
+      "leader_stock": "키움제10호스팩",
+      "leader_ratio": 1.39,
+      "sub_leader_stock": "에스케이증권제13호스팩",
       "other_stocks": [
-        "삼성SDI",
-        "더블유씨피",
-        "피엔티"
+        "하나36호스팩",
+        "교보18호스팩",
+        "메리츠제1호스팩"
       ],
       "sub_stocks_top3": [
         {
-          "name": "한중엔시에스",
-          "rate": "+16.2%"
+          "name": "에스케이증권제13호스팩",
+          "rate": "+1.0%"
         },
         {
-          "name": "삼성SDI",
-          "rate": "+11.5%"
+          "name": "하나36호스팩",
+          "rate": "+0.8%"
         },
         {
-          "name": "더블유씨피",
-          "rate": "+10.9%"
+          "name": "교보18호스팩",
+          "rate": "+0.7%"
         }
       ],
-      "past_trigger_reason": "에스엠벡셀, 전력저장장치 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "전력저장장치 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 7400,
-      "is_real_leading": true,
+      "past_trigger_reason": "키움제10호스팩, 기업인수목적회사 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "기업인수목적회사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2,
+      "is_real_leading": false,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "에스엠벡셀, 전력저장장치 시장 거래대금 쏠림",
-      "today_rising_fact": "에스엠벡셀, 전력저장장치 시장 거래대금 쏠림",
+      "ma5_recovered": false,
+      "trigger_summary": "키움제10호스팩, 기업인수목적회사 시장 거래대금 쏠림",
+      "today_rising_fact": "키움제10호스팩, 기업인수목적회사 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "에스엠벡셀, 전력저장장치 시장 거래대금 쏠림",
+        "material": "키움제10호스팩, 기업인수목적회사 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "에스엠벡셀",
-          "sub": "한중엔시에스, 삼성SDI, 더블유씨피, 피엔티"
+          "lead": "키움제10호스팩",
+          "sub": "에스케이증권제13호스팩, 하나36호스팩, 교보18호스팩, 메리츠제1호스팩"
         },
-        "correlation": "[사업 팩트 매핑] 에스엠벡셀는 전력저장장치 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "전력저장장치 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 키움제10호스팩는 기업인수목적회사 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "기업인수목적회사 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
         "conditions": {
           "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
           "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
@@ -250,54 +244,54 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_64",
-      "theme_name": "2차전지",
-      "full_theme_name": "2차전지",
-      "change_rate": "+5.28%",
-      "composite_score": 99,
-      "total_stocks_count": 143,
-      "leader_stock": "에스엠벡셀",
-      "leader_ratio": 29.9,
-      "sub_leader_stock": "솔루스첨단소재",
+      "theme_id": "radar_288",
+      "theme_name": "모바일솔루션",
+      "full_theme_name": "모바일솔루션(스마트폰)",
+      "change_rate": "-0.02%",
+      "composite_score": 52,
+      "total_stocks_count": 23,
+      "leader_stock": "포니링크",
+      "leader_ratio": 6.29,
+      "sub_leader_stock": "엠로",
       "other_stocks": [
-        "삼기에너지솔루션즈",
-        "알멕",
-        "롯데에너지머티리얼즈"
+        "인지소프트",
+        "키네마스터",
+        "인포뱅크"
       ],
       "sub_stocks_top3": [
         {
-          "name": "솔루스첨단소재",
-          "rate": "+23.9%"
+          "name": "엠로",
+          "rate": "+4.7%"
         },
         {
-          "name": "삼기에너지솔루션즈",
-          "rate": "+23.3%"
+          "name": "인지소프트",
+          "rate": "+3.8%"
         },
         {
-          "name": "알멕",
-          "rate": "+20.7%"
+          "name": "키네마스터",
+          "rate": "+3.3%"
         }
       ],
-      "past_trigger_reason": "에스엠벡셀, 2차전지 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 10219,
-      "is_real_leading": true,
+      "past_trigger_reason": "포니링크, 모바일솔루션 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "모바일솔루션 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 41,
+      "is_real_leading": false,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "에스엠벡셀, 2차전지 시장 거래대금 쏠림",
-      "today_rising_fact": "에스엠벡셀, 2차전지 시장 거래대금 쏠림",
+      "ma5_recovered": false,
+      "trigger_summary": "포니링크, 모바일솔루션 시장 거래대금 쏠림",
+      "today_rising_fact": "포니링크, 모바일솔루션 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "에스엠벡셀, 2차전지 시장 거래대금 쏠림",
+        "material": "포니링크, 모바일솔루션 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "에스엠벡셀",
-          "sub": "솔루스첨단소재, 삼기에너지솔루션즈, 알멕, 롯데에너지머티리얼즈"
+          "lead": "포니링크",
+          "sub": "엠로, 인지소프트, 키네마스터, 인포뱅크"
         },
-        "correlation": "[사업 팩트 매핑] 에스엠벡셀는 2차전지 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "2차전지 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 포니링크는 모바일솔루션 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "모바일솔루션 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
         "conditions": {
           "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
           "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"

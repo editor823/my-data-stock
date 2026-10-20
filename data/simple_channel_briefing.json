@@ -1,36 +1,32 @@
 {
-  "updatedAt": "2026-10-19T18:46:38.973Z",
+  "updatedAt": "2026-10-20T08:44:52.626Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-10-08",
   "latestVideo": {
     "hasVideo": true,
-    "id": "MYs_U7uMAGI",
-    "title": "내일 관심테마! 한숨 돌린 증시 내일도 외국인 수급이...?? / 반도체,2차전지ESS,태양광,광통신,로봇 / 삼성전자,SK하이닉스,삼성SDI,삼기에너지솔루션,에코프로,주성엔지니어",
-    "published_kst": "2026-10-19 20:57:02",
-    "url": "https://www.youtube.com/watch?v=MYs_U7uMAGI"
+    "id": "Y_eraryGL5g",
+    "title": "코스피가 반등을 못하는, 날마다 떨어지는 지옥같은 이유들 / 반등 트리거는 어디에..??",
+    "published_kst": "2026-10-20 17:44:18",
+    "url": "https://www.youtube.com/watch?v=Y_eraryGL5g"
   },
   "morningVideo": {
     "hasVideo": true,
-    "id": "7sQP99fziw0",
-    "title": "당일 관심테마! 극단적인 변동성이 예상되는 이번주/ 삼성전자,SK하이닉스,HT로보틱스,우리로,셀트리온,라온시큐어,엘앤씨바이오,주성엔지니어링,삼성SDI,양지사",
-    "published_kst": "2026-10-19 07:10:36",
-    "url": "https://www.youtube.com/watch?v=7sQP99fziw0",
+    "id": "0HXNN4T7m94",
+    "title": "당일 관심테마! 미증시는 선물만큼 무난한 반응! / 반도체,2차전지ESS,태양광,광통신,로봇,우주항공 / 삼성전자,SK하이닉스,삼성SDI,삼기에너지솔루션,에코프로,주성엔지니어",
+    "published_kst": "2026-10-20 07:06:04",
+    "url": "https://www.youtube.com/watch?v=0HXNN4T7m94",
     "themes": [
-      "극단적인 변동성이 예상되는 이번주"
+      "미증시는 선물만큼 무난한 반응!"
     ],
     "stocks": [
-      "삼성전자",
-      "SK하이닉스",
-      "HT로보틱스",
-      "우리로",
-      "셀트리온",
-      "라온시큐어",
-      "엘앤씨바이오",
-      "주성엔지니어링",
-      "삼성SDI",
-      "양지사"
+      "반도체",
+      "2차전지ESS",
+      "태양광",
+      "광통신",
+      "로봇",
+      "우주항공"
     ],
     "key_points": [
       "반도체 & 소부장: HBM 검사장비 및 차세대 CXL 수혜주 집중 점검",
