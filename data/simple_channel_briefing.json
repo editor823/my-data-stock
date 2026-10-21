@@ -1,31 +1,28 @@
 {
-  "updatedAt": "2026-10-20T17:23:56.302Z",
+  "updatedAt": "2026-10-21T08:45:22.846Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-10-08",
   "latestVideo": {
     "hasVideo": true,
-    "id": "82TUYN7TmNs",
-    "title": "내일 관심테마! 투심 박살내는 어려운 시장 지속. 반대매매를 어떻게든 만들겠다는 증시/ 반도체,소부장,개별주,햇지 /��성전자,SK하이닉스,HT로보틱스,코리아써키트,삼성SDI,양지사",
-    "published_kst": "2026-10-20 20:35:42",
-    "url": "https://www.youtube.com/watch?v=82TUYN7TmNs"
+    "id": "B0jpGObKNmc",
+    "title": "외국인이 하루 건너 들었다 놨다 마음 졸이게 만드는 코스피. 오늘은 사이드카! /반도체,신규상장,로봇,개별주/삼성전자,SK하이닉스,명신산업,HT로보틱스,대한광통신,엘리스,멜콘",
+    "published_kst": "2026-10-21 16:46:39",
+    "url": "https://www.youtube.com/watch?v=B0jpGObKNmc"
   },
   "morningVideo": {
     "hasVideo": true,
-    "id": "0HXNN4T7m94",
-    "title": "당일 관심테마! 미증시는 선물만큼 무난한 반응! / 반도체,2차전지ESS,태양광,광통신,로봇,우주항공 / 삼성전자,SK하이닉스,삼성SDI,삼기에너지솔루션,에코프로,주성엔지니어",
-    "published_kst": "2026-10-20 07:06:04",
-    "url": "https://www.youtube.com/watch?v=0HXNN4T7m94",
+    "id": "0w2JVdqii3c",
+    "title": "당일 관심테마! 반도체 오랜만의 호재뉴스 및 유가 하락 ! 야선 상승! / 반도체,소부장,우주항공, /삼성전자,SK하이닉스,HT로보틱스,코리아써키트,삼성SDI,심텍,대덕전자,엘리스",
+    "published_kst": "2026-10-21 06:58:10",
+    "url": "https://www.youtube.com/watch?v=0w2JVdqii3c",
     "themes": [
-      "미증시는 선물만큼 무난한 반응!"
+      "반도체 오랜만의 호재뉴스 및 유가 하락 ! 야선 상승!"
     ],
     "stocks": [
       "반도체",
-      "2차전지ESS",
-      "태양광",
-      "광통신",
-      "로봇",
+      "소부장",
       "우주항공"
     ],
     "key_points": [
@@ -37,7 +34,7 @@
   "closingVideo": {
     "hasVideo": true,
     "id": "82TUYN7TmNs",
-    "title": "내일 관심테마! 투심 박살내는 어려운 시장 지속. 반대매매를 어떻게든 만들겠다는 증시/ 반도체,소부장,개별주,햇지 /��성전자,SK하이닉스,HT로보틱스,코리아써키트,삼성SDI,양지사",
+    "title": "내일 관심테마! 투심 박살내는 어려운 시장 지속. 반대매매를 어떻게든 만들겠다는 증시/ 반도체,소부장,개별주,햇지 /삼성전자,SK하이닉스,HT로보틱스,코리아써키트,삼성SDI,양지사",
     "published_kst": "2026-10-20 20:35:42",
     "url": "https://www.youtube.com/watch?v=82TUYN7TmNs",
     "themes": [

@@ -1,20 +1,20 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-20T17:24:33.269Z",
-  "updated_date_str": "2026. 10. 20. (화)",
+  "updated_at": "2026-10-21T08:46:04.242Z",
+  "updated_date_str": "2026. 10. 21. (수)",
   "market_health": {
     "kospi": {
       "val": "2,680.50",
-      "changeRate": "-3.73%",
-      "isUp": false,
+      "changeRate": "+3.29%",
+      "isUp": true,
       "foreigner": "+1,240억",
       "organ": "-420억"
     },
     "kosdaq": {
       "val": "875.20",
-      "changeRate": "-3.33%",
-      "isUp": false,
+      "changeRate": "+1.38%",
+      "isUp": true,
       "foreigner": "+680억",
       "organ": "+310억"
     },
@@ -26,213 +26,107 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_128",
-      "theme_name": "엔터테인먼트",
-      "full_theme_name": "엔터테인먼트",
-      "change_rate": "+0.80%",
-      "composite_score": 68,
-      "total_stocks_count": 31,
-      "leader_stock": "에스팀",
-      "leader_ratio": 29.97,
-      "sub_leader_stock": "티엔엔터테인먼트",
+      "theme_id": "radar_615",
+      "theme_name": "2026 하반기 신규상장",
+      "full_theme_name": "2026 하반기 신규상장",
+      "change_rate": "+6.35%",
+      "composite_score": 99,
+      "total_stocks_count": 23,
+      "leader_stock": "엘리스",
+      "leader_ratio": 29.92,
+      "sub_leader_stock": "레몬헬스케어",
       "other_stocks": [
-        "디어유",
-        "팬엔터테인먼트",
-        "콘텐트리중앙"
+        "멜콘",
+        "빅웨이브로보틱스",
+        "니어스랩"
       ],
       "sub_stocks_top3": [
         {
-          "name": "티엔엔터테인먼트",
-          "rate": "+19.1%"
-        },
-        {
-          "name": "디어유",
-          "rate": "+1.7%"
-        },
-        {
-          "name": "팬엔터테인먼트",
-          "rate": "+1.4%"
-        }
-      ],
-      "past_trigger_reason": "에스팀, 엔터테인먼트 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "엔터테인먼트 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 111,
-      "is_real_leading": false,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "에스팀, 엔터테인먼트 시장 거래대금 쏠림",
-      "today_rising_fact": "에스팀, 엔터테인먼트 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "에스팀, 엔터테인먼트 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "에스팀",
-          "sub": "티엔엔터테인먼트, 디어유, 팬엔터테인먼트, 콘텐트리중앙"
-        },
-        "correlation": "[사업 팩트 매핑] 에스팀는 엔터테인먼트 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "엔터테인먼트 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_127",
-      "theme_name": "영상콘텐츠",
-      "full_theme_name": "영상콘텐츠",
-      "change_rate": "+0.44%",
-      "composite_score": 65,
-      "total_stocks_count": 33,
-      "leader_stock": "에스팀",
-      "leader_ratio": 29.97,
-      "sub_leader_stock": "자이언트스텝",
-      "other_stocks": [
-        "덱스터",
-        "와이랩",
-        "팬엔터테인먼트"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "자이언트스텝",
+          "name": "레몬헬스케어",
           "rate": "+29.9%"
         },
         {
-          "name": "덱스터",
-          "rate": "+5.5%"
+          "name": "멜콘",
+          "rate": "+24.3%"
         },
         {
-          "name": "와이랩",
-          "rate": "+2.6%"
+          "name": "빅웨이브로보틱스",
+          "rate": "+10.9%"
         }
       ],
-      "past_trigger_reason": "에스팀, 영상콘텐츠 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "영상콘텐츠 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 137,
-      "is_real_leading": false,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "에스팀, 영상콘텐츠 시장 거래대금 쏠림",
-      "today_rising_fact": "에스팀, 영상콘텐츠 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "에스팀, 영상콘텐츠 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "에스팀",
-          "sub": "자이언트스텝, 덱스터, 와이랩, 팬엔터테인먼트"
-        },
-        "correlation": "[사업 팩트 매핑] 에스팀는 영상콘텐츠 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "영상콘텐츠 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_284",
-      "theme_name": "기업인수목적회사",
-      "full_theme_name": "기업인수목적회사(SPAC)",
-      "change_rate": "-0.09%",
-      "composite_score": 60,
-      "total_stocks_count": 69,
-      "leader_stock": "키움제10호스팩",
-      "leader_ratio": 1.39,
-      "sub_leader_stock": "비엔케이제3호스팩",
-      "other_stocks": [
-        "하나36호스팩",
-        "유진스팩11호",
-        "메리츠제1호스팩"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "비엔케이제3호스팩",
-          "rate": "+0.9%"
-        },
-        {
-          "name": "하나36호스팩",
-          "rate": "+0.8%"
-        },
-        {
-          "name": "유진스팩11호",
-          "rate": "+0.7%"
-        }
-      ],
-      "past_trigger_reason": "키움제10호스팩, 기업인수목적회사 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "기업인수목적회사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2,
-      "is_real_leading": false,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "키움제10호스팩, 기업인수목적회사 시장 거래대금 쏠림",
-      "today_rising_fact": "키움제10호스팩, 기업인수목적회사 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "키움제10호스팩, 기업인수목적회사 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "키움제10호스팩",
-          "sub": "비엔케이제3호스팩, 하나36호스팩, 유진스팩11호, 메리츠제1호스팩"
-        },
-        "correlation": "[사업 팩트 매핑] 키움제10호스팩는 기업인수목적회사 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "기업인수목적회사 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_210",
-      "theme_name": "자전거",
-      "full_theme_name": "자전거",
-      "change_rate": "+3.42%",
-      "composite_score": 58,
-      "total_stocks_count": 3,
-      "leader_stock": "빅텍",
-      "leader_ratio": 10.63,
-      "sub_leader_stock": "삼천리자전거",
-      "other_stocks": [
-        "알톤"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "삼천리자전거",
-          "rate": "+0.4%"
-        },
-        {
-          "name": "알톤",
-          "rate": "-0.8%"
-        }
-      ],
-      "past_trigger_reason": "빅텍, 자전거 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "자전거 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 769,
+      "past_trigger_reason": "엘리스, 2026 하반기 신규상장 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "2026 하반기 신규상장 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 4133,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "빅텍, 자전거 시장 거래대금 쏠림",
-      "today_rising_fact": "빅텍, 자전거 시장 거래대금 쏠림",
+      "trigger_summary": "엘리스, 2026 하반기 신규상장 시장 거래대금 쏠림",
+      "today_rising_fact": "엘리스, 2026 하반기 신규상장 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "빅텍, 자전거 시장 거래대금 쏠림",
+        "material": "엘리스, 2026 하반기 신규상장 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "빅텍",
-          "sub": "삼천리자전거, 알톤"
+          "lead": "엘리스",
+          "sub": "레몬헬스케어, 멜콘, 빅웨이브로보틱스, 니어스랩"
         },
-        "correlation": "[사업 팩트 매핑] 빅텍는 자전거 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "자전거 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 엘리스는 2026 하반기 신규상장 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "2026 하반기 신규상장 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_517",
+      "theme_name": "전후 재건",
+      "full_theme_name": "전후 재건(우크라/중동 전쟁 등)",
+      "change_rate": "+3.10%",
+      "composite_score": 87,
+      "total_stocks_count": 40,
+      "leader_stock": "혜인",
+      "leader_ratio": 29.98,
+      "sub_leader_stock": "삼성E&A",
+      "other_stocks": [
+        "전진건설로봇",
+        "에스와이스틸텍",
+        "유신"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "삼성E&A",
+          "rate": "+9.4%"
+        },
+        {
+          "name": "전진건설로봇",
+          "rate": "+6.5%"
+        },
+        {
+          "name": "에스와이스틸텍",
+          "rate": "+6.0%"
+        }
+      ],
+      "past_trigger_reason": "혜인, 전후 재건 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "전후 재건 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2879,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "혜인, 전후 재건 시장 거래대금 쏠림",
+      "today_rising_fact": "혜인, 전후 재건 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "혜인, 전후 재건 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "혜인",
+          "sub": "삼성E&A, 전진건설로봇, 에스와이스틸텍, 유신"
+        },
+        "correlation": "[사업 팩트 매핑] 혜인는 전후 재건 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "전후 재건 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
@@ -244,51 +138,163 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_496",
-      "theme_name": "골프",
-      "full_theme_name": "골프",
-      "change_rate": "+0.88%",
-      "composite_score": 50,
-      "total_stocks_count": 15,
-      "leader_stock": "형지글로벌",
-      "leader_ratio": 29.83,
-      "sub_leader_stock": "남화산업",
+      "theme_id": "radar_536",
+      "theme_name": "HBM",
+      "full_theme_name": "HBM(고대역폭메모리)",
+      "change_rate": "+3.02%",
+      "composite_score": 87,
+      "total_stocks_count": 35,
+      "leader_stock": "켐트로스",
+      "leader_ratio": 14.41,
+      "sub_leader_stock": "케이씨텍",
       "other_stocks": [
-        "골프존홀딩스",
-        "한세엠케이",
-        "크리스에프앤씨"
+        "제우스",
+        "예스티",
+        "디아이"
       ],
       "sub_stocks_top3": [
         {
-          "name": "남화산업",
-          "rate": "+1.3%"
+          "name": "케이씨텍",
+          "rate": "+10.1%"
         },
         {
-          "name": "골프존홀딩스",
-          "rate": "+1.0%"
+          "name": "제우스",
+          "rate": "+9.4%"
         },
         {
-          "name": "한세엠케이",
-          "rate": "+1.0%"
+          "name": "예스티",
+          "rate": "+8.7%"
         }
       ],
-      "past_trigger_reason": "형지글로벌, 골프 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "골프 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 65,
-      "is_real_leading": false,
+      "past_trigger_reason": "켐트로스, HBM 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "HBM 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 89438,
+      "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "형지글로벌, 골프 시장 거래대금 쏠림",
-      "today_rising_fact": "형지글로벌, 골프 시장 거래대금 쏠림",
+      "ma5_recovered": true,
+      "trigger_summary": "켐트로스, HBM 시장 거래대금 쏠림",
+      "today_rising_fact": "켐트로스, HBM 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "형지글로벌, 골프 시장 거래대금 쏠림",
+        "material": "켐트로스, HBM 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "형지글로벌",
-          "sub": "남화산업, 골프존홀딩스, 한세엠케이, 크리스에프앤씨"
+          "lead": "켐트로스",
+          "sub": "케이씨텍, 제우스, 예스티, 디아이"
         },
-        "correlation": "[사업 팩트 매핑] 형지글로벌는 골프 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "골프 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 켐트로스는 HBM 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "HBM 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_197",
+      "theme_name": "폐기물처리",
+      "full_theme_name": "폐기물처리",
+      "change_rate": "+5.40%",
+      "composite_score": 78,
+      "total_stocks_count": 6,
+      "leader_stock": "서한",
+      "leader_ratio": 29.9,
+      "sub_leader_stock": "웰크론한텍",
+      "other_stocks": [
+        "인선이엔티",
+        "와이엔텍",
+        "태영건설"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "웰크론한텍",
+          "rate": "+3.8%"
+        },
+        {
+          "name": "인선이엔티",
+          "rate": "+0.3%"
+        },
+        {
+          "name": "와이엔텍",
+          "rate": "0.0%"
+        }
+      ],
+      "past_trigger_reason": "서한, 폐기물처리 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "폐기물처리 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 126,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "서한, 폐기물처리 시장 거래대금 쏠림",
+      "today_rising_fact": "서한, 폐기물처리 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "서한, 폐기물처리 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "서한",
+          "sub": "웰크론한텍, 인선이엔티, 와이엔텍, 태영건설"
+        },
+        "correlation": "[사업 팩트 매핑] 서한는 폐기물처리 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "폐기물처리 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_378",
+      "theme_name": "건설기계",
+      "full_theme_name": "건설기계",
+      "change_rate": "+3.64%",
+      "composite_score": 75,
+      "total_stocks_count": 16,
+      "leader_stock": "혜인",
+      "leader_ratio": 29.98,
+      "sub_leader_stock": "전진건설로봇",
+      "other_stocks": [
+        "HD건설기계",
+        "대모",
+        "대동금속"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "전진건설로봇",
+          "rate": "+6.5%"
+        },
+        {
+          "name": "HD건설기계",
+          "rate": "+4.9%"
+        },
+        {
+          "name": "대모",
+          "rate": "+4.2%"
+        }
+      ],
+      "past_trigger_reason": "혜인, 건설기계 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "건설기계 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 502,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "혜인, 건설기계 시장 거래대금 쏠림",
+      "today_rising_fact": "혜인, 건설기계 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "혜인, 건설기계 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "혜인",
+          "sub": "전진건설로봇, HD건설기계, 대모, 대동금속"
+        },
+        "correlation": "[사업 팩트 매핑] 혜인는 건설기계 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "건설기계 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
