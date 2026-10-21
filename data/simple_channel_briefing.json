@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-21T08:45:22.846Z",
+  "updatedAt": "2026-10-21T17:27:13.110Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-10-08",
   "latestVideo": {
     "hasVideo": true,
-    "id": "B0jpGObKNmc",
-    "title": "외국인이 하루 건너 들었다 놨다 마음 졸이게 만드는 코스피. 오늘은 사이드카! /반도체,신규상장,로봇,개별주/삼성전자,SK하이닉스,명신산업,HT로보틱스,대한광통신,엘리스,멜콘",
-    "published_kst": "2026-10-21 16:46:39",
-    "url": "https://www.youtube.com/watch?v=B0jpGObKNmc"
+    "id": "MS2HBfn8Fn4",
+    "title": "내일 관심테마! GTC에서 젠슨황 삼성전기 언급! 오늘밤 중요한 이벤트는!? /반도체,기판,광통신,신규상장 /삼성전자,SK하��닉스,HT로보틱스,대한광통신,삼성전기,두산테스나,심텍",
+    "published_kst": "2026-10-21 20:49:15",
+    "url": "https://www.youtube.com/watch?v=MS2HBfn8Fn4"
   },
   "morningVideo": {
     "hasVideo": true,
@@ -33,18 +33,18 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "82TUYN7TmNs",
-    "title": "내일 관심테마! 투심 박살내는 어려운 시장 지속. 반대매매를 어떻게든 만들겠다는 증시/ 반도체,소부장,개별주,햇지 /삼성전자,SK하이닉스,HT로보틱스,코리아써키트,삼성SDI,양지사",
-    "published_kst": "2026-10-20 20:35:42",
-    "url": "https://www.youtube.com/watch?v=82TUYN7TmNs",
+    "id": "MS2HBfn8Fn4",
+    "title": "내일 관심테마! GTC에서 젠슨황 삼성전기 언급! 오늘밤 중요한 이벤트는!? /반도체,기판,광통신,신규상장 /삼성전자,SK하��닉스,HT로보틱스,대한광통신,삼성전기,두산테스나,심텍",
+    "published_kst": "2026-10-21 20:49:15",
+    "url": "https://www.youtube.com/watch?v=MS2HBfn8Fn4",
     "themes": [
-      "투심 박살내는 어려운 시장 지속. 반대매매를 어떻게든 만들겠다는 증시"
+      "GTC에서 젠슨황 삼성전기 언급! 오늘밤 중요한 이벤트는!?"
     ],
     "stocks": [
       "반도체",
-      "소부장",
-      "개별주",
-      "햇지"
+      "기판",
+      "광통신",
+      "신규상장"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(와이씨, 비에이치아이 등) 수급 주체 매매 분석",

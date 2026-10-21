@@ -1,7 +1,7 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-21T08:46:04.242Z",
+  "updated_at": "2026-10-21T17:28:00.551Z",
   "updated_date_str": "2026. 10. 21. (수)",
   "market_health": {
     "kospi": {
@@ -29,7 +29,7 @@
       "theme_id": "radar_615",
       "theme_name": "2026 하반기 신규상장",
       "full_theme_name": "2026 하반기 신규상장",
-      "change_rate": "+6.35%",
+      "change_rate": "+6.88%",
       "composite_score": 99,
       "total_stocks_count": 23,
       "leader_stock": "엘리스",
@@ -38,7 +38,7 @@
       "other_stocks": [
         "멜콘",
         "빅웨이브로보틱스",
-        "니어스랩"
+        "글로벌테크놀로지"
       ],
       "sub_stocks_top3": [
         {
@@ -47,16 +47,16 @@
         },
         {
           "name": "멜콘",
-          "rate": "+24.3%"
+          "rate": "+27.4%"
         },
         {
           "name": "빅웨이브로보틱스",
-          "rate": "+10.9%"
+          "rate": "+14.1%"
         }
       ],
       "past_trigger_reason": "엘리스, 2026 하반기 신규상장 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "2026 하반기 신규상장 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4133,
+      "trading_value_eok": 4445,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -67,7 +67,7 @@
         "material": "엘리스, 2026 하반기 신규상장 시장 거래대금 쏠림",
         "leaders": {
           "lead": "엘리스",
-          "sub": "레몬헬스케어, 멜콘, 빅웨이브로보틱스, 니어스랩"
+          "sub": "레몬헬스케어, 멜콘, 빅웨이브로보틱스, 글로벌테크놀로지"
         },
         "correlation": "[사업 팩트 매핑] 엘리스는 2026 하반기 신규상장 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "2026 하반기 신규상장 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -82,93 +82,37 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_517",
-      "theme_name": "전후 재건",
-      "full_theme_name": "전후 재건(우크라/중동 전쟁 등)",
-      "change_rate": "+3.10%",
-      "composite_score": 87,
-      "total_stocks_count": 40,
-      "leader_stock": "혜인",
-      "leader_ratio": 29.98,
-      "sub_leader_stock": "삼성E&A",
-      "other_stocks": [
-        "전진건설로봇",
-        "에스와이스틸텍",
-        "유신"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "삼성E&A",
-          "rate": "+9.4%"
-        },
-        {
-          "name": "전진건설로봇",
-          "rate": "+6.5%"
-        },
-        {
-          "name": "에스와이스틸텍",
-          "rate": "+6.0%"
-        }
-      ],
-      "past_trigger_reason": "혜인, 전후 재건 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "전후 재건 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2879,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "혜인, 전후 재건 시장 거래대금 쏠림",
-      "today_rising_fact": "혜인, 전후 재건 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "혜인, 전후 재건 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "혜인",
-          "sub": "삼성E&A, 전진건설로봇, 에스와이스틸텍, 유신"
-        },
-        "correlation": "[사업 팩트 매핑] 혜인는 전후 재건 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "전후 재건 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
       "theme_id": "radar_536",
       "theme_name": "HBM",
       "full_theme_name": "HBM(고대역폭메모리)",
-      "change_rate": "+3.02%",
-      "composite_score": 87,
+      "change_rate": "+3.33%",
+      "composite_score": 89,
       "total_stocks_count": 35,
       "leader_stock": "켐트로스",
-      "leader_ratio": 14.41,
-      "sub_leader_stock": "케이씨텍",
+      "leader_ratio": 15.14,
+      "sub_leader_stock": "제우스",
       "other_stocks": [
-        "제우스",
+        "케이씨텍",
         "예스티",
         "디아이"
       ],
       "sub_stocks_top3": [
         {
-          "name": "케이씨텍",
-          "rate": "+10.1%"
+          "name": "제우스",
+          "rate": "+10.9%"
         },
         {
-          "name": "제우스",
-          "rate": "+9.4%"
+          "name": "케이씨텍",
+          "rate": "+10.2%"
         },
         {
           "name": "예스티",
-          "rate": "+8.7%"
+          "rate": "+9.0%"
         }
       ],
       "past_trigger_reason": "켐트로스, HBM 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "HBM 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 89438,
+      "trading_value_eok": 90861,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -179,7 +123,7 @@
         "material": "켐트로스, HBM 시장 거래대금 쏠림",
         "leaders": {
           "lead": "켐트로스",
-          "sub": "케이씨텍, 제우스, 예스티, 디아이"
+          "sub": "제우스, 케이씨텍, 예스티, 디아이"
         },
         "correlation": "[사업 팩트 매핑] 켐트로스는 HBM 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "HBM 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -194,54 +138,110 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_197",
-      "theme_name": "폐기물처리",
-      "full_theme_name": "폐기물처리",
-      "change_rate": "+5.40%",
-      "composite_score": 78,
-      "total_stocks_count": 6,
-      "leader_stock": "서한",
-      "leader_ratio": 29.9,
-      "sub_leader_stock": "웰크론한텍",
+      "theme_id": "radar_517",
+      "theme_name": "전후 재건",
+      "full_theme_name": "전후 재건(우크라/중동 전쟁 등)",
+      "change_rate": "+3.32%",
+      "composite_score": 89,
+      "total_stocks_count": 40,
+      "leader_stock": "혜인",
+      "leader_ratio": 29.98,
+      "sub_leader_stock": "삼성E&A",
       "other_stocks": [
-        "인선이엔티",
-        "와이엔텍",
-        "태영건설"
+        "폴라리스AI",
+        "전진건설로봇",
+        "에스와이스틸텍"
       ],
       "sub_stocks_top3": [
         {
-          "name": "웰크론한텍",
-          "rate": "+3.8%"
+          "name": "삼성E&A",
+          "rate": "+9.6%"
         },
         {
-          "name": "인선이엔티",
-          "rate": "+0.3%"
+          "name": "폴라리스AI",
+          "rate": "+8.8%"
         },
         {
-          "name": "와이엔텍",
-          "rate": "0.0%"
+          "name": "전진건설로봇",
+          "rate": "+6.8%"
         }
       ],
-      "past_trigger_reason": "서한, 폐기물처리 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "폐기물처리 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 126,
-      "is_real_leading": false,
+      "past_trigger_reason": "혜인, 전후 재건 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "전후 재건 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2586,
+      "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "서한, 폐기물처리 시장 거래대금 쏠림",
-      "today_rising_fact": "서한, 폐기물처리 시장 거래대금 쏠림",
+      "trigger_summary": "혜인, 전후 재건 시장 거래대금 쏠림",
+      "today_rising_fact": "혜인, 전후 재건 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "서한, 폐기물처리 시장 거래대금 쏠림",
+        "material": "혜인, 전후 재건 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "서한",
-          "sub": "웰크론한텍, 인선이엔티, 와이엔텍, 태영건설"
+          "lead": "혜인",
+          "sub": "삼성E&A, 폴라리스AI, 전진건설로봇, 에스와이스틸텍"
         },
-        "correlation": "[사업 팩트 매핑] 서한는 폐기물처리 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "폐기물처리 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 혜인는 전후 재건 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "전후 재건 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_237",
+      "theme_name": "GTX",
+      "full_theme_name": "GTX(수도권 광역급행철도)",
+      "change_rate": "+3.63%",
+      "composite_score": 85,
+      "total_stocks_count": 24,
+      "leader_stock": "서한",
+      "leader_ratio": 29.9,
+      "sub_leader_stock": "폴라리스AI",
+      "other_stocks": [
+        "대우건설",
+        "HL D&I",
+        "GS건설"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "폴라리스AI",
+          "rate": "+8.8%"
+        },
+        {
+          "name": "대우건설",
+          "rate": "+4.7%"
+        },
+        {
+          "name": "HL D&I",
+          "rate": "+4.6%"
+        }
+      ],
+      "past_trigger_reason": "서한, GTX 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "GTX 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 886,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "서한, GTX 시장 거래대금 쏠림",
+      "today_rising_fact": "서한, GTX 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "서한, GTX 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "서한",
+          "sub": "폴라리스AI, 대우건설, HL D&I, GS건설"
+        },
+        "correlation": "[사업 팩트 매핑] 서한는 GTX 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "GTX 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
         "conditions": {
           "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
           "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
@@ -253,7 +253,7 @@
       "theme_id": "radar_378",
       "theme_name": "건설기계",
       "full_theme_name": "건설기계",
-      "change_rate": "+3.64%",
+      "change_rate": "+3.59%",
       "composite_score": 75,
       "total_stocks_count": 16,
       "leader_stock": "혜인",
@@ -267,20 +267,20 @@
       "sub_stocks_top3": [
         {
           "name": "전진건설로봇",
-          "rate": "+6.5%"
+          "rate": "+6.8%"
         },
         {
           "name": "HD건설기계",
-          "rate": "+4.9%"
+          "rate": "+5.0%"
         },
         {
           "name": "대모",
-          "rate": "+4.2%"
+          "rate": "+4.7%"
         }
       ],
       "past_trigger_reason": "혜인, 건설기계 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "건설기계 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 502,
+      "trading_value_eok": 510,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,

@@ -1,283 +1,20 @@
 {
-  "updated_at": "2026-10-21T08:45:59.867135+00:00",
-  "updated_date_str": "2026년 10월 21일 08:45",
-  "headline": "'주주 반대'에 멈춘 명신산업 美 자회사 IPO⋯'닮은꼴' 솔리다임 향방은",
+  "updated_at": "2026-10-21T17:27:55.784231+00:00",
+  "updated_date_str": "2026년 10월 21일 17:27",
+  "headline": "스페이스X·테슬라 합병 검토에 나스닥  ↑[뉴욕증시]",
   "summary_3lines": [
-    "'주주 반대'에 멈춘 명신산업 美 자회사 IPO⋯'닮은꼴' 솔리다임 향방은",
-    "'매수 사이드카' 뜬 코스피, 3.3% 급등 5735 마감…삼전닉스 5%대 상승",
-    "외국인 돌아오자 코스피 3% 급등…삼전닉스, 5%대 ‘불기둥’ [투자360]"
+    "스페이스X·테슬라 합병 검토에 나스닥  ↑[뉴욕증시]",
+    "스페이스X 11% 급등에 AI주 반등…뉴욕증시 상승 출발",
+    "\"정말 피가 마릅니다\"…SK하이닉스 폭등에도 개미들은 '한숨' [분석+]"
   ],
   "gainers": [
-    {
-      "ticker": "XLV",
-      "name": "헬스케어",
-      "theme": "제약/바이오/의료",
-      "price": "179.82",
-      "ratio": 2.37,
-      "ratio_str": "+2.37%",
-      "reason": "비만치료제 기대감과 전통 제약주 보합 혼조",
-      "stocks": [
-        {
-          "ticker": "LLY",
-          "name": "일라이릴리",
-          "ratio": 3.49,
-          "ratio_str": "+3.49%"
-        },
-        {
-          "ticker": "JNJ",
-          "name": "존슨앤존슨",
-          "ratio": 2.19,
-          "ratio_str": "+2.19%"
-        }
-      ]
-    },
-    {
-      "ticker": "XLU",
-      "name": "유틸리티",
-      "theme": "전력/가스/수도",
-      "price": "41.88",
-      "ratio": 1.26,
-      "ratio_str": "+1.26%",
-      "reason": "금리 상승기에 배당주 매력 감소",
-      "stocks": [
-        {
-          "ticker": "SO",
-          "name": "서던컴퍼니(SO)",
-          "ratio": 1.61,
-          "ratio_str": "+1.61%"
-        },
-        {
-          "ticker": "DUK",
-          "name": "듀크에너지(DUK)",
-          "ratio": 1.73,
-          "ratio_str": "+1.73%"
-        },
-        {
-          "ticker": "NEE",
-          "name": "넥스트에라에너지(NEE)",
-          "ratio": 0.88,
-          "ratio_str": "+0.88%"
-        }
-      ]
-    },
-    {
-      "ticker": "XLF",
-      "name": "금융",
-      "theme": "은행/보험/증권",
-      "price": "55.72",
-      "ratio": 1.2,
-      "ratio_str": "+1.20%",
-      "reason": "국채 금리 수익률 곡선 변화 및 대출 수요 관망",
-      "stocks": [
-        {
-          "ticker": "JPM",
-          "name": "JP모건",
-          "ratio": 0.52,
-          "ratio_str": "+0.52%"
-        },
-        {
-          "ticker": "BAC",
-          "name": "뱅크오브아메리카",
-          "ratio": 0.5,
-          "ratio_str": "+0.50%"
-        }
-      ]
-    },
-    {
-      "ticker": "XLY",
-      "name": "경기소비재",
-      "theme": "소비/유통/레저",
-      "price": "115.50",
-      "ratio": 0.91,
-      "ratio_str": "+0.91%",
-      "reason": "유가 급등에 따른 소비 여력 위축 및 금리 인상 가능성",
-      "stocks": [
-        {
-          "ticker": "SBUX",
-          "name": "스타벅스",
-          "ratio": 0.0,
-          "ratio_str": "0.00%"
-        },
-        {
-          "ticker": "NKE",
-          "name": "나이키",
-          "ratio": 1.8,
-          "ratio_str": "+1.80%"
-        },
-        {
-          "ticker": "AMZN",
-          "name": "아마존",
-          "ratio": 0.0,
-          "ratio_str": "0.00%"
-        },
-        {
-          "ticker": "MCD",
-          "name": "맥도날드",
-          "ratio": 1.59,
-          "ratio_str": "+1.59%"
-        }
-      ]
-    },
-    {
-      "ticker": "XLP",
-      "name": "필수소비재",
-      "theme": "식음료/생필품",
-      "price": "87.75",
-      "ratio": 0.62,
-      "ratio_str": "+0.62%",
-      "reason": "유통 대형주 중심 약세 및 원가 상승 부담",
-      "stocks": [
-        {
-          "ticker": "COST",
-          "name": "코스트코",
-          "ratio": 0.0,
-          "ratio_str": "0.00%"
-        },
-        {
-          "ticker": "WMT",
-          "name": "월마트",
-          "ratio": 0.0,
-          "ratio_str": "0.00%"
-        },
-        {
-          "ticker": "KO",
-          "name": "코카콜라(KO)",
-          "ratio": 0.07,
-          "ratio_str": "+0.07%"
-        }
-      ]
-    },
-    {
-      "ticker": "XLB",
-      "name": "소재",
-      "theme": "화학/소재/금광",
-      "price": "51.23",
-      "ratio": 0.55,
-      "ratio_str": "+0.55%",
-      "reason": "금 약세 속 금광주 견조 및 원자재 수요 방어",
-      "stocks": [
-        {
-          "ticker": "NEM",
-          "name": "뉴몬트",
-          "ratio": -1.02,
-          "ratio_str": "-1.02%"
-        },
-        {
-          "ticker": "FCX",
-          "name": "프리포트맥모란",
-          "ratio": -1.26,
-          "ratio_str": "-1.26%"
-        }
-      ]
-    },
-    {
-      "ticker": "XLE",
-      "name": "에너지",
-      "theme": "에너지/정유",
-      "price": "67.97",
-      "ratio": 0.25,
-      "ratio_str": "+0.25%",
-      "reason": "후티 반군의 사우디 공격으로 East-West 송유관 가동 중단, WTI +4.03% 급등(105.48달러, 4개월 최고)",
-      "stocks": [
-        {
-          "ticker": "VLO",
-          "name": "발레로",
-          "ratio": 0.03,
-          "ratio_str": "+0.03%"
-        },
-        {
-          "ticker": "MPC",
-          "name": "마라톤페트롤리엄",
-          "ratio": 0.29,
-          "ratio_str": "+0.29%"
-        },
-        {
-          "ticker": "OXY",
-          "name": "옥시덴털",
-          "ratio": 0.32,
-          "ratio_str": "+0.32%"
-        },
-        {
-          "ticker": "CVX",
-          "name": "셰브론",
-          "ratio": 0.6,
-          "ratio_str": "+0.60%"
-        },
-        {
-          "ticker": "XOM",
-          "name": "엑슨모빌",
-          "ratio": -0.24,
-          "ratio_str": "-0.24%"
-        }
-      ]
-    },
-    {
-      "ticker": "XLC",
-      "name": "커뮤니케이션",
-      "theme": "미디어/엔터/빅테크",
-      "price": "110.19",
-      "ratio": 0.09,
-      "ratio_str": "+0.09%",
-      "reason": "대형 기술주 차익실현 및 스트리밍 성장 둔화 우려",
-      "stocks": [
-        {
-          "ticker": "NFLX",
-          "name": "넷플릭스",
-          "ratio": 0.0,
-          "ratio_str": "0.00%"
-        },
-        {
-          "ticker": "DIS",
-          "name": "디즈니",
-          "ratio": 1.9,
-          "ratio_str": "+1.90%"
-        },
-        {
-          "ticker": "GOOGL",
-          "name": "알파벳",
-          "ratio": 0.0,
-          "ratio_str": "0.00%"
-        },
-        {
-          "ticker": "META",
-          "name": "메타",
-          "ratio": 0.0,
-          "ratio_str": "0.00%"
-        }
-      ]
-    },
-    {
-      "ticker": "XLI",
-      "name": "산업재",
-      "theme": "방산/기계/운송",
-      "price": "166.80",
-      "ratio": 0.07,
-      "ratio_str": "+0.07%",
-      "reason": "전력 인프라 및 자본재 차익실현 약세",
-      "stocks": [
-        {
-          "ticker": "PWR",
-          "name": "콴타서비스",
-          "ratio": -3.62,
-          "ratio_str": "-3.62%"
-        },
-        {
-          "ticker": "HUBB",
-          "name": "허벨",
-          "ratio": 0.0,
-          "ratio_str": "0.00%"
-        }
-      ]
-    }
-  ],
-  "losers": [
     {
       "ticker": "XLK",
       "name": "정보기술",
       "theme": "반도체/소프트웨어",
-      "price": "185.44",
-      "ratio": -0.28,
-      "ratio_str": "-0.28%",
+      "price": "188.88",
+      "ratio": 1.85,
+      "ratio_str": "+1.85%",
       "reason": "AI 반도체 수요 견조하나 금리 변동성에 따른 단기 숨고르기",
       "stocks": [
         {
@@ -304,16 +41,16 @@
       "ticker": "XLI",
       "name": "산업재",
       "theme": "방산/기계/운송",
-      "price": "166.80",
-      "ratio": 0.07,
-      "ratio_str": "+0.07%",
+      "price": "168.50",
+      "ratio": 1.02,
+      "ratio_str": "+1.02%",
       "reason": "전력 인프라 및 자본재 차익실현 약세",
       "stocks": [
         {
           "ticker": "PWR",
           "name": "콴타서비스",
-          "ratio": -3.62,
-          "ratio_str": "-3.62%"
+          "ratio": 1.39,
+          "ratio_str": "+1.39%"
         },
         {
           "ticker": "HUBB",
@@ -324,12 +61,142 @@
       ]
     },
     {
+      "ticker": "XLF",
+      "name": "금융",
+      "theme": "은행/보험/증권",
+      "price": "56.06",
+      "ratio": 0.61,
+      "ratio_str": "+0.61%",
+      "reason": "국채 금리 수익률 곡선 변화 및 대출 수요 관망",
+      "stocks": [
+        {
+          "ticker": "JPM",
+          "name": "JP모건",
+          "ratio": -0.2,
+          "ratio_str": "-0.20%"
+        },
+        {
+          "ticker": "BAC",
+          "name": "뱅크오브아메리카",
+          "ratio": 0.82,
+          "ratio_str": "+0.82%"
+        }
+      ]
+    },
+    {
+      "ticker": "XLU",
+      "name": "유틸리티",
+      "theme": "전력/가스/수도",
+      "price": "42.12",
+      "ratio": 0.57,
+      "ratio_str": "+0.57%",
+      "reason": "금리 상승기에 배당주 매력 감소",
+      "stocks": [
+        {
+          "ticker": "SO",
+          "name": "서던컴퍼니(SO)",
+          "ratio": -0.14,
+          "ratio_str": "-0.14%"
+        },
+        {
+          "ticker": "DUK",
+          "name": "듀크에너지(DUK)",
+          "ratio": -0.14,
+          "ratio_str": "-0.14%"
+        },
+        {
+          "ticker": "NEE",
+          "name": "넥스트에라에너지(NEE)",
+          "ratio": -0.51,
+          "ratio_str": "-0.51%"
+        }
+      ]
+    },
+    {
+      "ticker": "XLY",
+      "name": "경기소비재",
+      "theme": "소비/유통/레저",
+      "price": "115.92",
+      "ratio": 0.36,
+      "ratio_str": "+0.36%",
+      "reason": "유가 급등에 따른 소비 여력 위축 및 금리 인상 가능성",
+      "stocks": [
+        {
+          "ticker": "SBUX",
+          "name": "스타벅스",
+          "ratio": 0.0,
+          "ratio_str": "0.00%"
+        },
+        {
+          "ticker": "NKE",
+          "name": "나이키",
+          "ratio": -1.06,
+          "ratio_str": "-1.06%"
+        },
+        {
+          "ticker": "AMZN",
+          "name": "아마존",
+          "ratio": 0.0,
+          "ratio_str": "0.00%"
+        },
+        {
+          "ticker": "MCD",
+          "name": "맥도날드",
+          "ratio": -0.19,
+          "ratio_str": "-0.19%"
+        }
+      ]
+    },
+    {
+      "ticker": "XLE",
+      "name": "에너지",
+      "theme": "에너지/정유",
+      "price": "68.02",
+      "ratio": 0.07,
+      "ratio_str": "+0.07%",
+      "reason": "후티 반군의 사우디 공격으로 East-West 송유관 가동 중단, WTI +4.03% 급등(105.48달러, 4개월 최고)",
+      "stocks": [
+        {
+          "ticker": "VLO",
+          "name": "발레로",
+          "ratio": -0.73,
+          "ratio_str": "-0.73%"
+        },
+        {
+          "ticker": "MPC",
+          "name": "마라톤페트롤리엄",
+          "ratio": -1.83,
+          "ratio_str": "-1.83%"
+        },
+        {
+          "ticker": "OXY",
+          "name": "옥시덴털",
+          "ratio": -0.35,
+          "ratio_str": "-0.35%"
+        },
+        {
+          "ticker": "CVX",
+          "name": "셰브론",
+          "ratio": 0.25,
+          "ratio_str": "+0.25%"
+        },
+        {
+          "ticker": "XOM",
+          "name": "엑슨모빌",
+          "ratio": -0.13,
+          "ratio_str": "-0.13%"
+        }
+      ]
+    }
+  ],
+  "losers": [
+    {
       "ticker": "XLC",
       "name": "커뮤니케이션",
       "theme": "미디어/엔터/빅테크",
-      "price": "110.19",
-      "ratio": 0.09,
-      "ratio_str": "+0.09%",
+      "price": "109.32",
+      "ratio": -0.79,
+      "ratio_str": "-0.79%",
       "reason": "대형 기술주 차익실현 및 스트리밍 성장 둔화 우려",
       "stocks": [
         {
@@ -341,8 +208,8 @@
         {
           "ticker": "DIS",
           "name": "디즈니",
-          "ratio": 1.9,
-          "ratio_str": "+1.90%"
+          "ratio": -0.86,
+          "ratio_str": "-0.86%"
         },
         {
           "ticker": "GOOGL",
@@ -359,43 +226,54 @@
       ]
     },
     {
-      "ticker": "XLE",
-      "name": "에너지",
-      "theme": "에너지/정유",
-      "price": "67.97",
-      "ratio": 0.25,
-      "ratio_str": "+0.25%",
-      "reason": "후티 반군의 사우디 공격으로 East-West 송유관 가동 중단, WTI +4.03% 급등(105.48달러, 4개월 최고)",
+      "ticker": "XLV",
+      "name": "헬스케어",
+      "theme": "제약/바이오/의료",
+      "price": "178.42",
+      "ratio": -0.78,
+      "ratio_str": "-0.78%",
+      "reason": "비만치료제 기대감과 전통 제약주 보합 혼조",
       "stocks": [
         {
-          "ticker": "VLO",
-          "name": "발레로",
-          "ratio": 0.03,
-          "ratio_str": "+0.03%"
+          "ticker": "LLY",
+          "name": "일라이릴리",
+          "ratio": -0.97,
+          "ratio_str": "-0.97%"
         },
         {
-          "ticker": "MPC",
-          "name": "마라톤페트롤리엄",
-          "ratio": 0.29,
-          "ratio_str": "+0.29%"
+          "ticker": "JNJ",
+          "name": "존슨앤존슨",
+          "ratio": -1.33,
+          "ratio_str": "-1.33%"
+        }
+      ]
+    },
+    {
+      "ticker": "XLP",
+      "name": "필수소비재",
+      "theme": "식음료/생필품",
+      "price": "87.16",
+      "ratio": -0.67,
+      "ratio_str": "-0.67%",
+      "reason": "유통 대형주 중심 약세 및 원가 상승 부담",
+      "stocks": [
+        {
+          "ticker": "COST",
+          "name": "코스트코",
+          "ratio": 0.0,
+          "ratio_str": "0.00%"
         },
         {
-          "ticker": "OXY",
-          "name": "옥시덴털",
-          "ratio": 0.32,
-          "ratio_str": "+0.32%"
+          "ticker": "WMT",
+          "name": "월마트",
+          "ratio": 0.0,
+          "ratio_str": "0.00%"
         },
         {
-          "ticker": "CVX",
-          "name": "셰브론",
-          "ratio": 0.6,
-          "ratio_str": "+0.60%"
-        },
-        {
-          "ticker": "XOM",
-          "name": "엑슨모빌",
-          "ratio": -0.24,
-          "ratio_str": "-0.24%"
+          "ticker": "KO",
+          "name": "코카콜라(KO)",
+          "ratio": -0.86,
+          "ratio_str": "-0.86%"
         }
       ]
     },
@@ -403,22 +281,63 @@
       "ticker": "XLB",
       "name": "소재",
       "theme": "화학/소재/금광",
-      "price": "51.23",
-      "ratio": 0.55,
-      "ratio_str": "+0.55%",
+      "price": "51.21",
+      "ratio": -0.04,
+      "ratio_str": "-0.04%",
       "reason": "금 약세 속 금광주 견조 및 원자재 수요 방어",
       "stocks": [
         {
           "ticker": "NEM",
           "name": "뉴몬트",
-          "ratio": -1.02,
-          "ratio_str": "-1.02%"
+          "ratio": -0.3,
+          "ratio_str": "-0.30%"
         },
         {
           "ticker": "FCX",
           "name": "프리포트맥모란",
-          "ratio": -1.26,
-          "ratio_str": "-1.26%"
+          "ratio": -0.18,
+          "ratio_str": "-0.18%"
+        }
+      ]
+    },
+    {
+      "ticker": "XLE",
+      "name": "에너지",
+      "theme": "에너지/정유",
+      "price": "68.02",
+      "ratio": 0.07,
+      "ratio_str": "+0.07%",
+      "reason": "후티 반군의 사우디 공격으로 East-West 송유관 가동 중단, WTI +4.03% 급등(105.48달러, 4개월 최고)",
+      "stocks": [
+        {
+          "ticker": "VLO",
+          "name": "발레로",
+          "ratio": -0.73,
+          "ratio_str": "-0.73%"
+        },
+        {
+          "ticker": "MPC",
+          "name": "마라톤페트롤리엄",
+          "ratio": -1.83,
+          "ratio_str": "-1.83%"
+        },
+        {
+          "ticker": "OXY",
+          "name": "옥시덴털",
+          "ratio": -0.35,
+          "ratio_str": "-0.35%"
+        },
+        {
+          "ticker": "CVX",
+          "name": "셰브론",
+          "ratio": 0.25,
+          "ratio_str": "+0.25%"
+        },
+        {
+          "ticker": "XOM",
+          "name": "엑슨모빌",
+          "ratio": -0.13,
+          "ratio_str": "-0.13%"
         }
       ]
     }
@@ -443,29 +362,29 @@
     },
     "vix": {
       "name": "VIX 변동성",
-      "price": "17.18",
-      "ratio": "+-0.75%"
+      "price": "16.72",
+      "ratio": "+-3.41%"
     },
     "night_range": "야간장 고저 변동폭 1.94% (고 1,050.30 / 저 1,030.30)로 등락 심화"
   },
   "news": [
     {
-      "title": "'주주 반대'에 멈춘 명신산업 美 자회사 IPO⋯'닮은꼴' 솔리다임 향방은",
-      "summary": "명신산업이 미국 자회사의 나스닥 기업공개(IPO) 추진을 철회했다. '중복상장 원칙적 금지 가이드라인' 발표 이후 모회사 주주 반대에 부딪혀 상장 계획을 접은 최초 사례다. SK하이닉스의 낸드플래시 자회사 솔리다임",
-      "source": "아이뉴스24",
-      "link": "https://n.news.naver.com/mnews/article/031/0001068092"
+      "title": "스페이스X·테슬라 합병 검토에 나스닥  ↑[뉴욕증시]",
+      "summary": "21일(현지시간) 뉴욕증시의 3대 지수는 일제히 상승세를 보이고 있다. 전날 일론 머스크 스페이스X 최고경영자(CEO)가 스페이스X와 테슬라 합병을 논의 중이라고 밝히면서 기술주 매수세가 살아났고, 나스닥지수의 오름",
+      "source": "아시아경제",
+      "link": "https://n.news.naver.com/mnews/article/277/0005831740"
     },
     {
-      "title": "'매수 사이드카' 뜬 코스피, 3.3% 급등 5735 마감…삼전닉스 5%대 상승",
-      "summary": "21일 코스피가 미국 인공지능(AI) 관련 투자 심리 개선과 수출 호실적에 힘입어 3%대 급등세를 보이며 장을 마감했다. 이날 코스피는 전 거래일보다 182.92포인트(3.29%) 오른 5735.66으로 정규장 거래",
-      "source": "강원도민일보",
-      "link": "https://n.news.naver.com/mnews/article/654/0000206675"
+      "title": "스페이스X 11% 급등에 AI주 반등…뉴욕증시 상승 출발",
+      "summary": "미국 뉴욕증시가 21일(현지시간) 상승 출발했다. 일론 머스크의 우주·인공지능(AI) 기업 스페이스X가 호실적과 테슬라 합병 기대에 장 초반 10% 안팎 급등하면서 최근 위축됐던 AI 관련주 투자심리가 되살아났다.",
+      "source": "이데일리",
+      "link": "https://n.news.naver.com/mnews/article/018/0006393257"
     },
     {
-      "title": "외국인 돌아오자 코스피 3% 급등…삼전닉스, 5%대 ‘불기둥’ [투자360]",
-      "summary": "코스피가 21일 외국인의 순매수에 힘입어 3% 넘게 급등하며 5730선을 회복했다. 미국 인공지능(AI) 기업들의 호실적과 국내 반도체 수출 급증 소식이 투자심리를 끌어올렸다. 한국거래소에 따르면 이날 코스피는 전",
-      "source": "헤럴드경제",
-      "link": "https://n.news.naver.com/mnews/article/016/0002712539"
+      "title": "\"정말 피가 마릅니다\"…SK하이닉스 폭등에도 개미들은 '한숨' [분석+]",
+      "summary": "SK하이닉스 주가가 반등했지만 개인투자자의 불안은 좀처럼 가라앉지 않고 있다. 코스피가 올해 들어 매수·매도 사이드카를 52차례 발동할 정도로 급등락을 반복하는 데다 자회사 솔리다임의 미국 상장 추진 가능성까지 불거",
+      "source": "한국경제",
+      "link": "https://n.news.naver.com/mnews/article/015/0005345161"
     }
   ]
 }
