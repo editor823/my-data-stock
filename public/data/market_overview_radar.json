@@ -1,7 +1,7 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-22T08:48:37.633Z",
+  "updated_at": "2026-10-22T17:26:39.813Z",
   "updated_date_str": "2026. 10. 22. (목)",
   "market_health": {
     "kospi": {
@@ -29,11 +29,11 @@
       "theme_id": "radar_210",
       "theme_name": "자전거",
       "full_theme_name": "자전거",
-      "change_rate": "+8.09%",
-      "composite_score": 97,
+      "change_rate": "+8.42%",
+      "composite_score": 99,
       "total_stocks_count": 3,
       "leader_stock": "빅텍",
-      "leader_ratio": 23.46,
+      "leader_ratio": 21.68,
       "sub_leader_stock": "알톤",
       "other_stocks": [
         "삼천리자전거"
@@ -41,16 +41,16 @@
       "sub_stocks_top3": [
         {
           "name": "알톤",
-          "rate": "+2.3%"
+          "rate": "+5.0%"
         },
         {
           "name": "삼천리자전거",
-          "rate": "-2.5%"
+          "rate": "-1.5%"
         }
       ],
       "past_trigger_reason": "빅텍, 자전거 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "자전거 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1062,
+      "trading_value_eok": 1181,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -76,93 +76,37 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_517",
-      "theme_name": "전후 재건",
-      "full_theme_name": "전후 재건(우크라/중동 전쟁 등)",
-      "change_rate": "+0.50%",
-      "composite_score": 65,
-      "total_stocks_count": 40,
-      "leader_stock": "폴라리스AI",
-      "leader_ratio": 18.44,
-      "sub_leader_stock": "스페코",
-      "other_stocks": [
-        "삼성E&A",
-        "에쓰씨엔지니어링",
-        "대모"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "스페코",
-          "rate": "+16.9%"
-        },
-        {
-          "name": "삼성E&A",
-          "rate": "+15.9%"
-        },
-        {
-          "name": "에쓰씨엔지니어링",
-          "rate": "+4.7%"
-        }
-      ],
-      "past_trigger_reason": "폴라리스AI, 전후 재건 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "전후 재건 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 8204,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "폴라리스AI, 전후 재건 시장 거래대금 쏠림",
-      "today_rising_fact": "폴라리스AI, 전후 재건 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "폴라리스AI, 전후 재건 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "폴라리스AI",
-          "sub": "스페코, 삼성E&A, 에쓰씨엔지니어링, 대모"
-        },
-        "correlation": "[사업 팩트 매핑] 폴라리스AI는 전후 재건 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "전후 재건 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
       "theme_id": "radar_529",
       "theme_name": "AI 챗봇",
       "full_theme_name": "AI 챗봇(챗GPT 등)",
-      "change_rate": "+0.46%",
-      "composite_score": 65,
+      "change_rate": "+0.86%",
+      "composite_score": 68,
       "total_stocks_count": 31,
       "leader_stock": "SKAI",
       "leader_ratio": 29.99,
       "sub_leader_stock": "폴라리스AI",
       "other_stocks": [
         "솔트룩스",
-        "브레인즈컴퍼니",
-        "삼성에스디에스"
+        "삼성에스디에스",
+        "브레인즈컴퍼니"
       ],
       "sub_stocks_top3": [
         {
           "name": "폴라리스AI",
-          "rate": "+18.4%"
+          "rate": "+17.8%"
         },
         {
           "name": "솔트룩스",
-          "rate": "+6.8%"
+          "rate": "+11.1%"
         },
         {
-          "name": "브레인즈컴퍼니",
-          "rate": "+3.6%"
+          "name": "삼성에스디에스",
+          "rate": "+3.7%"
         }
       ],
       "past_trigger_reason": "SKAI, AI 챗봇 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "AI 챗봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1523,
+      "trading_value_eok": 1616,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
@@ -173,7 +117,7 @@
         "material": "SKAI, AI 챗봇 시장 거래대금 쏠림",
         "leaders": {
           "lead": "SKAI",
-          "sub": "폴라리스AI, 솔트룩스, 브레인즈컴퍼니, 삼성에스디에스"
+          "sub": "폴라리스AI, 솔트룩스, 삼성에스디에스, 브레인즈컴퍼니"
         },
         "correlation": "[사업 팩트 매핑] SKAI는 AI 챗봇 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "AI 챗봇 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -188,51 +132,51 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_48",
-      "theme_name": "영화",
-      "full_theme_name": "영화",
-      "change_rate": "+0.92%",
-      "composite_score": 47,
-      "total_stocks_count": 12,
-      "leader_stock": "바른손이앤에이",
-      "leader_ratio": 8.01,
-      "sub_leader_stock": "덱스터",
+      "theme_id": "radar_517",
+      "theme_name": "전후 재건",
+      "full_theme_name": "전후 재건(우크라/중동 전쟁 등)",
+      "change_rate": "+0.56%",
+      "composite_score": 66,
+      "total_stocks_count": 40,
+      "leader_stock": "폴라리스AI",
+      "leader_ratio": 17.78,
+      "sub_leader_stock": "삼성E&A",
       "other_stocks": [
-        "졸스",
-        "CJ ENM",
-        "CJ CGV"
+        "스페코",
+        "대모",
+        "전진건설로봇"
       ],
       "sub_stocks_top3": [
         {
-          "name": "덱스터",
-          "rate": "+7.2%"
+          "name": "삼성E&A",
+          "rate": "+17.6%"
         },
         {
-          "name": "졸스",
-          "rate": "+3.1%"
+          "name": "스페코",
+          "rate": "+15.3%"
         },
         {
-          "name": "CJ ENM",
-          "rate": "+1.0%"
+          "name": "대모",
+          "rate": "+5.7%"
         }
       ],
-      "past_trigger_reason": "바른손이앤에이, 영화 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "영화 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 75,
-      "is_real_leading": false,
+      "past_trigger_reason": "폴라리스AI, 전후 재건 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "전후 재건 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 8579,
+      "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "바른손이앤에이, 영화 시장 거래대금 쏠림",
-      "today_rising_fact": "바른손이앤에이, 영화 시장 거래대금 쏠림",
+      "trigger_summary": "폴라리스AI, 전후 재건 시장 거래대금 쏠림",
+      "today_rising_fact": "폴라리스AI, 전후 재건 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "바른손이앤에이, 영화 시장 거래대금 쏠림",
+        "material": "폴라리스AI, 전후 재건 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "바른손이앤에이",
-          "sub": "덱스터, 졸스, CJ ENM, CJ CGV"
+          "lead": "폴라리스AI",
+          "sub": "삼성E&A, 스페코, 대모, 전진건설로봇"
         },
-        "correlation": "[사업 팩트 매핑] 바른손이앤에이는 영화 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "영화 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 폴라리스AI는 전후 재건 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "전후 재건 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
@@ -244,51 +188,107 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_86",
-      "theme_name": "주류업",
-      "full_theme_name": "주류업(주정, 에탄올 등)",
-      "change_rate": "+0.33%",
-      "composite_score": 43,
-      "total_stocks_count": 13,
-      "leader_stock": "MH에탄올",
-      "leader_ratio": 11.39,
-      "sub_leader_stock": "무학",
+      "theme_id": "radar_276",
+      "theme_name": "클라우드 컴퓨팅",
+      "full_theme_name": "클라우드 컴퓨팅",
+      "change_rate": "-0.04%",
+      "composite_score": 61,
+      "total_stocks_count": 36,
+      "leader_stock": "엘리스",
+      "leader_ratio": 18.02,
+      "sub_leader_stock": "솔트룩스",
       "other_stocks": [
-        "하이트진로홀딩스",
-        "나라셀라",
-        "하이트진로"
+        "삼성에스디에스",
+        "파이오링크",
+        "안랩"
       ],
       "sub_stocks_top3": [
         {
-          "name": "무학",
-          "rate": "+1.1%"
+          "name": "솔트룩스",
+          "rate": "+11.1%"
         },
         {
-          "name": "하이트진로홀딩스",
-          "rate": "+0.3%"
+          "name": "삼성에스디에스",
+          "rate": "+3.7%"
         },
         {
-          "name": "나라셀라",
-          "rate": "-0.1%"
+          "name": "파이오링크",
+          "rate": "+3.2%"
         }
       ],
-      "past_trigger_reason": "MH에탄올, 주류업 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "주류업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 26,
+      "past_trigger_reason": "엘리스, 클라우드 컴퓨팅 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "클라우드 컴퓨팅 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 10729,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "엘리스, 클라우드 컴퓨팅 시장 거래대금 쏠림",
+      "today_rising_fact": "엘리스, 클라우드 컴퓨팅 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "엘리스, 클라우드 컴퓨팅 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "엘리스",
+          "sub": "솔트룩스, 삼성에스디에스, 파이오링크, 안랩"
+        },
+        "correlation": "[사업 팩트 매핑] 엘리스는 클라우드 컴퓨팅 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "클라우드 컴퓨팅 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_284",
+      "theme_name": "기업인수목적회사",
+      "full_theme_name": "기업인수목적회사(SPAC)",
+      "change_rate": "-0.07%",
+      "composite_score": 60,
+      "total_stocks_count": 69,
+      "leader_stock": "한화플러스제5호스팩",
+      "leader_ratio": 2.04,
+      "sub_leader_stock": "메리츠제1호스팩",
+      "other_stocks": [
+        "KB제33호스팩",
+        "KB제32호스팩",
+        "삼성스팩12호"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "메리츠제1호스팩",
+          "rate": "+0.7%"
+        },
+        {
+          "name": "KB제33호스팩",
+          "rate": "+0.7%"
+        },
+        {
+          "name": "KB제32호스팩",
+          "rate": "+0.5%"
+        }
+      ],
+      "past_trigger_reason": "한화플러스제5호스팩, 기업인수목적회사 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "기업인수목적회사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3,
       "is_real_leading": false,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "MH에탄올, 주류업 시장 거래대금 쏠림",
-      "today_rising_fact": "MH에탄올, 주류업 시장 거래대금 쏠림",
+      "trigger_summary": "한화플러스제5호스팩, 기업인수목적회사 시장 거래대금 쏠림",
+      "today_rising_fact": "한화플러스제5호스팩, 기업인수목적회사 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "MH에탄올, 주류업 시장 거래대금 쏠림",
+        "material": "한화플러스제5호스팩, 기업인수목적회사 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "MH에탄올",
-          "sub": "무학, 하이트진로홀딩스, 나라셀라, 하이트진로"
+          "lead": "한화플러스제5호스팩",
+          "sub": "메리츠제1호스팩, KB제33호스팩, KB제32호스팩, 삼성스팩12호"
         },
-        "correlation": "[사업 팩트 매핑] MH에탄올는 주류업 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "주류업 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 한화플러스제5호스팩는 기업인수목적회사 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "기업인수목적회사 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
