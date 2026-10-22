@@ -1,20 +1,20 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-21T17:28:00.551Z",
-  "updated_date_str": "2026. 10. 21. (수)",
+  "updated_at": "2026-10-22T08:48:37.633Z",
+  "updated_date_str": "2026. 10. 22. (목)",
   "market_health": {
     "kospi": {
       "val": "2,680.50",
-      "changeRate": "+3.29%",
-      "isUp": true,
+      "changeRate": "-3.52%",
+      "isUp": false,
       "foreigner": "+1,240억",
       "organ": "-420억"
     },
     "kosdaq": {
       "val": "875.20",
-      "changeRate": "+1.38%",
-      "isUp": true,
+      "changeRate": "-3.62%",
+      "isUp": false,
       "foreigner": "+680억",
       "organ": "+310억"
     },
@@ -26,51 +26,45 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_615",
-      "theme_name": "2026 하반기 신규상장",
-      "full_theme_name": "2026 하반기 신규상장",
-      "change_rate": "+6.88%",
-      "composite_score": 99,
-      "total_stocks_count": 23,
-      "leader_stock": "엘리스",
-      "leader_ratio": 29.92,
-      "sub_leader_stock": "레몬헬스케어",
+      "theme_id": "radar_210",
+      "theme_name": "자전거",
+      "full_theme_name": "자전거",
+      "change_rate": "+8.09%",
+      "composite_score": 97,
+      "total_stocks_count": 3,
+      "leader_stock": "빅텍",
+      "leader_ratio": 23.46,
+      "sub_leader_stock": "알톤",
       "other_stocks": [
-        "멜콘",
-        "빅웨이브로보틱스",
-        "글로벌테크놀로지"
+        "삼천리자전거"
       ],
       "sub_stocks_top3": [
         {
-          "name": "레몬헬스케어",
-          "rate": "+29.9%"
+          "name": "알톤",
+          "rate": "+2.3%"
         },
         {
-          "name": "멜콘",
-          "rate": "+27.4%"
-        },
-        {
-          "name": "빅웨이브로보틱스",
-          "rate": "+14.1%"
+          "name": "삼천리자전거",
+          "rate": "-2.5%"
         }
       ],
-      "past_trigger_reason": "엘리스, 2026 하반기 신규상장 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "2026 하반기 신규상장 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4445,
+      "past_trigger_reason": "빅텍, 자전거 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "자전거 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1062,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "엘리스, 2026 하반기 신규상장 시장 거래대금 쏠림",
-      "today_rising_fact": "엘리스, 2026 하반기 신규상장 시장 거래대금 쏠림",
+      "trigger_summary": "빅텍, 자전거 시장 거래대금 쏠림",
+      "today_rising_fact": "빅텍, 자전거 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "엘리스, 2026 하반기 신규상장 시장 거래대금 쏠림",
+        "material": "빅텍, 자전거 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "엘리스",
-          "sub": "레몬헬스케어, 멜콘, 빅웨이브로보틱스, 글로벌테크놀로지"
+          "lead": "빅텍",
+          "sub": "알톤, 삼천리자전거"
         },
-        "correlation": "[사업 팩트 매핑] 엘리스는 2026 하반기 신규상장 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "2026 하반기 신규상장 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 빅텍는 자전거 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "자전거 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
@@ -82,106 +76,50 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_536",
-      "theme_name": "HBM",
-      "full_theme_name": "HBM(고대역폭메모리)",
-      "change_rate": "+3.33%",
-      "composite_score": 89,
-      "total_stocks_count": 35,
-      "leader_stock": "켐트로스",
-      "leader_ratio": 15.14,
-      "sub_leader_stock": "제우스",
-      "other_stocks": [
-        "케이씨텍",
-        "예스티",
-        "디아이"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "제우스",
-          "rate": "+10.9%"
-        },
-        {
-          "name": "케이씨텍",
-          "rate": "+10.2%"
-        },
-        {
-          "name": "예스티",
-          "rate": "+9.0%"
-        }
-      ],
-      "past_trigger_reason": "켐트로스, HBM 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "HBM 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 90861,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "켐트로스, HBM 시장 거래대금 쏠림",
-      "today_rising_fact": "켐트로스, HBM 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "켐트로스, HBM 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "켐트로스",
-          "sub": "제우스, 케이씨텍, 예스티, 디아이"
-        },
-        "correlation": "[사업 팩트 매핑] 켐트로스는 HBM 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "HBM 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
       "theme_id": "radar_517",
       "theme_name": "전후 재건",
       "full_theme_name": "전후 재건(우크라/중동 전쟁 등)",
-      "change_rate": "+3.32%",
-      "composite_score": 89,
+      "change_rate": "+0.50%",
+      "composite_score": 65,
       "total_stocks_count": 40,
-      "leader_stock": "혜인",
-      "leader_ratio": 29.98,
-      "sub_leader_stock": "삼성E&A",
+      "leader_stock": "폴라리스AI",
+      "leader_ratio": 18.44,
+      "sub_leader_stock": "스페코",
       "other_stocks": [
-        "폴라리스AI",
-        "전진건설로봇",
-        "에스와이스틸텍"
+        "삼성E&A",
+        "에쓰씨엔지니어링",
+        "대모"
       ],
       "sub_stocks_top3": [
         {
+          "name": "스페코",
+          "rate": "+16.9%"
+        },
+        {
           "name": "삼성E&A",
-          "rate": "+9.6%"
+          "rate": "+15.9%"
         },
         {
-          "name": "폴라리스AI",
-          "rate": "+8.8%"
-        },
-        {
-          "name": "전진건설로봇",
-          "rate": "+6.8%"
+          "name": "에쓰씨엔지니어링",
+          "rate": "+4.7%"
         }
       ],
-      "past_trigger_reason": "혜인, 전후 재건 시장 거래대금 쏠림 발표 및 수급 유입",
+      "past_trigger_reason": "폴라리스AI, 전후 재건 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "전후 재건 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2586,
+      "trading_value_eok": 8204,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "혜인, 전후 재건 시장 거래대금 쏠림",
-      "today_rising_fact": "혜인, 전후 재건 시장 거래대금 쏠림",
+      "ma5_recovered": false,
+      "trigger_summary": "폴라리스AI, 전후 재건 시장 거래대금 쏠림",
+      "today_rising_fact": "폴라리스AI, 전후 재건 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "혜인, 전후 재건 시장 거래대금 쏠림",
+        "material": "폴라리스AI, 전후 재건 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "혜인",
-          "sub": "삼성E&A, 폴라리스AI, 전진건설로봇, 에스와이스틸텍"
+          "lead": "폴라리스AI",
+          "sub": "스페코, 삼성E&A, 에쓰씨엔지니어링, 대모"
         },
-        "correlation": "[사업 팩트 매핑] 혜인는 전후 재건 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "correlation": "[사업 팩트 매핑] 폴라리스AI는 전후 재건 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "전후 재건 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
@@ -194,51 +132,51 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_237",
-      "theme_name": "GTX",
-      "full_theme_name": "GTX(수도권 광역급행철도)",
-      "change_rate": "+3.63%",
-      "composite_score": 85,
-      "total_stocks_count": 24,
-      "leader_stock": "서한",
-      "leader_ratio": 29.9,
+      "theme_id": "radar_529",
+      "theme_name": "AI 챗봇",
+      "full_theme_name": "AI 챗봇(챗GPT 등)",
+      "change_rate": "+0.46%",
+      "composite_score": 65,
+      "total_stocks_count": 31,
+      "leader_stock": "SKAI",
+      "leader_ratio": 29.99,
       "sub_leader_stock": "폴라리스AI",
       "other_stocks": [
-        "대우건설",
-        "HL D&I",
-        "GS건설"
+        "솔트룩스",
+        "브레인즈컴퍼니",
+        "삼성에스디에스"
       ],
       "sub_stocks_top3": [
         {
           "name": "폴라리스AI",
-          "rate": "+8.8%"
+          "rate": "+18.4%"
         },
         {
-          "name": "대우건설",
-          "rate": "+4.7%"
+          "name": "솔트룩스",
+          "rate": "+6.8%"
         },
         {
-          "name": "HL D&I",
-          "rate": "+4.6%"
+          "name": "브레인즈컴퍼니",
+          "rate": "+3.6%"
         }
       ],
-      "past_trigger_reason": "서한, GTX 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "GTX 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 886,
+      "past_trigger_reason": "SKAI, AI 챗봇 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "AI 챗봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1523,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "서한, GTX 시장 거래대금 쏠림",
-      "today_rising_fact": "서한, GTX 시장 거래대금 쏠림",
+      "ma5_recovered": false,
+      "trigger_summary": "SKAI, AI 챗봇 시장 거래대금 쏠림",
+      "today_rising_fact": "SKAI, AI 챗봇 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "서한, GTX 시장 거래대금 쏠림",
+        "material": "SKAI, AI 챗봇 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "서한",
-          "sub": "폴라리스AI, 대우건설, HL D&I, GS건설"
+          "lead": "SKAI",
+          "sub": "폴라리스AI, 솔트룩스, 브레인즈컴퍼니, 삼성에스디에스"
         },
-        "correlation": "[사업 팩트 매핑] 서한는 GTX 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "GTX 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] SKAI는 AI 챗봇 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "AI 챗봇 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
@@ -250,51 +188,107 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_378",
-      "theme_name": "건설기계",
-      "full_theme_name": "건설기계",
-      "change_rate": "+3.59%",
-      "composite_score": 75,
-      "total_stocks_count": 16,
-      "leader_stock": "혜인",
-      "leader_ratio": 29.98,
-      "sub_leader_stock": "전진건설로봇",
+      "theme_id": "radar_48",
+      "theme_name": "영화",
+      "full_theme_name": "영화",
+      "change_rate": "+0.92%",
+      "composite_score": 47,
+      "total_stocks_count": 12,
+      "leader_stock": "바른손이앤에이",
+      "leader_ratio": 8.01,
+      "sub_leader_stock": "덱스터",
       "other_stocks": [
-        "HD건설기계",
-        "대모",
-        "대동금속"
+        "졸스",
+        "CJ ENM",
+        "CJ CGV"
       ],
       "sub_stocks_top3": [
         {
-          "name": "전진건설로봇",
-          "rate": "+6.8%"
+          "name": "덱스터",
+          "rate": "+7.2%"
         },
         {
-          "name": "HD건설기계",
-          "rate": "+5.0%"
+          "name": "졸스",
+          "rate": "+3.1%"
         },
         {
-          "name": "대모",
-          "rate": "+4.7%"
+          "name": "CJ ENM",
+          "rate": "+1.0%"
         }
       ],
-      "past_trigger_reason": "혜인, 건설기계 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "건설기계 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 510,
-      "is_real_leading": true,
+      "past_trigger_reason": "바른손이앤에이, 영화 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "영화 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 75,
+      "is_real_leading": false,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "혜인, 건설기계 시장 거래대금 쏠림",
-      "today_rising_fact": "혜인, 건설기계 시장 거래대금 쏠림",
+      "ma5_recovered": false,
+      "trigger_summary": "바른손이앤에이, 영화 시장 거래대금 쏠림",
+      "today_rising_fact": "바른손이앤에이, 영화 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "혜인, 건설기계 시장 거래대금 쏠림",
+        "material": "바른손이앤에이, 영화 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "혜인",
-          "sub": "전진건설로봇, HD건설기계, 대모, 대동금속"
+          "lead": "바른손이앤에이",
+          "sub": "덱스터, 졸스, CJ ENM, CJ CGV"
         },
-        "correlation": "[사업 팩트 매핑] 혜인는 건설기계 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "건설기계 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 바른손이앤에이는 영화 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "영화 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_86",
+      "theme_name": "주류업",
+      "full_theme_name": "주류업(주정, 에탄올 등)",
+      "change_rate": "+0.33%",
+      "composite_score": 43,
+      "total_stocks_count": 13,
+      "leader_stock": "MH에탄올",
+      "leader_ratio": 11.39,
+      "sub_leader_stock": "무학",
+      "other_stocks": [
+        "하이트진로홀딩스",
+        "나라셀라",
+        "하이트진로"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "무학",
+          "rate": "+1.1%"
+        },
+        {
+          "name": "하이트진로홀딩스",
+          "rate": "+0.3%"
+        },
+        {
+          "name": "나라셀라",
+          "rate": "-0.1%"
+        }
+      ],
+      "past_trigger_reason": "MH에탄올, 주류업 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "주류업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 26,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "MH에탄올, 주류업 시장 거래대금 쏠림",
+      "today_rising_fact": "MH에탄올, 주류업 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "MH에탄올, 주류업 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "MH에탄올",
+          "sub": "무학, 하이트진로홀딩스, 나라셀라, 하이트진로"
+        },
+        "correlation": "[사업 팩트 매핑] MH에탄올는 주류업 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "주류업 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
