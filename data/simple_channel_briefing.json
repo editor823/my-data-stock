@@ -1,29 +1,29 @@
 {
-  "updatedAt": "2026-10-22T17:25:56.217Z",
+  "updatedAt": "2026-10-23T08:43:18.024Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-10-08",
   "latestVideo": {
     "hasVideo": true,
-    "id": "WXP53fqx9M4",
-    "title": "주식은 노력한다고 무조건 수익을 주지 않습니다... 상반기 역대 최고의 증시. 하반기 역대 최악의 증시 흐름",
-    "published_kst": "2026-10-22 19:38:37",
-    "url": "https://www.youtube.com/watch?v=WXP53fqx9M4"
+    "id": "7NI86TZDRGA",
+    "title": "SK하이닉스 솔리다임 상장 철회 ! 하루하루 살얼음 증시 ! 유가는... / 반도체,방산,신규상장,오세훈 / 삼성전자,SK하이닉��,진양산업,빅텍,엘리스,지투지바이오,삼성E&A",
+    "published_kst": "2026-10-23 17:19:18",
+    "url": "https://www.youtube.com/watch?v=7NI86TZDRGA"
   },
   "morningVideo": {
     "hasVideo": true,
-    "id": "s1fWsoZrAvc",
-    "title": "당일 관심테마! 메타 실적발표이후 나쁘지 않은 흐름 /반도체,기판,광통신,신규상장 /삼성전자,SK하이닉스,HT로보틱스,대한광통신,삼성전기,두산테스나,심텍,엘리스,명신산업",
-    "published_kst": "2026-10-22 06:57:24",
-    "url": "https://www.youtube.com/watch?v=s1fWsoZrAvc",
+    "id": "czyV5f3WUvo",
+    "title": "당일 관심테마! AI 자본 부족 우려 공포, SK하이닉스 호재뉴스..? /반도체,기판,신규상장 /삼성전자,SK하이닉스,H엘리스,삼성전기,삼성E&A,빅텍,흥구석유",
+    "published_kst": "2026-10-23 07:08:51",
+    "url": "https://www.youtube.com/watch?v=czyV5f3WUvo",
     "themes": [
-      "메타 실적발표이후 나쁘지 않은 흐름"
+      "AI 자본 부족 우려 공포",
+      "SK하이닉스 호재뉴스..?"
     ],
     "stocks": [
       "반도체",
       "기판",
-      "광통신",
       "신규상장"
     ],
     "key_points": [

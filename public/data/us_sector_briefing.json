@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-10-22T17:26:35.244473+00:00",
-  "updated_date_str": "2026년 10월 22일 17:26",
-  "headline": "“AI에 대한 신뢰 변함 없어… 관련주 여전히 선호”",
+  "updated_at": "2026-10-23T08:43:51.730107+00:00",
+  "updated_date_str": "2026년 10월 23일 08:43",
+  "headline": "장중 4% 폭락 딛고 ‘막판 대반전’…코스피 5550선 상승 마감 [투자360]",
   "summary_3lines": [
-    "“AI에 대한 신뢰 변함 없어… 관련주 여전히 선호”",
-    "AI 투자 우려 다시 커지자 나스닥 1.4% 하락[뉴욕증시]",
-    "AI 투자 불안에 중동발 유가 충격까지…美증시 하락 출발"
+    "장중 4% 폭락 딛고 ‘막판 대반전’…코스피 5550선 상승 마감 [투자360]",
+    "외국인 1조 '팔자' 달러·원 6거래일 만에 반등…1324.6원(종합)",
+    "'전약후강' 코스피 '5550선' 강보합 마감⋯반도체株 '반등'"
   ],
   "gainers": [
     {
       "ticker": "XLP",
       "name": "필수소비재",
       "theme": "식음료/생필품",
-      "price": "89.41",
-      "ratio": 2.63,
-      "ratio_str": "+2.63%",
+      "price": "89.99",
+      "ratio": 3.31,
+      "ratio_str": "+3.31%",
       "reason": "유통 대형주 중심 약세 및 원가 상승 부담",
       "stocks": [
         {
@@ -32,8 +32,8 @@
         {
           "ticker": "KO",
           "name": "코카콜라(KO)",
-          "ratio": 2.28,
-          "ratio_str": "+2.28%"
+          "ratio": 2.87,
+          "ratio_str": "+2.87%"
         }
       ]
     },
@@ -41,51 +41,28 @@
       "ticker": "XLU",
       "name": "유틸리티",
       "theme": "전력/가스/수도",
-      "price": "42.57",
-      "ratio": 1.37,
-      "ratio_str": "+1.37%",
+      "price": "42.87",
+      "ratio": 2.07,
+      "ratio_str": "+2.07%",
       "reason": "금리 상승기에 배당주 매력 감소",
       "stocks": [
         {
           "ticker": "SO",
           "name": "서던컴퍼니(SO)",
-          "ratio": 3.05,
-          "ratio_str": "+3.05%"
+          "ratio": 3.79,
+          "ratio_str": "+3.79%"
         },
         {
           "ticker": "DUK",
           "name": "듀크에너지(DUK)",
-          "ratio": 3.09,
-          "ratio_str": "+3.09%"
+          "ratio": 3.92,
+          "ratio_str": "+3.92%"
         },
         {
           "ticker": "NEE",
           "name": "넥스트에라에너지(NEE)",
-          "ratio": 3.26,
-          "ratio_str": "+3.26%"
-        }
-      ]
-    },
-    {
-      "ticker": "XLF",
-      "name": "금융",
-      "theme": "은행/보험/증권",
-      "price": "56.55",
-      "ratio": 0.9,
-      "ratio_str": "+0.90%",
-      "reason": "국채 금리 수익률 곡선 변화 및 대출 수요 관망",
-      "stocks": [
-        {
-          "ticker": "JPM",
-          "name": "JP모건",
-          "ratio": -0.05,
-          "ratio_str": "-0.05%"
-        },
-        {
-          "ticker": "BAC",
-          "name": "뱅크오브아메리카",
-          "ratio": 0.48,
-          "ratio_str": "+0.48%"
+          "ratio": 4.62,
+          "ratio_str": "+4.62%"
         }
       ]
     },
@@ -93,22 +70,45 @@
       "ticker": "XLV",
       "name": "헬스케어",
       "theme": "제약/바이오/의료",
-      "price": "180.39",
-      "ratio": 0.81,
-      "ratio_str": "+0.81%",
+      "price": "181.30",
+      "ratio": 1.32,
+      "ratio_str": "+1.32%",
       "reason": "비만치료제 기대감과 전통 제약주 보합 혼조",
       "stocks": [
         {
           "ticker": "LLY",
           "name": "일라이릴리",
-          "ratio": 2.98,
-          "ratio_str": "+2.98%"
+          "ratio": 2.83,
+          "ratio_str": "+2.83%"
         },
         {
           "ticker": "JNJ",
           "name": "존슨앤존슨",
-          "ratio": 3.7,
-          "ratio_str": "+3.70%"
+          "ratio": 3.81,
+          "ratio_str": "+3.81%"
+        }
+      ]
+    },
+    {
+      "ticker": "XLF",
+      "name": "금융",
+      "theme": "은행/보험/증권",
+      "price": "56.65",
+      "ratio": 1.09,
+      "ratio_str": "+1.09%",
+      "reason": "국채 금리 수익률 곡선 변화 및 대출 수요 관망",
+      "stocks": [
+        {
+          "ticker": "JPM",
+          "name": "JP모건",
+          "ratio": 0.4,
+          "ratio_str": "+0.40%"
+        },
+        {
+          "ticker": "BAC",
+          "name": "뱅크오브아메리카",
+          "ratio": 0.59,
+          "ratio_str": "+0.59%"
         }
       ]
     },
@@ -116,22 +116,22 @@
       "ticker": "XLB",
       "name": "소재",
       "theme": "화학/소재/금광",
-      "price": "51.35",
-      "ratio": 0.06,
-      "ratio_str": "+0.06%",
+      "price": "51.69",
+      "ratio": 0.72,
+      "ratio_str": "+0.72%",
       "reason": "금 약세 속 금광주 견조 및 원자재 수요 방어",
       "stocks": [
         {
           "ticker": "NEM",
           "name": "뉴몬트",
-          "ratio": -4.52,
-          "ratio_str": "-4.52%"
+          "ratio": -2.62,
+          "ratio_str": "-2.62%"
         },
         {
           "ticker": "FCX",
           "name": "프리포트맥모란",
-          "ratio": -5.95,
-          "ratio_str": "-5.95%"
+          "ratio": -6.26,
+          "ratio_str": "-6.26%"
         }
       ]
     }
@@ -141,9 +141,9 @@
       "ticker": "XLK",
       "name": "정보기술",
       "theme": "반도체/소프트웨어",
-      "price": "182.51",
-      "ratio": -3.2,
-      "ratio_str": "-3.20%",
+      "price": "182.34",
+      "ratio": -3.29,
+      "ratio_str": "-3.29%",
       "reason": "AI 반도체 수요 견조하나 금리 변동성에 따른 단기 숨고르기",
       "stocks": [
         {
@@ -170,9 +170,9 @@
       "ticker": "XLC",
       "name": "커뮤니케이션",
       "theme": "미디어/엔터/빅테크",
-      "price": "107.30",
-      "ratio": -1.53,
-      "ratio_str": "-1.53%",
+      "price": "107.42",
+      "ratio": -1.42,
+      "ratio_str": "-1.42%",
       "reason": "대형 기술주 차익실현 및 스트리밍 성장 둔화 우려",
       "stocks": [
         {
@@ -184,8 +184,8 @@
         {
           "ticker": "DIS",
           "name": "디즈니",
-          "ratio": 0.74,
-          "ratio_str": "+0.74%"
+          "ratio": 1.16,
+          "ratio_str": "+1.16%"
         },
         {
           "ticker": "GOOGL",
@@ -205,16 +205,16 @@
       "ticker": "XLI",
       "name": "산업재",
       "theme": "방산/기계/운송",
-      "price": "165.91",
-      "ratio": -1.43,
-      "ratio_str": "-1.43%",
+      "price": "166.73",
+      "ratio": -0.94,
+      "ratio_str": "-0.94%",
       "reason": "전력 인프라 및 자본재 차익실현 약세",
       "stocks": [
         {
           "ticker": "PWR",
           "name": "콴타서비스",
-          "ratio": -7.8,
-          "ratio_str": "-7.80%"
+          "ratio": -8.1,
+          "ratio_str": "-8.10%"
         },
         {
           "ticker": "HUBB",
@@ -228,40 +228,40 @@
       "ticker": "XLE",
       "name": "에너지",
       "theme": "에너지/정유",
-      "price": "67.19",
-      "ratio": -1.42,
-      "ratio_str": "-1.42%",
+      "price": "67.57",
+      "ratio": -0.87,
+      "ratio_str": "-0.87%",
       "reason": "후티 반군의 사우디 공격으로 East-West 송유관 가동 중단, WTI +4.03% 급등(105.48달러, 4개월 최고)",
       "stocks": [
         {
           "ticker": "VLO",
           "name": "발레로",
-          "ratio": -3.75,
-          "ratio_str": "-3.75%"
+          "ratio": -2.4,
+          "ratio_str": "-2.40%"
         },
         {
           "ticker": "MPC",
           "name": "마라톤페트롤리엄",
-          "ratio": -2.48,
-          "ratio_str": "-2.48%"
+          "ratio": -1.86,
+          "ratio_str": "-1.86%"
         },
         {
           "ticker": "OXY",
           "name": "옥시덴털",
-          "ratio": -0.67,
-          "ratio_str": "-0.67%"
+          "ratio": -0.32,
+          "ratio_str": "-0.32%"
         },
         {
           "ticker": "CVX",
           "name": "셰브론",
-          "ratio": -0.5,
-          "ratio_str": "-0.50%"
+          "ratio": -0.04,
+          "ratio_str": "-0.04%"
         },
         {
           "ticker": "XOM",
           "name": "엑슨모빌",
-          "ratio": -0.65,
-          "ratio_str": "-0.65%"
+          "ratio": 0.08,
+          "ratio_str": "+0.08%"
         }
       ]
     },
@@ -269,9 +269,9 @@
       "ticker": "XLY",
       "name": "경기소비재",
       "theme": "소비/유통/레저",
-      "price": "115.04",
-      "ratio": -0.43,
-      "ratio_str": "-0.43%",
+      "price": "115.01",
+      "ratio": -0.45,
+      "ratio_str": "-0.45%",
       "reason": "유가 급등에 따른 소비 여력 위축 및 금리 인상 가능성",
       "stocks": [
         {
@@ -283,8 +283,8 @@
         {
           "ticker": "NKE",
           "name": "나이키",
-          "ratio": 2.31,
-          "ratio_str": "+2.31%"
+          "ratio": 2.11,
+          "ratio_str": "+2.11%"
         },
         {
           "ticker": "AMZN",
@@ -295,8 +295,8 @@
         {
           "ticker": "MCD",
           "name": "맥도날드",
-          "ratio": 1.91,
-          "ratio_str": "+1.91%"
+          "ratio": 2.59,
+          "ratio_str": "+2.59%"
         }
       ]
     }
@@ -321,29 +321,29 @@
     },
     "vix": {
       "name": "VIX 변동성",
-      "price": "19.24",
-      "ratio": "+15.35%"
+      "price": "18.94",
+      "ratio": "+-0.47%"
     },
     "night_range": "야간장 고저 변동폭 1.94% (고 1,050.30 / 저 1,030.30)로 등락 심화"
   },
   "news": [
     {
-      "title": "“AI에 대한 신뢰 변함 없어… 관련주 여전히 선호”",
-      "summary": "15조달러 자산 굴리는 블랙록 수석투자전략가 3줄 요약 ㆍ한국과 대만 주식 투자의견 비중 확대 ㆍ미국 주식 중립 하향에도 AI 관련주 선호 ㆍ이자 수익 매력에 미국 국채 비중 확대 “미국 주식 전반에 대한 투자의견은",
-      "source": "조선일보",
-      "link": "https://n.news.naver.com/mnews/article/023/0004005443"
+      "title": "장중 4% 폭락 딛고 ‘막판 대반전’…코스피 5550선 상승 마감 [투자360]",
+      "summary": "미국 반도체주 급락과 중동발 유가 상승 여파로 장중 4% 넘게 폭락했던 코스피가 극적인 반등에 성공했다. SK하이닉스가 자회사 솔리다임의 기업공개(IPO) 검토를 중단했다는 소식에 반도체 대형주를 중심으로 투자심리가",
+      "source": "헤럴드경제",
+      "link": "https://n.news.naver.com/mnews/article/016/0002713686"
     },
     {
-      "title": "AI 투자 우려 다시 커지자 나스닥 1.4% 하락[뉴욕증시]",
-      "summary": "인공지능(AI) 투자에 대한 우려가 다시 커지면서 22일(현지시간) 뉴욕증시의 3대 지수는 일제히 하락 중이다. 특히 메타와 테슬라 등 대형 기술주 약세에 나스닥 지수는 1% 넘게 떨어지고 있다. 뉴욕증시에서 오전",
-      "source": "아시아경제",
-      "link": "https://n.news.naver.com/mnews/article/277/0005832350"
+      "title": "외국인 1조 '팔자' 달러·원 6거래일 만에 반등…1324.6원(종합)",
+      "summary": "국내 증시에서 외국인 투자자들이 1조 원 가까이 순매도하고 미국 인공지능(AI) 관련 기술주 급락으로 위험회피 심리가 커지면서 달러·원 환율이 6거래일 만에 상승 전환했다. 다만 미국 국채금리 급락에 따른 달러 약세",
+      "source": "뉴스1",
+      "link": "https://n.news.naver.com/mnews/article/421/0009246979"
     },
     {
-      "title": "AI 투자 불안에 중동발 유가 충격까지…美증시 하락 출발",
-      "summary": "미국 뉴욕증시가 22일(현지시간) 일제히 하락 출발했다. 인공지능(AI) 투자에 필요한 막대한 자금과 부채 부담을 둘러싼 불안이 다시 커진 가운데 중동 긴장 고조로 국제유가까지 급등하면서 투자심리가 급격히 위축됐다.",
-      "source": "이데일리",
-      "link": "https://n.news.naver.com/mnews/article/018/0006394229"
+      "title": "'전약후강' 코스피 '5550선' 강보합 마감⋯반도체株 '반등'",
+      "summary": "코스피가 '전약후강' 흐름을 보이면서 5550선을 회복했다. 미국발 인공지능(AI) 자금조달 우려가 악재로 작용했지만 반도체주를 중심으로 기관 매수세가 유입됐다. 다만 코스닥은 2% 가까이 밀렸다. 23일 한국거래소",
+      "source": "아이뉴스24",
+      "link": "https://n.news.naver.com/mnews/article/031/0001068860"
     }
   ]
 }

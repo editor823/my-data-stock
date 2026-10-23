@@ -1,19 +1,19 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-22T17:26:39.813Z",
-  "updated_date_str": "2026. 10. 22. (목)",
+  "updated_at": "2026-10-23T08:43:55.160Z",
+  "updated_date_str": "2026. 10. 23. (금)",
   "market_health": {
     "kospi": {
       "val": "2,680.50",
-      "changeRate": "-3.52%",
-      "isUp": false,
+      "changeRate": "+0.30%",
+      "isUp": true,
       "foreigner": "+1,240억",
       "organ": "-420억"
     },
     "kosdaq": {
       "val": "875.20",
-      "changeRate": "-3.62%",
+      "changeRate": "-1.62%",
       "isUp": false,
       "foreigner": "+680억",
       "organ": "+310억"
@@ -21,274 +21,268 @@
     "totalForeigner": "+1,920억",
     "totalOrgan": "-110억",
     "estimatedTradingValue": "18조 4,500억원",
-    "moodTag": "개별 테마 순환매 우세",
-    "moodDesc": "대형주 지수 관망세 속 실적 및 재료가 강력한 중소형 주도 테마로 자금 급속 쏠림"
+    "moodTag": "코스닥 개별주 활황 장세",
+    "moodDesc": "코스피 지수는 횡보하는 반면 코스닥 기술성장주와 바이오/장비 테마군으로 거래 활발"
   },
   "top_themes": [
     {
-      "theme_id": "radar_210",
-      "theme_name": "자전거",
-      "full_theme_name": "자전거",
-      "change_rate": "+8.42%",
-      "composite_score": 99,
-      "total_stocks_count": 3,
-      "leader_stock": "빅텍",
-      "leader_ratio": 21.68,
-      "sub_leader_stock": "알톤",
-      "other_stocks": [
-        "삼천리자전거"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "알톤",
-          "rate": "+5.0%"
-        },
-        {
-          "name": "삼천리자전거",
-          "rate": "-1.5%"
-        }
-      ],
-      "past_trigger_reason": "빅텍, 자전거 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "자전거 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1181,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "빅텍, 자전거 시장 거래대금 쏠림",
-      "today_rising_fact": "빅텍, 자전거 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "빅텍, 자전거 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "빅텍",
-          "sub": "알톤, 삼천리자전거"
-        },
-        "correlation": "[사업 팩트 매핑] 빅텍는 자전거 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "자전거 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_529",
-      "theme_name": "AI 챗봇",
-      "full_theme_name": "AI 챗봇(챗GPT 등)",
-      "change_rate": "+0.86%",
-      "composite_score": 68,
-      "total_stocks_count": 31,
-      "leader_stock": "SKAI",
-      "leader_ratio": 29.99,
-      "sub_leader_stock": "폴라리스AI",
-      "other_stocks": [
-        "솔트룩스",
-        "삼성에스디에스",
-        "브레인즈컴퍼니"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "폴라리스AI",
-          "rate": "+17.8%"
-        },
-        {
-          "name": "솔트룩스",
-          "rate": "+11.1%"
-        },
-        {
-          "name": "삼성에스디에스",
-          "rate": "+3.7%"
-        }
-      ],
-      "past_trigger_reason": "SKAI, AI 챗봇 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "AI 챗봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1616,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "SKAI, AI 챗봇 시장 거래대금 쏠림",
-      "today_rising_fact": "SKAI, AI 챗봇 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "SKAI, AI 챗봇 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "SKAI",
-          "sub": "폴라리스AI, 솔트룩스, 삼성에스디에스, 브레인즈컴퍼니"
-        },
-        "correlation": "[사업 팩트 매핑] SKAI는 AI 챗봇 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "AI 챗봇 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_517",
-      "theme_name": "전후 재건",
-      "full_theme_name": "전후 재건(우크라/중동 전쟁 등)",
-      "change_rate": "+0.56%",
-      "composite_score": 66,
-      "total_stocks_count": 40,
-      "leader_stock": "폴라리스AI",
-      "leader_ratio": 17.78,
-      "sub_leader_stock": "삼성E&A",
-      "other_stocks": [
-        "스페코",
-        "대모",
-        "전진건설로봇"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "삼성E&A",
-          "rate": "+17.6%"
-        },
-        {
-          "name": "스페코",
-          "rate": "+15.3%"
-        },
-        {
-          "name": "대모",
-          "rate": "+5.7%"
-        }
-      ],
-      "past_trigger_reason": "폴라리스AI, 전후 재건 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "전후 재건 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 8579,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "폴라리스AI, 전후 재건 시장 거래대금 쏠림",
-      "today_rising_fact": "폴라리스AI, 전후 재건 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "폴라리스AI, 전후 재건 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "폴라리스AI",
-          "sub": "삼성E&A, 스페코, 대모, 전진건설로봇"
-        },
-        "correlation": "[사업 팩트 매핑] 폴라리스AI는 전후 재건 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "전후 재건 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_276",
-      "theme_name": "클라우드 컴퓨팅",
-      "full_theme_name": "클라우드 컴퓨팅",
-      "change_rate": "-0.04%",
+      "theme_id": "radar_206",
+      "theme_name": "농업",
+      "full_theme_name": "농업",
+      "change_rate": "+0.93%",
       "composite_score": 61,
-      "total_stocks_count": 36,
-      "leader_stock": "엘리스",
-      "leader_ratio": 18.02,
-      "sub_leader_stock": "솔트룩스",
+      "total_stocks_count": 23,
+      "leader_stock": "포메탈",
+      "leader_ratio": 13.91,
+      "sub_leader_stock": "아시아종묘",
       "other_stocks": [
-        "삼성에스디에스",
-        "파이오링크",
-        "안랩"
+        "인바이오",
+        "아세아텍",
+        "우듬지팜"
       ],
       "sub_stocks_top3": [
         {
-          "name": "솔트룩스",
-          "rate": "+11.1%"
+          "name": "아시아종묘",
+          "rate": "+9.5%"
         },
         {
-          "name": "삼성에스디에스",
-          "rate": "+3.7%"
+          "name": "인바이오",
+          "rate": "+7.6%"
         },
         {
-          "name": "파이오링크",
-          "rate": "+3.2%"
+          "name": "아세아텍",
+          "rate": "+3.8%"
         }
       ],
-      "past_trigger_reason": "엘리스, 클라우드 컴퓨팅 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "클라우드 컴퓨팅 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 10729,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "엘리스, 클라우드 컴퓨팅 시장 거래대금 쏠림",
-      "today_rising_fact": "엘리스, 클라우드 컴퓨팅 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "엘리스, 클라우드 컴퓨팅 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "엘리스",
-          "sub": "솔트룩스, 삼성에스디에스, 파이오링크, 안랩"
-        },
-        "correlation": "[사업 팩트 매핑] 엘리스는 클라우드 컴퓨팅 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "클라우드 컴퓨팅 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_284",
-      "theme_name": "기업인수목적회사",
-      "full_theme_name": "기업인수목적회사(SPAC)",
-      "change_rate": "-0.07%",
-      "composite_score": 60,
-      "total_stocks_count": 69,
-      "leader_stock": "한화플러스제5호스팩",
-      "leader_ratio": 2.04,
-      "sub_leader_stock": "메리츠제1호스팩",
-      "other_stocks": [
-        "KB제33호스팩",
-        "KB제32호스팩",
-        "삼성스팩12호"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "메리츠제1호스팩",
-          "rate": "+0.7%"
-        },
-        {
-          "name": "KB제33호스팩",
-          "rate": "+0.7%"
-        },
-        {
-          "name": "KB제32호스팩",
-          "rate": "+0.5%"
-        }
-      ],
-      "past_trigger_reason": "한화플러스제5호스팩, 기업인수목적회사 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "기업인수목적회사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3,
+      "past_trigger_reason": "포메탈, 농업 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "농업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 27,
       "is_real_leading": false,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "한화플러스제5호스팩, 기업인수목적회사 시장 거래대금 쏠림",
-      "today_rising_fact": "한화플러스제5호스팩, 기업인수목적회사 시장 거래대금 쏠림",
+      "trigger_summary": "포메탈, 농업 시장 거래대금 쏠림",
+      "today_rising_fact": "포메탈, 농업 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "한화플러스제5호스팩, 기업인수목적회사 시장 거래대금 쏠림",
+        "material": "포메탈, 농업 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "한화플러스제5호스팩",
-          "sub": "메리츠제1호스팩, KB제33호스팩, KB제32호스팩, 삼성스팩12호"
+          "lead": "포메탈",
+          "sub": "아시아종묘, 인바이오, 아세아텍, 우듬지팜"
         },
-        "correlation": "[사업 팩트 매핑] 한화플러스제5호스팩는 기업인수목적회사 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "기업인수목적회사 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 포메탈는 농업 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "농업 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_402",
+      "theme_name": "아스콘",
+      "full_theme_name": "아스콘(아스팔트 콘크리트)",
+      "change_rate": "+2.65%",
+      "composite_score": 58,
+      "total_stocks_count": 9,
+      "leader_stock": "스페코",
+      "leader_ratio": 29.98,
+      "sub_leader_stock": "엔피케이",
+      "other_stocks": [
+        "SG",
+        "HC홈센타",
+        "유진기업"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "엔피케이",
+          "rate": "+4.1%"
+        },
+        {
+          "name": "SG",
+          "rate": "+0.4%"
+        },
+        {
+          "name": "HC홈센타",
+          "rate": "0.0%"
+        }
+      ],
+      "past_trigger_reason": "스페코, 아스콘 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "아스콘 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 164,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "스페코, 아스콘 시장 거래대금 쏠림",
+      "today_rising_fact": "스페코, 아스콘 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "스페코, 아스콘 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "스페코",
+          "sub": "엔피케이, SG, HC홈센타, 유진기업"
+        },
+        "correlation": "[사업 팩트 매핑] 스페코는 아스콘 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "아스콘 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_524",
+      "theme_name": "모듈러주택",
+      "full_theme_name": "모듈러주택",
+      "change_rate": "+0.78%",
+      "composite_score": 44,
+      "total_stocks_count": 10,
+      "leader_stock": "한신공영",
+      "leader_ratio": 4.36,
+      "sub_leader_stock": "엔알비",
+      "other_stocks": [
+        "자연과환경",
+        "코오롱글로벌",
+        "덕신이피씨"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "엔알비",
+          "rate": "+3.3%"
+        },
+        {
+          "name": "자연과환경",
+          "rate": "+3.2%"
+        },
+        {
+          "name": "코오롱글로벌",
+          "rate": "+2.1%"
+        }
+      ],
+      "past_trigger_reason": "한신공영, 모듈러주택 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "모듈러주택 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1754,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "한신공영, 모듈러주택 시장 거래대금 쏠림",
+      "today_rising_fact": "한신공영, 모듈러주택 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "한신공영, 모듈러주택 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "한신공영",
+          "sub": "엔알비, 자연과환경, 코오롱글로벌, 덕신이피씨"
+        },
+        "correlation": "[사업 팩트 매핑] 한신공영는 모듈러주택 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "모듈러주택 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_155",
+      "theme_name": "반도체 대표주",
+      "full_theme_name": "반도체 대표주(생산)",
+      "change_rate": "+1.60%",
+      "composite_score": 41,
+      "total_stocks_count": 2,
+      "leader_stock": "SK하이닉스",
+      "leader_ratio": 4.42,
+      "sub_leader_stock": "DB하이텍",
+      "other_stocks": [],
+      "sub_stocks_top3": [
+        {
+          "name": "DB하이텍",
+          "rate": "-1.2%"
+        }
+      ],
+      "past_trigger_reason": "SK하이닉스, 반도체 대표주 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "반도체 대표주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 45190,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "SK하이닉스, 반도체 대표주 시장 거래대금 쏠림",
+      "today_rising_fact": "SK하이닉스, 반도체 대표주 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "SK하이닉스, 반도체 대표주 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "SK하이닉스",
+          "sub": "DB하이텍"
+        },
+        "correlation": "[사업 팩트 매핑] SK하이닉스는 반도체 대표주 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "반도체 대표주 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_317",
+      "theme_name": "SNS",
+      "full_theme_name": "SNS(소셜네트워크서비스)",
+      "change_rate": "+0.47%",
+      "composite_score": 41,
+      "total_stocks_count": 10,
+      "leader_stock": "포니링크",
+      "leader_ratio": 5.14,
+      "sub_leader_stock": "가비아",
+      "other_stocks": [
+        "유엔젤",
+        "SOOP",
+        "NHN벅스"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "가비아",
+          "rate": "+4.7%"
+        },
+        {
+          "name": "유엔젤",
+          "rate": "+4.6%"
+        },
+        {
+          "name": "SOOP",
+          "rate": "-0.1%"
+        }
+      ],
+      "past_trigger_reason": "포니링크, SNS 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "SNS 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1162,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "포니링크, SNS 시장 거래대금 쏠림",
+      "today_rising_fact": "포니링크, SNS 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "포니링크, SNS 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "포니링크",
+          "sub": "가비아, 유엔젤, SOOP, NHN벅스"
+        },
+        "correlation": "[사업 팩트 매핑] 포니링크는 SNS 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "SNS 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
