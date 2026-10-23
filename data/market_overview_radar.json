@@ -1,7 +1,7 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-23T08:43:55.160Z",
+  "updated_at": "2026-10-23T17:20:40.073Z",
   "updated_date_str": "2026. 10. 23. (금)",
   "market_health": {
     "kospi": {
@@ -26,93 +26,37 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_206",
-      "theme_name": "농업",
-      "full_theme_name": "농업",
-      "change_rate": "+0.93%",
-      "composite_score": 61,
-      "total_stocks_count": 23,
-      "leader_stock": "포메탈",
-      "leader_ratio": 13.91,
-      "sub_leader_stock": "아시아종묘",
-      "other_stocks": [
-        "인바이오",
-        "아세아텍",
-        "우듬지팜"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "아시아종묘",
-          "rate": "+9.5%"
-        },
-        {
-          "name": "인바이오",
-          "rate": "+7.6%"
-        },
-        {
-          "name": "아세아텍",
-          "rate": "+3.8%"
-        }
-      ],
-      "past_trigger_reason": "포메탈, 농업 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "농업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 27,
-      "is_real_leading": false,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "포메탈, 농업 시장 거래대금 쏠림",
-      "today_rising_fact": "포메탈, 농업 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "포메탈, 농업 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "포메탈",
-          "sub": "아시아종묘, 인바이오, 아세아텍, 우듬지팜"
-        },
-        "correlation": "[사업 팩트 매핑] 포메탈는 농업 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "농업 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
       "theme_id": "radar_402",
       "theme_name": "아스콘",
       "full_theme_name": "아스콘(아스팔트 콘크리트)",
-      "change_rate": "+2.65%",
-      "composite_score": 58,
+      "change_rate": "+2.90%",
+      "composite_score": 60,
       "total_stocks_count": 9,
       "leader_stock": "스페코",
       "leader_ratio": 29.98,
       "sub_leader_stock": "엔피케이",
       "other_stocks": [
-        "SG",
         "HC홈센타",
-        "유진기업"
+        "SG",
+        "극동유화"
       ],
       "sub_stocks_top3": [
         {
           "name": "엔피케이",
-          "rate": "+4.1%"
-        },
-        {
-          "name": "SG",
-          "rate": "+0.4%"
+          "rate": "+3.3%"
         },
         {
           "name": "HC홈센타",
-          "rate": "0.0%"
+          "rate": "+3.0%"
+        },
+        {
+          "name": "SG",
+          "rate": "+1.7%"
         }
       ],
       "past_trigger_reason": "스페코, 아스콘 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "아스콘 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 164,
+      "trading_value_eok": 166,
       "is_real_leading": false,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -123,7 +67,7 @@
         "material": "스페코, 아스콘 시장 거래대금 쏠림",
         "leaders": {
           "lead": "스페코",
-          "sub": "엔피케이, SG, HC홈센타, 유진기업"
+          "sub": "엔피케이, HC홈센타, SG, 극동유화"
         },
         "correlation": "[사업 팩트 매핑] 스페코는 아스콘 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "아스콘 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -138,151 +82,219 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_524",
-      "theme_name": "모듈러주택",
-      "full_theme_name": "모듈러주택",
-      "change_rate": "+0.78%",
+      "theme_id": "radar_206",
+      "theme_name": "농업",
+      "full_theme_name": "농업",
+      "change_rate": "+0.25%",
+      "composite_score": 55,
+      "total_stocks_count": 23,
+      "leader_stock": "포메탈",
+      "leader_ratio": 12.39,
+      "sub_leader_stock": "아시아종묘",
+      "other_stocks": [
+        "인바이오",
+        "우듬지팜",
+        "그린생명과학"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "아시아종묘",
+          "rate": "+8.3%"
+        },
+        {
+          "name": "인바이오",
+          "rate": "+5.8%"
+        },
+        {
+          "name": "우듬지팜",
+          "rate": "+3.0%"
+        }
+      ],
+      "past_trigger_reason": "포메탈, 농업 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "농업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 39,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "포메탈, 농업 시장 거래대금 쏠림",
+      "today_rising_fact": "포메탈, 농업 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "포메탈, 농업 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "포메탈",
+          "sub": "아시아종묘, 인바이오, 우듬지팜, 그린생명과학"
+        },
+        "correlation": "[사업 팩트 매핑] 포메탈는 농업 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "농업 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_310",
+      "theme_name": "리츠",
+      "full_theme_name": "리츠(REITs)",
+      "change_rate": "+0.32%",
+      "composite_score": 54,
+      "total_stocks_count": 22,
+      "leader_stock": "코람코더원리츠",
+      "leader_ratio": 3.34,
+      "sub_leader_stock": "케이탑리츠",
+      "other_stocks": [
+        "삼성FN리츠",
+        "SK리츠",
+        "한화리츠"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "케이탑리츠",
+          "rate": "+2.8%"
+        },
+        {
+          "name": "삼성FN리츠",
+          "rate": "+2.5%"
+        },
+        {
+          "name": "SK리츠",
+          "rate": "+2.5%"
+        }
+      ],
+      "past_trigger_reason": "코람코더원리츠, 리츠 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "리츠 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 33,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "코람코더원리츠, 리츠 시장 거래대금 쏠림",
+      "today_rising_fact": "코람코더원리츠, 리츠 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "코람코더원리츠, 리츠 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "코람코더원리츠",
+          "sub": "케이탑리츠, 삼성FN리츠, SK리츠, 한화리츠"
+        },
+        "correlation": "[사업 팩트 매핑] 코람코더원리츠는 리츠 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "리츠 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_496",
+      "theme_name": "골프",
+      "full_theme_name": "골프",
+      "change_rate": "+0.33%",
+      "composite_score": 45,
+      "total_stocks_count": 14,
+      "leader_stock": "라온피플",
+      "leader_ratio": 4.34,
+      "sub_leader_stock": "브이씨",
+      "other_stocks": [
+        "크리스에프앤씨",
+        "한세엠케이",
+        "베뉴지"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "브이씨",
+          "rate": "+2.2%"
+        },
+        {
+          "name": "크리스에프앤씨",
+          "rate": "+1.4%"
+        },
+        {
+          "name": "한세엠케이",
+          "rate": "+0.8%"
+        }
+      ],
+      "past_trigger_reason": "라온피플, 골프 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "골프 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 58,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "라온피플, 골프 시장 거래대금 쏠림",
+      "today_rising_fact": "라온피플, 골프 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "라온피플, 골프 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "라온피플",
+          "sub": "브이씨, 크리스에프앤씨, 한세엠케이, 베뉴지"
+        },
+        "correlation": "[사업 팩트 매핑] 라온피플는 골프 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "골프 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_86",
+      "theme_name": "주류업",
+      "full_theme_name": "주류업(주정, 에탄올 등)",
+      "change_rate": "+0.42%",
       "composite_score": 44,
-      "total_stocks_count": 10,
-      "leader_stock": "한신공영",
-      "leader_ratio": 4.36,
-      "sub_leader_stock": "엔알비",
+      "total_stocks_count": 13,
+      "leader_stock": "MH에탄올",
+      "leader_ratio": 12.42,
+      "sub_leader_stock": "하이트진로홀딩스",
       "other_stocks": [
-        "자연과환경",
-        "코오롱글로벌",
-        "덕신이피씨"
+        "국순당",
+        "나라셀라",
+        "무학"
       ],
       "sub_stocks_top3": [
         {
-          "name": "엔알비",
-          "rate": "+3.3%"
+          "name": "하이트진로홀딩스",
+          "rate": "+1.6%"
         },
         {
-          "name": "자연과환경",
-          "rate": "+3.2%"
+          "name": "국순당",
+          "rate": "+0.7%"
         },
         {
-          "name": "코오롱글로벌",
-          "rate": "+2.1%"
+          "name": "나라셀라",
+          "rate": "+0.7%"
         }
       ],
-      "past_trigger_reason": "한신공영, 모듈러주택 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "모듈러주택 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1754,
-      "is_real_leading": true,
+      "past_trigger_reason": "MH에탄올, 주류업 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "주류업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 41,
+      "is_real_leading": false,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "한신공영, 모듈러주택 시장 거래대금 쏠림",
-      "today_rising_fact": "한신공영, 모듈러주택 시장 거래대금 쏠림",
+      "trigger_summary": "MH에탄올, 주류업 시장 거래대금 쏠림",
+      "today_rising_fact": "MH에탄올, 주류업 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "한신공영, 모듈러주택 시장 거래대금 쏠림",
+        "material": "MH에탄올, 주류업 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "한신공영",
-          "sub": "엔알비, 자연과환경, 코오롱글로벌, 덕신이피씨"
+          "lead": "MH에탄올",
+          "sub": "하이트진로홀딩스, 국순당, 나라셀라, 무학"
         },
-        "correlation": "[사업 팩트 매핑] 한신공영는 모듈러주택 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "모듈러주택 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_155",
-      "theme_name": "반도체 대표주",
-      "full_theme_name": "반도체 대표주(생산)",
-      "change_rate": "+1.60%",
-      "composite_score": 41,
-      "total_stocks_count": 2,
-      "leader_stock": "SK하이닉스",
-      "leader_ratio": 4.42,
-      "sub_leader_stock": "DB하이텍",
-      "other_stocks": [],
-      "sub_stocks_top3": [
-        {
-          "name": "DB하이텍",
-          "rate": "-1.2%"
-        }
-      ],
-      "past_trigger_reason": "SK하이닉스, 반도체 대표주 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "반도체 대표주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 45190,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "SK하이닉스, 반도체 대표주 시장 거래대금 쏠림",
-      "today_rising_fact": "SK하이닉스, 반도체 대표주 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "SK하이닉스, 반도체 대표주 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "SK하이닉스",
-          "sub": "DB하이텍"
-        },
-        "correlation": "[사업 팩트 매핑] SK하이닉스는 반도체 대표주 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "반도체 대표주 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_317",
-      "theme_name": "SNS",
-      "full_theme_name": "SNS(소셜네트워크서비스)",
-      "change_rate": "+0.47%",
-      "composite_score": 41,
-      "total_stocks_count": 10,
-      "leader_stock": "포니링크",
-      "leader_ratio": 5.14,
-      "sub_leader_stock": "가비아",
-      "other_stocks": [
-        "유엔젤",
-        "SOOP",
-        "NHN벅스"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "가비아",
-          "rate": "+4.7%"
-        },
-        {
-          "name": "유엔젤",
-          "rate": "+4.6%"
-        },
-        {
-          "name": "SOOP",
-          "rate": "-0.1%"
-        }
-      ],
-      "past_trigger_reason": "포니링크, SNS 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "SNS 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1162,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "포니링크, SNS 시장 거래대금 쏠림",
-      "today_rising_fact": "포니링크, SNS 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "포니링크, SNS 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "포니링크",
-          "sub": "가비아, 유엔젤, SOOP, NHN벅스"
-        },
-        "correlation": "[사업 팩트 매핑] 포니링크는 SNS 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "SNS 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] MH에탄올는 주류업 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "주류업 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
