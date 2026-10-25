@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-24T16:08:23.510Z",
+  "updatedAt": "2026-10-25T08:36:09.033Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-10-08",
   "latestVideo": {
     "hasVideo": true,
-    "id": "LPEdaQ0noUQ",
-    "title": "주식공부의 방향성 -  쌓아 올라가는 길",
-    "published_kst": "2026-10-24 11:56:24",
-    "url": "https://www.youtube.com/watch?v=LPEdaQ0noUQ"
+    "id": "z1WfC6YS2Vw",
+    "title": "내일 관심테마! 운명의 한주 시작! 실적,FOMC,주주환원 /반도체,소부장,신규상장,방산 /삼성전자,SK하이닉스,삼성E&A,앤���보틱스,삼성전기,빅텍,HT로보틱스,대한광통신,엘리스",
+    "published_kst": "2026-10-25 17:05:17",
+    "url": "https://www.youtube.com/watch?v=z1WfC6YS2Vw"
   },
   "morningVideo": {
     "hasVideo": true,
@@ -34,18 +34,20 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "MS2HBfn8Fn4",
-    "title": "내일 관심테마! GTC에서 젠슨황 삼성전기 언급! 오늘밤 중요한 이벤트는!? /반도체,기판,광통신,신규상장 /삼성전자,SK하이닉스,HT로보틱스,대한광통신,삼성전기,두산테스나,심텍",
-    "published_kst": "2026-10-21 20:49:15",
-    "url": "https://www.youtube.com/watch?v=MS2HBfn8Fn4",
+    "id": "z1WfC6YS2Vw",
+    "title": "내일 관심테마! 운명의 한주 시작! 실적,FOMC,주주환원 /반도체,소부장,신규상장,방산 /삼성전자,SK하이닉스,삼성E&A,앤���보틱스,삼성전기,빅텍,HT로보틱스,대한광통신,엘리스",
+    "published_kst": "2026-10-25 17:05:17",
+    "url": "https://www.youtube.com/watch?v=z1WfC6YS2Vw",
     "themes": [
-      "GTC에서 젠슨황 삼성전기 언급! 오늘밤 중요한 이벤트는!?"
+      "운명의 한주 시작! 실적",
+      "FOMC",
+      "주주환원"
     ],
     "stocks": [
       "반도체",
-      "기판",
-      "광통신",
-      "신규상장"
+      "소부장",
+      "신규상장",
+      "방산"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(와이씨, 비에이치아이 등) 수급 주체 매매 분석",
