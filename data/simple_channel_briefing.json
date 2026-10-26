@@ -1,30 +1,30 @@
 {
-  "updatedAt": "2026-10-25T16:38:24.706Z",
+  "updatedAt": "2026-10-26T09:12:30.059Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-10-08",
   "latestVideo": {
     "hasVideo": true,
-    "id": "z1WfC6YS2Vw",
-    "title": "내일 관심테마! 운명의 한주 시작! 실적,FOMC,주주환원 /반도체,소부장,신규상장,방산 /삼성전자,SK하이닉스,삼성E&A,앤���보틱스,삼성전기,빅텍,HT로보틱스,대한광통신,엘리스",
-    "published_kst": "2026-10-25 17:05:17",
-    "url": "https://www.youtube.com/watch?v=z1WfC6YS2Vw"
+    "id": "5kI54ADKnxw",
+    "title": "당일 관심테마! 골드만삭스 코스피 목표가 25%하향 /반도체,소부장,신규상장,방산 /삼성전자,SK하이닉스,삼성E&A,앤로��틱스,삼성전기,빅텍,HT로보틱스,대한광통신,엘리스",
+    "published_kst": "2026-10-26 07:02:56",
+    "url": "https://www.youtube.com/watch?v=5kI54ADKnxw"
   },
   "morningVideo": {
     "hasVideo": true,
-    "id": "czyV5f3WUvo",
-    "title": "당일 관심테마! AI 자본 부족 우려 공포, SK하이닉스 호재뉴스..? /반도체,기판,신규상장 /삼성전자,SK하이닉스,H엘리스,삼성전기,삼성E&A,빅텍,흥구석유",
-    "published_kst": "2026-10-23 07:08:51",
-    "url": "https://www.youtube.com/watch?v=czyV5f3WUvo",
+    "id": "5kI54ADKnxw",
+    "title": "당일 관심테마! 골드만삭스 코스피 목표가 25%하향 /반도체,소부장,신규상장,방산 /삼성전자,SK하이닉스,삼성E&A,앤로��틱스,삼성전기,빅텍,HT로보틱스,대한광통신,엘리스",
+    "published_kst": "2026-10-26 07:02:56",
+    "url": "https://www.youtube.com/watch?v=5kI54ADKnxw",
     "themes": [
-      "AI 자본 부족 우려 공포",
-      "SK하이닉스 호재뉴스..?"
+      "골드만삭스 코스피 목표가 25%하향"
     ],
     "stocks": [
       "반도체",
-      "기판",
-      "신규상장"
+      "소부장",
+      "신규상장",
+      "방산"
     ],
     "key_points": [
       "반도체 & 소부장: HBM 검사장비 및 차세대 CXL 수혜주 집중 점검",
@@ -35,7 +35,7 @@
   "closingVideo": {
     "hasVideo": true,
     "id": "z1WfC6YS2Vw",
-    "title": "내일 관심테마! 운명의 한주 시작! 실적,FOMC,주주환원 /반도체,소부장,신규상장,방산 /삼성전자,SK하이닉스,삼성E&A,앤���보틱스,삼성전기,빅텍,HT로보틱스,대한광통신,엘리스",
+    "title": "내일 관심테마! 운명의 한주 시작! 실적,FOMC,주주환원 /반도체,소부장,신규상장,방산 /삼성전자,SK하이닉스,삼성E&A,앤로보틱스,삼성전기,빅텍,HT로보틱스,대한광통신,엘리스",
     "published_kst": "2026-10-25 17:05:17",
     "url": "https://www.youtube.com/watch?v=z1WfC6YS2Vw",
     "themes": [
