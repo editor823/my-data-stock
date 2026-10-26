@@ -1,7 +1,7 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-26T09:13:04.930Z",
+  "updated_at": "2026-10-26T18:46:04.009Z",
   "updated_date_str": "2026. 10. 26. (월)",
   "market_health": {
     "kospi": {
@@ -29,8 +29,8 @@
       "theme_id": "radar_543",
       "theme_name": "의료AI",
       "full_theme_name": "의료AI",
-      "change_rate": "+4.48%",
-      "composite_score": 98,
+      "change_rate": "+4.82%",
+      "composite_score": 99,
       "total_stocks_count": 29,
       "leader_stock": "루닛",
       "leader_ratio": 30,
@@ -51,12 +51,12 @@
         },
         {
           "name": "씨어스",
-          "rate": "+17.9%"
+          "rate": "+18.1%"
         }
       ],
       "past_trigger_reason": "루닛, 의료AI 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "의료AI 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1683,
+      "trading_value_eok": 1712,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -82,67 +82,11 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_615",
-      "theme_name": "2026 하반기 신규상장",
-      "full_theme_name": "2026 하반기 신규상장",
-      "change_rate": "+2.04%",
-      "composite_score": 72,
-      "total_stocks_count": 25,
-      "leader_stock": "빅웨이브로보틱스",
-      "leader_ratio": 29.82,
-      "sub_leader_stock": "브릴스",
-      "other_stocks": [
-        "해치텍",
-        "레몬헬스케어",
-        "인제니아테라퓨틱스(Reg.S)"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "브릴스",
-          "rate": "+21.9%"
-        },
-        {
-          "name": "해치텍",
-          "rate": "+13.2%"
-        },
-        {
-          "name": "레몬헬스케어",
-          "rate": "+11.8%"
-        }
-      ],
-      "past_trigger_reason": "빅웨이브로보틱스, 2026 하반기 신규상장 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "2026 하반기 신규상장 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 5069,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "빅웨이브로보틱스, 2026 하반기 신규상장 시장 거래대금 쏠림",
-      "today_rising_fact": "빅웨이브로보틱스, 2026 하반기 신규상장 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "빅웨이브로보틱스, 2026 하반기 신규상장 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "빅웨이브로보틱스",
-          "sub": "브릴스, 해치텍, 레몬헬스케어, 인제니아테라퓨틱스(Reg.S)"
-        },
-        "correlation": "[사업 팩트 매핑] 빅웨이브로보틱스는 2026 하반기 신규상장 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "2026 하반기 신규상장 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
       "theme_id": "radar_505",
       "theme_name": "로봇",
       "full_theme_name": "로봇(산업용/협동로봇 등)",
-      "change_rate": "+1.35%",
-      "composite_score": 72,
+      "change_rate": "+1.51%",
+      "composite_score": 74,
       "total_stocks_count": 76,
       "leader_stock": "아이씨에이치",
       "leader_ratio": 29.98,
@@ -159,16 +103,16 @@
         },
         {
           "name": "브릴스",
-          "rate": "+21.9%"
+          "rate": "+23.6%"
         },
         {
           "name": "한국피아이엠",
-          "rate": "+15.9%"
+          "rate": "+16.2%"
         }
       ],
       "past_trigger_reason": "아이씨에이치, 로봇 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4041,
+      "trading_value_eok": 4283,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
@@ -194,11 +138,67 @@
       "timeline": []
     },
     {
+      "theme_id": "radar_615",
+      "theme_name": "2026 하반기 신규상장",
+      "full_theme_name": "2026 하반기 신규상장",
+      "change_rate": "+2.12%",
+      "composite_score": 73,
+      "total_stocks_count": 25,
+      "leader_stock": "빅웨이브로보틱스",
+      "leader_ratio": 29.82,
+      "sub_leader_stock": "브릴스",
+      "other_stocks": [
+        "해치텍",
+        "레몬헬스케어",
+        "인제니아테라퓨틱스(Reg.S)"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "브릴스",
+          "rate": "+23.6%"
+        },
+        {
+          "name": "해치텍",
+          "rate": "+16.9%"
+        },
+        {
+          "name": "레몬헬스케어",
+          "rate": "+11.8%"
+        }
+      ],
+      "past_trigger_reason": "빅웨이브로보틱스, 2026 하반기 신규상장 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "2026 하반기 신규상장 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 5176,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "빅웨이브로보틱스, 2026 하반기 신규상장 시장 거래대금 쏠림",
+      "today_rising_fact": "빅웨이브로보틱스, 2026 하반기 신규상장 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "빅웨이브로보틱스, 2026 하반기 신규상장 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "빅웨이브로보틱스",
+          "sub": "브릴스, 해치텍, 레몬헬스케어, 인제니아테라퓨틱스(Reg.S)"
+        },
+        "correlation": "[사업 팩트 매핑] 빅웨이브로보틱스는 2026 하반기 신규상장 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "2026 하반기 신규상장 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
       "theme_id": "radar_587",
       "theme_name": "피지컬 AI/휴머노이드 로봇",
       "full_theme_name": "피지컬 AI/휴머노이드 로봇",
-      "change_rate": "+1.09%",
-      "composite_score": 70,
+      "change_rate": "+1.32%",
+      "composite_score": 72,
       "total_stocks_count": 46,
       "leader_stock": "빅웨이브로보틱스",
       "leader_ratio": 29.82,
@@ -211,20 +211,20 @@
       "sub_stocks_top3": [
         {
           "name": "유니테크노",
-          "rate": "+19.2%"
+          "rate": "+17.8%"
         },
         {
           "name": "한국피아이엠",
-          "rate": "+15.9%"
+          "rate": "+16.2%"
         },
         {
           "name": "로보티즈",
-          "rate": "+10.9%"
+          "rate": "+11.8%"
         }
       ],
       "past_trigger_reason": "빅웨이브로보틱스, 피지컬 AI/휴머노이드 로봇 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "피지컬 AI/휴머노이드 로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3614,
+      "trading_value_eok": 3681,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
@@ -253,12 +253,12 @@
       "theme_id": "radar_149",
       "theme_name": "원격진료/비대면진료",
       "full_theme_name": "원격진료/비대면진료(U-Healthcare)",
-      "change_rate": "+1.57%",
-      "composite_score": 65,
+      "change_rate": "+2.08%",
+      "composite_score": 69,
       "total_stocks_count": 22,
-      "leader_stock": "씨어스",
-      "leader_ratio": 17.93,
-      "sub_leader_stock": "다이나믹솔루션",
+      "leader_stock": "다이나믹솔루션",
+      "leader_ratio": 20.47,
+      "sub_leader_stock": "씨어스",
       "other_stocks": [
         "레몬헬스케어",
         "토마토시스템",
@@ -266,8 +266,8 @@
       ],
       "sub_stocks_top3": [
         {
-          "name": "다이나믹솔루션",
-          "rate": "+17.9%"
+          "name": "씨어스",
+          "rate": "+18.1%"
         },
         {
           "name": "레몬헬스케어",
@@ -275,25 +275,25 @@
         },
         {
           "name": "토마토시스템",
-          "rate": "+6.2%"
+          "rate": "+9.2%"
         }
       ],
-      "past_trigger_reason": "씨어스, 원격진료/비대면진료 시장 거래대금 쏠림 발표 및 수급 유입",
+      "past_trigger_reason": "다이나믹솔루션, 원격진료/비대면진료 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "원격진료/비대면진료 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1367,
+      "trading_value_eok": 1403,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "씨어스, 원격진료/비대면진료 시장 거래대금 쏠림",
-      "today_rising_fact": "씨어스, 원격진료/비대면진료 시장 거래대금 쏠림",
+      "ma5_recovered": true,
+      "trigger_summary": "다이나믹솔루션, 원격진료/비대면진료 시장 거래대금 쏠림",
+      "today_rising_fact": "다이나믹솔루션, 원격진료/비대면진료 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "씨어스, 원격진료/비대면진료 시장 거래대금 쏠림",
+        "material": "다이나믹솔루션, 원격진료/비대면진료 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "씨어스",
-          "sub": "다이나믹솔루션, 레몬헬스케어, 토마토시스템, 나노엔텍"
+          "lead": "다이나믹솔루션",
+          "sub": "씨어스, 레몬헬스케어, 토마토시스템, 나노엔텍"
         },
-        "correlation": "[사업 팩트 매핑] 씨어스는 원격진료/비대면진료 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "correlation": "[사업 팩트 매핑] 다이나믹솔루션는 원격진료/비대면진료 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "원격진료/비대면진료 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
