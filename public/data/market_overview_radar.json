@@ -1,7 +1,7 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-27T09:13:52.560Z",
+  "updated_at": "2026-10-27T18:08:41.494Z",
   "updated_date_str": "2026. 10. 27. (화)",
   "market_health": {
     "kospi": {
@@ -29,7 +29,7 @@
       "theme_id": "radar_599",
       "theme_name": "소캠",
       "full_theme_name": "소캠(SOCAMM)",
-      "change_rate": "+9.03%",
+      "change_rate": "+9.47%",
       "composite_score": 99,
       "total_stocks_count": 11,
       "leader_stock": "티에프이",
@@ -43,20 +43,20 @@
       "sub_stocks_top3": [
         {
           "name": "코리아써키트",
-          "rate": "+14.5%"
+          "rate": "+16.1%"
         },
         {
           "name": "심텍",
-          "rate": "+10.3%"
+          "rate": "+11.6%"
         },
         {
           "name": "티엘비",
-          "rate": "+9.5%"
+          "rate": "+10.4%"
         }
       ],
       "past_trigger_reason": "티에프이, 소캠 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "소캠 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 74136,
+      "trading_value_eok": 76242,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -82,70 +82,14 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_547",
-      "theme_name": "CXL",
-      "full_theme_name": "CXL(컴퓨트익스프레스링크)",
-      "change_rate": "+8.60%",
-      "composite_score": 99,
-      "total_stocks_count": 13,
-      "leader_stock": "엑시콘",
-      "leader_ratio": 21.98,
-      "sub_leader_stock": "오킨스전자",
-      "other_stocks": [
-        "네오셈",
-        "코리아써키트",
-        "티엘비"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "오킨스전자",
-          "rate": "+16.9%"
-        },
-        {
-          "name": "네오셈",
-          "rate": "+14.9%"
-        },
-        {
-          "name": "코리아써키트",
-          "rate": "+14.5%"
-        }
-      ],
-      "past_trigger_reason": "엑시콘, CXL 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "CXL 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 72300,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "엑시콘, CXL 시장 거래대금 쏠림",
-      "today_rising_fact": "엑시콘, CXL 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "엑시콘, CXL 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "엑시콘",
-          "sub": "오킨스전자, 네오셈, 코리아써키트, 티엘비"
-        },
-        "correlation": "[사업 팩트 매핑] 엑시콘는 CXL 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "CXL 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
       "theme_id": "radar_608",
       "theme_name": "반도체 기판",
       "full_theme_name": "반도체 기판(FC-BGA/PCB/MLB 등)",
-      "change_rate": "+8.26%",
+      "change_rate": "+9.38%",
       "composite_score": 99,
       "total_stocks_count": 14,
       "leader_stock": "기가비스",
-      "leader_ratio": 15.27,
+      "leader_ratio": 16.51,
       "sub_leader_stock": "코리아써키트",
       "other_stocks": [
         "네오티스",
@@ -155,20 +99,20 @@
       "sub_stocks_top3": [
         {
           "name": "코리아써키트",
-          "rate": "+14.5%"
+          "rate": "+16.1%"
         },
         {
           "name": "네오티스",
-          "rate": "+12.4%"
+          "rate": "+14.3%"
         },
         {
           "name": "인텍플러스",
-          "rate": "+11.2%"
+          "rate": "+11.8%"
         }
       ],
       "past_trigger_reason": "기가비스, 반도체 기판 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "반도체 기판 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 13597,
+      "trading_value_eok": 13962,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -194,37 +138,93 @@
       "timeline": []
     },
     {
+      "theme_id": "radar_547",
+      "theme_name": "CXL",
+      "full_theme_name": "CXL(컴퓨트익스프레스링크)",
+      "change_rate": "+9.19%",
+      "composite_score": 99,
+      "total_stocks_count": 13,
+      "leader_stock": "엑시콘",
+      "leader_ratio": 21.98,
+      "sub_leader_stock": "오킨스전자",
+      "other_stocks": [
+        "코리아써키트",
+        "네오셈",
+        "티엘비"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "오킨스전자",
+          "rate": "+16.4%"
+        },
+        {
+          "name": "코리아써키트",
+          "rate": "+16.1%"
+        },
+        {
+          "name": "네오셈",
+          "rate": "+16.0%"
+        }
+      ],
+      "past_trigger_reason": "엑시콘, CXL 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "CXL 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 74354,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "엑시콘, CXL 시장 거래대금 쏠림",
+      "today_rising_fact": "엑시콘, CXL 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "엑시콘, CXL 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "엑시콘",
+          "sub": "오킨스전자, 코리아써키트, 네오셈, 티엘비"
+        },
+        "correlation": "[사업 팩트 매핑] 엑시콘는 CXL 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "CXL 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
       "theme_id": "radar_545",
       "theme_name": "온디바이스 AI",
       "full_theme_name": "온디바이스 AI",
-      "change_rate": "+6.11%",
+      "change_rate": "+6.96%",
       "composite_score": 99,
       "total_stocks_count": 24,
       "leader_stock": "유니퀘스트",
-      "leader_ratio": 11.97,
+      "leader_ratio": 12.16,
       "sub_leader_stock": "아이언디바이스",
       "other_stocks": [
         "심텍",
-        "태성",
-        "네패스아크"
+        "네패스아크",
+        "태성"
       ],
       "sub_stocks_top3": [
         {
           "name": "아이언디바이스",
-          "rate": "+11.5%"
+          "rate": "+12.0%"
         },
         {
           "name": "심텍",
-          "rate": "+10.3%"
+          "rate": "+11.6%"
         },
         {
-          "name": "태성",
-          "rate": "+10.1%"
+          "name": "네패스아크",
+          "rate": "+11.1%"
         }
       ],
       "past_trigger_reason": "유니퀘스트, 온디바이스 AI 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "온디바이스 AI 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 51781,
+      "trading_value_eok": 53116,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -235,7 +235,7 @@
         "material": "유니퀘스트, 온디바이스 AI 시장 거래대금 쏠림",
         "leaders": {
           "lead": "유니퀘스트",
-          "sub": "아이언디바이스, 심텍, 태성, 네패스아크"
+          "sub": "아이언디바이스, 심텍, 네패스아크, 태성"
         },
         "correlation": "[사업 팩트 매핑] 유니퀘스트는 온디바이스 AI 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "온디바이스 AI 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -253,7 +253,7 @@
       "theme_id": "radar_12",
       "theme_name": "반도체 장비",
       "full_theme_name": "반도체 장비",
-      "change_rate": "+5.40%",
+      "change_rate": "+6.16%",
       "composite_score": 99,
       "total_stocks_count": 97,
       "leader_stock": "멜콘",
@@ -275,12 +275,12 @@
         },
         {
           "name": "기가비스",
-          "rate": "+15.3%"
+          "rate": "+16.5%"
         }
       ],
       "past_trigger_reason": "멜콘, 반도체 장비 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "반도체 장비 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2867,
+      "trading_value_eok": 2916,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
