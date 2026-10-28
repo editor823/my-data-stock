@@ -1,7 +1,7 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-28T09:54:32.640Z",
+  "updated_at": "2026-10-28T18:25:50.459Z",
   "updated_date_str": "2026. 10. 28. (수)",
   "market_health": {
     "kospi": {
@@ -29,12 +29,12 @@
       "theme_id": "radar_614",
       "theme_name": "S7",
       "full_theme_name": "S7(삼성전자/SK하이닉스 등)",
-      "change_rate": "+10.03%",
+      "change_rate": "+10.65%",
       "composite_score": 99,
       "total_stocks_count": 7,
-      "leader_stock": "삼성전자우",
-      "leader_ratio": 11.92,
-      "sub_leader_stock": "SK스퀘어",
+      "leader_stock": "SK스퀘어",
+      "leader_ratio": 13.04,
+      "sub_leader_stock": "삼성전자우",
       "other_stocks": [
         "SK하이닉스",
         "삼성전자",
@@ -42,34 +42,34 @@
       ],
       "sub_stocks_top3": [
         {
-          "name": "SK스퀘어",
-          "rate": "+11.6%"
+          "name": "삼성전자우",
+          "rate": "+12.6%"
         },
         {
           "name": "SK하이닉스",
-          "rate": "+11.6%"
+          "rate": "+12.4%"
         },
         {
           "name": "삼성전자",
-          "rate": "+9.7%"
+          "rate": "+10.4%"
         }
       ],
-      "past_trigger_reason": "삼성전자우, S7 시장 거래대금 쏠림 발표 및 수급 유입",
+      "past_trigger_reason": "SK스퀘어, S7 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "S7 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 130842,
+      "trading_value_eok": 133691,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "삼성전자우, S7 시장 거래대금 쏠림",
-      "today_rising_fact": "삼성전자우, S7 시장 거래대금 쏠림",
+      "trigger_summary": "SK스퀘어, S7 시장 거래대금 쏠림",
+      "today_rising_fact": "SK스퀘어, S7 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "삼성전자우, S7 시장 거래대금 쏠림",
+        "material": "SK스퀘어, S7 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "삼성전자우",
-          "sub": "SK스퀘어, SK하이닉스, 삼성전자, 삼성전기"
+          "lead": "SK스퀘어",
+          "sub": "삼성전자우, SK하이닉스, 삼성전자, 삼성전기"
         },
-        "correlation": "[사업 팩트 매핑] 삼성전자우는 S7 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "correlation": "[사업 팩트 매핑] SK스퀘어는 S7 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "S7 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
@@ -85,11 +85,11 @@
       "theme_id": "radar_155",
       "theme_name": "반도체 대표주",
       "full_theme_name": "반도체 대표주(생산)",
-      "change_rate": "+8.81%",
+      "change_rate": "+9.75%",
       "composite_score": 99,
       "total_stocks_count": 3,
       "leader_stock": "SK하이닉스",
-      "leader_ratio": 11.56,
+      "leader_ratio": 12.45,
       "sub_leader_stock": "삼성전자",
       "other_stocks": [
         "DB하이텍"
@@ -97,16 +97,16 @@
       "sub_stocks_top3": [
         {
           "name": "삼성전자",
-          "rate": "+9.7%"
+          "rate": "+10.4%"
         },
         {
           "name": "DB하이텍",
-          "rate": "+5.5%"
+          "rate": "+6.4%"
         }
       ],
       "past_trigger_reason": "SK하이닉스, 반도체 대표주 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "반도체 대표주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 99069,
+      "trading_value_eok": 101251,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -135,16 +135,16 @@
       "theme_id": "radar_599",
       "theme_name": "소캠",
       "full_theme_name": "소캠(SOCAMM)",
-      "change_rate": "+8.54%",
+      "change_rate": "+9.16%",
       "composite_score": 99,
       "total_stocks_count": 11,
       "leader_stock": "SK하이닉스",
-      "leader_ratio": 11.56,
+      "leader_ratio": 12.45,
       "sub_leader_stock": "티에프이",
       "other_stocks": [
-        "ISC",
         "티엘비",
-        "펨트론"
+        "펨트론",
+        "삼성전자"
       ],
       "sub_stocks_top3": [
         {
@@ -152,17 +152,17 @@
           "rate": "+11.3%"
         },
         {
-          "name": "ISC",
-          "rate": "+10.0%"
+          "name": "티엘비",
+          "rate": "+11.3%"
         },
         {
-          "name": "티엘비",
-          "rate": "+9.8%"
+          "name": "펨트론",
+          "rate": "+10.5%"
         }
       ],
       "past_trigger_reason": "SK하이닉스, 소캠 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "소캠 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 103448,
+      "trading_value_eok": 105719,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -173,7 +173,7 @@
         "material": "SK하이닉스, 소캠 시장 거래대금 쏠림",
         "leaders": {
           "lead": "SK하이닉스",
-          "sub": "티에프이, ISC, 티엘비, 펨트론"
+          "sub": "티에프이, 티엘비, 펨트론, 삼성전자"
         },
         "correlation": "[사업 팩트 매핑] SK하이닉스는 소캠 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "소캠 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -191,7 +191,7 @@
       "theme_id": "radar_586",
       "theme_name": "광통신",
       "full_theme_name": "광통신(광케이블/광섬유 등)",
-      "change_rate": "+8.52%",
+      "change_rate": "+9.06%",
       "composite_score": 99,
       "total_stocks_count": 15,
       "leader_stock": "빛과전자",
@@ -200,25 +200,25 @@
       "other_stocks": [
         "한국첨단소재",
         "대한광통신",
-        "RFHIC"
+        "머큐리"
       ],
       "sub_stocks_top3": [
         {
           "name": "빛샘전자",
-          "rate": "+18.2%"
+          "rate": "+20.0%"
         },
         {
           "name": "한국첨단소재",
-          "rate": "+10.6%"
+          "rate": "+13.0%"
         },
         {
           "name": "대한광통신",
-          "rate": "+9.5%"
+          "rate": "+10.2%"
         }
       ],
       "past_trigger_reason": "빛과전자, 광통신 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "광통신 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 5445,
+      "trading_value_eok": 5617,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -229,7 +229,7 @@
         "material": "빛과전자, 광통신 시장 거래대금 쏠림",
         "leaders": {
           "lead": "빛과전자",
-          "sub": "빛샘전자, 한국첨단소재, 대한광통신, RFHIC"
+          "sub": "빛샘전자, 한국첨단소재, 대한광통신, 머큐리"
         },
         "correlation": "[사업 팩트 매핑] 빛과전자는 광통신 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "광통신 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -247,34 +247,34 @@
       "theme_id": "radar_547",
       "theme_name": "CXL",
       "full_theme_name": "CXL(컴퓨트익스프레스링크)",
-      "change_rate": "+7.74%",
+      "change_rate": "+8.52%",
       "composite_score": 99,
       "total_stocks_count": 13,
       "leader_stock": "엑시콘",
-      "leader_ratio": 16.9,
+      "leader_ratio": 17.24,
       "sub_leader_stock": "SK하이닉스",
       "other_stocks": [
-        "퀄리타스반도체",
         "오킨스전자",
-        "티엘비"
+        "티엘비",
+        "퀄리타스반도체"
       ],
       "sub_stocks_top3": [
         {
           "name": "SK하이닉스",
-          "rate": "+11.6%"
-        },
-        {
-          "name": "퀄리타스반도체",
-          "rate": "+10.7%"
+          "rate": "+12.4%"
         },
         {
           "name": "오킨스전자",
-          "rate": "+10.6%"
+          "rate": "+11.5%"
+        },
+        {
+          "name": "티엘비",
+          "rate": "+11.3%"
         }
       ],
       "past_trigger_reason": "엑시콘, CXL 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "CXL 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 101748,
+      "trading_value_eok": 103981,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -285,7 +285,7 @@
         "material": "엑시콘, CXL 시장 거래대금 쏠림",
         "leaders": {
           "lead": "엑시콘",
-          "sub": "SK하이닉스, 퀄리타스반도체, 오킨스전자, 티엘비"
+          "sub": "SK하이닉스, 오킨스전자, 티엘비, 퀄리타스반도체"
         },
         "correlation": "[사업 팩트 매핑] 엑시콘는 CXL 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "CXL 후속 정책 수혜 및 2차 공급 계약 공시",

@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-28T09:53:50.180Z",
+  "updatedAt": "2026-10-28T18:25:03.069Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-10-08",
   "latestVideo": {
     "hasVideo": true,
-    "id": "h3g9f5tTy7E",
-    "title": "+6.6% 시원한 상승 코스피 ! SK하이닉스 실적발표 이후 셀온이 없다..?? 주주환원 정책 및 집나갔던 외국인 연속 매수",
-    "published_kst": "2026-10-28 18:09:28",
-    "url": "https://www.youtube.com/watch?v=h3g9f5tTy7E"
+    "id": "n7x2IvobUcs",
+    "title": "내일 관심테마! 좋은 한국 증시 흐름. 바톤은 미국증시로~ /반도체,소부장,광통신,로봇,보안 /삼성전자,SK하이닉스,삼성��기,안랩,빛과전자,원익홀딩스,SK스퀘어,디아이,로보티즈",
+    "published_kst": "2026-10-28 21:22:21",
+    "url": "https://www.youtube.com/watch?v=n7x2IvobUcs"
   },
   "morningVideo": {
     "hasVideo": true,
@@ -35,20 +35,19 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "z1WfC6YS2Vw",
-    "title": "내일 관심테마! 운명의 한주 시작! 실적,FOMC,주주환원 /반도체,소부장,신규상장,방산 /삼성전자,SK하이닉스,삼성E&A,앤로보틱스,삼성전기,빅텍,HT로보틱스,대한광통신,엘리스",
-    "published_kst": "2026-10-25 17:05:17",
-    "url": "https://www.youtube.com/watch?v=z1WfC6YS2Vw",
+    "id": "n7x2IvobUcs",
+    "title": "내일 관심테마! 좋은 한국 증시 흐름. 바톤은 미국증시로~ /반도체,소부장,광통신,로봇,보안 /삼성전자,SK하이닉스,삼성��기,안랩,빛과전자,원익홀딩스,SK스퀘어,디아이,로보티즈",
+    "published_kst": "2026-10-28 21:22:21",
+    "url": "https://www.youtube.com/watch?v=n7x2IvobUcs",
     "themes": [
-      "운명의 한주 시작! 실적",
-      "FOMC",
-      "주주환원"
+      "좋은 한국 증시 흐름. 바톤은 미국증시로~"
     ],
     "stocks": [
       "반도체",
       "소부장",
-      "신규상장",
-      "방산"
+      "광통신",
+      "로봇",
+      "보안"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(와이씨, 비에이치아이 등) 수급 주체 매매 분석",
