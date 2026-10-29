@@ -1,20 +1,20 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-28T18:25:50.459Z",
-  "updated_date_str": "2026. 10. 28. (수)",
+  "updated_at": "2026-10-29T10:16:40.392Z",
+  "updated_date_str": "2026. 10. 29. (목)",
   "market_health": {
     "kospi": {
       "val": "2,680.50",
-      "changeRate": "+6.63%",
-      "isUp": true,
+      "changeRate": "-1.24%",
+      "isUp": false,
       "foreigner": "+1,240억",
       "organ": "-420억"
     },
     "kosdaq": {
       "val": "875.20",
-      "changeRate": "+3.69%",
-      "isUp": true,
+      "changeRate": "-2.34%",
+      "isUp": false,
       "foreigner": "+680억",
       "organ": "+310억"
     },
@@ -26,216 +26,54 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_614",
-      "theme_name": "S7",
-      "full_theme_name": "S7(삼성전자/SK하이닉스 등)",
-      "change_rate": "+10.65%",
-      "composite_score": 99,
-      "total_stocks_count": 7,
-      "leader_stock": "SK스퀘어",
-      "leader_ratio": 13.04,
-      "sub_leader_stock": "삼성전자우",
-      "other_stocks": [
-        "SK하이닉스",
-        "삼성전자",
-        "삼성전기"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "삼성전자우",
-          "rate": "+12.6%"
-        },
-        {
-          "name": "SK하이닉스",
-          "rate": "+12.4%"
-        },
-        {
-          "name": "삼성전자",
-          "rate": "+10.4%"
-        }
-      ],
-      "past_trigger_reason": "SK스퀘어, S7 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "S7 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 133691,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "SK스퀘어, S7 시장 거래대금 쏠림",
-      "today_rising_fact": "SK스퀘어, S7 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "SK스퀘어, S7 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "SK스퀘어",
-          "sub": "삼성전자우, SK하이닉스, 삼성전자, 삼성전기"
-        },
-        "correlation": "[사업 팩트 매핑] SK스퀘어는 S7 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "S7 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_155",
-      "theme_name": "반도체 대표주",
-      "full_theme_name": "반도체 대표주(생산)",
-      "change_rate": "+9.75%",
-      "composite_score": 99,
-      "total_stocks_count": 3,
-      "leader_stock": "SK하이닉스",
-      "leader_ratio": 12.45,
-      "sub_leader_stock": "삼성전자",
-      "other_stocks": [
-        "DB하이텍"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "삼성전자",
-          "rate": "+10.4%"
-        },
-        {
-          "name": "DB하이텍",
-          "rate": "+6.4%"
-        }
-      ],
-      "past_trigger_reason": "SK하이닉스, 반도체 대표주 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "반도체 대표주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 101251,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "SK하이닉스, 반도체 대표주 시장 거래대금 쏠림",
-      "today_rising_fact": "SK하이닉스, 반도체 대표주 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "SK하이닉스, 반도체 대표주 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "SK하이닉스",
-          "sub": "삼성전자, DB하이텍"
-        },
-        "correlation": "[사업 팩트 매핑] SK하이닉스는 반도체 대표주 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "반도체 대표주 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_599",
-      "theme_name": "소캠",
-      "full_theme_name": "소캠(SOCAMM)",
-      "change_rate": "+9.16%",
-      "composite_score": 99,
-      "total_stocks_count": 11,
-      "leader_stock": "SK하이닉스",
-      "leader_ratio": 12.45,
-      "sub_leader_stock": "티에프이",
-      "other_stocks": [
-        "티엘비",
-        "펨트론",
-        "삼성전자"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "티에프이",
-          "rate": "+11.3%"
-        },
-        {
-          "name": "티엘비",
-          "rate": "+11.3%"
-        },
-        {
-          "name": "펨트론",
-          "rate": "+10.5%"
-        }
-      ],
-      "past_trigger_reason": "SK하이닉스, 소캠 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "소캠 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 105719,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "SK하이닉스, 소캠 시장 거래대금 쏠림",
-      "today_rising_fact": "SK하이닉스, 소캠 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "SK하이닉스, 소캠 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "SK하이닉스",
-          "sub": "티에프이, 티엘비, 펨트론, 삼성전자"
-        },
-        "correlation": "[사업 팩트 매핑] SK하이닉스는 소캠 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "소캠 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
-      },
-      "timeline": []
-    },
-    {
       "theme_id": "radar_586",
       "theme_name": "광통신",
       "full_theme_name": "광통신(광케이블/광섬유 등)",
-      "change_rate": "+9.06%",
-      "composite_score": 99,
+      "change_rate": "+2.22%",
+      "composite_score": 62,
       "total_stocks_count": 15,
-      "leader_stock": "빛과전자",
-      "leader_ratio": 29.88,
-      "sub_leader_stock": "빛샘전자",
+      "leader_stock": "서울바이오시스",
+      "leader_ratio": 30,
+      "sub_leader_stock": "머큐리",
       "other_stocks": [
-        "한국첨단소재",
-        "대한광통신",
-        "머큐리"
+        "RF머트리얼즈",
+        "빛샘전자",
+        "한국첨단소재"
       ],
       "sub_stocks_top3": [
         {
+          "name": "머큐리",
+          "rate": "+9.3%"
+        },
+        {
+          "name": "RF머트리얼즈",
+          "rate": "+8.6%"
+        },
+        {
           "name": "빛샘전자",
-          "rate": "+20.0%"
-        },
-        {
-          "name": "한국첨단소재",
-          "rate": "+13.0%"
-        },
-        {
-          "name": "대한광통신",
-          "rate": "+10.2%"
+          "rate": "+2.9%"
         }
       ],
-      "past_trigger_reason": "빛과전자, 광통신 시장 거래대금 쏠림 발표 및 수급 유입",
+      "past_trigger_reason": "서울바이오시스, 광통신 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "광통신 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 5617,
+      "trading_value_eok": 5741,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "빛과전자, 광통신 시장 거래대금 쏠림",
-      "today_rising_fact": "빛과전자, 광통신 시장 거래대금 쏠림",
+      "trigger_summary": "서울바이오시스, 광통신 시장 거래대금 쏠림",
+      "today_rising_fact": "서울바이오시스, 광통신 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "빛과전자, 광통신 시장 거래대금 쏠림",
+        "material": "서울바이오시스, 광통신 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "빛과전자",
-          "sub": "빛샘전자, 한국첨단소재, 대한광통신, 머큐리"
+          "lead": "서울바이오시스",
+          "sub": "머큐리, RF머트리얼즈, 빛샘전자, 한국첨단소재"
         },
-        "correlation": "[사업 팩트 매핑] 빛과전자는 광통신 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "correlation": "[사업 팩트 매핑] 서울바이오시스는 광통신 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "광통신 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
         "conditions": {
           "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
           "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
@@ -244,54 +82,222 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_547",
-      "theme_name": "CXL",
-      "full_theme_name": "CXL(컴퓨트익스프레스링크)",
-      "change_rate": "+8.52%",
-      "composite_score": 99,
-      "total_stocks_count": 13,
-      "leader_stock": "엑시콘",
-      "leader_ratio": 17.24,
-      "sub_leader_stock": "SK하이닉스",
+      "theme_id": "radar_390",
+      "theme_name": "마이크로 LED",
+      "full_theme_name": "마이크로 LED",
+      "change_rate": "+2.53%",
+      "composite_score": 59,
+      "total_stocks_count": 10,
+      "leader_stock": "서울반도체",
+      "leader_ratio": 29.93,
+      "sub_leader_stock": "광전자",
       "other_stocks": [
-        "오킨스전자",
-        "티엘비",
-        "퀄리타스반도체"
+        "코세스",
+        "사피엔반도체",
+        "영우디에스피"
       ],
       "sub_stocks_top3": [
         {
-          "name": "SK하이닉스",
-          "rate": "+12.4%"
+          "name": "광전자",
+          "rate": "+20.0%"
         },
         {
-          "name": "오킨스전자",
-          "rate": "+11.5%"
+          "name": "코세스",
+          "rate": "-0.8%"
         },
         {
-          "name": "티엘비",
-          "rate": "+11.3%"
+          "name": "사피엔반도체",
+          "rate": "-1.7%"
         }
       ],
-      "past_trigger_reason": "엑시콘, CXL 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "CXL 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 103981,
+      "past_trigger_reason": "서울반도체, 마이크로 LED 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "마이크로 LED 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 61575,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "엑시콘, CXL 시장 거래대금 쏠림",
-      "today_rising_fact": "엑시콘, CXL 시장 거래대금 쏠림",
+      "trigger_summary": "서울반도체, 마이크로 LED 시장 거래대금 쏠림",
+      "today_rising_fact": "서울반도체, 마이크로 LED 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "엑시콘, CXL 시장 거래대금 쏠림",
+        "material": "서울반도체, 마이크로 LED 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "엑시콘",
-          "sub": "SK하이닉스, 오킨스전자, 티엘비, 퀄리타스반도체"
+          "lead": "서울반도체",
+          "sub": "광전자, 코세스, 사피엔반도체, 영우디에스피"
         },
-        "correlation": "[사업 팩트 매핑] 엑시콘는 CXL 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "CXL 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 서울반도체는 마이크로 LED 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "마이크로 LED 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_165",
+      "theme_name": "은행",
+      "full_theme_name": "은행",
+      "change_rate": "+1.97%",
+      "composite_score": 55,
+      "total_stocks_count": 11,
+      "leader_stock": "JB금융지주",
+      "leader_ratio": 5.73,
+      "sub_leader_stock": "하나금융지주",
+      "other_stocks": [
+        "iM금융지주",
+        "우리금융지주",
+        "BNK금융지주"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "하나금융지주",
+          "rate": "+4.1%"
+        },
+        {
+          "name": "iM금융지주",
+          "rate": "+4.0%"
+        },
+        {
+          "name": "우리금융지주",
+          "rate": "+3.9%"
+        }
+      ],
+      "past_trigger_reason": "JB금융지주, 은행 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "은행 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 4748,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "JB금융지주, 은행 시장 거래대금 쏠림",
+      "today_rising_fact": "JB금융지주, 은행 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "JB금융지주, 은행 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "JB금융지주",
+          "sub": "하나금융지주, iM금융지주, 우리금융지주, BNK금융지주"
+        },
+        "correlation": "[사업 팩트 매핑] JB금융지주는 은행 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "은행 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_28",
+      "theme_name": "CCTV＆DVR",
+      "full_theme_name": "CCTV＆DVR",
+      "change_rate": "+1.87%",
+      "composite_score": 50,
+      "total_stocks_count": 8,
+      "leader_stock": "한화비전",
+      "leader_ratio": 22.14,
+      "sub_leader_stock": "앤씨앤",
+      "other_stocks": [
+        "포커스에이아이",
+        "코콤",
+        "비츠로시스"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "앤씨앤",
+          "rate": "+2.3%"
+        },
+        {
+          "name": "포커스에이아이",
+          "rate": "+0.2%"
+        },
+        {
+          "name": "코콤",
+          "rate": "-0.2%"
+        }
+      ],
+      "past_trigger_reason": "한화비전, CCTV＆DVR 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "CCTV＆DVR 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1165,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "한화비전, CCTV＆DVR 시장 거래대금 쏠림",
+      "today_rising_fact": "한화비전, CCTV＆DVR 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "한화비전, CCTV＆DVR 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "한화비전",
+          "sub": "앤씨앤, 포커스에이아이, 코콤, 비츠로시스"
+        },
+        "correlation": "[사업 팩트 매핑] 한화비전는 CCTV＆DVR 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "CCTV＆DVR 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
+        "conditions": {
+          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
+          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
+        }
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_86",
+      "theme_name": "주류업",
+      "full_theme_name": "주류업(주정, 에탄올 등)",
+      "change_rate": "+1.10%",
+      "composite_score": 50,
+      "total_stocks_count": 13,
+      "leader_stock": "한울앤제주",
+      "leader_ratio": 15.59,
+      "sub_leader_stock": "MH에탄올",
+      "other_stocks": [
+        "하이트진로홀딩스",
+        "롯데칠성",
+        "하이트진로"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "MH에탄올",
+          "rate": "+3.5%"
+        },
+        {
+          "name": "하이트진로홀딩스",
+          "rate": "+1.6%"
+        },
+        {
+          "name": "롯데칠성",
+          "rate": "+1.0%"
+        }
+      ],
+      "past_trigger_reason": "한울앤제주, 주류업 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "주류업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 84,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "한울앤제주, 주류업 시장 거래대금 쏠림",
+      "today_rising_fact": "한울앤제주, 주류업 시장 거래대금 쏠림",
+      "top_article": null,
+      "checklist": {
+        "material": "한울앤제주, 주류업 시장 거래대금 쏠림",
+        "leaders": {
+          "lead": "한울앤제주",
+          "sub": "MH에탄올, 하이트진로홀딩스, 롯데칠성, 하이트진로"
+        },
+        "correlation": "[사업 팩트 매핑] 한울앤제주는 주류업 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "주류업 후속 정책 수혜 및 2차 공급 계약 공시",
+        "expiration_date": "진행형 (1~3개월 파이프라인)",
+        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
+        "chart_phase": "바닥권 탈피 1차 상승 파동",
         "conditions": {
           "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
           "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
