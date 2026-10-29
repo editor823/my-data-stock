@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-29T10:15:54.197Z",
+  "updatedAt": "2026-10-29T18:34:43.143Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-10-08",
   "latestVideo": {
     "hasVideo": true,
-    "id": "448Rdl6mlmg",
-    "title": "오늘 외국인이 매도한 이유 / 삼성전자는 주주환원 정책을 왜 발표 안한걸까?? /  아침에 분위기는 조금 좋았지만..삼성��자에 발목 붙잡힌 증시 / 주주환원, 증여세",
-    "published_kst": "2026-10-29 16:40:59",
-    "url": "https://www.youtube.com/watch?v=448Rdl6mlmg"
+    "id": "-UcwPZk0J6A",
+    "title": "내일 관심테마! 호재가 필요한 증시!! 미국증시 방향성은..? /반도체,소부장,광통신,바이오,보안 /삼성전자,SK하이닉스,삼성전기,안랩,빛광전자,삼성SDI,원익홀딩스,한화비전",
+    "published_kst": "2026-10-29 20:35:32",
+    "url": "https://www.youtube.com/watch?v=-UcwPZk0J6A"
   },
   "morningVideo": {
     "hasVideo": true,
@@ -37,18 +37,18 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "n7x2IvobUcs",
-    "title": "내일 관심테마! 좋은 한국 증시 흐름. 바톤은 미국증시로~ /반도체,소부장,광통신,로봇,보안 /삼성전자,SK하이닉스,삼성전기,안랩,빛과전자,원익홀딩스,SK스퀘어,디아이,로보티즈",
-    "published_kst": "2026-10-28 21:22:21",
-    "url": "https://www.youtube.com/watch?v=n7x2IvobUcs",
+    "id": "-UcwPZk0J6A",
+    "title": "내일 관심테마! 호재가 필요한 증시!! 미국증시 방향성은..? /반도체,소부장,광통신,바이오,보안 /삼성전자,SK하이닉스,삼성전기,안랩,빛광전자,삼성SDI,원익홀딩스,한화비전",
+    "published_kst": "2026-10-29 20:35:32",
+    "url": "https://www.youtube.com/watch?v=-UcwPZk0J6A",
     "themes": [
-      "좋은 한국 증시 흐름. 바톤은 미국증시로~"
+      "호재가 필요한 증시!! 미국증시 방향성은..?"
     ],
     "stocks": [
       "반도체",
       "소부장",
       "광통신",
-      "로봇",
+      "바이오",
       "보안"
     ],
     "key_points": [
