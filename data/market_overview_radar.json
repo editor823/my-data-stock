@@ -1,7 +1,7 @@
 {
   "status": "000",
   "success": true,
-  "updated_at": "2026-10-30T10:18:30.163Z",
+  "updated_at": "2026-10-30T18:07:50.544Z",
   "updated_date_str": "2026. 10. 30. (금)",
   "market_health": {
     "kospi": {
@@ -29,34 +29,34 @@
       "theme_id": "radar_234",
       "theme_name": "보안주",
       "full_theme_name": "보안주(물리)",
-      "change_rate": "+8.59%",
+      "change_rate": "+7.43%",
       "composite_score": 99,
       "total_stocks_count": 21,
       "leader_stock": "인텔리빅스",
-      "leader_ratio": 243.89,
+      "leader_ratio": 223.89,
       "sub_leader_stock": "한화비전",
       "other_stocks": [
-        "이노뎁",
         "에스원",
-        "카티스"
+        "이노뎁",
+        "트루엔"
       ],
       "sub_stocks_top3": [
         {
           "name": "한화비전",
-          "rate": "+1.8%"
-        },
-        {
-          "name": "이노뎁",
-          "rate": "+1.7%"
+          "rate": "+2.2%"
         },
         {
           "name": "에스원",
           "rate": "+1.4%"
+        },
+        {
+          "name": "이노뎁",
+          "rate": "+1.2%"
         }
       ],
       "past_trigger_reason": "인텔리빅스, 보안주 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "보안주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 14054,
+      "trading_value_eok": 14477,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -67,7 +67,7 @@
         "material": "인텔리빅스, 보안주 시장 거래대금 쏠림",
         "leaders": {
           "lead": "인텔리빅스",
-          "sub": "한화비전, 이노뎁, 에스원, 카티스"
+          "sub": "한화비전, 에스원, 이노뎁, 트루엔"
         },
         "correlation": "[사업 팩트 매핑] 인텔리빅스는 보안주 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "보안주 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -85,34 +85,34 @@
       "theme_id": "radar_55",
       "theme_name": "보안주",
       "full_theme_name": "보안주(정보)",
-      "change_rate": "+1.65%",
-      "composite_score": 75,
+      "change_rate": "+0.82%",
+      "composite_score": 68,
       "total_stocks_count": 52,
       "leader_stock": "SGA솔루션즈",
       "leader_ratio": 29.98,
       "sub_leader_stock": "안랩",
       "other_stocks": [
         "라온시큐어",
-        "지니언스",
+        "이니텍",
         "파수AI"
       ],
       "sub_stocks_top3": [
         {
           "name": "안랩",
-          "rate": "+26.1%"
+          "rate": "+21.0%"
         },
         {
           "name": "라온시큐어",
-          "rate": "+17.3%"
+          "rate": "+14.9%"
         },
         {
-          "name": "지니언스",
-          "rate": "+13.2%"
+          "name": "이니텍",
+          "rate": "+11.5%"
         }
       ],
       "past_trigger_reason": "SGA솔루션즈, 보안주 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "보안주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4896,
+      "trading_value_eok": 4557,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
@@ -123,7 +123,7 @@
         "material": "SGA솔루션즈, 보안주 시장 거래대금 쏠림",
         "leaders": {
           "lead": "SGA솔루션즈",
-          "sub": "안랩, 라온시큐어, 지니언스, 파수AI"
+          "sub": "안랩, 라온시큐어, 이니텍, 파수AI"
         },
         "correlation": "[사업 팩트 매핑] SGA솔루션즈는 보안주 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "보안주 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -141,34 +141,34 @@
       "theme_id": "radar_387",
       "theme_name": "블록체인",
       "full_theme_name": "블록체인",
-      "change_rate": "+1.75%",
-      "composite_score": 67,
+      "change_rate": "+1.29%",
+      "composite_score": 64,
       "total_stocks_count": 23,
       "leader_stock": "SGA솔루션즈",
       "leader_ratio": 29.98,
       "sub_leader_stock": "라온시큐어",
       "other_stocks": [
-        "파수AI",
         "이니텍",
+        "파수AI",
         "드림시큐리티"
       ],
       "sub_stocks_top3": [
         {
           "name": "라온시큐어",
-          "rate": "+17.3%"
-        },
-        {
-          "name": "파수AI",
-          "rate": "+11.6%"
+          "rate": "+14.9%"
         },
         {
           "name": "이니텍",
-          "rate": "+11.3%"
+          "rate": "+11.5%"
+        },
+        {
+          "name": "파수AI",
+          "rate": "+10.3%"
         }
       ],
       "past_trigger_reason": "SGA솔루션즈, 블록체인 시장 거래대금 쏠림 발표 및 수급 유입",
       "future_momentum": "블록체인 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1868,
+      "trading_value_eok": 2268,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
@@ -179,7 +179,7 @@
         "material": "SGA솔루션즈, 블록체인 시장 거래대금 쏠림",
         "leaders": {
           "lead": "SGA솔루션즈",
-          "sub": "라온시큐어, 파수AI, 이니텍, 드림시큐리티"
+          "sub": "라온시큐어, 이니텍, 파수AI, 드림시큐리티"
         },
         "correlation": "[사업 팩트 매핑] SGA솔루션즈는 블록체인 원천 기술 및 핵심 공급사로서 수혜 직결",
         "future_expectation": "블록체인 후속 정책 수혜 및 2차 공급 계약 공시",
@@ -194,51 +194,51 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_566",
-      "theme_name": "딥페이크",
-      "full_theme_name": "딥페이크(deepfake)",
-      "change_rate": "+1.15%",
-      "composite_score": 52,
-      "total_stocks_count": 14,
-      "leader_stock": "라온시큐어",
-      "leader_ratio": 17.3,
-      "sub_leader_stock": "파수AI",
+      "theme_id": "radar_421",
+      "theme_name": "日제품 불매운동",
+      "full_theme_name": "日제품 불매운동(수혜)",
+      "change_rate": "+0.37%",
+      "composite_score": 53,
+      "total_stocks_count": 21,
+      "leader_stock": "좋은사람들",
+      "leader_ratio": 6.99,
+      "sub_leader_stock": "배럴",
       "other_stocks": [
-        "아이씨티케이",
-        "크라우드웍스",
-        "스톤브릿지벤처스"
+        "메디앙스",
+        "비비안",
+        "PN풍년"
       ],
       "sub_stocks_top3": [
         {
-          "name": "파수AI",
-          "rate": "+11.6%"
+          "name": "배럴",
+          "rate": "+5.8%"
         },
         {
-          "name": "아이씨티케이",
-          "rate": "+4.8%"
+          "name": "메디앙스",
+          "rate": "+2.7%"
         },
         {
-          "name": "크라우드웍스",
-          "rate": "+2.8%"
+          "name": "비비안",
+          "rate": "+2.5%"
         }
       ],
-      "past_trigger_reason": "라온시큐어, 딥페이크 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "딥페이크 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2076,
-      "is_real_leading": true,
+      "past_trigger_reason": "좋은사람들, 日제품 불매운동 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "日제품 불매운동 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 92,
+      "is_real_leading": false,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "라온시큐어, 딥페이크 시장 거래대금 쏠림",
-      "today_rising_fact": "라온시큐어, 딥페이크 시장 거래대금 쏠림",
+      "trigger_summary": "좋은사람들, 日제품 불매운동 시장 거래대금 쏠림",
+      "today_rising_fact": "좋은사람들, 日제품 불매운동 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "라온시큐어, 딥페이크 시장 거래대금 쏠림",
+        "material": "좋은사람들, 日제품 불매운동 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "라온시큐어",
-          "sub": "파수AI, 아이씨티케이, 크라우드웍스, 스톤브릿지벤처스"
+          "lead": "좋은사람들",
+          "sub": "배럴, 메디앙스, 비비안, PN풍년"
         },
-        "correlation": "[사업 팩트 매핑] 라온시큐어는 딥페이크 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "딥페이크 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] 좋은사람들는 日제품 불매운동 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "日제품 불매운동 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
@@ -250,51 +250,51 @@
       "timeline": []
     },
     {
-      "theme_id": "radar_86",
-      "theme_name": "주류업",
-      "full_theme_name": "주류업(주정, 에탄올 등)",
-      "change_rate": "+0.81%",
-      "composite_score": 47,
-      "total_stocks_count": 13,
-      "leader_stock": "한울앤제주",
-      "leader_ratio": 14.86,
-      "sub_leader_stock": "롯데칠성",
+      "theme_id": "radar_36",
+      "theme_name": "해운",
+      "full_theme_name": "해운",
+      "change_rate": "+1.61%",
+      "composite_score": 46,
+      "total_stocks_count": 6,
+      "leader_stock": "HMM",
+      "leader_ratio": 4.26,
+      "sub_leader_stock": "대한해운",
       "other_stocks": [
-        "풍국주정",
-        "하이트진로",
-        "한국알콜"
+        "팬오션",
+        "흥아해운",
+        "KSS해운"
       ],
       "sub_stocks_top3": [
         {
-          "name": "롯데칠성",
-          "rate": "+3.6%"
+          "name": "대한해운",
+          "rate": "+2.6%"
         },
         {
-          "name": "풍국주정",
-          "rate": "+3.0%"
+          "name": "팬오션",
+          "rate": "+2.1%"
         },
         {
-          "name": "하이트진로",
-          "rate": "+1.9%"
+          "name": "흥아해운",
+          "rate": "+1.6%"
         }
       ],
-      "past_trigger_reason": "한울앤제주, 주류업 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "주류업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 103,
-      "is_real_leading": false,
+      "past_trigger_reason": "HMM, 해운 시장 거래대금 쏠림 발표 및 수급 유입",
+      "future_momentum": "해운 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 730,
+      "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "한울앤제주, 주류업 시장 거래대금 쏠림",
-      "today_rising_fact": "한울앤제주, 주류업 시장 거래대금 쏠림",
+      "trigger_summary": "HMM, 해운 시장 거래대금 쏠림",
+      "today_rising_fact": "HMM, 해운 시장 거래대금 쏠림",
       "top_article": null,
       "checklist": {
-        "material": "한울앤제주, 주류업 시장 거래대금 쏠림",
+        "material": "HMM, 해운 시장 거래대금 쏠림",
         "leaders": {
-          "lead": "한울앤제주",
-          "sub": "롯데칠성, 풍국주정, 하이트진로, 한국알콜"
+          "lead": "HMM",
+          "sub": "대한해운, 팬오션, 흥아해운, KSS해운"
         },
-        "correlation": "[사업 팩트 매핑] 한울앤제주는 주류업 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "주류업 후속 정책 수혜 및 2차 공급 계약 공시",
+        "correlation": "[사업 팩트 매핑] HMM는 해운 원천 기술 및 핵심 공급사로서 수혜 직결",
+        "future_expectation": "해운 후속 정책 수혜 및 2차 공급 계약 공시",
         "expiration_date": "진행형 (1~3개월 파이프라인)",
         "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
         "chart_phase": "바닥권 탈피 1차 상승 파동",
