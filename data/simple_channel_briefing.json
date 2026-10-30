@@ -1,33 +1,32 @@
 {
-  "updatedAt": "2026-10-29T18:34:43.143Z",
+  "updatedAt": "2026-10-30T10:17:44.813Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-10-08",
   "latestVideo": {
     "hasVideo": true,
-    "id": "-UcwPZk0J6A",
-    "title": "내일 관심테마! 호재가 필요한 증시!! 미국증시 방향성은..? /반도체,소부장,광통신,바이오,보안 /삼성전자,SK하이닉스,삼성전기,안랩,빛광전자,삼성SDI,원익홀딩스,한화비전",
-    "published_kst": "2026-10-29 20:35:32",
-    "url": "https://www.youtube.com/watch?v=-UcwPZk0J6A"
+    "id": "ZbnP1jMsjCI",
+    "title": "당일 관심테마! 미장발 실적 악재 줄줄.. /반도체,소부장,광통신,바이오,보안,햇지 /삼성전자,SK하이닉스,삼성전기,안랩,���광전자,삼성SDI,원익홀딩스,한화비전,한미약품,알테오젠",
+    "published_kst": "2026-10-30 06:53:52",
+    "url": "https://www.youtube.com/watch?v=ZbnP1jMsjCI"
   },
   "morningVideo": {
     "hasVideo": true,
-    "id": "6vKNJPF9Z4U",
-    "title": "당일 관심테마! 막판 구글,MS발 악재 등장?? 조금 아쉽지만 ! /반도체,소부장,광통신,로봇,보안,신규상장 /삼성전자,SK하이닉스,삼성전기,안랩,삼성E&A,대한광통신,로보티즈",
-    "published_kst": "2026-10-29 07:02:46",
-    "url": "https://www.youtube.com/watch?v=6vKNJPF9Z4U",
+    "id": "ZbnP1jMsjCI",
+    "title": "당일 관심테마! 미장발 실적 악재 줄줄.. /반도체,소부장,광통신,바이오,보안,햇지 /삼성전자,SK하이닉스,삼성전기,안랩,���광전자,삼성SDI,원익홀딩스,한화비전,한미약품,알테오젠",
+    "published_kst": "2026-10-30 06:53:52",
+    "url": "https://www.youtube.com/watch?v=ZbnP1jMsjCI",
     "themes": [
-      "막판 구글",
-      "MS발 악재 등장?? 조금 아쉽지만 !"
+      "미장발 실적 악재 줄줄.."
     ],
     "stocks": [
       "반도체",
       "소부장",
       "광통신",
-      "로봇",
+      "바이오",
       "보안",
-      "신규상장"
+      "햇지"
     ],
     "key_points": [
       "반도체 & 소부장: HBM 검사장비 및 차세대 CXL 수혜주 집중 점검",
