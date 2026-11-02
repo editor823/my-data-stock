@@ -1123,24 +1123,222 @@ window.fetchHkReportsForStock = async function(stockName) {
 
 // [3단계] 최신 리서치 리포트 피드 (실시간 수집 + 스마트 오프라인 폴백) 위젯
 const FALLBACK_TODAY_REPORTS_FEED = [
-  { date: "2026-09-18", broker: "키움증권", target_name: "대한전선", title: "초고압 500kV HVDC 턴키 및 북미 전력 인프라 슈퍼 사이클", opinion: "Buy(유지)", target_price: "24,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EB%8C%80%ED%95%9C%EC%A0%84%EC%84%A0" },
-  { date: "2026-09-18", broker: "미래에셋증권", target_name: "선도전기", title: "북미 노후 변전소 교체와 초고압 변압기 쇼티지 수혜 본격화", opinion: "Buy(신규)", target_price: "4,500원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0" },
-  { date: "2026-09-18", broker: "삼성증권", target_name: "SK하이닉스", title: "HBM3E 12단 양산 주도권 및 1c nm DRAM 선제 양산 체제", opinion: "Buy(상향)", target_price: "280,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4" },
-  { date: "2026-09-17", broker: "신한투자증권", target_name: "가온전선", title: "미국 현지 생산법인 증설 완료… AI 데이터센터 특수 개막", opinion: "Buy(신규)", target_price: "62,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EA%B0%80%EC%98%A8%EC%A0%84%EC%84%A0" },
-  { date: "2026-09-17", broker: "하나증권", target_name: "한화시스템", title: "K-방산 수출 다변화와 우주항공 초소형 SAR 위성 양산 개막", opinion: "Buy(상향)", target_price: "28,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%ED%95%9C%ED%99%94%EC%8B%9C%EC%8A%A4%ED%85%9C" },
-  { date: "2026-09-16", broker: "한국투자증권", target_name: "한화에어로스페이스", title: "K9 자주포 및 다연장 천무 동유럽 2차 실행계약 체결 가시화", opinion: "Buy(유지)", target_price: "410,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%ED%95%9C%ED%99%94%EC%97%90%EC%96%B4%EB%A1%9C%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4" },
-  { date: "2026-09-16", broker: "NH투자증권", target_name: "두산에너빌리티", title: "체코 30조 원전 주기기 공급 확정 및 미국 SMR 뉴스케일 파워 수주", opinion: "Buy(유지)", target_price: "32,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EB%91%90%EC%82%B0%EC%97%90%EB%84%88%EB%B9%8C%EB%A6%AC%ED%8B%B0" },
-  { date: "2026-09-15", broker: "KB증권", target_name: "알테오젠", title: "피하주사(SC) 플랫폼 독점 계약 확대 및 로열티 유입 본격화", opinion: "Buy(유지)", target_price: "450,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%95%8C%ED%85%8C%EC%98%A4%EC%A0%A0" },
-  { date: "2026-09-15", broker: "메리츠증권", target_name: "현대로템", title: "루마니아 K2 전차 2조 8,000억원 기본계약 및 폴란드 추가 수주", opinion: "Buy(상향)", target_price: "68,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%ED%98%84%EB%8C%80%EB%A1%9C%ED%85%9C" },
-  { date: "2026-09-14", broker: "대신증권", target_name: "효성중공업", title: "미국 초고압 변압기 쇼티지와 유럽 시장 점유율 급상승", opinion: "Buy(상향)", target_price: "520,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%ED%9A%A8%EC%84%B1%EC%A4%91%EA%B3%B5%EC%97%85" },
-  { date: "2026-09-14", broker: "미래에셋증권", target_name: "와이제이링크", title: "美 스페이스X 스타링크 위성용 SMT 단독 공급 협의 착수", opinion: "Buy(신규)", target_price: "24,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%99%80%EC%9D%B4%EC%A0%9C%EC%9D%B4%EB%A7%81%ED%81%AC" },
-  { date: "2026-09-13", broker: "하나증권", target_name: "센서뷰", title: "초고주파 케이블 및 안테나 모듈, 스타링크 한국 서비스 수혜", opinion: "Buy(상향)", target_price: "7,800원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%84%BC%EC%84%9C%EB%B7%B0" },
-  { date: "2026-09-12", broker: "한국투자증권", target_name: "에이치브이엠", title: "스페이스X 로켓 엔진용 첨단 특수합금 직접 납품 본격화", opinion: "Buy(상향)", target_price: "35,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%97%90%EC%9D%B4%EC%B9%98%EB%B8%8C%EC%9D%B4%EC%97%A0" },
-  { date: "2026-09-11", broker: "키움증권", target_name: "레인보우로보틱스", title: "삼성전자 피지컬 AI 휴머노이드 로봇 제조라인 투입 가시화", opinion: "Buy(상향)", target_price: "210,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4" },
-  { date: "2026-09-10", broker: "신한투자증권", target_name: "알에스오토메이션", title: "글로벌 반도체 장비사향 초정밀 모션제어기 142억원 단일 공급", opinion: "Buy(신규)", target_price: "21,500원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%95%8C%EC%97%90%EC%8A%A4%EC%98%A4%ED%86%A0%EB%A9%94%EC%9D%B4%EC%85%98" },
-  { date: "2026-09-09", broker: "NH투자증권", target_name: "우진엔텍", title: "원전 해체 및 계측제어설비 정비 독점 수주와 SMR 신사업", opinion: "Buy(유지)", target_price: "36,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%9A%B0%EC%A7%84%EC%97%94%ED%85%8D" },
-  { date: "2026-09-08", broker: "대신증권", target_name: "비에이치아이", title: "글로벌 원전 르네상스 복수기(Condenser) 수주 랠리 본격화", opinion: "Buy(상향)", target_price: "18,500원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EB%B9%84%EC%97%90%EC%9D%B4%EC%B9%98%EC%95%84%EC%9D%B4" },
-  { date: "2026-09-07", broker: "삼성증권", target_name: "한미반도체", title: "TC 본더 2.5D 어드밴스드 패키징 독점 공급망 견고", opinion: "Buy(유지)", target_price: "185,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%ED%95%9C%EB%AF%B8%EB%B0%98%EB%8F%84%EC%B2%B4" }
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "효성중공업",
+    "stock_code": "298040",
+    "title": "3Q26 Review: 일시적 부진, 수주 모멘텀은 지속",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": true,
+    "report_url": "https://m.stock.naver.com/research/company/97504",
+    "read_count": "547"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "현대글로비스",
+    "stock_code": "086280",
+    "title": "증익 방향성 견조, 확실한 투자처",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": true,
+    "report_url": "https://m.stock.naver.com/research/company/97503",
+    "read_count": "547"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "현대모비스",
+    "stock_code": "012330",
+    "title": "저평가 과도, 구조적 수익성 개선 재확인",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": true,
+    "report_url": "https://m.stock.naver.com/research/company/97502",
+    "read_count": "511"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "기아",
+    "stock_code": "000270",
+    "title": "예상 대비 큰 PT/지역 믹스 악화 영향",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97501",
+    "read_count": "564"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "GS건설",
+    "stock_code": "006360",
+    "title": "실적에 대한 실망은 크지 않다",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97500",
+    "read_count": "412"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "교보증권",
+    "target_name": "씨에스윈드",
+    "stock_code": "112610",
+    "title": "3Q26 Preview: 트럼프 최대 피해주",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97499",
+    "read_count": "454"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "현대건설",
+    "stock_code": "000720",
+    "title": "[3Q26 Review] 난세의 영웅이 될까?",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97498",
+    "read_count": "315"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "교보증권",
+    "target_name": "KB금융",
+    "stock_code": "105560",
+    "title": "3Q26 Review: 높은 CET-1비율이 주는 안정감 지속 중",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97497",
+    "read_count": "484"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "현대제철",
+    "stock_code": "004020",
+    "title": "3Q26 Review: 본업은 물량 부진, 4분기 증익은 지속",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97496",
+    "read_count": "405"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "교보증권",
+    "target_name": "에이피알",
+    "stock_code": "278470",
+    "title": "그럼에도 불구하고",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97495",
+    "read_count": "577"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "에이피알",
+    "stock_code": "278470",
+    "title": "4분기부터 다시 서프라이즈 일텐데요…",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97494",
+    "read_count": "426"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "교보증권",
+    "target_name": "LG씨엔에스",
+    "stock_code": "064400",
+    "title": "내실있는 성장 구간 돌입",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": true,
+    "report_url": "https://m.stock.naver.com/research/company/97493",
+    "read_count": "585"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "교보증권",
+    "target_name": "대덕전자",
+    "stock_code": "353200",
+    "title": "고조되는 경쟁력",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97492",
+    "read_count": "657"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "교보증권",
+    "target_name": "해성디에스",
+    "stock_code": "195870",
+    "title": "패키지기판 턴어라운드 시작",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97491",
+    "read_count": "444"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "하나증권",
+    "target_name": "대덕전자",
+    "stock_code": "353200",
+    "title": "호황 속 실적 차별화 지속",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97490",
+    "read_count": "606"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "하나증권",
+    "target_name": "효성중공업",
+    "stock_code": "298040",
+    "title": "일회성 제외하면 시장 눈높이 충족",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97489",
+    "read_count": "634"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "하나증권",
+    "target_name": "키움증권",
+    "stock_code": "039490",
+    "title": "3Q26 Re - 평가손실 확대에 따른 컨센 미스",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97488",
+    "read_count": "484"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "하나증권",
+    "target_name": "기아",
+    "stock_code": "000270",
+    "title": "빛 좋은 개살구였던 3분기. 점유율은 얻고 수익성은 잃었다",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97487",
+    "read_count": "639"
+  }
 ];
 
 window.loadTodayHkReportsWidget = async function() {
@@ -1152,19 +1350,32 @@ window.loadTodayHkReportsWidget = async function() {
   container.style.paddingRight = '4px';
 
   let items = [];
+
+  // 1. 최신 실시간 리서치 피드(data/research_reports.json) 우선 동기화
   try {
-    const res = await fetch(`${BACKEND_API_BASE}/api/reports?type=today`).catch(() => null);
-    if (res && res.ok) {
-      const data = await res.json();
-      if (data && Array.isArray(data.items) && data.items.length > 0) {
-        items = data.items;
+    const sRes = await fetch('/data/research_reports.json?v=' + Date.now()).catch(() => null);
+    if (sRes && sRes.ok) {
+      const data = await sRes.json();
+      if (Array.isArray(data) && data.length > 0) {
+        items = data;
       }
     }
-  } catch (e) {
-    console.warn('[loadTodayHkReportsWidget] 네트워크 조회 지연, 내장 폴백 가동:', e);
+  } catch (e) {}
+
+  // 2. 백엔드 API 연동 시도
+  if (!items || items.length === 0) {
+    try {
+      const res = await fetch(`${BACKEND_API_BASE}/api/reports?type=today`).catch(() => null);
+      if (res && res.ok) {
+        const data = await res.json();
+        if (data && Array.isArray(data.items) && data.items.length > 0) {
+          items = data.items;
+        }
+      }
+    } catch (e) {}
   }
 
-  // 서버 응답이 없거나 비어있는 경우 스마트 오프라인 폴백 즉시 주입
+  // 3. 응답 부재 시 2026-11-02 당일 최신 리서치 폴백 적용
   if (!items || items.length === 0) {
     items = FALLBACK_TODAY_REPORTS_FEED;
   }
@@ -1278,6 +1489,30 @@ window.loadDetectiveCaseLogs = async function() {
   if (!container) return;
 
   // 로컬 스토리지 데이터 우선 로드
+  // 0. 구버전 더미 데이터 (2026-10-10 서울고속버스터미널 등) 브라우저 로컬스토리지 1회성 자동 완전 청소
+  try {
+    let rawPinned = getPinnedDossiers();
+    const cleanedPinned = rawPinned.filter(d => {
+      const name = d.name || d.theme_name || '';
+      const dt = d.pinnedAt || d.date || '';
+      return !name.includes('서울고속버스터미널') && dt !== '2026-10-10';
+    });
+    if (cleanedPinned.length !== rawPinned.length || !localStorage.getItem('stock_dossier_v3_clean')) {
+      savePinnedDossiers(cleanedPinned);
+      localStorage.setItem('stock_dossier_v3_clean', 'true');
+    }
+
+    let rawCases = getDetectiveCaseLogs();
+    const cleanedCases = rawCases.filter(c => {
+      const name = c.theme_name || '';
+      const dt = c.base_date || c.date || '';
+      return !name.includes('서울고속버스터미널') && dt !== '2026-09-18' && dt !== '2026-10-10';
+    });
+    if (cleanedCases.length !== rawCases.length) {
+      saveDetectiveCaseLogsList(cleanedCases);
+    }
+  } catch (e) {}
+
   let caseLogs = getDetectiveCaseLogs();
   let pinnedDossiers = getPinnedDossiers();
 
