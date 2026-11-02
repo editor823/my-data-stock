@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-02T04:23:13.979Z",
+  "updated_at": "2026-11-02T11:30:12.802Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "+2.82%",
+      "change_rate": "+2.24%",
       "is_up": true
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "+1.66%",
+      "change_rate": "+1.38%",
       "is_up": true
     },
     "investor_trend": {
@@ -25,47 +25,92 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_94",
-      "theme_name": "조선기자재",
-      "full_theme_name": "조선기자재",
-      "change_rate": "+7.34%",
+      "theme_id": "radar_560",
+      "theme_name": "냉각시스템",
+      "full_theme_name": "냉각시스템(액침냉각 등)",
+      "change_rate": "+5.79%",
       "composite_score": 99,
-      "total_stocks_count": 38,
-      "leader_stock": "영광",
-      "leader_ratio": 84.71,
-      "sub_leader_stock": "HD현대마린엔진",
+      "total_stocks_count": 13,
+      "leader_stock": "워트",
+      "leader_ratio": 29.92,
+      "sub_leader_stock": "3S",
       "other_stocks": [
-        "성광벤드",
-        "태광",
-        "현대힘스"
+        "한화에어로스페이스",
+        "GST",
+        "S-Oil"
       ],
       "sub_stocks_top3": [
         {
-          "name": "HD현대마린엔진",
-          "rate": "+16.5%"
+          "name": "3S",
+          "rate": "+13.5%"
         },
         {
-          "name": "성광벤드",
-          "rate": "+14.8%"
+          "name": "한화에어로스페이스",
+          "rate": "+5.9%"
         },
         {
-          "name": "태광",
-          "rate": "+13.2%"
+          "name": "GST",
+          "rate": "+5.3%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순... : ◆ 기관, 삼성전자 순매수 유지…영광·삼기에너지솔루션즈 매도 상위 기관은 오전 10시 4분 삼성전자, 한국철강(104700), SK하이닉스(000660)... 순매도에서는 영광(359410, 신규상장)과 삼...",
-      "future_momentum": "조선기자재 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 9064,
+      "past_trigger_reason": "[속보 기사] 워트, SK하이닉스와 반도체 장비 공급계약…8억5946만원 규모 : 워트(396470)가 SK하이닉스와 8억5946만원 규모의 초정밀항온항습제어장치(THC) 공급계약을 체결했다. 지난해 연결 매출액의 5.65%에 해당하는 규모다. ◆ SK하이닉스에 THC 공급…매출액 대비 ...",
+      "future_momentum": "냉각시스템 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3718,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순...",
-      "today_rising_fact": "[속보 기사] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순... : ◆ 기관, 삼성전자 순매수 유지…영광·삼기에너지솔루션즈 매도 상위 기관은 오전 10시 4분 삼성전자, 한국철강(104700), SK하이닉스(000660)... 순매도에서는 영광(359410, 신규상장)과 삼...",
+      "trigger_summary": "[특징주] 워트, SK하이닉스와 반도체 장비 공급계약…8억5946만원 규모",
+      "today_rising_fact": "[속보 기사] 워트, SK하이닉스와 반도체 장비 공급계약…8억5946만원 규모 : 워트(396470)가 SK하이닉스와 8억5946만원 규모의 초정밀항온항습제어장치(THC) 공급계약을 체결했다. 지난해 연결 매출액의 5.65%에 해당하는 규모다. ◆ SK하이닉스에 THC 공급…매출액 대비 ...",
       "top_article": {
-        "title": "[특징주] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순...",
+        "title": "[특징주] 워트, SK하이닉스와 반도체 장비 공급계약…8억5946만원 규모",
         "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=726163",
-        "published_at": "2026-11-02T04:23:13.188Z"
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=724203",
+        "published_at": "2026-11-02T11:30:10.912Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_381",
+      "theme_name": "LNG",
+      "full_theme_name": "LNG(액화천연가스)",
+      "change_rate": "+5.14%",
+      "composite_score": 96,
+      "total_stocks_count": 27,
+      "leader_stock": "디티에스",
+      "leader_ratio": 29.77,
+      "sub_leader_stock": "한화엔진",
+      "other_stocks": [
+        "일승",
+        "대한해운",
+        "삼성중공업"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "한화엔진",
+          "rate": "+9.9%"
+        },
+        {
+          "name": "일승",
+          "rate": "+9.3%"
+        },
+        {
+          "name": "대한해운",
+          "rate": "+8.4%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 상장 첫날 35% 급등한 디티에스, 이틀째 11%대 급락 : 아주경제=신동근 기자 sdk6425@ajunews.com 코스닥 상장 첫날 35% 넘게 급등했던 디티에스가 상장 두 번째 거래일인 26일 11%대 하락세를 보이고 있다. 26일 한국거래소에 따르면 이날 오후...",
+      "future_momentum": "LNG 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2818,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 상장 첫날 35% 급등한 디티에스, 이틀째 11%대 급락",
+      "today_rising_fact": "[속보 기사] 상장 첫날 35% 급등한 디티에스, 이틀째 11%대 급락 : 아주경제=신동근 기자 sdk6425@ajunews.com 코스닥 상장 첫날 35% 넘게 급등했던 디티에스가 상장 두 번째 거래일인 26일 11%대 하락세를 보이고 있다. 26일 한국거래소에 따르면 이날 오후...",
+      "top_article": {
+        "title": "[특징주] 상장 첫날 35% 급등한 디티에스, 이틀째 11%대 급락",
+        "press": "증시 속보",
+        "url": "https://www.ajunews.com/view/20261026134420927",
+        "published_at": "2026-11-02T11:30:11.218Z"
       },
       "timeline": []
     },
@@ -73,34 +118,34 @@
       "theme_id": "radar_30",
       "theme_name": "조선",
       "full_theme_name": "조선",
-      "change_rate": "+7.03%",
+      "change_rate": "+6.84%",
       "composite_score": 93,
       "total_stocks_count": 6,
       "leader_stock": "한화오션",
-      "leader_ratio": 10.6,
-      "sub_leader_stock": "HD한국조선해양",
+      "leader_ratio": 10.8,
+      "sub_leader_stock": "삼성중공업",
       "other_stocks": [
-        "삼성중공업",
-        "대한조선",
-        "HJ중공업"
+        "HD한국조선해양",
+        "HJ중공업",
+        "HD현대중공업"
       ],
       "sub_stocks_top3": [
         {
-          "name": "HD한국조선해양",
-          "rate": "+8.4%"
-        },
-        {
           "name": "삼성중공업",
-          "rate": "+8.1%"
+          "rate": "+8.2%"
         },
         {
-          "name": "대한조선",
-          "rate": "+5.2%"
+          "name": "HD한국조선해양",
+          "rate": "+7.3%"
+        },
+        {
+          "name": "HJ중공업",
+          "rate": "+5.1%"
         }
       ],
       "past_trigger_reason": "[속보 기사] 한화오션, 장비 국산화에 상승세 : 한화오션이 장비 국산화 소식에 상승세다. 한화오션(042660)은 11월 2일 오후 1시 15분 기준 전 거래일보다 10.6% 상승한 55,300원에 거래되고 있다. 한화오션은 전날 국방과학연구소(ADD)와...",
       "future_momentum": "조선 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3227,
+      "trading_value_eok": 4459,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -110,149 +155,104 @@
         "title": "[ET특징주]한화오션, 장비 국산화에 상승세",
         "press": "증시 속보",
         "url": "https://www.etnews.com/20261102000252",
-        "published_at": "2026-11-02T04:23:13.337Z"
+        "published_at": "2026-11-02T11:30:11.513Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_615",
-      "theme_name": "2026 하반기 신규상장",
-      "full_theme_name": "2026 하반기 신규상장",
-      "change_rate": "+3.57%",
-      "composite_score": 88,
-      "total_stocks_count": 31,
+      "theme_id": "radar_94",
+      "theme_name": "조선기자재",
+      "full_theme_name": "조선기자재",
+      "change_rate": "+5.34%",
+      "composite_score": 92,
+      "total_stocks_count": 38,
       "leader_stock": "영광",
-      "leader_ratio": 84.71,
-      "sub_leader_stock": "멜콘",
+      "leader_ratio": 18.24,
+      "sub_leader_stock": "HD현대마린엔진",
       "other_stocks": [
-        "진코스텍",
-        "니어스랩",
-        "와이즈플래닛컴퍼니"
+        "태광",
+        "성광벤드",
+        "현대힘스"
       ],
       "sub_stocks_top3": [
         {
-          "name": "멜콘",
-          "rate": "+16.1%"
+          "name": "HD현대마린엔진",
+          "rate": "+15.8%"
         },
         {
-          "name": "진코스텍",
-          "rate": "+13.3%"
+          "name": "태광",
+          "rate": "+15.2%"
         },
         {
-          "name": "니어스랩",
-          "rate": "+13.0%"
+          "name": "성광벤드",
+          "rate": "+13.7%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순... : ◆ 기관, 삼성전자 순매수 유지…영광·삼기에너지솔루션즈 매도 상위 기관은 오전 10시 4분 삼성전자, 한국철강(104700), SK하이닉스(000660)... 순매도에서는 영광(359410, 신규상장)과 삼...",
-      "future_momentum": "2026 하반기 신규상장 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 9499,
+      "past_trigger_reason": "[속보 기사] 샘표·샘표식품 동반 상한가…한국철강 공개매수에 급... : 2일 국내 증시에서는 샘표(007540), 샘표식품(248170), 한국철강(104700), KISCO홀딩스(001940), 영광, SGA솔루션즈(184230) 등이 강세를 보였다. 샘표와 샘표식품은... ...",
+      "future_momentum": "조선기자재 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 12708,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순...",
-      "today_rising_fact": "[속보 기사] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순... : ◆ 기관, 삼성전자 순매수 유지…영광·삼기에너지솔루션즈 매도 상위 기관은 오전 10시 4분 삼성전자, 한국철강(104700), SK하이닉스(000660)... 순매도에서는 영광(359410, 신규상장)과 삼...",
+      "trigger_summary": "[오늘의 특징주] 샘표·샘표식품 동반 상한가…한국철강 공개매수에 급...",
+      "today_rising_fact": "[속보 기사] 샘표·샘표식품 동반 상한가…한국철강 공개매수에 급... : 2일 국내 증시에서는 샘표(007540), 샘표식품(248170), 한국철강(104700), KISCO홀딩스(001940), 영광, SGA솔루션즈(184230) 등이 강세를 보였다. 샘표와 샘표식품은... ...",
       "top_article": {
-        "title": "[특징주] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순...",
+        "title": "[오늘의 특징주] 샘표·샘표식품 동반 상한가…한국철강 공개매수에 급...",
         "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=726163",
-        "published_at": "2026-11-02T04:23:13.428Z"
+        "url": "https://www.ppss.kr/news/articleView.html?idxno=318564",
+        "published_at": "2026-11-02T11:30:11.865Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_154",
-      "theme_name": "건설 대표주",
-      "full_theme_name": "건설 대표주",
-      "change_rate": "+6.13%",
-      "composite_score": 84,
-      "total_stocks_count": 6,
-      "leader_stock": "GS건설",
-      "leader_ratio": 11.15,
-      "sub_leader_stock": "현대건설",
+      "theme_id": "radar_166",
+      "theme_name": "항공/저가 항공사",
+      "full_theme_name": "항공/저가 항공사(LCC)",
+      "change_rate": "+6.16%",
+      "composite_score": 89,
+      "total_stocks_count": 9,
+      "leader_stock": "한진칼",
+      "leader_ratio": 16.3,
+      "sub_leader_stock": "대한항공",
       "other_stocks": [
-        "대우건설",
-        "IPARK현대산업개발",
-        "DL이앤씨"
+        "아시아나항공",
+        "제주항공",
+        "진에어"
       ],
       "sub_stocks_top3": [
         {
-          "name": "현대건설",
+          "name": "대한항공",
+          "rate": "+8.1%"
+        },
+        {
+          "name": "아시아나항공",
           "rate": "+7.9%"
         },
         {
-          "name": "대우건설",
+          "name": "제주항공",
           "rate": "+7.0%"
-        },
-        {
-          "name": "IPARK현대산업개발",
-          "rate": "+4.5%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] GS건설, 원전·건축주택 수주 전망에 10.57% 올라 : GS건설 주가가 장중 10%대 오르며 거래되고 있다. 2일 유가증권시장에서 오후 1시 12분 현재 GS건설은 전 거래일보다 10.57% 오른 2만8,750원에 거래되고 있다. 시가총액은 2조2천억 원대다. ...",
-      "future_momentum": "건설 대표주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1722,
+      "past_trigger_reason": "[속보 기사] AI 우려 딛고 5800선 탈환...기관 1.2조 매수에 반도체 반등 : 특징주로는 샘표와 샘표식품이 합병 소식을 밝히면서 나란히 상한가를 기록했다. 한진칼은 전 거래일보다 8.80% 상승했다. 호반그룹이 추가 지분 매수로 한진그룹 조원태 회장 측 지분율을 넘어섰다는 보도가 나오...",
+      "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1749,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주]GS건설, 원전·건축주택 수주 전망에 10.57% 올라",
-      "today_rising_fact": "[속보 기사] GS건설, 원전·건축주택 수주 전망에 10.57% 올라 : GS건설 주가가 장중 10%대 오르며 거래되고 있다. 2일 유가증권시장에서 오후 1시 12분 현재 GS건설은 전 거래일보다 10.57% 오른 2만8,750원에 거래되고 있다. 시가총액은 2조2천억 원대다. ...",
+      "trigger_summary": "[마켓펄스] AI 우려 딛고 5800선 탈환...기관 1.2조 매수에 반도체 반등",
+      "today_rising_fact": "[속보 기사] AI 우려 딛고 5800선 탈환...기관 1.2조 매수에 반도체 반등 : 특징주로는 샘표와 샘표식품이 합병 소식을 밝히면서 나란히 상한가를 기록했다. 한진칼은 전 거래일보다 8.80% 상승했다. 호반그룹이 추가 지분 매수로 한진그룹 조원태 회장 측 지분율을 넘어섰다는 보도가 나오...",
       "top_article": {
-        "title": "[특징주]GS건설, 원전·건축주택 수주 전망에 10.57% 올라",
+        "title": "[마켓펄스] AI 우려 딛고 5800선 탈환...기관 1.2조 매수에 반도체 반등",
         "press": "증시 속보",
-        "url": "https://www.namdonews.com/news/articleView.html?idxno=927915",
-        "published_at": "2026-11-02T04:23:13.623Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_205",
-      "theme_name": "원자력발전",
-      "full_theme_name": "원자력발전",
-      "change_rate": "+4.19%",
-      "composite_score": 83,
-      "total_stocks_count": 50,
-      "leader_stock": "성광벤드",
-      "leader_ratio": 14.8,
-      "sub_leader_stock": "태광",
-      "other_stocks": [
-        "효성중공업",
-        "GS건설",
-        "강원에너지"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "태광",
-          "rate": "+13.2%"
-        },
-        {
-          "name": "효성중공업",
-          "rate": "+13.0%"
-        },
-        {
-          "name": "GS건설",
-          "rate": "+11.2%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등 : 이외에도 한화엔진(10.71%), 현대힘스(10.41%), 성광벤드(10.25%), 태광(9.79%), 삼영엠텍(9.54%), 한화오션(7.80%), 일승(7.52%) 등이 강세를 보이고 있다. HD현대마린...",
-      "future_momentum": "원자력발전 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2747,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
-      "today_rising_fact": "[속보 기사] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등 : 이외에도 한화엔진(10.71%), 현대힘스(10.41%), 성광벤드(10.25%), 태광(9.79%), 삼영엠텍(9.54%), 한화오션(7.80%), 일승(7.52%) 등이 강세를 보이고 있다. HD현대마린...",
-      "top_article": {
-        "title": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
-        "press": "증시 속보",
-        "url": "https://www.newspim.com/news/view/20261102000307",
-        "published_at": "2026-11-02T04:23:13.791Z"
+        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130548",
+        "published_at": "2026-11-02T11:30:12.204Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1793593393855_pfcv",
+      "theme_id": "pb_1793619012448_7ckj",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[ET특징주]한화오션, 장비 국산화에 상승세",
         "press": "증시 속보",
         "url": "https://www.etnews.com/20261102000252",
-        "published_at": "2026-11-02T04:23:13.855Z"
+        "published_at": "2026-11-02T11:30:12.448Z"
       }
     },
     {
-      "theme_id": "pb_1793593393979_nm28",
+      "theme_id": "pb_1793619012802_evik",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
         "press": "증시 속보",
         "url": "https://www.newspim.com/news/view/20261102000307",
-        "published_at": "2026-11-02T04:23:13.979Z"
+        "published_at": "2026-11-02T11:30:12.802Z"
       }
     }
   ],
