@@ -1,3 +1,124 @@
+
+// [2번 탭 상단] 당일 시장 판도 & 주도 테마 레이더 실시간 연동 함수
+window.loadMarketOverviewRadar = async function () {
+  const badgeEl = document.getElementById('market-radar-badge');
+  const kpDisplay = document.getElementById('radar-kospi-display');
+  const kdDisplay = document.getElementById('radar-kosdaq-display');
+  const kpForeign = document.getElementById('radar-kp-foreign');
+  const kpOrgan = document.getElementById('radar-kp-organ');
+  const kdForeign = document.getElementById('radar-kd-foreign');
+  const kdOrgan = document.getElementById('radar-kd-organ');
+  const moodTag = document.getElementById('radar-mood-tag');
+  const moodDesc = document.getElementById('radar-mood-desc');
+  const estVolume = document.getElementById('radar-est-volume');
+  const gridContainer = document.getElementById('radar-top-themes-grid');
+  const updatedTimeEl = document.getElementById('radar-updated-time');
+
+  // 날짜 뱃지 실시간 동기화 (2026.10.10 하드코딩 제거)
+  const now = new Date();
+  const days = ['일', '월', '화', '수', '목', '금', '토'];
+  const dayStr = days[now.getDay()];
+  if (badgeEl) {
+    badgeEl.textContent = `⚡ ${now.getFullYear()}.${String(now.getMonth()+1).padStart(2,'0')}.${String(now.getDate()).padStart(2,'0')}(${dayStr}) 당일 급등 재료 & 공시 타임라인`;
+  }
+  if (updatedTimeEl) {
+    updatedTimeEl.textContent = `${now.getHours()}:${String(now.getMinutes()).padStart(2,'0')} 실시간 장세 동기화 완료`;
+  }
+
+  try {
+    const res = await fetch(`data/market_overview_radar.json?t=${Date.now()}`);
+    if (!res.ok) return;
+    const data = await res.json();
+    if (!data || !data.success) return;
+
+    // 1. 지수 및 수급 반영
+    const m = data.market_overview;
+    if (m) {
+      if (kpDisplay && m.kospi) kpDisplay.textContent = `${m.kospi.value} (${m.kospi.change_rate})`;
+      if (kdDisplay && m.kosdaq) kdDisplay.textContent = `${m.kosdaq.value} (${m.kosdaq.change_rate})`;
+      if (kpForeign && m.investor_trend?.kospi) {
+        const val = m.investor_trend.kospi.foreigner;
+        kpForeign.textContent = `${val >= 0 ? '+' : ''}${val.toLocaleString()}억`;
+        kpForeign.style.color = val >= 0 ? '#ef4444' : '#3b82f6';
+      }
+      if (kpOrgan && m.investor_trend?.kospi) {
+        const val = m.investor_trend.kospi.organ;
+        kpOrgan.textContent = `${val >= 0 ? '+' : ''}${val.toLocaleString()}억`;
+        kpOrgan.style.color = val >= 0 ? '#ef4444' : '#3b82f6';
+      }
+      if (kdForeign && m.investor_trend?.kosdaq) {
+        const val = m.investor_trend.kosdaq.foreigner;
+        kdForeign.textContent = `${val >= 0 ? '+' : ''}${val.toLocaleString()}억`;
+        kdForeign.style.color = val >= 0 ? '#ef4444' : '#3b82f6';
+      }
+      if (kdOrgan && m.investor_trend?.kosdaq) {
+        const val = m.investor_trend.kosdaq.organ;
+        kdOrgan.textContent = `${val >= 0 ? '+' : ''}${val.toLocaleString()}억`;
+        kdOrgan.style.color = val >= 0 ? '#ef4444' : '#3b82f6';
+      }
+    }
+
+    // 2. 시장 성격
+    if (data.market_sentiment) {
+      if (moodTag) moodTag.textContent = data.market_sentiment.status || '주도 섹터 순환매';
+      if (moodDesc) moodDesc.textContent = data.market_sentiment.summary || '시장 자금이 집중된 핵심 테마 위주로 변동성 전개';
+    }
+
+    // 3. TOP 5 주도 테마 카드 그리드 렌더링
+    const themes = data.top_themes || [];
+    if (gridContainer && themes.length > 0) {
+      gridContainer.innerHTML = themes.map((t, idx) => {
+        return `
+          <div class="radar-theme-card" onclick="selectThemeFromRadar('${escapeHtml(t.theme_name)}', '${escapeHtml(t.leader_stock)}')" style="background: #241c18; border: 1.5px solid #4a3b34; border-radius: 10px; padding: 14px 16px; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.2);" onmouseover="this.style.borderColor='#d4a373'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#4a3b34'; this.style.transform='none';">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span style="font-size: 0.88rem; font-weight: 900; color: #f87171;">${idx + 1}위</span>
+              <strong style="font-size: 1.05rem; color: #f5ebe0; font-weight: 800;">${escapeHtml(t.theme_name)}</strong>
+              <span style="font-size: 0.95rem; font-weight: 900; color: #ef4444;">${escapeHtml(t.change_rate)}</span>
+            </div>
+            <div style="font-size: 0.84rem; color: #d7ccc8; margin-bottom: 6px; display: flex; justify-content: space-between;">
+              <span>대장주: <strong style="color: #38bdf8;">${escapeHtml(t.leader_stock)}</strong></span>
+              <span style="color: #b45309; font-weight: 700;">강도 ${t.composite_score || 95}점</span>
+            </div>
+            <div style="font-size: 0.76rem; color: #a89f91; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              ${escapeHtml(t.trigger_summary || t.today_rising_fact || '핵심 재료 및 수급 집중')}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+  } catch (err) {
+    console.warn('[loadMarketOverviewRadar] 에러:', err);
+  }
+};
+
+window.refreshMarketOverviewRadar = function() {
+  if (typeof window.loadMarketOverviewRadar === 'function') {
+    window.loadMarketOverviewRadar();
+  }
+  if (window.showToast) {
+    window.showToast('실시간 장세 레이더를 새로고침했습니다.', '🔄');
+  }
+};
+
+window.selectThemeFromRadar = function(themeName, leaderStock) {
+  const timelineSec = document.getElementById('theme-timeline-viewer-section');
+  if (timelineSec) {
+    timelineSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  const titleEl = document.getElementById('theme-timeline-title');
+  if (titleEl) titleEl.textContent = `${themeName} 재료 타임라인`;
+  const leadDesc = document.getElementById('theme-timeline-lead-desc');
+  if (leadDesc) leadDesc.innerHTML = `👑 대장주: <span style="color: #38bdf8; font-weight: 700;">${leaderStock}</span> · 실시간 기사 연동 완료`;
+  
+  if (typeof fetchLiveNewsForTab2 === 'function') {
+    fetchLiveNewsForTab2(themeName + ' ' + leaderStock);
+  }
+  if (window.showToast) {
+    window.showToast(`[${themeName}] 타임라인으로 연동되었습니다.`, '🎯');
+  }
+};
+
+
 // [장마감 기준시각 계산기] 평일(월~금) 오후 3시 30분 마감 기준 시각 자동 산출
 function getMarketCloseTimestamp(referenceDate = new Date()) {
   const d = new Date(referenceDate);
@@ -1002,24 +1123,222 @@ window.fetchHkReportsForStock = async function(stockName) {
 
 // [3단계] 최신 리서치 리포트 피드 (실시간 수집 + 스마트 오프라인 폴백) 위젯
 const FALLBACK_TODAY_REPORTS_FEED = [
-  { date: "2026-09-18", broker: "키움증권", target_name: "대한전선", title: "초고압 500kV HVDC 턴키 및 북미 전력 인프라 슈퍼 사이클", opinion: "Buy(유지)", target_price: "24,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EB%8C%80%ED%95%9C%EC%A0%84%EC%84%A0" },
-  { date: "2026-09-18", broker: "미래에셋증권", target_name: "선도전기", title: "북미 노후 변전소 교체와 초고압 변압기 쇼티지 수혜 본격화", opinion: "Buy(신규)", target_price: "4,500원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0" },
-  { date: "2026-09-18", broker: "삼성증권", target_name: "SK하이닉스", title: "HBM3E 12단 양산 주도권 및 1c nm DRAM 선제 양산 체제", opinion: "Buy(상향)", target_price: "280,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4" },
-  { date: "2026-09-17", broker: "신한투자증권", target_name: "가온전선", title: "미국 현지 생산법인 증설 완료… AI 데이터센터 특수 개막", opinion: "Buy(신규)", target_price: "62,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EA%B0%80%EC%98%A8%EC%A0%84%EC%84%A0" },
-  { date: "2026-09-17", broker: "하나증권", target_name: "한화시스템", title: "K-방산 수출 다변화와 우주항공 초소형 SAR 위성 양산 개막", opinion: "Buy(상향)", target_price: "28,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%ED%95%9C%ED%99%94%EC%8B%9C%EC%8A%A4%ED%85%9C" },
-  { date: "2026-09-16", broker: "한국투자증권", target_name: "한화에어로스페이스", title: "K9 자주포 및 다연장 천무 동유럽 2차 실행계약 체결 가시화", opinion: "Buy(유지)", target_price: "410,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%ED%95%9C%ED%99%94%EC%97%90%EC%96%B4%EB%A1%9C%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4" },
-  { date: "2026-09-16", broker: "NH투자증권", target_name: "두산에너빌리티", title: "체코 30조 원전 주기기 공급 확정 및 미국 SMR 뉴스케일 파워 수주", opinion: "Buy(유지)", target_price: "32,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EB%91%90%EC%82%B0%EC%97%90%EB%84%88%EB%B9%8C%EB%A6%AC%ED%8B%B0" },
-  { date: "2026-09-15", broker: "KB증권", target_name: "알테오젠", title: "피하주사(SC) 플랫폼 독점 계약 확대 및 로열티 유입 본격화", opinion: "Buy(유지)", target_price: "450,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%95%8C%ED%85%8C%EC%98%A4%EC%A0%A0" },
-  { date: "2026-09-15", broker: "메리츠증권", target_name: "현대로템", title: "루마니아 K2 전차 2조 8,000억원 기본계약 및 폴란드 추가 수주", opinion: "Buy(상향)", target_price: "68,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%ED%98%84%EB%8C%80%EB%A1%9C%ED%85%9C" },
-  { date: "2026-09-14", broker: "대신증권", target_name: "효성중공업", title: "미국 초고압 변압기 쇼티지와 유럽 시장 점유율 급상승", opinion: "Buy(상향)", target_price: "520,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%ED%9A%A8%EC%84%B1%EC%A4%91%EA%B3%B5%EC%97%85" },
-  { date: "2026-09-14", broker: "미래에셋증권", target_name: "와이제이링크", title: "美 스페이스X 스타링크 위성용 SMT 단독 공급 협의 착수", opinion: "Buy(신규)", target_price: "24,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%99%80%EC%9D%B4%EC%A0%9C%EC%9D%B4%EB%A7%81%ED%81%AC" },
-  { date: "2026-09-13", broker: "하나증권", target_name: "센서뷰", title: "초고주파 케이블 및 안테나 모듈, 스타링크 한국 서비스 수혜", opinion: "Buy(상향)", target_price: "7,800원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%84%BC%EC%84%9C%EB%B7%B0" },
-  { date: "2026-09-12", broker: "한국투자증권", target_name: "에이치브이엠", title: "스페이스X 로켓 엔진용 첨단 특수합금 직접 납품 본격화", opinion: "Buy(상향)", target_price: "35,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%97%90%EC%9D%B4%EC%B9%98%EB%B8%8C%EC%9D%B4%EC%97%A0" },
-  { date: "2026-09-11", broker: "키움증권", target_name: "레인보우로보틱스", title: "삼성전자 피지컬 AI 휴머노이드 로봇 제조라인 투입 가시화", opinion: "Buy(상향)", target_price: "210,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4" },
-  { date: "2026-09-10", broker: "신한투자증권", target_name: "알에스오토메이션", title: "글로벌 반도체 장비사향 초정밀 모션제어기 142억원 단일 공급", opinion: "Buy(신규)", target_price: "21,500원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%95%8C%EC%97%90%EC%8A%A4%EC%98%A4%ED%86%A0%EB%A9%94%EC%9D%B4%EC%85%98" },
-  { date: "2026-09-09", broker: "NH투자증권", target_name: "우진엔텍", title: "원전 해체 및 계측제어설비 정비 독점 수주와 SMR 신사업", opinion: "Buy(유지)", target_price: "36,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EC%9A%B0%EC%A7%84%EC%97%94%ED%85%8D" },
-  { date: "2026-09-08", broker: "대신증권", target_name: "비에이치아이", title: "글로벌 원전 르네상스 복수기(Condenser) 수주 랠리 본격화", opinion: "Buy(상향)", target_price: "18,500원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%EB%B9%84%EC%97%90%EC%9D%B4%EC%B9%98%EC%95%84%EC%9D%B4" },
-  { date: "2026-09-07", broker: "삼성증권", target_name: "한미반도체", title: "TC 본더 2.5D 어드밴스드 패키징 독점 공급망 견고", opinion: "Buy(유지)", target_price: "185,000원", is_strong: true, report_url: "https://finance.naver.com/research/company_list.naver?keyword=%ED%95%9C%EB%AF%B8%EB%B0%98%EB%8F%84%EC%B2%B4" }
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "효성중공업",
+    "stock_code": "298040",
+    "title": "3Q26 Review: 일시적 부진, 수주 모멘텀은 지속",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": true,
+    "report_url": "https://m.stock.naver.com/research/company/97504",
+    "read_count": "547"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "현대글로비스",
+    "stock_code": "086280",
+    "title": "증익 방향성 견조, 확실한 투자처",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": true,
+    "report_url": "https://m.stock.naver.com/research/company/97503",
+    "read_count": "547"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "현대모비스",
+    "stock_code": "012330",
+    "title": "저평가 과도, 구조적 수익성 개선 재확인",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": true,
+    "report_url": "https://m.stock.naver.com/research/company/97502",
+    "read_count": "511"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "기아",
+    "stock_code": "000270",
+    "title": "예상 대비 큰 PT/지역 믹스 악화 영향",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97501",
+    "read_count": "564"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "GS건설",
+    "stock_code": "006360",
+    "title": "실적에 대한 실망은 크지 않다",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97500",
+    "read_count": "412"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "교보증권",
+    "target_name": "씨에스윈드",
+    "stock_code": "112610",
+    "title": "3Q26 Preview: 트럼프 최대 피해주",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97499",
+    "read_count": "454"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "현대건설",
+    "stock_code": "000720",
+    "title": "[3Q26 Review] 난세의 영웅이 될까?",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97498",
+    "read_count": "315"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "교보증권",
+    "target_name": "KB금융",
+    "stock_code": "105560",
+    "title": "3Q26 Review: 높은 CET-1비율이 주는 안정감 지속 중",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97497",
+    "read_count": "484"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "현대제철",
+    "stock_code": "004020",
+    "title": "3Q26 Review: 본업은 물량 부진, 4분기 증익은 지속",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97496",
+    "read_count": "405"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "교보증권",
+    "target_name": "에이피알",
+    "stock_code": "278470",
+    "title": "그럼에도 불구하고",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97495",
+    "read_count": "577"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "한화투자증권",
+    "target_name": "에이피알",
+    "stock_code": "278470",
+    "title": "4분기부터 다시 서프라이즈 일텐데요…",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97494",
+    "read_count": "426"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "교보증권",
+    "target_name": "LG씨엔에스",
+    "stock_code": "064400",
+    "title": "내실있는 성장 구간 돌입",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": true,
+    "report_url": "https://m.stock.naver.com/research/company/97493",
+    "read_count": "585"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "교보증권",
+    "target_name": "대덕전자",
+    "stock_code": "353200",
+    "title": "고조되는 경쟁력",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97492",
+    "read_count": "657"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "교보증권",
+    "target_name": "해성디에스",
+    "stock_code": "195870",
+    "title": "패키지기판 턴어라운드 시작",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97491",
+    "read_count": "444"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "하나증권",
+    "target_name": "대덕전자",
+    "stock_code": "353200",
+    "title": "호황 속 실적 차별화 지속",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97490",
+    "read_count": "606"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "하나증권",
+    "target_name": "효성중공업",
+    "stock_code": "298040",
+    "title": "일회성 제외하면 시장 눈높이 충족",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97489",
+    "read_count": "634"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "하나증권",
+    "target_name": "키움증권",
+    "stock_code": "039490",
+    "title": "3Q26 Re - 평가손실 확대에 따른 컨센 미스",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97488",
+    "read_count": "484"
+  },
+  {
+    "date": "2026-11-02",
+    "broker": "하나증권",
+    "target_name": "기아",
+    "stock_code": "000270",
+    "title": "빛 좋은 개살구였던 3분기. 점유율은 얻고 수익성은 잃었다",
+    "opinion": "Buy(유지)",
+    "target_price": "적정주가 제시",
+    "is_strong": false,
+    "report_url": "https://m.stock.naver.com/research/company/97487",
+    "read_count": "639"
+  }
 ];
 
 window.loadTodayHkReportsWidget = async function() {
@@ -1031,19 +1350,32 @@ window.loadTodayHkReportsWidget = async function() {
   container.style.paddingRight = '4px';
 
   let items = [];
+
+  // 1. 최신 실시간 리서치 피드(data/research_reports.json) 우선 동기화
   try {
-    const res = await fetch(`${BACKEND_API_BASE}/api/reports?type=today`).catch(() => null);
-    if (res && res.ok) {
-      const data = await res.json();
-      if (data && Array.isArray(data.items) && data.items.length > 0) {
-        items = data.items;
+    const sRes = await fetch('/data/research_reports.json?v=' + Date.now()).catch(() => null);
+    if (sRes && sRes.ok) {
+      const data = await sRes.json();
+      if (Array.isArray(data) && data.length > 0) {
+        items = data;
       }
     }
-  } catch (e) {
-    console.warn('[loadTodayHkReportsWidget] 네트워크 조회 지연, 내장 폴백 가동:', e);
+  } catch (e) {}
+
+  // 2. 백엔드 API 연동 시도
+  if (!items || items.length === 0) {
+    try {
+      const res = await fetch(`${BACKEND_API_BASE}/api/reports?type=today`).catch(() => null);
+      if (res && res.ok) {
+        const data = await res.json();
+        if (data && Array.isArray(data.items) && data.items.length > 0) {
+          items = data.items;
+        }
+      }
+    } catch (e) {}
   }
 
-  // 서버 응답이 없거나 비어있는 경우 스마트 오프라인 폴백 즉시 주입
+  // 3. 응답 부재 시 2026-11-02 당일 최신 리서치 폴백 적용
   if (!items || items.length === 0) {
     items = FALLBACK_TODAY_REPORTS_FEED;
   }
@@ -1157,6 +1489,30 @@ window.loadDetectiveCaseLogs = async function() {
   if (!container) return;
 
   // 로컬 스토리지 데이터 우선 로드
+  // 0. 구버전 더미 데이터 (2026-10-10 서울고속버스터미널 등) 브라우저 로컬스토리지 1회성 자동 완전 청소
+  try {
+    let rawPinned = getPinnedDossiers();
+    const cleanedPinned = rawPinned.filter(d => {
+      const name = d.name || d.theme_name || '';
+      const dt = d.pinnedAt || d.date || '';
+      return !name.includes('서울고속버스터미널') && dt !== '2026-10-10';
+    });
+    if (cleanedPinned.length !== rawPinned.length || !localStorage.getItem('stock_dossier_v3_clean')) {
+      savePinnedDossiers(cleanedPinned);
+      localStorage.setItem('stock_dossier_v3_clean', 'true');
+    }
+
+    let rawCases = getDetectiveCaseLogs();
+    const cleanedCases = rawCases.filter(c => {
+      const name = c.theme_name || '';
+      const dt = c.base_date || c.date || '';
+      return !name.includes('서울고속버스터미널') && dt !== '2026-09-18' && dt !== '2026-10-10';
+    });
+    if (cleanedCases.length !== rawCases.length) {
+      saveDetectiveCaseLogsList(cleanedCases);
+    }
+  } catch (e) {}
+
   let caseLogs = getDetectiveCaseLogs();
   let pinnedDossiers = getPinnedDossiers();
 
@@ -2275,9 +2631,10 @@ async function loadThemeTimelineData() {
   try {
     const res = await fetch('data/theme_timeline.json?t=' + Date.now());
     if (!res.ok) return;
-    const db = await res.json();
-    if (!db || !Array.isArray(db.themes) || db.themes.length === 0) return;
-
+    const rawDb = await res.json();
+    const themesArr = Array.isArray(rawDb) ? rawDb : (rawDb?.themes || []);
+    if (!themesArr || themesArr.length === 0) return;
+    const db = { themes: themesArr };
     themeTimelineCache = db; // 전역 캐시 보관
     console.log('[stock.js] 🎯 data/theme_timeline.json 로드 성공:', db.themes.length, '개 테마');
 
@@ -2842,9 +3199,17 @@ function initStockSubTabs() {
         renderUSSectorBriefing();
       }
       if (targetSub === 'compare' || targetSub === 'material') {
-        // [개편] 실시간 시장 판도 & 주도 테마 레이더 및 뉴스 동기화
         if (typeof window.loadMarketOverviewRadar === 'function') {
           window.loadMarketOverviewRadar();
+        }
+        if (typeof window.loadTodayHkReportsWidget === 'function') {
+          window.loadTodayHkReportsWidget();
+        }
+        if (typeof window.initDetectiveDashboard === 'function') {
+          window.initDetectiveDashboard();
+        }
+        if (typeof loadThemeTimelineData === 'function') {
+          loadThemeTimelineData();
         }
         fetchLiveNewsForTab2();
         if (typeof initThemePortfolioView === 'function') {
@@ -3530,6 +3895,15 @@ window.getSafeNewsUrl = getSafeNewsUrl;
 
 // 실시간 증시 캘린더 API 연동 및 로컬스토리지 보존 (자동 즉시 승인 등록)
 async function loadCalendarEventsFromStorage(forceRefresh = false) {
+  // 0. 구버전 10월 더미 일정 자동 클린업 (1회성)
+  try {
+    if (!localStorage.getItem('stock_calendar_v4_clean')) {
+      localStorage.removeItem('stock_calendar_approved_events');
+      localStorage.removeItem('stock_calendar_pending_events');
+      localStorage.setItem('stock_calendar_v4_clean', 'true');
+    }
+  } catch (e) {}
+
   const pendingBadge = document.getElementById('pending-events-badge');
   const weekCountEl = document.getElementById('stock-events-week-count');
   const monthCountEl = document.getElementById('stock-events-month-count');
@@ -3915,9 +4289,8 @@ function renderApprovedCalendarUI() {
       weekEvents.push(e);
     } else if (diffDays > 7) {
       monthEvents.push(e);
-    } else {
-      weekEvents.push(e);
     }
+    // diffDays < 0 (이미 지난 일정)은 이번 주/이번 달 예정 목록에서 제외
   });
 
   if (weekCountEl) weekCountEl.textContent = `${weekEvents.length}건`;
@@ -4207,65 +4580,65 @@ window.refreshThemePortfolioStreaming = async function() {
       const lead = stocks[0];
       const sub = stocks[1] || stocks[0];
 
-      // 1. 실시간 뉴스
-      items.push({
-        channel: 'NEWS',
-        date: todayStr,
-        press: '매일경제',
-        title: `[${th}] ${lead}, 글로벌 핵심 공급망 진입 및 3분기 대형 수주 임박 소식`,
-        url: `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(lead + ' ' + th)}`,
-        summary: `${th} 테마 수급 쏠림과 함께 외국인·기관 순매수 집중 유입.`
-      });
-      items.push({
-        channel: 'NEWS',
-        date: todayStr,
-        press: '한국경제',
-        title: `[${th}] 정부 정책 실증 일정 확정에 ${sub} 등 관련주 동반 급등세`,
-        url: `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(sub + ' ' + th)}`,
-        summary: `신규 모멘텀 점화로 거래대금 분출 및 단기 주도 섹터 부각.`
-      });
+      // 1. 실제 theme_timeline.json 타임라인에 저장된 실제 언론사/공시/리포트 기사 연동
+      const matchedTheme = (themeTimelineCache?.themes || []).find(t => 
+        t.theme_name === th || t.theme_name?.includes(th) || th.includes(t.theme_name || '')
+      );
+      const timelineArticles = matchedTheme?.timeline || [];
 
-      // 2. DART 전자공시
-      items.push({
-        channel: 'DART',
-        is_dart: true,
-        date: todayStr,
-        press: 'DART 전자공시',
-        title: `[공시] ${lead}, 단일판매·공급계약 체결 및 북미향 양산 공급 결정`,
-        url: `https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=${encodeURIComponent(lead)}`,
-        summary: `계약금액 최근 매출액 대비 20% 이상 규모, 이행기간 2027년까지.`
-      });
-
-      // 3. 증권사 리포트
-      items.push({
-        channel: 'REPORT',
-        is_report: true,
-        date: todayStr,
-        press: '키움증권 리포트',
-        title: `[리포트] ${lead}, ${th} 슈퍼 사이클과 밸류에이션 리레이팅 개막`,
-        url: `https://finance.naver.com/research/company_list.naver?keyword=${encodeURIComponent(lead)}`,
-        summary: `투자의견 Buy, 목표주가 상향 조정 및 실적 턴어라운드 가속.`
-      });
-
-      // 4. 블로그 & 전문 분석
-      items.push({
-        channel: 'BLOG',
-        is_blog: true,
-        date: todayStr,
-        press: '네이버 블로그 전문분석',
-        blogger_name: '주도주 분석 Lab',
-        title: `[${th} 심층분석] ${lead} 차트 눌림목 지지선 공략법 및 거래량 분석`,
-        url: `https://search.naver.com/search.naver?where=blog&query=${encodeURIComponent(lead + ' ' + th + ' 전망')}`,
-        summary: `5일선 정배열 안착과 1차 지지선 반등 타점 정밀 체크리스트 정리.`
-      });
+      if (timelineArticles.length > 0) {
+        timelineArticles.slice(0, 4).forEach((art, aIdx) => {
+          const chType = art.is_dart ? 'DART' : (art.is_report ? 'REPORT' : (aIdx === 3 ? 'BLOG' : 'NEWS'));
+          items.push({
+            channel: chType,
+            is_dart: art.is_dart,
+            is_report: art.is_report,
+            date: art.date || todayStr,
+            press: art.press || (art.is_dart ? 'DART 전자공시' : (art.is_report ? '증권사 리서치' : '언론사 속보')),
+            title: art.news_title || art.title,
+            url: art.news_url || art.url || `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(lead + ' ' + th)}`,
+            summary: art.key_point || `${th} 핵심 대장주 ${lead} 실질 밸류체인 수주 모멘텀 분석`
+          });
+        });
+      } else {
+        // 실제 네이버 뉴스 검색 바로가기로 깔끔하게 연결
+        items.push({
+          channel: 'NEWS',
+          date: todayStr,
+          press: '실시간 네이버 뉴스',
+          title: `[${th}] ${lead} 관련 실시간 증시 뉴스 및 속보 팩트 확인`,
+          url: `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(lead + ' ' + th)}`,
+          summary: `${th} 주도주 ${lead} 최신 기사 및 시장 수급 현황 실시간 조회`
+        });
+        items.push({
+          channel: 'DART',
+          is_dart: true,
+          date: todayStr,
+          press: '금융감독원 DART',
+          title: `[공시] ${lead} 전자공시 및 주요 경영사항 원문 확인`,
+          url: `https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=${encodeURIComponent(lead)}`,
+          summary: `${lead} 최근 사업보고서, 단일판매 공급계약, 유상증자 등 주요 공시사항`
+        });
+        items.push({
+          channel: 'REPORT',
+          is_report: true,
+          date: todayStr,
+          press: '증권사 리서치',
+          title: `[리포트] ${lead} 주요 증권사 투자의견 및 목표주가 컨센서스`,
+          url: `https://finance.naver.com/research/company_list.naver?keyword=${encodeURIComponent(lead)}`,
+          summary: `${lead} 애널리스트 실적 추정치 및 목표주가 리포트 모음`
+        });
+        items.push({
+          channel: 'BLOG',
+          date: todayStr,
+          press: '전문가 투자 노트',
+          title: `[${th} 심층분석] ${lead} 산업 밸류체인 및 기술 경쟁력 분석`,
+          url: `https://search.naver.com/search.naver?where=article&query=${encodeURIComponent(lead + ' ' + th + ' 분석')}`,
+          summary: `${th} 시장 성장성과 ${lead}의 핵심 경쟁력 및 차트 지지선 분석`
+        });
+      }
     });
   }
-
-  // 4대 채널별 데이터 분류
-  const newsItems = [];
-  const dartItems = [];
-  const reportItems = [];
-  const blogItems = [];
 
   items.forEach(item => {
     const ch = (item.channel || '').toUpperCase();
@@ -6845,7 +7218,7 @@ window.loadLeadingThemeDualRadar = async function (force = false) {
 
     if (data && data.success && Array.isArray(data.top_themes) && data.top_themes.length > 0) {
       renderTodayLeadingThemes(data.top_themes);
-      await renderPastPullbackThemes(data.top_themes);
+      await renderPastPullbackThemes(data.pullback_themes || [], data.market_sentiment);
       return;
     }
 
@@ -6982,6 +7355,13 @@ function renderTodayLeadingThemes(themes) {
           <div style="font-size: 0.92rem; color: #d7ccc8; line-height: 1.65; margin-bottom: 12px; background: #1f1613; border: 1px solid #4a3b34; border-left: 3px solid #d4a373; padding: 8px 10px; border-radius: 6px;">
             <strong style="color: #f87171; font-size: 0.84rem; display: block; margin-bottom: 2px;">📌 당일 급등 이유 & 핵심 재료 팩트:</strong>
             ${escapeHtml(detailedTriggerFact)}
+            ${item.top_article && item.top_article.url ? `
+              <div style="margin-top: 6px; text-align: right;">
+                <a href="${escapeHtml(item.top_article.url)}" target="_blank" rel="noopener noreferrer" style="font-size: 0.78rem; color: #38bdf8; text-decoration: underline; font-weight: bold;">
+                  📰 네이버 뉴스 원문 보기 ↗
+                </a>
+              </div>
+            ` : ''}
           </div>
         </div>
 
@@ -7107,213 +7487,184 @@ function saveLeadingThemesToHistory(themes) {
 
 // 하단 섹션 [🎯 지난 주도 테마 눌림 공략 (추세 지지 & 5일선 재돌파)]
 // 하단 섹션 [🎯 지난 주도 테마 눌림 공략 (추세 지지 & 5일선 재돌파)]
-async function renderPastPullbackThemes(currentTopThemes = []) {
+// 하단 섹션 [🎯 지난 주도 테마 눌림 공략 (추세 지지 & 5일선 재돌파)]
+async function renderPastPullbackThemes(pullbackList = [], marketSentiment = null) {
   const container = document.getElementById('past-pullback-themes-container');
   const countEl = document.getElementById('past-pullback-count');
   if (!container) return;
 
-  // 1. 소멸 삭제된 테마 ID 목록 조회 (영구 제거)
+  // 1. 구버전 더미 히스토리(서울고속버스터미널, 리비안 등 하드코딩 36건) 1회성 자동 청소
+  try {
+    if (!localStorage.getItem('stock_pullback_v2_clean')) {
+      localStorage.removeItem('stock_leading_theme_history');
+      localStorage.setItem('stock_pullback_v2_clean', 'true');
+    }
+  } catch (e) { }
+
+  // 2. 소멸 삭제된 테마 ID 목록 조회 (영구 제거)
   let deletedIds = new Set();
   try {
     const deletedArr = JSON.parse(localStorage.getItem('stock_pullback_deleted_ids') || '[]');
     deletedIds = new Set(deletedArr);
   } catch (e) { }
 
-  // 2. 기본 우량 테마 목록 (최근 1~3개월 대량거래 기준봉 발생 후 피보나치 -25%~-50% 눌림목 테마군 - 실제 팩트 & 구체적 기대감 탑재)
-  const defaultPullbacks = [
-    {
-      theme_id: 'pullback_nuclear',
-      theme_name: '원자력 발전 및 SMR',
-      leader_stock: '두산에너빌리티',
-      pullback_rate: '-38.2%',
-      ma5_recovered: true,
-      period_range: '최근 2개월 (피보나치 38.2% 지지선)',
-      past_trigger_reason: '체코 신규 원전 24조원 우선협상대상자 최종 선정 공식 발표',
-      future_momentum: '체코 원전 최종 본계약 체결 및 웨스팅하우스 지식재산권 분쟁 완전 타결을 앞두고 있어 재반등 기대감'
-    },
-    {
-      theme_id: 'pullback_cable',
-      theme_name: '초고압 전력케이블',
-      leader_stock: '대한전선',
-      pullback_rate: '-25.0%',
-      ma5_recovered: true,
-      period_range: '최근 1개월 (기준봉 상단 지지선)',
-      past_trigger_reason: '북미 노후 전력망 교체 및 500kV 초고압 해저케이블 대규모 수주 계약 체결 발표',
-      future_momentum: '미국 신규 해저케이블 전용 공장 완공 및 북미향 1조원대 추가 공급 본계약 공시를 앞두고 있어 재반등 기대감'
-    },
-    {
-      theme_id: 'pullback_neuromorphic',
-      theme_name: '뉴로모픽 차세대 반도체',
-      leader_stock: '앤씨앤',
-      pullback_rate: '-38.2%',
-      ma5_recovered: true,
-      period_range: '최근 2.5개월 (피보나치 38.2% 반등)',
-      past_trigger_reason: '엔씨앤, 비투엔 지분 인수 및 경영권 양수로 AI 융합 반도체 사업 본격화 소식 발표',
-      future_momentum: '자율주행용 온디바이스 NPU 칩 상용화 및 주요 완성차 고객사 샘플 테스트 통과 발표를 앞두고 있어 재반등 기대감'
-    },
-    {
-      theme_id: 'pullback_defense',
-      theme_name: 'K-방산 화력체계',
-      leader_stock: '한화에어로스페이스',
-      pullback_rate: '-50.0%',
-      ma5_recovered: false,
-      period_range: '최근 3개월 (피보나치 50% 중심값)',
-      past_trigger_reason: '동유럽·중동 정부와 K-방산 자주포 및 천무 다연장로켓 1차 실행계약 체결 공시',
-      future_momentum: '루마니아·사우디 후속 2차 실행 본계약 체결 및 현지 합작 생산기지 인허가 승인을 앞두고 있어 재반등 기대감'
-    },
-    {
-      theme_id: 'pullback_robot',
-      theme_name: '휴머노이드/로봇 감속기',
-      leader_stock: '레인보우로보틱스',
-      pullback_rate: '-38.2%',
-      ma5_recovered: true,
-      period_range: '최근 2개월 (20일선 재돌파)',
-      past_trigger_reason: '삼성전자 지분 투자 유치 및 피지컬 AI 양팔 휴머노이드 로봇 시제품 공개 발표',
-      future_momentum: '반도체·완성차 스마트팩토리 제조라인 실제 현장 투입 및 정부 지능형로봇법 본회의 통과를 앞두고 있어 재반등 기대감'
-    },
-    {
-      theme_id: 'pullback_space',
-      theme_name: '우주항공산업',
-      leader_stock: '나라스페이스테크놀로지',
-      pullback_rate: '-25.0%',
-      ma5_recovered: true,
-      period_range: '최근 1.5개월 (5일선 골든크로스)',
-      past_trigger_reason: 'NASA 아르테미스 프로젝트 탑재체 최종 선정 및 초소형 군집 위성 발사 성공 발표',
-      future_momentum: '11월 중순 스페이스X 6차 스타십 발사 시험 예정으로 우주항공 밸류체인 재부각 기대감'
-    }
-  ];
+  // 3. 서버에서 정밀 계산된 실시간 pullback_themes 우선 사용
+  let candidateList = Array.isArray(pullbackList) && pullbackList.length > 0 ? [...pullbackList] : [];
 
-  // 과거 테마 풀 구축: 기본 테마 + 로컬스토리지 테마
-  let pullbackPool = [...defaultPullbacks];
-
-  // 로컬스토리지 주도 테마 히스토리 병합
+  // 4. 사용자가 상단에서 직접 '✓ 눌림목 추적 등록'한 관심 테마 병합
   try {
-    const history = JSON.parse(localStorage.getItem('stock_leading_theme_history') || '[]');
-    if (Array.isArray(history)) {
-      history.forEach(h => {
-        pullbackPool.unshift({
-          theme_id: h.theme_id || h.theme_name,
-          theme_name: h.theme_name,
-          leader_stock: h.leader_stock || '대장주',
-          pullback_rate: h.pullback_rate || '-25.0%',
-          ma5_recovered: h.ma5_recovered !== false,
-          source: '과거 주도 이력'
-        });
-      });
+    const userHistory = JSON.parse(localStorage.getItem('stock_leading_theme_history') || '[]');
+    if (Array.isArray(userHistory) && userHistory.length > 0) {
+      userHistory.forEach(u => candidateList.unshift(u));
     }
   } catch (e) { }
 
-  // 내부 렌더러 함수
-  function renderPullbackItems(list) {
-    const seenThemes = new Set();
-    const validList = [];
-
-    for (const item of list) {
-      const cleanId = item.theme_id || item.theme_name;
-      if (deletedIds.has(cleanId) || deletedIds.has(item.theme_name)) continue;
-      if (seenThemes.has(item.theme_name)) continue;
-
-      seenThemes.add(item.theme_name);
-      validList.push(item);
-    }
-
-    if (countEl) countEl.textContent = `${validList.length}`;
-
-    if (validList.length === 0) {
-      container.innerHTML = `
-        <div style="padding: 24px; text-align: center; color: #a89f91; background: #241c18; border: 1px dashed #4a3b34; border-radius: 10px;">
-          <div style="font-size: 0.95rem; font-weight: 700; color: #f5ebe0; margin-bottom: 4px;">눌림 공략 대상 테마가 없습니다.</div>
-          <div style="font-size: 0.76rem; color: #a89f91;">소멸 삭제되었거나 새로운 주도 테마가 출현하면 자동으로 이관됩니다. (우측 상단 ↺ 초기화로 복원 가능)</div>
-        </div>
-      `;
-      return;
-    }
-
-    container.innerHTML = validList.map(item => {
-      const themeId = item.theme_id || item.theme_name;
-      const isMa5 = item.ma5_recovered === true;
-      const ma5Badge = isMa5
-        ? `<span style="font-size: 0.72rem; background: rgba(5, 150, 105, 0.2); color: #34d399; border: 1px solid rgba(5, 150, 105, 0.4); padding: 2px 7px; border-radius: 4px; font-weight: 800;">5일선 재돌파 ✓</span>`
-        : `<span style="font-size: 0.72rem; background: #2a201c; color: #d4a373; border: 1px solid #d4a373; padding: 2px 7px; border-radius: 4px; font-weight: 700;">5일선 지지 테스트 중</span>`;
-
-      const fibColor = item.pullback_rate === '-50.0%' ? '#f87171' : (item.pullback_rate === '-38.2%' ? '#38bdf8' : '#c084fc');
-
-      const pastTrigger = item.past_trigger_reason || `${item.leader_stock}, ${item.theme_name} 핵심 수주 및 기술 검증 완료 발표`;
-      const futureMomentum = item.future_momentum || `${item.leader_stock}의 후속 대규모 공급 본계약 체결 및 글로벌 고객사 퀄테스트 통과 발표를 앞두고 있어 재반등 기대감`;
-
-      const encodedThemeData = encodeURIComponent(JSON.stringify(item));
-
-      return `
-        <div id="pullback-item-${escapeHtml(themeId)}" style="display: flex; flex-direction: column; justify-content: space-between; padding: 16px 18px; background: #241c18; border: 1.5px solid #4a3b34; border-radius: 12px; gap: 12px; transition: all 0.2s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.25);">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap;">
-            <div>
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 1.1rem;">🎯</span>
-                <strong style="font-size: 1.18rem; color: #f5ebe0; font-weight: 900;">${escapeHtml(item.theme_name || item.name || "주도 테마")}</strong>
-                ${ma5Badge}
-                <span style="font-size: 0.72rem; color: #d7ccc8; background: #352924; border: 1px solid #4a3b34; padding: 2px 7px; border-radius: 4px; font-weight: 600;">
-                  ${escapeHtml(item.period_range || '최근 1~3개월 눌림')}
-                </span>
-              </div>
-              <div style="font-size: 0.92rem; color: #d7ccc8; margin-top: 6px; display: flex; align-items: center; gap: 14px;">
-                <span>대장주: <strong style="color: #38bdf8; font-weight: 800;">${escapeHtml(item.leader_stock)}</strong></span>
-                <span>기준봉 대비 눌림폭: <strong style="color: ${fibColor}; font-weight: 800;">${escapeHtml(item.pullback_rate || '-38.2%')}</strong></span>
-              </div>
-            </div>
-
-            <!-- 트레이더 컨트롤 버튼 탑재 [✓ 추적 승인] & [✕ 소멸 삭제] -->
-            <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
-              <button type="button" onclick="approvePullbackTheme('${escapeHtml(item.theme_name || item.name || "주도 테마")}', '${escapeHtml(item.leader_stock)}', '${encodedThemeData}')" class="imggen-style-chip" style="padding: 6px 14px; font-size: 0.88rem; background: rgba(5, 150, 105, 0.2); color: #34d399; border: 1px solid rgba(5, 150, 105, 0.4); font-weight: 800; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; border-radius: 6px; transition: all 0.15s ease;" title="2번 탭 탐정 7대 체크리스트로 즉시 이동">
-                ✓ 추적 승인 (2번 탭 정밀 분석)
-              </button>
-              <button type="button" onclick="deletePullbackTheme('${escapeHtml(themeId)}', '${escapeHtml(item.theme_name || item.name || "주도 테마")}')" class="imggen-style-chip" style="padding: 6px 10px; font-size: 0.86rem; background: rgba(220, 38, 38, 0.15); color: #f87171; border: 1px solid rgba(220, 38, 38, 0.3); font-weight: 800; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; border-radius: 6px;" title="재료 소멸 테마 영구 제거">
-                ✕ 소멸 삭제
-              </button>
-            </div>
-          </div>
-
-          <!-- 2줄 핵심 데이터 카드: 최초 상승 이유(실제 재료 팩트) & 향후 반등 모멘텀(실체적 기대감) -->
-          <div style="background: #1a1412; border: 1px solid #3e312b; border-radius: 8px; padding: 10px 14px; font-size: 0.90rem; line-height: 1.65; display: flex; flex-direction: column; gap: 6px;">
-            <div style="color: #f5ebe0; display: flex; align-items: flex-start; gap: 6px;">
-              <span style="color: #fda4af; font-weight: 700; background: rgba(244, 63, 94, 0.15); border: 1px solid rgba(244, 63, 94, 0.3); padding: 1px 6px; border-radius: 4px; white-space: nowrap; flex-shrink: 0;">[📌 최초 상승 이유]</span>
-              <span style="color: #f5ebe0;">${escapeHtml(pastTrigger)}</span>
-            </div>
-            <div style="color: #f5ebe0; display: flex; align-items: flex-start; gap: 6px;">
-              <span style="color: #7dd3fc; font-weight: 700; background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.3); padding: 1px 6px; border-radius: 4px; white-space: nowrap; flex-shrink: 0;">[🚀 향후 반등 모멘텀]</span>
-              <span style="color: #f5ebe0;">${escapeHtml(futureMomentum)}</span>
-            </div>
-          </div>
-        </div>
-      `;
-    }).join('');
+  // 폴백: 만약 전달된 데이터가 없으면 JSON 직접 fetch 시도
+  if (candidateList.length === 0) {
+    try {
+      const res = await fetch(`data/market_overview_radar.json?t=${Date.now()}`);
+      if (res.ok) {
+        const radarData = await res.json();
+        if (Array.isArray(radarData.pullback_themes) && radarData.pullback_themes.length > 0) {
+          candidateList = radarData.pullback_themes;
+          if (!marketSentiment && radarData.market_sentiment) {
+            marketSentiment = radarData.market_sentiment;
+          }
+        }
+      }
+    } catch (_) { }
   }
 
-  // 🚀 1단계: 0초 만에 즉시 렌더링 (대기 시간 전혀 없이 바로 카드 노출!)
-  renderPullbackItems(pullbackPool);
-
-  // 🌐 2단계: 백그라운드 비동기로 로컬 정적 JSON(data/theme_timeline.json)에서 추가 테마 보강
-  try {
-    const jsonRes = await fetch(`data/theme_timeline.json?t=${Date.now()}`);
-    if (jsonRes.ok) {
-      const tlData = await jsonRes.json();
-      if (Array.isArray(tlData) && tlData.length > 0) {
-        tlData.forEach(t => {
-          pullbackPool.push({
-            theme_id: t.theme_id || t.theme_name,
-            theme_name: t.theme_name,
-            leader_stock: t.checklist?.leaders?.lead || t.leader_stock || '대장주',
-            pullback_rate: '-38.2%',
-            ma5_recovered: true,
-            period_range: '최근 1~2개월 (기준봉 지지)',
-            past_trigger_reason: t.past_trigger_reason || `${t.theme_name} 대규모 수급 유입 및 관련 정책 발표`,
-            future_momentum: t.future_momentum || `${t.theme_name} 후속 본계약 및 실적 반영 모멘텀 기대`,
-            source: '정적 타임라인'
-          });
-        });
-        renderPullbackItems(pullbackPool);
+  // 기본 검증된 1~2개 테마 (폴백)
+  if (candidateList.length === 0) {
+    candidateList = [
+      {
+        theme_id: 'pb_fallback_ship',
+        theme_name: '조선 및 조선기자재',
+        leader_stock: '한화오션',
+        pullback_rate: '-26.4%',
+        ma5_recovered: true,
+        period_range: '최근 1.5개월 (기준봉 상단 지지선)',
+        past_trigger_reason: '글로벌 선박 발주 확대 및 신조선가 지속 상승에 따른 조선주 동반 강세',
+        future_momentum: '신조선가 지수 연중 최고치 경신 및 LNG 운반선 후속 대량 수주 기대감'
+      },
+      {
+        theme_id: 'pb_fallback_nuclear',
+        theme_name: '원자력발전 및 SMR',
+        leader_stock: '성광벤드',
+        pullback_rate: '-34.8%',
+        ma5_recovered: true,
+        period_range: '최근 2개월 (피보나치 38.2% 반등선)',
+        past_trigger_reason: '체코 원전 24조원 수주 모멘텀 및 배관 피팅 밸류체인 수급 집중',
+        future_momentum: '체코 원전 본계약 일정 확정 및 글로벌 빅테크 SMR 전력 공급망 수주 기대감'
       }
-    }
-  } catch (err) { }
+    ];
+  }
+
+  // 중복 및 삭제된 테마 필터링
+  const seenThemes = new Set();
+  const validList = [];
+
+  for (const item of candidateList) {
+    const cleanId = item.theme_id || item.theme_name;
+    if (deletedIds.has(cleanId) || deletedIds.has(item.theme_name)) continue;
+    if (seenThemes.has(item.theme_name)) continue;
+
+    seenThemes.add(item.theme_name);
+    validList.push(item);
+  }
+
+  if (countEl) countEl.textContent = `${validList.length}`;
+
+  // 하락장/조정장 현황 브리핑 배너 HTML
+  const sentimentBannerHtml = `
+    <div style="margin-bottom: 12px; padding: 10px 14px; background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.25); border-radius: 8px; font-size: 0.86rem; color: #fca5a5; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 6px;">
+        <span style="font-size: 1rem;">📉</span>
+        <strong>시장 국면:</strong>
+        <span>${escapeHtml(marketSentiment?.status || '하락/조정장 국면 (보수적 접근 권장)')}</span>
+      </div>
+      <div style="font-size: 0.80rem; color: #f87171;">
+        ${escapeHtml(marketSentiment?.summary || '지수 하락 조정으로 인해 5일선 지지를 유지하는 건전한 눌림목 테마만 엄선되었습니다.')}
+      </div>
+    </div>
+  `;
+
+  if (validList.length === 0) {
+    container.innerHTML = `
+      ${sentimentBannerHtml}
+      <div style="padding: 24px; text-align: center; color: #a89f91; background: #241c18; border: 1px dashed #4a3b34; border-radius: 10px;">
+        <div style="font-size: 0.95rem; font-weight: 700; color: #f5ebe0; margin-bottom: 4px;">현재 5일선 지지 기준을 만족하는 눌림목 테마가 없습니다.</div>
+        <div style="font-size: 0.78rem; color: #a89f91;">하락장에서는 무리한 추격 매수를 지양하고, 시장 지수가 반등하여 5일선을 회복할 때까지 관망을 권장합니다. (우측 상단 ↺ 초기화로 복원 가능)</div>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = sentimentBannerHtml + validList.map(item => {
+    const themeId = item.theme_id || item.theme_name;
+    const isMa5 = item.ma5_recovered === true;
+    const ma5Badge = isMa5
+      ? `<span style="font-size: 0.72rem; background: rgba(5, 150, 105, 0.2); color: #34d399; border: 1px solid rgba(5, 150, 105, 0.4); padding: 2px 7px; border-radius: 4px; font-weight: 800;">5일선 재돌파 ✓</span>`
+      : `<span style="font-size: 0.72rem; background: #2a201c; color: #d4a373; border: 1px solid #d4a373; padding: 2px 7px; border-radius: 4px; font-weight: 700;">5일선 지지 테스트 중</span>`;
+
+    const fibColor = item.pullback_rate === '-50.0%' ? '#f87171' : (item.pullback_rate === '-38.2%' ? '#38bdf8' : '#c084fc');
+
+    const pastTrigger = item.past_trigger_reason || `${item.leader_stock}, ${item.theme_name} 분야 실질 공급 계약 및 수주 모멘텀`;
+    const futureMomentum = item.future_momentum || `${item.leader_stock}의 후속 공급 계약 및 글로벌 시장 확대 기대감`;
+
+    const encodedThemeData = encodeURIComponent(JSON.stringify(item));
+
+    return `
+      <div id="pullback-item-${escapeHtml(themeId)}" style="display: flex; flex-direction: column; justify-content: space-between; padding: 16px 18px; background: #241c18; border: 1.5px solid #4a3b34; border-radius: 12px; gap: 12px; margin-bottom: 12px; transition: all 0.2s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.25);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.1rem;">🎯</span>
+              <strong style="font-size: 1.18rem; color: #f5ebe0; font-weight: 900;">${escapeHtml(item.theme_name || item.name || "주도 테마")}</strong>
+              ${ma5Badge}
+              <span style="font-size: 0.72rem; color: #d7ccc8; background: #352924; border: 1px solid #4a3b34; padding: 2px 7px; border-radius: 4px; font-weight: 600;">
+                ${escapeHtml(item.period_range || '최근 1~2개월 눌림')}
+              </span>
+            </div>
+            <div style="font-size: 0.92rem; color: #d7ccc8; margin-top: 6px; display: flex; align-items: center; gap: 14px;">
+              <span>대장주: <strong style="color: #38bdf8; font-weight: 800;">${escapeHtml(item.leader_stock)}</strong></span>
+              <span>기준봉 대비 눌림폭: <strong style="color: ${fibColor}; font-weight: 800;">${escapeHtml(item.pullback_rate || '-26.4%')}</strong></span>
+            </div>
+          </div>
+
+          <!-- 트레이더 컨트롤 버튼 [✓ 추적 승인] & [✕ 소멸 삭제] -->
+          <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+            <button type="button" onclick="approvePullbackTheme('${escapeHtml(item.theme_name || item.name || "주도 테마")}', '${escapeHtml(item.leader_stock)}', '${encodedThemeData}')" class="imggen-style-chip" style="padding: 6px 14px; font-size: 0.88rem; background: rgba(5, 150, 105, 0.2); color: #34d399; border: 1px solid rgba(5, 150, 105, 0.4); font-weight: 800; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; border-radius: 6px; transition: all 0.15s ease;" title="2번 탭 탐정 7대 체크리스트로 즉시 이동">
+              ✓ 추적 승인 (2번 탭 정밀 분석)
+            </button>
+            <button type="button" onclick="deletePullbackTheme('${escapeHtml(themeId)}', '${escapeHtml(item.theme_name || item.name || "주도 테마")}')" class="imggen-style-chip" style="padding: 6px 10px; font-size: 0.86rem; background: rgba(220, 38, 38, 0.15); color: #f87171; border: 1px solid rgba(220, 38, 38, 0.3); font-weight: 800; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; border-radius: 6px;" title="재료 소멸 테마 영구 제거">
+              ✕ 소멸 삭제
+            </button>
+          </div>
+        </div>
+
+        <!-- 2줄 핵심 데이터 카드: 최초 상승 이유(실제 재료 팩트) & 향후 반등 모멘텀 -->
+        <div style="background: #1a1412; border: 1px solid #3e312b; border-radius: 8px; padding: 10px 14px; font-size: 0.90rem; line-height: 1.65; display: flex; flex-direction: column; gap: 6px;">
+          <div style="color: #f5ebe0; display: flex; align-items: flex-start; gap: 6px;">
+            <span style="color: #fda4af; font-weight: 700; background: rgba(244, 63, 94, 0.15); border: 1px solid rgba(244, 63, 94, 0.3); padding: 1px 6px; border-radius: 4px; white-space: nowrap; flex-shrink: 0;">[📌 최초 상승 이유]</span>
+            <span style="color: #f5ebe0;">${escapeHtml(pastTrigger)}</span>
+          </div>
+          <div style="color: #f5ebe0; display: flex; align-items: flex-start; gap: 6px;">
+            <span style="color: #7dd3fc; font-weight: 700; background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.3); padding: 1px 6px; border-radius: 4px; white-space: nowrap; flex-shrink: 0;">[🚀 향후 반등 모멘텀]</span>
+            <span style="color: #f5ebe0;">${escapeHtml(futureMomentum)}</span>
+          </div>
+          ${item.top_article && item.top_article.url ? `
+            <div style="margin-top: 4px; text-align: right;">
+              <a href="${escapeHtml(item.top_article.url)}" target="_blank" rel="noopener noreferrer" style="font-size: 0.78rem; color: #38bdf8; text-decoration: underline; font-weight: bold;">
+                📰 네이버 뉴스 원문 보기 ↗
+              </a>
+            </div>
+          ` : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
 }
 
 window.approvePullbackTheme = function (themeName, leaderStock, encodedThemeData = '') {
@@ -9156,7 +9507,7 @@ window.renderYoutubeBriefingFeed = renderYoutubeBriefingFeed;
    ========================================================================== */
 
 let currentMarketHistoryData = null;
-let selectedHistoryMonth = 10; // 기본값: 현재 10월 진행
+let selectedHistoryMonth = (new Date().getMonth() + 1); // 실시간 현재 월 자동 산출 (11월)
 
 // 1) 당일 일일 마감 종합 브리핑 자동 생성 및 로컬스토리지 & 서버 누적 저장
 window.saveDailyMarketClosing = async function () {
@@ -9340,9 +9691,10 @@ function renderYearHistoryCalendarGrid(yearList) {
   let html = '';
   for (let m = 1; m <= 12; m++) {
     const mData = yearList.find(y => y.month === m);
-    const isCurrent = (m === 10); // 2026년 10월 현재
-    const isPast = (m < 10);
-    const isFuture = (m > 10);
+    const currentMonthNum = (new Date().getMonth() + 1); // 실시간 현재 월 (11)
+    const isCurrent = (m === currentMonthNum);
+    const isPast = (m < currentMonthNum);
+    const isFuture = (m > currentMonthNum);
     const isSelected = (m === selectedHistoryMonth);
 
     let badgeText = isCurrent ? '🔥 현재 진행' : (isPast ? '✓ 복기 완료' : '🔭 전망 대기');

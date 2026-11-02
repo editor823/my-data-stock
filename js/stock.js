@@ -9507,7 +9507,7 @@ window.renderYoutubeBriefingFeed = renderYoutubeBriefingFeed;
    ========================================================================== */
 
 let currentMarketHistoryData = null;
-let selectedHistoryMonth = 10; // 기본값: 현재 10월 진행
+let selectedHistoryMonth = (new Date().getMonth() + 1); // 실시간 현재 월 자동 산출 (11월)
 
 // 1) 당일 일일 마감 종합 브리핑 자동 생성 및 로컬스토리지 & 서버 누적 저장
 window.saveDailyMarketClosing = async function () {
@@ -9691,9 +9691,10 @@ function renderYearHistoryCalendarGrid(yearList) {
   let html = '';
   for (let m = 1; m <= 12; m++) {
     const mData = yearList.find(y => y.month === m);
-    const isCurrent = (m === 10); // 2026년 10월 현재
-    const isPast = (m < 10);
-    const isFuture = (m > 10);
+    const currentMonthNum = (new Date().getMonth() + 1); // 실시간 현재 월 (11)
+    const isCurrent = (m === currentMonthNum);
+    const isPast = (m < currentMonthNum);
+    const isFuture = (m > currentMonthNum);
     const isSelected = (m === selectedHistoryMonth);
 
     let badgeText = isCurrent ? '🔥 현재 진행' : (isPast ? '✓ 복기 완료' : '🔭 전망 대기');
