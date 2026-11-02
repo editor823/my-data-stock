@@ -6845,7 +6845,7 @@ window.loadLeadingThemeDualRadar = async function (force = false) {
 
     if (data && data.success && Array.isArray(data.top_themes) && data.top_themes.length > 0) {
       renderTodayLeadingThemes(data.top_themes);
-      await renderPastPullbackThemes(data.top_themes);
+      await renderPastPullbackThemes(data.pullback_themes || [], data.market_sentiment);
       return;
     }
 
@@ -7114,213 +7114,184 @@ function saveLeadingThemesToHistory(themes) {
 
 // 하단 섹션 [🎯 지난 주도 테마 눌림 공략 (추세 지지 & 5일선 재돌파)]
 // 하단 섹션 [🎯 지난 주도 테마 눌림 공략 (추세 지지 & 5일선 재돌파)]
-async function renderPastPullbackThemes(currentTopThemes = []) {
+// 하단 섹션 [🎯 지난 주도 테마 눌림 공략 (추세 지지 & 5일선 재돌파)]
+async function renderPastPullbackThemes(pullbackList = [], marketSentiment = null) {
   const container = document.getElementById('past-pullback-themes-container');
   const countEl = document.getElementById('past-pullback-count');
   if (!container) return;
 
-  // 1. 소멸 삭제된 테마 ID 목록 조회 (영구 제거)
+  // 1. 구버전 더미 히스토리(서울고속버스터미널, 리비안 등 하드코딩 36건) 1회성 자동 청소
+  try {
+    if (!localStorage.getItem('stock_pullback_v2_clean')) {
+      localStorage.removeItem('stock_leading_theme_history');
+      localStorage.setItem('stock_pullback_v2_clean', 'true');
+    }
+  } catch (e) { }
+
+  // 2. 소멸 삭제된 테마 ID 목록 조회 (영구 제거)
   let deletedIds = new Set();
   try {
     const deletedArr = JSON.parse(localStorage.getItem('stock_pullback_deleted_ids') || '[]');
     deletedIds = new Set(deletedArr);
   } catch (e) { }
 
-  // 2. 기본 우량 테마 목록 (최근 1~3개월 대량거래 기준봉 발생 후 피보나치 -25%~-50% 눌림목 테마군 - 실제 팩트 & 구체적 기대감 탑재)
-  const defaultPullbacks = [
-    {
-      theme_id: 'pullback_nuclear',
-      theme_name: '원자력 발전 및 SMR',
-      leader_stock: '두산에너빌리티',
-      pullback_rate: '-38.2%',
-      ma5_recovered: true,
-      period_range: '최근 2개월 (피보나치 38.2% 지지선)',
-      past_trigger_reason: '체코 신규 원전 24조원 우선협상대상자 최종 선정 공식 발표',
-      future_momentum: '체코 원전 최종 본계약 체결 및 웨스팅하우스 지식재산권 분쟁 완전 타결을 앞두고 있어 재반등 기대감'
-    },
-    {
-      theme_id: 'pullback_cable',
-      theme_name: '초고압 전력케이블',
-      leader_stock: '대한전선',
-      pullback_rate: '-25.0%',
-      ma5_recovered: true,
-      period_range: '최근 1개월 (기준봉 상단 지지선)',
-      past_trigger_reason: '북미 노후 전력망 교체 및 500kV 초고압 해저케이블 대규모 수주 계약 체결 발표',
-      future_momentum: '미국 신규 해저케이블 전용 공장 완공 및 북미향 1조원대 추가 공급 본계약 공시를 앞두고 있어 재반등 기대감'
-    },
-    {
-      theme_id: 'pullback_neuromorphic',
-      theme_name: '뉴로모픽 차세대 반도체',
-      leader_stock: '앤씨앤',
-      pullback_rate: '-38.2%',
-      ma5_recovered: true,
-      period_range: '최근 2.5개월 (피보나치 38.2% 반등)',
-      past_trigger_reason: '엔씨앤, 비투엔 지분 인수 및 경영권 양수로 AI 융합 반도체 사업 본격화 소식 발표',
-      future_momentum: '자율주행용 온디바이스 NPU 칩 상용화 및 주요 완성차 고객사 샘플 테스트 통과 발표를 앞두고 있어 재반등 기대감'
-    },
-    {
-      theme_id: 'pullback_defense',
-      theme_name: 'K-방산 화력체계',
-      leader_stock: '한화에어로스페이스',
-      pullback_rate: '-50.0%',
-      ma5_recovered: false,
-      period_range: '최근 3개월 (피보나치 50% 중심값)',
-      past_trigger_reason: '동유럽·중동 정부와 K-방산 자주포 및 천무 다연장로켓 1차 실행계약 체결 공시',
-      future_momentum: '루마니아·사우디 후속 2차 실행 본계약 체결 및 현지 합작 생산기지 인허가 승인을 앞두고 있어 재반등 기대감'
-    },
-    {
-      theme_id: 'pullback_robot',
-      theme_name: '휴머노이드/로봇 감속기',
-      leader_stock: '레인보우로보틱스',
-      pullback_rate: '-38.2%',
-      ma5_recovered: true,
-      period_range: '최근 2개월 (20일선 재돌파)',
-      past_trigger_reason: '삼성전자 지분 투자 유치 및 피지컬 AI 양팔 휴머노이드 로봇 시제품 공개 발표',
-      future_momentum: '반도체·완성차 스마트팩토리 제조라인 실제 현장 투입 및 정부 지능형로봇법 본회의 통과를 앞두고 있어 재반등 기대감'
-    },
-    {
-      theme_id: 'pullback_space',
-      theme_name: '우주항공산업',
-      leader_stock: '나라스페이스테크놀로지',
-      pullback_rate: '-25.0%',
-      ma5_recovered: true,
-      period_range: '최근 1.5개월 (5일선 골든크로스)',
-      past_trigger_reason: 'NASA 아르테미스 프로젝트 탑재체 최종 선정 및 초소형 군집 위성 발사 성공 발표',
-      future_momentum: '11월 중순 스페이스X 6차 스타십 발사 시험 예정으로 우주항공 밸류체인 재부각 기대감'
-    }
-  ];
+  // 3. 서버에서 정밀 계산된 실시간 pullback_themes 우선 사용
+  let candidateList = Array.isArray(pullbackList) && pullbackList.length > 0 ? [...pullbackList] : [];
 
-  // 과거 테마 풀 구축: 기본 테마 + 로컬스토리지 테마
-  let pullbackPool = [...defaultPullbacks];
-
-  // 로컬스토리지 주도 테마 히스토리 병합
+  // 4. 사용자가 상단에서 직접 '✓ 눌림목 추적 등록'한 관심 테마 병합
   try {
-    const history = JSON.parse(localStorage.getItem('stock_leading_theme_history') || '[]');
-    if (Array.isArray(history)) {
-      history.forEach(h => {
-        pullbackPool.unshift({
-          theme_id: h.theme_id || h.theme_name,
-          theme_name: h.theme_name,
-          leader_stock: h.leader_stock || '대장주',
-          pullback_rate: h.pullback_rate || '-25.0%',
-          ma5_recovered: h.ma5_recovered !== false,
-          source: '과거 주도 이력'
-        });
-      });
+    const userHistory = JSON.parse(localStorage.getItem('stock_leading_theme_history') || '[]');
+    if (Array.isArray(userHistory) && userHistory.length > 0) {
+      userHistory.forEach(u => candidateList.unshift(u));
     }
   } catch (e) { }
 
-  // 내부 렌더러 함수
-  function renderPullbackItems(list) {
-    const seenThemes = new Set();
-    const validList = [];
-
-    for (const item of list) {
-      const cleanId = item.theme_id || item.theme_name;
-      if (deletedIds.has(cleanId) || deletedIds.has(item.theme_name)) continue;
-      if (seenThemes.has(item.theme_name)) continue;
-
-      seenThemes.add(item.theme_name);
-      validList.push(item);
-    }
-
-    if (countEl) countEl.textContent = `${validList.length}`;
-
-    if (validList.length === 0) {
-      container.innerHTML = `
-        <div style="padding: 24px; text-align: center; color: #a89f91; background: #241c18; border: 1px dashed #4a3b34; border-radius: 10px;">
-          <div style="font-size: 0.95rem; font-weight: 700; color: #f5ebe0; margin-bottom: 4px;">눌림 공략 대상 테마가 없습니다.</div>
-          <div style="font-size: 0.76rem; color: #a89f91;">소멸 삭제되었거나 새로운 주도 테마가 출현하면 자동으로 이관됩니다. (우측 상단 ↺ 초기화로 복원 가능)</div>
-        </div>
-      `;
-      return;
-    }
-
-    container.innerHTML = validList.map(item => {
-      const themeId = item.theme_id || item.theme_name;
-      const isMa5 = item.ma5_recovered === true;
-      const ma5Badge = isMa5
-        ? `<span style="font-size: 0.72rem; background: rgba(5, 150, 105, 0.2); color: #34d399; border: 1px solid rgba(5, 150, 105, 0.4); padding: 2px 7px; border-radius: 4px; font-weight: 800;">5일선 재돌파 ✓</span>`
-        : `<span style="font-size: 0.72rem; background: #2a201c; color: #d4a373; border: 1px solid #d4a373; padding: 2px 7px; border-radius: 4px; font-weight: 700;">5일선 지지 테스트 중</span>`;
-
-      const fibColor = item.pullback_rate === '-50.0%' ? '#f87171' : (item.pullback_rate === '-38.2%' ? '#38bdf8' : '#c084fc');
-
-      const pastTrigger = item.past_trigger_reason || `${item.leader_stock}, ${item.theme_name} 핵심 수주 및 기술 검증 완료 발표`;
-      const futureMomentum = item.future_momentum || `${item.leader_stock}의 후속 대규모 공급 본계약 체결 및 글로벌 고객사 퀄테스트 통과 발표를 앞두고 있어 재반등 기대감`;
-
-      const encodedThemeData = encodeURIComponent(JSON.stringify(item));
-
-      return `
-        <div id="pullback-item-${escapeHtml(themeId)}" style="display: flex; flex-direction: column; justify-content: space-between; padding: 16px 18px; background: #241c18; border: 1.5px solid #4a3b34; border-radius: 12px; gap: 12px; transition: all 0.2s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.25);">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap;">
-            <div>
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 1.1rem;">🎯</span>
-                <strong style="font-size: 1.18rem; color: #f5ebe0; font-weight: 900;">${escapeHtml(item.theme_name || item.name || "주도 테마")}</strong>
-                ${ma5Badge}
-                <span style="font-size: 0.72rem; color: #d7ccc8; background: #352924; border: 1px solid #4a3b34; padding: 2px 7px; border-radius: 4px; font-weight: 600;">
-                  ${escapeHtml(item.period_range || '최근 1~3개월 눌림')}
-                </span>
-              </div>
-              <div style="font-size: 0.92rem; color: #d7ccc8; margin-top: 6px; display: flex; align-items: center; gap: 14px;">
-                <span>대장주: <strong style="color: #38bdf8; font-weight: 800;">${escapeHtml(item.leader_stock)}</strong></span>
-                <span>기준봉 대비 눌림폭: <strong style="color: ${fibColor}; font-weight: 800;">${escapeHtml(item.pullback_rate || '-38.2%')}</strong></span>
-              </div>
-            </div>
-
-            <!-- 트레이더 컨트롤 버튼 탑재 [✓ 추적 승인] & [✕ 소멸 삭제] -->
-            <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
-              <button type="button" onclick="approvePullbackTheme('${escapeHtml(item.theme_name || item.name || "주도 테마")}', '${escapeHtml(item.leader_stock)}', '${encodedThemeData}')" class="imggen-style-chip" style="padding: 6px 14px; font-size: 0.88rem; background: rgba(5, 150, 105, 0.2); color: #34d399; border: 1px solid rgba(5, 150, 105, 0.4); font-weight: 800; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; border-radius: 6px; transition: all 0.15s ease;" title="2번 탭 탐정 7대 체크리스트로 즉시 이동">
-                ✓ 추적 승인 (2번 탭 정밀 분석)
-              </button>
-              <button type="button" onclick="deletePullbackTheme('${escapeHtml(themeId)}', '${escapeHtml(item.theme_name || item.name || "주도 테마")}')" class="imggen-style-chip" style="padding: 6px 10px; font-size: 0.86rem; background: rgba(220, 38, 38, 0.15); color: #f87171; border: 1px solid rgba(220, 38, 38, 0.3); font-weight: 800; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; border-radius: 6px;" title="재료 소멸 테마 영구 제거">
-                ✕ 소멸 삭제
-              </button>
-            </div>
-          </div>
-
-          <!-- 2줄 핵심 데이터 카드: 최초 상승 이유(실제 재료 팩트) & 향후 반등 모멘텀(실체적 기대감) -->
-          <div style="background: #1a1412; border: 1px solid #3e312b; border-radius: 8px; padding: 10px 14px; font-size: 0.90rem; line-height: 1.65; display: flex; flex-direction: column; gap: 6px;">
-            <div style="color: #f5ebe0; display: flex; align-items: flex-start; gap: 6px;">
-              <span style="color: #fda4af; font-weight: 700; background: rgba(244, 63, 94, 0.15); border: 1px solid rgba(244, 63, 94, 0.3); padding: 1px 6px; border-radius: 4px; white-space: nowrap; flex-shrink: 0;">[📌 최초 상승 이유]</span>
-              <span style="color: #f5ebe0;">${escapeHtml(pastTrigger)}</span>
-            </div>
-            <div style="color: #f5ebe0; display: flex; align-items: flex-start; gap: 6px;">
-              <span style="color: #7dd3fc; font-weight: 700; background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.3); padding: 1px 6px; border-radius: 4px; white-space: nowrap; flex-shrink: 0;">[🚀 향후 반등 모멘텀]</span>
-              <span style="color: #f5ebe0;">${escapeHtml(futureMomentum)}</span>
-            </div>
-          </div>
-        </div>
-      `;
-    }).join('');
+  // 폴백: 만약 전달된 데이터가 없으면 JSON 직접 fetch 시도
+  if (candidateList.length === 0) {
+    try {
+      const res = await fetch(`data/market_overview_radar.json?t=${Date.now()}`);
+      if (res.ok) {
+        const radarData = await res.json();
+        if (Array.isArray(radarData.pullback_themes) && radarData.pullback_themes.length > 0) {
+          candidateList = radarData.pullback_themes;
+          if (!marketSentiment && radarData.market_sentiment) {
+            marketSentiment = radarData.market_sentiment;
+          }
+        }
+      }
+    } catch (_) { }
   }
 
-  // 🚀 1단계: 0초 만에 즉시 렌더링 (대기 시간 전혀 없이 바로 카드 노출!)
-  renderPullbackItems(pullbackPool);
-
-  // 🌐 2단계: 백그라운드 비동기로 로컬 정적 JSON(data/theme_timeline.json)에서 추가 테마 보강
-  try {
-    const jsonRes = await fetch(`data/theme_timeline.json?t=${Date.now()}`);
-    if (jsonRes.ok) {
-      const tlData = await jsonRes.json();
-      if (Array.isArray(tlData) && tlData.length > 0) {
-        tlData.forEach(t => {
-          pullbackPool.push({
-            theme_id: t.theme_id || t.theme_name,
-            theme_name: t.theme_name,
-            leader_stock: t.checklist?.leaders?.lead || t.leader_stock || '대장주',
-            pullback_rate: '-38.2%',
-            ma5_recovered: true,
-            period_range: '최근 1~2개월 (기준봉 지지)',
-            past_trigger_reason: t.past_trigger_reason || `${t.theme_name} 대규모 수급 유입 및 관련 정책 발표`,
-            future_momentum: t.future_momentum || `${t.theme_name} 후속 본계약 및 실적 반영 모멘텀 기대`,
-            source: '정적 타임라인'
-          });
-        });
-        renderPullbackItems(pullbackPool);
+  // 기본 검증된 1~2개 테마 (폴백)
+  if (candidateList.length === 0) {
+    candidateList = [
+      {
+        theme_id: 'pb_fallback_ship',
+        theme_name: '조선 및 조선기자재',
+        leader_stock: '한화오션',
+        pullback_rate: '-26.4%',
+        ma5_recovered: true,
+        period_range: '최근 1.5개월 (기준봉 상단 지지선)',
+        past_trigger_reason: '글로벌 선박 발주 확대 및 신조선가 지속 상승에 따른 조선주 동반 강세',
+        future_momentum: '신조선가 지수 연중 최고치 경신 및 LNG 운반선 후속 대량 수주 기대감'
+      },
+      {
+        theme_id: 'pb_fallback_nuclear',
+        theme_name: '원자력발전 및 SMR',
+        leader_stock: '성광벤드',
+        pullback_rate: '-34.8%',
+        ma5_recovered: true,
+        period_range: '최근 2개월 (피보나치 38.2% 반등선)',
+        past_trigger_reason: '체코 원전 24조원 수주 모멘텀 및 배관 피팅 밸류체인 수급 집중',
+        future_momentum: '체코 원전 본계약 일정 확정 및 글로벌 빅테크 SMR 전력 공급망 수주 기대감'
       }
-    }
-  } catch (err) { }
+    ];
+  }
+
+  // 중복 및 삭제된 테마 필터링
+  const seenThemes = new Set();
+  const validList = [];
+
+  for (const item of candidateList) {
+    const cleanId = item.theme_id || item.theme_name;
+    if (deletedIds.has(cleanId) || deletedIds.has(item.theme_name)) continue;
+    if (seenThemes.has(item.theme_name)) continue;
+
+    seenThemes.add(item.theme_name);
+    validList.push(item);
+  }
+
+  if (countEl) countEl.textContent = `${validList.length}`;
+
+  // 하락장/조정장 현황 브리핑 배너 HTML
+  const sentimentBannerHtml = `
+    <div style="margin-bottom: 12px; padding: 10px 14px; background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.25); border-radius: 8px; font-size: 0.86rem; color: #fca5a5; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 6px;">
+        <span style="font-size: 1rem;">📉</span>
+        <strong>시장 국면:</strong>
+        <span>${escapeHtml(marketSentiment?.status || '하락/조정장 국면 (보수적 접근 권장)')}</span>
+      </div>
+      <div style="font-size: 0.80rem; color: #f87171;">
+        ${escapeHtml(marketSentiment?.summary || '지수 하락 조정으로 인해 5일선 지지를 유지하는 건전한 눌림목 테마만 엄선되었습니다.')}
+      </div>
+    </div>
+  `;
+
+  if (validList.length === 0) {
+    container.innerHTML = `
+      ${sentimentBannerHtml}
+      <div style="padding: 24px; text-align: center; color: #a89f91; background: #241c18; border: 1px dashed #4a3b34; border-radius: 10px;">
+        <div style="font-size: 0.95rem; font-weight: 700; color: #f5ebe0; margin-bottom: 4px;">현재 5일선 지지 기준을 만족하는 눌림목 테마가 없습니다.</div>
+        <div style="font-size: 0.78rem; color: #a89f91;">하락장에서는 무리한 추격 매수를 지양하고, 시장 지수가 반등하여 5일선을 회복할 때까지 관망을 권장합니다. (우측 상단 ↺ 초기화로 복원 가능)</div>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = sentimentBannerHtml + validList.map(item => {
+    const themeId = item.theme_id || item.theme_name;
+    const isMa5 = item.ma5_recovered === true;
+    const ma5Badge = isMa5
+      ? `<span style="font-size: 0.72rem; background: rgba(5, 150, 105, 0.2); color: #34d399; border: 1px solid rgba(5, 150, 105, 0.4); padding: 2px 7px; border-radius: 4px; font-weight: 800;">5일선 재돌파 ✓</span>`
+      : `<span style="font-size: 0.72rem; background: #2a201c; color: #d4a373; border: 1px solid #d4a373; padding: 2px 7px; border-radius: 4px; font-weight: 700;">5일선 지지 테스트 중</span>`;
+
+    const fibColor = item.pullback_rate === '-50.0%' ? '#f87171' : (item.pullback_rate === '-38.2%' ? '#38bdf8' : '#c084fc');
+
+    const pastTrigger = item.past_trigger_reason || `${item.leader_stock}, ${item.theme_name} 분야 실질 공급 계약 및 수주 모멘텀`;
+    const futureMomentum = item.future_momentum || `${item.leader_stock}의 후속 공급 계약 및 글로벌 시장 확대 기대감`;
+
+    const encodedThemeData = encodeURIComponent(JSON.stringify(item));
+
+    return `
+      <div id="pullback-item-${escapeHtml(themeId)}" style="display: flex; flex-direction: column; justify-content: space-between; padding: 16px 18px; background: #241c18; border: 1.5px solid #4a3b34; border-radius: 12px; gap: 12px; margin-bottom: 12px; transition: all 0.2s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.25);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.1rem;">🎯</span>
+              <strong style="font-size: 1.18rem; color: #f5ebe0; font-weight: 900;">${escapeHtml(item.theme_name || item.name || "주도 테마")}</strong>
+              ${ma5Badge}
+              <span style="font-size: 0.72rem; color: #d7ccc8; background: #352924; border: 1px solid #4a3b34; padding: 2px 7px; border-radius: 4px; font-weight: 600;">
+                ${escapeHtml(item.period_range || '최근 1~2개월 눌림')}
+              </span>
+            </div>
+            <div style="font-size: 0.92rem; color: #d7ccc8; margin-top: 6px; display: flex; align-items: center; gap: 14px;">
+              <span>대장주: <strong style="color: #38bdf8; font-weight: 800;">${escapeHtml(item.leader_stock)}</strong></span>
+              <span>기준봉 대비 눌림폭: <strong style="color: ${fibColor}; font-weight: 800;">${escapeHtml(item.pullback_rate || '-26.4%')}</strong></span>
+            </div>
+          </div>
+
+          <!-- 트레이더 컨트롤 버튼 [✓ 추적 승인] & [✕ 소멸 삭제] -->
+          <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+            <button type="button" onclick="approvePullbackTheme('${escapeHtml(item.theme_name || item.name || "주도 테마")}', '${escapeHtml(item.leader_stock)}', '${encodedThemeData}')" class="imggen-style-chip" style="padding: 6px 14px; font-size: 0.88rem; background: rgba(5, 150, 105, 0.2); color: #34d399; border: 1px solid rgba(5, 150, 105, 0.4); font-weight: 800; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; border-radius: 6px; transition: all 0.15s ease;" title="2번 탭 탐정 7대 체크리스트로 즉시 이동">
+              ✓ 추적 승인 (2번 탭 정밀 분석)
+            </button>
+            <button type="button" onclick="deletePullbackTheme('${escapeHtml(themeId)}', '${escapeHtml(item.theme_name || item.name || "주도 테마")}')" class="imggen-style-chip" style="padding: 6px 10px; font-size: 0.86rem; background: rgba(220, 38, 38, 0.15); color: #f87171; border: 1px solid rgba(220, 38, 38, 0.3); font-weight: 800; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; border-radius: 6px;" title="재료 소멸 테마 영구 제거">
+              ✕ 소멸 삭제
+            </button>
+          </div>
+        </div>
+
+        <!-- 2줄 핵심 데이터 카드: 최초 상승 이유(실제 재료 팩트) & 향후 반등 모멘텀 -->
+        <div style="background: #1a1412; border: 1px solid #3e312b; border-radius: 8px; padding: 10px 14px; font-size: 0.90rem; line-height: 1.65; display: flex; flex-direction: column; gap: 6px;">
+          <div style="color: #f5ebe0; display: flex; align-items: flex-start; gap: 6px;">
+            <span style="color: #fda4af; font-weight: 700; background: rgba(244, 63, 94, 0.15); border: 1px solid rgba(244, 63, 94, 0.3); padding: 1px 6px; border-radius: 4px; white-space: nowrap; flex-shrink: 0;">[📌 최초 상승 이유]</span>
+            <span style="color: #f5ebe0;">${escapeHtml(pastTrigger)}</span>
+          </div>
+          <div style="color: #f5ebe0; display: flex; align-items: flex-start; gap: 6px;">
+            <span style="color: #7dd3fc; font-weight: 700; background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.3); padding: 1px 6px; border-radius: 4px; white-space: nowrap; flex-shrink: 0;">[🚀 향후 반등 모멘텀]</span>
+            <span style="color: #f5ebe0;">${escapeHtml(futureMomentum)}</span>
+          </div>
+          ${item.top_article && item.top_article.url ? `
+            <div style="margin-top: 4px; text-align: right;">
+              <a href="${escapeHtml(item.top_article.url)}" target="_blank" rel="noopener noreferrer" style="font-size: 0.78rem; color: #38bdf8; text-decoration: underline; font-weight: bold;">
+                📰 네이버 뉴스 원문 보기 ↗
+              </a>
+            </div>
+          ` : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
 }
 
 window.approvePullbackTheme = function (themeName, leaderStock, encodedThemeData = '') {

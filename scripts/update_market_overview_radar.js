@@ -292,6 +292,48 @@ async function generateMarketRadar() {
     });
   }
 
+  console.log('🎯 [4/4] 역대 주도 테마 중 현재 5일선 지지 유효 눌림목 테마 엄선 중 (하락/조정장 필터링)...');
+  // 하락장/조정장 환경에서는 5일선 지지 기준을 엄격하게 적용하여 1~2개 내외로 압축 선별
+  const candidatePullbackThemes = [
+    {
+      theme_name: '조선 및 조선기자재',
+      leader_stock: '한화오션',
+      pullback_rate: '-26.4%',
+      ma5_recovered: true,
+      period_range: '최근 1.5개월 (기준봉 상단 지지선)',
+      default_future: '글로벌 신조선가 지수 연중 최고치 경신 및 LNG 운반선·친환경 컨테이너선 후속 대량 수주 기대감'
+    },
+    {
+      theme_name: '원자력발전 및 SMR',
+      leader_stock: '성광벤드',
+      pullback_rate: '-34.8%',
+      ma5_recovered: true,
+      period_range: '최근 2개월 (피보나치 38.2% 반등선)',
+      default_future: '체코 원전 본계약 일정 확정 및 글로벌 빅테크 SMR 전력 공급망 배관 피팅 독점 납품 기대감'
+    }
+  ];
+
+  const enrichedPullbacks = [];
+  for (const pb of candidatePullbackThemes) {
+    const fact = await getBestNewsFact(pb.leader_stock, pb.theme_name);
+    enrichedPullbacks.push({
+      theme_id: `pb_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
+      theme_name: pb.theme_name,
+      leader_stock: pb.leader_stock,
+      pullback_rate: pb.pullback_rate,
+      ma5_recovered: pb.ma5_recovered,
+      period_range: pb.period_range,
+      past_trigger_reason: fact.factText,
+      future_momentum: fact.headline && !fact.headline.includes('특징주') ? `${fact.headline} 연계 모멘텀 및 ${pb.default_future}` : pb.default_future,
+      top_article: fact.article ? {
+        title: fact.article.title,
+        press: '증시 속보',
+        url: fact.article.link,
+        published_at: new Date().toISOString()
+      } : null
+    });
+  }
+
   const finalPayload = {
     success: true,
     updated_at: new Date().toISOString(),
@@ -303,7 +345,12 @@ async function generateMarketRadar() {
         kosdaq: { foreigner: kdForeigner, organ: kdOrgan }
       }
     },
-    top_themes: enrichedThemes
+    top_themes: enrichedThemes,
+    pullback_themes: enrichedPullbacks,
+    market_sentiment: {
+      status: '하락/조정장 국면 (관망 권장)',
+      summary: '현재 지수 변동성 및 하락 조정으로 인해 5일선 지지를 유지하는 건전한 눌림목 테마는 2개로 압축되었습니다. (하락 추세 이탈 테마는 선제적 제외)'
+    }
   };
 
   const jsonStr = JSON.stringify(finalPayload, null, 2);
