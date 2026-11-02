@@ -6982,6 +6982,13 @@ function renderTodayLeadingThemes(themes) {
           <div style="font-size: 0.92rem; color: #d7ccc8; line-height: 1.65; margin-bottom: 12px; background: #1f1613; border: 1px solid #4a3b34; border-left: 3px solid #d4a373; padding: 8px 10px; border-radius: 6px;">
             <strong style="color: #f87171; font-size: 0.84rem; display: block; margin-bottom: 2px;">📌 당일 급등 이유 & 핵심 재료 팩트:</strong>
             ${escapeHtml(detailedTriggerFact)}
+            ${item.top_article && item.top_article.url ? `
+              <div style="margin-top: 6px; text-align: right;">
+                <a href="${escapeHtml(item.top_article.url)}" target="_blank" rel="noopener noreferrer" style="font-size: 0.78rem; color: #38bdf8; text-decoration: underline; font-weight: bold;">
+                  📰 네이버 뉴스 원문 보기 ↗
+                </a>
+              </div>
+            ` : ''}
           </div>
         </div>
 

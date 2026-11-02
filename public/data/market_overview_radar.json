@@ -1,307 +1,251 @@
 {
-  "status": "000",
   "success": true,
-  "updated_at": "2026-11-01T18:01:01.101Z",
-  "updated_date_str": "2026. 11. 01. (일)",
-  "market_health": {
+  "updated_at": "2026-11-02T03:32:32.933Z",
+  "market_overview": {
     "kospi": {
-      "val": "2,680.50",
-      "changeRate": "-3.48%",
-      "isUp": false,
-      "foreigner": "+1,240억",
-      "organ": "-420억"
+      "value": "2,680.50",
+      "change_rate": "+2.21%",
+      "is_up": true
     },
     "kosdaq": {
-      "val": "875.20",
-      "changeRate": "-3.83%",
-      "isUp": false,
-      "foreigner": "+680억",
-      "organ": "+310억"
+      "value": "875.20",
+      "change_rate": "+1.67%",
+      "is_up": true
     },
-    "totalForeigner": "+1,920억",
-    "totalOrgan": "-110억",
-    "estimatedTradingValue": "18조 4,500억원",
-    "moodTag": "개별 테마 순환매 우세",
-    "moodDesc": "대형주 지수 관망세 속 실적 및 재료가 강력한 중소형 주도 테마로 자금 급속 쏠림"
+    "investor_trend": {
+      "kospi": {
+        "foreigner": 1240,
+        "organ": -420
+      },
+      "kosdaq": {
+        "foreigner": 680,
+        "organ": 310
+      }
+    }
   },
   "top_themes": [
     {
-      "theme_id": "radar_234",
-      "theme_name": "보안주",
-      "full_theme_name": "보안주(물리)",
-      "change_rate": "+7.43%",
+      "theme_id": "radar_94",
+      "theme_name": "조선기자재",
+      "full_theme_name": "조선기자재",
+      "change_rate": "+7.60%",
       "composite_score": 99,
-      "total_stocks_count": 21,
-      "leader_stock": "인텔리빅스",
-      "leader_ratio": 223.89,
-      "sub_leader_stock": "한화비전",
+      "total_stocks_count": 38,
+      "leader_stock": "영광",
+      "leader_ratio": 88.82,
+      "sub_leader_stock": "HD현대마린엔진",
       "other_stocks": [
-        "에스원",
-        "이노뎁",
-        "트루엔"
+        "성광벤드",
+        "태광",
+        "현대힘스"
       ],
       "sub_stocks_top3": [
         {
-          "name": "한화비전",
-          "rate": "+2.2%"
+          "name": "HD현대마린엔진",
+          "rate": "+17.9%"
         },
         {
-          "name": "에스원",
-          "rate": "+1.4%"
+          "name": "성광벤드",
+          "rate": "+14.2%"
         },
         {
-          "name": "이노뎁",
-          "rate": "+1.2%"
+          "name": "태광",
+          "rate": "+12.5%"
         }
       ],
-      "past_trigger_reason": "인텔리빅스, 보안주 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "보안주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 14477,
+      "past_trigger_reason": "[속보 기사] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순... : ◆ 기관, 삼성전자 순매수 유지…영광·삼기에너지솔루션즈 매도 상위 기관은 오전 10시 4분 삼성전자, 한국철강(104700), SK하이닉스(000660)... 순매도에서는 영광(359410, 신규상장)과 삼...",
+      "future_momentum": "조선기자재 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 8524,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "인텔리빅스, 보안주 시장 거래대금 쏠림",
-      "today_rising_fact": "인텔리빅스, 보안주 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "인텔리빅스, 보안주 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "인텔리빅스",
-          "sub": "한화비전, 에스원, 이노뎁, 트루엔"
-        },
-        "correlation": "[사업 팩트 매핑] 인텔리빅스는 보안주 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "보안주 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
+      "trigger_summary": "[특징주] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순...",
+      "today_rising_fact": "[속보 기사] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순... : ◆ 기관, 삼성전자 순매수 유지…영광·삼기에너지솔루션즈 매도 상위 기관은 오전 10시 4분 삼성전자, 한국철강(104700), SK하이닉스(000660)... 순매도에서는 영광(359410, 신규상장)과 삼...",
+      "top_article": {
+        "title": "[특징주] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순...",
+        "press": "증시 속보",
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=726163",
+        "published_at": "2026-11-02T03:32:32.391Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_55",
-      "theme_name": "보안주",
-      "full_theme_name": "보안주(정보)",
-      "change_rate": "+0.82%",
-      "composite_score": 68,
-      "total_stocks_count": 52,
-      "leader_stock": "SGA솔루션즈",
-      "leader_ratio": 29.98,
-      "sub_leader_stock": "안랩",
+      "theme_id": "radar_30",
+      "theme_name": "조선",
+      "full_theme_name": "조선",
+      "change_rate": "+7.57%",
+      "composite_score": 97,
+      "total_stocks_count": 6,
+      "leader_stock": "한화오션",
+      "leader_ratio": 11,
+      "sub_leader_stock": "삼성중공업",
       "other_stocks": [
-        "라온시큐어",
-        "이니텍",
-        "파수AI"
+        "HD한국조선해양",
+        "대한조선",
+        "HJ중공업"
       ],
       "sub_stocks_top3": [
         {
-          "name": "안랩",
-          "rate": "+21.0%"
+          "name": "삼성중공업",
+          "rate": "+8.9%"
         },
         {
-          "name": "라온시큐어",
-          "rate": "+14.9%"
+          "name": "HD한국조선해양",
+          "rate": "+8.6%"
         },
         {
-          "name": "이니텍",
-          "rate": "+11.5%"
+          "name": "대한조선",
+          "rate": "+5.9%"
         }
       ],
-      "past_trigger_reason": "SGA솔루션즈, 보안주 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "보안주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4557,
+      "past_trigger_reason": "[속보 기사] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순... : 순매도에서는 한화오션(042660)이 오전 9시 31분과 10시 4분 모두 1위를 기록했다. 삼기에너지솔루션즈(419050)도 세 차례 집계에서 모두 상위 5개 종목에 포함됐다. 오전 11시 12분 기준 순...",
+      "future_momentum": "조선 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2943,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "SGA솔루션즈, 보안주 시장 거래대금 쏠림",
-      "today_rising_fact": "SGA솔루션즈, 보안주 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "SGA솔루션즈, 보안주 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "SGA솔루션즈",
-          "sub": "안랩, 라온시큐어, 이니텍, 파수AI"
-        },
-        "correlation": "[사업 팩트 매핑] SGA솔루션즈는 보안주 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "보안주 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순...",
+      "today_rising_fact": "[속보 기사] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순... : 순매도에서는 한화오션(042660)이 오전 9시 31분과 10시 4분 모두 1위를 기록했다. 삼기에너지솔루션즈(419050)도 세 차례 집계에서 모두 상위 5개 종목에 포함됐다. 오전 11시 12분 기준 순...",
+      "top_article": {
+        "title": "[특징주] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순...",
+        "press": "증시 속보",
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=726163",
+        "published_at": "2026-11-02T03:32:32.595Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_387",
-      "theme_name": "블록체인",
-      "full_theme_name": "블록체인",
-      "change_rate": "+1.29%",
-      "composite_score": 64,
-      "total_stocks_count": 23,
-      "leader_stock": "SGA솔루션즈",
-      "leader_ratio": 29.98,
-      "sub_leader_stock": "라온시큐어",
+      "theme_id": "radar_615",
+      "theme_name": "2026 하반기 신규상장",
+      "full_theme_name": "2026 하반기 신규상장",
+      "change_rate": "+3.40%",
+      "composite_score": 87,
+      "total_stocks_count": 31,
+      "leader_stock": "영광",
+      "leader_ratio": 88.82,
+      "sub_leader_stock": "니어스랩",
       "other_stocks": [
-        "이니텍",
-        "파수AI",
-        "드림시큐리티"
+        "진코스텍",
+        "멜콘",
+        "와이즈플래닛컴퍼니"
       ],
       "sub_stocks_top3": [
         {
-          "name": "라온시큐어",
-          "rate": "+14.9%"
+          "name": "니어스랩",
+          "rate": "+13.5%"
         },
         {
-          "name": "이니텍",
-          "rate": "+11.5%"
+          "name": "진코스텍",
+          "rate": "+11.4%"
         },
         {
-          "name": "파수AI",
+          "name": "멜콘",
           "rate": "+10.3%"
         }
       ],
-      "past_trigger_reason": "SGA솔루션즈, 블록체인 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "블록체인 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2268,
+      "past_trigger_reason": "[속보 기사] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순... : ◆ 기관, 삼성전자 순매수 유지…영광·삼기에너지솔루션즈 매도 상위 기관은 오전 10시 4분 삼성전자, 한국철강(104700), SK하이닉스(000660)... 순매도에서는 영광(359410, 신규상장)과 삼...",
+      "future_momentum": "2026 하반기 신규상장 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 8765,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "SGA솔루션즈, 블록체인 시장 거래대금 쏠림",
-      "today_rising_fact": "SGA솔루션즈, 블록체인 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "SGA솔루션즈, 블록체인 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "SGA솔루션즈",
-          "sub": "라온시큐어, 이니텍, 파수AI, 드림시큐리티"
-        },
-        "correlation": "[사업 팩트 매핑] SGA솔루션즈는 블록체인 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "블록체인 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순...",
+      "today_rising_fact": "[속보 기사] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순... : ◆ 기관, 삼성전자 순매수 유지…영광·삼기에너지솔루션즈 매도 상위 기관은 오전 10시 4분 삼성전자, 한국철강(104700), SK하이닉스(000660)... 순매도에서는 영광(359410, 신규상장)과 삼...",
+      "top_article": {
+        "title": "[특징주] 외국인, 삼성중공업·대한해운 매수 상위…기관, 삼성전자 순...",
+        "press": "증시 속보",
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=726163",
+        "published_at": "2026-11-02T03:32:32.685Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_421",
-      "theme_name": "日제품 불매운동",
-      "full_theme_name": "日제품 불매운동(수혜)",
-      "change_rate": "+0.37%",
-      "composite_score": 53,
-      "total_stocks_count": 21,
-      "leader_stock": "좋은사람들",
-      "leader_ratio": 6.99,
-      "sub_leader_stock": "배럴",
+      "theme_id": "radar_205",
+      "theme_name": "원자력발전",
+      "full_theme_name": "원자력발전",
+      "change_rate": "+3.95%",
+      "composite_score": 81,
+      "total_stocks_count": 50,
+      "leader_stock": "성광벤드",
+      "leader_ratio": 14.23,
+      "sub_leader_stock": "태광",
       "other_stocks": [
-        "메디앙스",
-        "비비안",
-        "PN풍년"
+        "효성중공업",
+        "강원에너지",
+        "GS건설"
       ],
       "sub_stocks_top3": [
         {
-          "name": "배럴",
-          "rate": "+5.8%"
+          "name": "태광",
+          "rate": "+12.5%"
         },
         {
-          "name": "메디앙스",
-          "rate": "+2.7%"
+          "name": "효성중공업",
+          "rate": "+11.0%"
         },
         {
-          "name": "비비안",
-          "rate": "+2.5%"
+          "name": "강원에너지",
+          "rate": "+9.6%"
         }
       ],
-      "past_trigger_reason": "좋은사람들, 日제품 불매운동 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "日제품 불매운동 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 92,
-      "is_real_leading": false,
+      "past_trigger_reason": "[속보 기사] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등 : 이외에도 한화엔진(10.71%), 현대힘스(10.41%), 성광벤드(10.25%), 태광(9.79%), 삼영엠텍(9.54%), 한화오션(7.80%), 일승(7.52%) 등이 강세를 보이고 있다. HD현대마린...",
+      "future_momentum": "원자력발전 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2139,
+      "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "좋은사람들, 日제품 불매운동 시장 거래대금 쏠림",
-      "today_rising_fact": "좋은사람들, 日제품 불매운동 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "좋은사람들, 日제품 불매운동 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "좋은사람들",
-          "sub": "배럴, 메디앙스, 비비안, PN풍년"
-        },
-        "correlation": "[사업 팩트 매핑] 좋은사람들는 日제품 불매운동 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "日제품 불매운동 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
+      "today_rising_fact": "[속보 기사] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등 : 이외에도 한화엔진(10.71%), 현대힘스(10.41%), 성광벤드(10.25%), 태광(9.79%), 삼영엠텍(9.54%), 한화오션(7.80%), 일승(7.52%) 등이 강세를 보이고 있다. HD현대마린...",
+      "top_article": {
+        "title": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
+        "press": "증시 속보",
+        "url": "https://www.newspim.com/news/view/20261102000307",
+        "published_at": "2026-11-02T03:32:32.869Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_36",
-      "theme_name": "해운",
-      "full_theme_name": "해운",
-      "change_rate": "+1.61%",
-      "composite_score": 46,
-      "total_stocks_count": 6,
-      "leader_stock": "HMM",
-      "leader_ratio": 4.26,
-      "sub_leader_stock": "대한해운",
+      "theme_id": "radar_123",
+      "theme_name": "전력설비",
+      "full_theme_name": "전력설비",
+      "change_rate": "+3.35%",
+      "composite_score": 76,
+      "total_stocks_count": 34,
+      "leader_stock": "효성중공업",
+      "leader_ratio": 11,
+      "sub_leader_stock": "산일전기",
       "other_stocks": [
-        "팬오션",
-        "흥아해운",
-        "KSS해운"
+        "LS ELECTRIC",
+        "일진전기",
+        "제룡전기"
       ],
       "sub_stocks_top3": [
         {
-          "name": "대한해운",
-          "rate": "+2.6%"
+          "name": "산일전기",
+          "rate": "+7.6%"
         },
         {
-          "name": "팬오션",
-          "rate": "+2.1%"
+          "name": "LS ELECTRIC",
+          "rate": "+7.5%"
         },
         {
-          "name": "흥아해운",
-          "rate": "+1.6%"
+          "name": "일진전기",
+          "rate": "+7.0%"
         }
       ],
-      "past_trigger_reason": "HMM, 해운 시장 거래대금 쏠림 발표 및 수급 유입",
-      "future_momentum": "해운 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 730,
+      "past_trigger_reason": "[속보 기사] 효성중공업, 지멘스와 디지털 전력망 협력 : 효성중공업이 독일 지멘스와 글로벌 전략적 파트너십을 맺고 디지털 전력망과 인공지능(AI) 데이터센터 전력 솔루션 협력을 추진한다. 이날 효성중공업 주가는 장중 하락세를 보였다. 아시아경제와 뉴스핌의 30일 ...",
+      "future_momentum": "전력설비 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2251,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "HMM, 해운 시장 거래대금 쏠림",
-      "today_rising_fact": "HMM, 해운 시장 거래대금 쏠림",
-      "top_article": null,
-      "checklist": {
-        "material": "HMM, 해운 시장 거래대금 쏠림",
-        "leaders": {
-          "lead": "HMM",
-          "sub": "대한해운, 팬오션, 흥아해운, KSS해운"
-        },
-        "correlation": "[사업 팩트 매핑] HMM는 해운 원천 기술 및 핵심 공급사로서 수혜 직결",
-        "future_expectation": "해운 후속 정책 수혜 및 2차 공급 계약 공시",
-        "expiration_date": "진행형 (1~3개월 파이프라인)",
-        "expiration_evidence": "정부 지원 로드맵 및 주요 고객사 벤더 등록 일정 준수",
-        "chart_phase": "바닥권 탈피 1차 상승 파동",
-        "conditions": {
-          "bullish": "외인·기관 동반 순매수 및 글로벌 공급 계약 공시",
-          "bearish": "단기 급등 후 차익 실현 매물 출회 및 지수 급락"
-        }
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 효성중공업, 지멘스와 디지털 전력망 협력",
+      "today_rising_fact": "[속보 기사] 효성중공업, 지멘스와 디지털 전력망 협력 : 효성중공업이 독일 지멘스와 글로벌 전략적 파트너십을 맺고 디지털 전력망과 인공지능(AI) 데이터센터 전력 솔루션 협력을 추진한다. 이날 효성중공업 주가는 장중 하락세를 보였다. 아시아경제와 뉴스핌의 30일 ...",
+      "top_article": {
+        "title": "[특징주] 효성중공업, 지멘스와 디지털 전력망 협력",
+        "press": "증시 속보",
+        "url": "https://www.vegannews.co.kr/news/article.html?no=398444",
+        "published_at": "2026-11-02T03:32:32.933Z"
       },
       "timeline": []
     }
