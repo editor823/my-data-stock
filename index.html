@@ -645,13 +645,23 @@
             <!-- 대분류 테마 선택 셀렉트박스 -->
             <div style="display: flex; flex-direction: column; gap: 6px;">
               <label style="font-size: 13px; color: #334155; font-weight: 700;">대분류 테마 선택</label>
-              <select id="custom-theme-select" onchange="handleCustomThemeSelectChange(this.value)" style="background: #ffffff; border: 1.5px solid #cbd5e1; color: #0f172a; padding: 0 14px; height: 42px; border-radius: 8px; font-size: 14px; font-weight: 700; outline: none; min-width: 170px; cursor: pointer; transition: border-color 0.2s;">
-                <option value="방산">방산 (K-방산 수출/자주포)</option>
-                <option value="로봇">로봇 (휴머노이드/감속기)</option>
-                <option value="원전">원전 (체코 30조/SMR)</option>
-                <option value="반도체">반도체 (HBM4/유리기판)</option>
-                <option value="바이오">바이오 (비만치료제/GLP-1)</option>
-                <option value="__custom__">✏️ [직접 입력...]</option>
+              <select id="custom-theme-select" onchange="handleCustomThemeSelectChange(this.value)" style="background: #ffffff; border: 1.5px solid #cbd5e1; color: #0f172a; padding: 0 14px; height: 42px; border-radius: 8px; font-size: 14px; font-weight: 700; outline: none; min-width: 260px; cursor: pointer; transition: border-color 0.2s;">
+                <optgroup label="🌐 [AI 데이터센터 7대 핵심 산업군]">
+                  <option value="AI데이터센터 - 반도체/하드웨어" selected>1. 반도체 및 하드웨어 (IT 인프라)</option>
+                  <option value="AI데이터센터 - 네트워크/광통신">2. 초고속 네트워크 & 광통신</option>
+                  <option value="AI데이터센터 - 열관리/냉각">3. 열관리 및 냉각 솔루션 (액침냉각)</option>
+                  <option value="AI데이터센터 - 전력인프라/원전">4. 전력 인프라 및 에너지원 (원전/SMR)</option>
+                  <option value="AI데이터센터 - 건설/EPC">5. 부동산, 인프라 개발 & 건설 (EPC)</option>
+                  <option value="AI데이터센터 - 클라우드/소프트웨어">6. 클라우드 및 운영 소프트웨어 (CSP/MSP)</option>
+                  <option value="AI데이터센터 - ESS/BESS">7. ESS(에너지저장장치, BESS)</option>
+                </optgroup>
+                <optgroup label="🔥 [기타 시장 주도 테마]">
+                  <option value="방산">방산 (K-방산 수출/자주포)</option>
+                  <option value="로봇">로봇 (휴머노이드/감속기)</option>
+                  <option value="원전">원전 (체코 30조/SMR)</option>
+                  <option value="바이오">바이오 (비만치료제/GLP-1)</option>
+                  <option value="__custom__">✏️ [직접 입력...]</option>
+                </optgroup>
               </select>
             </div>
 

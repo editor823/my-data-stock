@@ -1,4 +1,54 @@
 
+// ============================================================================
+// [재료 모음 2번 탭] 대분류 테마 선택 핸들러 & AI 데이터센터 7대 산업군 자동 완성
+// ============================================================================
+const AI_DC_STOCK_PRESETS = {
+  'AI데이터센터 - 반도체/하드웨어': 'SK하이닉스, 삼성전자, 한미반도체, 이수페타시스, 대덕전자, 와이씨, 테크윙',
+  'AI데이터센터 - 네트워크/광통신': '옵티코어, 대한광통신, 오이솔루션, 쏠리드, 우리로, 피피아이',
+  'AI데이터센터 - 열관리/냉각': 'GST, 케이엔솔, 유니셈, 워트, 인텍플러스, 삼화콘덴서',
+  'AI데이터센터 - 전력인프라/원전': 'HD현대일렉트릭, 효성중공업, 두산에너빌리티, LS ELECTRIC, 제룡전기, 일진전기, 우진엔텍',
+  'AI데이터센터 - 건설/EPC': '현대건설, 한미글로벌, 삼성E&A, GS건설, 희림',
+  'AI데이터센터 - 클라우드/소프트웨어': '삼성에스디에스, 포스코DX, 현대오토에버, 솔트룩스, 나무기술, 이노룰스',
+  'AI데이터센터 - ESS/BESS': '서진시스템, 한화솔루션, LS머트리얼즈, 신성에스티, 피엔티, LG에너지솔루션',
+  '방산': '한화에어로스페이스, 현대로템, LIG넥스원, 한국항공우주, 한화시스템',
+  '로봇': '레인보우로보틱스, 두산로보틱스, 엔젤로보틱스, 에스피지, 알에스오토메이션',
+  '원전': '두산에너빌리티, 우진엔텍, 비에이치아이, 우리기술, 한신기계',
+  '반도체': 'SK하이닉스, 삼성전자, 한미반도체, 제우스, 피에스케이홀딩스',
+  '바이오': '알테오젠, 삼천당제약, 리가켐바이오, 에이비엘바이오, 펩트론'
+};
+
+window.handleCustomThemeSelectChange = function(themeVal) {
+  const directWrap = document.getElementById('custom-theme-direct-wrap');
+  const stockInput = document.getElementById('stock-keyword-input');
+
+  if (themeVal === '__custom__') {
+    if (directWrap) directWrap.style.display = 'flex';
+    if (stockInput) stockInput.value = '';
+    return;
+  }
+
+  if (directWrap) directWrap.style.display = 'none';
+
+  // 1. 하위 추적 종목명에 해당 테마의 핵심 주도주 자동 채우기
+  if (stockInput && AI_DC_STOCK_PRESETS[themeVal]) {
+    stockInput.value = AI_DC_STOCK_PRESETS[themeVal];
+  }
+
+  // 2. 하단 테마 타임라인 분석 검색창과 동기화하여 해당 테마 타임라인 즉시 호출
+  const timelineSearchInput = document.getElementById('theme-timeline-search');
+  if (timelineSearchInput) {
+    timelineSearchInput.value = themeVal.replace('AI데이터센터 - ', '');
+    if (typeof searchThemeTimeline === 'function') {
+      searchThemeTimeline(timelineSearchInput.value);
+    }
+  }
+
+  if (window.showToast) {
+    window.showToast(`🎯 [${themeVal}] 7대 체크리스트와 핵심 관련주가 연결되었습니다.`, '🔍');
+  }
+};
+
+
 // [2번 탭 상단] 당일 시장 판도 & 주도 테마 레이더 실시간 연동 함수
 window.loadMarketOverviewRadar = async function () {
   const badgeEl = document.getElementById('market-radar-badge');

@@ -1,5 +1,277 @@
 [
   {
+    "theme_id": "ai_dc_hardware",
+    "theme_name": "AI데이터센터 - 반도체/하드웨어",
+    "sector": "AI 데이터센터 밸류체인",
+    "pattern_type": "실시간 수집 모멘텀",
+    "analysis_date": "2026-11-02",
+    "checklist": {
+      "material": "엔비디아 블랙웰(B200/GB200) 양산 가속화 및 HBM3E/HBM4 조기 출하, 고다층 MLB 기판 쇼티지 지속",
+      "leaders": {
+        "lead": "SK하이닉스, 삼성전자, 한미반도체",
+        "sub": "이수페타시스, 대덕전자, 와이씨, 테크윙, 리노공업"
+      },
+      "correlation": "빅테크 AI CapEx 설비투자 확대 ➔ AI 가속기 및 초고속 메모리 수요 폭증 ➔ 국내 HBM 및 고다층 PCB 소부장 실적 직결",
+      "future_expectation": "11월 20일 엔비디아 3분기 실적 발표 및 블랙웰 고객사 공급 가이던스 확인",
+      "expiration_date": "중장기 메가트렌드 (2026~2028 지속)",
+      "chart_phase": "실적 어닝 서프라이즈 기반 20일선 눌림목 반등 국면",
+      "conditions": {
+        "bullish": "HBM 수율 안정화 및 글로벌 빅테크 주문량 추가 증액 보도",
+        "bearish": "미 대중국 추가 반도체 수출 통제 및 단기 AI 투자 속도조절론"
+      }
+    },
+    "timeline": [
+      {
+        "date": "2026-11-02",
+        "stage": "뉴스",
+        "press": "한국경제",
+        "news_title": "빅테크 AI CAPEX 200조원 돌파… SK하이닉스·한미반도체 HBM4 공급망 선점",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=SK하이닉스+한미반도체+HBM4",
+        "summary": "엔비디아 차세대 AI 가속기 루빈용 HBM4 16단 샘플 공급 본격화 및 국내 반도체 패키징 장비사 수주 랠리 가속"
+      },
+      {
+        "date": "2026-10-31",
+        "stage": "증권사 리포트",
+        "press": "미래에셋증권",
+        "news_title": "[이수페타시스] AI 데이터센터 가속기용 다층 MLB 기판 초호황 진입",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=이수페타시스+MLB",
+        "summary": "구글·엔비디아향 차세대 서버 기판 수주 잔고 급증으로 3분기 및 4분기 사상 최대 실적 경신 가시화"
+      },
+      {
+        "date": "2026-10-28",
+        "stage": "DART 공시",
+        "press": "전자공시",
+        "news_title": "한미반도체 차세대 TC 본더 신규 수주 계약 체결 공시",
+        "news_url": "https://dart.fss.or.kr",
+        "summary": "글로벌 OSAT 및 메모리 제조사향 2.5D 어드밴스드 패키징용 본더 장비 대규모 단일 공급계약 체결"
+      }
+    ]
+  },
+  {
+    "theme_id": "ai_dc_network",
+    "theme_name": "AI데이터센터 - 초고속 네트워크 & 광통신",
+    "sector": "AI 데이터센터 밸류체인",
+    "pattern_type": "인프라 통신 모멘텀",
+    "analysis_date": "2026-11-02",
+    "checklist": {
+      "material": "GPU 클러스터 간 초저지연 데이터 병목 해소를 위한 800G/1.6T 광트랜시버 및 CPO 광학기술 도입 급증",
+      "leaders": {
+        "lead": "옵티코어, 대한광통신",
+        "sub": "오이솔루션, 쏠리드, 우리로, 피피아이"
+      },
+      "correlation": "AI 모델 규모 100배 증가 ➔ 데이터센터 내부 트래픽 폭발 ➔ 구리선 한계 봉착으로 초고속 광케이블·광트랜시버 전면 교체",
+      "future_expectation": "글로벌 클라우드 기업들의 800G 고속 광통신 모듈 양산 발주 계약 체결",
+      "expiration_date": "진행형 모멘텀 (데이터센터 신축 주기 연동)",
+      "chart_phase": "바닥권 대량 거래대금 유입 후 1차 파동 지지 확인",
+      "conditions": {
+        "bullish": "북미 빅테크향 800G 광트랜시버 양산 납품 승인",
+        "bearish": "광통신 부품 원가 상승 및 통신사 인프라 투자 집행 지연"
+      }
+    },
+    "timeline": [
+      {
+        "date": "2026-11-02",
+        "stage": "뉴스",
+        "press": "전자신문",
+        "news_title": "AI 데이터센터 트래픽 병목… 800G 광통신 트랜시버 수요 폭발",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=AI+데이터센터+광통신+800G",
+        "summary": "엔비디아 스펙트럼X 이더넷 플랫폼 도입 확대로 초저지연 광트랜시버 및 광섬유 케이블 수주 급증"
+      },
+      {
+        "date": "2026-10-30",
+        "stage": "증권사 리포트",
+        "press": "하나증권",
+        "news_title": "[옵티코어] 차세대 AI 데이터센터향 광모듈 양산 테스트 통과",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=옵티코어+광통신",
+        "summary": "AI 서버 클러스터 전용 고속 광통신 연결 솔루션 상용화로 북미 고객사향 벤더 진입 가시화"
+      }
+    ]
+  },
+  {
+    "theme_id": "ai_dc_cooling",
+    "theme_name": "AI데이터센터 - 열관리 및 냉각 솔루션 (액침냉각)",
+    "sector": "AI 데이터센터 밸류체인",
+    "pattern_type": "기술 패러다임 전환 모멘텀",
+    "analysis_date": "2026-11-02",
+    "checklist": {
+      "material": "블랙웰 TDP 1,000W 이상 고발열로 공랭식 한계 도달 ➔ 수랭식 칠러 및 비전도성 액침냉각(Immersion Cooling) 필수화",
+      "leaders": {
+        "lead": "GST, 케이엔솔",
+        "sub": "유니셈, 워트, 인텍플러스, 삼화콘덴서"
+      },
+      "correlation": "GPU 발열량 급증 ➔ PUE(전력효율지수) 규제 대응 ➔ 액침냉각 도입 시 데이터센터 전력 소비 30% 이상 절감",
+      "future_expectation": "주요 빅테크 데이터센터 액침냉각 표준 규격 제정 및 턴키 납품 수주",
+      "expiration_date": "2026년 하반기 액침냉각 상용화 본격화",
+      "chart_phase": "정배열 전환 후 5일선 지지 2차 시세 분출 타진",
+      "conditions": {
+        "bullish": "글로벌 클라우드(CSP) 신축 데이터센터 액침냉각 전면 채택 발표",
+        "bearish": "액체 유출 안전성 노이즈 및 초기 설비투자 비용 부담"
+      }
+    },
+    "timeline": [
+      {
+        "date": "2026-11-02",
+        "stage": "뉴스",
+        "press": "이데일리",
+        "news_title": "엔비디아 차세대 서버 '액침냉각' 필수… GST·케이엔솔 기술력 주목",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=데이터센터+액침냉각+GST",
+        "summary": "고발열 AI 가속기 냉각을 위한 액침냉각 시스템 글로벌 퀄테스트 통과 및 대규모 설비 공급 협의"
+      },
+      {
+        "date": "2026-10-29",
+        "stage": "증권사 리포트",
+        "press": "신한투자증권",
+        "news_title": "[케이엔솔] 글로벌 액침냉각 1위 서브머사와 협업으로 국내외 데이터센터 수주",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=케이엔솔+액침냉각",
+        "summary": "데이터센터 열관리 솔루션 매출 비중 확대로 2026년 영업이익 사상 최대치 갱신 전망"
+      }
+    ]
+  },
+  {
+    "theme_id": "ai_dc_power",
+    "theme_name": "AI데이터센터 - 전력 인프라 및 에너지원 (원전/SMR)",
+    "sector": "AI 데이터센터 밸류체인",
+    "pattern_type": "슈퍼사이클 주도주",
+    "analysis_date": "2026-11-02",
+    "checklist": {
+      "material": "북미 노후 송전망 교체 및 AI 데이터센터 전력 소비 폭증으로 초고압 변압기 쇼티지(3~4년) 지속 및 무탄소 SMR 전력 계약 체결",
+      "leaders": {
+        "lead": "HD현대일렉트릭, 효성중공업, 두산에너빌리티",
+        "sub": "LS ELECTRIC, 제룡전기, 일진전기, 우진엔텍, 비에이치아이"
+      },
+      "correlation": "데이터센터 증설 ➔ 전력망 연결 지연(3년 대기) ➔ 초고압 변압기 P(가격)·Q(수량) 동반 급등 + 24시간 안정 전력용 원전 직공급 PPA 체결",
+      "future_expectation": "체코 24조원 원전 본계약 서명 및 미국 빅테크의 차세대 SMR 전력 직구매 계약 확대",
+      "expiration_date": "장기 슈퍼사이클 (2030년까지 수주잔고 확보)",
+      "chart_phase": "사상 최고가 부근 기관·외인 쌍끌이 매수 지속",
+      "conditions": {
+        "bullish": "북미 변전소 추가 수주 랠리 및 3분기 어닝 서프라이즈",
+        "bearish": "원자재(구리, 규소강판) 가격 폭등 및 납품 기일 지연"
+      }
+    },
+    "timeline": [
+      {
+        "date": "2026-11-02",
+        "stage": "증권사 리포트",
+        "press": "한화투자증권",
+        "news_title": "[효성중공업] 3Q26 실적 일시적 숨고르기, 초고압 변압기 수주 모멘텀은 지속",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=효성중공업+변압기+수주",
+        "summary": "미국 및 유럽 시장 점유율 급상승과 초고압 변압기 수주잔고 5조원 돌파로 연간 최대 실적 순항"
+      },
+      {
+        "date": "2026-10-31",
+        "stage": "뉴스",
+        "press": "매일경제",
+        "news_title": "구글·아마존 이어 마이크로소프트도 원전 전력 확보… 두산에너빌리티 SMR 러브콜",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=두산에너빌리티+SMR+데이터센터",
+        "summary": "24시간 중단 없는 무탄소 전력 공급을 위해 AI 데이터센터 옆 소형원자로(SMR) 파운드리 수주 본격화"
+      }
+    ]
+  },
+  {
+    "theme_id": "ai_dc_epc",
+    "theme_name": "AI데이터센터 - 부동산, 인프라 개발 & 건설 (EPC)",
+    "sector": "AI 데이터센터 밸류체인",
+    "pattern_type": "부동산/EPC 턴어라운드",
+    "analysis_date": "2026-11-02",
+    "checklist": {
+      "material": "하이퍼스케일 AI 데이터센터 부지 인허가, 특화 CM(건설사업관리) 및 친환경 고효율 EPC 턴키 수주",
+      "leaders": {
+        "lead": "현대건설, 한미글로벌",
+        "sub": "삼성E&A, GS건설, 희림"
+      },
+      "correlation": "글로벌 IT 기업 데이터센터 신축 수요 급증 ➔ 전력·용수·통신 인프라 갖춘 부지 개발 및 전문 CM 기업 수혜",
+      "future_expectation": "국내외 초대형 하이퍼스케일 AI 데이터센터 신축 공사 수주 공시",
+      "expiration_date": "진행형 모멘텀 (프로젝트별 2~3년 소요)",
+      "chart_phase": "바닥권 턴어라운드 및 거래대금 점증 국면",
+      "conditions": {
+        "bullish": "해외 대형 데이터센터 턴키 시공 계약 체결",
+        "bearish": "PF 대출 규제 및 지자체 데이터센터 인허가 지연"
+      }
+    },
+    "timeline": [
+      {
+        "date": "2026-11-01",
+        "stage": "뉴스",
+        "press": "조선비즈",
+        "news_title": "AI 데이터센터 건설 붐… 한미글로벌·현대건설 특화 CM 및 시공 수주 릴레이",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=한미글로벌+데이터센터+CM",
+        "summary": "고난도 하이퍼스케일 데이터센터 프로젝트 건설사업관리 실적 독보적, 글로벌 빅테크 전용 부지 개발 본격 착수"
+      }
+    ]
+  },
+  {
+    "theme_id": "ai_dc_cloud",
+    "theme_name": "AI데이터센터 - 클라우드 및 운영 소프트웨어 (CSP / MSP)",
+    "sector": "AI 데이터센터 밸류체인",
+    "pattern_type": "소프트웨어 솔루션 모멘텀",
+    "analysis_date": "2026-11-02",
+    "checklist": {
+      "material": "기업용 생성형 AI 인프라 구축, 소버린 AI 플랫폼, 하이브리드 멀티클라우드 운영 관리(MSP) 수요 급증",
+      "leaders": {
+        "lead": "삼성에스디에스, 포스코DX",
+        "sub": "현대오토에버, 솔트룩스, 나무기술, 이노룰스"
+      },
+      "correlation": "데이터센터 하드웨어 구축 완료 ➔ 기업 데이터 연동 및 맞춤형 LLM 솔루션 운영 ➔ 클라우드 MSP 반복 매출 급증",
+      "future_expectation": "정부 및 공공 소버린 AI 인프라 사업자 선정 및 금융권 프라이빗 클라우드 수주",
+      "expiration_date": "2026~2027 소프트웨어 가치 현실화 국면",
+      "chart_phase": "우상향 박스권 안착 후 상단 돌파 시도",
+      "conditions": {
+        "bullish": "대기업 계열사 및 공공기관 차세대 AI 클라우드 전환 프로젝트 수주",
+        "bearish": "기업 IT 예산 축소 및 클라우드 마이그레이션 지연"
+      }
+    },
+    "timeline": [
+      {
+        "date": "2026-11-02",
+        "stage": "뉴스",
+        "press": "디지털타임스",
+        "news_title": "기업용 생성형 AI 솔루션 시장 개막… 삼성SDS·포스코DX 클라우드 매출 질주",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=삼성SDS+클라우드+AI",
+        "summary": "고성능 GPU 클라우드 서비스(GPUaaS) 도입 기업 급증으로 고수익성 클라우드 매출 비중 40% 돌파"
+      }
+    ]
+  },
+  {
+    "theme_id": "ai_dc_ess",
+    "theme_name": "AI데이터센터 - ESS(에너지저장장치, BESS)",
+    "sector": "AI 데이터센터 밸류체인",
+    "pattern_type": "전력 보조 및 배터리 부활 모멘텀",
+    "analysis_date": "2026-11-02",
+    "checklist": {
+      "material": "데이터센터 블랙아웃 방지용 UPS(무정전전원장치) 대체 및 피크 전력 절감용 대용량 BESS(배터리 에너지저장장치) 공급 급증",
+      "leaders": {
+        "lead": "서진시스템, 한화솔루션",
+        "sub": "LS머트리얼즈, 신성에스티, 피엔티, LG에너지솔루션"
+      },
+      "correlation": "AI 서버 전력 스파이크 발생 ➔ 전력망 안정화용 대규모 ESS 필수 ➔ 미국 및 유럽 대형 전력용 ESS 공급사 수주 잭팟",
+      "future_expectation": "글로벌 ESS 시스템 기업(플루언스, 테슬라 메가팩)향 컨테이너 BESS 장기 공급 계약 체결",
+      "expiration_date": "2026년 전기차 캐즘 극복하는 배터리의 핵심 돌파구",
+      "chart_phase": "실적 호전 기반 5일/20일 이동평균선 정배열 안착",
+      "conditions": {
+        "bullish": "미국 유틸리티급 대용량 ESS 단일 수주 조 단위 계약 공시",
+        "bearish": "배터리 셀 화재 안전성 우려 및 보조금 정책 변동"
+      }
+    },
+    "timeline": [
+      {
+        "date": "2026-11-02",
+        "stage": "뉴스",
+        "press": "머니투데이",
+        "news_title": "AI 데이터센터 필수 전력망 보조재 'ESS' 대폭발… 서진시스템 사상 최대 실적",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=서진시스템+ESS+수주",
+        "summary": "글로벌 1위 ESS 기업향 대용량 배터리 인클로저 및 컨테이너 BESS 완제품 독점 공급으로 분기 최대 이익 달성"
+      },
+      {
+        "date": "2026-10-30",
+        "stage": "증권사 리포트",
+        "press": "대신증권",
+        "news_title": "[LS머트리얼즈] 차세대 울트라커패시터(UC), 데이터센터 전력 피크 백업 전원 독점",
+        "news_url": "https://search.naver.com/search.naver?where=news&query=LS머트리얼즈+UC",
+        "summary": "급격한 전력 수요 급증 시 찰나의 전력 공백을 메우는 고출력 UC 공급 개시로 신성장 동력 장착"
+      }
+    ]
+  },
+  {
     "theme_id": "custom_1789721514159",
     "theme_name": "원전",
     "sector": "사용자 관심 테마",
