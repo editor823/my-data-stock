@@ -37,17 +37,9 @@ jobs:
         continue-on-error: true
         run: node scripts/update_simple_channel_briefing.js
 
-      - name: Python 환경 설정
+      - name: 4. 미국 11개 섹터 및 최신 시황 데이터 수집 및 갱신
         continue-on-error: true
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: 4. 미국 섹터 브리핑 데이터 수집 및 갱신
-        continue-on-error: true
-        run: |
-          pip install requests beautifulsoup4 yfinance
-          python scripts/fetch_us_sector.py
+        run: node scripts/update_us_market.js
 
       - name: 5. 텔레그램 주식 브리핑 자동 발송
         continue-on-error: true

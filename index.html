@@ -1265,167 +1265,19 @@
             <div style="font-size: 0.82rem; font-weight: 900; color: #d4a373; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
               <span>💡</span> [초보자 3초 요약] 어제 미국 장은 왜 이렇게 움직였을까?
             </div>
-            <div id="us-market-briefing-summary" style="font-size: 0.88rem; color: #1e293b; line-height: 1.65;">
-              1. <strong>연준의 9월 FOMC 기준금리 결정 주시</strong>: 글로벌 자산시장은 미국 금리 인하 경로와 파월 의장의 발언에 촉각을 곤두세우며 팽팽한 관망세를 나타내고 있습니다.<br>
-              2. <strong>국제유가 및 국채금리 변동성 점검</strong>: 미 국채 금리 움직임과 유가 흐름이 기술주 및 성장주 밸류에이션에 단기 영향을 주며 섹터별 차별화가 전개되고 있습니다.<br>
-              3. <strong>빅테크 및 반도체 실적·수요 점검</strong>: AI 반도체 공급망 및 핵심 테크 기업들의 실질 수주 모멘텀을 중심으로 저가 매수세가 유입 중입니다.
+            <div id="us-market-briefing-summary" style="font-size: 0.88rem; color: #f5ebe0; line-height: 1.65;">
+              1. 미 연준 통화정책 및 주요 경제지표 발표를 앞두고 증시 변동성 지속<br>
+              2. AI 데이터센터 및 반도체 밸류체인 수급 분산 속 섹터별 차별화 장세<br>
+              3. 국제유가 및 국채금리 등락에 따른 방어주와 성장주 간 손바뀜 전개
             </div>
           </div>
 
           <!-- C. [신규 개편] 미국 증시 섹터 브리핑 (심플관심종목 2단 그리드 구조 - data/us_sector_briefing.json 실시간 연동) -->
           <div id="us-sector-briefing-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-bottom: 20px;">
-            
-            <!-- [좌측 열: 강세 업종 (11개 섹터 중 상승 섹터)] -->
-            <div style="background: #fef2f2; border: 1px solid #fecaca; border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; justify-content: space-between;">
-              <div>
-                <!-- 섹션 타이틀 -->
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px dashed #fca5a5; padding-bottom: 10px;">
-                  <div style="display: flex; align-items: center; gap: 8px;">
-                    <span style="font-size: 1.15rem;">🔥</span>
-                    <span style="font-size: 1rem; font-weight: 900; color: #991b1b;">강세 업종 (11개 섹터 중 상승 섹터)</span>
-                  </div>
-                  <span style="font-size: 0.72rem; background: #fee2e2; color: #dc2626; border: 1px solid #fca5a5; padding: 2px 8px; border-radius: 6px; font-weight: 800;">
-                    상승 주도
-                  </span>
-                </div>
-
-                <!-- 섹터 1: 에너지 (XLE) -->
-                <div style="background: #ffffff; border: 1px solid #fecaca; border-radius: 10px; padding: 12px 14px; margin-bottom: 12px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                    <div style="font-size: 0.92rem; font-weight: 800; color: #1e293b; display: flex; align-items: center; gap: 6px;">
-                      <span style="color: #dc2626; font-weight: 900;">1위</span>
-                      <span>에너지 (XLE)</span>
-                    </div>
-                    <span style="font-size: 0.95rem; font-weight: 900; color: #dc2626;">+2.17% ▲</span>
-                  </div>
-                  <div style="font-size: 0.8rem; color: #475569; line-height: 1.55; margin-bottom: 6px;">
-                    • <strong>상승 사유:</strong> 후티 반군의 사우디 공격으로 East-West 송유관 가동 중단, WTI +4.03% 급등(105.48달러, 4개월 최고)
-                  </div>
-                  <div style="font-size: 0.77rem; color: #64748b; background: #fff1f2; padding: 6px 10px; border-radius: 6px; line-height: 1.5;">
-                    <strong style="color: #dc2626;">관련 종목:</strong> 발레로(VLO) <span style="color: #dc2626; font-weight: 700;">+3.68%</span>, 마라톤페트롤리엄(MPC) <span style="color: #dc2626; font-weight: 700;">+3.63%</span>, 옥시덴털(OXY) <span style="color: #dc2626; font-weight: 700;">+2.82%</span>, 셰브론(CVX) <span style="color: #dc2626; font-weight: 700;">+2.64%</span>, 엑슨모빌(XOM) <span style="color: #dc2626; font-weight: 700;">+2.57%</span>
-                  </div>
-                </div>
-
-                <!-- 섹터 2: 소재 (XLB) -->
-                <div style="background: #ffffff; border: 1px solid #fecaca; border-radius: 10px; padding: 12px 14px; margin-bottom: 14px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                    <div style="font-size: 0.92rem; font-weight: 800; color: #1e293b; display: flex; align-items: center; gap: 6px;">
-                      <span style="color: #dc2626; font-weight: 900;">2위</span>
-                      <span>소재 (XLB)</span>
-                    </div>
-                    <span style="font-size: 0.95rem; font-weight: 900; color: #dc2626;">+0.48% ▲</span>
-                  </div>
-                  <div style="font-size: 0.8rem; color: #475569; line-height: 1.55; margin-bottom: 6px;">
-                    • <strong>상승 사유:</strong> 금 약세 속 금광주 견조
-                  </div>
-                  <div style="font-size: 0.77rem; color: #64748b; background: #fff1f2; padding: 6px 10px; border-radius: 6px; line-height: 1.5;">
-                    <strong style="color: #dc2626;">관련 종목:</strong> 뉴몬트(NEM) <span style="color: #dc2626; font-weight: 700;">+0.91%</span>, 프리포트맥모란(FCX) <span style="color: #dc2626; font-weight: 700;">+0.06%</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 하단 [참고 박스: 매크로 원자재 & 변동성] -->
-              <div style="background: #ffffff; border: 1px solid #fca5a5; border-radius: 10px; padding: 12px 14px; margin-top: 6px;">
-                <div style="font-size: 0.8rem; font-weight: 800; color: #b91c1c; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
-                  <span>📌</span> [핵심 참고] 원자재 & 야간 변동성 지표
-                </div>
-                <ul style="font-size: 0.77rem; color: #475569; line-height: 1.65; margin: 0; padding-left: 16px;">
-                  <li>미국 디젤 갤런당 <strong style="color: #dc2626;">6달러 사상 최고</strong> — 유가발 인플레 재점화 우려</li>
-                  <li>브렌트유 <strong style="color: #dc2626;">+2.67%(108.50)</strong> / 금 <strong style="color: #d4a373;">-0.43%(4,333.40)</strong> / VIX <strong style="color: #dc2626;">+0.58%(17.20)</strong></li>
-                  <li>야간장 고저 변동폭 <strong>1.94%</strong> (고 1,050.30 / 저 1,030.30)로 등락 심화</li>
-                </ul>
-              </div>
+            <div style="grid-column: 1 / -1; padding: 30px; text-align: center; color: #a89f91; background: #241c18; border: 1px dashed #4a3b34; border-radius: 12px;">
+              <div style="font-size: 1.05rem; font-weight: 700; color: #f5ebe0; margin-bottom: 6px;">⏳ 미국 11개 섹터 및 최신 시황 브리핑 수신 중...</div>
+              <div style="font-size: 0.82rem; color: #a89f91;">뉴욕 증시 정규장 마감 기준 11대 섹터 ETF 및 원자재·변동성 실시간 데이터를 집계하고 있습니다.</div>
             </div>
-
-            <!-- [우측 열: 약세 업종 TOP 5 (파란색 계열 강조)] -->
-            <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 12px; padding: 18px 20px;">
-              <!-- 섹션 타이틀 -->
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px dashed #7dd3fc; padding-bottom: 10px;">
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <span style="font-size: 1.15rem;">📉</span>
-                  <span style="font-size: 1rem; font-weight: 900; color: #d4a373;">약세 업종 TOP 5</span>
-                </div>
-                <span style="font-size: 0.72rem; background: #e0f2fe; color: #d4a373; border: 1px solid #7dd3fc; padding: 2px 8px; border-radius: 6px; font-weight: 800;">
-                  하락 상위
-                </span>
-              </div>
-
-              <!-- 5대 약세 업종 리스트 -->
-              <div style="display: flex; flex-direction: column; gap: 10px;">
-                
-                <!-- 1위 경기소비재 (XLY) -->
-                <div style="background: #ffffff; border: 1px solid #bae6fd; border-radius: 8px; padding: 10px 12px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-                    <div style="font-size: 0.88rem; font-weight: 800; color: #1e293b;">
-                      <span style="color: #d4a373; font-weight: 900;">1위</span> 경기소비재 (XLY)
-                    </div>
-                    <span style="font-size: 0.88rem; font-weight: 900; color: #d4a373;">-1.75% ▼</span>
-                  </div>
-                  <div style="font-size: 0.77rem; color: #64748b; line-height: 1.5;">
-                    유가 급등에 따른 소비 여력 위축 및 금리 인상 가능성<br>
-                    <span style="color: #475569;">(스타벅스 <strong style="color: #d4a373;">-2.51%</strong>, 나이키 <strong style="color: #d4a373;">-2.24%</strong>, 아마존 <strong style="color: #d4a373;">-2.02%</strong>, 맥도날드 <strong style="color: #d4a373;">-1.83%</strong>)</span>
-                  </div>
-                </div>
-
-                <!-- 2위 유틸리티 (XLU) -->
-                <div style="background: #ffffff; border: 1px solid #bae6fd; border-radius: 8px; padding: 10px 12px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-                    <div style="font-size: 0.88rem; font-weight: 800; color: #1e293b;">
-                      <span style="color: #d4a373; font-weight: 900;">2위</span> 유틸리티 (XLU)
-                    </div>
-                    <span style="font-size: 0.88rem; font-weight: 900; color: #d4a373;">-1.20% ▼</span>
-                  </div>
-                  <div style="font-size: 0.77rem; color: #64748b; line-height: 1.5;">
-                    금리 상승기에 배당주 매력 감소<br>
-                    <span style="color: #475569;">(SO <strong style="color: #d4a373;">-1.21%</strong>, DUK <strong style="color: #d4a373;">-1.05%</strong>, NEE <strong style="color: #d4a373;">-0.69%</strong>)</span>
-                  </div>
-                </div>
-
-                <!-- 3위 커뮤니케이션 (XLC) -->
-                <div style="background: #ffffff; border: 1px solid #bae6fd; border-radius: 8px; padding: 10px 12px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-                    <div style="font-size: 0.88rem; font-weight: 800; color: #1e293b;">
-                      <span style="color: #d4a373; font-weight: 900;">3위</span> 커뮤니케이션 (XLC)
-                    </div>
-                    <span style="font-size: 0.88rem; font-weight: 900; color: #d4a373;">-0.90% ▼</span>
-                  </div>
-                  <div style="font-size: 0.77rem; color: #64748b; line-height: 1.5;">
-                    대형 기술주 차익실현<br>
-                    <span style="color: #475569;">(넷플릭스 <strong style="color: #d4a373;">-3.01%</strong>, 디즈니 <strong style="color: #d4a373;">-2.00%</strong>, 알파벳 <strong style="color: #d4a373;">-1.26%</strong> / 메타 <strong style="color: #dc2626;">+0.70%</strong>)</span>
-                  </div>
-                </div>
-
-                <!-- 4위 필수소비재 (XLP) -->
-                <div style="background: #ffffff; border: 1px solid #bae6fd; border-radius: 8px; padding: 10px 12px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-                    <div style="font-size: 0.88rem; font-weight: 800; color: #1e293b;">
-                      <span style="color: #d4a373; font-weight: 900;">4위</span> 필수소비재 (XLP)
-                    </div>
-                    <span style="font-size: 0.88rem; font-weight: 900; color: #d4a373;">-0.82% ▼</span>
-                  </div>
-                  <div style="font-size: 0.77rem; color: #64748b; line-height: 1.5;">
-                    유통 대형주 중심 약세<br>
-                    <span style="color: #475569;">(코스트코 <strong style="color: #d4a373;">-1.91%</strong>, 월마트 <strong style="color: #d4a373;">-0.91%</strong>, KO <strong style="color: #d4a373;">-0.72%</strong>)</span>
-                  </div>
-                </div>
-
-                <!-- 5위 산업재 (XLI) -->
-                <div style="background: #ffffff; border: 1px solid #bae6fd; border-radius: 8px; padding: 10px 12px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-                    <div style="font-size: 0.88rem; font-weight: 800; color: #1e293b;">
-                      <span style="color: #d4a373; font-weight: 900;">5위</span> 산업재 (XLI)
-                    </div>
-                    <span style="font-size: 0.88rem; font-weight: 900; color: #d4a373;">-0.64% ▼</span>
-                  </div>
-                  <div style="font-size: 0.77rem; color: #64748b; line-height: 1.5;">
-                    전력 인프라 약세<br>
-                    <span style="color: #475569;">(콴타서비스 <strong style="color: #d4a373;">-1.39%</strong>, 허벨 <strong style="color: #d4a373;">-0.87%</strong>)</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
           </div>
 
           <!-- D. 바로가기 포털 & 실시간 검색 바 -->
