@@ -38,11 +38,11 @@ window.handleCustomThemeSelectChange = function(themeVal) {
   const timelineSearchInput = document.getElementById('theme-timeline-search');
   if (timelineSearchInput) {
     timelineSearchInput.value = themeVal.replace('AI데이터센터 - ', '');
-    if (typeof searchThemeTimeline === 'function') {
-      searchThemeTimeline(timelineSearchInput.value);
-    }
   }
-
+  // 하단 타임라인과 7대 체크리스트 즉시 연동
+  if (typeof window.selectThemeFromDossier === 'function') {
+    window.selectThemeFromDossier(themeVal);
+  }
   if (window.showToast) {
     window.showToast(`🎯 [${themeVal}] 7대 체크리스트와 핵심 관련주가 연결되었습니다.`, '🔍');
   }
@@ -1850,6 +1850,211 @@ window.updateDossierMemo = function(id, memo) {
     savePinnedDossiers(list);
   }
 };
+
+// ============================================================================
+// [탐정 사건 수첩] 🔍 타임라인 분석 원클릭 연동 엔진 (AI데이터센터 등 모든 테마 지원)
+// ============================================================================
+window.selectThemeFromDossier = async function(themeIdentifier) {
+  try {
+    if (!themeIdentifier) {
+      if (window.showToast) window.showToast('선택된 테마 정보가 없습니다.', '⚠️');
+      return;
+    }
+
+    const searchKey = String(themeIdentifier).trim();
+
+    // 1. 테마 단축명 <-> 정식 테마 ID 매핑 테이블
+    const THEME_ALIAS_MAP = {
+      'AI데이터센터 - ESS/BESS': 'ai_dc_ess',
+      'AI데이터센터 - ESS': 'ai_dc_ess',
+      'AI데이터센터 - ESS(에너지저장장치, BESS)': 'ai_dc_ess',
+      'ESS/BESS': 'ai_dc_ess',
+      'ESS': 'ai_dc_ess',
+      'BESS': 'ai_dc_ess',
+      'AI데이터센터 - 네트워크/광통신': 'ai_dc_network',
+      'AI데이터센터 - 초고속 네트워크 & 광통신': 'ai_dc_network',
+      '네트워크/광통신': 'ai_dc_network',
+      '초고속 네트워크 & 광통신': 'ai_dc_network',
+      '광통신': 'ai_dc_network',
+      '옵티코어': 'ai_dc_network',
+      'AI데이터센터 - 반도체/하드웨어': 'ai_dc_hardware',
+      '반도체/하드웨어': 'ai_dc_hardware',
+      'AI데이터센터 - 열관리/냉각': 'ai_dc_cooling',
+      'AI데이터센터 - 열관리 및 냉각 솔루션 (액침냉각)': 'ai_dc_cooling',
+      '열관리/냉각': 'ai_dc_cooling',
+      '액침냉각': 'ai_dc_cooling',
+      'AI데이터센터 - 전력인프라/원전': 'ai_dc_power',
+      'AI데이터센터 - 전력 인프라 및 에너지원 (원전/SMR)': 'ai_dc_power',
+      '전력인프라/원전': 'ai_dc_power',
+      '전력 인프라': 'ai_dc_power',
+      'AI데이터센터 - 건설/EPC': 'ai_dc_epc',
+      'AI데이터센터 - 부동산, 인프라 개발 & 건설 (EPC)': 'ai_dc_epc',
+      '건설/EPC': 'ai_dc_epc',
+      '부동산/EPC': 'ai_dc_epc',
+      'AI데이터센터 - 클라우드/소프트웨어': 'ai_dc_cloud',
+      'AI데이터센터 - 클라우드 및 운영 소프트웨어 (CSP / MSP)': 'ai_dc_cloud',
+      '클라우드/소프트웨어': 'ai_dc_cloud',
+      '방산': 'custom_defense_2026',
+      '로봇': 'robot_physical_ai',
+      '원전': 'nuclear_smr_power'
+    };
+
+    // 2. 전체 테마 풀 수집
+    const allThemes = [
+      ...(Array.isArray(window.detectiveThemes) ? window.detectiveThemes : []),
+      ...((typeof themeTimelineCache !== 'undefined' && themeTimelineCache && Array.isArray(themeTimelineCache.themes)) ? themeTimelineCache.themes : [])
+    ];
+
+    let matchedTheme = null;
+
+    // A. Alias Map 매칭
+    const aliasId = THEME_ALIAS_MAP[searchKey];
+    if (aliasId) {
+      matchedTheme = allThemes.find(t => t.theme_id === aliasId);
+    }
+
+    // B. theme_id 또는 theme_name 정확 일치
+    if (!matchedTheme) {
+      matchedTheme = allThemes.find(t => t.theme_id === searchKey || t.theme_name === searchKey);
+    }
+
+    // C. 부분 포함 일치 (includes)
+    if (!matchedTheme) {
+      matchedTheme = allThemes.find(t => t.theme_name && (t.theme_name.includes(searchKey) || searchKey.includes(t.theme_name)));
+    }
+
+    // D. 핵심 키워드 분해 매칭
+    if (!matchedTheme) {
+      const keywords = searchKey.replace(/AI데이터센터\s*-\s*/g, '').split(/[\s/,&()]+/).filter(w => w.length >= 2);
+      matchedTheme = allThemes.find(t => {
+        const tn = t.theme_name || '';
+        const leads = Array.isArray(t.lead_stocks) ? t.lead_stocks.join(' ') : String(t.lead_stocks || '');
+        return keywords.some(k => tn.includes(k) || leads.includes(k));
+      });
+    }
+
+    // E. 사건 수첩 보존 데이터에서 대장주/종목 참조
+    let pinnedItem = null;
+    try {
+      if (typeof getPinnedDossiers === 'function') {
+        const pinnedList = getPinnedDossiers();
+        pinnedItem = pinnedList.find(p => p.name === searchKey || searchKey.includes(p.name));
+      }
+    } catch (e) {}
+
+    // F. 매칭 실패 시 수첩 정보를 기반으로 동적 테마 생성 및 등록
+    if (!matchedTheme) {
+      const fallbackLead = pinnedItem ? (pinnedItem.leadStock || pinnedItem.name) : searchKey;
+      const fallbackSub = pinnedItem ? (pinnedItem.subStock || '') : '';
+      matchedTheme = {
+        theme_id: 'dossier_' + Date.now(),
+        theme_name: searchKey,
+        sector: '사건 수첩 관심 테마',
+        pattern_type: '주도 섹터 실체적 재료 분석',
+        analysis_date: new Date().toISOString().slice(0, 10),
+        checklist: {
+          material: `[${searchKey}] 사건 수첩에서 추적 중인 핵심 모멘텀 테마`,
+          leaders: {
+            lead: fallbackLead,
+            sub: fallbackSub || '관련주 추적 중'
+          },
+          correlation: `${fallbackLead} 중심의 거래대금 분출 및 수급 주도성 포착`,
+          future_expectation: '글로벌 수주 및 실적 가시성, 후속 정책 모멘텀 추적',
+          expiration_date: '1~3개월 (주도 파동 사이클)',
+          chart_phase: '눌림목 지지선 후 2차 시세 분출 국면',
+          conditions: {
+            bullish: '주도 대장주 5일선 지지 및 거래대금 폭증',
+            bearish: '추세 이탈 및 거래량 급감 시 분할 매도'
+          }
+        },
+        timeline: [
+          {
+            date: new Date().toISOString().slice(0, 10),
+            stage: '사건 수첩 복기',
+            press: '탐정 수첩 레이더',
+            news_title: `[사건 수첩 연동] ${searchKey} 정밀 재료 타임라인 분석`,
+            news_url: `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(searchKey + ' ' + fallbackLead)}`,
+            key_point: `대장주: ${fallbackLead} | 수첩 등록일자 기준 실시간 팩트 추적`
+          }
+        ],
+        lead_stocks: pinnedItem ? (pinnedItem.stocks || [fallbackLead]) : [fallbackLead],
+        _asyncSupplementsLoaded: false,
+        _technicals: null
+      };
+
+      if (!Array.isArray(window.detectiveThemes)) window.detectiveThemes = [];
+      window.detectiveThemes.unshift(matchedTheme);
+    }
+
+    // 3. 드롭다운 옵션 동기화 및 선택값 지정
+    if (typeof populateDetectiveSelect === 'function') {
+      populateDetectiveSelect();
+    }
+    const selectEl = document.getElementById('theme-timeline-select');
+    if (selectEl) {
+      let hasOpt = Array.from(selectEl.options).some(o => o.value === matchedTheme.theme_id);
+      if (!hasOpt) {
+        const opt = document.createElement('option');
+        opt.value = matchedTheme.theme_id;
+        opt.text = `[${matchedTheme.sector || matchedTheme.category || '테마'}] ${matchedTheme.theme_name}`;
+        selectEl.appendChild(opt);
+      }
+      selectEl.value = matchedTheme.theme_id;
+    }
+
+    // 4. 전역 선택 상태 갱신
+    window.currentSelectedDetectiveTheme = matchedTheme;
+    if (typeof activeTimelineThemeId !== 'undefined') {
+      activeTimelineThemeId = matchedTheme.theme_id;
+    }
+    if (typeof currentStockFilter !== 'undefined') {
+      currentStockFilter = 'ALL';
+    }
+
+    // 5. 7대 체크리스트 렌더링
+    if (typeof window.renderDetectiveCard === 'function') {
+      window.renderDetectiveCard(matchedTheme, window.activeTimelinePeriod || 'all');
+    }
+
+    // 6. 타임라인 뉴스 피드 렌더링
+    if (typeof renderThemeTimelineView === 'function') {
+      renderThemeTimelineView(matchedTheme.theme_id, window.activeTimelinePeriod || 'all');
+    }
+
+    // 7. 4대 채널(뉴스, 공시, 리포트, 블로그) 동적 수집 신호 보강
+    const primaryLead = (matchedTheme.checklist && matchedTheme.checklist.leaders && matchedTheme.checklist.leaders.lead)
+      || (matchedTheme.lead_stocks && matchedTheme.lead_stocks[0])
+      || (pinnedItem && pinnedItem.leadStock)
+      || matchedTheme.theme_name;
+    if (typeof window.enrichThemeWithAllSignals === 'function') {
+      window.enrichThemeWithAllSignals(matchedTheme, primaryLead);
+    }
+
+    // 8. 상단 모멘텀 카드 동기화
+    if (typeof window.renderTopMomentumCards === 'function' && Array.isArray(window.detectiveThemes)) {
+      window.renderTopMomentumCards(window.detectiveThemes);
+    }
+
+    // 9. 타임라인 상세 뷰어로 부드러운 스크롤 이동
+    setTimeout(() => {
+      const viewer = document.getElementById('theme-timeline-viewer-section')
+        || document.getElementById('theme-timeline-container')
+        || document.getElementById('stock-material-timeline-list');
+      if (viewer) {
+        viewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 120);
+
+    if (window.showToast) {
+      window.showToast(`🎯 [${matchedTheme.theme_name}] 7대 체크리스트 및 타임라인 분석으로 이동했습니다.`, '🔍');
+    }
+  } catch (err) {
+    console.error('[selectThemeFromDossier Error]', err);
+    if (window.showToast) window.showToast('타임라인 연동 중 오류가 발생했습니다.', '⚠️');
+  }
+};
+
+
 
 // 10. 상단 [💾 탐정 사건 수첩에 저장] 버튼 핸들러
 window.saveToDossierFromTracker = function() {
