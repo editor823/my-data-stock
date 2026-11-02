@@ -3895,6 +3895,15 @@ window.getSafeNewsUrl = getSafeNewsUrl;
 
 // 실시간 증시 캘린더 API 연동 및 로컬스토리지 보존 (자동 즉시 승인 등록)
 async function loadCalendarEventsFromStorage(forceRefresh = false) {
+  // 0. 구버전 10월 더미 일정 자동 클린업 (1회성)
+  try {
+    if (!localStorage.getItem('stock_calendar_v4_clean')) {
+      localStorage.removeItem('stock_calendar_approved_events');
+      localStorage.removeItem('stock_calendar_pending_events');
+      localStorage.setItem('stock_calendar_v4_clean', 'true');
+    }
+  } catch (e) {}
+
   const pendingBadge = document.getElementById('pending-events-badge');
   const weekCountEl = document.getElementById('stock-events-week-count');
   const monthCountEl = document.getElementById('stock-events-month-count');
@@ -4280,9 +4289,8 @@ function renderApprovedCalendarUI() {
       weekEvents.push(e);
     } else if (diffDays > 7) {
       monthEvents.push(e);
-    } else {
-      weekEvents.push(e);
     }
+    // diffDays < 0 (이미 지난 일정)은 이번 주/이번 달 예정 목록에서 제외
   });
 
   if (weekCountEl) weekCountEl.textContent = `${weekEvents.length}건`;
