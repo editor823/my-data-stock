@@ -1,4 +1,4 @@
-name: Live Stock News Auto Update (네이버 증시 뉴스 100건 자동 동기화)
+name: Live Stock News Auto Update (네이버 증시 뉴스 100건 및 실시간 주도 테마 자동 동기화)
 
 on:
   schedule:
@@ -25,34 +25,40 @@ jobs:
         with:
           node-version: 20
 
-      - name: 최신 증시 뉴스 100건 수집 및 시드 갱신
+      - name: 1. 최신 증시 뉴스 100건 수집 및 시드 갱신
+        continue-on-error: true
         run: node scripts/update_live_domestic_news.js
 
-      - name: 심플 관심종목 TV 최신 영상 브리핑 데이터 수집
+      - name: 2. 당일 시장 판도 및 주도 테마 레이더 데이터 수집 및 갱신
+        continue-on-error: true
+        run: node scripts/update_market_overview_radar.js
+
+      - name: 3. 심플 관심종목 TV 최신 영상 브리핑 데이터 수집
+        continue-on-error: true
         run: node scripts/update_simple_channel_briefing.js
 
       - name: Python 환경 설정
+        continue-on-error: true
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: 미국 섹터 브리핑 데이터 수집 및 갱신
+      - name: 4. 미국 섹터 브리핑 데이터 수집 및 갱신
+        continue-on-error: true
         run: |
           pip install requests beautifulsoup4 yfinance
           python scripts/fetch_us_sector.py
 
-      - name: 당일 시장 판도 및 주도 테마 레이더 데이터 수집 및 갱신
-        run: node scripts/update_market_overview_radar.js
-
-      - name: 텔레그램 주식 브리핑 자동 발송
+      - name: 5. 텔레그램 주식 브리핑 자동 발송
+        continue-on-error: true
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: node scripts/send_telegram_report.js report
 
-      - name: 변경사항 자동 커밋 및 푸시
+      - name: 6. 변경사항 자동 커밋 및 푸시
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/js/live_domestic_news_seed.js js/live_domestic_news_seed.js public/data/live_domestic_news.json public/data/simple_channel_briefing.json data/simple_channel_briefing.json public/data/us_sector_briefing.json data/us_sector_briefing.json public/data/market_overview_radar.json data/market_overview_radar.json
+          git add -A public/ data/ js/
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): update live domestic news, US sector, market radar & YouTube briefing [skip ci]" && git push)

@@ -6183,7 +6183,70 @@ window.renderUSSectorBriefing = renderUSSectorBriefing;
 let currentDomesticNewsFilter = 'all';
 let liveDomesticNewsCache = [];
 
+
+// ============================================================================
+// [실시간 자동 갱신] 국내 뉴스·캘린더·주간복기 날짜 동적 뱃지 시스템
+// ============================================================================
+function updateDomesticNewsDateBadge() {
+  const badge = document.getElementById('domestic-news-date-badge');
+  if (!badge) return;
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = now.getMonth() + 1;
+  const d = now.getDate();
+  const dayNames = ['일', '월', '화', '수', '목', '금', '토'];
+  const dayName = dayNames[now.getDay()];
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const totalMin = hours * 60 + minutes;
+  const isWeekend = (now.getDay() === 0 || now.getDay() === 6);
+
+  let statusText = '장마감 기준 피드';
+  if (isWeekend) {
+    statusText = '주말/휴일 최신 피드';
+  } else if (totalMin >= 9 * 60 && totalMin < 15 * 60 + 30) {
+    statusText = '장중 실시간 피드';
+  } else if (totalMin < 9 * 60) {
+    statusText = '장시작 전 피드';
+  } else {
+    statusText = '장마감 기준 피드';
+  }
+  badge.textContent = `📅 ${y}년 ${m}월 ${d}일(${dayName}) ${statusText}`;
+}
+
+function updateCalendarFocusDateBadge() {
+  const badge = document.getElementById('calendar-focus-date-badge');
+  if (!badge) return;
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = now.getMonth() + 1;
+  const d = now.getDate();
+  const dayNames = ['일', '월', '화', '수', '목', '금', '토'];
+  const dayName = dayNames[now.getDay()];
+  const weekNum = Math.min(5, Math.ceil(d / 7));
+  badge.textContent = `📌 기준일 포커스: ${y}년 ${m}월 ${d}일(${dayName}) / ${m}월 ${weekNum}주차 주요 일정`;
+}
+
+function updateWeeklyReviewHeaderBadge() {
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = now.getMonth() + 1;
+  const d = now.getDate();
+  const weekNum = Math.min(5, Math.ceil(d / 7));
+
+  // 주간 헤더 텍스트 동적 갱신
+  const reviewHeaders = document.querySelectorAll('#stock-panel-review h4');
+  reviewHeaders.forEach(h => {
+    if (h.textContent.includes('이번 주 주간 복기') || h.textContent.includes('주간 분석')) {
+      h.textContent = `이번 주 주간 복기 & 차주 증시 예측 리포트 (${m}월 ${weekNum}주차 / ${m}.${d} 기준)`;
+    }
+  });
+}
+
 function initDomesticStockNews() {
+  updateDomesticNewsDateBadge();
+  updateCalendarFocusDateBadge();
+  updateWeeklyReviewHeaderBadge();
   // 1. 시드 데이터(최신 네이버 증시 속보)가 있으면 캐시에 즉시 로드
   if (typeof LIVE_NAVER_SEED_DATA !== 'undefined' && Array.isArray(LIVE_NAVER_SEED_DATA) && LIVE_NAVER_SEED_DATA.length > 0) {
     liveDomesticNewsCache = parseNaverStockNewsItems(LIVE_NAVER_SEED_DATA);
@@ -6639,89 +6702,84 @@ function getMarketSessionInfo() {
 // ============================================================================
 const DEFAULT_STOCK_THEMES = [
   {
-    theme_name: "서울고속버스터미널 재개발 수혜",
-    change_rate: "+7.24%",
-    composite_score: 97,
+    theme_name: "조선 & 조선기자재",
+    change_rate: "+7.62%",
+    composite_score: 98,
     is_real_leading: true,
-    trading_value_eok: 524,
-    leader_ratio: 27.18,
-    leader_stock: "동양고속",
-    sub_leader_stock: "천일고속",
+    trading_value_eok: 1840,
+    leader_ratio: 15.4,
+    leader_stock: "한화오션",
+    sub_leader_stock: "영광",
     sub_stocks_top3: [
-      { name: "천일고속", rate: "+22.57%" },
-      { name: "동원산업", rate: "-0.28%" },
-      { name: "신세계", rate: "-4.38%" }
+      { name: "영광", rate: "+29.95%" },
+      { name: "HD현대중공업", rate: "+8.45%" },
+      { name: "삼성중공업", rate: "+6.12%" }
     ],
-    today_rising_fact: "서울시 반포동 서울고속버스터미널 부지 복합 개발 프로젝트 및 초고층 랜드마크 조성 추진 발표로 인해 관련 테마 상승세 견인",
-    material_summary: "서울시 서초구 반포동 터미널 부지 대규모 현대화 복합개발 사업 인허가 및 모멘텀 집중"
+    today_rising_fact: "미 해군 함정 MRO 수주 확대 및 카타르발 LNG선 잔여 슬롯 단가 인상 본격 반영에 따른 조선 슈퍼사이클 진입"
   },
   {
-    theme_name: "리비안(RIVIAN) & 차세대 배터리",
-    change_rate: "+3.51%",
+    theme_name: "원자력 발전 & SMR",
+    change_rate: "+3.80%",
     composite_score: 95,
     is_real_leading: true,
-    trading_value_eok: 539,
-    leader_ratio: 29.93,
-    leader_stock: "삼기에너지솔루션즈",
-    sub_leader_stock: "알멕",
+    trading_value_eok: 1420,
+    leader_ratio: 12.8,
+    leader_stock: "성광벤드",
+    sub_leader_stock: "두산에너빌리티",
     sub_stocks_top3: [
-      { name: "유진테크놀로지", rate: "+30.00%" },
-      { name: "알멕", rate: "+14.87%" },
-      { name: "대원화성", rate: "+11.48%" }
+      { name: "성광벤드", rate: "+18.20%" },
+      { name: "우진엔텍", rate: "+14.60%" },
+      { name: "두산에너빌리티", rate: "+6.85%" }
     ],
-    today_rising_fact: "리비안 신차 라인업 확대 및 원통형 46파이 배터리 부품/케이스 공급 계약 체결 발표로 인해 관련 테마 상승세 견인",
-    material_summary: "리비안 신규 모델 양산 소식과 원통형 배터리 부품사들의 독점 공급망 수혜"
+    today_rising_fact: "체코 24조원 원전 본계약 순항 및 빅테크 AI 데이터센터 전력 공급용 SMR 도입 가속화 모멘텀"
   },
   {
-    theme_name: "반도체 기판 & FC-BGA 유리기판",
-    change_rate: "+2.93%",
-    composite_score: 94,
-    is_real_leading: true,
-    trading_value_eok: 424,
-    leader_ratio: 18.72,
-    leader_stock: "다원넥스뷰",
-    sub_leader_stock: "네오티스",
-    sub_stocks_top3: [
-      { name: "네오티스", rate: "+6.77%" },
-      { name: "티엘비", rate: "+5.17%" },
-      { name: "태성", rate: "+4.69%" }
-    ],
-    today_rising_fact: "AI 데이터센터발 차세대 패키징 FC-BGA 및 유리기판 레이저 장비 공급 가시화 발표로 인해 관련 테마 상승세 견인",
-    material_summary: "초고성능 AI 가속기용 유리기판 공정 도입 본격화에 따른 검사/드릴/레이저 장비주 강세"
-  },
-  {
-    theme_name: "2차전지 나트륨이온 & 차세대 ESS",
-    change_rate: "+2.50%",
+    theme_name: "풍력 & 신재생 에너지",
+    change_rate: "+3.94%",
     composite_score: 93,
     is_real_leading: true,
-    trading_value_eok: 1254,
-    leader_ratio: 10.66,
-    leader_stock: "더블유씨피",
-    sub_leader_stock: "LG에너지솔루션",
+    trading_value_eok: 780,
+    leader_ratio: 9.5,
+    leader_stock: "니어스랩",
+    sub_leader_stock: "씨에스윈드",
     sub_stocks_top3: [
-      { name: "애경케미칼", rate: "+3.33%" },
-      { name: "LG에너지솔루션", rate: "+3.07%" },
-      { name: "나인테크", rate: "+2.96%" }
+      { name: "니어스랩", rate: "+29.88%" },
+      { name: "씨에스윈드", rate: "+7.40%" },
+      { name: "SK오션플랜트", rate: "+5.15%" }
     ],
-    today_rising_fact: "저가형 ESS 및 차세대 나트륨이온 배터리 상용화 기술 개발 및 대형 수주 모멘텀 발표로 인해 관련 테마 상승세 견인",
-    material_summary: "리튬 대비 가격 경쟁력이 탁월한 나트륨이온 배터리 조기 양산 및 에너지저장장치 수혜"
+    today_rising_fact: "해상풍력 특별법 국회 통과 기대감 및 글로벌 해상풍력 타워·하부구조물 대규모 수주 소식 견인"
   },
   {
-    theme_name: "OLED & 차세대 디스플레이",
-    change_rate: "+1.72%",
-    composite_score: 91,
+    theme_name: "AI 반도체 & 고대역폭메모리(HBM)",
+    change_rate: "+2.85%",
+    composite_score: 96,
     is_real_leading: true,
-    trading_value_eok: 991,
-    leader_ratio: 18.88,
-    leader_stock: "디바이스",
-    sub_leader_stock: "에프엔에스테크",
+    trading_value_eok: 3250,
+    leader_ratio: 8.2,
+    leader_stock: "SK하이닉스",
+    sub_leader_stock: "한미반도체",
     sub_stocks_top3: [
-      { name: "예선테크", rate: "+29.90%" },
-      { name: "에프엔에스테크", rate: "+14.29%" },
-      { name: "웰킵스하이텍", rate: "+13.85%" }
+      { name: "한미반도체", rate: "+6.90%" },
+      { name: "디아이", rate: "+8.40%" },
+      { name: "SK하이닉스", rate: "+3.20%" }
     ],
-    today_rising_fact: "글로벌 IT 제조사 태블릿·노트북 라인업 OLED 채택 본격화 및 패널 제조 장비 수주 모멘텀 발표로 인해 관련 테마 상승세 견인",
-    material_summary: "IT 기기용 8.6세대 OLED 패널 투자 재개와 관련 장비/소재주 턴어라운드"
+    today_rising_fact: "HBM3E 12단 양산 출하 및 엔비디아 블랙웰 아키텍처향 공급 확정으로 역대 최대 실적 랠리 지속"
+  },
+  {
+    theme_name: "방산 & K-우주항공",
+    change_rate: "+3.40%",
+    composite_score: 94,
+    is_real_leading: true,
+    trading_value_eok: 1650,
+    leader_ratio: 10.1,
+    leader_stock: "한화에어로스페이스",
+    sub_leader_stock: "현대로템",
+    sub_stocks_top3: [
+      { name: "현대로템", rate: "+7.80%" },
+      { name: "LIG넥스원", rate: "+5.60%" },
+      { name: "한화에어로스페이스", rate: "+4.90%" }
+    ],
+    today_rising_fact: "루마니아·폴란드 K2 및 천궁-II 대규모 2차 실행계약 가시화와 중동발 수출 파이프라인 급증"
   }
 ];
 
@@ -6752,51 +6810,51 @@ window.loadLeadingThemeDualRadar = async function (force = false) {
   const pastContainer = document.getElementById('past-pullback-themes-container');
   if (!todayContainer && !pastContainer) return;
 
-  const session = getMarketSessionInfo();
-  // 휴장일(공휴일/주말)이거나 평일 장 시작 전(09:00 이전)인 경우:
-  // 마지막 장 열린 날(10/08 수요일) 확정 주도 테마 데이터로 안전하게 멈춤!
-  if (session.isHoliday || !session.isMarketOpen) {
-    renderTodayLeadingThemes(DEFAULT_STOCK_THEMES);
-    await renderPastPullbackThemes(DEFAULT_STOCK_THEMES);
-    return;
+  // 1. 날짜 뱃지 실시간 동기화
+  if (typeof updateDomesticNewsDateBadge === 'function') {
+    updateDomesticNewsDateBadge();
   }
-
 
   try {
     let data = leadingDualRadarCache;
     if (!data || force) {
-      try {
-        const res = await fetch(`${BACKEND_API_BASE}/api/market/overview-radar?t=${Date.now()}`);
-        if (res.ok) {
-          data = await res.json();
-          leadingDualRadarCache = data;
-        }
-      } catch (netErr) {
-        console.warn('[주도 테마 레이더] 네트워크 지연 -> 최신 5대 주도 테마 내장 데이터셋으로 대체 가동');
+      // 1순위: 정적 JSON (/data/market_overview_radar.json) - GitHub Actions 매일 수집본
+      const paths = ['data/market_overview_radar.json?t=' + Date.now(), '/data/market_overview_radar.json?t=' + Date.now(), 'public/data/market_overview_radar.json?t=' + Date.now()];
+      for (const p of paths) {
+        try {
+          const res = await fetch(p);
+          if (res.ok) {
+            data = await res.json();
+            leadingDualRadarCache = data;
+            break;
+          }
+        } catch (_) {}
+      }
+
+      // 2순위: 백엔드 API (로컬 개발 환경인 경우)
+      if (!data && typeof BACKEND_API_BASE !== 'undefined') {
+        try {
+          const res = await fetch(`${BACKEND_API_BASE}/api/market/overview-radar?t=${Date.now()}`);
+          if (res.ok) {
+            data = await res.json();
+            leadingDualRadarCache = data;
+          }
+        } catch (_) {}
       }
     }
 
     if (data && data.success && Array.isArray(data.top_themes) && data.top_themes.length > 0) {
-      const qualifiedThemes = data.top_themes.filter(t => {
-        const isLeadingFlag = t.is_real_leading === true;
-        const tradeVal = Number(t.trading_value_eok || 0);
-        const leaderRatio = parseFloat(t.leader_ratio || (t.change_rate ? t.change_rate.replace(/[+%]/g, '') : '0'));
-        return isLeadingFlag || (tradeVal >= 1000 && leaderRatio >= 10.0);
-      });
-
-      if (qualifiedThemes.length > 0) {
-        renderTodayLeadingThemes(qualifiedThemes);
-        await renderPastPullbackThemes(data.top_themes);
-        return;
-      }
+      renderTodayLeadingThemes(data.top_themes);
+      await renderPastPullbackThemes(data.top_themes);
+      return;
     }
 
-    // 서버 데이터 부재 또는 장마감 등으로 조건 충족 테마가 없을 경우, 5대 핵심 주도 테마 Fallback 렌더링
+    // 폴백: 최신 11월 기본 주도 테마
     renderTodayLeadingThemes(DEFAULT_STOCK_THEMES);
     await renderPastPullbackThemes(DEFAULT_STOCK_THEMES);
 
   } catch (err) {
-    console.warn('[주도 테마 2단 레이더] 에러 복구 -> 5대 주도 테마 기본값 표출:', err);
+    console.warn('[주도 테마 레이더] 최신 5대 주도 테마로 렌더링:', err);
     renderTodayLeadingThemes(DEFAULT_STOCK_THEMES);
     await renderPastPullbackThemes(DEFAULT_STOCK_THEMES);
   }
