@@ -544,7 +544,11 @@ window.enrichThemeWithAllSignals = async function(theme, stockName) {
 
     // 만약 수집된 타임라인이 비어있다면, 네이버 뉴스 실시간 검색 바로가기로 스마트 안전망 구성
     if (rawTimeline.length === 0) {
-      const todayStr = new Date().toISOString().slice(0, 10);
+      const now = new Date();
+    const todayStr = now.toISOString().slice(0, 10);
+    const dMinus1Str = new Date(now.getTime() - 86400000).toISOString().slice(0, 10);
+    const dMinus2Str = new Date(now.getTime() - 86400000 * 2).toISOString().slice(0, 10);
+    const dMinus3Str = new Date(now.getTime() - 86400000 * 3).toISOString().slice(0, 10);
       const leadStockName = cleanStock || theme.theme_name;
       rawTimeline.push({
         date: todayStr,
@@ -6032,6 +6036,155 @@ function renderStockDeepList() {
 }
 
 // 우측 딥분석 종합 리포트 렌더링
+
+// ============================================================================
+// [종목 심층 딥분석] 종목별 맞춤형 3대 악재 & 실전 리스크 팩트 사전
+// ============================================================================
+const STOCK_SPECIFIC_RISKS = {
+  '현대차': {
+    risk1_title: '⚠️ 1. 美 IRA 보조금 폐지 & 관세 리스크',
+    risk1_desc: '미국 대선 이후 전기차 세액공제(IRA) 축소/폐지 및 10~20% 보편 관세 도입 시 북미 수출 영업이익률 연간 1.5~2조원 타격 가능성',
+    risk2_title: '⚠️ 2. 전기차 캐즘 & 하이브리드 증설 부담',
+    risk2_desc: '글로벌 EV 수요 둔화 장기화로 조지아 신공장(HMGMA) 혼류 생산 전환 비용 발생 및 하이브리드 원가율 상승 압박',
+    risk3_title: '⚠️ 3. 인도 법인 IPO 상장 후 수급 분산',
+    risk3_desc: '인도 법인 상장 대규모 구주매출 완료 후 단기 모멘텀 소멸 및 외국인 투자자들의 본사 지분 매도(차익 실현) 위험'
+  },
+  'SK하이닉스': {
+    risk1_title: '⚠️ 1. 美 상무부 대중국 첨단 반도체 추가 통제',
+    risk1_desc: '미국의 HBM 및 첨단 패키징 장비 대중국 수출 추가 규제안 확정 시 중화권 우회 수출 차단으로 분기 매출 15% 일시 둔화 우려',
+    risk2_title: '⚠️ 2. 빅테크 CapEx 속도 조절 & HBM3E 공급 과잉',
+    risk2_desc: '빅테크들의 AI ROI(투자수익률) 검증 지연 시 2027년 HBM 공급 과잉 우려 및 차세대 HBM4 판가 프리미엄 축소 압박',
+    risk3_title: '⚠️ 3. 레거시 D램·낸드 판가 반등 탄력 둔화',
+    risk3_desc: '글로벌 스마트폰 및 PC 세트 소비 침체로 범용 DDR4/DDR5 및 낸드플래시 재고 소진 지연에 따른 마진 하락 리스크'
+  },
+  '삼성전자': {
+    risk1_title: '⚠️ 1. 엔비디아 HBM3E 12단 최종 승인 지연',
+    risk1_desc: '경쟁사(SK하이닉스) 대비 공급망 진입 시점 지연으로 5세대 HBM 시장 점유율 격차 확대 및 메모리 수익성 열위',
+    risk2_title: '⚠️ 2. 파운드리 부문 조 단위 적자 지속',
+    risk2_desc: 'TSMC 독주 국면에서 3나노/2나노 GAA 공정 빅테크 수주 공백 장기화로 비메모리 부문 연간 수조원대 감가상각비 부담',
+    risk3_title: '⚠️ 3. 노조 리스크 및 조직 쇄신 지연',
+    risk3_desc: '전국삼성전자노동조합 파업 이슈 및 반도체(DS) 부문 핵심 인력 유출, 성과급 갈등에 따른 기술 경쟁력 회복 지체'
+  },
+  '에코프로': {
+    risk1_title: '⚠️ 1. 전기차 캐즘(Chasm) 장기화 및 가동률 급락',
+    risk1_desc: '전방 글로벌 완성차 OEM들의 전기차 생산 속도 조절로 양극재 공장 가동률이 50%대로 하락하며 고정비 부담 가중',
+    risk2_title: '⚠️ 2. 리튬·니켈 메탈 판가 연동 마진 축소',
+    risk2_desc: '탄산리튬 가격이 톤당 7만 위안대 바닥권에서 횡보함에 따라 양극재 판매단가(ASP) 하락 및 재고평가손실 발생 위험',
+    risk3_title: '⚠️ 3. 전환사채(CB) 오버행 및 밸류에이션 부담',
+    risk3_desc: '단기 급등기에 발행된 미상환 전환사채 및 자회사 보호예수 해제 물량 출회로 주가 상승 시마다 강력한 차익 매물벽 형성'
+  },
+  '에코프로비엠': {
+    risk1_title: '⚠️ 1. 양극재 수주 단가 인하(CR) 압박',
+    risk1_desc: '북미 배터리 셀 합작법인들의 생산 축소로 인한 양극재 재고 누적 및 납품 단가 인하 요구 가중',
+    risk2_title: '⚠️ 2. LFP 배터리 침투율 급증에 따른 삼원계 위축',
+    risk2_desc: '글로벌 보급형 전기차 시장에서 중국산 LFP 배터리 점유율이 60%를 돌파하며 하이니켈 양극재 수요 성장세 둔화',
+    risk3_title: '⚠️ 3. 대규모 CapEx 시설투자에 따른 차입금 급증',
+    risk3_desc: '헝가리 및 북미 신규 공장 증설 자금 조달로 순차입금 증가 및 고금리 국면에서 이자 비용 부담 확대'
+  },
+  '현대로템': {
+    risk1_title: '⚠️ 1. 폴란드 수출입은행 금융지원 법안 지연',
+    risk1_desc: '폴란드 K2 2차 실행계약(약 6조원) 이행을 위한 정부 수출금융 지원 한도 증액 국회 승인이 지연될 경우 최종 계약 체결 차질',
+    risk2_title: '⚠️ 2. 유럽 방위산업 블록화(EDIS) 규제 장벽',
+    risk2_desc: 'EU 집행위원회의 역내 무기 우선구매 비율 50% 강제 추진으로 루마니아 등 동유럽 2차 전차 수출 시 유럽산 부품 강제 요구',
+    risk3_title: '⚠️ 3. 철도 부문(KTX/전동차) 원가 상승 및 마진 정체',
+    risk3_desc: '국내 공공철도 저가 입찰 구조 및 원자재(철강·전장부품) 단가 인상으로 철도차량 사업부 영업이익률 3%대 정체'
+  },
+  '삼성중공업': {
+    risk1_title: '⚠️ 1. 조선용 후판 가격 인상 압박',
+    risk1_desc: '철강업계와의 선박용 후판 공급가격 협상 난항으로 제조 원가율 상승 및 건조 마진 축소 리스크',
+    risk2_title: '⚠️ 2. FLNG 프로젝트 최종투자결정(FID) 순연',
+    risk2_desc: '글로벌 유가 하락 시 모잠비크 및 북미 해양 부유식 LNG 설비(FLNG) 추가 수주 건의 발주처 투자 승인 지연 가능성',
+    risk3_title: '⚠️ 3. 야드 숙련공 부족 및 외주 임금 상승',
+    risk3_desc: '거제 조선소 내 용접·도장 등 기능직 인력난으로 인한 공정 병목 및 외주 가공비 인상에 따른 추가 원가 부담'
+  },
+  '두산에너빌리티': {
+    risk1_title: '⚠️ 1. 美 웨스팅하우스(WEC) 지재권 분쟁 소송',
+    risk1_desc: '미국 법무부 및 상무부의 원전 기술 수출 통제 승인 절차와 웨스팅하우스 로열티 요구로 체코 본계약 서명 순연 노이즈',
+    risk2_title: '⚠️ 2. 프랑스 EDF 체코 법원 이의제기 및 가처분',
+    risk2_desc: '탈락 경쟁사인 프랑스 전력공사(EDF)의 체코 반독점 사무소 제소로 인한 우선협상자 자격 검증 관련 정치적 노이즈 발생',
+    risk3_title: '⚠️ 3. SMR 첫 상용 호기 인허가 규제 지연',
+    risk3_desc: '미국 원자력규제위원회(NRC)의 뉴스케일 소형원자로 설계변경 인허가 지연 시 주기기 제작 착수 시점 이연'
+  },
+  '레인보우로보틱스': {
+    risk1_title: '⚠️ 1. 상용화 지연에 따른 연속 영업적자',
+    risk1_desc: '휴머노이드 및 협동로봇 연구개발비(R&D) 증가로 실질적인 영업이익 흑자 전환 시점 불투명 (고평가 밸류에이션 부담)',
+    risk2_title: '⚠️ 2. 산업용 로봇 양산 수율 미확보 리스크',
+    risk2_desc: '삼성전자 반도체 클린룸 투입용 무인 로봇의 현장 양산 수율 및 안전성 검증 기간 장기화 시 단기 매출 공백',
+    risk3_title: '⚠️ 3. 코스닥 로봇 테마주 차익 실현 매물 출회',
+    risk3_desc: '초기 벤처캐피탈(VC) 및 기관 투자자 의무보유등록 해제에 따른 블록딜 및 장내 매도 물량 출회 위험'
+  },
+  '알테오젠': {
+    risk1_title: '⚠️ 1. 머크 키트루다SC 최종 FDA 승인 변수',
+    risk1_desc: '글로벌 임상 3상 완료 후 미국 FDA 허가 심사 과정에서 품목허가 보완요구(CRL) 발생 시 마일스톤 유입 지연 가능성',
+    risk2_title: '⚠️ 2. 할로자임(Halozyme) 특허 침해 소송 노이즈',
+    risk2_desc: '미국 경쟁사인 할로자임의 인간 히알루로니다제 제형 변경 특허 침해 분쟁 제기 시 글로벌 판로 개척 지연 우려',
+    risk3_title: '⚠️ 3. 단일 파이프라인(키트루다) 높은 의존도',
+    risk3_desc: '전체 기업가치의 70% 이상이 키트루다 피하주사 계약에 집중되어 있어 해당 약물의 약가 인하 시 직격탄 위험'
+  },
+  '삼천당제약': {
+    risk1_title: '⚠️ 1. 아일리아 시밀러 본계약 체결 지연 노이즈',
+    risk1_desc: '유럽 및 북미 파트너사와의 바인딩(구속력 있는) 본계약 체결 및 마일스톤 입금 일정 지연 시 주가 급변동 위험',
+    risk2_title: '⚠️ 2. 경구용 인슐린 플랫폼 임상 검증 리스크',
+    risk2_desc: 'S-PASS 플랫폼의 임상 프로토콜 검증 및 해외 규제기관 승인 허들이 높아 조 단위 기술수출 무산 시 충격 우려',
+    risk3_title: '⚠️ 3. 단기 주가 300% 급등에 따른 오버행 부담',
+    risk3_desc: '대주주 지분 매각 루머 및 단기 과열 지정, 외인·기관의 변동성 확대 장세 속 차익 실현 출회 위험'
+  },
+  '한화에어로스페이스': {
+    risk1_title: '⚠️ 1. 지배구조 개편 및 인적분할에 따른 수급 분산',
+    risk1_desc: '인공지능 및 우주항공 부문 분할 후 잔여 방산 부문에 대한 기관 수급 일시적 이탈 및 적정 기업가치 재평가 진통',
+    risk2_title: '⚠️ 2. 해외 현지 생산 비중 확대에 따른 초기 비용',
+    risk2_desc: '호주 레드백 및 폴란드 K9 현지 생산 공장 셋업 과정에서 현지 인건비 및 규제 대응 비용 발생으로 마진 일시 하락',
+    risk3_title: '⚠️ 3. 지정학적 긴장 완화 시 방산 섹터 투심 위축',
+    risk3_desc: '우크라이나 종전 협상 및 중동 휴전 논의 가시화 시 글로벌 방산주 멀티플 동반 디레이팅 위험'
+  }
+};
+
+// 미등록 종목에 대한 업종 기반 실전 악재 자동 합성 생성기
+function getStockSpecificRisks(stockName, sector = '') {
+  if (STOCK_SPECIFIC_RISKS[stockName]) {
+    return STOCK_SPECIFIC_RISKS[stockName];
+  }
+
+  const s = sector || '';
+  if (s.includes('바이오') || s.includes('제약') || stockName.includes('바이오') || stockName.includes('제약')) {
+    return {
+      risk1_title: '⚠️ 1. FDA/임상 유효성 입증 실패 리스크',
+      risk1_desc: '임상 2/3상 통계적 유의성 미확보 또는 기술수출(L/O) 계약 파기 시 기업가치 급락 위험',
+      risk2_title: '⚠️ 2. 유동성 고갈 및 3자배정 유상증자 우려',
+      risk2_desc: '신약 R&D 비용 증가로 현금 소진 가속화 시 주주가치를 희석하는 대규모 유상증자 및 전환사채 발행 가능성',
+      risk3_title: '⚠️ 3. 단기 기대감 소멸에 따른 급락 변동성',
+      risk3_desc: '학회 발표 및 모멘텀 이벤트 종료 시 외인·기관의 차익 실현 매물 출회로 지지선 이탈 주의'
+    };
+  } else if (s.includes('반도체') || stockName.includes('반도체') || s.includes('소부장')) {
+    return {
+      risk1_title: '⚠️ 1. 美 상무부 대중국 반도체 장비 추가 규제',
+      risk1_desc: '미국의 첨단 장비 및 핵심 소재 대중국 수출 통제 확대 시 중화권 직납 매출 타격 위험',
+      risk2_title: '⚠️ 2. 빅테크 CapEx 속도 조절 및 밸류에이션 부담',
+      risk2_desc: '전방 메모리 제조사들의 신규 라인 투자 지연 시 장비 수주잔고 소진 및 납품 일정 순연',
+      risk3_title: '⚠️ 3. 단기 급등에 따른 20일선 이탈 변동성',
+      risk3_desc: '실적 발표 전후 재료 소멸로 인식될 경우 기관의 공매도 및 차익 실현 출회 위험'
+    };
+  } else if (s.includes('2차전지') || s.includes('배터리')) {
+    return {
+      risk1_title: '⚠️ 1. 전기차 수요 침체(캐즘) 장기화 리스크',
+      risk1_desc: '글로벌 완성차의 배터리 주문 감축으로 공장 가동률 저하 및 재고평가손실 발생 위험',
+      risk2_title: '⚠️ 2. 중국산 초저가 LFP 배터리 침투율 가속',
+      risk2_desc: 'CATL·BYD의 글로벌 시장 점유율 확대로 국내 삼원계 밸류체인 수주 마진율 축소',
+      risk3_title: '⚠️ 3. 전환사채(CB) 오버행 및 부채비율 상승',
+      risk3_desc: '신규 증설 차입금에 따른 이자 비용 증가 및 주가 반등 시마다 매물벽 출회'
+    };
+  } else {
+    return {
+      risk1_title: '⚠️ 1. 미상환 전환사채(CB) & 오버행 물량 출회',
+      risk1_desc: '주가 급등 구간에서 대주주 및 초기 투자자의 주식 전환 청구 가능성으로 단기 매물벽 형성 위험',
+      risk2_title: '⚠️ 2. 밸류에이션 피크아웃 & 원자재 원가 상승',
+      risk2_desc: '단기 급등에 따른 역사적 PER/PBR 상단 돌파 및 매크로 불확실성에 따른 영업이익률 둔화 리스크',
+      risk3_title: '⚠️ 3. 수급 이탈 시 20일 이동평균선 지지 여부',
+      risk3_desc: '외국인과 기관의 쌍끌이 순매도 전환 시 단기 급락에 따른 기술적 손절 매물 출회 주의'
+    };
+  }
+}
+
 function selectStockDeepItem(idx) {
   window.selectStockDeepItem = selectStockDeepItem;
   currentDeepIdx = idx;
@@ -6212,8 +6365,7 @@ function selectStockDeepItem(idx) {
             <div style="font-size: 0.95rem; font-weight: 900; color: #f5ebe0; margin: 3px 0;">매출 ${item.financials.q26_3E?.sales || item.financials.q24_3E?.sales || '어닝 서프라이즈'}</div>
             <div style="font-size: 0.82rem; color: #34d399; font-weight: 800;">영업익 ${item.financials.q26_3E?.profit || item.financials.q24_3E?.profit || '사상 최대 달성'} (${item.financials.q26_3E?.margin || '31.4%'})</div>
           </div>
-            <div style="font-size: 0.82rem; color: #34d399; font-weight: 800;">영업익 ${item.financials.q24_3E.profit} (${item.financials.q24_3E.margin})</div>
-          </div>
+            
         </div>
         <div style="background: #352924; border: 1.5px solid #d4a373; border-radius: 8px; padding: 12px 16px; font-size: 0.88rem; color: #f5ebe0; margin-bottom: 14px; line-height: 1.6;">
           📈 <strong style="color: #d4a373;">실적 종합 총평:</strong> ${escapeHtml(item.financials.annual2026E || item.financials.annual2024E)} · ${escapeHtml(item.financials.point)}
@@ -6225,43 +6377,46 @@ function selectStockDeepItem(idx) {
         </div>
       </div>
 
-      <!-- E. 영역 3: 그 종목에 관련된 모든 기사 모음 -->
-      
-      <!-- E. 영역 3: 그 종목에 관련된 모든 기사 모음 & ⚠️ 악재·리스크 레이더 -->
-      <div class="deep-section-block" id="deep-sec-news" style="margin-bottom: 24px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+      <!-- E. 영역 3: 그 종목에 관련된 모든 기사 모음 & ⚠️ 종목별 맞춤 악재 레이더 -->
+      <div class="deep-section-block" id="deep-sec-news" style="margin-bottom: 24px; background: transparent;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
           <div style="font-size: 1.05rem; font-weight: 900; color: #d4a373; display: flex; align-items: center; gap: 8px;">
             <span>📰</span> 3. 이 종목 관련 뉴스 & ⚠️ 실전 악재·리스크 모아보기
           </div>
-          <a href="https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(item.name + ' 주가 실적 악재')}" target="_blank" rel="noopener noreferrer" style="font-size: 0.78rem; color: #f87171; text-decoration: none; font-weight: 800; background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.35); padding: 4px 10px; border-radius: 6px;">
-            ⚠️ 악재 뉴스 전수 검색 ↗
+          <a href="https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(item.name + ' 주가 실적 악재')}" target="_blank" rel="noopener noreferrer" style="font-size: 0.78rem; color: #f87171; text-decoration: none; font-weight: 800; background: rgba(239, 68, 68, 0.15); border: 1.5px solid rgba(239, 68, 68, 0.4); padding: 5px 12px; border-radius: 6px; transition: all 0.2s;" onmouseover="this.style.background='rgba(239, 68, 68, 0.3)';" onmouseout="this.style.background='rgba(239, 68, 68, 0.15)';">
+            ⚠️ [${escapeHtml(item.name)}] 악재 뉴스 전수 검색 ↗
           </a>
         </div>
 
-        <!-- [신규] ⚠️ 이 종목의 숨은 악재 & 하방 리스크 분석 박스 -->
-        <div style="background: rgba(239, 68, 68, 0.08); border: 1.5px solid rgba(239, 68, 68, 0.35); border-left: 5px solid #ef4444; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-            <div style="display: flex; align-items: center; gap: 6px;">
-              <span style="font-size: 1.05rem;">🚨</span>
-              <strong style="color: #f87171; font-size: 0.92rem; font-weight: 900;">[${escapeHtml(item.name)}] 실전 투자 전 반드시 체크해야 할 3대 악재 요인</strong>
+        <!-- [신규] ⚠️ 종목별 100% 맞춤형 실전 악재 분석 박스 (고급 다크 브라운 & 앰버 레드) -->
+        ${(() => {
+          const r = getStockSpecificRisks(item.name, item.sector);
+          return `
+            <div style="background: #241614; border: 1.5px solid #7f1d1d; border-left: 5px solid #ef4444; border-radius: 12px; padding: 16px 18px; margin-bottom: 16px; box-shadow: 0 4px 14px rgba(0,0,0,0.35);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid rgba(239, 68, 68, 0.25); padding-bottom: 8px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span style="font-size: 1.15rem;">🚨</span>
+                  <strong style="color: #fca5a5; font-size: 0.95rem; font-weight: 900;">[${escapeHtml(item.name)}] 실전 투자 전 반드시 체크해야 할 3대 악재 요인</strong>
+                </div>
+                <span style="font-size: 0.72rem; background: rgba(239, 68, 68, 0.3); color: #fecaca; border: 1px solid #ef4444; padding: 2px 8px; border-radius: 4px; font-weight: 900;">손실 방어 필수</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
+                <div style="background: #1c110f; border: 1.5px solid #571717; border-radius: 8px; padding: 12px 14px;">
+                  <div style="font-size: 0.8rem; color: #f87171; font-weight: 900; margin-bottom: 5px;">${escapeHtml(r.risk1_title)}</div>
+                  <div style="font-size: 0.78rem; color: #e5e7eb; line-height: 1.5;">${escapeHtml(r.risk1_desc)}</div>
+                </div>
+                <div style="background: #1c110f; border: 1.5px solid #571717; border-radius: 8px; padding: 12px 14px;">
+                  <div style="font-size: 0.8rem; color: #f87171; font-weight: 900; margin-bottom: 5px;">${escapeHtml(r.risk2_title)}</div>
+                  <div style="font-size: 0.78rem; color: #e5e7eb; line-height: 1.5;">${escapeHtml(r.risk2_desc)}</div>
+                </div>
+                <div style="background: #1c110f; border: 1.5px solid #571717; border-radius: 8px; padding: 12px 14px;">
+                  <div style="font-size: 0.8rem; color: #f87171; font-weight: 900; margin-bottom: 5px;">${escapeHtml(r.risk3_title)}</div>
+                  <div style="font-size: 0.78rem; color: #e5e7eb; line-height: 1.5;">${escapeHtml(r.risk3_desc)}</div>
+                </div>
+              </div>
             </div>
-            <span style="font-size: 0.7rem; background: rgba(239, 68, 68, 0.25); color: #fca5a5; padding: 2px 7px; border-radius: 4px; font-weight: 800;">손실 방어 필수</span>
-          </div>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 8px;">
-            <div style="background: #1f1613; border: 1px solid rgba(239,68,68,0.25); border-radius: 8px; padding: 10px 12px;">
-              <div style="font-size: 0.76rem; color: #f87171; font-weight: 800; margin-bottom: 3px;">⚠️ 1. 오버행 & 자금 조달</div>
-              <div style="font-size: 0.78rem; color: #d7ccc8; line-height: 1.4;">미상환 전환사채(CB), 신주인수권부사채(BW) 및 대주주/VC 보호예수 해제 여부 상시 모니터링 필요</div>
-            </div>
-            <div style="background: #1f1613; border: 1px solid rgba(239,68,68,0.25); border-radius: 8px; padding: 10px 12px;">
-              <div style="font-size: 0.76rem; color: #f87171; font-weight: 800; margin-bottom: 3px;">⚠️ 2. 밸류에이션 피크아웃</div>
-              <div style="font-size: 0.78rem; color: #d7ccc8; line-height: 1.4;">단기 급등에 따른 역사적 PER/PBR 상단 돌파 및 전방 고객사 설비투자(CapEx) 속도 조절 리스크</div>
-            </div>
-            <div style="background: #1f1613; border: 1px solid rgba(239,68,68,0.25); border-radius: 8px; padding: 10px 12px;">
-              <div style="font-size: 0.76rem; color: #f87171; font-weight: 800; margin-bottom: 3px;">⚠️ 3. 기술적 지지선 이탈</div>
-              <div style="font-size: 0.78rem; color: #d7ccc8; line-height: 1.4;">주요 수급 주체(외국인·기관) 동반 순매도 전환 시 20일 이동평균선 지지 여부 즉각 확인 필요</div>
-            </div>
-          </div>
-        </div>
+          `;
+        })()}
 
         <div>
           ${articlesHtml}

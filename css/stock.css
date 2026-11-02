@@ -1391,3 +1391,31 @@ div[id^="news-list-"] {
   border-radius: 14px !important;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
 }
+
+
+/* ==========================================================================
+   [딥분석 센터 다크베이지 방어 시스템] 화이트 누출 완전 차단
+   ========================================================================== */
+#stock-deep-detail,
+#stock-deep-detail .kc-detail-card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#stock-deep-detail .kc-white-report-container {
+  background: #2a201c !important;
+  border: 1.5px solid #4a3b34 !important;
+  border-radius: 14px !important;
+  color: #f5ebe0 !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3) !important;
+}
+
+#stock-deep-detail .deep-section-block {
+  background: transparent !important;
+}
+
+#stock-deep-detail .deep-section-block > div:first-child {
+  background: transparent !important;
+  color: #d4a373 !important;
+}
