@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>📈 주식 인텔리전스 분석센터 (Stock Intelligence Center)</title>
-  
-  <!-- 한글 웹폰트 Pretendard CDN 로드 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
-  
-  <!-- Chart.js CDN 로드 -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta name="description" content="실시간 국내외 주식 시황, 오늘의 주도 테마 팩트, 피보나치 눌림목 공략 및 장마감 심층 분석을 제공하는 주식 인텔리전스 분석센터">
+  <link rel="canonical" href="https://my-data-stock.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="📈 주식 인텔리전스 분석센터">
+  <meta property="og:description" content="실시간 국내외 주식 시황 및 오늘의 주도 테마 팩트 브리핑">
+  <meta property="og:url" content="https://my-data-stock.pages.dev/">
+
+  <!-- 폰트 및 CDN 사전 연결 (Preconnect) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <!-- 웹폰트 렌더 블로킹 방지 로드 -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+  </noscript>
+
+  <!-- Chart.js 지연 로드 (렌더 블로킹 완전 제거) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
 
   <!-- 스타일시트 로드 -->
   <link rel="stylesheet" href="css/style.css">
@@ -191,7 +203,7 @@
         <!-- 주식 시장 빠른 탭 바 (모바일 가로 스크롤 대응) -->
         <div class="stock-subtabs-scroll-wrap">
           <div class="stock-subtabs-grid">
-          <button type="button" class="stock-sub-tab" data-sub="news">
+          <button type="button" class="stock-sub-tab active" data-sub="news" aria-selected="true">
             <span>📰</span> 0. 실시간 국내 주식 뉴스
           </button>
           <button type="button" class="stock-sub-tab" data-sub="technique">
@@ -217,7 +229,7 @@
       </div>
 
       <!-- ================= [서브 패널 0] 당일 국내 주식 실시간 뉴스 촘촘한 피드 ================= -->
-      <div id="stock-panel-news" class="stock-panel-content" style="display: none;">
+      <div id="stock-panel-news" class="stock-panel-content" style="display: block;">
         <!-- 상단 헤더 & 카테고리 필터 바 -->
         <div style="display: flex; justify-content: space-between; align-items: center; background: #1d1d1f; border: 1px solid #333336; padding: 18px 24px; border-radius: 28px; margin-bottom: 24px; flex-wrap: wrap; gap: 14px;">
           <div>
@@ -365,7 +377,7 @@
             </div>
 
             <!-- 오늘의 주도 테마 카드 그리드 / 예외 안내 배너 -->
-            <div id="today-leading-themes-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px;">
+            <div id="today-leading-themes-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; min-height: 280px;">
               <div style="grid-column: 1 / -1; padding: 28px; text-align: center; color: #334155; background: #f8fafc; border: 1.5px dashed #cbd5e1; border-radius: 12px;">
                 <div style="font-size: 1.05rem; font-weight: 800; color: #1e293b; margin-bottom: 6px;">⏳ 실시간 주도 테마 거래대금 정밀 분석 중...</div>
                 <div style="font-size: 0.78rem; color: #64748b;">네이버 실시간 증시 거래대금 및 테마 대장주 상승률을 교차 검증하고 있습니다.</div>
@@ -395,7 +407,7 @@
             </div>
 
             <!-- 지난 주도 테마 눌림 리스트 컨테이너 -->
-            <div id="past-pullback-themes-container" style="display: flex; flex-direction: column; gap: 10px;">
+            <div id="past-pullback-themes-container" style="display: flex; flex-direction: column; gap: 10px; min-height: 180px;">
               <div style="padding: 20px; text-align: center; color: #64748b; font-size: 0.84rem;">
                 등록된 지난 주도 테마 눌림 공략 리스트를 불러오는 중입니다...
               </div>
@@ -1467,7 +1479,7 @@
           <h3 style="font-size: 1.25rem; font-weight: 800; color: #f5ebe0; margin: 0; display: flex; align-items: center; gap: 8px;">
             <span>🔑</span> 주식/뉴스 실시간 API 연동 설정
           </h3>
-          <button type="button" onclick="closeStockApiModal()" style="background: none; border: none; color: #64748b; font-size: 1.5rem; cursor: pointer; padding: 0; line-height: 1;">✕</button>
+          <button type="button" onclick="closeStockApiModal()" aria-label="API 키 설정 모달 닫기" style="background: none; border: none; color: #64748b; font-size: 1.5rem; cursor: pointer; padding: 0; line-height: 1;">✕</button>
         </div>
 
         <p style="font-size: 0.84rem; color: #d7ccc8; margin: 0 0 18px 0; line-height: 1.6;">
@@ -1563,9 +1575,9 @@
   </script>
 
   <!-- 필수 스크립트 로드 -->
-  <script src="js/live_domestic_news_seed.js?v=live_news_1010_v6"></script>
-  <script src="js/stock.js?v=home_link_1010_v16"></script>
-  <script src="js/inspector_admin_gate.js?v=20261010_gate_newpw"></script>
+  <script src="js/live_domestic_news_seed.js?v=live_news_1010_v7" defer></script>
+  <script src="js/stock.js?v=speed_95_v1" defer></script>
+  <script src="js/inspector_admin_gate.js?v=20261010_gate_newpw" defer></script>
 
 <!-- ================= [신규] 데일리 주식 시장 종합 마감 보고서 모달 ================= -->
 <div id="dailyStockReportModal" class="daily-report-modal-backdrop" style="display: none;" onclick="if(event.target===this) closeDailyStockReportModal()">
@@ -1582,7 +1594,7 @@
           </div>
         </div>
       </div>
-      <button type="button" onclick="closeDailyStockReportModal()" style="background: #3e312b; color: #f5ebe0; border: 1px solid #4a3b34; padding: 10px 18px; border-radius: 8px; font-size: 0.88rem; font-weight: 700; cursor: pointer;"
+      <button type="button" onclick="closeDailyStockReportModal()" aria-label="일일 마감 보고서 닫기" style="background: #3e312b; color: #f5ebe0; border: 1px solid #4a3b34; padding: 10px 18px; border-radius: 8px; font-size: 0.88rem; font-weight: 700; cursor: pointer;"
         title="닫기">✕</button>
     </div>
     <div class="daily-report-body">
@@ -1655,7 +1667,7 @@
           </div>
         </div>
       </div>
-      <button type="button" onclick="closeSystemInspectorBot()" 
+      <button type="button" onclick="closeSystemInspectorBot()" aria-label="검수봇 모달 닫기" 
         style="background: transparent; border: none; color: #ffffff !important; font-size: 1.4rem; cursor: pointer; padding: 4px 8px;"
         title="닫기">✕</button>
     </div>
