@@ -1871,6 +1871,24 @@ window.updateDossierMemo = function(id, memo) {
 // ============================================================================
 // [탐정 사건 수첩] 🔍 타임라인 분석 원클릭 연동 엔진 (AI데이터센터 등 모든 테마 지원)
 // ============================================================================
+
+// [타임라인 필터 엔진] 전체 / 호재만 / 악재·리스크만 / 7일 / 30일
+window.filterTimelinePeriod = function(period, btnEl) {
+  window.activeTimelinePeriod = period;
+  if (btnEl) {
+    const parent = btnEl.parentElement;
+    if (parent) {
+      parent.querySelectorAll('.imggen-style-chip').forEach(b => b.classList.remove('active'));
+    }
+    btnEl.classList.add('active');
+  }
+  const selectEl = document.getElementById('theme-timeline-select');
+  const currentThemeId = (selectEl && selectEl.value) || window.activeTimelineThemeId || 'ai_dc_hardware';
+  if (typeof renderThemeTimelineView === 'function') {
+    renderThemeTimelineView(currentThemeId, period);
+  }
+};
+
 window.selectThemeFromDossier = async function(themeIdentifier) {
   try {
     if (!themeIdentifier) {
@@ -2745,7 +2763,7 @@ window.removeCustomTrackedStock = function (index) {
 };
 
 // 2번 탭(재료 모음) 타임라인 상세 뷰 렌더링
-function renderThemeTimelineView(themeId = 'hbm_glass', period = 'all') {
+function renderThemeTimelineView(themeId = 'ai_dc_hardware', period = 'all') {
   const activeThemes = getActiveThemesList();
   const titleEl = document.getElementById('theme-timeline-title');
   const badgeEl = document.getElementById('theme-timeline-badge');
@@ -2754,6 +2772,8 @@ function renderThemeTimelineView(themeId = 'hbm_glass', period = 'all') {
   const selectEl = document.getElementById('theme-timeline-select');
   const listEl = document.getElementById('stock-material-timeline-list') || document.getElementById('theme-timeline-list');
   const deleteBtn = document.getElementById('btn-delete-active-theme');
+  const riskBox = document.getElementById('theme-risk-radar-box');
+  const riskDesc = document.getElementById('theme-risk-radar-desc');
 
   if (activeThemes.length === 0) {
     if (titleEl) titleEl.textContent = '등록된 관심 테마가 없습니다.';
@@ -2773,6 +2793,7 @@ function renderThemeTimelineView(themeId = 'hbm_glass', period = 'all') {
       `;
     }
     if (deleteBtn) deleteBtn.style.display = 'none';
+    if (riskBox) riskBox.style.display = 'none';
     return;
   }
 
@@ -2788,11 +2809,20 @@ function renderThemeTimelineView(themeId = 'hbm_glass', period = 'all') {
   if (titleEl) titleEl.textContent = `${currentTheme.theme_name} 누적 재료 타임라인`;
   if (badgeEl) badgeEl.textContent = currentTheme.category || '주도 테마';
   if (descEl) {
-    const stocksStr = (currentTheme.lead_stocks || []).join(', ');
-    descEl.innerHTML = `👑 핵심 종목: <strong style="color: #475569;">${escapeHtml(stocksStr)}</strong> · 당일 등락률: <strong style="color: #ef4444;">${currentTheme.today_change_rate || ''}</strong> (강도 ${currentTheme.today_score || 90}점)`;
+    const stocksStr = Array.isArray(currentTheme.lead_stocks) ? currentTheme.lead_stocks.join(', ') : (currentTheme.lead_stocks || '');
+    descEl.innerHTML = `👑 핵심 종목: <strong style="color: #475569;">${escapeHtml(stocksStr)}</strong> · 당일 등락률: <strong style="color: #ef4444;">${currentTheme.today_change_rate || '+0.00%'}</strong> (강도 ${currentTheme.today_score || 90}점)`;
   }
 
-  // 2. 드롭다운 옵션 동기화
+  // 2. 상단 악재 & 다운사이드 리스크 레이더 박스 동기화
+  if (riskBox && riskDesc) {
+    const riskContent = currentTheme.risks_summary 
+      || (currentTheme.checklist && currentTheme.checklist.risks && currentTheme.checklist.risks.fading)
+      || `${currentTheme.theme_name} 관련 고평가 논란, 단기 급등에 따른 차익 실현 및 글로벌 매크로 변동성 모니터링 필요`;
+    riskBox.style.display = 'block';
+    riskDesc.innerHTML = `<strong style="color: #f87171;">⚠️ 잠재 다운사이드 리스크:</strong> ${escapeHtml(riskContent)}`;
+  }
+
+  // 3. 드롭다운 옵션 동기화
   if (selectEl) {
     selectEl.innerHTML = activeThemes.map(t => `
       <option value="${t.theme_id}" ${t.theme_id === currentTheme.theme_id ? 'selected' : ''}>
@@ -2802,12 +2832,22 @@ function renderThemeTimelineView(themeId = 'hbm_glass', period = 'all') {
     selectEl.value = currentTheme.theme_id;
   }
 
-  // 3. 타임라인 뉴스 일자별 역순 정렬 및 기간 필터링
+  // 4. 타임라인 뉴스 일자별 역순 정렬 및 기간/호재/악재 필터링
   const rawTimeline = currentTheme.timeline || [];
   const sortedTimeline = [...rawTimeline].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
   let filtered = sortedTimeline;
-  if (period === '7d') {
+  if (period === 'bad' || period === 'risk') {
+    filtered = sortedTimeline.filter(item => 
+      item.impact_type === 'BAD' || item.is_risk ||
+      /악재|리스크|우려|하락|적자|오버행|규제|소송|위기|둔화|경고|지연|과열|급락|덤핑/.test(item.news_title || item.title || item.summary || '')
+    );
+  } else if (period === 'good') {
+    filtered = sortedTimeline.filter(item => 
+      item.impact_type !== 'BAD' && !item.is_risk &&
+      !/악재|리스크|우려|하락|적자|오버행|규제|소송|위기|둔화|경고|지연|과열|급락|덤핑/.test(item.news_title || item.title || '')
+    );
+  } else if (period === '7d') {
     filtered = sortedTimeline.filter(item => getDaysDifference(item.date) <= 7);
   } else if (period === '30d') {
     filtered = sortedTimeline.filter(item => getDaysDifference(item.date) <= 30);
@@ -2817,88 +2857,67 @@ function renderThemeTimelineView(themeId = 'hbm_glass', period = 'all') {
     countEl.textContent = `${filtered.length}건`;
   }
 
-  // 4. 리스트 카드 HTML 생성
+  // 5. 리스트 카드 HTML 생성
   if (!listEl) return;
 
   if (filtered.length === 0) {
+    let emptyMsg = `선택된 조건(${period === 'bad' ? '⚠️ 악재·리스크' : (period === 'good' ? '🔥 호재' : (period === '7d' ? '최근 7일' : '선택 기간'))})에 해당하는 기사가 없습니다.`;
     listEl.innerHTML = `
       <div style="text-align: center; padding: 40px 20px; color: #94a3b8; background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px dashed rgba(255,255,255,0.08);">
-        <div style="font-size: 1.5rem; margin-bottom: 8px;">📭</div>
-        <div style="font-size: 0.9rem; font-weight: 700; color: #475569;">선택된 기간(${period === '7d' ? '최근 7일' : (period === '30d' ? '최근 30일' : '전체')}) 내 발생한 뉴스 재료가 없습니다.</div>
-        <div style="font-size: 0.78rem; color: #64748b; margin-top: 4px;">상단의 기간 필터를 [전체]로 변경해 과거 누적 히스토리를 확인해보세요.</div>
+        <div style="font-size: 1.5rem; margin-bottom: 8px;">${period === 'bad' ? '🛡️' : '📭'}</div>
+        <div style="font-size: 0.9rem; font-weight: 700; color: #475569;">${emptyMsg}</div>
+        <div style="font-size: 0.78rem; color: #64748b; margin-top: 4px;">상단의 필터를 <strong>[전체]</strong>로 변경하시면 호재와 악재를 모두 확인하실 수 있습니다.</div>
       </div>
     `;
     return;
   }
 
   listEl.innerHTML = filtered.map((item, idx) => {
-    const cleanTitle = (item.news_title || '').replace(/\[.*?\]/g, '').trim();
-    // [핵심] 실제 기사 원문 URL 바인딩 (originallink || link || news_url)
-    const targetUrl = item.originallink || item.link || item.news_url || `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(cleanTitle || item.news_title)}`;
-    const pressName = item.press || item.source || '언론사';
+    const cleanTitle = (item.news_title || item.title || '').replace(/\[.*?\]/g, '').trim();
+    const targetUrl = item.originallink || item.link || item.news_url || item.url || `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(cleanTitle || item.news_title || item.title)}`;
+    const pressName = item.press || item.source || '증시 뉴스';
     const dateStr = item.date || '최근';
 
-    // 영향도 뱃지 스타일
-    let impactColor = '#38bdf8';
-    let impactBg = 'rgba(56, 189, 248, 0.12)';
-    let impactBorder = 'rgba(56, 189, 248, 0.3)';
-    if ((item.impact || '').includes('강한') || (item.impact || '').includes('폭등')) {
-      impactColor = '#ef4444';
-      impactBg = 'rgba(239, 68, 68, 0.15)';
-      impactBorder = 'rgba(239, 68, 68, 0.35)';
-    } else if ((item.impact || '').includes('지속')) {
-      impactColor = '#34d399';
-      impactBg = 'rgba(16, 185, 129, 0.15)';
-      impactBorder = 'rgba(16, 185, 129, 0.35)';
-    }
+    // 악재 여부 정밀 판정
+    const isBadNews = item.impact_type === 'BAD' || item.is_risk ||
+      /악재|리스크|우려|하락|적자|오버행|규제|소송|위기|둔화|경고|지연|과열|급락|덤핑/.test((item.news_title || item.title || '') + ' ' + (item.summary || item.key_point || ''));
 
-    const themeLabel = item.theme || currentTheme.theme_name || '테마';
-    const stockLabel = item.target_stock || (currentTheme.lead_stocks && currentTheme.lead_stocks[0]) || '주도주';
-    const hierarchyBadgeText = `${themeLabel} | ${stockLabel}`;
+    // 카드 테두리 및 배경 디자인 (호재 vs 악재 선명한 대비)
+    const cardBorder = isBadNews ? '#ef4444' : '#4a3b34';
+    const cardBg = isBadNews ? 'rgba(239, 68, 68, 0.06)' : '#2a201c';
+    const cardLeftBorder = isBadNews ? '4px solid #ef4444' : '4px solid #d4a373';
+
+    // 뱃지 디자인
+    const badgeHtml = isBadNews
+      ? `<span style="font-size: 0.68rem; background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.45); padding: 2px 7px; border-radius: 4px; font-weight: 900;">⚠️ 악재·리스크</span>`
+      : `<span style="font-size: 0.68rem; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); padding: 2px 7px; border-radius: 4px; font-weight: 800;">🔥 호재 모멘텀</span>`;
+
+    const summaryText = item.summary || item.key_point || item.desc || '';
 
     return `
-      <div style="display: flex; justify-content: space-between; align-items: center; background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 10px; padding: 12px 18px; gap: 14px; transition: all 0.2s ease; box-shadow: 0 1px 3px rgba(0,0,0,0.02);" onmouseover="this.style.borderColor='#93c5fd';" onmouseout="this.style.borderColor='#4a3b34';">
-        <!-- 좌측 날짜 및 제목 메타 -->
-        <div style="display: flex; align-items: center; gap: 14px; flex: 1; min-width: 0;">
-          <!-- 날짜 박스 -->
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 6px 10px; text-align: center; min-width: 86px; flex-shrink: 0;">
-            <div style="font-size: 0.76rem; font-weight: 800; color: #0284c7;">${escapeHtml(dateStr)}</div>
-            <div style="font-size: 0.68rem; color: #64748b;">발행일자</div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; background: ${cardBg}; border: 1.5px solid ${cardBorder}; border-left: ${cardLeftBorder}; border-radius: 10px; padding: 14px 18px; gap: 14px; transition: all 0.2s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.25);" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='none';">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap;">
+            ${badgeHtml}
+            <span style="font-size: 0.72rem; color: #d4a373; font-weight: 800;">${escapeHtml(pressName)}</span>
+            <span style="font-size: 0.72rem; color: #a89f91;">${escapeHtml(dateStr)}</span>
           </div>
-
-          <!-- 기사 정보 -->
-          <div style="flex: 1; min-width: 0;">
-            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px; flex-wrap: wrap;">
-              <!-- 계층형 태그 뱃지 [상위 테마 | 개별 종목] -->
-              <span style="font-size: 0.73rem; background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 5px; font-weight: 900; letter-spacing: -0.2px;">
-                🏷️ [${escapeHtml(hierarchyBadgeText)}]
-              </span>
-              <span style="font-size: 0.72rem; color: #64748b; font-weight: 700; background: #f1f5f9; padding: 1px 6px; border-radius: 4px; border: 1px solid #e2e8f0;">
-                ${escapeHtml(pressName)}
-              </span>
-              <span style="font-size: 0.7rem; background: ${impactBg}; color: ${impactColor}; border: 1px solid ${impactBorder}; padding: 1px 6px; border-radius: 4px; font-weight: 800;">
-                ${escapeHtml(item.impact || '모멘텀')}
-              </span>
-            </div>
-            <div style="font-size: 0.92rem; font-weight: 700; color: #0f172a; line-height: 1.4; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-              ${escapeHtml(item.news_title || item.title)}
-            </div>
-          </div>
+          <h5 style="margin: 0 0 6px 0; font-size: 0.95rem; font-weight: 900; line-height: 1.45; color: ${isBadNews ? '#fca5a5' : '#f5ebe0'};">
+            <a href="${escapeHtml(targetUrl)}" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">
+              ${escapeHtml(item.news_title || item.title || cleanTitle)}
+            </a>
+          </h5>
+          ${summaryText ? `<div style="font-size: 0.8rem; color: #d7ccc8; line-height: 1.45; margin-top: 4px;">${isBadNews ? '<strong style="color:#f87171;">⚠️ 리스크 팩트:</strong> ' : '<strong>💡 핵심 포인트:</strong> '}${escapeHtml(summaryText)}</div>` : ''}
         </div>
-
-        <!-- 우측 실제 원문 이동 버튼 (target="_blank" 및 원문 URL 직접 바인딩) -->
-        <div style="flex-shrink: 0;">
-          <a href="${targetUrl}" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 4px; background: #f1f5f9; color: #1e293b; border: 1px solid #cbd5e1; padding: 7px 14px; border-radius: 6px; font-size: 0.78rem; text-decoration: none; font-weight: 800; white-space: nowrap; transition: all 0.2s ease;" onmouseover="this.style.background='#e2e8f0';" onmouseout="this.style.background='#f1f5f9';">
-            <span>원문 보기</span>
-            <span style="font-size: 0.85rem;">↗</span>
-          </a>
-        </div>
+        <a href="${escapeHtml(targetUrl)}" target="_blank" rel="noopener noreferrer" style="padding: 5px 10px; background: ${isBadNews ? 'rgba(239, 68, 68, 0.2)' : 'rgba(212, 163, 115, 0.15)'}; border: 1px solid ${isBadNews ? '#ef4444' : '#d4a373'}; color: ${isBadNews ? '#fca5a5' : '#d4a373'}; border-radius: 6px; font-size: 0.72rem; font-weight: 800; text-decoration: none; white-space: nowrap;">
+          원문 ↗
+        </a>
       </div>
     `;
   }).join('');
 }
 
-// data/theme_timeline.json 데이터를 로드하여 4번 탭(당일 주도 테마)과 2번 탭(재료 타임라인)을 자동 갱신
+
 async function loadThemeTimelineData() {
   try {
     const res = await fetch('data/theme_timeline.json?t=' + Date.now());
@@ -4954,21 +4973,31 @@ window.refreshThemePortfolioStreaming = async function() {
       const press = it.press || it.source || it.blogger_name || defaultSource;
       const date = it.date || '';
       const summary = it.summary || it.desc || it.key_point || '';
+      const isRisk = it.impact_type === 'BAD' || it.is_risk || /악재|리스크|우려|하락|적자|오버행|규제|소송|위기|둔화|경고|지연|과열/.test(title + ' ' + summary);
+
+      const cardBorderColor = isRisk ? '#ef4444' : '#4a3b34';
+      const cardBgColor = isRisk ? 'rgba(239, 68, 68, 0.08)' : '#2a201c';
+      const badgeStyle = isRisk 
+        ? 'background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4); font-weight: 900;'
+        : `background: rgba(212, 163, 115, 0.15); color: ${accentColor}; border: 1px solid rgba(212, 163, 115, 0.3);`;
 
       return `
-        <div style="background: #2a201c; border: 1.5px solid #4a3b34; border-radius: 8px; padding: 11px 13px; margin-bottom: 8px; transition: all 0.2s;" onmouseover="this.style.borderColor='${accentColor}'; this.style.transform='translateY(-1px)';" onmouseout="this.style.borderColor='#4a3b34'; this.style.transform='none';">
+        <div style="background: ${cardBgColor}; border: 1.5px solid ${cardBorderColor}; ${isRisk ? 'border-left: 3.5px solid #ef4444;' : ''} border-radius: 8px; padding: 11px 13px; margin-bottom: 8px; transition: all 0.2s;" onmouseover="this.style.borderColor='${isRisk ? '#f87171' : accentColor}'; this.style.transform='translateY(-1px)';" onmouseout="this.style.borderColor='${cardBorderColor}'; this.style.transform='none';">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-            <span style="font-size: 0.68rem; padding: 1px 6px; border-radius: 3px; font-weight: 800; background: rgba(212, 163, 115, 0.15); color: ${accentColor}; border: 1px solid rgba(212, 163, 115, 0.3);">
-              ${escapeHtml(press)}
-            </span>
+            <div style="display: flex; align-items: center; gap: 4px;">
+              ${isRisk ? '<span style="font-size: 0.65rem; background: #ef4444; color: #fff; padding: 1px 4px; border-radius: 3px; font-weight: 900;">⚠️ 악재</span>' : ''}
+              <span style="font-size: 0.68rem; padding: 1px 6px; border-radius: 3px; font-weight: 800; ${badgeStyle}">
+                ${escapeHtml(press)}
+              </span>
+            </div>
             <span style="font-size: 0.68rem; color: #a89f91;">${escapeHtml(date)}</span>
           </div>
-          <div style="font-size: 0.82rem; font-weight: 800; color: #f5ebe0; line-height: 1.4; margin-bottom: 5px;">
-            <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" style="color: #f5ebe0; text-decoration: none;" onmouseover="this.style.color='${accentColor}';" onmouseout="this.style.color='#f5ebe0';">
+          <div style="font-size: 0.82rem; font-weight: 800; color: ${isRisk ? '#fca5a5' : '#f5ebe0'}; line-height: 1.4; margin-bottom: 5px;">
+            <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='${accentColor}';" onmouseout="this.style.color='inherit';">
               ${escapeHtml(title)}
             </a>
           </div>
-          ${summary ? `<div style="font-size: 0.72rem; color: #a89f91; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHtml(summary)}</div>` : ''}
+          ${summary ? `<div style="font-size: 0.72rem; color: #d7ccc8; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${isRisk ? '<strong style="color:#f87171;">리스크:</strong> ' : ''}${escapeHtml(summary)}</div>` : ''}
         </div>
       `;
     }).join('');
@@ -6197,19 +6226,48 @@ function selectStockDeepItem(idx) {
       </div>
 
       <!-- E. 영역 3: 그 종목에 관련된 모든 기사 모음 -->
+      
+      <!-- E. 영역 3: 그 종목에 관련된 모든 기사 모음 & ⚠️ 악재·리스크 레이더 -->
       <div class="deep-section-block" id="deep-sec-news" style="margin-bottom: 24px;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
           <div style="font-size: 1.05rem; font-weight: 900; color: #d4a373; display: flex; align-items: center; gap: 8px;">
-            <span>📰</span> 3. 이 종목 관련 모든 기사 모아보기
+            <span>📰</span> 3. 이 종목 관련 뉴스 & ⚠️ 실전 악재·리스크 모아보기
           </div>
-          <a href="https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(item.name + ' 주가 실적')}" target="_blank" rel="noopener noreferrer" style="font-size: 0.78rem; color: #38bdf8; text-decoration: none; font-weight: 800; background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.3); padding: 4px 10px; border-radius: 6px;">
-            네이버 실시간 뉴스 전체 ↗
+          <a href="https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(item.name + ' 주가 실적 악재')}" target="_blank" rel="noopener noreferrer" style="font-size: 0.78rem; color: #f87171; text-decoration: none; font-weight: 800; background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.35); padding: 4px 10px; border-radius: 6px;">
+            ⚠️ 악재 뉴스 전수 검색 ↗
           </a>
         </div>
+
+        <!-- [신규] ⚠️ 이 종목의 숨은 악재 & 하방 리스크 분석 박스 -->
+        <div style="background: rgba(239, 68, 68, 0.08); border: 1.5px solid rgba(239, 68, 68, 0.35); border-left: 5px solid #ef4444; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <span style="font-size: 1.05rem;">🚨</span>
+              <strong style="color: #f87171; font-size: 0.92rem; font-weight: 900;">[${escapeHtml(item.name)}] 실전 투자 전 반드시 체크해야 할 3대 악재 요인</strong>
+            </div>
+            <span style="font-size: 0.7rem; background: rgba(239, 68, 68, 0.25); color: #fca5a5; padding: 2px 7px; border-radius: 4px; font-weight: 800;">손실 방어 필수</span>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 8px;">
+            <div style="background: #1f1613; border: 1px solid rgba(239,68,68,0.25); border-radius: 8px; padding: 10px 12px;">
+              <div style="font-size: 0.76rem; color: #f87171; font-weight: 800; margin-bottom: 3px;">⚠️ 1. 오버행 & 자금 조달</div>
+              <div style="font-size: 0.78rem; color: #d7ccc8; line-height: 1.4;">미상환 전환사채(CB), 신주인수권부사채(BW) 및 대주주/VC 보호예수 해제 여부 상시 모니터링 필요</div>
+            </div>
+            <div style="background: #1f1613; border: 1px solid rgba(239,68,68,0.25); border-radius: 8px; padding: 10px 12px;">
+              <div style="font-size: 0.76rem; color: #f87171; font-weight: 800; margin-bottom: 3px;">⚠️ 2. 밸류에이션 피크아웃</div>
+              <div style="font-size: 0.78rem; color: #d7ccc8; line-height: 1.4;">단기 급등에 따른 역사적 PER/PBR 상단 돌파 및 전방 고객사 설비투자(CapEx) 속도 조절 리스크</div>
+            </div>
+            <div style="background: #1f1613; border: 1px solid rgba(239,68,68,0.25); border-radius: 8px; padding: 10px 12px;">
+              <div style="font-size: 0.76rem; color: #f87171; font-weight: 800; margin-bottom: 3px;">⚠️ 3. 기술적 지지선 이탈</div>
+              <div style="font-size: 0.78rem; color: #d7ccc8; line-height: 1.4;">주요 수급 주체(외국인·기관) 동반 순매도 전환 시 20일 이동평균선 지지 여부 즉각 확인 필요</div>
+            </div>
+          </div>
+        </div>
+
         <div>
           ${articlesHtml}
         </div>
       </div>
+      
 
       <!-- F. 영역 4: 엮여있는 테마 및 관련 종목군 맵 -->
       <div class="deep-section-block" id="deep-sec-theme" style="margin-bottom: 24px;">

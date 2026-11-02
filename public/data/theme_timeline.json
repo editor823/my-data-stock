@@ -1,1798 +1,962 @@
-[
-  {
-    "theme_id": "ai_dc_hardware",
-    "theme_name": "AI데이터센터 - 반도체/하드웨어",
-    "sector": "AI 데이터센터 밸류체인",
-    "pattern_type": "실시간 수집 모멘텀",
-    "analysis_date": "2026-11-02",
-    "checklist": {
-      "material": "엔비디아 블랙웰(B200/GB200) 양산 가속화 및 HBM3E/HBM4 조기 출하, 고다층 MLB 기판 쇼티지 지속",
-      "leaders": {
-        "lead": "SK하이닉스, 삼성전자, 한미반도체",
-        "sub": "이수페타시스, 대덕전자, 와이씨, 테크윙, 리노공업"
-      },
-      "correlation": "빅테크 AI CapEx 설비투자 확대 ➔ AI 가속기 및 초고속 메모리 수요 폭증 ➔ 국내 HBM 및 고다층 PCB 소부장 실적 직결",
-      "future_expectation": "11월 20일 엔비디아 3분기 실적 발표 및 블랙웰 고객사 공급 가이던스 확인",
-      "expiration_date": "중장기 메가트렌드 (2026~2028 지속)",
-      "chart_phase": "실적 어닝 서프라이즈 기반 20일선 눌림목 반등 국면",
-      "conditions": {
-        "bullish": "HBM 수율 안정화 및 글로벌 빅테크 주문량 추가 증액 보도",
-        "bearish": "미 대중국 추가 반도체 수출 통제 및 단기 AI 투자 속도조절론"
-      }
-    },
-    "timeline": [
-      {
-        "date": "2026-11-02",
-        "stage": "뉴스",
-        "press": "한국경제",
-        "news_title": "빅테크 AI CAPEX 200조원 돌파… SK하이닉스·한미반도체 HBM4 공급망 선점",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=SK하이닉스+한미반도체+HBM4",
-        "summary": "엔비디아 차세대 AI 가속기 루빈용 HBM4 16단 샘플 공급 본격화 및 국내 반도체 패키징 장비사 수주 랠리 가속"
-      },
-      {
-        "date": "2026-10-31",
-        "stage": "증권사 리포트",
-        "press": "미래에셋증권",
-        "news_title": "[이수페타시스] AI 데이터센터 가속기용 다층 MLB 기판 초호황 진입",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=이수페타시스+MLB",
-        "summary": "구글·엔비디아향 차세대 서버 기판 수주 잔고 급증으로 3분기 및 4분기 사상 최대 실적 경신 가시화"
-      },
-      {
-        "date": "2026-10-28",
-        "stage": "DART 공시",
-        "press": "전자공시",
-        "news_title": "한미반도체 차세대 TC 본더 신규 수주 계약 체결 공시",
-        "news_url": "https://dart.fss.or.kr",
-        "summary": "글로벌 OSAT 및 메모리 제조사향 2.5D 어드밴스드 패키징용 본더 장비 대규모 단일 공급계약 체결"
-      }
-    ]
-  },
-  {
-    "theme_id": "ai_dc_network",
-    "theme_name": "AI데이터센터 - 초고속 네트워크 & 광통신",
-    "sector": "AI 데이터센터 밸류체인",
-    "pattern_type": "인프라 통신 모멘텀",
-    "analysis_date": "2026-11-02",
-    "checklist": {
-      "material": "GPU 클러스터 간 초저지연 데이터 병목 해소를 위한 800G/1.6T 광트랜시버 및 CPO 광학기술 도입 급증",
-      "leaders": {
-        "lead": "옵티코어, 대한광통신",
-        "sub": "오이솔루션, 쏠리드, 우리로, 피피아이"
-      },
-      "correlation": "AI 모델 규모 100배 증가 ➔ 데이터센터 내부 트래픽 폭발 ➔ 구리선 한계 봉착으로 초고속 광케이블·광트랜시버 전면 교체",
-      "future_expectation": "글로벌 클라우드 기업들의 800G 고속 광통신 모듈 양산 발주 계약 체결",
-      "expiration_date": "진행형 모멘텀 (데이터센터 신축 주기 연동)",
-      "chart_phase": "바닥권 대량 거래대금 유입 후 1차 파동 지지 확인",
-      "conditions": {
-        "bullish": "북미 빅테크향 800G 광트랜시버 양산 납품 승인",
-        "bearish": "광통신 부품 원가 상승 및 통신사 인프라 투자 집행 지연"
-      }
-    },
-    "timeline": [
-      {
-        "date": "2026-11-02",
-        "stage": "뉴스",
-        "press": "전자신문",
-        "news_title": "AI 데이터센터 트래픽 병목… 800G 광통신 트랜시버 수요 폭발",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=AI+데이터센터+광통신+800G",
-        "summary": "엔비디아 스펙트럼X 이더넷 플랫폼 도입 확대로 초저지연 광트랜시버 및 광섬유 케이블 수주 급증"
-      },
-      {
-        "date": "2026-10-30",
-        "stage": "증권사 리포트",
-        "press": "하나증권",
-        "news_title": "[옵티코어] 차세대 AI 데이터센터향 광모듈 양산 테스트 통과",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=옵티코어+광통신",
-        "summary": "AI 서버 클러스터 전용 고속 광통신 연결 솔루션 상용화로 북미 고객사향 벤더 진입 가시화"
-      }
-    ]
-  },
-  {
-    "theme_id": "ai_dc_cooling",
-    "theme_name": "AI데이터센터 - 열관리 및 냉각 솔루션 (액침냉각)",
-    "sector": "AI 데이터센터 밸류체인",
-    "pattern_type": "기술 패러다임 전환 모멘텀",
-    "analysis_date": "2026-11-02",
-    "checklist": {
-      "material": "블랙웰 TDP 1,000W 이상 고발열로 공랭식 한계 도달 ➔ 수랭식 칠러 및 비전도성 액침냉각(Immersion Cooling) 필수화",
-      "leaders": {
-        "lead": "GST, 케이엔솔",
-        "sub": "유니셈, 워트, 인텍플러스, 삼화콘덴서"
-      },
-      "correlation": "GPU 발열량 급증 ➔ PUE(전력효율지수) 규제 대응 ➔ 액침냉각 도입 시 데이터센터 전력 소비 30% 이상 절감",
-      "future_expectation": "주요 빅테크 데이터센터 액침냉각 표준 규격 제정 및 턴키 납품 수주",
-      "expiration_date": "2026년 하반기 액침냉각 상용화 본격화",
-      "chart_phase": "정배열 전환 후 5일선 지지 2차 시세 분출 타진",
-      "conditions": {
-        "bullish": "글로벌 클라우드(CSP) 신축 데이터센터 액침냉각 전면 채택 발표",
-        "bearish": "액체 유출 안전성 노이즈 및 초기 설비투자 비용 부담"
-      }
-    },
-    "timeline": [
-      {
-        "date": "2026-11-02",
-        "stage": "뉴스",
-        "press": "이데일리",
-        "news_title": "엔비디아 차세대 서버 '액침냉각' 필수… GST·케이엔솔 기술력 주목",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=데이터센터+액침냉각+GST",
-        "summary": "고발열 AI 가속기 냉각을 위한 액침냉각 시스템 글로벌 퀄테스트 통과 및 대규모 설비 공급 협의"
-      },
-      {
-        "date": "2026-10-29",
-        "stage": "증권사 리포트",
-        "press": "신한투자증권",
-        "news_title": "[케이엔솔] 글로벌 액침냉각 1위 서브머사와 협업으로 국내외 데이터센터 수주",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=케이엔솔+액침냉각",
-        "summary": "데이터센터 열관리 솔루션 매출 비중 확대로 2026년 영업이익 사상 최대치 갱신 전망"
-      }
-    ]
-  },
-  {
-    "theme_id": "ai_dc_power",
-    "theme_name": "AI데이터센터 - 전력 인프라 및 에너지원 (원전/SMR)",
-    "sector": "AI 데이터센터 밸류체인",
-    "pattern_type": "슈퍼사이클 주도주",
-    "analysis_date": "2026-11-02",
-    "checklist": {
-      "material": "북미 노후 송전망 교체 및 AI 데이터센터 전력 소비 폭증으로 초고압 변압기 쇼티지(3~4년) 지속 및 무탄소 SMR 전력 계약 체결",
-      "leaders": {
-        "lead": "HD현대일렉트릭, 효성중공업, 두산에너빌리티",
-        "sub": "LS ELECTRIC, 제룡전기, 일진전기, 우진엔텍, 비에이치아이"
-      },
-      "correlation": "데이터센터 증설 ➔ 전력망 연결 지연(3년 대기) ➔ 초고압 변압기 P(가격)·Q(수량) 동반 급등 + 24시간 안정 전력용 원전 직공급 PPA 체결",
-      "future_expectation": "체코 24조원 원전 본계약 서명 및 미국 빅테크의 차세대 SMR 전력 직구매 계약 확대",
-      "expiration_date": "장기 슈퍼사이클 (2030년까지 수주잔고 확보)",
-      "chart_phase": "사상 최고가 부근 기관·외인 쌍끌이 매수 지속",
-      "conditions": {
-        "bullish": "북미 변전소 추가 수주 랠리 및 3분기 어닝 서프라이즈",
-        "bearish": "원자재(구리, 규소강판) 가격 폭등 및 납품 기일 지연"
-      }
-    },
-    "timeline": [
-      {
-        "date": "2026-11-02",
-        "stage": "증권사 리포트",
-        "press": "한화투자증권",
-        "news_title": "[효성중공업] 3Q26 실적 일시적 숨고르기, 초고압 변압기 수주 모멘텀은 지속",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=효성중공업+변압기+수주",
-        "summary": "미국 및 유럽 시장 점유율 급상승과 초고압 변압기 수주잔고 5조원 돌파로 연간 최대 실적 순항"
-      },
-      {
-        "date": "2026-10-31",
-        "stage": "뉴스",
-        "press": "매일경제",
-        "news_title": "구글·아마존 이어 마이크로소프트도 원전 전력 확보… 두산에너빌리티 SMR 러브콜",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=두산에너빌리티+SMR+데이터센터",
-        "summary": "24시간 중단 없는 무탄소 전력 공급을 위해 AI 데이터센터 옆 소형원자로(SMR) 파운드리 수주 본격화"
-      }
-    ]
-  },
-  {
-    "theme_id": "ai_dc_epc",
-    "theme_name": "AI데이터센터 - 부동산, 인프라 개발 & 건설 (EPC)",
-    "sector": "AI 데이터센터 밸류체인",
-    "pattern_type": "부동산/EPC 턴어라운드",
-    "analysis_date": "2026-11-02",
-    "checklist": {
-      "material": "하이퍼스케일 AI 데이터센터 부지 인허가, 특화 CM(건설사업관리) 및 친환경 고효율 EPC 턴키 수주",
-      "leaders": {
-        "lead": "현대건설, 한미글로벌",
-        "sub": "삼성E&A, GS건설, 희림"
-      },
-      "correlation": "글로벌 IT 기업 데이터센터 신축 수요 급증 ➔ 전력·용수·통신 인프라 갖춘 부지 개발 및 전문 CM 기업 수혜",
-      "future_expectation": "국내외 초대형 하이퍼스케일 AI 데이터센터 신축 공사 수주 공시",
-      "expiration_date": "진행형 모멘텀 (프로젝트별 2~3년 소요)",
-      "chart_phase": "바닥권 턴어라운드 및 거래대금 점증 국면",
-      "conditions": {
-        "bullish": "해외 대형 데이터센터 턴키 시공 계약 체결",
-        "bearish": "PF 대출 규제 및 지자체 데이터센터 인허가 지연"
-      }
-    },
-    "timeline": [
-      {
-        "date": "2026-11-01",
-        "stage": "뉴스",
-        "press": "조선비즈",
-        "news_title": "AI 데이터센터 건설 붐… 한미글로벌·현대건설 특화 CM 및 시공 수주 릴레이",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=한미글로벌+데이터센터+CM",
-        "summary": "고난도 하이퍼스케일 데이터센터 프로젝트 건설사업관리 실적 독보적, 글로벌 빅테크 전용 부지 개발 본격 착수"
-      }
-    ]
-  },
-  {
-    "theme_id": "ai_dc_cloud",
-    "theme_name": "AI데이터센터 - 클라우드 및 운영 소프트웨어 (CSP / MSP)",
-    "sector": "AI 데이터센터 밸류체인",
-    "pattern_type": "소프트웨어 솔루션 모멘텀",
-    "analysis_date": "2026-11-02",
-    "checklist": {
-      "material": "기업용 생성형 AI 인프라 구축, 소버린 AI 플랫폼, 하이브리드 멀티클라우드 운영 관리(MSP) 수요 급증",
-      "leaders": {
-        "lead": "삼성에스디에스, 포스코DX",
-        "sub": "현대오토에버, 솔트룩스, 나무기술, 이노룰스"
-      },
-      "correlation": "데이터센터 하드웨어 구축 완료 ➔ 기업 데이터 연동 및 맞춤형 LLM 솔루션 운영 ➔ 클라우드 MSP 반복 매출 급증",
-      "future_expectation": "정부 및 공공 소버린 AI 인프라 사업자 선정 및 금융권 프라이빗 클라우드 수주",
-      "expiration_date": "2026~2027 소프트웨어 가치 현실화 국면",
-      "chart_phase": "우상향 박스권 안착 후 상단 돌파 시도",
-      "conditions": {
-        "bullish": "대기업 계열사 및 공공기관 차세대 AI 클라우드 전환 프로젝트 수주",
-        "bearish": "기업 IT 예산 축소 및 클라우드 마이그레이션 지연"
-      }
-    },
-    "timeline": [
-      {
-        "date": "2026-11-02",
-        "stage": "뉴스",
-        "press": "디지털타임스",
-        "news_title": "기업용 생성형 AI 솔루션 시장 개막… 삼성SDS·포스코DX 클라우드 매출 질주",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=삼성SDS+클라우드+AI",
-        "summary": "고성능 GPU 클라우드 서비스(GPUaaS) 도입 기업 급증으로 고수익성 클라우드 매출 비중 40% 돌파"
-      }
-    ]
-  },
-  {
-    "theme_id": "ai_dc_ess",
-    "theme_name": "AI데이터센터 - ESS(에너지저장장치, BESS)",
-    "sector": "AI 데이터센터 밸류체인",
-    "pattern_type": "전력 보조 및 배터리 부활 모멘텀",
-    "analysis_date": "2026-11-02",
-    "checklist": {
-      "material": "데이터센터 블랙아웃 방지용 UPS(무정전전원장치) 대체 및 피크 전력 절감용 대용량 BESS(배터리 에너지저장장치) 공급 급증",
-      "leaders": {
-        "lead": "서진시스템, 한화솔루션",
-        "sub": "LS머트리얼즈, 신성에스티, 피엔티, LG에너지솔루션"
-      },
-      "correlation": "AI 서버 전력 스파이크 발생 ➔ 전력망 안정화용 대규모 ESS 필수 ➔ 미국 및 유럽 대형 전력용 ESS 공급사 수주 잭팟",
-      "future_expectation": "글로벌 ESS 시스템 기업(플루언스, 테슬라 메가팩)향 컨테이너 BESS 장기 공급 계약 체결",
-      "expiration_date": "2026년 전기차 캐즘 극복하는 배터리의 핵심 돌파구",
-      "chart_phase": "실적 호전 기반 5일/20일 이동평균선 정배열 안착",
-      "conditions": {
-        "bullish": "미국 유틸리티급 대용량 ESS 단일 수주 조 단위 계약 공시",
-        "bearish": "배터리 셀 화재 안전성 우려 및 보조금 정책 변동"
-      }
-    },
-    "timeline": [
-      {
-        "date": "2026-11-02",
-        "stage": "뉴스",
-        "press": "머니투데이",
-        "news_title": "AI 데이터센터 필수 전력망 보조재 'ESS' 대폭발… 서진시스템 사상 최대 실적",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=서진시스템+ESS+수주",
-        "summary": "글로벌 1위 ESS 기업향 대용량 배터리 인클로저 및 컨테이너 BESS 완제품 독점 공급으로 분기 최대 이익 달성"
-      },
-      {
-        "date": "2026-10-30",
-        "stage": "증권사 리포트",
-        "press": "대신증권",
-        "news_title": "[LS머트리얼즈] 차세대 울트라커패시터(UC), 데이터센터 전력 피크 백업 전원 독점",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=LS머트리얼즈+UC",
-        "summary": "급격한 전력 수요 급증 시 찰나의 전력 공백을 메우는 고출력 UC 공급 개시로 신성장 동력 장착"
-      }
-    ]
-  },
-  {
-    "theme_id": "custom_1789721514159",
-    "theme_name": "원전",
-    "sector": "사용자 관심 테마",
-    "pattern_type": "실시간 수집 모멘텀",
-    "analysis_date": "2026-09-18",
-    "checklist": {
-      "material": "두산에너빌리티, 우리기술, 비에이치아이, 한신기계, 보성파워텍 및 원전 관련 실시간 뉴스 & DART 공시 동적 추적",
-      "leaders": {
-        "lead": "두산에너빌리티, 우리기술, 비에이치아이, 한신기계, 보성파워텍",
-        "sub": "연관 수급주 실시간 탐색 중"
-      },
-      "correlation": "두산에너빌리티, 우리기술, 비에이치아이, 한신기계, 보성파워텍 관련 보도 및 공시 모멘텀을 타임라인으로 실시간 누적 분석합니다.",
-      "future_expectation": "후속 단독 보도 및 금감원 공시 접수 여부 실시간 확인",
-      "expiration_date": "진행형 모멘텀",
-      "chart_phase": "실시간 수급 유입 및 변동성 확인 국면",
-      "conditions": {
-        "bullish": "대규모 계약/수주/실적 호전 보도 및 기관·외인 양매수",
-        "bearish": "단기 급등 후 차익 실현 매물 출회 및 재료 소멸"
-      }
-    },
-    "timeline": [
-      {
-        "date": "2026-09-18",
-        "stage": "증권사 리포트",
-        "press": "NH투자증권 리포트",
-        "news_title": "[리포트] 체코 30조 원전 주기기 공급 확정 및 미국 SMR 뉴스케일 파워 수주 (목표가: 32,000원)",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%91%90%EC%82%B0%EC%97%90%EB%84%88%EB%B9%8C%EB%A6%AC%ED%8B%B0",
-        "key_point": "투자의견: Buy(유지) | 두산에너빌리티 주기기 제작 독점 파이프라인 가동",
-        "stockName": "두산에너빌리티",
-        "is_dart": false,
-        "is_report": true,
-        "tag": "증권사 리서치"
-      },
-      {
-        "date": "2026-09-14",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 두산에너빌리티, 체코 신규 원전 2기 주기기 우선협상대상 공급 계약 체결",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EB%91%90%EC%82%B0%EC%97%90%EB%84%88%EB%B9%8C%EB%A6%AC%ED%8B%B0",
-        "key_point": "계약금액: 약 4조 5,000억원 규모 | 체코 두코바니 5·6호기 원자로 및 터빈 주기기 턴키 납품",
-        "stockName": "두산에너빌리티",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-09-09",
-        "stage": "실시간 보도",
-        "press": "서울경제",
-        "news_title": "우진엔텍, 원전 해체 및 계측제어설비(MMIS) 정비 독점 수주 확대",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%9A%B0%EC%A7%84%EC%97%94%ED%85%8D",
-        "key_point": "국내 가동 원전 25기 대상 경상정비 유지보수 용역 수주 및 원전 안전 시스템 핵심 국산화",
-        "stockName": "우진엔텍",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      },
-      {
-        "date": "2026-09-02",
-        "stage": "증권사 리포트",
-        "press": "하나증권 리포트",
-        "news_title": "[리포트] 비에이치아이, 글로벌 원전 르네상스 복수기(Condenser) 수주 랠리 본격화",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%B9%84%EC%97%90%EC%9D%B4%EC%B9%98%EC%95%84%EC%9D%B4",
-        "key_point": "투자의견: Buy(상향) | 목표주가: 18,500원 | 웨스팅하우스 및 한수원 동시 공급 벤더 지위",
-        "stockName": "비에이치아이",
-        "is_dart": false,
-        "is_report": true,
-        "tag": "증권사 리서치"
-      },
-      {
-        "date": "2026-08-25",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 한신기계, 원자력발전소용 무급유식 공기압축기 장기 공급 계약 체결",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%ED%95%9C%EC%8B%A0%EA%B8%B0%EA%B3%84",
-        "key_point": "신한울 3·4호기 건설용 특수 컴프레서 공급 건으로 총 185억원 규모",
-        "stockName": "한신기계",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-08-16",
-        "stage": "실시간 보도",
-        "press": "매일경제",
-        "news_title": "우리기술, SMR 분산형 전력망 제어시스템 국책과제 주관기관 단독 선정",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%9A%B0%EB%A6%AC%EA%B8%B0%EC%88%A0",
-        "key_point": "차세대 혁신형 SMR i-SMR 계측제어 소프트웨어 개발 주도, 상용화 시 글로벌 수출 기대",
-        "stockName": "우리기술",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      },
-      {
-        "date": "2026-08-05",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 보성파워텍, 한수원향 원자력발전소 철골 구조물 및 송전철탑 단일공급계약 (128억원)",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EB%B3%B4%EC%84%B1%ED%8C%8C%EC%9B%8C%ED%85%8D",
-        "key_point": "신규 원전 건설 핵심 인프라 철골 납품, 최근 매출액 대비 18.2% 규모 수주",
-        "stockName": "보성파워텍",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-07-22",
-        "stage": "핵심 이벤트",
-        "press": "한국수력원자력",
-        "news_title": "[이벤트] 팀코리아, 체코 두코바니 신규 원전 수주 본계약 최종 협상 착수",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%B2%B4%EC%BD%94%20%EC%9B%90%EC%A0%84%20%ED%8C%80%EC%BD%94%EB%A6%AC%EC%95%84",
-        "key_point": "체코 산업부 및 발주사(EDU II) 대표단 방한 및 창원 원전 공장 실사 진행",
-        "stockName": "두산에너빌리티",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "글로벌 모멘텀"
-      }
-    ],
-    "_asyncSupplementsLoaded": true
-  },
-  {
-    "theme_id": "radar_123",
-    "theme_name": "전력설비",
-    "sector": "당일 주도 테마",
-    "pattern_type": "주도 섹터 급등(거래대금 분출)",
-    "period_type": "단기 주도",
-    "score": 99,
-    "summary": "선도전기, 전력설비 핵심 공급 계약 체결 및 신사업 본격화 발표로 인해 관련 테마 상승세 견인",
-    "checklist": {
-      "material": "선도전기, 전력설비 시장 공급망 진입 소식 (주요 언론 종합)",
-      "leaders": {
-        "lead": "선도전기",
-        "sub": "가온전선, LS에코에너지, 대한전선, KBI메탈"
-      },
-      "correlation": "[사업 팩트 매핑] 선도전기는 초고압 500kV 해저·HVDC 케이블 턴키 생산 기업이며, 가온전선는 배전용 절연선 및 전력망 부품 납품사로 북미 AI 데이터센터 전력망 증설 수혜가 공시 및 사업보고서상 실질 매출로 반영됩니다.",
-      "future_expectation": "전력설비 관련 글로벌 고객사 수주 및 정부 정책 실증 일정 확정에 따른 후속 모멘텀 지속.",
-      "expiration_date": "약 1~2개월 (중기 업황 턴어라운드 사이클)",
-      "expiration_evidence": "[📌 근거 문장] 업황 사이클 및 정기 실적 발표일 추적 기반",
-      "chart_phase": "바닥권 탈피 1차 상승 파동",
-      "conditions": {
-        "bullish": "[재료 확산 트리거] 1) 선도전기 본계약 체결 정식 전자공시(DART) 발표, 2) 외신 추가 후속 보도 및 글로벌 파트너십 발표, 3) 5일선 지지 및 거래대금 1,000억 이상 연속 분출",
-        "bearish": "1) [일정 연기/무산 리스크] 주무부처 법안 심사 연기, FDA 보완요구서(CRL) 수령, 공청회 일정 지연 시 실망 매물 출회 | 2) [재료 팩트 소멸] 계약 협상 결렬 공시, 임상 중단 또는 경쟁사 특허 침해 소송 제기 시 급락 | 3) [매크로/지정학 리스크] 중동 지정학 전쟁 발발, 미 국채금리 급등 및 국내 코스피/코스닥 지수 급락에 따른 동반 투매",
-        "bearish_details": {
-          "risk_delay": "[일정 연기/무산 리스크] 주무부처 법안 심사 연기, FDA 보완요구서(CRL) 수령, 공청회 일정 지연 시 실망 매물 출회",
-          "risk_cancellation": "[재료 팩트 소멸] 계약 협상 결렬 공시, 임상 중단 또는 경쟁사 특허 침해 소송 제기 시 급락",
-          "risk_macro": "[매크로/지정학 리스크] 중동 지정학 전쟁 발발, 미 국채금리 급등 및 국내 코스피/코스닥 지수 급락에 따른 동반 투매"
+{
+  "themes": [
+    {
+      "theme_id": "ai_dc_hardware",
+      "theme_name": "AI데이터센터 - 반도체/하드웨어",
+      "category": "AI 데이터센터 인프라",
+      "today_change_rate": "+4.15%",
+      "today_score": 96,
+      "lead_stocks": [
+        "SK하이닉스",
+        "삼성전자",
+        "한미반도체",
+        "이수페타시스"
+      ],
+      "risks_summary": "미국의 대중국 첨단 HBM/AI 칩 추가 수출 규제 및 단기 급등에 따른 밸류에이션 부담",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "한국경제",
+          "news_title": "[호재] 빅테크 AI CAPEX 200조원 돌파… SK하이닉스·한미반도체 HBM4 공급망 선점",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=SK하이닉스+한미반도체+HBM4",
+          "summary": "엔비디아 차세대 루빈용 HBM4 16단 샘플 공급 본격화 및 국내 반도체 패키징 장비사 수주 랠리 가속"
+        },
+        {
+          "date": "2026-11-01",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "조선비즈",
+          "news_title": "[⚠️ 악재 경고] 美 상무부, 대중국 AI 가속기 및 첨단 반도체 추가 수출 통제안 검토 착수",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=미국+반도체+대중국+수출통제+규제",
+          "summary": "중국향 우회 수출 차단 조치 강화 시 글로벌 반도체 소부장 매출의 15~20% 일시 타격 가능성 제기"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "DART 공시",
+          "impact_type": "GOOD",
+          "is_dart": true,
+          "press": "DART 전자공시",
+          "news_title": "[공시] 한미반도체, 북미 AI 가속기향 듀얼 TC본더 890억원 규모 공급계약 체결",
+          "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=한미반도체",
+          "summary": "HBM3E 및 차세대 규격 전용 고정밀 본딩 장비 북미 메이저 파운드리 벤더 직납"
+        },
+        {
+          "date": "2026-10-28",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "연합인포맥스",
+          "news_title": "[⚠️ 시장 리스크] 범용 D램 및 낸드 판가 반등 탄력 둔화… 모바일 수요 침체 우려",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=D램+낸드+가격+둔화+우려",
+          "summary": "HBM 고수익성에도 불구하고 레거시 D램 재고 누적으로 중소형 반도체 부품사 단기 실적 변동성 확대 경고"
         }
-      }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-18",
-        "stage": "주도 테마 감지",
-        "press": "시장 판도 레이더",
-        "news_title": "[주도 섹터 TOP 5] 전력설비 거래대금 급증 및 수급 쏠림",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%A0%84%EB%A0%A5%EC%84%A4%EB%B9%84%20%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0",
-        "key_point": "대장주: 선도전기 | 선도전기, 전력설비 핵심 공급 계약 체결 및 신사업 본격화 발표로 인해 관련 테마 상승세 견인",
-        "stockName": "선도전기",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "확산 | 수급집중"
-      },
-      {
-        "date": "2026-09-15",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 선도전기, 초고압 변전설비 공급 단일판매·공급계약체결 (320억원 규모)",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0",
-        "key_point": "공급지역: 북미 및 국내 데이터센터 전력망 | 계약금액: 최근 매출액 대비 28.4% 규모 | 이행기간: 2026.09 ~ 2027.06",
-        "stockName": "선도전기",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-09-10",
-        "stage": "증권사 리포트",
-        "press": "대신증권 리포트",
-        "news_title": "[리포트] 선도전기, 북미 노후 변압기 교체 사이클과 전력 쇼티지 최대 수혜",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0",
-        "key_point": "투자의견: Buy(신규) | 목표주가: 4,500원 | 글로벌 송배전망 투자 확대로 영업이익률 12% 돌파 전망",
-        "stockName": "선도전기",
-        "is_dart": false,
-        "is_report": true,
-        "tag": "증권사 리서치"
-      },
-      {
-        "date": "2026-09-04",
-        "stage": "실시간 보도",
-        "press": "한국경제",
-        "news_title": "가온전선, 북미 배전망 시장 진출 가속화… 고부가가치 절연선 공급 계약",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EA%B0%80%EC%98%A8%EC%A0%84%EC%84%A0",
-        "key_point": "미국 대형 EPC 업체향 전력 케이블 납품 본격화 및 3분기 수주잔고 사상 최대 달성",
-        "stockName": "가온전선",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      },
-      {
-        "date": "2026-08-28",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 대한전선, 미국 500kV HVDC 초고압 케이블 공급 프로젝트 수주 (1,280억원)",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EB%8C%80%ED%95%9C%EC%A0%84%EC%84%A0",
-        "key_point": "북미 동부 해안 전력망 연계 프로젝트 | 계약기간: 2026-08 ~ 2027-12 | 기술적 진입장벽 입증",
-        "stockName": "대한전선",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-08-20",
-        "stage": "증권사 리포트",
-        "press": "키움증권 리포트",
-        "news_title": "[리포트] 대한전선, 초고압 HVDC 턴키 및 북미 인프라 슈퍼 사이클 본격 진입",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%8C%80%ED%95%9C%EC%A0%84%EC%84%A0",
-        "key_point": "투자의견: Buy(유지) | 목표주가: 24,000원 | 글로벌 수주 파이프라인 3조원 돌파",
-        "stockName": "대한전선",
-        "is_dart": false,
-        "is_report": true,
-        "tag": "증권사 리서치"
-      },
-      {
-        "date": "2026-08-14",
-        "stage": "실시간 보도",
-        "press": "머니투데이",
-        "news_title": "LS에코에너지, 베트남 해저케이블 생산기지 증설 및 싱가포르향 직수출 성과",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=LS%EC%97%90%EC%BD%94%EC%97%90%EB%84%88%EC%A7%80",
-        "key_point": "동남아 전력망 통합 프로젝트 핵심 벤더 지위 확보, 해상풍력 연계 매출 성장 가속",
-        "stockName": "LS에코에너지",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      },
-      {
-        "date": "2026-08-05",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 가온전선, 미국 현지 생산법인 추가 증설 및 제3자배정 유상증자 완료",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EA%B0%80%EC%98%A8%EC%A0%84%EC%84%A0",
-        "key_point": "미국 내 IRA 수혜 요건 충족을 위한 생산기지 거점화, 2027년 연간 생산능력 2배 확대",
-        "stockName": "가온전선",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "기업 공시"
-      },
-      {
-        "date": "2026-07-28",
-        "stage": "실시간 보도",
-        "press": "이데일리",
-        "news_title": "KBI메탈, AI 데이터센터향 초고순도 동선 부품 공급량 40% 급증",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=KBI%EB%A9%94%ED%83%88",
-        "key_point": "전선용 메탈 원자재 수요 급증으로 인한 영업이익 흑자전환 및 밸류체인 직결",
-        "stockName": "KBI메탈",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      },
-      {
-        "date": "2026-07-16",
-        "stage": "핵심 이벤트",
-        "press": "산업통상자원부",
-        "news_title": "[정책] 국가 기간 전력망 확충 특별법 국회 산자위 통과… 10조원 재정 지원 확정",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EA%B5%AD%EA%B0%80%20%EC%A0%84%EB%A0%A5%EB%A7%9D%20%ED%8A%B9%EB%B3%84%EB%B2%95",
-        "key_point": "용인 반도체 클러스터 및 송전선로 지중화 프로젝트 패스트트랙 승인으로 관련 기업 수혜",
-        "stockName": "선도전기",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "정책 모멘텀"
-      }
-    ],
-    "_asyncSupplementsLoaded": true,
-    "_technicals": null
-  },
-  {
-    "theme_id": "radar_373",
-    "theme_name": "5G",
-    "sector": "당일 주도 테마",
-    "pattern_type": "주도 섹터 급등(거래대금 분출)",
-    "period_type": "단기 주도",
-    "score": 91,
-    "summary": "이노인스트루먼트, 5G 핵심 공급 계약 체결 및 신사업 본격화 발표로 인해 관련 테마 상승세 견인",
-    "checklist": {
-      "material": "이노인스트루먼트, 5G 시장 공급망 진입 소식 (주요 언론 종합)",
-      "leaders": {
-        "lead": "이노인스트루먼트",
-        "sub": "우리로, 대한광통신, 우리넷, LS에코에너지"
-      },
-      "correlation": "[사업 팩트 매핑] 이노인스트루먼트는 5G 테마의 원천 기술 특허 및 완제품 공급 라이선스를 보유한 대장주이며, 우리로는 핵심 모듈 부품 공급사로서 해당 테마 이슈 발생 시 실질 수주 수혜 밸류체인에 직결됩니다.",
-      "future_expectation": "5G 관련 글로벌 고객사 수주 및 정부 정책 실증 일정 확정에 따른 후속 모멘텀 지속.",
-      "expiration_date": "약 1~2개월 (중기 업황 턴어라운드 사이클)",
-      "expiration_evidence": "[📌 근거 문장] 업황 사이클 및 정기 실적 발표일 추적 기반",
-      "chart_phase": "바닥권 탈피 1차 상승 파동",
-      "conditions": {
-        "bullish": "[재료 확산 트리거] 1) 이노인스트루먼트 본계약 체결 정식 전자공시(DART) 발표, 2) 외신 추가 후속 보도 및 글로벌 파트너십 발표, 3) 5일선 지지 및 거래대금 1,000억 이상 연속 분출",
-        "bearish": "1) [일정 연기/무산 리스크] 주무부처 법안 심사 연기, FDA 보완요구서(CRL) 수령, 공청회 일정 지연 시 실망 매물 출회 | 2) [재료 팩트 소멸] 계약 협상 결렬 공시, 임상 중단 또는 경쟁사 특허 침해 소송 제기 시 급락 | 3) [매크로/지정학 리스크] 중동 지정학 전쟁 발발, 미 국채금리 급등 및 국내 코스피/코스닥 지수 급락에 따른 동반 투매",
-        "bearish_details": {
-          "risk_delay": "[일정 연기/무산 리스크] 주무부처 법안 심사 연기, FDA 보완요구서(CRL) 수령, 공청회 일정 지연 시 실망 매물 출회",
-          "risk_cancellation": "[재료 팩트 소멸] 계약 협상 결렬 공시, 임상 중단 또는 경쟁사 특허 침해 소송 제기 시 급락",
-          "risk_macro": "[매크로/지정학 리스크] 중동 지정학 전쟁 발발, 미 국채금리 급등 및 국내 코스피/코스닥 지수 급락에 따른 동반 투매"
+    {
+      "theme_id": "ai_dc_network",
+      "theme_name": "AI데이터센터 - 초고속 네트워크 & 광통신",
+      "category": "AI 데이터센터 인프라",
+      "today_change_rate": "+5.30%",
+      "today_score": 93,
+      "lead_stocks": [
+        "옵티코어",
+        "대한광통신",
+        "오이솔루션",
+        "쏠리드"
+      ],
+      "risks_summary": "해외 통신사 5G CAPEX 축소 장기화 및 광트랜시버 글로벌 단가 인하 경쟁 압박",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "매일경제",
+          "news_title": "[호재] AI 클러스터 병목 해소… 800G·1.6T 광트랜시버 및 초저손실 광케이블 공급 본격화",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=옵티코어+광트랜시버+AI데이터센터",
+          "summary": "AI 서버 간 데이터 전송 지연을 줄이기 위한 광통신 모듈 수요가 전년 대비 140% 급증"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "이데일리",
+          "news_title": "[⚠️ 악재 주의] 북미 주요 통신사 기지국 설비투자 축소… 전통 통신장비 부문 적자 지속",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=통신장비+CAPEX+축소+적자",
+          "summary": "데이터센터향 매출 발생 전까지 기존 5G 무선 통신장비 매출 급감으로 일부 후발 벤더 유동성 압박"
+        },
+        {
+          "date": "2026-10-30",
+          "stage": "증권사 리포트",
+          "impact_type": "GOOD",
+          "is_report": true,
+          "press": "키움증권",
+          "news_title": "[리포트] 옵티코어, 북미 빅테크 AI 데이터센터향 400G/800G 광엔진 퀄테스트 통과",
+          "news_url": "https://finance.naver.com/research/company_list.naver?keyword=옵티코어",
+          "summary": "투자의견: Buy(신규) | 목표주가 상향 | 4분기 북미 직수출 전환으로 영업이익률 18% 달성 전망"
         }
-      }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-18",
-        "stage": "주도 테마 감지",
-        "press": "시장 판도 레이더",
-        "news_title": "[주도 섹터 TOP 5] 5G 거래대금 급증 및 수급 쏠림",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=5G%20%EC%9D%B4%EB%85%B8%EC%9D%B8%EC%8A%A4%ED%8A%B8%EB%A3%A8%EB%A8%BC%ED%8A%B8",
-        "key_point": "대장주: 이노인스트루먼트 | 이노인스트루먼트, 5G 핵심 공급 계약 체결 및 신사업 본격화 발표로 인해 관련 테마 상승세 견인"
-      }
-    ],
-    "_asyncSupplementsLoaded": false,
-    "_technicals": null
-  },
-  {
-    "theme_id": "radar_586",
-    "theme_name": "광통신",
-    "sector": "당일 주도 테마",
-    "pattern_type": "주도 섹터 급등(거래대금 분출)",
-    "period_type": "단기 주도",
-    "score": 99,
-    "summary": "성호전자, 광통신 핵심 공급 계약 체결 및 신사업 본격화 발표로 인해 관련 테마 상승세 견인",
-    "checklist": {
-      "material": "성호전자, 광통신 시장 공급망 진입 소식 (주요 언론 종합)",
-      "leaders": {
-        "lead": "성호전자",
-        "sub": "대한광통신, 우리넷, RFHIC, 머큐리"
-      },
-      "correlation": "[사업 팩트 매핑] 성호전자는 광통신 테마의 원천 기술 특허 및 완제품 공급 라이선스를 보유한 대장주이며, 대한광통신는 핵심 모듈 부품 공급사로서 해당 테마 이슈 발생 시 실질 수주 수혜 밸류체인에 직결됩니다.",
-      "future_expectation": "광통신 관련 글로벌 고객사 수주 및 정부 정책 실증 일정 확정에 따른 후속 모멘텀 지속.",
-      "expiration_date": "약 2~3주 (단기 정책/수급 1차 분출 국면)",
-      "expiration_evidence": "[📌 근거 문장] 업황 사이클 및 정기 실적 발표일 추적 기반",
-      "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
-      "conditions": {
-        "bullish": "[재료 확산 트리거] 1) 성호전자 본계약 체결 정식 전자공시(DART) 발표, 2) 외신 추가 후속 보도 및 글로벌 파트너십 발표, 3) 5일선 지지 및 거래대금 1,000억 이상 연속 분출",
-        "bearish": "1) [일정 연기/무산 리스크] 주무부처 법안 심사 연기, FDA 보완요구서(CRL) 수령, 공청회 일정 지연 시 실망 매물 출회 | 2) [재료 팩트 소멸] 계약 협상 결렬 공시, 임상 중단 또는 경쟁사 특허 침해 소송 제기 시 급락 | 3) [매크로/지정학 리스크] 중동 지정학 전쟁 발발, 미 국채금리 급등 및 국내 코스피/코스닥 지수 급락에 따른 동반 투매",
-        "bearish_details": {
-          "risk_delay": "[일정 연기/무산 리스크] 주무부처 법안 심사 연기, FDA 보완요구서(CRL) 수령, 공청회 일정 지연 시 실망 매물 출회",
-          "risk_cancellation": "[재료 팩트 소멸] 계약 협상 결렬 공시, 임상 중단 또는 경쟁사 특허 침해 소송 제기 시 급락",
-          "risk_macro": "[매크로/지정학 리스크] 중동 지정학 전쟁 발발, 미 국채금리 급등 및 국내 코스피/코스닥 지수 급락에 따른 동반 투매"
+    {
+      "theme_id": "ai_dc_cooling",
+      "theme_name": "AI데이터센터 - 열관리 및 냉각 솔루션 (액침냉각)",
+      "category": "AI 데이터센터 인프라",
+      "today_change_rate": "+6.10%",
+      "today_score": 95,
+      "lead_stocks": [
+        "GST",
+        "케이엔솔",
+        "유니셈",
+        "워트"
+      ],
+      "risks_summary": "액침냉각 표준 규격 제정 지연 및 초기 설비 도입 비용(CapEx) 부담으로 상용화 속도 둔화 가능성",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "머니투데이",
+          "news_title": "[호재] 엔비디아 블랙웰 TDP 1200W 돌파… 액체냉각(Liquid Cooling) 도입 필수화",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=GST+케이엔솔+액침냉각",
+          "summary": "기존 공랭식 한계 직면으로 수랭식 냉각 및 2상 액침냉각 쿨러 시장 연평균 48% 고성장 전망"
+        },
+        {
+          "date": "2026-10-30",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "전자신문",
+          "news_title": "[⚠️ 기술적 리스크] 액침냉각 전용 합성유 환경규제(PFAS) 이슈 및 유지보수 단가 부담",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=액침냉각+PFAS+환경규제+리스크",
+          "summary": "유럽연합(EU)의 불소계 화합물 규제 움직임 및 냉각액 누출 방지 인증 절차 장기화 리스크 상존"
+        },
+        {
+          "date": "2026-10-29",
+          "stage": "DART 공시",
+          "impact_type": "GOOD",
+          "is_dart": true,
+          "press": "DART 전자공시",
+          "news_title": "[공시] GST, 데이터센터용 대용량 칠러(Chiller) 신규 양산 라인 250억 시설투자",
+          "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=GST",
+          "summary": "글로벌 CSP 데이터센터 전용 냉각 장비 납품 대응을 위한 평택 신공장 증설 완료"
         }
-      }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-18",
-        "stage": "주도 테마 감지",
-        "press": "시장 판도 레이더",
-        "news_title": "[주도 섹터 TOP 5] 광통신 거래대금 급증 및 수급 쏠림",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EA%B4%91%ED%86%B5%EC%8B%A0%20%EC%84%B1%ED%98%B8%EC%A0%84%EC%9E%90",
-        "key_point": "대장주: 성호전자 | 성호전자, 광통신 핵심 공급 계약 체결 및 신사업 본격화 발표로 인해 관련 테마 상승세 견인"
-      }
-    ],
-    "_asyncSupplementsLoaded": false,
-    "_technicals": null
-  },
-  {
-    "theme_id": "custom_1789701132438",
-    "theme_name": "우주항공",
-    "sector": "사용자 관심 테마",
-    "pattern_type": "실시간 수집 모멘텀",
-    "analysis_date": "2026-09-18",
-    "checklist": {
-      "material": "센서뷰 및 우주항공 관련 실시간 뉴스 & DART 공시 동적 추적",
-      "leaders": {
-        "lead": "센서뷰",
-        "sub": "연관 수급주 실시간 탐색 중"
-      },
-      "correlation": "센서뷰 관련 보도 및 공시 모멘텀을 타임라인으로 실시간 누적 분석합니다.",
-      "future_expectation": "후속 단독 보도 및 금감원 공시 접수 여부 실시간 확인",
-      "expiration_date": "진행형 모멘텀",
-      "chart_phase": "실시간 수급 유입 및 변동성 확인 국면",
-      "conditions": {
-        "bullish": "대규모 계약/수주/실적 호전 보도 및 기관·외인 양매수",
-        "bearish": "단기 급등 후 차익 실현 매물 출회 및 재료 소멸"
-      }
-    },
-    "timeline": [
-      {
-        "date": "2026-09-08",
-        "stage": "실시간 보도",
-        "press": "하나증권 리포트",
-        "news_title": "[리포트] 초고주파 케이블 및 안테나 모듈, 스타링크 한국 서비스 및 우주항공 수주 랠리 (목표가: 7,800원)",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EC%84%BC%EC%84%9C%EB%B7%B0",
-        "key_point": "투자의견: Buy(상향) | 애널리스트 분석 및 목표주가 단서",
-        "is_dart": false
-      }
-    ]
-  },
-  {
-    "theme_id": "radar_178",
-    "theme_name": "전선",
-    "sector": "당일 주도 테마",
-    "pattern_type": "주도 섹터 급등(거래대금 분출)",
-    "period_type": "단기 주도",
-    "score": 99,
-    "summary": "가온전선, 전선 핵심 공급 계약 체결 및 신사업 본격화 발표로 인해 관련 테마 상승세 견인",
-    "checklist": {
-      "material": "가온전선, 전선 시장 공급망 진입 소식 (주요 언론 종합)",
-      "leaders": {
-        "lead": "가온전선",
-        "sub": "LS에코에너지, 대한전선, KBI메탈, 대원전선"
-      },
-      "correlation": "[사업 팩트 매핑] 가온전선는 초고압 500kV 해저·HVDC 케이블 턴키 생산 기업이며, LS에코에너지는 배전용 절연선 및 전력망 부품 납품사로 북미 AI 데이터센터 전력망 증설 수혜가 공시 및 사업보고서상 실질 매출로 반영됩니다.",
-      "future_expectation": "전선 관련 글로벌 고객사 수주 및 정부 정책 실증 일정 확정에 따른 후속 모멘텀 지속.",
-      "expiration_date": "약 2~3주 (단기 정책/수급 1차 분출 국면)",
-      "expiration_evidence": "[📌 근거 문장] 업황 사이클 및 정기 실적 발표일 추적 기반",
-      "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
-      "conditions": {
-        "bullish": "[재료 확산 트리거] 1) 가온전선 본계약 체결 정식 전자공시(DART) 발표, 2) 외신 추가 후속 보도 및 글로벌 파트너십 발표, 3) 5일선 지지 및 거래대금 1,000억 이상 연속 분출",
-        "bearish": "1) [일정 연기/무산 리스크] 주무부처 법안 심사 연기, FDA 보완요구서(CRL) 수령, 공청회 일정 지연 시 실망 매물 출회 | 2) [재료 팩트 소멸] 계약 협상 결렬 공시, 임상 중단 또는 경쟁사 특허 침해 소송 제기 시 급락 | 3) [매크로/지정학 리스크] 중동 지정학 전쟁 발발, 미 국채금리 급등 및 국내 코스피/코스닥 지수 급락에 따른 동반 투매",
-        "bearish_details": {
-          "risk_delay": "[일정 연기/무산 리스크] 주무부처 법안 심사 연기, FDA 보완요구서(CRL) 수령, 공청회 일정 지연 시 실망 매물 출회",
-          "risk_cancellation": "[재료 팩트 소멸] 계약 협상 결렬 공시, 임상 중단 또는 경쟁사 특허 침해 소송 제기 시 급락",
-          "risk_macro": "[매크로/지정학 리스크] 중동 지정학 전쟁 발발, 미 국채금리 급등 및 국내 코스피/코스닥 지수 급락에 따른 동반 투매"
+    {
+      "theme_id": "ai_dc_power",
+      "theme_name": "AI데이터센터 - 전력 인프라 및 에너지원 (원전/SMR)",
+      "category": "AI 데이터센터 인프라",
+      "today_change_rate": "+4.80%",
+      "today_score": 97,
+      "lead_stocks": [
+        "HD현대일렉트릭",
+        "효성중공업",
+        "두산에너빌리티",
+        "LS ELECTRIC"
+      ],
+      "risks_summary": "국제 구리 가격 폭등에 따른 원가율 상승, 단기 급등에 따른 차익 실현 및 송전망 인허가 지연",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "한국경제",
+          "news_title": "[호재] 美 빅테크 3사, 원전 전력 PPA(직접구매계약) 5GW 체결… 초고압 변압기 주문 폭주",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=HD현대일렉트릭+초고압변압기+원전",
+          "summary": "북미 전력망 교체 사이클과 맞물려 국내 변압기 3사 백로그(수주잔고)가 2030년 물량까지 완판"
+        },
+        {
+          "date": "2026-11-01",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "블룸버그코리아",
+          "news_title": "[⚠️ 원가 악재] 런던금속거래소(LME) 구리 가격 톤당 10,800달러 돌파… 전선·변압기 마진 압박",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=구리가격+상승+변압기+마진압박",
+          "summary": "핵심 원자재인 전기동 및 방향성 규소강판 가격 인상분을 판가에 즉시 전가하지 못할 경우 4분기 이익률 둔화 가능성"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "증권사 리포트",
+          "impact_type": "GOOD",
+          "is_report": true,
+          "press": "미래에셋증권",
+          "news_title": "[리포트] 효성중공업, 북미·유럽 HVDC 변환소 및 초고압 차단기 수주잔고 7조원 돌파",
+          "news_url": "https://finance.naver.com/research/company_list.naver?keyword=효성중공업",
+          "summary": "투자의견: Buy(유지) | 목표가 550,000원 | 글로벌 쇼티지로 판가 프리미엄 지속 확인"
         }
-      }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-18",
-        "stage": "주도 테마 감지",
-        "press": "시장 판도 레이더",
-        "news_title": "[주도 섹터 TOP 5] 전력설비 거래대금 급증 및 수급 쏠림",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%A0%84%EB%A0%A5%EC%84%A4%EB%B9%84%20%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0",
-        "key_point": "대장주: 선도전기 | 선도전기, 전력설비 핵심 공급 계약 체결 및 신사업 본격화 발표로 인해 관련 테마 상승세 견인",
-        "stockName": "선도전기",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "확산 | 수급집중"
-      },
-      {
-        "date": "2026-09-15",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 선도전기, 초고압 변전설비 공급 단일판매·공급계약체결 (320억원 규모)",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0",
-        "key_point": "공급지역: 북미 및 국내 데이터센터 전력망 | 계약금액: 최근 매출액 대비 28.4% 규모 | 이행기간: 2026.09 ~ 2027.06",
-        "stockName": "선도전기",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-09-10",
-        "stage": "증권사 리포트",
-        "press": "대신증권 리포트",
-        "news_title": "[리포트] 선도전기, 북미 노후 변압기 교체 사이클과 전력 쇼티지 최대 수혜",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EC%84%A0%EB%8F%84%EC%A0%84%EA%B8%B0",
-        "key_point": "투자의견: Buy(신규) | 목표주가: 4,500원 | 글로벌 송배전망 투자 확대로 영업이익률 12% 돌파 전망",
-        "stockName": "선도전기",
-        "is_dart": false,
-        "is_report": true,
-        "tag": "증권사 리서치"
-      },
-      {
-        "date": "2026-09-04",
-        "stage": "실시간 보도",
-        "press": "한국경제",
-        "news_title": "가온전선, 북미 배전망 시장 진출 가속화… 고부가가치 절연선 공급 계약",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EA%B0%80%EC%98%A8%EC%A0%84%EC%84%A0",
-        "key_point": "미국 대형 EPC 업체향 전력 케이블 납품 본격화 및 3분기 수주잔고 사상 최대 달성",
-        "stockName": "가온전선",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      },
-      {
-        "date": "2026-08-28",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 대한전선, 미국 500kV HVDC 초고압 케이블 공급 프로젝트 수주 (1,280억원)",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EB%8C%80%ED%95%9C%EC%A0%84%EC%84%A0",
-        "key_point": "북미 동부 해안 전력망 연계 프로젝트 | 계약기간: 2026-08 ~ 2027-12 | 기술적 진입장벽 입증",
-        "stockName": "대한전선",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-08-20",
-        "stage": "증권사 리포트",
-        "press": "키움증권 리포트",
-        "news_title": "[리포트] 대한전선, 초고압 HVDC 턴키 및 북미 인프라 슈퍼 사이클 본격 진입",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%8C%80%ED%95%9C%EC%A0%84%EC%84%A0",
-        "key_point": "투자의견: Buy(유지) | 목표주가: 24,000원 | 글로벌 수주 파이프라인 3조원 돌파",
-        "stockName": "대한전선",
-        "is_dart": false,
-        "is_report": true,
-        "tag": "증권사 리서치"
-      },
-      {
-        "date": "2026-08-14",
-        "stage": "실시간 보도",
-        "press": "머니투데이",
-        "news_title": "LS에코에너지, 베트남 해저케이블 생산기지 증설 및 싱가포르향 직수출 성과",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=LS%EC%97%90%EC%BD%94%EC%97%90%EB%84%88%EC%A7%80",
-        "key_point": "동남아 전력망 통합 프로젝트 핵심 벤더 지위 확보, 해상풍력 연계 매출 성장 가속",
-        "stockName": "LS에코에너지",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      },
-      {
-        "date": "2026-08-05",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 가온전선, 미국 현지 생산법인 추가 증설 및 제3자배정 유상증자 완료",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EA%B0%80%EC%98%A8%EC%A0%84%EC%84%A0",
-        "key_point": "미국 내 IRA 수혜 요건 충족을 위한 생산기지 거점화, 2027년 연간 생산능력 2배 확대",
-        "stockName": "가온전선",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "기업 공시"
-      },
-      {
-        "date": "2026-07-28",
-        "stage": "실시간 보도",
-        "press": "이데일리",
-        "news_title": "KBI메탈, AI 데이터센터향 초고순도 동선 부품 공급량 40% 급증",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=KBI%EB%A9%94%ED%83%88",
-        "key_point": "전선용 메탈 원자재 수요 급증으로 인한 영업이익 흑자전환 및 밸류체인 직결",
-        "stockName": "KBI메탈",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      },
-      {
-        "date": "2026-07-16",
-        "stage": "핵심 이벤트",
-        "press": "산업통상자원부",
-        "news_title": "[정책] 국가 기간 전력망 확충 특별법 국회 산자위 통과… 10조원 재정 지원 확정",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EA%B5%AD%EA%B0%80%20%EC%A0%84%EB%A0%A5%EB%A7%9D%20%ED%8A%B9%EB%B3%84%EB%B2%95",
-        "key_point": "용인 반도체 클러스터 및 송전선로 지중화 프로젝트 패스트트랙 승인으로 관련 기업 수혜",
-        "stockName": "선도전기",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "정책 모멘텀"
-      }
-    ],
-    "_asyncSupplementsLoaded": true,
-    "_technicals": null
-  },
-  {
-    "theme_id": "radar_584",
-    "theme_name": "스페이스X",
-    "sector": "당일 주도 테마",
-    "pattern_type": "주도 섹터 급등(거래대금 분출)",
-    "period_type": "단기 주도",
-    "score": 99,
-    "summary": "와이제이링크, 美 스페이스X 위성용 SMT 라인 단독 공급 협의 착수 소식 발표로 인해 관련 테마 상승세 견인",
-    "checklist": {
-      "material": "[단독] 와이제이링크, 美 스페이스X 위성용 SMT 라인 단독 공급 협의 착수 (한국경제)",
-      "leaders": {
-        "lead": "와이제이링크",
-        "sub": "센서뷰, 켄코아에어로스페이스, 스피어, 에이치브이엠"
-      },
-      "correlation": "[사업 팩트 매핑] 와이제이링크는 스페이스X 테마의 원천 기술 특허 및 완제품 공급 라이선스를 보유한 대장주이며, 센서뷰는 핵심 모듈 부품 공급사로서 해당 테마 이슈 발생 시 실질 수주 수혜 밸류체인에 직결됩니다.",
-      "future_expectation": "11월 중순 스페이스X 6차 스타십 발사 시험 예정으로 우주항공 밸류체인 재부각 기대감",
-      "expiration_date": "11월 중순 예정 (약 2개월 남음)",
-      "expiration_evidence": "[📌 근거 문장 원문] \"美 스페이스X 위성용 SMT 라인 단독 공급 협의 및 6차 스타십 발사 일정 카운트다운...\" (출처: 한국경제)",
-      "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
-      "conditions": {
-        "bullish": "[재료 확산 트리거] 1) 와이제이링크 본계약 체결 정식 전자공시(DART) 발표, 2) 외신 추가 후속 보도 및 글로벌 파트너십 발표, 3) 5일선 지지 및 거래대금 1,000억 이상 연속 분출",
-        "bearish": "1) [일정 연기/무산 리스크] 주무부처 법안 심사 연기, FDA 보완요구서(CRL) 수령, 공청회 일정 지연 시 실망 매물 출회 | 2) [재료 팩트 소멸] 계약 협상 결렬 공시, 임상 중단 또는 경쟁사 특허 침해 소송 제기 시 급락 | 3) [매크로/지정학 리스크] 중동 지정학 전쟁 발발, 미 국채금리 급등 및 국내 코스피/코스닥 지수 급락에 따른 동반 투매",
-        "bearish_details": {
-          "risk_delay": "[일정 연기/무산 리스크] 주무부처 법안 심사 연기, FDA 보완요구서(CRL) 수령, 공청회 일정 지연 시 실망 매물 출회",
-          "risk_cancellation": "[재료 팩트 소멸] 계약 협상 결렬 공시, 임상 중단 또는 경쟁사 특허 침해 소송 제기 시 급락",
-          "risk_macro": "[매크로/지정학 리스크] 중동 지정학 전쟁 발발, 미 국채금리 급등 및 국내 코스피/코스닥 지수 급락에 따른 동반 투매"
+    {
+      "theme_id": "ai_dc_epc",
+      "theme_name": "AI데이터센터 - 부동산, 인프라 개발 & 건설 (EPC)",
+      "category": "AI 데이터센터 인프라",
+      "today_change_rate": "+3.20%",
+      "today_score": 88,
+      "lead_stocks": [
+        "현대건설",
+        "한미글로벌",
+        "삼성E&A",
+        "GS건설"
+      ],
+      "risks_summary": "고금리 장기화에 따른 PF 자금 조달 비용 상승 및 지자체 데이터센터 건축 인허가 규제 강화",
+      "timeline": [
+        {
+          "date": "2026-11-01",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "아시아경제",
+          "news_title": "[호재] 하이퍼스케일 AI 데이터센터 EPC 착공 급증… 현대건설·한미글로벌 수혜",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=현대건설+데이터센터+EPC",
+          "summary": "고난도 특수 엔지니어링 설계를 요하는 AI 데이터센터 신축 발주 확대로 수주 마진 개선"
+        },
+        {
+          "date": "2026-10-29",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "건설경제",
+          "news_title": "[⚠️ 지자체 규제 악재] 수도권 데이터센터 전력 계통 포화… 한전 신규 수전 계약 거부 속출",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=데이터센터+전력포화+한전+수전거부",
+          "summary": "전력 다소비 시설에 대한 수도권 입지 규제 강화로 신규 착공 일정이 6개월~1년 순연될 위기"
         }
-      }
+      ]
     },
-    "timeline": [
-      {
-        "id": "tl_space_001",
-        "date": "2026-09-17",
-        "source": "와이드경제",
-        "type": "news",
-        "stockName": "와이제이링크",
-        "tag": "🔥 직납 팩트",
-        "title": "[특징주] 와이제이링크, '스페이스X 밸류체인' 기대감에 장중 강세…18%...",
-        "desc": "시장에서는 센서뷰, 켄코아에어로스페이스, 에이치브이엠 등 우주항공 및 밸류체인 관련 종목들이 동반 강세를 나타내는 가운데, 스페이스X 공급망과의 연관성이 거론되는 와이제이링크에도 매수세가 집중되고 있다. 지난 2009년 설립돼 2024년 10월 코스닥시장에 상장한 와이제이링크는 SMT 공정 자동화...",
-        "link": "https://www.widedaily.com/news/articleView.html?idxno=301222",
-        "news_url": "https://www.widedaily.com/news/articleView.html?idxno=301222"
-      },
-      {
-        "id": "tl_space_002",
-        "date": "2026-09-17",
-        "source": "뉴스핌",
-        "type": "news",
-        "stockName": "와이제이링크",
-        "tag": "🔥 직납 팩트",
-        "title": "[특징주] 우주항공株 불붙었다…스페이스X 시험 비행에 센서뷰 23%↑",
-        "desc": "와이제이링크는 16.83% 상승한 3610원, 켄코아에어로스페이스는 13.06% 오른 1만1510원을 기록하고 있다. 나노팀은 7.64% 오른 6620원에 거래 중이다. 에이치브이엠과 스피어는 각각 6.66%, 6.63% 상승하고 있다. 아주IB투자도 5.14% 오른 3680원을 나타냈다. 세아베스틸지주는 3.12%, 미래에셋벤처투자는 2.59% 상승...",
-        "link": "https://www.newspim.com/news/view/20260917000357",
-        "news_url": "https://www.newspim.com/news/view/20260917000357"
-      },
-      {
-        "id": "tl_space_003",
-        "date": "2026-09-17",
-        "source": "이투데이",
-        "type": "news",
-        "stockName": "와이제이링크",
-        "tag": "🔥 직납 팩트",
-        "title": "[특징주] 스페이스X 스타십 재출격 소식에⋯센서뷰 22% 등 관련주↑",
-        "desc": "이 밖에도 와이제이링크(18.77%), 켄코아에어로스페이스(14.05%), 나노팀(7.48%), 스피어(7.13%), 에이치브이엠(6.19%), 아주IB투자(4.29%), 세아베스틸지주(3.47%), 미래에셋벤처투자(2.50%) 등 스페이스X 관련 종목 다수가 상승세를 보이고 있다. 이러한 상승세는 스페이스X가 초대형 우주발사체 '스타십'의 14차...",
-        "link": "https://www.etoday.co.kr/news/view/2626670",
-        "news_url": "https://www.etoday.co.kr/news/view/2626670"
-      },
-      {
-        "id": "tl_space_004",
-        "date": "2026-09-17",
-        "source": "CBC뉴스",
-        "type": "news",
-        "stockName": "와이제이링크",
-        "tag": "🔥 직납 팩트",
-        "title": "스페이스X 관련주 장중 들썩…센서뷰 22%·와이제이링크 15%·켄코아에어...",
-        "desc": "센서뷰와 와이제이링크, 켄코아에어로스페이스가 두 자릿수 상승률을 기록하고 있으며 스피어와 에이치브이엠 등도 강세를 보이고 있다. 17일 오전 현재 센서뷰는 전 거래일보다 321원(22.98%) 오른 1718원에 거래되고 있다. 시가는 1395원이었으며 장중 1800원까지 상승했다. 거래량은 1707만주를...",
-        "link": "https://www.cbci.co.kr/news/articleView.html?idxno=607609",
-        "news_url": "https://www.cbci.co.kr/news/articleView.html?idxno=607609"
-      },
-      {
-        "id": "tl_space_005",
-        "date": "2026-09-17",
-        "source": "핀포인트뉴스",
-        "type": "news",
-        "stockName": "와이제이링크",
-        "tag": "🔥 직납 팩트",
-        "title": "스페이스X IPO 추진에 우주항공株 무슨 일?…센서뷰·와이제이링크 주가...",
-        "desc": "스페이스X 공급망과의 연관성이 거론되는 와이제이링크도 20.23% 상승한 3715원을 기록하고 있다. 표면실장기술(SMT) 공정장비를 공급하는 업체로, 글로벌 우주산업 투자 확대에 따른 장비 수요 기대가 주가에 반영되는 것으로 풀이된다. 우주항공용 소재와 부품을 생산하는 기업들도 상승세에 합류했다....",
-        "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=487921",
-        "news_url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=487921"
-      },
-      {
-        "id": "tl_space_006",
-        "date": "2026-09-17",
-        "source": "뉴스핌",
-        "type": "news",
-        "stockName": "에이치브이엠",
-        "tag": "📑 수주 팩트",
-        "title": "[특징주] 우주항공株 불붙었다…스페이스X 시험 비행에 센서뷰 23%↑",
-        "desc": "국내 우주항공 관련주가 17일 장 초반 동반 강세를 보이고 있다. 일론 머스크가 이끄는 스페이스X의 차세대 우주선 스타십(Starship) 시험비행 일정이... 에이치브이엠과 스피어는 각각 6.66%, 6.63% 상승하고 있다. 아주IB투자도 5.14% 오른 3680원을 나타냈다. 세아베스틸지주는 3.12%, 미래에셋벤처투자는 2.59...",
-        "link": "https://www.newspim.com/news/view/20260917000357",
-        "news_url": "https://www.newspim.com/news/view/20260917000357"
-      },
-      {
-        "id": "tl_space_007",
-        "date": "2026-09-16",
-        "source": "데일리경제",
-        "type": "news",
-        "stockName": "에이치브이엠",
-        "tag": "📑 수주 팩트",
-        "title": "[주요공시] 카카오게임즈, 에이치브이엠, 두산퓨얼셀, 기가비스, 비츠로...",
-        "desc": "공시 흐름은 카카오게임즈의 미투온 지분 취득, 원텍의 일본 의료시장 진출 목적 지분 취득, 에이치브이엠의 우주항공용 단조설비 투자, 두산퓨얼셀의 미국향 연료전지 시스템 공급계약, 효성중공업의 미국향 345kV·765kV 초고압변압기 계약, 기가비스의 일본 반도체 기판 검사·수리장비...",
-        "link": "https://www.kdpress.co.kr/news/articleView.html?idxno=208667",
-        "news_url": "https://www.kdpress.co.kr/news/articleView.html?idxno=208667"
-      },
-      {
-        "id": "tl_space_008",
-        "date": "2026-09-17",
-        "source": "핀포인트뉴스",
-        "type": "news",
-        "stockName": "에이치브이엠",
-        "tag": "📑 수주 팩트",
-        "title": "위성통신·발사체·첨단소재까지 번졌다… 우주항공株 폭등랠리",
-        "desc": "항공우주용 특수소재를 생산하는 에이치브이엠과 항공우주 부품 사업을 영위하는 켄코아에어로스페이스, 우주 소재·부품 관련 기업인 스피어 등이 상승세를 나타냈다. 비츠로테크와 파이버프로, 케이피항공산업도 우주항공 관련 사업 기대가 부각되며 오름세를 보이고 있다. 우주산업이 발사체와 위성...",
-        "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=487926",
-        "news_url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=487926"
-      },
-      {
-        "id": "tl_space_009",
-        "date": "2026-09-15",
-        "source": "이데일리",
-        "type": "news",
-        "stockName": "에이치브이엠",
-        "tag": "📑 수주 팩트",
-        "title": "에이치브이엠, 우주항공용 단조설비 신규투자 415억원 결정",
-        "desc": "에이치브이엠(295310)은 우주항공용 최첨단 단조설비 도입을 위해 415억7190만원 규모의 신규시설투자를 결정했다고 15일 공시했다. 투자금액은 자기자본 1083억9240만원(2025년 기준) 대비 38.35%에 해당한다. 투자 기간은 15일부터 2028년 12월 31일까지다.",
-        "link": "https://n.news.naver.com/mnews/article/018/0006369764?sid=101",
-        "news_url": "https://n.news.naver.com/mnews/article/018/0006369764?sid=101"
-      },
-      {
-        "id": "tl_space_010",
-        "date": "2026-09-17",
-        "source": "철강금속신문",
-        "type": "news",
-        "stockName": "에이치브이엠",
-        "tag": "📑 수주 팩트",
-        "title": "에이치브이엠, 415억 원 투자해 우주항공 단조설비 도입",
-        "desc": "특수합금 전문기업 에이치브이엠(대표이사 문승호)은 9월 15일 우주항공용 최첨단 단조설비 도입을 위해 415억 원 규모의 신규 시설투자를 결정했다고 공시했다. 이번 투자금액은 에이치브이엠 자기자본(1,083억 원)의 38.35%에 해당하는 규모다. 투자 기간은 이사회 결의일인 2026년 9월 15일부터 시작해...",
-        "link": "http://www.snmnews.com/news/articleView.html?idxno=574854",
-        "news_url": "http://www.snmnews.com/news/articleView.html?idxno=574854"
-      },
-      {
-        "id": "tl_space_011",
-        "date": "2026-09-17",
-        "source": "매일경제",
-        "type": "news",
-        "stockName": "센서뷰",
-        "tag": "🎯 직납 팩트",
-        "title": "스페이스X, 우주선 시험 비행 소식에 관련주 급등…센서뷰 26%대↑",
-        "desc": "센서뷰는 2018년 스페이스X에 고주파(RF) 케이블을 공급하면서 공식 벤더사로 등록된 스페이스X 테마의 핵심 종목 중 하나다. 이 외 켄코아에어로스페이스(15.82%), 스피어(7.13%), 아주IB투자(5.57%), 미래에셋벤처투자(2.74%) 등도 오르고 있다. 이는 스페이스X가 규제 당국 승인 후 우주선 ‘스타십’의...",
-        "link": "https://n.news.naver.com/mnews/article/009/0005736473?sid=101",
-        "news_url": "https://n.news.naver.com/mnews/article/009/0005736473?sid=101"
-      },
-      {
-        "id": "tl_space_012",
-        "date": "2026-09-17",
-        "source": "한국경제",
-        "type": "news",
-        "stockName": "센서뷰",
-        "tag": "🎯 직납 팩트",
-        "title": "스타십 첫 궤도비행에 우주항공株 불붙었다…켄코아 등 급등",
-        "desc": "28% 오른 13만1700원, 한화에어로스페이스는 4.45% 오른 110만2000원, 스피어는 8.85% 오른 2만2150원, 센서뷰는 26.63% 오른 1769원에 거래되고 있고... 일론 머스크 스페이스X 최고경영자(CEO)는 이날 엑스(X)에 스타링크 V3가 \"현재 1만1000기 규모 성단 대비 100배 넘는 대역폭을 제공할 것\"이라고 밝혔다....",
-        "link": "https://n.news.naver.com/mnews/article/015/0005333307?sid=101",
-        "news_url": "https://n.news.naver.com/mnews/article/015/0005333307?sid=101"
-      },
-      {
-        "id": "tl_space_013",
-        "date": "2026-09-16",
-        "source": "CBC뉴스",
-        "type": "news",
-        "stockName": "센서뷰",
-        "tag": "🎯 직납 팩트",
-        "title": "스페이스X 관련주 들썩…센서뷰 8.61%↑·아주IB투자 3.30%↑",
-        "desc": "이날 스페이스X 관련주에서는 센서뷰의 움직임이 가장 두드러진다. 센서뷰가 8.61% 상승한 가운데 아주IB투자도 3%대 오름세를 보이고 있으며 미래에셋벤처투자와 에이치브이엠, 켄코아에어로스페이스도 상승 흐름에 합류하고 있다. [기업들의 실제 영역과 사업 비중은 각각 다를 수 있다....",
-        "link": "https://www.cbci.co.kr/news/articleView.html?idxno=607262",
-        "news_url": "https://www.cbci.co.kr/news/articleView.html?idxno=607262"
-      },
-      {
-        "id": "tl_space_014",
-        "date": "2026-09-17",
-        "source": "핀포인트뉴스",
-        "type": "news",
-        "stockName": "센서뷰",
-        "tag": "🎯 직납 팩트",
-        "title": "스페이스X IPO 추진에 우주항공株 무슨 일?…센서뷰·와이제이링크 주가...",
-        "desc": "한국거래소에 따르면 이날 오전 10시25분 현재 위성통신과 초고주파 안테나 기술을 보유한 센서뷰가 20.26% 오른 1680원에 거래되고 있다. 스타링크를 중심으로 한 위성통신 시장 확대 기대와 함께 초고주파 케이블 및 안테나 관련 기술이 부각되면서 강한 매수세가 유입됐다. 스페이스X 공급망과의 연관성이...",
-        "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=487921",
-        "news_url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=487921"
-      },
-      {
-        "id": "tl_space_015",
-        "date": "2026-09-17",
-        "source": "CBC뉴스",
-        "type": "news",
-        "stockName": "센서뷰",
-        "tag": "🎯 직납 팩트",
-        "title": "스페이스X 관련주 장중 들썩…센서뷰 22%·와이제이링크 15%·켄코아에어...",
-        "desc": "특히 센서뷰·와이제이링크·켄코아에어로스페이스처럼 장중 상승률이 두 자릿수에 달하는 종목은 고점과 현재가의 차이도 나타나고 있어 변동성에 주목할 필요가 있다. 관련주 흐름이 장중 유지되는지와 거래량 증가가 지속되는지가 단기적인 관전 지점이다. [스페이스X와 각 기업의 실제 사업...",
-        "link": "https://www.cbci.co.kr/news/articleView.html?idxno=607609",
-        "news_url": "https://www.cbci.co.kr/news/articleView.html?idxno=607609"
-      },
-      {
-        "id": "tl_space_016",
-        "date": "2026-09-17",
-        "source": "한국경제",
-        "type": "news",
-        "stockName": "켄코아에어로스페이스",
-        "tag": "⚡ 수주 팩트",
-        "title": "스타십 첫 궤도비행에 우주항공株 불붙었다…켄코아 등 급등",
-        "desc": "우주항공 등 스페이스X 관련주가 17일 장 초반 상승세다. 회사가 초대형 우주선 '스타십'을 지구 궤도에 처음 올리는 시험 비행에 나선다는 소식이 전해지면서다. 이날 오전 9시35분 켄코아에어로스페이스는 전 거래일 대비 17.68% 오른 1만1980원에, 컨텍은 9.84% 오른 8230원에 각각 거래 중이다....",
-        "link": "https://n.news.naver.com/mnews/article/015/0005333307?sid=101",
-        "news_url": "https://n.news.naver.com/mnews/article/015/0005333307?sid=101"
-      },
-      {
-        "id": "tl_space_017",
-        "date": "2026-09-17",
-        "source": "매일경제",
-        "type": "news",
-        "stockName": "켄코아에어로스페이스",
-        "tag": "⚡ 수주 팩트",
-        "title": "스페이스X, 우주선 시험 비행 소식에 관련주 급등…센서뷰 26%대↑",
-        "desc": "센서뷰는 2018년 스페이스X에 고주파(RF) 케이블을 공급하면서 공식 벤더사로 등록된 스페이스X 테마의 핵심 종목 중 하나다. 이 외 켄코아에어로스페이스(15.82%), 스피어(7.13%), 아주IB투자(5.57%), 미래에셋벤처투자(2.74%) 등도 오르고 있다. 이는 스페이스X가 규제 당국 승인 후 우주선 ‘스타십’의...",
-        "link": "https://n.news.naver.com/mnews/article/009/0005736473?sid=101",
-        "news_url": "https://n.news.naver.com/mnews/article/009/0005736473?sid=101"
-      },
-      {
-        "id": "tl_space_018",
-        "date": "2026-09-17",
-        "source": "금강일보",
-        "type": "news",
-        "stockName": "켄코아에어로스페이스",
-        "tag": "⚡ 수주 팩트",
-        "title": "켄코아에어로스페이스 주가, 급등세... 왜?",
-        "desc": "우주항공 관련주가 강세를 보인 가운데 켄코아에어로스페이스가 시장의 관심을 받았다. 스페이스X가 스타십의 14차 시험비행을 추진한다는 소식이 전해지면서 우주발사체 관련 사업을 영위하는 기업들에 대한 관심이 높아진 영향으로 풀이된다. 스페이스X는 규제 당국의 승인을 전제로 오는 22일...",
-        "link": "https://www.ggilbo.com/news/articleView.html?idxno=1182316",
-        "news_url": "https://www.ggilbo.com/news/articleView.html?idxno=1182316"
-      },
-      {
-        "id": "tl_space_019",
-        "date": "2026-09-17",
-        "source": "CBC뉴스",
-        "type": "news",
-        "stockName": "켄코아에어로스페이스",
-        "tag": "⚡ 수주 팩트",
-        "title": "스페이스X 관련주 장중 들썩…센서뷰 22%·와이제이링크 15%·켄코아에어...",
-        "desc": "스페이스X 관련주로 시장에서 거론되는 종목들이 17일 장중 강한 변동성을 나타내고 있다. 센서뷰와 와이제이링크, 켄코아에어로스페이스가 두 자릿수 상승률을 기록하고 있으며 스피어와 에이치브이엠 등도 강세를 보이고 있다. 17일 오전 현재 센서뷰는 전 거래일보다 321원(22.98%) 오른 1718원에...",
-        "link": "https://www.cbci.co.kr/news/articleView.html?idxno=607609",
-        "news_url": "https://www.cbci.co.kr/news/articleView.html?idxno=607609"
-      },
-      {
-        "id": "tl_space_020",
-        "date": "2026-09-17",
-        "source": "와이드경제",
-        "type": "news",
-        "stockName": "켄코아에어로스페이스",
-        "tag": "⚡ 수주 팩트",
-        "title": "[특징주] 와이제이링크, '스페이스X 밸류체인' 기대감에 장중 강세…18%...",
-        "desc": "시장에서는 센서뷰, 켄코아에어로스페이스, 에이치브이엠 등 우주항공 및 밸류체인 관련 종목들이 동반 강세를 나타내는 가운데, 스페이스X 공급망과의 연관성이 거론되는 와이제이링크에도 매수세가 집중되고 있다. 지난 2009년 설립돼 2024년 10월 코스닥시장에 상장한 와이제이링크는 SMT 공정 자동화...",
-        "link": "https://www.widedaily.com/news/articleView.html?idxno=301222",
-        "news_url": "https://www.widedaily.com/news/articleView.html?idxno=301222"
-      },
-      {
-        "id": "tl_space_021",
-        "date": "2026-09-17",
-        "source": "한국경제",
-        "type": "news",
-        "stockName": "스피어",
-        "tag": "🚀 우주항공 팩트",
-        "title": "스타십 첫 궤도비행에 우주항공株 불붙었다…켄코아·스피어 등 급등",
-        "desc": "스피어는 8.85% 오른 2만2150원, 센서뷰 26.63%, 켄코아에어로스페이스는 장중 급등세. 초대형 우주선 스타십 첫 지구 궤도 시험 비행 호재에 스페이스X 밸류체인 수혜.",
-        "link": "https://n.news.naver.com/mnews/article/015/0005333307?sid=101",
-        "news_url": "https://n.news.naver.com/mnews/article/015/0005333307?sid=101"
-      },
-      {
-        "id": "tl_space_022",
-        "date": "2026-09-17",
-        "source": "핀포인트뉴스",
-        "type": "news",
-        "stockName": "스피어",
-        "tag": "🚀 우주항공 팩트",
-        "title": "위성통신·발사체·첨단소재까지 번졌다… 우주항공株 폭등랠리",
-        "desc": "항공우주용 특수소재를 생산하는 에이치브이엠과 우주 소재·부품 관련 기업인 스피어 등이 상승세를 나타냈다. 우주산업 밸류체인 확대 기대감.",
-        "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=487926",
-        "news_url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=487926"
-      },
-      {
-        "id": "tl_space_023",
-        "date": "2026-09-17",
-        "source": "이투데이",
-        "type": "news",
-        "stockName": "스피어",
-        "tag": "🚀 우주항공 팩트",
-        "title": "[특징주] 스페이스X 스타십 재출격 소식에⋯스피어 7% 등 관련주↑",
-        "desc": "와이제이링크(18.77%), 켄코아에어로스페이스(14.05%), 나노팀(7.48%), 스피어(7.13%), 에이치브이엠(6.19%) 등 스페이스X 관련 종목 다수가 동반 상승세를 보이고 있다.",
-        "link": "https://www.etoday.co.kr/news/view/2626670",
-        "news_url": "https://www.etoday.co.kr/news/view/2626670"
-      },
-      {
-        "id": "tl_space_024",
-        "date": "2026-09-16",
-        "source": "DART 공시",
-        "type": "dart",
-        "stockName": "에이치브이엠",
-        "tag": "📑 수주 공시",
-        "title": "[공시] 에이치브이엠 단일판매·공급계약체결 (미국 우주발사체 특수합금 공급)",
-        "desc": "미국 민간 우주발사체 기업 향 로켓 엔진용 특수합금 소재 공급계약 체결. DART 전자공시 직결.",
-        "link": "https://search.naver.com/search.naver?where=news&query=%EC%97%90%EC%9D%B4%EC%B9%98%EB%B8%8C%EC%9D%B4%EC%97%A0%20%EC%A0%84%EC%9E%90%EA%B3%B5%EC%8B%9C%20DART",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%97%90%EC%9D%B4%EC%B9%98%EB%B8%8C%EC%9D%B4%EC%97%A0%20%EC%A0%84%EC%9E%90%EA%B3%B5%EC%8B%9C%20DART"
-      },
-      {
-        "id": "tl_space_025",
-        "date": "2026-09-15",
-        "source": "한국경제 컨센서스",
-        "type": "report",
-        "stockName": "센서뷰",
-        "tag": "🎯 리포트",
-        "title": "[리포트] 센서뷰 스페이스X 스타링크 밀리미터파 안테나 케이블 공급 직결",
-        "desc": "한경 컨센서스 센서뷰 전체 증권사 리포트 목록 직결 링크.",
-        "link": "https://finance.naver.com/research/company_list.naver?keyword=%EC%84%BC%EC%84%9C%EB%B7%B0",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EC%84%BC%EC%84%9C%EB%B7%B0"
-      },
-      {
-        "id": "tl_space_026",
-        "date": "2026-09-17",
-        "source": "증권사 리포트",
-        "type": "report",
-        "stockName": "와이제이링크",
-        "tag": "🎯 리포트",
-        "title": "[리포트] 와이제이링크 SMT 라인 공급 및 스페이스X 밸류체인 진입",
-        "desc": "네이버 증권 리서치 와이제이링크 종목 증권사 목표주가 및 분석 리포트 직결.",
-        "link": "https://finance.naver.com/research/company_list.naver?keyword=%EC%99%80%EC%9D%B4%EC%A0%9C%EC%9D%B4%EB%A7%81%ED%81%AC",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EC%99%80%EC%9D%B4%EC%A0%9C%EC%9D%B4%EB%A7%81%ED%81%AC"
-      }
-    ],
-    "_asyncSupplementsLoaded": false,
-    "_technicals": null
-  },
-  {
-    "theme_id": "radar_200",
-    "theme_name": "우주항공산업",
-    "sector": "당일 주도 테마",
-    "pattern_type": "주도 섹터 급등(거래대금 분출)",
-    "period_type": "단기 주도",
-    "score": 99,
-    "summary": "NASA 아르테미스 프로젝트 탑재체 최종 선정 및 초소형 군집 위성 발사 성공 발표로 인해 관련 테마 상승세 견인",
-    "checklist": {
-      "material": "나라스페이스테크놀로지, NASA 아르테미스 탑재체 공급사 최종 선정 및 발사 성공 (매일경제)",
-      "leaders": {
-        "lead": "나라스페이스테크놀로지",
-        "sub": "센서뷰, 비츠로테크, 켄코아에어로스페이스, 케이피항공산업"
-      },
-      "correlation": "[사업 팩트 매핑] 나라스페이스테크놀로지는 우주항공산업 테마의 원천 기술 특허 및 완제품 공급 라이선스를 보유한 대장주이며, 센서뷰는 핵심 모듈 부품 공급사로서 해당 테마 이슈 발생 시 실질 수주 수혜 밸류체인에 직결됩니다.",
-      "future_expectation": "11월 중순 스페이스X 6차 스타십 발사 시험 예정으로 우주항공 밸류체인 재부각 기대감",
-      "expiration_date": "11월 중순 예정 (약 2개월 남음)",
-      "expiration_evidence": "[📌 근거 문장 원문] \"NASA 달 탐사 아르테미스 3호 탑재체 발주 일정 및 연내 후속 위성 발사 확정...\" (출처: 매일경제)",
-      "chart_phase": "전고점 돌파 및 거래량 대량 분출 국면",
-      "conditions": {
-        "bullish": "[재료 확산 트리거] 1) 나라스페이스테크놀로지 본계약 체결 정식 전자공시(DART) 발표, 2) 외신 추가 후속 보도 및 글로벌 파트너십 발표, 3) 5일선 지지 및 거래대금 1,000억 이상 연속 분출",
-        "bearish": "1) [일정 연기/무산 리스크] 주무부처 법안 심사 연기, FDA 보완요구서(CRL) 수령, 공청회 일정 지연 시 실망 매물 출회 | 2) [재료 팩트 소멸] 계약 협상 결렬 공시, 임상 중단 또는 경쟁사 특허 침해 소송 제기 시 급락 | 3) [매크로/지정학 리스크] 중동 지정학 전쟁 발발, 미 국채금리 급등 및 국내 코스피/코스닥 지수 급락에 따른 동반 투매",
-        "bearish_details": {
-          "risk_delay": "[일정 연기/무산 리스크] 주무부처 법안 심사 연기, FDA 보완요구서(CRL) 수령, 공청회 일정 지연 시 실망 매물 출회",
-          "risk_cancellation": "[재료 팩트 소멸] 계약 협상 결렬 공시, 임상 중단 또는 경쟁사 특허 침해 소송 제기 시 급락",
-          "risk_macro": "[매크로/지정학 리스크] 중동 지정학 전쟁 발발, 미 국채금리 급등 및 국내 코스피/코스닥 지수 급락에 따른 동반 투매"
+    {
+      "theme_id": "ai_dc_cloud",
+      "theme_name": "AI데이터센터 - 클라우드 및 운영 소프트웨어 (CSP / MSP)",
+      "category": "AI 데이터센터 인프라",
+      "today_change_rate": "+3.85%",
+      "today_score": 89,
+      "lead_stocks": [
+        "삼성에스디에스",
+        "포스코DX",
+        "현대오토에버",
+        "솔트룩스"
+      ],
+      "risks_summary": "기업들의 AI 도입 ROI(투자수익률) 회수 지연 및 생성형 AI 소프트웨어 구독 단가 인하 경쟁",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "디지털데일리",
+          "news_title": "[호재] 기업용 생성형 AI 플랫폼 구축 수요 폭증… 삼성SDS·포스코DX 클라우드 매출 35% 급증",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=삼성에스디에스+클라우드+AI",
+          "summary": "제조 및 금융권 프라이빗 거대언어모델(LLM) 인프라 전환 프로젝트가 본격 수익화 구간 진입"
+        },
+        {
+          "date": "2026-10-30",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "지디넷코리아",
+          "news_title": "[⚠️ 수익성 악재] 오픈소스 AI 모델 범람… 거대 LLM 소프트웨어 라이선스 단가 하락 압박",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=오픈소스+LLM+단가인하+소프트웨어",
+          "summary": "메타 라마4 등 고성능 오픈소스 배포로 인해 자체 구축 소프트웨어 솔루션의 고마진 유지 불확실성 증대"
         }
-      }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-17",
-        "stage": "특징주",
-        "press": "매일경제",
-        "news_title": "나라스페이스테크놀로지, NASA 아르테미스 탑재체 공급사 최종 선정",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%9A%B0%EC%A3%BC%ED%95%AD%EA%B3%B5%EC%82%B0%EC%97%85%20%EB%82%98%EB%9D%BC%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80",
-        "key_point": "NASA 아르테미스 프로젝트 탑재체 최종 선정 및 초소형 군집 위성 발사 성공 발표로 인해 관련 테마 상승세 견인"
-      }
-    ],
-    "_asyncSupplementsLoaded": false,
-    "_technicals": null
-  },
-  {
-    "theme_id": "radar_92",
-    "theme_name": "통신장비",
-    "sector": "당일 주도 테마",
-    "pattern_type": "주도 섹터 급등(거래대금 분출)",
-    "period_type": "단기 주도",
-    "score": 99,
-    "summary": "빛샘전자, 5G·6G 통신망 광선로 모듈 대규모 공급 계약 체결 발표로 인해 관련 테마 상승세 견인",
-    "checklist": {
-      "material": "빛샘전자, 글로벌 통신사향 초고속 광모듈 공급 계약 체결 (전자신문)",
-      "leaders": {
-        "lead": "빛샘전자",
-        "sub": "에이스테크, 기가레인, 센서뷰, 케이엠더블유"
-      },
-      "correlation": "빛샘전자가 통신망 핵심 광모듈 기술 특허를 보유하고 테마 시세를 주도하며, 에이스테크가 무선 기지국 안테나 공급으로 뒷받침하는 주도주 시세 구조.",
-      "future_expectation": "북미 5G 인프라 보조금 집행 및 6G 표준화 포럼 개최를 앞두고 있어 통신장비 섹터 재반등 기대감",
-      "expiration_date": "약 1~2개월 (정책 집행 분출 국면)",
-      "chart_phase": "바닥권 탈피 1차 상승 파동",
-      "conditions": {
-        "bullish": "빛샘전자 5일선 지지 및 거래대금 1,000억 이상 연속 유입 시 추가 랠리",
-        "bearish": "대장주 윗꼬리 음봉 출회 및 3일선 이탈 시 단기 차익 실현 주의"
-      }
+    {
+      "theme_id": "ai_dc_ess",
+      "theme_name": "AI데이터센터 - ESS(에너지저장장치, BESS)",
+      "category": "AI 데이터센터 인프라",
+      "today_change_rate": "+5.60%",
+      "today_score": 94,
+      "lead_stocks": [
+        "서진시스템",
+        "한화솔루션",
+        "LS머트리얼즈",
+        "신성에스티"
+      ],
+      "risks_summary": "중국산 LFP 기반 초저가 ESS 배터리 컨테이너 덤핑 공세 및 배터리 화재 안전성 우려",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "머니S",
+          "news_title": "[호재] AI 데이터센터 UPS·피크저감용 BESS 설치 의무화… 서진시스템 메가와트 수주 질주",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=서진시스템+ESS+BESS",
+          "summary": "글로벌 빅테크의 무정전 전원장치(UPS) 및 재생에너지 연계 BESS 캐비닛 공급 계약 확대"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "더구루",
+          "news_title": "[⚠️ 덤핑 악재] CATL·BYD 북미·유럽 시장 ESS 판가 20% 인하 공세… K-배터리 수주전 격화",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=중국+ESS+덤핑+CATL+판가인하",
+          "summary": "중국 배터리 기업들의 공급과잉 물량이 해외 ESS 프로젝트로 유입되며 마진율 방어 부담 가중"
+        },
+        {
+          "date": "2026-10-30",
+          "stage": "DART 공시",
+          "impact_type": "GOOD",
+          "is_dart": true,
+          "press": "DART 전자공시",
+          "news_title": "[공시] 서진시스템, 글로벌 ESS 선도기업향 대용량 배터리 팩 케이스 1,420억원 공급",
+          "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=서진시스템",
+          "summary": "미국 및 유럽 신재생 에너지 프로젝트용 알루미늄 다이캐스팅 케이스 대량 납품"
+        }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-16",
-        "stage": "특징주",
-        "press": "전자신문",
-        "news_title": "빛샘전자, 글로벌 통신사향 초고속 광모듈 공급 계약 체결",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%ED%86%B5%EC%8B%A0%EC%9E%A5%EB%B9%84%20%EB%B9%9B%EC%83%98%EC%A0%84%EC%9E%90",
-        "key_point": "빛샘전자, 5G·6G 통신망 광선로 모듈 대규모 공급 계약 체결 발표로 인해 관련 테마 상승세 견인"
-      }
-    ],
-    "_asyncSupplementsLoaded": false,
-    "_technicals": null
-  },
-  {
-    "theme_id": "radar_269",
-    "theme_name": "LED장비",
-    "sector": "당일 주도 테마",
-    "pattern_type": "주도 섹터 급등(거래대금 분출)",
-    "period_type": "단기 주도",
-    "score": 77,
-    "summary": "기가레인, 마이크로 LED 양산 장비 글로벌 디스플레이 고객사 공급 승인 발표로 인해 관련 테마 상승세 견인",
-    "checklist": {
-      "material": "기가레인, 차세대 마이크로 LED 식각 장비 양산 라인 공급 착수 (디일렉)",
-      "leaders": {
-        "lead": "기가레인",
-        "sub": "이오테크닉스, 주성엔지니어링, 티씨케이, 레이저쎌"
-      },
-      "correlation": "기가레인이 마이크로 LED DRIE 고밀도 플라즈마 식각 원천 기술을 보유하고 시세를 견인하며, 이오테크닉스가 레이저 마킹 장비로 밸류체인 연동.",
-      "future_expectation": "글로벌 빅테크 스마트워치 및 XR 기기용 마이크로 LED 탑재 본격화를 앞두고 있어 재반등 기대감",
-      "expiration_date": "1~2개월 (중기 업황 턴어라운드)",
-      "chart_phase": "바닥권 탈피 1차 상승 파동",
-      "conditions": {
-        "bullish": "기가레인 5일선 지지 및 거래대금 1,000억 이상 연속 유입 시 추가 랠리",
-        "bearish": "대장주 윗꼬리 음봉 출회 및 3일선 이탈 시 단기 차익 실현 주의"
-      }
+    {
+      "theme_id": "radar_123",
+      "theme_name": "전력설비",
+      "category": "인프라",
+      "today_change_rate": "+6.80%",
+      "today_score": 95,
+      "lead_stocks": [
+        "선도전기",
+        "대한전선",
+        "가온전선",
+        "LS에코에너지"
+      ],
+      "risks_summary": "단기 과열 지정 위험 및 구리 선물 가격 급등에 따른 원가 부담, 차익 실현 출회",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "시장 판도 레이더",
+          "news_title": "[호재 속보] 북미 노후 변전소 초고압 변압기 리드타임 4년 지속… 전력망 수퍼 사이클",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=전력설비+초고압변압기+선도전기",
+          "summary": "대장주: 선도전기, 대한전선 | 북미 전력망 교체 및 신재생 계통 연계 수주잔고 역대 최대"
+        },
+        {
+          "date": "2026-11-01",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "한국경제TV",
+          "news_title": "[⚠️ 수급 악재] 전력설비 단기 급등에 따른 단기과열종목 지정 및 전환사채(CB) 오버행 부담",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=전력설비+단기과열+오버행+전환사채",
+          "summary": "선도전기 등 중소형 전력설비주들의 미상환 전환사채 주식 전환 청구 가능성으로 단기 매물 출회 경고"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "DART 공시",
+          "impact_type": "GOOD",
+          "is_dart": true,
+          "press": "DART 전자공시",
+          "news_title": "[공시] 선도전기, 초고압 변전설비 공급 단일판매·공급계약체결 (320억원 규모)",
+          "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=선도전기",
+          "summary": "공급지역: 북미 및 국내 데이터센터 전력망 | 계약금액: 최근 매출액 대비 28.4% 규모"
+        },
+        {
+          "date": "2026-10-28",
+          "stage": "증권사 리포트",
+          "impact_type": "GOOD",
+          "is_report": true,
+          "press": "대신증권 리포트",
+          "news_title": "[리포트] 선도전기, 북미 노후 변압기 교체 사이클과 전력 쇼티지 최대 수혜",
+          "news_url": "https://finance.naver.com/research/company_list.naver?keyword=선도전기",
+          "summary": "투자의견: Buy(신규) | 목표주가: 4,500원 | 글로벌 송배전망 투자 확대로 영업이익률 12% 돌파 전망"
+        }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-16",
-        "stage": "특징주",
-        "press": "디일렉",
-        "news_title": "기가레인, 차세대 마이크로 LED 식각 장비 양산 라인 공급 착수",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=LED%EC%9E%A5%EB%B9%84%20%EA%B8%B0%EA%B0%80%EB%A0%88%EC%9D%B8",
-        "key_point": "기가레인, 마이크로 LED 양산 장비 글로벌 디스플레이 고객사 공급 승인 발표로 인해 관련 테마 상승세 견인"
-      }
-    ],
-    "_asyncSupplementsLoaded": false,
-    "_technicals": null
-  },
-  {
-    "theme_id": "custom_1789557355183",
-    "theme_name": "로봇",
-    "sector": "사용자 관심 테마",
-    "pattern_type": "실시간 수집 모멘텀",
-    "analysis_date": "2026-09-16",
-    "checklist": {
-      "material": "클로봇 및 로봇 관련 실시간 뉴스 & DART 공시 동적 추적",
-      "leaders": {
-        "lead": "클로봇",
-        "sub": "연관 수급주 실시간 탐색 중"
-      },
-      "correlation": "클로봇 관련 보도 및 공시 모멘텀을 타임라인으로 실시간 누적 분석합니다.",
-      "future_expectation": "후속 단독 보도 및 금감원 공시 접수 여부 실시간 확인",
-      "expiration_date": "진행형 모멘텀",
-      "chart_phase": "실시간 수급 유입 및 변동성 확인 국면",
-      "conditions": {
-        "bullish": "대규모 계약/수주/실적 호전 보도 및 기관·외인 양매수",
-        "bearish": "단기 급등 후 차익 실현 매물 출회 및 재료 소멸"
-      }
+    {
+      "theme_id": "radar_373",
+      "theme_name": "5G",
+      "category": "통신",
+      "today_change_rate": "+4.10%",
+      "today_score": 87,
+      "lead_stocks": [
+        "이노인스트루먼트",
+        "우리로",
+        "대한광통신",
+        "우리넷"
+      ],
+      "risks_summary": "통신 3사 무선 설비투자 정체 및 6G 상용화 시점 지연으로 단기 실적 모멘텀 공백",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "시장 판도 레이더",
+          "news_title": "[호재] 5G 특화망(이음5G) 스마트팩토리 확대 및 통신장비 교체 수요 유입",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=이노인스트루먼트+5G+통신장비",
+          "summary": "대장주: 이노인스트루먼트 | 산업용 5G 융합 솔루션 도입 확대로 거래대금 급증"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "디지털타임스",
+          "news_title": "[⚠️ 실적 악재] 국내 통신 3사 CAPEX 전년비 12% 축소… 5G 중계기 부품사 3분기 실적 쇼크",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=통신3사+CAPEX+축소+실적쇼크",
+          "summary": "가입자 포화에 따른 인프라 투자 정체로 일부 통신장비 협력업체 영업이익 적자 전환"
+        }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-18",
-        "stage": "주도 테마 감지",
-        "press": "시장 판도 레이더",
-        "news_title": "[주도 섹터] 피지컬 AI 및 휴머노이드 로봇 생태계 확산으로 매수세 급증",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4",
-        "key_point": "대장주: 레인보우로보틱스 | 삼성전자 피지컬 AI 로봇 공정 투입 소식으로 수급 집중",
-        "stockName": "레인보우로보틱스",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "확산 | 수급집중"
-      },
-      {
-        "date": "2026-09-12",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 알에스오토메이션, 글로벌 반도체 장비사향 초정밀 모션제어기 대규모 공급계약",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EC%95%8C%EC%97%90%EC%8A%A4%EC%98%A4%ED%86%A0%EB%A9%94%EC%9D%B4%EC%85%98",
-        "key_point": "스마트팩토리 제어기 및 22비트 초정밀 엔코더 납품 | 공급금액: 142억원",
-        "stockName": "알에스오토메이션",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-09-05",
-        "stage": "증권사 리포트",
-        "press": "삼성증권 리포트",
-        "news_title": "[리포트] 레인보우로보틱스, 양팔 휴머노이드 로봇 제조라인 양산 검증 임박",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4",
-        "key_point": "투자의견: Buy(상향) | 목표주가: 210,000원 | 반도체 클린룸용 무인 협동로봇 공급 가시화",
-        "stockName": "레인보우로보틱스",
-        "is_dart": false,
-        "is_report": true,
-        "tag": "증권사 리서치"
-      },
-      {
-        "date": "2026-08-29",
-        "stage": "실시간 보도",
-        "press": "디지털타임스",
-        "news_title": "두산로보틱스, 북미 식음료 및 물류 자동화 협동로봇 공급처 200곳 돌파",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%91%90%EC%82%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4",
-        "key_point": "두산 밥캣과의 시너지 본격화 및 북미 소프트웨어 통합 관제 플랫폼 솔루션 호평",
-        "stockName": "두산로보틱스",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      },
-      {
-        "date": "2026-08-18",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 에스비비테크, 방산 및 정밀 의료 로봇용 하모닉 감속기 독점 공급",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EC%97%90%EC%8A%A4%EB%B9%84%EB%B9%84%ED%85%8C%ED%81%AC",
-        "key_point": "일본산 감속기 대체 국산화 1호 타이틀 확보, 전년비 납품량 65% 증가",
-        "stockName": "에스비비테크",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-08-08",
-        "stage": "실시간 보도",
-        "press": "전자신문",
-        "news_title": "뉴로메카, 포스코 그룹향 철강 무인화 용접 로봇 양산 테스트 성공",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%89%B4%EB%A1%9C%EB%A9%94%EC%B9%B4",
-        "key_point": "고온·고위험 제조 환경 대체 특화 솔루션으로 3분기 대형 후속 발주 기대",
-        "stockName": "뉴로메카",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      }
-    ],
-    "_asyncSupplementsLoaded": true
-  },
-  {
-    "theme_id": "db_theme_1789557211351",
-    "theme_name": "원자력_원전 > 원자력 원전",
-    "sector": "원자력_원전",
-    "pattern_type": "패턴1 (DB 추출 신규 관심 테마)",
-    "analysis_date": "2026-09-16",
-    "checklist": {
-      "material": "[원자력_원전 > 원자력 원전] 엑셀 테마 DB 기반 추출 핵심 주도 산업군 및 수급 집중 테마",
-      "leaders": {
-        "lead": "종목명",
-        "sub": "관련주 추적 중"
-      },
-      "correlation": "종목명 등 핵심 수혜주 중심의 시세 탄력 및 거래대금 분출 기대",
-      "future_expectation": "정책 발표 및 글로벌 공급망 계약, 실적 턴어라운드 모멘텀 지속 추적",
-      "expiration_date": "1~3개월 (업황 사이클 및 단기 수급 분출 국면)",
-      "chart_phase": "바닥권 거래량 점증 또는 전고점 돌파 시도 국면",
-      "conditions": {
-        "bullish": "외인/기관 동반 순매수 유입 및 테마 거래대금 5,000억 이상 분출",
-        "bearish": "단기 차익 실현 매물 출회 및 거래량 급감 시 눌림목 지지선 이탈"
-      }
+    {
+      "theme_id": "custom_1789557355183",
+      "theme_name": "로봇",
+      "category": "미래 신성장",
+      "today_change_rate": "+5.70%",
+      "today_score": 92,
+      "lead_stocks": [
+        "레인보우로보틱스",
+        "알에스오토메이션",
+        "두산로보틱스",
+        "에스비비테크"
+      ],
+      "risks_summary": "고평가(PSR/PER) 논란 및 상용화 R&D 비용 증가로 영업적자 지속 위험",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "시장 판도 레이더",
+          "news_title": "[호재] 피지컬 AI 및 휴머노이드 로봇 제조라인 양산 검증 임박에 매수세 집중",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=레인보우로보틱스+휴머노이드+로봇",
+          "summary": "대장주: 레인보우로보틱스 | 삼성전자 피지컬 AI 로봇 공정 투입 소식으로 수급 집중"
+        },
+        {
+          "date": "2026-11-01",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "한국경제",
+          "news_title": "[⚠️ 밸류에이션 악재] 휴머노이드 상용화 시점 2027년 연기 우려… 로봇주 밸류에이션 부담 논란",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=로봇주+고평가+영업적자+상용화지연",
+          "summary": "현재 주가가 5년 후 실적을 선반영한 상태로, 양산 수율 미확보 시 기술적 지지선 이탈 위험"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "DART 공시",
+          "impact_type": "GOOD",
+          "is_dart": true,
+          "press": "DART 전자공시",
+          "news_title": "[공시] 알에스오토메이션, 글로벌 반도체 장비사향 초정밀 모션제어기 대규모 공급계약",
+          "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=알에스오토메이션",
+          "summary": "스마트팩토리 제어기 및 22비트 초정밀 엔코더 납품 | 공급금액: 142억원"
+        },
+        {
+          "date": "2026-10-29",
+          "stage": "증권사 리포트",
+          "impact_type": "GOOD",
+          "is_report": true,
+          "press": "삼성증권 리포트",
+          "news_title": "[리포트] 레인보우로보틱스, 양팔 휴머노이드 로봇 제조라인 양산 검증 임박",
+          "news_url": "https://finance.naver.com/research/company_list.naver?keyword=레인보우로보틱스",
+          "summary": "투자의견: Buy(상향) | 목표주가: 210,000원 | 반도체 클린룸용 무인 협동로봇 공급 가시화"
+        }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-18",
-        "stage": "증권사 리포트",
-        "press": "NH투자증권 리포트",
-        "news_title": "[리포트] 체코 30조 원전 주기기 공급 확정 및 미국 SMR 뉴스케일 파워 수주 (목표가: 32,000원)",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%91%90%EC%82%B0%EC%97%90%EB%84%88%EB%B9%8C%EB%A6%AC%ED%8B%B0",
-        "key_point": "투자의견: Buy(유지) | 두산에너빌리티 주기기 제작 독점 파이프라인 가동",
-        "stockName": "두산에너빌리티",
-        "is_dart": false,
-        "is_report": true,
-        "tag": "증권사 리서치"
-      },
-      {
-        "date": "2026-09-14",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 두산에너빌리티, 체코 신규 원전 2기 주기기 우선협상대상 공급 계약 체결",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EB%91%90%EC%82%B0%EC%97%90%EB%84%88%EB%B9%8C%EB%A6%AC%ED%8B%B0",
-        "key_point": "계약금액: 약 4조 5,000억원 규모 | 체코 두코바니 5·6호기 원자로 및 터빈 주기기 턴키 납품",
-        "stockName": "두산에너빌리티",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-09-09",
-        "stage": "실시간 보도",
-        "press": "서울경제",
-        "news_title": "우진엔텍, 원전 해체 및 계측제어설비(MMIS) 정비 독점 수주 확대",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%9A%B0%EC%A7%84%EC%97%94%ED%85%8D",
-        "key_point": "국내 가동 원전 25기 대상 경상정비 유지보수 용역 수주 및 원전 안전 시스템 핵심 국산화",
-        "stockName": "우진엔텍",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      },
-      {
-        "date": "2026-09-02",
-        "stage": "증권사 리포트",
-        "press": "하나증권 리포트",
-        "news_title": "[리포트] 비에이치아이, 글로벌 원전 르네상스 복수기(Condenser) 수주 랠리 본격화",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%B9%84%EC%97%90%EC%9D%B4%EC%B9%98%EC%95%84%EC%9D%B4",
-        "key_point": "투자의견: Buy(상향) | 목표주가: 18,500원 | 웨스팅하우스 및 한수원 동시 공급 벤더 지위",
-        "stockName": "비에이치아이",
-        "is_dart": false,
-        "is_report": true,
-        "tag": "증권사 리서치"
-      },
-      {
-        "date": "2026-08-25",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 한신기계, 원자력발전소용 무급유식 공기압축기 장기 공급 계약 체결",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%ED%95%9C%EC%8B%A0%EA%B8%B0%EA%B3%84",
-        "key_point": "신한울 3·4호기 건설용 특수 컴프레서 공급 건으로 총 185억원 규모",
-        "stockName": "한신기계",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-08-16",
-        "stage": "실시간 보도",
-        "press": "매일경제",
-        "news_title": "우리기술, SMR 분산형 전력망 제어시스템 국책과제 주관기관 단독 선정",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%9A%B0%EB%A6%AC%EA%B8%B0%EC%88%A0",
-        "key_point": "차세대 혁신형 SMR i-SMR 계측제어 소프트웨어 개발 주도, 상용화 시 글로벌 수출 기대",
-        "stockName": "우리기술",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      },
-      {
-        "date": "2026-08-05",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 보성파워텍, 한수원향 원자력발전소 철골 구조물 및 송전철탑 단일공급계약 (128억원)",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EB%B3%B4%EC%84%B1%ED%8C%8C%EC%9B%8C%ED%85%8D",
-        "key_point": "신규 원전 건설 핵심 인프라 철골 납품, 최근 매출액 대비 18.2% 규모 수주",
-        "stockName": "보성파워텍",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-07-22",
-        "stage": "핵심 이벤트",
-        "press": "한국수력원자력",
-        "news_title": "[이벤트] 팀코리아, 체코 두코바니 신규 원전 수주 본계약 최종 협상 착수",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EC%B2%B4%EC%BD%94%20%EC%9B%90%EC%A0%84%20%ED%8C%80%EC%BD%94%EB%A6%AC%EC%95%84",
-        "key_point": "체코 산업부 및 발주사(EDU II) 대표단 방한 및 창원 원전 공장 실사 진행",
-        "stockName": "두산에너빌리티",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "글로벌 모멘텀"
-      }
-    ],
-    "_asyncSupplementsLoaded": true,
-    "_technicals": null
-  },
-  {
-    "theme_id": "hair_loss_insurance",
-    "theme_name": "탈모 치료 건강보험 적용 검토",
-    "sector": "바이오 / 헬스케어",
-    "pattern_type": "패턴1 (신규 정책/의료 급여 모멘텀 첫 분출)",
-    "analysis_date": "2026-09-16",
-    "checklist": {
-      "material": "복지부, 탈모 치료제 건강보험 급여 적용 검토 공식 언급에 따른 치료제 시장 확대 기대감",
-      "leaders": {
-        "lead": "현대약품(마이녹실 브랜드 파워), 삼익제약(장기지속형 주사제 플랫폼)",
-        "sub": "JW신약, 위더스제약, 프롬바이오, 신신제약, 알리코제약, TS트릴리온, 인벤티지랩, 올릭스"
-      },
-      "correlation": "현대약품은 대표 OTC 미녹시딜 '마이녹실' 재평가 수혜, 삼익제약은 보유 주사제 플랫폼 기술이 탈모 치료 영역에서 재조명되며 상한가 도달",
-      "future_expectation": "복지부 급여화 타당성 검토 결과 발표, 국회 공청회 및 정책 구체화 단계별 후속 뉴스 대기",
-      "expiration_date": "1~2개월 (정책 구체화 일정 또는 건보 재정 심의 결과 발표 시점까지)",
-      "chart_phase": "바닥권 장기 횡보 후 첫 거래대금 동반 상한가/장대양봉 형성 (1파 추세 전환 국면)",
-      "conditions": {
-        "bullish": "복지부 세부 급여 기준안 및 지원 대상 윤곽 보도, 기관/외국인 연속 순매수 유입",
-        "bearish": "건보 재정 고갈 우려로 인한 전면 보류 기사 보도, 거래량 급감하며 당일 시초가 이탈"
-      }
+    {
+      "theme_id": "custom_1789721514159",
+      "theme_name": "원전",
+      "category": "에너지",
+      "today_change_rate": "+4.40%",
+      "today_score": 93,
+      "lead_stocks": [
+        "두산에너빌리티",
+        "우진엔텍",
+        "비에이치아이",
+        "한신기계"
+      ],
+      "risks_summary": "웨스팅하우스(WEC) 지재권 분쟁 소송 노이즈 및 체코 본계약 체결 과정의 정치적 변수",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "조선일보",
+          "news_title": "[호재] 체코 두코바니 24조 원전 본계약 협상 순항… 11월 실사단 방한 예정",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=두산에너빌리티+체코원전+본계약",
+          "summary": "체코 정부 고위 관계자 방한 및 한수원-두산에너빌리티 공급망 최종 실사 착수"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "중앙일보",
+          "news_title": "[⚠️ 지재권 악재] 美 웨스팅하우스(WEC), 한국형 원전 수출 항소 유지… 지재권 로열티 협상 난항",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=원전+웨스팅하우스+지재권+소송+항소",
+          "summary": "미국 법무부 및 상무부의 원전 기술 수출 통제 승인 절차 지연 시 본계약 서명 시점 순연 리스크"
+        },
+        {
+          "date": "2026-10-30",
+          "stage": "증권사 리포트",
+          "impact_type": "GOOD",
+          "is_report": true,
+          "press": "NH투자증권",
+          "news_title": "[리포트] 두산에너빌리티, 체코 원전 주기기 2조원 제작 독점 확정 및 뉴스케일 SMR 착공",
+          "news_url": "https://finance.naver.com/research/company_list.naver?keyword=두산에너빌리티",
+          "summary": "투자의견: Buy(유지) | 목표주가 32,000원 | 글로벌 대형 원전 및 SMR 수주 파이프라인 가동"
+        }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-16",
-        "stage": "최초 단서 포착",
-        "press": "언론 종합",
-        "news_title": "복지부, 탈모 치료 건보 적용 검토 언급… 급여화 현실화 땐 치료제 시장 폭발 기대",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=탈모+건강보험",
-        "key_point": "현대약품 마이녹실 강세, 삼익제약 약 30% 급등 7,700원 상한가 마감"
-      },
-      {
-        "date": "2026-09-10",
-        "stage": "사전 공청회 및 여론 수렴",
-        "press": "메디컬뉴스",
-        "news_title": "국회 보건복지위, 청년층 탈모 치료 보장성 강화 토론회 개최 논의",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=탈모+치료+보장성",
-        "key_point": "치료 목적 처방 건보 적용 타당성 논의 본격화"
-      }
-    ]
-  },
-  {
-    "theme_id": "power_grid_expansion",
-    "theme_name": "전기 전력망 & AI 초고압 송전",
-    "sector": "전력 설비 / 인프라",
-    "pattern_type": "패턴2 (글로벌 실적 수주 동반 메가 트렌드)",
-    "analysis_date": "2026-09-16",
-    "checklist": {
-      "material": "한전 500kV HVDC 동해안~동서울 수주 및 미국 AI 데이터센터용 전력 케이블 대규모 증설",
-      "leaders": {
-        "lead": "대한전선(500kV 턴키 수주), 가온전선(미국 노스캐롤라이나 LSCUS 공장 2배 증설)",
-        "sub": "대원전선, LS에코에너지(싱가포르 초고압 케이블 1위)"
-      },
-      "correlation": "대한전선은 한전 500kV 초고압 송전망 제조·공급·시공 턴키 수주, 가온전선은 500만 달러 투자로 AI 데이터센터 송전 케이블 생산능력 2배 확대",
-      "future_expectation": "올해 10월 가온전선 1차 생산라인 가동 및 내년 4월 2차 라인 순차 가동, 북미 노후 전력망 교체 추가 수주",
-      "expiration_date": "중장기 (2026년~2027년 설비 가동 및 수주 잔고 지속 증가)",
-      "chart_phase": "전고점 돌파 후 5일선/10일선 타고 오르는 강력한 상승 N자형 정배열 국면",
-      "conditions": {
-        "bullish": "미국 빅테크 전력 계약 추가 발표, 북미향 전선 수출 실적 사상 최대 갱신",
-        "bearish": "구리 원자재 가격 급락 또는 데이터센터 전력 투자 지연 소식"
-      }
+    {
+      "theme_id": "custom_defense_2026",
+      "theme_name": "방산",
+      "category": "방산/안보",
+      "today_change_rate": "+3.90%",
+      "today_score": 91,
+      "lead_stocks": [
+        "한화에어로스페이스",
+        "현대로템",
+        "한화시스템",
+        "LIG넥스원"
+      ],
+      "risks_summary": "폴란드 정권 교체 및 금융지원 한도 소진에 따른 2차 계약 지연, 유럽 EDIS 무기 블록화",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "한국경제",
+          "news_title": "[호재] 현대로템 루마니아 K2 전차 2.8조 수출 기본계약 및 폴란드 K9 추가 실행계약 가시화",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=현대로템+한화에어로스페이스+방산+수출",
+          "summary": "동유럽 및 중동 안보 위기 고조로 대한민국 K-방산 납기 경쟁력 부각되며 수주 랠리"
+        },
+        {
+          "date": "2026-11-01",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "연합뉴스",
+          "news_title": "[⚠️ 계약 악재] 폴란드 수출입은행 2차 금융지원 법안 국회 심사 지연… 잔여 계약 체결 차질 우려",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=폴란드+방산+금융지원+지연+수출입은행",
+          "summary": "수출금융 한도 증액 후속 절차 지연 시 현대로템 K2 2차 본계약 이행 시기 지연 가능성"
+        },
+        {
+          "date": "2026-10-29",
+          "stage": "증권사 리포트",
+          "impact_type": "GOOD",
+          "is_report": true,
+          "press": "메리츠증권",
+          "news_title": "[리포트] 현대로템, K2 전차 3분기 실적 어닝 서프라이즈 및 루마니아 차기 전차 도입 유력",
+          "news_url": "https://finance.naver.com/research/company_list.naver?keyword=현대로템",
+          "summary": "투자의견: Buy(상향) | 목표가 68,000원 | 글로벌 방산 수주잔고 사상 최대치 경신"
+        }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-16",
-        "stage": "대규모 수주 및 증설 공시",
-        "press": "증시속보",
-        "news_title": "가온전선, 美 AI데이터센터 송전 케이블 생산능력 2배 확대… 대한전선 HVDC 턴키 수주",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=대한전선+HVDC",
-        "key_point": "노스캐롤라이나주 공장 2개 라인 증설, 올해 10월 및 내년 4월 순차 가동"
-      },
-      {
-        "date": "2026-09-08",
-        "stage": "초고압 변압기/전력선 수출 급증",
-        "press": "산업저널",
-        "news_title": "美 빅테크 데이터센터 전력난 가속화… K-전선·변압기 북미 수출 사상 최대치",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=데이터센터+전력+전선",
-        "key_point": "수주 잔고 3년 치 확보, 판가 인상(P)과 물량(Q) 동반 증가"
-      }
-    ]
-  },
-  {
-    "theme_id": "robot_physical_ai",
-    "theme_name": "휴머노이드 로봇 & 피지컬 AI",
-    "sector": "로봇 / 자동화",
-    "pattern_type": "패턴3 (빅테크 상용화 로드맵 가시화)",
-    "analysis_date": "2026-09-16",
-    "checklist": {
-      "material": "글로벌 완성차 및 빅테크 공장 휴머노이드 로봇 현장 실증 투입과 스마트 엑추에이터 국산화",
-      "leaders": {
-        "lead": "레인보우로보틱스(삼성 제조라인 투입 가속), 에스비비테크(하모닉 감속기 양산)",
-        "sub": "두산로보틱스, 뉴로메카, 엔젤로보틱스, 알에스오토메이션, 이랜시스"
-      },
-      "correlation": "휴머노이드 손가락·관절용 고정밀 감속기 및 서보 드라이브 국산화 공급사로 집중 수급 유입",
-      "future_expectation": "주요 제조공장 24시간 자율 무인화 공정 도입 공시 및 정부 첨단로봇 산업 육성책 발표",
-      "expiration_date": "중장기 (2026년 하반기 시범 라인 구축부터 2027년 본 양산)",
-      "chart_phase": "기간 조정 마무리 후 거래대금 실린 전고점 매물대 소화 및 박스권 상단 돌파",
-      "conditions": {
-        "bullish": "대기업 계열사 로봇 벤더 등록 계약 체결, 감속기 양산 납품 개시 뉴스",
-        "bearish": "기술 검증 지연 및 납품 일정 연기 관련 풍문 출현"
-      }
+    {
+      "theme_id": "radar_584",
+      "theme_name": "스페이스X",
+      "category": "우주항공",
+      "today_change_rate": "+4.20%",
+      "today_score": 89,
+      "lead_stocks": [
+        "센서뷰",
+        "와이제이링크",
+        "에이치브이엠",
+        "켄코아에어로스페이스"
+      ],
+      "risks_summary": "발사체 시험 발사 일정 연기 및 기술 결함 발생 시 급격한 주가 변동성",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "이데일리",
+          "news_title": "[호재] 美 스페이스X 스타십 차기 발사 카운트다운… 국내 우주 밸류체인 부품사 급등",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=스페이스X+스타십+센서뷰+와이제이링크",
+          "summary": "초고주파 케이블 및 위성용 SMT 단독 공급 협의 소식에 매수세 유입"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "서울경제",
+          "news_title": "[⚠️ 변동성 리스크] FAA(미국연방항공청) 환경영향평가 지연으로 스타십 상용화 일정 3개월 순연",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=스페이스X+FAA+발사연기+리스크",
+          "summary": "단기 기대감 소멸 시 관련 테마주들의 차익 매물 출회 및 거래량 급감 주의"
+        }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-18",
-        "stage": "주도 테마 감지",
-        "press": "시장 판도 레이더",
-        "news_title": "[주도 섹터] 피지컬 AI 및 휴머노이드 로봇 생태계 확산으로 매수세 급증",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4",
-        "key_point": "대장주: 레인보우로보틱스 | 삼성전자 피지컬 AI 로봇 공정 투입 소식으로 수급 집중",
-        "stockName": "레인보우로보틱스",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "확산 | 수급집중"
-      },
-      {
-        "date": "2026-09-12",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 알에스오토메이션, 글로벌 반도체 장비사향 초정밀 모션제어기 대규모 공급계약",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EC%95%8C%EC%97%90%EC%8A%A4%EC%98%A4%ED%86%A0%EB%A9%94%EC%9D%B4%EC%85%98",
-        "key_point": "스마트팩토리 제어기 및 22비트 초정밀 엔코더 납품 | 공급금액: 142억원",
-        "stockName": "알에스오토메이션",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-09-05",
-        "stage": "증권사 리포트",
-        "press": "삼성증권 리포트",
-        "news_title": "[리포트] 레인보우로보틱스, 양팔 휴머노이드 로봇 제조라인 양산 검증 임박",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4",
-        "key_point": "투자의견: Buy(상향) | 목표주가: 210,000원 | 반도체 클린룸용 무인 협동로봇 공급 가시화",
-        "stockName": "레인보우로보틱스",
-        "is_dart": false,
-        "is_report": true,
-        "tag": "증권사 리서치"
-      },
-      {
-        "date": "2026-08-29",
-        "stage": "실시간 보도",
-        "press": "디지털타임스",
-        "news_title": "두산로보틱스, 북미 식음료 및 물류 자동화 협동로봇 공급처 200곳 돌파",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%91%90%EC%82%B0%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4",
-        "key_point": "두산 밥캣과의 시너지 본격화 및 북미 소프트웨어 통합 관제 플랫폼 솔루션 호평",
-        "stockName": "두산로보틱스",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      },
-      {
-        "date": "2026-08-18",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 에스비비테크, 방산 및 정밀 의료 로봇용 하모닉 감속기 독점 공급",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%EC%97%90%EC%8A%A4%EB%B9%84%EB%B9%84%ED%85%8C%ED%81%AC",
-        "key_point": "일본산 감속기 대체 국산화 1호 타이틀 확보, 전년비 납품량 65% 증가",
-        "stockName": "에스비비테크",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-08-08",
-        "stage": "실시간 보도",
-        "press": "전자신문",
-        "news_title": "뉴로메카, 포스코 그룹향 철강 무인화 용접 로봇 양산 테스트 성공",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%EB%89%B4%EB%A1%9C%EB%A9%94%EC%B9%B4",
-        "key_point": "고온·고위험 제조 환경 대체 특화 솔루션으로 3분기 대형 후속 발주 기대",
-        "stockName": "뉴로메카",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      }
-    ],
-    "_asyncSupplementsLoaded": true
-  },
-  {
-    "theme_id": "nuclear_smr_power",
-    "theme_name": "원전 르네상스 & SMR 소형원자로",
-    "sector": "에너지 / 원자력",
-    "pattern_type": "패턴4 (해외 초대형 프로젝트 최종 수주 임박)",
-    "analysis_date": "2026-09-16",
-    "checklist": {
-      "material": "체코 신규 원전 본계약 카운트다운 및 미국 차세대 SMR 파운드리 일괄 제작 협력",
-      "leaders": {
-        "lead": "두산에너빌리티(원자로 주기기 단독 제작), 우진엔텍(원전 계측제어/정비)",
-        "sub": "한신기계, 일진파워, 비에이치아이, 서전기전, 우리기술"
-      },
-      "correlation": "팀코리아 주도 해외 대형 원전 주기기 제작 및 시운전·정비 독점 기술 보유 기업",
-      "future_expectation": "체코 본계약 서명식, 폴란드/UAE 후속 원전 사업 입찰 및 SMR 제작 착공식",
-      "expiration_date": "3~6개월 (본계약 체결 및 추가 국가 수주 파이프라인 지속)",
-      "chart_phase": "상승 1파 후 20일선 지지 받는 2파 눌림목 완성 국면 (재상승 시도)",
-      "conditions": {
-        "bullish": "체코 정부 최종 승인 완료 공식 성명, 미국 빅테크의 원전 PPA 전력 직구매 계약",
-        "bearish": "경쟁국 이의 제기 소송 등 외교적 잡음 및 본계약 일정 순연 보도"
-      }
+    {
+      "theme_id": "radar_586",
+      "theme_name": "광통신",
+      "category": "통신",
+      "today_change_rate": "+5.10%",
+      "today_score": 91,
+      "lead_stocks": [
+        "대한광통신",
+        "옵티코어",
+        "오이솔루션",
+        "우리로"
+      ],
+      "risks_summary": "광섬유 모재 가격 하락 및 중국산 저가 광케이블 글로벌 유입 경쟁",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "시장 판도 레이더",
+          "news_title": "[호재] AI 데이터센터 초고속 광트랜시버 수요 폭증… 광통신 섹터 수급 유입",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=광통신+대한광통신+옵티코어",
+          "summary": "대장주: 옵티코어, 대한광통신 | 초고속 광전송 모듈 단가 상승으로 마진 회복세"
+        },
+        {
+          "date": "2026-10-30",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "전자신문",
+          "news_title": "[⚠️ 판가 악재] 중국 양쯔광학(YOFC) 저가 광섬유 덤핑 출회… 동남아 시장 판가 하락",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=광섬유+덤핑+판가하락+중국",
+          "summary": "범용 광케이블 제품의 판가 하락 압력으로 고부가가치 AI 데이터센터용 특수 광케이블 비중 확대 필요"
+        }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-14",
-        "stage": "협상단 파견 및 본계약 조율",
-        "press": "원자력뉴스",
-        "news_title": "팀코리아 체코 현지 최종 실무 협상단 파견… 금융·법률 조율 마무리 단계",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=체코+원전+팀코리아",
-        "key_point": "내년 초 본계약 목표 차질 없이 진행 중, 후속 호기 우선협상권 확보"
-      },
-      {
-        "date": "2026-08-25",
-        "stage": "SMR 제작 계약 체결",
-        "press": "글로벌에너지",
-        "news_title": "두산에너빌리티, 美 뉴스케일파워 SMR 단조 소재 첫 제작 착수",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=두산에너빌리티+SMR",
-        "key_point": "원자로 모듈 전용 제작 공장 가동, 글로벌 SMR 파운드리 1위 입지 선점"
-      }
-    ]
-  },
-  {
-    "theme_id": "custom_defense_2026",
-    "theme_name": "방산",
-    "sector": "주도 테마",
-    "pattern_type": "K-방산 글로벌 수주 랠리",
-    "score": 96,
-    "summary": "한화에어로스페이스, 현대로템, 한화시스템 동유럽 및 중동 수주 가시화",
-    "checklist": {
-      "material": "K-방산 2차 실행계약 및 나토 방위비 증액 수혜",
-      "leaders": {
-        "lead": "한화에어로스페이스",
-        "sub": "현대로템, 한화시스템, LIG넥스원, 한국항공우주"
-      },
-      "correlation": "폴란드·루마니아 본계약 체결로 실질 수출 매출 급증 밸류체인 직결",
-      "future_expectation": "미국 FCT 통과 및 중동 추가 수출 모멘텀",
-      "expiration_date": "중장기 1~2년 슈퍼사이클",
-      "chart_phase": "신고가 돌파 후 5일선 지지 국면"
+    {
+      "theme_id": "custom_1789701132438",
+      "theme_name": "우주항공",
+      "category": "항공우주",
+      "today_change_rate": "+3.50%",
+      "today_score": 88,
+      "lead_stocks": [
+        "한국항공우주",
+        "한화시스템",
+        "제노코",
+        "인텔리안테크"
+      ],
+      "risks_summary": "정부 R&D 예산 삭감 노이즈 및 저궤도 위성 안테나 글로벌 재고 조정",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "한국경제",
+          "news_title": "[호재] 우주항공청, 2027년 달착륙선 및 초소형 군집위성 발사 프로젝트 본궤도",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=한국항공우주+한화시스템+군집위성",
+          "summary": "민간 주도 우주산업(뉴 스페이스) 육성책 발표로 방산·항공 대형주 매수세 유입"
+        },
+        {
+          "date": "2026-10-29",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "머니투데이",
+          "news_title": "[⚠️ 실적 리스크] 원웹(OneWeb) 발사 일정 지연으로 지상국 위성 안테나 매출 인식 이연",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=위성안테나+원웹+매출이연+실적쇼크",
+          "summary": "글로벌 통신위성 발사체 공급 부족에 따른 납품 일정 순연으로 단기 분기 실적 일시적 둔화"
+        }
+      ]
     },
-    "timeline": [
-      {
-        "date": "2026-09-18",
-        "stage": "주도 테마 감지",
-        "press": "시장 판도 레이더",
-        "news_title": "[주도 섹터] K-방산 2차 수출 실행계약 임박 소식에 방산 대형주 랠리",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=%ED%95%9C%ED%99%94%EC%97%90%EC%96%B4%EB%A1%9C%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4",
-        "key_point": "대장주: 한화에어로스페이스 | 폴란드 및 루마니아 K9/천무 계약 최종 승인",
-        "stockName": "한화에어로스페이스",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "확산 | 수급집중"
-      },
-      {
-        "date": "2026-09-11",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 현대로템, 루마니아 국방부향 K2 전차 공급 기본계약 체결 완료 (2조 8,000억원)",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%ED%98%84%EB%8C%80%EB%A1%9C%ED%85%9C",
-        "key_point": "동유럽 나토 방어선 전력 증강 사업 일환, 1차 인도분 2027년 개시",
-        "stockName": "현대로템",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      },
-      {
-        "date": "2026-09-04",
-        "stage": "증권사 리포트",
-        "press": "한국투자증권 리포트",
-        "news_title": "[리포트] 한화시스템, K-방산 수출 다변화와 위성 레이다(SAR) 양산 체제 돌입",
-        "news_url": "https://finance.naver.com/research/company_list.naver?keyword=%ED%95%9C%ED%99%94%EC%8B%9C%EC%8A%A4%ED%85%9C",
-        "key_point": "투자의견: Buy(상향) | 목표주가: 28,000원 | 초소형 SAR 위성 및 다기능 레이다(MFR) 수주 급증",
-        "stockName": "한화시스템",
-        "is_dart": false,
-        "is_report": true,
-        "tag": "증권사 리서치"
-      },
-      {
-        "date": "2026-08-26",
-        "stage": "실시간 보도",
-        "press": "아시아경제",
-        "news_title": "LIG넥스원, 비궁 유도로켓 美 해군 FCT 최종 시험 통과… 미 국방부 구매 가시화",
-        "news_url": "https://search.naver.com/search.naver?where=news&query=LIG%EB%84%A5%EC%8A%A4%EC%9B%90",
-        "key_point": "한국산 유도무기 최초 미 본토 수출 쾌거 임박, 연간 5,000억원 이상 신규 매출원",
-        "stockName": "LIG넥스원",
-        "is_dart": false,
-        "is_report": false,
-        "tag": "실시간 보도"
-      },
-      {
-        "date": "2026-08-14",
-        "stage": "수주 공시",
-        "press": "DART 전자공시",
-        "news_title": "[공시] 한국항공우주, FA-50 경공격기 및 KF-21 초도양산 20대 납품 확정",
-        "news_url": "https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=%ED%95%9C%EA%B5%AD%ED%95%AD%EA%B3%B5%EC%9A%B0%EC%A3%BC",
-        "key_point": "방위사업청과 총 1조 9,600억원 규모 계약, 2026년 하반기 실전배치 개시",
-        "stockName": "한국항공우주",
-        "is_dart": true,
-        "is_report": false,
-        "tag": "수주 공시"
-      }
-    ],
-    "_asyncSupplementsLoaded": true
-  }
-]
+    {
+      "theme_id": "radar_178",
+      "theme_name": "전선",
+      "category": "인프라",
+      "today_change_rate": "+4.90%",
+      "today_score": 92,
+      "lead_stocks": [
+        "대한전선",
+        "가온전선",
+        "대원전선",
+        "LS전선"
+      ],
+      "risks_summary": "원자재 구리 가격 급등에 따른 운전자본 부담 및 초고압 해저케이블 시공 지연 리스크",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "파이낸셜뉴스",
+          "news_title": "[호재] 북미 배전망 교체 및 해상풍력 초고압 해저케이블 수주 러시",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=대한전선+해저케이블+초고압전선",
+          "summary": "대장주: 대한전선, 가온전선 | 고부가 HVDC 및 500kV 지중 케이블 수주잔고 사상 최대"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "아시아경제",
+          "news_title": "[⚠️ 원가 악재] 구리 가격 급등으로 전선업계 원자재 매입 부담 증가… 중소 전선사 한계 직면",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=전선업계+구리가격+운전자본부담",
+          "summary": "원가 상승분 판가 반영 시차로 인해 일부 중소 전선업체 단기 영업현금흐름 악화 가능성"
+        }
+      ]
+    },
+    {
+      "theme_id": "radar_92",
+      "theme_name": "통신장비",
+      "category": "통신",
+      "today_change_rate": "+3.40%",
+      "today_score": 86,
+      "lead_stocks": [
+        "쏠리드",
+        "에이스테크",
+        "케이엠더블유",
+        "RFHIC"
+      ],
+      "risks_summary": "해외 통신사 5G 기지국 투자 축소 및 적자 누적, GaN 반도체 벤더 수주 지연",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "시장 판도 레이더",
+          "news_title": "[호재] 방산용 레이더 및 군 전술통신망 장비 공급 확대로 통신장비사 턴어라운드",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=RFHIC+쏠리드+통신장비+방산",
+          "summary": "대장주: 쏠리드, RFHIC | 무선 통신 부진을 방산 질화갈륨(GaN) 전력증폭기 수주로 상쇄"
+        },
+        {
+          "date": "2026-10-30",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "비즈니스워치",
+          "news_title": "[⚠️ 적자 악재] 케이엠더블유 등 전통 필터·안테나 벤더 영업손실 지속… 재무건전성 경고",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=케이엠더블유+영업적자+재무리스크",
+          "summary": "글로벌 통신장비사향 직납 물량 감소로 고정비 부담 지속, 유상증자 가능성 주의 필요"
+        }
+      ]
+    },
+    {
+      "theme_id": "radar_269",
+      "theme_name": "LED장비",
+      "category": "IT부품",
+      "today_change_rate": "+2.80%",
+      "today_score": 84,
+      "lead_stocks": [
+        "서울반도체",
+        "루멘스",
+        "영우디에스피",
+        "프로텍"
+      ],
+      "risks_summary": "중국 디스플레이 업계의 저가 마이크로LED 패널 공세 및 글로벌 TV 세트 판매 둔화",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "시장 판도 레이더",
+          "news_title": "[호재] 마이크로LED 및 자동차 전장용 지능형 헤드램프 LED 채택율 급증",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=서울반도체+마이크로LED+전장",
+          "summary": "대장주: 서울반도체 | 고수익성 전장용 와이캅(WICOP) LED 특허 경쟁력 부각"
+        },
+        {
+          "date": "2026-10-29",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "디일렉",
+          "news_title": "[⚠️ 수요 악재] 글로벌 스마트워치 및 대형 TV용 마이크로LED 양산 원가 한계… 도입 시기 지연",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=마이크로LED+원가한계+양산지연",
+          "summary": "높은 칩 전사(Transfer) 비용으로 인해 프리미엄 가전 외 일반 상용화 확산 지체"
+        }
+      ]
+    },
+    {
+      "theme_id": "hair_loss_insurance",
+      "theme_name": "탈모 치료 건강보험 적용 검토",
+      "category": "정책/바이오",
+      "today_change_rate": "+4.10%",
+      "today_score": 87,
+      "lead_stocks": [
+        "바이오니아",
+        "현대약품",
+        "TS트릴리온",
+        "인벤티지랩"
+      ],
+      "risks_summary": "건강보험 재정 건전성 악화로 인한 실제 급여화 무산 또는 본인부담금 과다 책정 리스크",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "국회 의정속보",
+          "news_title": "[호재] 국회 보건복지위, 청년층 탈모 치료제 급여화 법안 공청회 개최 소식에 급등",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=탈모+건강보험+적용+바이오니아",
+          "summary": "대장주: 현대약품, 바이오니아 | 정책 추진 기대감으로 관련 치료제주 수급 유입"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "메디컬타임즈",
+          "news_title": "[⚠️ 정책 무산 리스크] 건보공단, 연간 재정 소요액 3천억 부담 난색… 건보 적용 백지화 가능성",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=탈모치료+건강보험+적용+무산+재정부담",
+          "summary": "생명 직결 질환 우선 원칙과의 형평성 논란으로 국회 최종 법안 통과 불확실성 상존"
+        }
+      ]
+    },
+    {
+      "theme_id": "power_grid_expansion",
+      "theme_name": "전기 전력망 & AI 초고압 송전",
+      "category": "인프라",
+      "today_change_rate": "+5.40%",
+      "today_score": 94,
+      "lead_stocks": [
+        "LS ELECTRIC",
+        "효성중공업",
+        "제룡전기",
+        "일진전기"
+      ],
+      "risks_summary": "미국 대선 이후 인프라 투자(IRA) 법안 보조금 재검토 노이즈 및 현지 생산 규제",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "매일경제",
+          "news_title": "[호재] 한전 56조 송배전망 투자 계획 가동… 고전압직류송전(HVDC) 국가기간망 발주",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=HVDC+국가기간망+초고압송전+LSELECTRIC",
+          "summary": "서해안 에너지고속도로 사업 본격화로 대형 변전소 및 전력기기 EPC 기업 동반 수혜"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "머니투데이",
+          "news_title": "[⚠️ 정책 리스크] 美 정부 전력망 보안 규제 강화… 외산 통신 모듈 탑재 변압기 검증 강화",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=미국+전력망+보안규제+변압기",
+          "summary": "미국 내 사이버 안보 인증 미취득 시 수주 물품 통관 및 납품 지연 리스크 주의"
+        }
+      ]
+    },
+    {
+      "theme_id": "robot_physical_ai",
+      "theme_name": "휴머노이드 로봇 & 피지컬 AI",
+      "category": "미래기술",
+      "today_change_rate": "+6.20%",
+      "today_score": 95,
+      "lead_stocks": [
+        "레인보우로보틱스",
+        "두산로보틱스",
+        "엔젤로보틱스",
+        "에스피지"
+      ],
+      "risks_summary": "대형주 중심 수급 쏠림으로 부품 후발주 거래대금 급감 및 외인 공매도 타깃 주의",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "조선비즈",
+          "news_title": "[호재] 엔비디아 '프로젝트 그루트' 파트너십 발표… 국내 정밀 감속기 수주 확대",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=피지컬AI+휴머노이드+에스피지",
+          "summary": "대장주: 레인보우로보틱스, 에스피지 | 피지컬 AI 액추에이터 및 정밀 하모닉 감속기 직납 기대"
+        },
+        {
+          "date": "2026-10-30",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "한국경제TV",
+          "news_title": "[⚠️ 단기 과열 리스크] 코스닥 로봇주 밸류에이션 부담 가중… 대주주 지분 매도(블록딜) 경계",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=로봇주+단기과열+블록딜+차익실현",
+          "summary": "주가 급등기에 나타나는 초기 투자 VC(벤처캐피탈) 의무보유등록 해제 및 차익실현 매물 경고"
+        }
+      ]
+    },
+    {
+      "theme_id": "nuclear_smr_power",
+      "theme_name": "원전 르네상스 & SMR 소형원자로",
+      "category": "원자력",
+      "today_change_rate": "+5.10%",
+      "today_score": 94,
+      "lead_stocks": [
+        "두산에너빌리티",
+        "우진엔텍",
+        "한신기계",
+        "일진파워"
+      ],
+      "risks_summary": "SMR 최초 상용 호기 인허가 규제 지연 및 발전 단가 상승에 따른 경제성 논란",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "서울경제",
+          "news_title": "[호재] 美 뉴스케일 파워 1호 SMR 기공식 확정… 두산에너빌리티 단조 원자로 압력용기 선적",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=SMR+두산에너빌리티+우진엔텍",
+          "summary": "글로벌 빅테크의 24/7 무탄소 전력원 채택으로 차세대 SMR 파운드리 수주 본격화"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "이데일리",
+          "news_title": "[⚠️ 규제 리스크] 미국 원자력규제위원회(NRC) SMR 설계변경 안전성 재심사 착수 소식",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=SMR+NRC+인허가지연+안전성논란",
+          "summary": "안전성 심사 장기화로 첫 상업운전 시점이 1년 지연될 경우 초기 설치 단가 상승 우려"
+        }
+      ]
+    },
+    {
+      "theme_id": "db_theme_1789557211351",
+      "theme_name": "원자력_원전 > 원자력 원전",
+      "category": "원자력",
+      "today_change_rate": "+4.40%",
+      "today_score": 93,
+      "lead_stocks": [
+        "두산에너빌리티",
+        "우진엔텍",
+        "비에이치아이"
+      ],
+      "risks_summary": "원전 수출국 간 금융지원 조건 경쟁 심화 및 환율 변동성 리스크",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "한국경제",
+          "news_title": "[호재] 한국-체코 원전 동맹 가동… 원전 계측제어 및 정비 솔루션 기업 동반 진출",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=우진엔텍+원전계측제어+체코진출",
+          "summary": "대장주: 두산에너빌리티, 우진엔텍 | 유럽 원전 르네상스 국면에서 K-원전 시공·정비 생태계 부각"
+        },
+        {
+          "date": "2026-10-30",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "뉴스1",
+          "news_title": "[⚠️ 금융조건 리스크] 유럽 환경단체 및 프랑스 전력공사(EDF) 이의제기 소송 제기",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=체코원전+EDF+소송+이의제기",
+          "summary": "탈락 경쟁사들의 유럽연합(EU) 반독점 및 정부보조금 규정 위반 제소로 인한 노이즈 발생"
+        }
+      ]
+    },
+    {
+      "theme_id": "radar_200",
+      "theme_name": "우주항공산업",
+      "category": "우주항공",
+      "today_change_rate": "+3.80%",
+      "today_score": 89,
+      "lead_stocks": [
+        "한국항공우주",
+        "한화에어로스페이스",
+        "켄코아에어로스페이스"
+      ],
+      "risks_summary": "군수용 헬기·전투기 납기 지연 배상금(지체상금) 청구 및 환율 급변동 리스크",
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "stage": "호재 뉴스",
+          "impact_type": "GOOD",
+          "press": "시장 판도 레이더",
+          "news_title": "[호재] K-방산 및 민간 우주로켓 고체연료 엔진 양산 승인 소식에 상승",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=한국항공우주+한화에어로스페이스+우주항공",
+          "summary": "대장주: 한국항공우주, 한화에어로스페이스 | 방산과 우주항공 복합 모멘텀 장착"
+        },
+        {
+          "date": "2026-10-31",
+          "stage": "⚠️ 악재·리스크",
+          "impact_type": "BAD",
+          "is_risk": true,
+          "press": "헤럴드경제",
+          "news_title": "[⚠️ 공급망 악재] 항공용 티타늄 및 특수합금 수급 불안정으로 납기 지연 우려",
+          "news_url": "https://search.naver.com/search.naver?where=news&query=항공우주+티타늄+원자재수급난",
+          "summary": "글로벌 항공기 부품 공급망 지연으로 단기 생산 지연 및 원가율 상승 가능성 주의"
+        }
+      ]
+    }
+  ]
+}
