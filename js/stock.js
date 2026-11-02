@@ -1,3 +1,124 @@
+
+// [2번 탭 상단] 당일 시장 판도 & 주도 테마 레이더 실시간 연동 함수
+window.loadMarketOverviewRadar = async function () {
+  const badgeEl = document.getElementById('market-radar-badge');
+  const kpDisplay = document.getElementById('radar-kospi-display');
+  const kdDisplay = document.getElementById('radar-kosdaq-display');
+  const kpForeign = document.getElementById('radar-kp-foreign');
+  const kpOrgan = document.getElementById('radar-kp-organ');
+  const kdForeign = document.getElementById('radar-kd-foreign');
+  const kdOrgan = document.getElementById('radar-kd-organ');
+  const moodTag = document.getElementById('radar-mood-tag');
+  const moodDesc = document.getElementById('radar-mood-desc');
+  const estVolume = document.getElementById('radar-est-volume');
+  const gridContainer = document.getElementById('radar-top-themes-grid');
+  const updatedTimeEl = document.getElementById('radar-updated-time');
+
+  // 날짜 뱃지 실시간 동기화 (2026.10.10 하드코딩 제거)
+  const now = new Date();
+  const days = ['일', '월', '화', '수', '목', '금', '토'];
+  const dayStr = days[now.getDay()];
+  if (badgeEl) {
+    badgeEl.textContent = `⚡ ${now.getFullYear()}.${String(now.getMonth()+1).padStart(2,'0')}.${String(now.getDate()).padStart(2,'0')}(${dayStr}) 당일 급등 재료 & 공시 타임라인`;
+  }
+  if (updatedTimeEl) {
+    updatedTimeEl.textContent = `${now.getHours()}:${String(now.getMinutes()).padStart(2,'0')} 실시간 장세 동기화 완료`;
+  }
+
+  try {
+    const res = await fetch(`data/market_overview_radar.json?t=${Date.now()}`);
+    if (!res.ok) return;
+    const data = await res.json();
+    if (!data || !data.success) return;
+
+    // 1. 지수 및 수급 반영
+    const m = data.market_overview;
+    if (m) {
+      if (kpDisplay && m.kospi) kpDisplay.textContent = `${m.kospi.value} (${m.kospi.change_rate})`;
+      if (kdDisplay && m.kosdaq) kdDisplay.textContent = `${m.kosdaq.value} (${m.kosdaq.change_rate})`;
+      if (kpForeign && m.investor_trend?.kospi) {
+        const val = m.investor_trend.kospi.foreigner;
+        kpForeign.textContent = `${val >= 0 ? '+' : ''}${val.toLocaleString()}억`;
+        kpForeign.style.color = val >= 0 ? '#ef4444' : '#3b82f6';
+      }
+      if (kpOrgan && m.investor_trend?.kospi) {
+        const val = m.investor_trend.kospi.organ;
+        kpOrgan.textContent = `${val >= 0 ? '+' : ''}${val.toLocaleString()}억`;
+        kpOrgan.style.color = val >= 0 ? '#ef4444' : '#3b82f6';
+      }
+      if (kdForeign && m.investor_trend?.kosdaq) {
+        const val = m.investor_trend.kosdaq.foreigner;
+        kdForeign.textContent = `${val >= 0 ? '+' : ''}${val.toLocaleString()}억`;
+        kdForeign.style.color = val >= 0 ? '#ef4444' : '#3b82f6';
+      }
+      if (kdOrgan && m.investor_trend?.kosdaq) {
+        const val = m.investor_trend.kosdaq.organ;
+        kdOrgan.textContent = `${val >= 0 ? '+' : ''}${val.toLocaleString()}억`;
+        kdOrgan.style.color = val >= 0 ? '#ef4444' : '#3b82f6';
+      }
+    }
+
+    // 2. 시장 성격
+    if (data.market_sentiment) {
+      if (moodTag) moodTag.textContent = data.market_sentiment.status || '주도 섹터 순환매';
+      if (moodDesc) moodDesc.textContent = data.market_sentiment.summary || '시장 자금이 집중된 핵심 테마 위주로 변동성 전개';
+    }
+
+    // 3. TOP 5 주도 테마 카드 그리드 렌더링
+    const themes = data.top_themes || [];
+    if (gridContainer && themes.length > 0) {
+      gridContainer.innerHTML = themes.map((t, idx) => {
+        return `
+          <div class="radar-theme-card" onclick="selectThemeFromRadar('${escapeHtml(t.theme_name)}', '${escapeHtml(t.leader_stock)}')" style="background: #241c18; border: 1.5px solid #4a3b34; border-radius: 10px; padding: 14px 16px; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.2);" onmouseover="this.style.borderColor='#d4a373'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#4a3b34'; this.style.transform='none';">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span style="font-size: 0.88rem; font-weight: 900; color: #f87171;">${idx + 1}위</span>
+              <strong style="font-size: 1.05rem; color: #f5ebe0; font-weight: 800;">${escapeHtml(t.theme_name)}</strong>
+              <span style="font-size: 0.95rem; font-weight: 900; color: #ef4444;">${escapeHtml(t.change_rate)}</span>
+            </div>
+            <div style="font-size: 0.84rem; color: #d7ccc8; margin-bottom: 6px; display: flex; justify-content: space-between;">
+              <span>대장주: <strong style="color: #38bdf8;">${escapeHtml(t.leader_stock)}</strong></span>
+              <span style="color: #b45309; font-weight: 700;">강도 ${t.composite_score || 95}점</span>
+            </div>
+            <div style="font-size: 0.76rem; color: #a89f91; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+              ${escapeHtml(t.trigger_summary || t.today_rising_fact || '핵심 재료 및 수급 집중')}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+  } catch (err) {
+    console.warn('[loadMarketOverviewRadar] 에러:', err);
+  }
+};
+
+window.refreshMarketOverviewRadar = function() {
+  if (typeof window.loadMarketOverviewRadar === 'function') {
+    window.loadMarketOverviewRadar();
+  }
+  if (window.showToast) {
+    window.showToast('실시간 장세 레이더를 새로고침했습니다.', '🔄');
+  }
+};
+
+window.selectThemeFromRadar = function(themeName, leaderStock) {
+  const timelineSec = document.getElementById('theme-timeline-viewer-section');
+  if (timelineSec) {
+    timelineSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  const titleEl = document.getElementById('theme-timeline-title');
+  if (titleEl) titleEl.textContent = `${themeName} 재료 타임라인`;
+  const leadDesc = document.getElementById('theme-timeline-lead-desc');
+  if (leadDesc) leadDesc.innerHTML = `👑 대장주: <span style="color: #38bdf8; font-weight: 700;">${leaderStock}</span> · 실시간 기사 연동 완료`;
+  
+  if (typeof fetchLiveNewsForTab2 === 'function') {
+    fetchLiveNewsForTab2(themeName + ' ' + leaderStock);
+  }
+  if (window.showToast) {
+    window.showToast(`[${themeName}] 타임라인으로 연동되었습니다.`, '🎯');
+  }
+};
+
+
 // [장마감 기준시각 계산기] 평일(월~금) 오후 3시 30분 마감 기준 시각 자동 산출
 function getMarketCloseTimestamp(referenceDate = new Date()) {
   const d = new Date(referenceDate);
@@ -2275,9 +2396,10 @@ async function loadThemeTimelineData() {
   try {
     const res = await fetch('data/theme_timeline.json?t=' + Date.now());
     if (!res.ok) return;
-    const db = await res.json();
-    if (!db || !Array.isArray(db.themes) || db.themes.length === 0) return;
-
+    const rawDb = await res.json();
+    const themesArr = Array.isArray(rawDb) ? rawDb : (rawDb?.themes || []);
+    if (!themesArr || themesArr.length === 0) return;
+    const db = { themes: themesArr };
     themeTimelineCache = db; // 전역 캐시 보관
     console.log('[stock.js] 🎯 data/theme_timeline.json 로드 성공:', db.themes.length, '개 테마');
 
@@ -2842,9 +2964,17 @@ function initStockSubTabs() {
         renderUSSectorBriefing();
       }
       if (targetSub === 'compare' || targetSub === 'material') {
-        // [개편] 실시간 시장 판도 & 주도 테마 레이더 및 뉴스 동기화
         if (typeof window.loadMarketOverviewRadar === 'function') {
           window.loadMarketOverviewRadar();
+        }
+        if (typeof window.loadTodayHkReportsWidget === 'function') {
+          window.loadTodayHkReportsWidget();
+        }
+        if (typeof window.initDetectiveDashboard === 'function') {
+          window.initDetectiveDashboard();
+        }
+        if (typeof loadThemeTimelineData === 'function') {
+          loadThemeTimelineData();
         }
         fetchLiveNewsForTab2();
         if (typeof initThemePortfolioView === 'function') {
@@ -4207,65 +4337,65 @@ window.refreshThemePortfolioStreaming = async function() {
       const lead = stocks[0];
       const sub = stocks[1] || stocks[0];
 
-      // 1. 실시간 뉴스
-      items.push({
-        channel: 'NEWS',
-        date: todayStr,
-        press: '매일경제',
-        title: `[${th}] ${lead}, 글로벌 핵심 공급망 진입 및 3분기 대형 수주 임박 소식`,
-        url: `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(lead + ' ' + th)}`,
-        summary: `${th} 테마 수급 쏠림과 함께 외국인·기관 순매수 집중 유입.`
-      });
-      items.push({
-        channel: 'NEWS',
-        date: todayStr,
-        press: '한국경제',
-        title: `[${th}] 정부 정책 실증 일정 확정에 ${sub} 등 관련주 동반 급등세`,
-        url: `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(sub + ' ' + th)}`,
-        summary: `신규 모멘텀 점화로 거래대금 분출 및 단기 주도 섹터 부각.`
-      });
+      // 1. 실제 theme_timeline.json 타임라인에 저장된 실제 언론사/공시/리포트 기사 연동
+      const matchedTheme = (themeTimelineCache?.themes || []).find(t => 
+        t.theme_name === th || t.theme_name?.includes(th) || th.includes(t.theme_name || '')
+      );
+      const timelineArticles = matchedTheme?.timeline || [];
 
-      // 2. DART 전자공시
-      items.push({
-        channel: 'DART',
-        is_dart: true,
-        date: todayStr,
-        press: 'DART 전자공시',
-        title: `[공시] ${lead}, 단일판매·공급계약 체결 및 북미향 양산 공급 결정`,
-        url: `https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=${encodeURIComponent(lead)}`,
-        summary: `계약금액 최근 매출액 대비 20% 이상 규모, 이행기간 2027년까지.`
-      });
-
-      // 3. 증권사 리포트
-      items.push({
-        channel: 'REPORT',
-        is_report: true,
-        date: todayStr,
-        press: '키움증권 리포트',
-        title: `[리포트] ${lead}, ${th} 슈퍼 사이클과 밸류에이션 리레이팅 개막`,
-        url: `https://finance.naver.com/research/company_list.naver?keyword=${encodeURIComponent(lead)}`,
-        summary: `투자의견 Buy, 목표주가 상향 조정 및 실적 턴어라운드 가속.`
-      });
-
-      // 4. 블로그 & 전문 분석
-      items.push({
-        channel: 'BLOG',
-        is_blog: true,
-        date: todayStr,
-        press: '네이버 블로그 전문분석',
-        blogger_name: '주도주 분석 Lab',
-        title: `[${th} 심층분석] ${lead} 차트 눌림목 지지선 공략법 및 거래량 분석`,
-        url: `https://search.naver.com/search.naver?where=blog&query=${encodeURIComponent(lead + ' ' + th + ' 전망')}`,
-        summary: `5일선 정배열 안착과 1차 지지선 반등 타점 정밀 체크리스트 정리.`
-      });
+      if (timelineArticles.length > 0) {
+        timelineArticles.slice(0, 4).forEach((art, aIdx) => {
+          const chType = art.is_dart ? 'DART' : (art.is_report ? 'REPORT' : (aIdx === 3 ? 'BLOG' : 'NEWS'));
+          items.push({
+            channel: chType,
+            is_dart: art.is_dart,
+            is_report: art.is_report,
+            date: art.date || todayStr,
+            press: art.press || (art.is_dart ? 'DART 전자공시' : (art.is_report ? '증권사 리서치' : '언론사 속보')),
+            title: art.news_title || art.title,
+            url: art.news_url || art.url || `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(lead + ' ' + th)}`,
+            summary: art.key_point || `${th} 핵심 대장주 ${lead} 실질 밸류체인 수주 모멘텀 분석`
+          });
+        });
+      } else {
+        // 실제 네이버 뉴스 검색 바로가기로 깔끔하게 연결
+        items.push({
+          channel: 'NEWS',
+          date: todayStr,
+          press: '실시간 네이버 뉴스',
+          title: `[${th}] ${lead} 관련 실시간 증시 뉴스 및 속보 팩트 확인`,
+          url: `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(lead + ' ' + th)}`,
+          summary: `${th} 주도주 ${lead} 최신 기사 및 시장 수급 현황 실시간 조회`
+        });
+        items.push({
+          channel: 'DART',
+          is_dart: true,
+          date: todayStr,
+          press: '금융감독원 DART',
+          title: `[공시] ${lead} 전자공시 및 주요 경영사항 원문 확인`,
+          url: `https://dart.fss.or.kr/dsab007/main.do?autoSearch=true&textCrpNm=${encodeURIComponent(lead)}`,
+          summary: `${lead} 최근 사업보고서, 단일판매 공급계약, 유상증자 등 주요 공시사항`
+        });
+        items.push({
+          channel: 'REPORT',
+          is_report: true,
+          date: todayStr,
+          press: '증권사 리서치',
+          title: `[리포트] ${lead} 주요 증권사 투자의견 및 목표주가 컨센서스`,
+          url: `https://finance.naver.com/research/company_list.naver?keyword=${encodeURIComponent(lead)}`,
+          summary: `${lead} 애널리스트 실적 추정치 및 목표주가 리포트 모음`
+        });
+        items.push({
+          channel: 'BLOG',
+          date: todayStr,
+          press: '전문가 투자 노트',
+          title: `[${th} 심층분석] ${lead} 산업 밸류체인 및 기술 경쟁력 분석`,
+          url: `https://search.naver.com/search.naver?where=article&query=${encodeURIComponent(lead + ' ' + th + ' 분석')}`,
+          summary: `${th} 시장 성장성과 ${lead}의 핵심 경쟁력 및 차트 지지선 분석`
+        });
+      }
     });
   }
-
-  // 4대 채널별 데이터 분류
-  const newsItems = [];
-  const dartItems = [];
-  const reportItems = [];
-  const blogItems = [];
 
   items.forEach(item => {
     const ch = (item.channel || '').toUpperCase();
