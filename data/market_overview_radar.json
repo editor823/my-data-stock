@@ -1,6 +1,6 @@
 {
   "success": true,
-  "updated_at": "2026-11-02T11:30:12.802Z",
+  "updated_at": "2026-11-02T21:50:38.480Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
@@ -65,7 +65,7 @@
         "title": "[특징주] 워트, SK하이닉스와 반도체 장비 공급계약…8억5946만원 규모",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=724203",
-        "published_at": "2026-11-02T11:30:10.912Z"
+        "published_at": "2026-11-02T21:50:35.992Z"
       },
       "timeline": []
     },
@@ -110,7 +110,7 @@
         "title": "[특징주] 상장 첫날 35% 급등한 디티에스, 이틀째 11%대 급락",
         "press": "증시 속보",
         "url": "https://www.ajunews.com/view/20261026134420927",
-        "published_at": "2026-11-02T11:30:11.218Z"
+        "published_at": "2026-11-02T21:50:36.440Z"
       },
       "timeline": []
     },
@@ -155,7 +155,7 @@
         "title": "[ET특징주]한화오션, 장비 국산화에 상승세",
         "press": "증시 속보",
         "url": "https://www.etnews.com/20261102000252",
-        "published_at": "2026-11-02T11:30:11.513Z"
+        "published_at": "2026-11-02T21:50:36.892Z"
       },
       "timeline": []
     },
@@ -200,7 +200,7 @@
         "title": "[오늘의 특징주] 샘표·샘표식품 동반 상한가…한국철강 공개매수에 급...",
         "press": "증시 속보",
         "url": "https://www.ppss.kr/news/articleView.html?idxno=318564",
-        "published_at": "2026-11-02T11:30:11.865Z"
+        "published_at": "2026-11-02T21:50:37.317Z"
       },
       "timeline": []
     },
@@ -233,26 +233,26 @@
           "rate": "+7.0%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] AI 우려 딛고 5800선 탈환...기관 1.2조 매수에 반도체 반등 : 특징주로는 샘표와 샘표식품이 합병 소식을 밝히면서 나란히 상한가를 기록했다. 한진칼은 전 거래일보다 8.80% 상승했다. 호반그룹이 추가 지분 매수로 한진그룹 조원태 회장 측 지분율을 넘어섰다는 보도가 나오...",
+      "past_trigger_reason": "[속보 기사] 한진칼, 호반·조원태 지분 경쟁 부각에 애프터마켓 16% 급등 : 호반그룹이 한진그룹 지주사 한진칼의 최대주주가 될 가능성이 제기된 가운데 조원태 한진그룹 회장도 추가 지분 확보에 나서면서 한진칼 주가가 애프터마켓에서 급등했다. 양측의 지분 경쟁이 본격화할 수 있다는 기대...",
       "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
       "trading_value_eok": 1749,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[마켓펄스] AI 우려 딛고 5800선 탈환...기관 1.2조 매수에 반도체 반등",
-      "today_rising_fact": "[속보 기사] AI 우려 딛고 5800선 탈환...기관 1.2조 매수에 반도체 반등 : 특징주로는 샘표와 샘표식품이 합병 소식을 밝히면서 나란히 상한가를 기록했다. 한진칼은 전 거래일보다 8.80% 상승했다. 호반그룹이 추가 지분 매수로 한진그룹 조원태 회장 측 지분율을 넘어섰다는 보도가 나오...",
+      "trigger_summary": "[특징주] 한진칼, 호반·조원태 지분 경쟁 부각에 애프터마켓 16% 급등",
+      "today_rising_fact": "[속보 기사] 한진칼, 호반·조원태 지분 경쟁 부각에 애프터마켓 16% 급등 : 호반그룹이 한진그룹 지주사 한진칼의 최대주주가 될 가능성이 제기된 가운데 조원태 한진그룹 회장도 추가 지분 확보에 나서면서 한진칼 주가가 애프터마켓에서 급등했다. 양측의 지분 경쟁이 본격화할 수 있다는 기대...",
       "top_article": {
-        "title": "[마켓펄스] AI 우려 딛고 5800선 탈환...기관 1.2조 매수에 반도체 반등",
+        "title": "[특징주] 한진칼, 호반·조원태 지분 경쟁 부각에 애프터마켓 16% 급등",
         "press": "증시 속보",
-        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130548",
-        "published_at": "2026-11-02T11:30:12.204Z"
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=7982",
+        "published_at": "2026-11-02T21:50:37.741Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1793619012448_7ckj",
+      "theme_id": "pb_1793656238053_6lcu",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[ET특징주]한화오션, 장비 국산화에 상승세",
         "press": "증시 속보",
         "url": "https://www.etnews.com/20261102000252",
-        "published_at": "2026-11-02T11:30:12.448Z"
+        "published_at": "2026-11-02T21:50:38.053Z"
       }
     },
     {
-      "theme_id": "pb_1793619012802_evik",
+      "theme_id": "pb_1793656238480_kkne",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
         "press": "증시 속보",
         "url": "https://www.newspim.com/news/view/20261102000307",
-        "published_at": "2026-11-02T11:30:12.802Z"
+        "published_at": "2026-11-02T21:50:38.480Z"
       }
     }
   ],

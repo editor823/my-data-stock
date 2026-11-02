@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-02T11:30:12.848Z",
+  "updatedAt": "2026-11-02T21:50:38.518Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-11-02",
   "latestVideo": {
     "hasVideo": true,
-    "id": "ROHCkDlEZMQ",
-    "title": "지금 증시에서 홀짝 게임을 하고 계십니까? 갉아먹히는 시장",
-    "published_kst": "2026-11-02 18:06:56",
-    "url": "https://www.youtube.com/watch?v=ROHCkDlEZMQ"
+    "id": "NWWXKDBXIJ0",
+    "title": "내일 관심테마! 애플,팔란티어는 과연 증시를..?! 중간선거도 이어서 옵니다/반도체,소부장,신규상장,보안 ,조선/삼성전���,SK하이닉스,원익홀딩스,영광,한진칼,삼성전기,래블업",
+    "published_kst": "2026-11-02 21:01:23",
+    "url": "https://www.youtube.com/watch?v=NWWXKDBXIJ0"
   },
   "morningVideo": {
     "hasVideo": true,
@@ -33,17 +33,20 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "b_kZ-puFfKw",
-    "title": "내일 관심테마! 공포의 월요일...중간선거 이후 방향성은 어디로 ?? /반도체,햇지,보안 /삼성전자,SK하이닉스,안랩,라온시큐어,라온로보틱스,원익홀딩스,인텔리빅스,한화비전,삼성전기",
-    "published_kst": "2026-11-01 15:34:08",
-    "url": "https://www.youtube.com/watch?v=b_kZ-puFfKw",
+    "id": "NWWXKDBXIJ0",
+    "title": "내일 관심테마! 애플,팔란티어는 과연 증시를..?! 중간선거도 이어서 옵니다/반도체,소부장,신규상장,보안 ,조선/삼성전���,SK하이닉스,원익홀딩스,영광,한진칼,삼성전기,래블업",
+    "published_kst": "2026-11-02 21:01:23",
+    "url": "https://www.youtube.com/watch?v=NWWXKDBXIJ0",
     "themes": [
-      "공포의 월요일...중간선거 이후 방향성은 어디로 ??"
+      "애플",
+      "팔란티어는 과연 증시를..?! 중간선거도 이어서 옵니다"
     ],
     "stocks": [
       "반도체",
-      "햇지",
-      "보안"
+      "소부장",
+      "신규상장",
+      "보안",
+      "조선"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(한화오션, SK하이닉스 등) 외국인·기관 순매수 집중",
