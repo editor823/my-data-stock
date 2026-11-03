@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-03T03:58:13.862Z",
+  "updated_at": "2026-11-03T15:23:37.866Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "-3.36%",
+      "change_rate": "-3.59%",
       "is_up": false
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "-3.42%",
+      "change_rate": "-4.08%",
       "is_up": false
     },
     "investor_trend": {
@@ -28,44 +28,44 @@
       "theme_id": "radar_166",
       "theme_name": "항공/저가 항공사",
       "full_theme_name": "항공/저가 항공사(LCC)",
-      "change_rate": "+4.89%",
+      "change_rate": "+4.78%",
       "composite_score": 94,
       "total_stocks_count": 9,
       "leader_stock": "한진칼",
       "leader_ratio": 29.97,
-      "sub_leader_stock": "아시아나항공",
+      "sub_leader_stock": "AK홀딩스",
       "other_stocks": [
-        "대한항공",
-        "진에어",
-        "티웨이홀딩스"
+        "아시아나항공",
+        "트리니티항공",
+        "제주항공"
       ],
       "sub_stocks_top3": [
         {
+          "name": "AK홀딩스",
+          "rate": "+5.5%"
+        },
+        {
           "name": "아시아나항공",
-          "rate": "+3.6%"
+          "rate": "+2.1%"
         },
         {
-          "name": "대한항공",
-          "rate": "+3.5%"
-        },
-        {
-          "name": "진에어",
-          "rate": "+2.5%"
+          "name": "트리니티항공",
+          "rate": "+1.9%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는... : ◆ 기관, 대한항공 순매수 1위 유지…래블업 순매도 선두 오전 11시 11분 기준 기관 순매수 상위 5개 종목은 △대한항공 △루닛(328130) △미래에셋증권2우B(00680K) △삼성중공업(010140) ...",
+      "past_trigger_reason": "[속보 기사] 대덕전자·한진칼·아시아나IDT : 빅터뉴스 김두윤 기자 3일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 대덕전자, 한진칼, 아시아나IDT이 특징주로 꼽혔다. ■ 대덕전자(353200, 전기·...",
       "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3218,
+      "trading_value_eok": 3884,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는...",
-      "today_rising_fact": "[속보 기사] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는... : ◆ 기관, 대한항공 순매수 1위 유지…래블업 순매도 선두 오전 11시 11분 기준 기관 순매수 상위 5개 종목은 △대한항공 △루닛(328130) △미래에셋증권2우B(00680K) △삼성중공업(010140) ...",
+      "trigger_summary": "[오늘의 특징주] 대덕전자·한진칼·아시아나IDT",
+      "today_rising_fact": "[속보 기사] 대덕전자·한진칼·아시아나IDT : 빅터뉴스 김두윤 기자 3일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 대덕전자, 한진칼, 아시아나IDT이 특징주로 꼽혔다. ■ 대덕전자(353200, 전기·...",
       "top_article": {
-        "title": "[특징주] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는...",
+        "title": "[오늘의 특징주] 대덕전자·한진칼·아시아나IDT",
         "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=726411",
-        "published_at": "2026-11-03T03:58:11.861Z"
+        "url": "https://www.bigtanews.co.kr/article/view/big202611030022",
+        "published_at": "2026-11-03T15:23:34.937Z"
       },
       "timeline": []
     },
@@ -73,186 +73,186 @@
       "theme_id": "radar_55",
       "theme_name": "보안주",
       "full_theme_name": "보안주(정보)",
-      "change_rate": "+1.39%",
-      "composite_score": 77,
+      "change_rate": "+0.93%",
+      "composite_score": 75,
       "total_stocks_count": 52,
       "leader_stock": "한싹",
       "leader_ratio": 29.96,
       "sub_leader_stock": "파수AI",
       "other_stocks": [
         "에스투더블유",
-        "페스카로",
-        "지니언스"
+        "싸이버원",
+        "페스카로"
       ],
       "sub_stocks_top3": [
         {
           "name": "파수AI",
-          "rate": "+16.7%"
+          "rate": "+17.6%"
         },
         {
           "name": "에스투더블유",
-          "rate": "+15.9%"
+          "rate": "+11.7%"
         },
         {
-          "name": "페스카로",
-          "rate": "+9.9%"
+          "name": "싸이버원",
+          "rate": "+7.4%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 파수AI, 금융투자업계 연쇄 해킹 소식에 장중 20%대 강세 : 이날 파수AI를 비롯한 한싹, 지니언스, 안랩 등 보안주 전반의 동반 급등세는 최근 주요 증권사에서 발생한 연쇄적인 해킹 사고가 직접적인 촉매제로 작용했다. 한양증권은 지난달 29일 외부 그룹웨어 솔루션에 ...",
+      "past_trigger_reason": "[속보 기사] 금융권 해킹 사고에 보안주 강세…한싹·파수AI 나란히 급등 : 금융권에서 해킹과 개인정보 유출 사고가 잇따르면서 정보보안 관련주에 매수세가 몰린 가운데 한싹과 파수AI가 3일 나란히 급등했다. 금융회사와 기업들의 보안 시스템 강화 및 관련 투자 확대 기대가 투자심리를 ...",
       "future_momentum": "보안주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1989,
+      "trading_value_eok": 2335,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "[특징주] 파수AI, 금융투자업계 연쇄 해킹 소식에 장중 20%대 강세",
-      "today_rising_fact": "[속보 기사] 파수AI, 금융투자업계 연쇄 해킹 소식에 장중 20%대 강세 : 이날 파수AI를 비롯한 한싹, 지니언스, 안랩 등 보안주 전반의 동반 급등세는 최근 주요 증권사에서 발생한 연쇄적인 해킹 사고가 직접적인 촉매제로 작용했다. 한양증권은 지난달 29일 외부 그룹웨어 솔루션에 ...",
+      "trigger_summary": "[특징주] 금융권 해킹 사고에 보안주 강세…한싹·파수AI 나란히 급등",
+      "today_rising_fact": "[속보 기사] 금융권 해킹 사고에 보안주 강세…한싹·파수AI 나란히 급등 : 금융권에서 해킹과 개인정보 유출 사고가 잇따르면서 정보보안 관련주에 매수세가 몰린 가운데 한싹과 파수AI가 3일 나란히 급등했다. 금융회사와 기업들의 보안 시스템 강화 및 관련 투자 확대 기대가 투자심리를 ...",
       "top_article": {
-        "title": "[특징주] 파수AI, 금융투자업계 연쇄 해킹 소식에 장중 20%대 강세",
+        "title": "[특징주] 금융권 해킹 사고에 보안주 강세…한싹·파수AI 나란히 급등",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=302683",
-        "published_at": "2026-11-03T03:58:12.222Z"
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8014",
+        "published_at": "2026-11-03T15:23:35.436Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_585",
-      "theme_name": "김밥",
-      "full_theme_name": "김밥(냉동김밥 등)",
-      "change_rate": "+2.36%",
-      "composite_score": 50,
+      "theme_id": "radar_30",
+      "theme_name": "조선",
+      "full_theme_name": "조선",
+      "change_rate": "+1.19%",
+      "composite_score": 59,
       "total_stocks_count": 6,
-      "leader_stock": "한울앤제주",
-      "leader_ratio": 29.99,
-      "sub_leader_stock": "CJ씨푸드",
+      "leader_stock": "HD한국조선해양",
+      "leader_ratio": 3.61,
+      "sub_leader_stock": "HJ중공업",
       "other_stocks": [
-        "사조대림",
-        "우양",
-        "풀무원"
+        "삼성중공업",
+        "대한조선",
+        "HD현대중공업"
       ],
       "sub_stocks_top3": [
         {
-          "name": "CJ씨푸드",
-          "rate": "0.0%"
+          "name": "HJ중공업",
+          "rate": "+1.7%"
         },
         {
-          "name": "사조대림",
-          "rate": "-0.8%"
+          "name": "삼성중공업",
+          "rate": "+1.5%"
         },
         {
-          "name": "우양",
-          "rate": "-1.9%"
+          "name": "대한조선",
+          "rate": "+1.4%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ... : 한울앤제주는 20.30% 상승한 1,055원에 거래됐다. 최근 최대주주와 경영진의 주식 매입, 주식병합 결정 등 주가 안정화 조치가 부각된 영향으로 풀이된다. 한울앤제주는 지난달 29일 5대 1 주식병합을 ...",
-      "future_momentum": "김밥 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 36,
+      "past_trigger_reason": "[속보 기사] 영광, 코스닥 상장 첫날 78%대 급등…공모가 웃돌아 : 영광은 조선·해양 및 플랜트 분야에서 대형 기자재와 모듈을 제작·공급하는 기업이다. 선박 엔진룸과 선각 블록, 연료가스 공급 시스템 등을 모듈 형태로 제작하고 있으며 HD현대중공업과 삼성중공업, 한화오션 등...",
+      "future_momentum": "조선 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2838,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "영광, 코스닥 상장 첫날 78%대 급등…공모가 웃돌아[특징주]",
+      "today_rising_fact": "[속보 기사] 영광, 코스닥 상장 첫날 78%대 급등…공모가 웃돌아 : 영광은 조선·해양 및 플랜트 분야에서 대형 기자재와 모듈을 제작·공급하는 기업이다. 선박 엔진룸과 선각 블록, 연료가스 공급 시스템 등을 모듈 형태로 제작하고 있으며 HD현대중공업과 삼성중공업, 한화오션 등...",
+      "top_article": {
+        "title": "영광, 코스닥 상장 첫날 78%대 급등…공모가 웃돌아[특징주]",
+        "press": "증시 속보",
+        "url": "https://www.newsway.co.kr/news/view?ud=2026110209182531992",
+        "published_at": "2026-11-03T15:23:35.943Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_507",
+      "theme_name": "마이데이터",
+      "full_theme_name": "마이데이터",
+      "change_rate": "+0.61%",
+      "composite_score": 57,
+      "total_stocks_count": 12,
+      "leader_stock": "파수AI",
+      "leader_ratio": 17.57,
+      "sub_leader_stock": "파이오링크",
+      "other_stocks": [
+        "아이지넷",
+        "NICE평가정보",
+        "아톤"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "파이오링크",
+          "rate": "+4.7%"
+        },
+        {
+          "name": "아이지넷",
+          "rate": "+1.4%"
+        },
+        {
+          "name": "NICE평가정보",
+          "rate": "+0.9%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 금융권 해킹 사고에 보안주 강세…한싹·파수AI 나란히 급등 : 금융권에서 해킹과 개인���보 유출 사고가 잇따르면서 정보보안 관련주에 매수세가 몰린 가운데 한싹과 파수AI가 3일 나란히 급등했다. 금융회사와 기업들의 보안 시스템 강화 및 관련 투자 확대 기대가 투자심리...",
+      "future_momentum": "마이데이터 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1494,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 금융권 해킹 사고에 보안주 강세…한싹·파수AI 나란히 급등",
+      "today_rising_fact": "[속보 기사] 금융권 해킹 사고에 보안주 강세…한싹·파수AI 나란히 급등 : 금융권에서 해킹과 개인���보 유출 사고가 잇따르면서 정보보안 관련주에 매수세가 몰린 가운데 한싹과 파수AI가 3일 나란히 급등했다. 금융회사와 기업들의 보안 시스템 강화 및 관련 투자 확대 기대가 투자심리...",
+      "top_article": {
+        "title": "[특징주] 금융권 해킹 사고에 보안주 강세…한싹·파수AI 나란히 급등",
+        "press": "증시 속보",
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8014",
+        "published_at": "2026-11-03T15:23:36.409Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_232",
+      "theme_name": "미디어",
+      "full_theme_name": "미디어(방송/신문)",
+      "change_rate": "+2.35%",
+      "composite_score": 50,
+      "total_stocks_count": 12,
+      "leader_stock": "아시아경제",
+      "leader_ratio": 29.96,
+      "sub_leader_stock": "CJ ENM",
+      "other_stocks": [
+        "한국경제TV",
+        "티비씨",
+        "애니플러스"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "CJ ENM",
+          "rate": "+0.7%"
+        },
+        {
+          "name": "한국경제TV",
+          "rate": "+0.7%"
+        },
+        {
+          "name": "티비씨",
+          "rate": "+0.5%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 효성중공업, 지멘스와 디지털 전력망 협력 : 아시아경제와 뉴스핌의 30일 보도에 따르면 양사는 서울에서 협약을 체결했다. 협력 분야는 디지털 자산관리, 디지털 변전소, 데이터센터 통합 전력 솔루션이다. 디지털 자산관리 분야에서는 효성중공업의 전력설비 ...",
+      "future_momentum": "미디어 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 46,
       "is_real_leading": false,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[오늘의 특징주] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ...",
-      "today_rising_fact": "[속보 기사] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ... : 한울앤제주는 20.30% 상승한 1,055원에 거래됐다. 최근 최대주주와 경영진의 주식 매입, 주식병합 결정 등 주가 안정화 조치가 부각된 영향으로 풀이된다. 한울앤제주는 지난달 29일 5대 1 주식병합을 ...",
+      "trigger_summary": "[특징주] 효성중공업, 지멘스와 디지털 전력망 협력",
+      "today_rising_fact": "[속보 기사] 효성중공업, 지멘스와 디지털 전력망 협력 : 아시아경제와 뉴스핌의 30일 보도에 따르면 양사는 서울에서 협약을 체결했다. 협력 분야는 디지털 자산관리, 디지털 변전소, 데이터센터 통합 전력 솔루션이다. 디지털 자산관리 분야에서는 효성중공업의 전력설비 ...",
       "top_article": {
-        "title": "[오늘의 특징주] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ...",
+        "title": "[특징주] 효성중공업, 지멘스와 디지털 전력망 협력",
         "press": "증시 속보",
-        "url": "https://www.ppss.kr/news/articleView.html?idxno=318713",
-        "published_at": "2026-11-03T03:58:12.536Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_86",
-      "theme_name": "주류업",
-      "full_theme_name": "주류업(주정, 에탄올 등)",
-      "change_rate": "+1.97%",
-      "composite_score": 50,
-      "total_stocks_count": 13,
-      "leader_stock": "한울앤제주",
-      "leader_ratio": 29.99,
-      "sub_leader_stock": "무학",
-      "other_stocks": [
-        "창해에탄올",
-        "MH에탄올",
-        "보해양조"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "무학",
-          "rate": "+0.8%"
-        },
-        {
-          "name": "창해에탄올",
-          "rate": "+0.3%"
-        },
-        {
-          "name": "MH에탄올",
-          "rate": "+0.2%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ... : 한울앤제주는 20.30% 상승한 1,055원에 거래됐다. 최근 최대주주와 경영진의 주식 매입, 주식병합 결정 등 주가 안정화 조치가 부각된 영향으로 풀이된다. 한울앤제주는 지난달 29일 5대 1 주식병합을 ...",
-      "future_momentum": "주류업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 43,
-      "is_real_leading": false,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[��늘의 특징주] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ...",
-      "today_rising_fact": "[속보 기사] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ... : 한울앤제주는 20.30% 상승한 1,055원에 거래됐다. 최근 최대주주와 경영진의 주식 매입, 주식병합 결정 등 주가 안정화 조치가 부각된 영향으로 풀이된다. 한울앤제주는 지난달 29일 5대 1 주식병합을 ...",
-      "top_article": {
-        "title": "[��늘의 특징주] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ...",
-        "press": "증시 속보",
-        "url": "https://www.ppss.kr/news/articleView.html?idxno=318713",
-        "published_at": "2026-11-03T03:58:12.800Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_63",
-      "theme_name": "제지",
-      "full_theme_name": "제지",
-      "change_rate": "+1.82%",
-      "composite_score": 50,
-      "total_stocks_count": 14,
-      "leader_stock": "깨끗한나라",
-      "leader_ratio": 29.95,
-      "sub_leader_stock": "에스엠국일",
-      "other_stocks": [
-        "한국수출포장",
-        "무림페이퍼",
-        "무림P&P"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "에스엠국일",
-          "rate": "+2.5%"
-        },
-        {
-          "name": "한국수출포장",
-          "rate": "+1.3%"
-        },
-        {
-          "name": "무림페이퍼",
-          "rate": "+0.6%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ... : 깨끗한나라우와 깨끗한나라는 소형 우선주를 중심으로 수급이 몰렸으며 바이오·우주항공 관련주와 재무구조 개선에 나선 기업들도 상승 종목에 이름을 올렸다. AI가 해킹까지 자동화한다…사이버보안주 동반 강세 파수A...",
-      "future_momentum": "제지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 42,
-      "is_real_leading": false,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[��늘의 특징주] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ...",
-      "today_rising_fact": "[속보 기사] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ... : 깨끗한나라우와 깨끗한나라는 소형 우선주를 중심으로 수급이 몰렸으며 바이오·우주항공 관련주와 재무구조 개선에 나선 기업들도 상승 종목에 이름을 올렸다. AI가 해킹까지 자동화한다…사이버보안주 동반 강세 파수A...",
-      "top_article": {
-        "title": "[��늘의 특징주] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ...",
-        "press": "증시 속보",
-        "url": "https://www.ppss.kr/news/articleView.html?idxno=318713",
-        "published_at": "2026-11-03T03:58:13.147Z"
+        "url": "https://www.vegannews.co.kr/news/article.html?no=398444",
+        "published_at": "2026-11-03T15:23:36.891Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1793678293510_cca1",
+      "theme_id": "pb_1793719417386_nxf9",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=726411",
-        "published_at": "2026-11-03T03:58:13.510Z"
+        "published_at": "2026-11-03T15:23:37.386Z"
       }
     },
     {
-      "theme_id": "pb_1793678293862_ib0p",
+      "theme_id": "pb_1793719417866_zhrc",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
         "press": "증시 속보",
         "url": "https://www.newspim.com/news/view/20261102000307",
-        "published_at": "2026-11-03T03:58:13.862Z"
+        "published_at": "2026-11-03T15:23:37.866Z"
       }
     }
   ],
