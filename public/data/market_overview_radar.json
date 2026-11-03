@@ -1,16 +1,16 @@
 {
   "success": true,
-  "updated_at": "2026-11-02T21:50:38.480Z",
+  "updated_at": "2026-11-03T03:58:13.862Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "+2.24%",
-      "is_up": true
+      "change_rate": "-3.36%",
+      "is_up": false
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "+1.38%",
-      "is_up": true
+      "change_rate": "-3.42%",
+      "is_up": false
     },
     "investor_trend": {
       "kospi": {
@@ -25,250 +25,250 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_560",
-      "theme_name": "냉각시스템",
-      "full_theme_name": "냉각시스템(액침냉각 등)",
-      "change_rate": "+5.79%",
-      "composite_score": 99,
-      "total_stocks_count": 13,
-      "leader_stock": "워트",
-      "leader_ratio": 29.92,
-      "sub_leader_stock": "3S",
-      "other_stocks": [
-        "한화에어로스페이스",
-        "GST",
-        "S-Oil"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "3S",
-          "rate": "+13.5%"
-        },
-        {
-          "name": "한화에어로스페이스",
-          "rate": "+5.9%"
-        },
-        {
-          "name": "GST",
-          "rate": "+5.3%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 워트, SK하이닉스와 반도체 장비 공급계약…8억5946만원 규모 : 워트(396470)가 SK하이닉스와 8억5946만원 규모의 초정밀항온항습제어장치(THC) 공급계약을 체결했다. 지난해 연결 매출액의 5.65%에 해당하는 규모다. ◆ SK하이닉스에 THC 공급…매출액 대비 ...",
-      "future_momentum": "냉각시스템 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3718,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 워트, SK하이닉스와 반도체 장비 공급계약…8억5946만원 규모",
-      "today_rising_fact": "[속보 기사] 워트, SK하이닉스와 반도체 장비 공급계약…8억5946만원 규모 : 워트(396470)가 SK하이닉스와 8억5946만원 규모의 초정밀항온항습제어장치(THC) 공급계약을 체결했다. 지난해 연결 매출액의 5.65%에 해당하는 규모다. ◆ SK하이닉스에 THC 공급…매출액 대비 ...",
-      "top_article": {
-        "title": "[특징주] 워트, SK하이닉스와 반도체 장비 공급계약…8억5946만원 규모",
-        "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=724203",
-        "published_at": "2026-11-02T21:50:35.992Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_381",
-      "theme_name": "LNG",
-      "full_theme_name": "LNG(액화천연가스)",
-      "change_rate": "+5.14%",
-      "composite_score": 96,
-      "total_stocks_count": 27,
-      "leader_stock": "디티에스",
-      "leader_ratio": 29.77,
-      "sub_leader_stock": "한화엔진",
-      "other_stocks": [
-        "일승",
-        "대한해운",
-        "삼성중공업"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "한화엔진",
-          "rate": "+9.9%"
-        },
-        {
-          "name": "일승",
-          "rate": "+9.3%"
-        },
-        {
-          "name": "대한해운",
-          "rate": "+8.4%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 상장 첫날 35% 급등한 디티에스, 이틀째 11%대 급락 : 아주경제=신동근 기자 sdk6425@ajunews.com 코스닥 상장 첫날 35% 넘게 급등했던 디티에스가 상장 두 번째 거래일인 26일 11%대 하락세를 보이고 있다. 26일 한국거래소에 따르면 이날 오후...",
-      "future_momentum": "LNG 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2818,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 상장 첫날 35% 급등한 디티에스, 이틀째 11%대 급락",
-      "today_rising_fact": "[속보 기사] 상장 첫날 35% 급등한 디티에스, 이틀째 11%대 급락 : 아주경제=신동근 기자 sdk6425@ajunews.com 코스닥 상장 첫날 35% 넘게 급등했던 디티에스가 상장 두 번째 거래일인 26일 11%대 하락세를 보이고 있다. 26일 한국거래소에 따르면 이날 오후...",
-      "top_article": {
-        "title": "[특징주] 상장 첫날 35% 급등한 디티에스, 이틀째 11%대 급락",
-        "press": "증시 속보",
-        "url": "https://www.ajunews.com/view/20261026134420927",
-        "published_at": "2026-11-02T21:50:36.440Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_30",
-      "theme_name": "조선",
-      "full_theme_name": "조선",
-      "change_rate": "+6.84%",
-      "composite_score": 93,
-      "total_stocks_count": 6,
-      "leader_stock": "한화오션",
-      "leader_ratio": 10.8,
-      "sub_leader_stock": "삼성중공업",
-      "other_stocks": [
-        "HD한국조선해양",
-        "HJ중공업",
-        "HD현대중공업"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "삼성중공업",
-          "rate": "+8.2%"
-        },
-        {
-          "name": "HD한국조선해양",
-          "rate": "+7.3%"
-        },
-        {
-          "name": "HJ중공업",
-          "rate": "+5.1%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 한화오션, 장비 국산화에 상승세 : 한화오션이 장비 국산화 소식에 상승세다. 한화오션(042660)은 11월 2일 오후 1시 15분 기준 전 거래일보다 10.6% 상승한 55,300원에 거래되고 있다. 한화오션은 전날 국방과학연구소(ADD)와...",
-      "future_momentum": "조선 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4459,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[ET특징주]한화오션, 장비 국산화에 상승세",
-      "today_rising_fact": "[속보 기사] 한화오션, 장비 국산화에 상승세 : 한화오션이 장비 국산화 소식에 상승세다. 한화오션(042660)은 11월 2일 오후 1시 15분 기준 전 거래일보다 10.6% 상승한 55,300원에 거래되고 있다. 한화오션은 전날 국방과학연구소(ADD)와...",
-      "top_article": {
-        "title": "[ET특징주]한화오션, 장비 국산화에 상승세",
-        "press": "증시 속보",
-        "url": "https://www.etnews.com/20261102000252",
-        "published_at": "2026-11-02T21:50:36.892Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_94",
-      "theme_name": "조선기자재",
-      "full_theme_name": "조선기자재",
-      "change_rate": "+5.34%",
-      "composite_score": 92,
-      "total_stocks_count": 38,
-      "leader_stock": "영광",
-      "leader_ratio": 18.24,
-      "sub_leader_stock": "HD현대마린엔진",
-      "other_stocks": [
-        "태광",
-        "성광벤드",
-        "현대힘스"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "HD현대마린엔진",
-          "rate": "+15.8%"
-        },
-        {
-          "name": "태광",
-          "rate": "+15.2%"
-        },
-        {
-          "name": "성광벤드",
-          "rate": "+13.7%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 샘표·샘표식품 동반 상한가…한국철강 공개매수에 급... : 2일 국내 증시에서는 샘표(007540), 샘표식품(248170), 한국철강(104700), KISCO홀딩스(001940), 영광, SGA솔루션즈(184230) 등이 강세를 보였다. 샘표와 샘표식품은... ...",
-      "future_momentum": "조선기자재 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 12708,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[오늘의 특징주] 샘표·샘표식품 동반 상한가…한국철강 공개매수에 급...",
-      "today_rising_fact": "[속보 기사] 샘표·샘표식품 동반 상한가…한국철강 공개매수에 급... : 2일 국내 증시에서는 샘표(007540), 샘표식품(248170), 한국철강(104700), KISCO홀딩스(001940), 영광, SGA솔루션즈(184230) 등이 강세를 보였다. 샘표와 샘표식품은... ...",
-      "top_article": {
-        "title": "[오늘의 특징주] 샘표·샘표식품 동반 상한가…한국철강 공개매수에 급...",
-        "press": "증시 속보",
-        "url": "https://www.ppss.kr/news/articleView.html?idxno=318564",
-        "published_at": "2026-11-02T21:50:37.317Z"
-      },
-      "timeline": []
-    },
-    {
       "theme_id": "radar_166",
       "theme_name": "항공/저가 항공사",
       "full_theme_name": "항공/저가 항공사(LCC)",
-      "change_rate": "+6.16%",
-      "composite_score": 89,
+      "change_rate": "+4.89%",
+      "composite_score": 94,
       "total_stocks_count": 9,
       "leader_stock": "한진칼",
-      "leader_ratio": 16.3,
-      "sub_leader_stock": "대한항공",
+      "leader_ratio": 29.97,
+      "sub_leader_stock": "아시아나항공",
       "other_stocks": [
-        "아시아나항공",
-        "제주항공",
-        "진에어"
+        "대한항공",
+        "진에어",
+        "티웨이홀딩스"
       ],
       "sub_stocks_top3": [
         {
-          "name": "대한항공",
-          "rate": "+8.1%"
-        },
-        {
           "name": "아시아나항공",
-          "rate": "+7.9%"
+          "rate": "+3.6%"
         },
         {
-          "name": "제주항공",
-          "rate": "+7.0%"
+          "name": "대한항공",
+          "rate": "+3.5%"
+        },
+        {
+          "name": "진에어",
+          "rate": "+2.5%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 한진칼, 호반·조원태 지분 경쟁 부각에 애프터마켓 16% 급등 : 호반그룹이 한진그룹 지주사 한진칼의 최대주주가 될 가능성이 제기된 가운데 조원태 한진그룹 회장도 추가 지분 확보에 나서면서 한진칼 주가가 애프터마켓에서 급등했다. 양측의 지분 경쟁이 본격화할 수 있다는 기대...",
+      "past_trigger_reason": "[속보 기사] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는... : ◆ 기관, 대한항공 순매수 1위 유지…래블업 순매도 선두 오전 11시 11분 기준 기관 순매수 상위 5개 종목은 △대한항공 △루닛(328130) △미래에셋증권2우B(00680K) △삼성중공업(010140) ...",
       "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1749,
+      "trading_value_eok": 3218,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 한진칼, 호반·조원태 지분 경쟁 부각에 애프터마켓 16% 급등",
-      "today_rising_fact": "[속보 기사] 한진칼, 호반·조원태 지분 경쟁 부각에 애프터마켓 16% 급등 : 호반그룹이 한진그룹 지주사 한진칼의 최대주주가 될 가능성이 제기된 가운데 조원태 한진그룹 회장도 추가 지분 확보에 나서면서 한진칼 주가가 애프터마켓에서 급등했다. 양측의 지분 경쟁이 본격화할 수 있다는 기대...",
+      "trigger_summary": "[특징주] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는...",
+      "today_rising_fact": "[속보 기사] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는... : ◆ 기관, 대한항공 순매수 1위 유지…래블업 순매도 선두 오전 11시 11분 기준 기관 순매수 상위 5개 종목은 △대한항공 △루닛(328130) △미래에셋증권2우B(00680K) △삼성중공업(010140) ...",
       "top_article": {
-        "title": "[특징주] 한진칼, 호반·조원태 지분 경쟁 부각에 애프터마켓 16% 급등",
+        "title": "[특징주] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는...",
         "press": "증시 속보",
-        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=7982",
-        "published_at": "2026-11-02T21:50:37.741Z"
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=726411",
+        "published_at": "2026-11-03T03:58:11.861Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_55",
+      "theme_name": "보안주",
+      "full_theme_name": "보안주(정보)",
+      "change_rate": "+1.39%",
+      "composite_score": 77,
+      "total_stocks_count": 52,
+      "leader_stock": "한싹",
+      "leader_ratio": 29.96,
+      "sub_leader_stock": "파수AI",
+      "other_stocks": [
+        "에스투더블유",
+        "페스카로",
+        "지니언스"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "파수AI",
+          "rate": "+16.7%"
+        },
+        {
+          "name": "에스투더블유",
+          "rate": "+15.9%"
+        },
+        {
+          "name": "페스카로",
+          "rate": "+9.9%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 파수AI, 금융투자업계 연쇄 해킹 소식에 장중 20%대 강세 : 이날 파수AI를 비롯한 한싹, 지니언스, 안랩 등 보안주 전반의 동반 급등세는 최근 주요 증권사에서 발생한 연쇄적인 해킹 사고가 직접적인 촉매제로 작용했다. 한양증권은 지난달 29일 외부 그룹웨어 솔루션에 ...",
+      "future_momentum": "보안주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1989,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 파수AI, 금융투자업계 연쇄 해킹 소식에 장중 20%대 강세",
+      "today_rising_fact": "[속보 기사] 파수AI, 금융투자업계 연쇄 해킹 소식에 장중 20%대 강세 : 이날 파수AI를 비롯한 한싹, 지니언스, 안랩 등 보안주 전반의 동반 급등세는 최근 주요 증권사에서 발생한 연쇄적인 해킹 사고가 직접적인 촉매제로 작용했다. 한양증권은 지난달 29일 외부 그룹웨어 솔루션에 ...",
+      "top_article": {
+        "title": "[특징주] 파수AI, 금융투자업계 연쇄 해킹 소식에 장중 20%대 강세",
+        "press": "증시 속보",
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=302683",
+        "published_at": "2026-11-03T03:58:12.222Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_585",
+      "theme_name": "김밥",
+      "full_theme_name": "김밥(냉동김밥 등)",
+      "change_rate": "+2.36%",
+      "composite_score": 50,
+      "total_stocks_count": 6,
+      "leader_stock": "한울앤제주",
+      "leader_ratio": 29.99,
+      "sub_leader_stock": "CJ씨푸드",
+      "other_stocks": [
+        "사조대림",
+        "우양",
+        "풀무원"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "CJ씨푸드",
+          "rate": "0.0%"
+        },
+        {
+          "name": "사조대림",
+          "rate": "-0.8%"
+        },
+        {
+          "name": "우양",
+          "rate": "-1.9%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ... : 한울앤제주는 20.30% 상승한 1,055원에 거래됐다. 최근 최대주주와 경영진의 주식 매입, 주식병합 결정 등 주가 안정화 조치가 부각된 영향으로 풀이된다. 한울앤제주는 지난달 29일 5대 1 주식병합을 ...",
+      "future_momentum": "김밥 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 36,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[오늘의 특징주] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ...",
+      "today_rising_fact": "[속보 기사] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ... : 한울앤제주는 20.30% 상승한 1,055원에 거래됐다. 최근 최대주주와 경영진의 주식 매입, 주식병합 결정 등 주가 안정화 조치가 부각된 영향으로 풀이된다. 한울앤제주는 지난달 29일 5대 1 주식병합을 ...",
+      "top_article": {
+        "title": "[오늘의 특징주] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ...",
+        "press": "증시 속보",
+        "url": "https://www.ppss.kr/news/articleView.html?idxno=318713",
+        "published_at": "2026-11-03T03:58:12.536Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_86",
+      "theme_name": "주류업",
+      "full_theme_name": "주류업(주정, 에탄올 등)",
+      "change_rate": "+1.97%",
+      "composite_score": 50,
+      "total_stocks_count": 13,
+      "leader_stock": "한울앤제주",
+      "leader_ratio": 29.99,
+      "sub_leader_stock": "무학",
+      "other_stocks": [
+        "창해에탄올",
+        "MH에탄올",
+        "보해양조"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "무학",
+          "rate": "+0.8%"
+        },
+        {
+          "name": "창해에탄올",
+          "rate": "+0.3%"
+        },
+        {
+          "name": "MH에탄올",
+          "rate": "+0.2%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ... : 한울앤제주는 20.30% 상승한 1,055원에 거래됐다. 최근 최대주주와 경영진의 주식 매입, 주식병합 결정 등 주가 안정화 조치가 부각된 영향으로 풀이된다. 한울앤제주는 지난달 29일 5대 1 주식병합을 ...",
+      "future_momentum": "주류업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 43,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[��늘의 특징주] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ...",
+      "today_rising_fact": "[속보 기사] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ... : 한울앤제주는 20.30% 상승한 1,055원에 거래됐다. 최근 최대주주와 경영진의 주식 매입, 주식병합 결정 등 주가 안정화 조치가 부각된 영향으로 풀이된다. 한울앤제주는 지난달 29일 5대 1 주식병합을 ...",
+      "top_article": {
+        "title": "[��늘의 특징주] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ...",
+        "press": "증시 속보",
+        "url": "https://www.ppss.kr/news/articleView.html?idxno=318713",
+        "published_at": "2026-11-03T03:58:12.800Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_63",
+      "theme_name": "제지",
+      "full_theme_name": "제지",
+      "change_rate": "+1.82%",
+      "composite_score": 50,
+      "total_stocks_count": 14,
+      "leader_stock": "깨끗한나라",
+      "leader_ratio": 29.95,
+      "sub_leader_stock": "에스엠국일",
+      "other_stocks": [
+        "한국수출포장",
+        "무림페이퍼",
+        "무림P&P"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "에스엠국일",
+          "rate": "+2.5%"
+        },
+        {
+          "name": "한국수출포장",
+          "rate": "+1.3%"
+        },
+        {
+          "name": "무림페이퍼",
+          "rate": "+0.6%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ... : 깨끗한나라우와 깨끗한나라는 소형 우선주를 중심으로 수급이 몰렸으며 바이오·우주항공 관련주와 재무구조 개선에 나선 기업들도 상승 종목에 이름을 올렸다. AI가 해킹까지 자동화한다…사이버보안주 동반 강세 파수A...",
+      "future_momentum": "제지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 42,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[��늘의 특징주] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ...",
+      "today_rising_fact": "[속보 기사] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ... : 깨끗한나라우와 깨끗한나라는 소형 우선주를 중심으로 수급이 몰렸으며 바이오·우주항공 관련주와 재무구조 개선에 나선 기업들도 상승 종목에 이름을 올렸다. AI가 해킹까지 자동화한다…사이버보안주 동반 강세 파수A...",
+      "top_article": {
+        "title": "[��늘의 특징주] 한진칼·대한항공우 급등...파수AI·한싹 등 보안주도 ...",
+        "press": "증시 속보",
+        "url": "https://www.ppss.kr/news/articleView.html?idxno=318713",
+        "published_at": "2026-11-03T03:58:13.147Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1793656238053_6lcu",
+      "theme_id": "pb_1793678293510_cca1",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
       "ma5_recovered": true,
       "period_range": "최근 1.5개월 (기준봉 상단 지지선)",
-      "past_trigger_reason": "[속보 기사] 한화오션, 장비 국산화에 상승세 : 한화오션이 장비 국산화 소식에 상승세다. 한화오션(042660)은 11월 2일 오후 1시 15분 기준 전 거래일보다 10.6% 상승한 55,300원에 거래되고 있다. 한화오션은 전날 국방과학연구소(ADD)와...",
+      "past_trigger_reason": "[속보 기사] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는... : 외국인 순매도 상위 종목은 △삼성전자(005930) △빛과전자 △대우건설(047040) △한화오션(042660) △서울반도체(046890) 순이었다. 삼성전자는 오전 9시 26분부터 11시 11분까지 세 차...",
       "future_momentum": "글로벌 신조선가 지수 연중 최고치 경신 및 LNG 운반선·친환경 컨테이너선 후속 대량 수주 기대감",
       "top_article": {
-        "title": "[ET특징주]한화오션, 장비 국산화에 상승세",
+        "title": "[특징주] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는...",
         "press": "증시 속보",
-        "url": "https://www.etnews.com/20261102000252",
-        "published_at": "2026-11-02T21:50:38.053Z"
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=726411",
+        "published_at": "2026-11-03T03:58:13.510Z"
       }
     },
     {
-      "theme_id": "pb_1793656238480_kkne",
+      "theme_id": "pb_1793678293862_ib0p",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
         "press": "증시 속보",
         "url": "https://www.newspim.com/news/view/20261102000307",
-        "published_at": "2026-11-02T21:50:38.480Z"
+        "published_at": "2026-11-03T03:58:13.862Z"
       }
     }
   ],
