@@ -1,6 +1,6 @@
 {
   "success": true,
-  "updated_at": "2026-11-04T11:19:32.785Z",
+  "updated_at": "2026-11-04T19:56:17.272Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
@@ -65,7 +65,7 @@
         "title": "[특징주] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주...",
         "press": "증시 속보",
         "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8057",
-        "published_at": "2026-11-04T11:19:30.292Z"
+        "published_at": "2026-11-04T19:56:14.796Z"
       },
       "timeline": []
     },
@@ -110,7 +110,7 @@
         "title": "[특징주]삼성SDI, 외국인 450억 원 순매수에 10% 올라…이차전지주 동반...",
         "press": "증시 속보",
         "url": "https://www.namdonews.com/news/articleView.html?idxno=928177",
-        "published_at": "2026-11-04T11:19:30.771Z"
+        "published_at": "2026-11-04T19:56:15.262Z"
       },
       "timeline": []
     },
@@ -155,7 +155,7 @@
         "title": "[특징주] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주...",
         "press": "증시 속보",
         "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8057",
-        "published_at": "2026-11-04T11:19:31.093Z"
+        "published_at": "2026-11-04T19:56:15.615Z"
       },
       "timeline": []
     },
@@ -200,7 +200,7 @@
         "title": "[오늘의 특징주] 대명에너지·케이엔알시스템·에스피소프트",
         "press": "증시 속보",
         "url": "https://www.bigtanews.co.kr/article/view/big202611040022",
-        "published_at": "2026-11-04T11:19:31.531Z"
+        "published_at": "2026-11-04T19:56:16.020Z"
       },
       "timeline": []
     },
@@ -245,14 +245,14 @@
         "title": "[마켓펄스] 美 블루웨이브에 AI 관련주 '흔들'...친환경·2차전지주는 '...",
         "press": "증시 속보",
         "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130609",
-        "published_at": "2026-11-04T11:19:31.916Z"
+        "published_at": "2026-11-04T19:56:16.438Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1793791172354_j88e",
+      "theme_id": "pb_1793822176864_ccnq",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=726411",
-        "published_at": "2026-11-04T11:19:32.354Z"
+        "published_at": "2026-11-04T19:56:16.864Z"
       }
     },
     {
-      "theme_id": "pb_1793791172785_ia5v",
+      "theme_id": "pb_1793822177272_5jn1",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
         "press": "증시 속보",
         "url": "https://www.newspim.com/news/view/20261102000307",
-        "published_at": "2026-11-04T11:19:32.785Z"
+        "published_at": "2026-11-04T19:56:17.272Z"
       }
     }
   ],

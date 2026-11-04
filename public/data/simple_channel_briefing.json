@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-04T11:19:32.830Z",
+  "updatedAt": "2026-11-04T19:56:17.304Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-11-04",
   "latestVideo": {
     "hasVideo": true,
-    "id": "4exvKwCnRko",
-    "title": "지수가 1시 40분부터 돌린 이유 / 증시에서 불확실성이 언제 해소되는가 ! 에 대한 관점",
-    "published_kst": "2026-11-04 19:09:29",
-    "url": "https://www.youtube.com/watch?v=4exvKwCnRko"
+    "id": "cC6zPqeE6jM",
+    "title": "내일 관심테마! 큰 불확실성 해소! 이후 시장관심은 종전,실적 /반도체,소부장,태양광,2차전지,재건/삼성전자,SK하이닉스,삼성sdi,한화솔루션,한진칼,삼성E&A,코리아써키트,심텍",
+    "published_kst": "2026-11-04 20:57:38",
+    "url": "https://www.youtube.com/watch?v=cC6zPqeE6jM"
   },
   "morningVideo": {
     "hasVideo": true,
@@ -33,20 +33,20 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "NWWXKDBXIJ0",
-    "title": "내일 관심테마! 애플,팔란티어는 과연 증시를..?! 중간선거도 이어서 옵니다/반도체,소부장,신규상장,보안 ,조선/삼성전자,SK하이닉스,원익홀딩스,영광,한진칼,삼성전기,래블업",
-    "published_kst": "2026-11-02 21:01:23",
-    "url": "https://www.youtube.com/watch?v=NWWXKDBXIJ0",
+    "id": "cC6zPqeE6jM",
+    "title": "내일 관심테마! 큰 불확실성 해소! 이후 시장관심은 종전,실적 /반도체,소부장,태양광,2차전지,재건/삼성전자,SK하이닉스,삼성sdi,한화솔루션,한진칼,삼성E&A,코리아써키트,심텍",
+    "published_kst": "2026-11-04 20:57:38",
+    "url": "https://www.youtube.com/watch?v=cC6zPqeE6jM",
     "themes": [
-      "애플",
-      "팔란티어는 과연 증시를..?! 중간선거도 이어서 옵니다"
+      "큰 불확실성 해소! 이후 시장관심은 종전",
+      "실적"
     ],
     "stocks": [
       "반도체",
       "소부장",
-      "신규상장",
-      "보안",
-      "조선"
+      "태양광",
+      "2차전지",
+      "재건"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(한화오션, SK하이닉스 등) 외국인·기관 순매수 집중",
