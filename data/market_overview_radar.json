@@ -1,16 +1,16 @@
 {
   "success": true,
-  "updated_at": "2026-11-04T03:04:39.422Z",
+  "updated_at": "2026-11-04T11:19:32.785Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "-3.46%",
-      "is_up": false
+      "change_rate": "+0.62%",
+      "is_up": true
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "-2.7%",
-      "is_up": false
+      "change_rate": "+1.5%",
+      "is_up": true
     },
     "investor_trend": {
       "kospi": {
@@ -25,47 +25,137 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_517",
-      "theme_name": "전후 재건",
-      "full_theme_name": "전후 재건(우크라/중동 전쟁 등)",
-      "change_rate": "+1.11%",
-      "composite_score": 76,
-      "total_stocks_count": 40,
-      "leader_stock": "대동금속",
-      "leader_ratio": 29.85,
-      "sub_leader_stock": "대동기어",
+      "theme_id": "radar_559",
+      "theme_name": "고체산화물 연료전지",
+      "full_theme_name": "고체산화물 연료전지(SOFC)",
+      "change_rate": "+9.77%",
+      "composite_score": 99,
+      "total_stocks_count": 14,
+      "leader_stock": "금양그린파워",
+      "leader_ratio": 20.68,
+      "sub_leader_stock": "비나텍",
       "other_stocks": [
-        "TYM",
-        "대동",
-        "파라텍"
+        "두산퓨얼셀",
+        "아모센스",
+        "한선엔지니어링"
       ],
       "sub_stocks_top3": [
         {
-          "name": "대동기어",
-          "rate": "+22.2%"
+          "name": "비나텍",
+          "rate": "+14.5%"
         },
         {
-          "name": "TYM",
-          "rate": "+12.7%"
+          "name": "두산퓨얼셀",
+          "rate": "+13.4%"
         },
         {
-          "name": "대동",
-          "rate": "+8.7%"
+          "name": "아모센스",
+          "rate": "+13.4%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 농기계 수출 확대 기대감에 관련株 '대동금속·대동기어' 30%↑ : 이날 한국거래소에 따르면 오전 9시 39분 기준 대동금속은 전 거래일 대비 29.85% 오른 2575원에 거래 중이다. 대동기어도 전 거래일 대비 29.83% 상승한 6790원에 거래되며 상한가를 기록했다....",
-      "future_momentum": "전후 재건 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2590,
+      "past_trigger_reason": "[속보 기사] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주... : 코스닥시장에서는 대명에너지가 가격제한폭까지 치솟아 1만3천750원을 기록하고 있으며, 금양그린파워도 19.91% 급등한 7천770원에 거래를 마쳤다. 이번 강세는 미국 중간선거 결과에 따른 청정에너지 정책 ...",
+      "future_momentum": "고체산화물 연료전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2121,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] 농기계 수출 확대 기대감에 관련株 '대동금속·대동기어' 30%↑",
-      "today_rising_fact": "[속보 기사] 농기계 수출 확대 기대감에 관련株 '대동금속·대동기어' 30%↑ : 이날 한국거래소에 따르면 오전 9시 39분 기준 대동금속은 전 거래일 대비 29.85% 오른 2575원에 거래 중이다. 대동기어도 전 거래일 대비 29.83% 상승한 6790원에 거래되며 상한가를 기록했다....",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주...",
+      "today_rising_fact": "[속보 기사] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주... : 코스닥시장에서는 대명에너지가 가격제한폭까지 치솟아 1만3천750원을 기록하고 있으며, 금양그린파워도 19.91% 급등한 7천770원에 거래를 마쳤다. 이번 강세는 미국 중간선거 결과에 따른 청정에너지 정책 ...",
       "top_article": {
-        "title": "[특징주] 농기계 수출 확대 기대감에 관련株 '대동금속·대동기어' 30%↑",
+        "title": "[특징주] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주...",
         "press": "증시 속보",
-        "url": "https://www.newspim.com/news/view/20261104000274",
-        "published_at": "2026-11-04T03:04:37.376Z"
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8057",
+        "published_at": "2026-11-04T11:19:30.292Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_579",
+      "theme_name": "2차전지",
+      "full_theme_name": "2차전지(나트륨이온)",
+      "change_rate": "+7.86%",
+      "composite_score": 99,
+      "total_stocks_count": 9,
+      "leader_stock": "삼성SDI",
+      "leader_ratio": 12.59,
+      "sub_leader_stock": "에코프로비엠",
+      "other_stocks": [
+        "에코프로",
+        "더블유씨피",
+        "애경케미칼"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "에코프로비엠",
+          "rate": "+11.1%"
+        },
+        {
+          "name": "에코프로",
+          "rate": "+10.8%"
+        },
+        {
+          "name": "더블유씨피",
+          "rate": "+9.6%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 삼성SDI, 외국인 450억 원 순매수에 10% 올라…이차전지주 동반... : 외국인 순매수와 이차전지주 전반의 강세가 맞물리며 삼성SDI가 10%대 오른 채 장을 마쳤다. 4일 유가증권시장에서 삼성SDI는 전 거래일보다 10.33% 오른 53만9,000원에 장을 마쳤다. 투자자별로는...",
+      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 12655,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주]삼성SDI, 외국인 450억 원 순매수에 10% 올라…이차전지주 동반...",
+      "today_rising_fact": "[속보 기사] 삼성SDI, 외국인 450억 원 순매수에 10% 올라…이차전지주 동반... : 외국인 순매수와 이차전지주 전반의 강세가 맞물리며 삼성SDI가 10%대 오른 채 장을 마쳤다. 4일 유가증권시장에서 삼성SDI는 전 거래일보다 10.33% 오른 53만9,000원에 장을 마쳤다. 투자자별로는...",
+      "top_article": {
+        "title": "[특징주]삼성SDI, 외국인 450억 원 순매수에 10% 올라…이차전지주 동반...",
+        "press": "증시 속보",
+        "url": "https://www.namdonews.com/news/articleView.html?idxno=928177",
+        "published_at": "2026-11-04T11:19:30.771Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_329",
+      "theme_name": "전력저장장치",
+      "full_theme_name": "전력저장장치(ESS)",
+      "change_rate": "+7.09%",
+      "composite_score": 99,
+      "total_stocks_count": 42,
+      "leader_stock": "금양그린파워",
+      "leader_ratio": 20.68,
+      "sub_leader_stock": "한중엔시에스",
+      "other_stocks": [
+        "지에프아이",
+        "HD현대에너지솔루션",
+        "신성에스티"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "한중엔시에스",
+          "rate": "+18.6%"
+        },
+        {
+          "name": "지에프아이",
+          "rate": "+18.0%"
+        },
+        {
+          "name": "HD현대에너지솔루션",
+          "rate": "+15.8%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주... : 코스닥시장에서는 대명에너지가 가격제한폭까지 치솟아 1만3천750원을 기록하고 있으며, 금양그린파워도 19.91% 급등한 7천770원에 거래를 마쳤다. 이번 강세는 미국 중간선거 결과에 따른 청정에너지 정책 ...",
+      "future_momentum": "전력저장장치 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 9574,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주...",
+      "today_rising_fact": "[속보 기사] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주... : 코스닥시장에서는 대명에너지가 가격제한폭까지 치솟아 1만3천750원을 기록하고 있으며, 금양그린파워도 19.91% 급등한 7천770원에 거래를 마쳤다. 이번 강세는 미국 중간선거 결과에 따른 청정에너지 정책 ...",
+      "top_article": {
+        "title": "[특징주] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주...",
+        "press": "증시 속보",
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8057",
+        "published_at": "2026-11-04T11:19:31.093Z"
       },
       "timeline": []
     },
@@ -73,186 +163,96 @@
       "theme_id": "radar_191",
       "theme_name": "태양광에너지",
       "full_theme_name": "태양광에너지",
-      "change_rate": "+0.64%",
-      "composite_score": 73,
+      "change_rate": "+6.71%",
+      "composite_score": 99,
       "total_stocks_count": 43,
       "leader_stock": "대명에너지",
-      "leader_ratio": 24.76,
-      "sub_leader_stock": "금양그린파워",
+      "leader_ratio": 29.96,
+      "sub_leader_stock": "한화솔루션",
       "other_stocks": [
-        "지투파워",
-        "한화솔루션",
-        "에스폴리텍"
+        "금양그린파워",
+        "대주전자재료",
+        "HD현대에너지솔루션"
       ],
       "sub_stocks_top3": [
-        {
-          "name": "금양그린파워",
-          "rate": "+20.5%"
-        },
-        {
-          "name": "지투파워",
-          "rate": "+18.1%"
-        },
         {
           "name": "한화솔루션",
-          "rate": "+5.9%"
+          "rate": "+21.4%"
+        },
+        {
+          "name": "금양그린파워",
+          "rate": "+20.7%"
+        },
+        {
+          "name": "대주전자재료",
+          "rate": "+16.4%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 일부 신재생에너지주 '껑충'…대명에너지 상한가·금양그린파... : 대명에너지와 금양그린파워가 20% 넘게 급등한 가운데 한화솔루션을 비롯한 일부 종목도 강세를 나타내고 있다. 4일 오전 11시 28분 현재 대명에너지는 전일 대비 3170원(+29.96%) 오른 1만3750...",
+      "past_trigger_reason": "[속보 기사] 대명에너지·케이엔알시스템·에스피소프트 : 빅터뉴스 김두윤 기자 11월 4일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 대명에너지, 케이엔알시스템, 에스피소프트가 특징주로 꼽혔다. ■ 대명에너지(38...",
       "future_momentum": "태양광에너지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3366,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] 일부 신재생에너지주 '껑충'…대명에너지 상한가·금양그린파...",
-      "today_rising_fact": "[속보 기사] 일부 신재생에너지주 '껑충'…대명에너지 상한가·금양그린파... : 대명에너지와 금양그린파워가 20% 넘게 급등한 가운데 한화솔루션을 비롯한 일부 종목도 강세를 나타내고 있다. 4일 오전 11시 28분 현재 대명에너지는 전일 대비 3170원(+29.96%) 오른 1만3750...",
-      "top_article": {
-        "title": "[특징주] 일부 신재생에너지주 '껑충'…대명에너지 상한가·금양그린파...",
-        "press": "증시 속보",
-        "url": "https://www.cbci.co.kr/news/articleView.html?idxno=623041",
-        "published_at": "2026-11-04T03:04:37.770Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_206",
-      "theme_name": "농업",
-      "full_theme_name": "농업",
-      "change_rate": "+3.31%",
-      "composite_score": 72,
-      "total_stocks_count": 23,
-      "leader_stock": "대동금속",
-      "leader_ratio": 29.85,
-      "sub_leader_stock": "대동기어",
-      "other_stocks": [
-        "포메탈",
-        "TYM",
-        "대동"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "대동기어",
-          "rate": "+22.2%"
-        },
-        {
-          "name": "포메탈",
-          "rate": "+15.7%"
-        },
-        {
-          "name": "TYM",
-          "rate": "+12.7%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 농기계 수출 확대 기대감에 관련株 '대동금속·대동기어' 30%↑ : 이날 한국거래소에 따르면 오전 9시 39분 기준 대동금속은 전 거래일 대비 29.85% 오른 2575원에 거래 중이다. 대동기어도 전 거래일 대비 29.83% 상승한 6790원에 거래되며 상한가를 기록했다....",
-      "future_momentum": "농업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1252,
+      "trading_value_eok": 11817,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 농기계 수출 확대 기대감에 관련株 '대동금속·대동기어' 30%↑",
-      "today_rising_fact": "[속보 기사] 농기계 수출 확대 기대감에 관련株 '대동금속·대동기어' 30%↑ : 이날 한국거래소에 따르면 오전 9시 39분 기준 대동금속은 전 거래일 대비 29.85% 오른 2575원에 거래 중이다. 대동기어도 전 거래일 대비 29.83% 상승한 6790원에 거래되며 상한가를 기록했다....",
+      "trigger_summary": "[오늘의 특징주] 대명에너지·케이엔알시스템·에스피소프트",
+      "today_rising_fact": "[속보 기사] 대명에너지·케이엔알시스템·에스피소프트 : 빅터뉴스 김두윤 기자 11월 4일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 대명에너지, 케이엔알시스템, 에스피소프트가 특징주로 꼽혔다. ■ 대명에너지(38...",
       "top_article": {
-        "title": "[특징주] 농기계 수출 확대 기대감에 관련株 '대동금속·대동기어' 30%↑",
+        "title": "[오늘의 특징주] 대명에너지·케이엔알시스템·에스피소프트",
         "press": "증시 속보",
-        "url": "https://www.newspim.com/news/view/20261104000274",
-        "published_at": "2026-11-04T03:04:38.049Z"
+        "url": "https://www.bigtanews.co.kr/article/view/big202611040022",
+        "published_at": "2026-11-04T11:19:31.531Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_608",
-      "theme_name": "반도체 기판",
-      "full_theme_name": "반도체 기판(FC-BGA/PCB/MLB 등)",
-      "change_rate": "+1.25%",
-      "composite_score": 63,
-      "total_stocks_count": 14,
-      "leader_stock": "코리아써키트",
-      "leader_ratio": 8.43,
-      "sub_leader_stock": "네오티스",
+      "theme_id": "radar_595",
+      "theme_name": "우주태양광",
+      "full_theme_name": "우주태양광(페로브스카이트 등)",
+      "change_rate": "+6.62%",
+      "composite_score": 99,
+      "total_stocks_count": 10,
+      "leader_stock": "한화솔루션",
+      "leader_ratio": 21.4,
+      "sub_leader_stock": "대주전자재료",
       "other_stocks": [
-        "심텍",
-        "티엘비",
-        "심텍홀딩스"
+        "HD현대에너지솔루션",
+        "한국전력",
+        "유니테스트"
       ],
       "sub_stocks_top3": [
         {
-          "name": "네오티스",
-          "rate": "+6.1%"
+          "name": "대주전자재료",
+          "rate": "+16.4%"
         },
         {
-          "name": "심텍",
-          "rate": "+6.6%"
+          "name": "HD현대에너지솔루션",
+          "rate": "+15.8%"
         },
         {
-          "name": "티엘비",
-          "rate": "+4.6%"
+          "name": "한국전력",
+          "rate": "+5.3%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 외국인 'HLB제약·한국전력', 기관 '래블업·삼성전자·한화솔... : 삼성중공업과 코리아써키트(007810), 루닛(328130)은 오전 9시 58분 순매수 상위권에 포함됐으나 이후 5위권 밖으로 밀려났다. 기관 순매도 상위 종목은 아이엠스팩1호, 이에스티, 세미티에스, 원익...",
-      "future_momentum": "반도체 기판 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2714,
+      "past_trigger_reason": "[속보 기사] 美 블루웨이브에 AI 관련주 '흔들'...친환경·2차전지주는 '... : 특징주로는 민주당이 상·하원 장악 시 수혜 업종으로 분류되는 LG에너지솔루션(+5.03%) 등 2차전지 주가 강세를 보였고, 한화솔루션(+18.64%), OCI홀딩스(+10.38%) 등 태양광 업종도 올랐다...",
+      "future_momentum": "우주태양광 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 9325,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] 외국인 'HLB제약·한국전력', 기관 '래블업·삼성전자·한화솔...",
-      "today_rising_fact": "[속보 기사] 외국인 'HLB제약·한국전력', 기관 '래블업·삼성전자·한화솔... : 삼성중공업과 코리아써키트(007810), 루닛(328130)은 오전 9시 58분 순매수 상위권에 포함됐으나 이후 5위권 밖으로 밀려났다. 기관 순매도 상위 종목은 아이엠스팩1호, 이에스티, 세미티에스, 원익...",
+      "ma5_recovered": true,
+      "trigger_summary": "[마켓펄스] 美 블루웨이브에 AI 관련주 '흔들'...친환경·2차전지주는 '...",
+      "today_rising_fact": "[속보 기사] 美 블루웨이브에 AI 관련주 '흔들'...친환경·2차전지주는 '... : 특징주로는 민주당이 상·하원 장악 시 수혜 업종으로 분류되는 LG에너지솔루션(+5.03%) 등 2차전지 주가 강세를 보였고, 한화솔루션(+18.64%), OCI홀딩스(+10.38%) 등 태양광 업종도 올랐다...",
       "top_article": {
-        "title": "[특징주] 외국인 'HLB제약·한국전력', 기관 '래블업·삼성전자·한화솔...",
+        "title": "[마켓펄스] 美 블루웨이브에 AI 관련주 '흔들'...친환경·2차전지주는 '...",
         "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=726649",
-        "published_at": "2026-11-04T03:04:38.375Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_599",
-      "theme_name": "소캠",
-      "full_theme_name": "소캠(SOCAMM)",
-      "change_rate": "+0.44%",
-      "composite_score": 59,
-      "total_stocks_count": 11,
-      "leader_stock": "코리아써키트",
-      "leader_ratio": 8.43,
-      "sub_leader_stock": "심텍",
-      "other_stocks": [
-        "티엘비",
-        "티에프이",
-        "ISC"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "심텍",
-          "rate": "+6.6%"
-        },
-        {
-          "name": "티엘비",
-          "rate": "+4.6%"
-        },
-        {
-          "name": "티에프이",
-          "rate": "+3.0%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 외국인 'HLB제약·한국전력', 기관 '래블업·삼성전자·한화솔... : 삼성중공업과 코리아써키트(007810), 루닛(328130)은 오전 9시 58분 순매수 상위권에 포함됐으나 이후 5위권 밖으로 밀려났다. 기관 순매도 상위 종목은 아이엠스팩1호, 이에스티, 세미티에스, 원익...",
-      "future_momentum": "소캠 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3772,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] 외국인 'HLB제약·한국전력', 기관 '래블업·삼성전자·한화솔...",
-      "today_rising_fact": "[속보 기사] 외국인 'HLB제약·한국전력', 기관 '래블업·삼성전자·한화솔... : 삼성중공업과 코리아써키트(007810), 루닛(328130)은 오전 9시 58분 순매수 상위권에 포함됐으나 이후 5위권 밖으로 밀려났다. 기관 순매도 상위 종목은 아이엠스팩1호, 이에스티, 세미티에스, 원익...",
-      "top_article": {
-        "title": "[특징주] 외국인 'HLB제약·한국전력', 기관 '래블업·삼성전자·한화솔...",
-        "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=726649",
-        "published_at": "2026-11-04T03:04:38.639Z"
+        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130609",
+        "published_at": "2026-11-04T11:19:31.916Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1793761479032_uv7t",
+      "theme_id": "pb_1793791172354_j88e",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=726411",
-        "published_at": "2026-11-04T03:04:39.032Z"
+        "published_at": "2026-11-04T11:19:32.354Z"
       }
     },
     {
-      "theme_id": "pb_1793761479422_blh6",
+      "theme_id": "pb_1793791172785_ia5v",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
         "press": "증시 속보",
         "url": "https://www.newspim.com/news/view/20261102000307",
-        "published_at": "2026-11-04T03:04:39.422Z"
+        "published_at": "2026-11-04T11:19:32.785Z"
       }
     }
   ],

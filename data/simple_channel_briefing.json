@@ -1,34 +1,29 @@
 {
-  "updatedAt": "2026-11-04T03:04:39.469Z",
+  "updatedAt": "2026-11-04T11:19:32.830Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-11-04",
   "latestVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-04] 당일 증시 핵심 주도주 및 섹터별 수급 완벽 점검",
-    "published_kst": "2026-11-04 08:30:00",
-    "url": "https://www.youtube.com"
+    "id": "4exvKwCnRko",
+    "title": "지수가 1시 40분부터 돌린 이유 / 증시에서 불확실성이 언제 해소되는가 ! 에 대한 관점",
+    "published_kst": "2026-11-04 19:09:29",
+    "url": "https://www.youtube.com/watch?v=4exvKwCnRko"
   },
   "morningVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-04] 당일 관심테마! 조선,원전,풍력,AI반도체/한화오션,성광벤드,SK하이닉스",
-    "published_kst": "2026-11-04 08:30:00",
-    "url": "https://www.youtube.com",
+    "id": "Zbt_h3B27MQ",
+    "title": "당일 관심테마! 중동 협상 찌라시 + 세계 운명을 가를 미국 중간선거 시작!!  /반도체,소부장,재건/삼성전자,SK하이닉스,한진칼,원익홀딩스,심텍,티엘비,코리아써키트,",
+    "published_kst": "2026-11-04 06:58:27",
+    "url": "https://www.youtube.com/watch?v=Zbt_h3B27MQ",
     "themes": [
-      "조선 & 해운",
-      "원전 & SMR",
-      "AI 반도체 & HBM",
-      "풍력 신재생"
+      "중동 협상 찌라시 + 세계 운명을 가를 미국 중간선거 시작!!"
     ],
     "stocks": [
-      "한화오션",
-      "성광벤드",
-      "SK하이닉스",
-      "니어스랩",
-      "두산에너빌리티"
+      "반도체",
+      "소부장",
+      "재건"
     ],
     "key_points": [
       "조선 & 방산: 미국 해군 MRO 수주 및 중동·동유럽 수출 파이프라인 수급 집결",
@@ -38,22 +33,20 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-04] 장마감 관심테마! 당일 주도 섹터 수급 분석 및 내일 공략주",
-    "published_kst": "2026-11-04 16:30:00",
-    "url": "https://www.youtube.com",
+    "id": "NWWXKDBXIJ0",
+    "title": "내일 관심테마! 애플,팔란티어는 과연 증시를..?! 중간선거도 이어서 옵니다/반도체,소부장,신규상장,보안 ,조선/삼성전자,SK하이닉스,원익홀딩스,영광,한진칼,삼성전기,래블업",
+    "published_kst": "2026-11-02 21:01:23",
+    "url": "https://www.youtube.com/watch?v=NWWXKDBXIJ0",
     "themes": [
-      "조선 & 해운",
-      "원전 & SMR",
-      "AI 반도체 & HBM",
-      "풍력 신재생"
+      "애플",
+      "팔란티어는 과연 증시를..?! 중간선거도 이어서 옵니다"
     ],
     "stocks": [
-      "한화오션",
-      "성광벤드",
-      "SK하이닉스",
-      "니어스랩",
-      "두산에너빌리티"
+      "반도체",
+      "소부장",
+      "신규상장",
+      "보안",
+      "조선"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(한화오션, SK하이닉스 등) 외국인·기관 순매수 집중",
