@@ -1,16 +1,16 @@
 {
   "success": true,
-  "updated_at": "2026-11-04T19:56:17.272Z",
+  "updated_at": "2026-11-05T03:35:35.357Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "+0.62%",
-      "is_up": true
+      "change_rate": "-3.87%",
+      "is_up": false
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "+1.5%",
-      "is_up": true
+      "change_rate": "-3.62%",
+      "is_up": false
     },
     "investor_trend": {
       "kospi": {
@@ -25,234 +25,222 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_559",
-      "theme_name": "고체산화물 연료전지",
-      "full_theme_name": "고체산화물 연료전지(SOFC)",
-      "change_rate": "+9.77%",
+      "theme_id": "radar_49",
+      "theme_name": "인터넷 대표주",
+      "full_theme_name": "인터넷 대표주",
+      "change_rate": "+9.48%",
       "composite_score": 99,
-      "total_stocks_count": 14,
-      "leader_stock": "금양그린파워",
-      "leader_ratio": 20.68,
-      "sub_leader_stock": "비나텍",
-      "other_stocks": [
-        "두산퓨얼셀",
-        "아모센스",
-        "한선엔지니어링"
-      ],
+      "total_stocks_count": 2,
+      "leader_stock": "카카오",
+      "leader_ratio": 11.17,
+      "sub_leader_stock": "NAVER",
+      "other_stocks": [],
       "sub_stocks_top3": [
         {
-          "name": "비나텍",
-          "rate": "+14.5%"
-        },
-        {
-          "name": "두산퓨얼셀",
-          "rate": "+13.4%"
-        },
-        {
-          "name": "아모센스",
-          "rate": "+13.4%"
+          "name": "NAVER",
+          "rate": "+8.3%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주... : 코스닥시장에서는 대명에너지가 가격제한폭까지 치솟아 1만3천750원을 기록하고 있으며, 금양그린파워도 19.91% 급등한 7천770원에 거래를 마쳤다. 이번 강세는 미국 중간선거 결과에 따른 청정에너지 정책 ...",
-      "future_momentum": "고체산화물 연료전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2121,
+      "past_trigger_reason": "[속보 기사] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대... : (005930), 카카오(035720), 셀트리온(068270), 삼기에너지솔루션즈(419050), 삼성E&amp;A(028050) 순으로 집계됐다. 오전 10시 3분에는 제주항공(089590)이 1위에 올...",
+      "future_momentum": "인터넷 대표주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2650,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주...",
-      "today_rising_fact": "[속보 기사] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주... : 코스닥시장에서는 대명에너지가 가격제한폭까지 치솟아 1만3천750원을 기록하고 있으며, 금양그린파워도 19.91% 급등한 7천770원에 거래를 마쳤다. 이번 강세는 미국 중간선거 결과에 따른 청정에너지 정책 ...",
+      "trigger_summary": "[특징주] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대...",
+      "today_rising_fact": "[속보 기사] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대... : (005930), 카카오(035720), 셀트리온(068270), 삼기에너지솔루션즈(419050), 삼성E&amp;A(028050) 순으로 집계됐다. 오전 10시 3분에는 제주항공(089590)이 1위에 올...",
       "top_article": {
-        "title": "[특징주] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주...",
+        "title": "[특징주] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대...",
         "press": "증시 속보",
-        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8057",
-        "published_at": "2026-11-04T19:56:14.796Z"
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=726870",
+        "published_at": "2026-11-05T03:35:32.793Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_579",
-      "theme_name": "2차전지",
-      "full_theme_name": "2차전지(나트륨이온)",
-      "change_rate": "+7.86%",
-      "composite_score": 99,
+      "theme_id": "radar_166",
+      "theme_name": "항공/저가 항공사",
+      "full_theme_name": "항공/저가 항공사(LCC)",
+      "change_rate": "+4.79%",
+      "composite_score": 83,
       "total_stocks_count": 9,
-      "leader_stock": "삼성SDI",
-      "leader_ratio": 12.59,
-      "sub_leader_stock": "에코프로비엠",
+      "leader_stock": "제주항공",
+      "leader_ratio": 10.87,
+      "sub_leader_stock": "진에어",
       "other_stocks": [
-        "에코프로",
-        "더블유씨피",
-        "애경케미칼"
+        "트리니티항공",
+        "에어부산",
+        "한진칼"
       ],
       "sub_stocks_top3": [
         {
-          "name": "에코프로비엠",
-          "rate": "+11.1%"
+          "name": "진에어",
+          "rate": "+8.8%"
         },
         {
-          "name": "에코프로",
-          "rate": "+10.8%"
+          "name": "트리니티항공",
+          "rate": "+7.4%"
         },
         {
-          "name": "더블유씨피",
-          "rate": "+9.6%"
+          "name": "에어부산",
+          "rate": "+6.0%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 삼성SDI, 외국인 450억 원 순매수에 10% 올라…이차전지주 동반... : 외국인 순매수와 이차전지주 전반의 강세가 맞물리며 삼성SDI가 10%대 오른 채 장을 마쳤다. 4일 유가증권시장에서 삼성SDI는 전 거래일보다 10.33% 오른 53만9,000원에 장을 마쳤다. 투자자별로는...",
-      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 12655,
+      "past_trigger_reason": "[속보 기사] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대... : 5일 오전 국내 증시에서 키움증권 창구를 통한 장중 수급을 집계한 결과, 외국인은 기업은행과 한국전력, 제주항공을 중심으로 순매수 상위 종목이 재편된 반면 한화솔루션과 대우건설은 순매도 상위권을 유지했다. ...",
+      "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2234,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주]삼성SDI, 외국인 450억 원 순매수에 10% 올라…이차전지주 동반...",
-      "today_rising_fact": "[속보 기사] 삼성SDI, 외국인 450억 원 순매수에 10% 올라…이차전지주 동반... : 외국인 순매수와 이차전지주 전반의 강세가 맞물리며 삼성SDI가 10%대 오른 채 장을 마쳤다. 4일 유가증권시장에서 삼성SDI는 전 거래일보다 10.33% 오른 53만9,000원에 장을 마쳤다. 투자자별로는...",
+      "trigger_summary": "[특징주] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대...",
+      "today_rising_fact": "[속보 기사] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대... : 5일 오전 국내 증시에서 키움증권 창구를 통한 장중 수급을 집계한 결과, 외국인은 기업은행과 한국전력, 제주항공을 중심으로 순매수 상위 종목이 재편된 반면 한화솔루션과 대우건설은 순매도 상위권을 유지했다. ...",
       "top_article": {
-        "title": "[특징주]삼성SDI, 외국인 450억 원 순매수에 10% 올라…이차전지주 동반...",
+        "title": "[특징주] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대...",
         "press": "증시 속보",
-        "url": "https://www.namdonews.com/news/articleView.html?idxno=928177",
-        "published_at": "2026-11-04T19:56:15.262Z"
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=726870",
+        "published_at": "2026-11-05T03:35:33.285Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_329",
-      "theme_name": "전력저장장치",
-      "full_theme_name": "전력저장장치(ESS)",
-      "change_rate": "+7.09%",
-      "composite_score": 99,
-      "total_stocks_count": 42,
-      "leader_stock": "금양그린파워",
-      "leader_ratio": 20.68,
-      "sub_leader_stock": "한중엔시에스",
+      "theme_id": "radar_98",
+      "theme_name": "음원/음반",
+      "full_theme_name": "음원/음반",
+      "change_rate": "+3.17%",
+      "composite_score": 74,
+      "total_stocks_count": 15,
+      "leader_stock": "에스엠",
+      "leader_ratio": 12.85,
+      "sub_leader_stock": "카카오",
       "other_stocks": [
-        "지에프아이",
-        "HD현대에너지솔루션",
-        "신성에스티"
+        "하이브",
+        "와이지엔터테인먼트",
+        "CJ ENM"
       ],
       "sub_stocks_top3": [
         {
-          "name": "한중엔시에스",
-          "rate": "+18.6%"
+          "name": "카카오",
+          "rate": "+11.2%"
         },
         {
-          "name": "지에프아이",
-          "rate": "+18.0%"
+          "name": "하이브",
+          "rate": "+8.4%"
         },
         {
-          "name": "HD현대에너지솔루션",
-          "rate": "+15.8%"
+          "name": "와이지엔터테인먼트",
+          "rate": "+5.9%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주... : 코스닥시장에서는 대명에너지가 가격제한폭까지 치솟아 1만3천750원을 기록하고 있으며, 금양그린파워도 19.91% 급등한 7천770원에 거래를 마쳤다. 이번 강세는 미국 중간선거 결과에 따른 청정에너지 정책 ...",
-      "future_momentum": "전력저장장치 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 9574,
+      "past_trigger_reason": "[속보 기사] 에스엠, 3분기 실적 부진에도 내년 '신인 흥행·투어 확대' 기... : 에스엠(SM엔터테인먼트)이 올해 3분기 부진한 실적과 증권가의 연이은 목표가 하향 조정에도 불구하고, 내년 신규 보이그룹 데뷔와 5세대 아티스트들의 투어 확대 등 뚜렷한 실적 모멘텀 기대감에 힘입어 장 초반...",
+      "future_momentum": "음원/음반 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1885,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주...",
-      "today_rising_fact": "[속보 기사] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주... : 코스닥시장에서는 대명에너지가 가격제한폭까지 치솟아 1만3천750원을 기록하고 있으며, 금양그린파워도 19.91% 급등한 7천770원에 거래를 마쳤다. 이번 강세는 미국 중간선거 결과에 따른 청정에너지 정책 ...",
+      "trigger_summary": "[특징주] 에스엠, 3분기 실적 부진에도 내년 '신인 흥행·투어 확대' 기...",
+      "today_rising_fact": "[속보 기사] 에스엠, 3분기 실적 부진에도 내년 '신인 흥행·투어 확대' 기... : 에스엠(SM엔터테인먼트)이 올해 3분기 부진한 실적과 증권가의 연이은 목표가 하향 조정에도 불구하고, 내년 신규 보이그룹 데뷔와 5세대 아티스트들의 투어 확대 등 뚜렷한 실적 모멘텀 기대감에 힘입어 장 초반...",
       "top_article": {
-        "title": "[특징주] 한화솔루션·OCI홀딩스 급등…美 민주당 의회 장악에 태양광주...",
+        "title": "[특징주] 에스엠, 3분기 실적 부진에도 내년 '신인 흥행·투어 확대' 기...",
         "press": "증시 속보",
-        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8057",
-        "published_at": "2026-11-04T19:56:15.615Z"
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=302914",
+        "published_at": "2026-11-05T03:35:33.684Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_191",
-      "theme_name": "태양광에너지",
-      "full_theme_name": "태양광에너지",
-      "change_rate": "+6.71%",
-      "composite_score": 99,
-      "total_stocks_count": 43,
-      "leader_stock": "대명에너지",
-      "leader_ratio": 29.96,
-      "sub_leader_stock": "한화솔루션",
+      "theme_id": "radar_241",
+      "theme_name": "바이오시밀러",
+      "full_theme_name": "바이오시밀러(복제 바이오의약품)",
+      "change_rate": "+2.82%",
+      "composite_score": 73,
+      "total_stocks_count": 21,
+      "leader_stock": "삼성에피스홀딩스",
+      "leader_ratio": 11.84,
+      "sub_leader_stock": "한미약품",
       "other_stocks": [
-        "금양그린파워",
-        "대주전자재료",
-        "HD현대에너지솔루션"
+        "셀트리온",
+        "한올바이오파마",
+        "셀트리온제약"
       ],
       "sub_stocks_top3": [
         {
-          "name": "한화솔루션",
-          "rate": "+21.4%"
+          "name": "한미약품",
+          "rate": "+11.6%"
         },
         {
-          "name": "금양그린파워",
-          "rate": "+20.7%"
+          "name": "셀트리온",
+          "rate": "+7.5%"
         },
         {
-          "name": "대주전자재료",
-          "rate": "+16.4%"
+          "name": "한올바이오파마",
+          "rate": "+7.0%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 대명에너지·케이엔알시스템·에스피소프트 : 빅터뉴스 김두윤 기자 11월 4일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 대명에너지, 케이엔알시스템, 에스피소프트가 특징주로 꼽혔다. ■ 대명에너지(38...",
-      "future_momentum": "태양광에너지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 11817,
+      "past_trigger_reason": "[속보 기사] '바이오 유럽 2026' 기대감에 제약·바이오株 동반 급등 : 이 밖에 SK바이오팜(12.76%), 삼성에피스홀딩스(10.28%), 지아이이노베이션(9.97%), 이엔셀(8.48%), 한미약품(8.38%), 제니아테라퓨틱스(6.81%), 큐릭오스(6.80%), 알테오젠...",
+      "future_momentum": "바이오시밀러 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 4249,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[오늘의 특징주] 대명에너지·케이엔알시스템·에스피소프트",
-      "today_rising_fact": "[속보 기사] 대명에너지·케이엔알시스템·에스피소프트 : 빅터뉴스 김두윤 기자 11월 4일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 대명에너지, 케이엔알시스템, 에스피소프트가 특징주로 꼽혔다. ■ 대명에너지(38...",
+      "trigger_summary": "[특징주] '바이오 유럽 2026' 기대감에 제약·바이오株 동반 급등",
+      "today_rising_fact": "[속보 기사] '바이오 유럽 2026' 기대감에 제약·바이오株 동반 급등 : 이 밖에 SK바이오팜(12.76%), 삼성에피스홀딩스(10.28%), 지아이이노베이션(9.97%), 이엔셀(8.48%), 한미약품(8.38%), 제니아테라퓨틱스(6.81%), 큐릭오스(6.80%), 알테오젠...",
       "top_article": {
-        "title": "[오늘의 특징주] 대명에너지·케이엔알시스템·에스피소프트",
+        "title": "[특징주] '바이오 유럽 2026' 기대감에 제약·바이오株 동반 급등",
         "press": "증시 속보",
-        "url": "https://www.bigtanews.co.kr/article/view/big202611040022",
-        "published_at": "2026-11-04T19:56:16.020Z"
+        "url": "https://www.newspim.com/news/view/20261105000394",
+        "published_at": "2026-11-05T03:35:34.054Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_595",
-      "theme_name": "우주태양광",
-      "full_theme_name": "우주태양광(페로브스카이트 등)",
-      "change_rate": "+6.62%",
-      "composite_score": 99,
-      "total_stocks_count": 10,
-      "leader_stock": "한화솔루션",
-      "leader_ratio": 21.4,
-      "sub_leader_stock": "대주전자재료",
+      "theme_id": "radar_165",
+      "theme_name": "은행",
+      "full_theme_name": "은행",
+      "change_rate": "+2.85%",
+      "composite_score": 69,
+      "total_stocks_count": 11,
+      "leader_stock": "우리금융지주",
+      "leader_ratio": 6.59,
+      "sub_leader_stock": "JB금융지주",
       "other_stocks": [
-        "HD현대에너지솔루션",
-        "한국전력",
-        "유니테스트"
+        "KB금융",
+        "하나금융지주",
+        "기업은행"
       ],
       "sub_stocks_top3": [
         {
-          "name": "대주전자재료",
-          "rate": "+16.4%"
+          "name": "JB금융지주",
+          "rate": "+5.0%"
         },
         {
-          "name": "HD현대에너지솔루션",
-          "rate": "+15.8%"
+          "name": "KB금융",
+          "rate": "+4.0%"
         },
         {
-          "name": "한국전력",
-          "rate": "+5.3%"
+          "name": "하나금융지주",
+          "rate": "+3.6%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 美 블루웨이브에 AI 관련주 '흔들'...친환경·2차전지주는 '... : 특징주로는 민주당이 상·하원 장악 시 수혜 업종으로 분류되는 LG에너지솔루션(+5.03%) 등 2차전지 주가 강세를 보였고, 한화솔루션(+18.64%), OCI홀딩스(+10.38%) 등 태양광 업종도 올랐다...",
-      "future_momentum": "우주태양광 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 9325,
+      "past_trigger_reason": "[속보 기사] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대... : 오전 11시 15분에는 한국전력이 1위를 유지했고 우리금융지주(316140)가 2위, 셀트리온이 3위에 올랐다. 실리콘투와 한화솔루션은 각각 4위와 5위를 지켰다. 한국전력은 두 차례 집계에서 모두 기관 순...",
+      "future_momentum": "은행 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2471,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[마켓펄스] 美 블루웨이브에 AI 관련주 '흔들'...친환경·2차전지주는 '...",
-      "today_rising_fact": "[속보 기사] 美 블루웨이브에 AI 관련주 '흔들'...친환경·2차전지주는 '... : 특징주로는 민주당이 상·하원 장악 시 수혜 업종으로 분류되는 LG에너지솔루션(+5.03%) 등 2차전지 주가 강세를 보였고, 한화솔루션(+18.64%), OCI홀딩스(+10.38%) 등 태양광 업종도 올랐다...",
+      "trigger_summary": "[특징주] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대...",
+      "today_rising_fact": "[속보 기사] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대... : 오전 11시 15분에는 한국전력이 1위를 유지했고 우리금융지주(316140)가 2위, 셀트리온이 3위에 올랐다. 실리콘투와 한화솔루션은 각각 4위와 5위를 지켰다. 한국전력은 두 차례 집계에서 모두 기관 순...",
       "top_article": {
-        "title": "[마켓펄스] 美 블루웨이브에 AI 관련주 '흔들'...친환경·2차전지주는 '...",
+        "title": "[특징주] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대...",
         "press": "증시 속보",
-        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130609",
-        "published_at": "2026-11-04T19:56:16.438Z"
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=726870",
+        "published_at": "2026-11-05T03:35:34.478Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1793822176864_ccnq",
+      "theme_id": "pb_1793849734913_l4n4",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +252,11 @@
         "title": "[특징주] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=726411",
-        "published_at": "2026-11-04T19:56:16.864Z"
+        "published_at": "2026-11-05T03:35:34.913Z"
       }
     },
     {
-      "theme_id": "pb_1793822177272_5jn1",
+      "theme_id": "pb_1793849735357_r7vi",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +268,7 @@
         "title": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
         "press": "증시 속보",
         "url": "https://www.newspim.com/news/view/20261102000307",
-        "published_at": "2026-11-04T19:56:17.272Z"
+        "published_at": "2026-11-05T03:35:35.357Z"
       }
     }
   ],
