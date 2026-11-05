@@ -1,34 +1,31 @@
 {
-  "updatedAt": "2026-11-05T03:35:35.395Z",
+  "updatedAt": "2026-11-05T15:40:40.834Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-11-05",
   "latestVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-05] 당일 증시 핵심 주도주 및 섹터별 수급 완벽 점검",
-    "published_kst": "2026-11-05 08:30:00",
-    "url": "https://www.youtube.com"
+    "id": "-8siODIB0dw",
+    "title": "내일 관심테마! 우리장 끝나고 미국선물 밑꼬리...우려감 공포감 이제그만하자!! /반도체,바이오,개별주,태양광,재건/삼���전자,SK하이닉스,셀트리온,NAVER,한화솔루션,한진칼",
+    "published_kst": "2026-11-05 21:20:41",
+    "url": "https://www.youtube.com/watch?v=-8siODIB0dw"
   },
   "morningVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-05] 당일 관심테마! 조선,원전,풍력,AI반도체/한화오션,성광벤드,SK하이닉스",
-    "published_kst": "2026-11-05 08:30:00",
-    "url": "https://www.youtube.com",
+    "id": "SGY1CiBX1Uk",
+    "title": "당일 관심테마! 밤사이 텍사스 데이터센터 우려감 & 블루웨이브 강세 /반도체,소부장,태양광,2차전지,재건/삼성전자,SK하이닉스,삼성sdi,한화솔루션,한진칼,대명에너지,OCI홀딩스",
+    "published_kst": "2026-11-05 07:00:40",
+    "url": "https://www.youtube.com/watch?v=SGY1CiBX1Uk",
     "themes": [
-      "조선 & 해운",
-      "원전 & SMR",
-      "AI 반도체 & HBM",
-      "풍력 신재생"
+      "밤사이 텍사스 데이터센터 우려감 & 블루웨이브 강세"
     ],
     "stocks": [
-      "한화오션",
-      "성광벤드",
-      "SK하이닉스",
-      "니어스랩",
-      "두산에너빌리티"
+      "반도체",
+      "소부장",
+      "태양광",
+      "2차전지",
+      "재건"
     ],
     "key_points": [
       "조선 & 방산: 미국 해군 MRO 수주 및 중동·동유럽 수출 파이프라인 수급 집결",
@@ -38,22 +35,19 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-05] 장마감 관심테마! 당일 주도 섹터 수급 분석 및 내일 공략주",
-    "published_kst": "2026-11-05 16:30:00",
-    "url": "https://www.youtube.com",
+    "id": "-8siODIB0dw",
+    "title": "내일 관심테마! 우리장 끝나고 미국선물 밑꼬리...우려감 공포감 이제그만하자!! /반도체,바이오,개별주,태양광,재건/삼���전자,SK하이닉스,셀트리온,NAVER,한화솔루션,한진칼",
+    "published_kst": "2026-11-05 21:20:41",
+    "url": "https://www.youtube.com/watch?v=-8siODIB0dw",
     "themes": [
-      "조선 & 해운",
-      "원전 & SMR",
-      "AI 반도체 & HBM",
-      "풍력 신재생"
+      "우리장 끝나고 미국선물 밑꼬리...우려감 공포감 이제그만하자!!"
     ],
     "stocks": [
-      "한화오션",
-      "성광벤드",
-      "SK하이닉스",
-      "니어스랩",
-      "두산에너빌리티"
+      "반도체",
+      "바이오",
+      "개별주",
+      "태양광",
+      "재건"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(한화오션, SK하이닉스 등) 외국인·기관 순매수 집중",

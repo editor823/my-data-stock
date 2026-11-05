@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-05T03:35:35.357Z",
+  "updated_at": "2026-11-05T15:40:40.792Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "-3.87%",
+      "change_rate": "-5.28%",
       "is_up": false
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "-3.62%",
+      "change_rate": "-5.11%",
       "is_up": false
     },
     "investor_trend": {
@@ -28,32 +28,32 @@
       "theme_id": "radar_49",
       "theme_name": "인터넷 대표주",
       "full_theme_name": "인터넷 대표주",
-      "change_rate": "+9.48%",
+      "change_rate": "+9.50%",
       "composite_score": 99,
       "total_stocks_count": 2,
       "leader_stock": "카카오",
-      "leader_ratio": 11.17,
+      "leader_ratio": 11.34,
       "sub_leader_stock": "NAVER",
       "other_stocks": [],
       "sub_stocks_top3": [
         {
           "name": "NAVER",
-          "rate": "+8.3%"
+          "rate": "+7.7%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대... : (005930), 카카오(035720), 셀트리온(068270), 삼기에너지솔루션즈(419050), 삼성E&amp;A(028050) 순으로 집계됐다. 오전 10시 3분에는 제주항공(089590)이 1위에 올...",
+      "past_trigger_reason": "[속보 기사] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감 : 카카오[035720]가 3분기 실적 개선과 1천500억원 규모의 자사주 매입·소각 계획을 발표하면서 5일 주식시장에서 10% 넘게 급등했다. 실적 개선에 더해... 이날 유가증권시장에서 카카오는 전 거래일보...",
       "future_momentum": "인터넷 대표주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2650,
+      "trading_value_eok": 4282,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대...",
-      "today_rising_fact": "[속보 기사] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대... : (005930), 카카오(035720), 셀트리온(068270), 삼기에너지솔루션즈(419050), 삼성E&amp;A(028050) 순으로 집계됐다. 오전 10시 3분에는 제주항공(089590)이 1위에 올...",
+      "trigger_summary": "[특징주] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감",
+      "today_rising_fact": "[속보 기사] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감 : 카카오[035720]가 3분기 실적 개선과 1천500억원 규모의 자사주 매입·소각 계획을 발표하면서 5일 주식시장에서 10% 넘게 급등했다. 실적 개선에 더해... 이날 유가증권시장에서 카카오는 전 거래일보...",
       "top_article": {
-        "title": "[특징주] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대...",
+        "title": "[특징주] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감",
         "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=726870",
-        "published_at": "2026-11-05T03:35:32.793Z"
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8132",
+        "published_at": "2026-11-05T15:40:38.281Z"
       },
       "timeline": []
     },
@@ -61,89 +61,44 @@
       "theme_id": "radar_166",
       "theme_name": "항공/저가 항공사",
       "full_theme_name": "항공/저가 항공사(LCC)",
-      "change_rate": "+4.79%",
-      "composite_score": 83,
+      "change_rate": "+4.70%",
+      "composite_score": 76,
       "total_stocks_count": 9,
       "leader_stock": "제주항공",
-      "leader_ratio": 10.87,
+      "leader_ratio": 14.09,
       "sub_leader_stock": "진에어",
       "other_stocks": [
         "트리니티항공",
         "에어부산",
-        "한진칼"
+        "아시아나항공"
       ],
       "sub_stocks_top3": [
         {
           "name": "진에어",
-          "rate": "+8.8%"
+          "rate": "+8.9%"
         },
         {
           "name": "트리니티항공",
-          "rate": "+7.4%"
+          "rate": "+8.3%"
         },
         {
           "name": "에어부산",
-          "rate": "+6.0%"
+          "rate": "+6.1%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대... : 5일 오전 국내 증시에서 키움증권 창구를 통한 장중 수급을 집계한 결과, 외국인은 기업은행과 한국전력, 제주항공을 중심으로 순매수 상위 종목이 재편된 반면 한화솔루션과 대우건설은 순매도 상위권을 유지했다. ...",
+      "past_trigger_reason": "[속보 기사] '블루쓰나미 악몽'에 반도체주 급락...&quot;5200선 이탈 시 하락... : 특징주로는 미국 중간선거 결과 영향으로 국제유가가 큰 폭으로 하락하며 제주항공(+13.75%), 진에어(+7.36%), 트리니티항공(+9.72%), 에어부산(+6.09%), 아시아나항공(+1.77%), 대한...",
       "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2234,
+      "trading_value_eok": 1525,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대...",
-      "today_rising_fact": "[속보 기사] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대... : 5일 오전 국내 증시에서 키움증권 창구를 통한 장중 수급을 집계한 결과, 외국인은 기업은행과 한국전력, 제주항공을 중심으로 순매수 상위 종목이 재편된 반면 한화솔루션과 대우건설은 순매도 상위권을 유지했다. ...",
+      "trigger_summary": "[마켓펄스] '블루쓰나미 악몽'에 반도체주 급락...&quot;5200선 이탈 시 하락...",
+      "today_rising_fact": "[속보 기사] '블루쓰나미 악몽'에 반도체주 급락...&quot;5200선 이탈 시 하락... : 특징주로는 미국 중간선거 결과 영향으로 국제유가가 큰 폭으로 하락하며 제주항공(+13.75%), 진에어(+7.36%), 트리니티항공(+9.72%), 에어부산(+6.09%), 아시아나항공(+1.77%), 대한...",
       "top_article": {
-        "title": "[특징주] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대...",
+        "title": "[마켓펄스] '블루쓰나미 악몽'에 반도체주 급락...&quot;5200선 이탈 시 하락...",
         "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=726870",
-        "published_at": "2026-11-05T03:35:33.285Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_98",
-      "theme_name": "음원/음반",
-      "full_theme_name": "음원/음반",
-      "change_rate": "+3.17%",
-      "composite_score": 74,
-      "total_stocks_count": 15,
-      "leader_stock": "에스엠",
-      "leader_ratio": 12.85,
-      "sub_leader_stock": "카카오",
-      "other_stocks": [
-        "하이브",
-        "와이지엔터테인먼트",
-        "CJ ENM"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "카카오",
-          "rate": "+11.2%"
-        },
-        {
-          "name": "하이브",
-          "rate": "+8.4%"
-        },
-        {
-          "name": "와이지엔터테인먼트",
-          "rate": "+5.9%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 에스엠, 3분기 실적 부진에도 내년 '신인 흥행·투어 확대' 기... : 에스엠(SM엔터테인먼트)이 올해 3분기 부진한 실적과 증권가의 연이은 목표가 하향 조정에도 불구하고, 내년 신규 보이그룹 데뷔와 5세대 아티스트들의 투어 확대 등 뚜렷한 실적 모멘텀 기대감에 힘입어 장 초반...",
-      "future_momentum": "음원/음반 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1885,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 에스엠, 3분기 실적 부진에도 내년 '신인 흥행·투어 확대' 기...",
-      "today_rising_fact": "[속보 기사] 에스엠, 3분기 실적 부진에도 내년 '신인 흥행·투어 확대' 기... : 에스엠(SM엔터테인먼트)이 올해 3분기 부진한 실적과 증권가의 연이은 목표가 하향 조정에도 불구하고, 내년 신규 보이그룹 데뷔와 5세대 아티스트들의 투어 확대 등 뚜렷한 실적 모멘텀 기대감에 힘입어 장 초반...",
-      "top_article": {
-        "title": "[특징주] 에스엠, 3분기 실적 부진에도 내년 '신인 흥행·투어 확대' 기...",
-        "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=302914",
-        "published_at": "2026-11-05T03:35:33.684Z"
+        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130657",
+        "published_at": "2026-11-05T15:40:38.752Z"
       },
       "timeline": []
     },
@@ -151,11 +106,11 @@
       "theme_id": "radar_241",
       "theme_name": "바이오시밀러",
       "full_theme_name": "바이오시밀러(복제 바이오의약품)",
-      "change_rate": "+2.82%",
-      "composite_score": 73,
+      "change_rate": "+2.54%",
+      "composite_score": 74,
       "total_stocks_count": 21,
       "leader_stock": "삼성에피스홀딩스",
-      "leader_ratio": 11.84,
+      "leader_ratio": 13.86,
       "sub_leader_stock": "한미약품",
       "other_stocks": [
         "셀트리온",
@@ -165,7 +120,7 @@
       "sub_stocks_top3": [
         {
           "name": "한미약품",
-          "rate": "+11.6%"
+          "rate": "+9.8%"
         },
         {
           "name": "셀트리온",
@@ -173,12 +128,12 @@
         },
         {
           "name": "한올바이오파마",
-          "rate": "+7.0%"
+          "rate": "+6.5%"
         }
       ],
       "past_trigger_reason": "[속보 기사] '바이오 유럽 2026' 기대감에 제약·바이오株 동반 급등 : 이 밖에 SK바이오팜(12.76%), 삼성에피스홀딩스(10.28%), 지아이이노베이션(9.97%), 이엔셀(8.48%), 한미약품(8.38%), 제니아테라퓨틱스(6.81%), 큐릭오스(6.80%), 알테오젠...",
       "future_momentum": "바이오시밀러 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4249,
+      "trading_value_eok": 7422,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -188,7 +143,52 @@
         "title": "[특징주] '바이오 유럽 2026' 기대감에 제약·바이오株 동반 급등",
         "press": "증시 속보",
         "url": "https://www.newspim.com/news/view/20261105000394",
-        "published_at": "2026-11-05T03:35:34.054Z"
+        "published_at": "2026-11-05T15:40:39.186Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_98",
+      "theme_name": "음원/음반",
+      "full_theme_name": "음원/음반",
+      "change_rate": "+2.67%",
+      "composite_score": 72,
+      "total_stocks_count": 15,
+      "leader_stock": "카카오",
+      "leader_ratio": 11.34,
+      "sub_leader_stock": "에스엠",
+      "other_stocks": [
+        "하이브",
+        "CJ ENM",
+        "와이지엔터테인먼트"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "에스엠",
+          "rate": "+10.4%"
+        },
+        {
+          "name": "하이브",
+          "rate": "+7.4%"
+        },
+        {
+          "name": "CJ ENM",
+          "rate": "+5.5%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감 : 카카오[035720]가 3분기 실적 개선과 1천500억원 규모의 자사주 매입·소각 계획을 발표하면서 5일 주식시장에서 10% 넘게 급등했다. 실적 개선에 더해... 이날 유가증권시장에서 카카오는 전 거래일보...",
+      "future_momentum": "음원/음반 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2696,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감",
+      "today_rising_fact": "[속보 기사] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감 : 카카오[035720]가 3분기 실적 개선과 1천500억원 규모의 자사주 매입·소각 계획을 발표하면서 5일 주식시장에서 10% 넘게 급등했다. 실적 개선에 더해... 이날 유가증권시장에서 카카오는 전 거래일보...",
+      "top_article": {
+        "title": "[특징주] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감",
+        "press": "증시 속보",
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8132",
+        "published_at": "2026-11-05T15:40:39.475Z"
       },
       "timeline": []
     },
@@ -196,34 +196,34 @@
       "theme_id": "radar_165",
       "theme_name": "은행",
       "full_theme_name": "은행",
-      "change_rate": "+2.85%",
-      "composite_score": 69,
+      "change_rate": "+3.24%",
+      "composite_score": 71,
       "total_stocks_count": 11,
       "leader_stock": "우리금융지주",
-      "leader_ratio": 6.59,
+      "leader_ratio": 5.93,
       "sub_leader_stock": "JB금융지주",
       "other_stocks": [
         "KB금융",
         "하나금융지주",
-        "기업은행"
+        "신한지주"
       ],
       "sub_stocks_top3": [
         {
           "name": "JB금융지주",
-          "rate": "+5.0%"
+          "rate": "+5.2%"
         },
         {
           "name": "KB금융",
-          "rate": "+4.0%"
+          "rate": "+4.4%"
         },
         {
           "name": "하나금융지주",
-          "rate": "+3.6%"
+          "rate": "+4.2%"
         }
       ],
       "past_trigger_reason": "[속보 기사] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대... : 오전 11시 15분에는 한국전력이 1위를 유지했고 우리금융지주(316140)가 2위, 셀트리온이 3위에 올랐다. 실리콘투와 한화솔루션은 각각 4위와 5위를 지켰다. 한국전력은 두 차례 집계에서 모두 기관 순...",
       "future_momentum": "은행 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2471,
+      "trading_value_eok": 4787,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -233,14 +233,14 @@
         "title": "[특징주] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=726870",
-        "published_at": "2026-11-05T03:35:34.478Z"
+        "published_at": "2026-11-05T15:40:39.924Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1793849734913_l4n4",
+      "theme_id": "pb_1793893240358_4jwr",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -252,11 +252,11 @@
         "title": "[특징주] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=726411",
-        "published_at": "2026-11-05T03:35:34.913Z"
+        "published_at": "2026-11-05T15:40:40.358Z"
       }
     },
     {
-      "theme_id": "pb_1793849735357_r7vi",
+      "theme_id": "pb_1793893240792_qw4r",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -268,7 +268,7 @@
         "title": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
         "press": "증시 속보",
         "url": "https://www.newspim.com/news/view/20261102000307",
-        "published_at": "2026-11-05T03:35:35.357Z"
+        "published_at": "2026-11-05T15:40:40.792Z"
       }
     }
   ],
