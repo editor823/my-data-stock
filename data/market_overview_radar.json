@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-05T15:40:40.792Z",
+  "updated_at": "2026-11-06T03:30:21.765Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "-5.28%",
+      "change_rate": "-4.7%",
       "is_up": false
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "-5.11%",
+      "change_rate": "-3.9%",
       "is_up": false
     },
     "investor_trend": {
@@ -25,238 +25,237 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_49",
-      "theme_name": "인터넷 대표주",
-      "full_theme_name": "인터넷 대표주",
-      "change_rate": "+9.50%",
-      "composite_score": 99,
-      "total_stocks_count": 2,
-      "leader_stock": "카카오",
-      "leader_ratio": 11.34,
-      "sub_leader_stock": "NAVER",
-      "other_stocks": [],
-      "sub_stocks_top3": [
-        {
-          "name": "NAVER",
-          "rate": "+7.7%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감 : 카카오[035720]가 3분기 실적 개선과 1천500억원 규모의 자사주 매입·소각 계획을 발표하면서 5일 주식시장에서 10% 넘게 급등했다. 실적 개선에 더해... 이날 유가증권시장에서 카카오는 전 거래일보...",
-      "future_momentum": "인터넷 대표주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4282,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감",
-      "today_rising_fact": "[속보 기사] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감 : 카카오[035720]가 3분기 실적 개선과 1천500억원 규모의 자사주 매입·소각 계획을 발표하면서 5일 주식시장에서 10% 넘게 급등했다. 실적 개선에 더해... 이날 유가증권시장에서 카카오는 전 거래일보...",
-      "top_article": {
-        "title": "[특징주] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감",
-        "press": "증시 속보",
-        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8132",
-        "published_at": "2026-11-05T15:40:38.281Z"
-      },
-      "timeline": []
-    },
-    {
       "theme_id": "radar_166",
       "theme_name": "항공/저가 항공사",
       "full_theme_name": "항공/저가 항공사(LCC)",
-      "change_rate": "+4.70%",
-      "composite_score": 76,
+      "change_rate": "-0.48%",
+      "composite_score": 57,
       "total_stocks_count": 9,
-      "leader_stock": "제주항공",
-      "leader_ratio": 14.09,
+      "leader_stock": "한진칼",
+      "leader_ratio": 10.82,
       "sub_leader_stock": "진에어",
       "other_stocks": [
-        "트리니티항공",
         "에어부산",
-        "아시아나항공"
+        "제주항공",
+        "티웨이홀딩스"
       ],
       "sub_stocks_top3": [
         {
           "name": "진에어",
-          "rate": "+8.9%"
-        },
-        {
-          "name": "트리니티항공",
-          "rate": "+8.3%"
+          "rate": "-0.2%"
         },
         {
           "name": "에어부산",
-          "rate": "+6.1%"
+          "rate": "-1.0%"
+        },
+        {
+          "name": "제주항공",
+          "rate": "-1.3%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] '블루쓰나미 악몽'에 반도체주 급락...&quot;5200선 이탈 시 하락... : 특징주로는 미국 중간선거 결과 영향으로 국제유가가 큰 폭으로 하락하며 제주항공(+13.75%), 진에어(+7.36%), 트리니티항공(+9.72%), 에어부산(+6.09%), 아시아나항공(+1.77%), 대한...",
+      "past_trigger_reason": "[속보 기사] 서킷브레이커에도 닷새 연속 불기둥…한진칼우, 23%대 강세 : 호반그룹과 조원태 한진그룹 회장의 경영권 분쟁 속에 한진칼우가 23% 넘게 상승 중이다. 코스피가 미국발 블루쓰나미 영향으로 8% 넘게 하락하며 서킷 브레이커를 맞았지만, 닷새째 강세를 멈추지 않고 있다. ...",
       "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1525,
+      "trading_value_eok": 2305,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[마켓펄스] '블루쓰나미 악몽'에 반도체주 급락...&quot;5200선 이탈 시 하락...",
-      "today_rising_fact": "[속보 기사] '블루쓰나미 악몽'에 반도체주 급락...&quot;5200선 이탈 시 하락... : 특징주로는 미국 중간선거 결과 영향으로 국제유가가 큰 폭으로 하락하며 제주항공(+13.75%), 진에어(+7.36%), 트리니티항공(+9.72%), 에어부산(+6.09%), 아시아나항공(+1.77%), 대한...",
+      "ma5_recovered": false,
+      "trigger_summary": "서킷브레이커에도 닷새 연속 불기둥…한진칼우, 23%대 강세",
+      "today_rising_fact": "[속보 기사] 서킷브레이커에도 닷새 연속 불기둥…한진칼우, 23%대 강세 : 호반그룹과 조원태 한진그룹 회장의 경영권 분쟁 속에 한진칼우가 23% 넘게 상승 중이다. 코스피가 미국발 블루쓰나미 영향으로 8% 넘게 하락하며 서킷 브레이커를 맞았지만, 닷새째 강세를 멈추지 않고 있다. ...",
       "top_article": {
-        "title": "[마켓펄스] '블루쓰나미 악몽'에 반도체주 급락...&quot;5200선 이탈 시 하락...",
+        "title": "서킷브레이커에도 닷새 연속 불기둥…한진칼우, 23%대 강세",
         "press": "증시 속보",
-        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130657",
-        "published_at": "2026-11-05T15:40:38.752Z"
+        "url": "https://www.mt.co.kr/stock/2026/11/06/2026110610203551689",
+        "published_at": "2026-11-06T03:30:18.876Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_241",
-      "theme_name": "바이오시밀러",
-      "full_theme_name": "바이오시밀러(복제 바이오의약품)",
-      "change_rate": "+2.54%",
-      "composite_score": 74,
-      "total_stocks_count": 21,
-      "leader_stock": "삼성에피스홀딩스",
-      "leader_ratio": 13.86,
-      "sub_leader_stock": "한미약품",
-      "other_stocks": [
-        "셀트리온",
-        "한올바이오파마",
-        "셀트리온제약"
-      ],
+      "theme_id": "radar_49",
+      "theme_name": "인터넷 대표주",
+      "full_theme_name": "인터넷 대표주",
+      "change_rate": "+1.19%",
+      "composite_score": 55,
+      "total_stocks_count": 2,
+      "leader_stock": "NAVER",
+      "leader_ratio": 1.57,
+      "sub_leader_stock": "카카오",
+      "other_stocks": [],
       "sub_stocks_top3": [
         {
-          "name": "한미약품",
-          "rate": "+9.8%"
-        },
-        {
-          "name": "셀트리온",
-          "rate": "+7.5%"
-        },
-        {
-          "name": "한올바이오파마",
-          "rate": "+6.5%"
+          "name": "카카오",
+          "rate": "+1.4%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] '바이오 유럽 2026' 기대감에 제약·바이오株 동반 급등 : 이 밖에 SK바이오팜(12.76%), 삼성에피스홀딩스(10.28%), 지아이이노베이션(9.97%), 이엔셀(8.48%), 한미약품(8.38%), 제니아테라퓨틱스(6.81%), 큐릭오스(6.80%), 알테오젠...",
-      "future_momentum": "바이오시밀러 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 7422,
-      "is_real_leading": true,
+      "past_trigger_reason": "[속보 기사] 삼성전기·셀트리온·NAVER : 빅터뉴스 김두윤 기자 2026년 11월 5일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 삼성전기, 셀트리온, NAVER가 특징주로 꼽혔다. ■ 삼성전기(00...",
+      "future_momentum": "인터넷 대표주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1875,
+      "is_real_leading": false,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] '바이오 유럽 2026' 기대감에 제약·바이오株 동반 급등",
-      "today_rising_fact": "[속보 기사] '바이오 유럽 2026' 기대감에 제약·바이오株 동반 급등 : 이 밖에 SK바이오팜(12.76%), 삼성에피스홀딩스(10.28%), 지아이이노베이션(9.97%), 이엔셀(8.48%), 한미약품(8.38%), 제니아테라퓨틱스(6.81%), 큐릭오스(6.80%), 알테오젠...",
+      "ma5_recovered": false,
+      "trigger_summary": "[오늘의 특징주] 삼성전기·셀트리온·NAVER",
+      "today_rising_fact": "[속보 기사] 삼성전기·셀트리온·NAVER : 빅터뉴스 김두윤 기자 2026년 11월 5일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 삼성전기, 셀트리온, NAVER가 특징주로 꼽혔다. ■ 삼성전기(00...",
       "top_article": {
-        "title": "[특징주] '바이오 유럽 2026' 기대감에 제약·바이오株 동반 급등",
+        "title": "[오늘의 특징주] 삼성전기·셀트리온·NAVER",
         "press": "증시 속보",
-        "url": "https://www.newspim.com/news/view/20261105000394",
-        "published_at": "2026-11-05T15:40:39.186Z"
+        "url": "https://www.bigtanews.co.kr/article/view/big202611050021",
+        "published_at": "2026-11-06T03:30:19.370Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_98",
-      "theme_name": "음원/음반",
-      "full_theme_name": "음원/음반",
-      "change_rate": "+2.67%",
-      "composite_score": 72,
-      "total_stocks_count": 15,
-      "leader_stock": "카카오",
-      "leader_ratio": 11.34,
-      "sub_leader_stock": "에스엠",
+      "theme_id": "radar_525",
+      "theme_name": "렌터카",
+      "full_theme_name": "렌터카",
+      "change_rate": "+1.29%",
+      "composite_score": 50,
+      "total_stocks_count": 4,
+      "leader_stock": "롯데렌탈",
+      "leader_ratio": 10.4,
+      "sub_leader_stock": "레드캡투어",
       "other_stocks": [
-        "하이브",
-        "CJ ENM",
-        "와이지엔터테인먼트"
+        "KG모빌리티플랫폼",
+        "쏘카"
       ],
       "sub_stocks_top3": [
         {
-          "name": "에스엠",
-          "rate": "+10.4%"
+          "name": "레드캡투어",
+          "rate": "+0.6%"
         },
         {
-          "name": "하이브",
-          "rate": "+7.4%"
+          "name": "KG모빌리티플랫폼",
+          "rate": "-3.1%"
         },
         {
-          "name": "CJ ENM",
-          "rate": "+5.5%"
+          "name": "쏘카",
+          "rate": "-3.5%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감 : 카카오[035720]가 3분기 실적 개선과 1천500억원 규모의 자사주 매입·소각 계획을 발표하면서 5일 주식시장에서 10% 넘게 급등했다. 실적 개선에 더해... 이날 유가증권시장에서 카카오는 전 거래일보...",
-      "future_momentum": "음원/음반 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2696,
+      "past_trigger_reason": "[속보 기사] 외국인, 삼성전자 순매도…기관, SK하이닉스·삼성중공업·한... : 기관은 SK하이닉스를 중심으로 삼성중공업과 한화오션 등을 순매수했으며, 피노와 롯데렌탈은 순매도 상위권에 포함됐다. 이날 국내 증시는 미국 AI·반도체 관련주 급락 여파로 장 초반 서킷브레이커가 발동하는 등...",
+      "future_momentum": "렌터카 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 990,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감",
-      "today_rising_fact": "[속보 기사] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감 : 카카오[035720]가 3분기 실적 개선과 1천500억원 규모의 자사주 매입·소각 계획을 발표하면서 5일 주식시장에서 10% 넘게 급등했다. 실적 개선에 더해... 이날 유가증권시장에서 카카오는 전 거래일보...",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 외국인, 삼성전자 순매도…기관, SK하이닉스·삼성중공업·한...",
+      "today_rising_fact": "[속보 기사] 외국인, 삼성전자 순매도…기관, SK하이닉스·삼성중공업·한... : 기관은 SK하이닉스를 중심으로 삼성중공업과 한화오션 등을 순매수했으며, 피노와 롯데렌탈은 순매도 상위권에 포함됐다. 이날 국내 증시는 미국 AI·반도체 관련주 급락 여파로 장 초반 서킷브레이커가 발동하는 등...",
       "top_article": {
-        "title": "[특징주] 카카오, 실적 개선·1천500억원 자사주 소각에 10.65% 급등 마감",
+        "title": "[특징주] 외국인, 삼성전자 순매도…기관, SK하이닉스·삼성중공업·한...",
         "press": "증시 속보",
-        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8132",
-        "published_at": "2026-11-05T15:40:39.475Z"
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=727089",
+        "published_at": "2026-11-06T03:30:19.831Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_165",
-      "theme_name": "은행",
-      "full_theme_name": "은행",
-      "change_rate": "+3.24%",
-      "composite_score": 71,
-      "total_stocks_count": 11,
-      "leader_stock": "우리금융지주",
-      "leader_ratio": 5.93,
-      "sub_leader_stock": "JB금융지주",
+      "theme_id": "radar_378",
+      "theme_name": "건설기계",
+      "full_theme_name": "건설기계",
+      "change_rate": "+0.27%",
+      "composite_score": 50,
+      "total_stocks_count": 16,
+      "leader_stock": "혜인",
+      "leader_ratio": 15.46,
+      "sub_leader_stock": "대동금속",
       "other_stocks": [
-        "KB금융",
-        "하나금융지주",
-        "신한지주"
+        "전진건설로봇",
+        "두산밥캣",
+        "동일금속"
       ],
       "sub_stocks_top3": [
         {
-          "name": "JB금융지주",
-          "rate": "+5.2%"
+          "name": "대동금속",
+          "rate": "+12.6%"
         },
         {
-          "name": "KB금융",
-          "rate": "+4.4%"
+          "name": "전진건설로봇",
+          "rate": "+2.7%"
         },
         {
-          "name": "하나금융지주",
-          "rate": "+4.2%"
+          "name": "두산밥캣",
+          "rate": "+0.6%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대... : 오전 11시 15분에는 한국전력이 1위를 유지했고 우리금융지주(316140)가 2위, 셀트리온이 3위에 올랐다. 실리콘투와 한화솔루션은 각각 4위와 5위를 지켰다. 한국전력은 두 차례 집계에서 모두 기관 순...",
-      "future_momentum": "은행 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4787,
-      "is_real_leading": true,
+      "past_trigger_reason": "[속보 기사] 테오도르의 시장분석: 와 테마주 \"건설주 강세 명확\" : 유니퀘스트·유니켐·알멕·혜인·빅텍 등도 15~19%대 상승하며 개별 재료성 특징주로 부각됐습니다. 하락률 상위에서는 폴라리스우노가 15%대, 서울식품우가 14%대 하락했고, 랩지노믹스·에이엔피·서한·듀켐바이...",
+      "future_momentum": "건설기계 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 438,
+      "is_real_leading": false,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대...",
-      "today_rising_fact": "[속보 기사] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대... : 오전 11시 15분에는 한국전력이 1위를 유지했고 우리금융지주(316140)가 2위, 셀트리온이 3위에 올랐다. 실리콘투와 한화솔루션은 각각 4위와 5위를 지켰다. 한국전력은 두 차례 집계에서 모두 기관 순...",
+      "ma5_recovered": false,
+      "trigger_summary": "테오도르의 시장분석: 특징주와 테마주 \"건설주 강세 명확\"",
+      "today_rising_fact": "[속보 기사] 테오도르의 시장분석: 와 테마주 \"건설주 강세 명확\" : 유니퀘스트·유니켐·알멕·혜인·빅텍 등도 15~19%대 상승하며 개별 재료성 특징주로 부각됐습니다. 하락률 상위에서는 폴라리스우노가 15%대, 서울식품우가 14%대 하락했고, 랩지노믹스·에이엔피·서한·듀켐바이...",
       "top_article": {
-        "title": "[특징주] 외국인, 기업은행·제주항공 순매수…기관, 한국전력 사고 대...",
+        "title": "테오도르의 시장분석: 특징주와 테마주 \"건설주 강세 명확\"",
         "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=726870",
-        "published_at": "2026-11-05T15:40:39.924Z"
+        "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=395947",
+        "published_at": "2026-11-06T03:30:20.281Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_124",
+      "theme_name": "제대혈",
+      "full_theme_name": "제대혈",
+      "change_rate": "+0.25%",
+      "composite_score": 50,
+      "total_stocks_count": 5,
+      "leader_stock": "강스템바이오텍",
+      "leader_ratio": 2,
+      "sub_leader_stock": "차바이오텍",
+      "other_stocks": [
+        "녹십자",
+        "메디포스트",
+        "지씨셀"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "차바이오텍",
+          "rate": "+0.6%"
+        },
+        {
+          "name": "녹십자",
+          "rate": "+0.1%"
+        },
+        {
+          "name": "메디포스트",
+          "rate": "+0.1%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 강스템바이오텍, 무릎 골관절염 치료제 임상 결과 공개…후속... : 강스템바이오텍(217730)이 무릎 골관절염 치료제 '퓨어스템-오에이 키트 주'의 임상시험 결과보고서를 수령했다. 지난 7월 발표한 주요 임상 결과를 바탕으로 통증과 관절 기능, 안전성 등에 관한 세부 평가...",
+      "future_momentum": "제대혈 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 78,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 강스템바이오텍, 무릎 골관절염 치료제 임상 결과 공개…후속...",
+      "today_rising_fact": "[속보 기사] 강스템바이오텍, 무릎 골관절염 치료제 임상 결과 공개…후속... : 강스템바이오텍(217730)이 무릎 골관절염 치료제 '퓨어스템-오에이 키트 주'의 임상시험 결과보고서를 수령했다. 지난 7월 발표한 주요 임상 결과를 바탕으로 통증과 관절 기능, 안전성 등에 관한 세부 평가...",
+      "top_article": {
+        "title": "[특징주] 강스템바이오텍, 무릎 골관절염 치료제 임상 결과 공개…후속...",
+        "press": "증시 속보",
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=725028",
+        "published_at": "2026-11-06T03:30:20.794Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1793893240358_4jwr",
+      "theme_id": "pb_1793935821277_smjt",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
       "ma5_recovered": true,
       "period_range": "최근 1.5개월 (기준봉 상단 지지선)",
-      "past_trigger_reason": "[속보 기사] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는... : 외국인 순매도 상위 종목은 △삼성전자(005930) △빛과전자 △대우건설(047040) △한화오션(042660) △서울반도체(046890) 순이었다. 삼성전자는 오전 9시 26분부터 11시 11분까지 세 차...",
+      "past_trigger_reason": "[속보 기사] 외국인, 삼성전자 순매도…기관, SK하이닉스·삼성중공업·한... : 기관은 SK하이닉스를 중심으로 삼성중공업과 한화오션 등을 순매수했으며, 피노와 롯데렌탈은 순매도 상위권에 포함됐다. 이날 국내 증시는 미국 AI·반도체 관련주 급락 여파로 장 초반 서킷브레이커가 발동하는 등...",
       "future_momentum": "글로벌 신조선가 지수 연중 최고치 경신 및 LNG 운반선·친환경 컨테이너선 후속 대량 수주 기대감",
       "top_article": {
-        "title": "[특징주] 외국인 '드림시큐리티'·기관 '대한항공' 순매수…삼성전자는...",
+        "title": "[특징주] 외국인, 삼성전자 순매도…기관, SK하이닉스·삼성중공업·한...",
         "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=726411",
-        "published_at": "2026-11-05T15:40:40.358Z"
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=727089",
+        "published_at": "2026-11-06T03:30:21.277Z"
       }
     },
     {
-      "theme_id": "pb_1793893240792_qw4r",
+      "theme_id": "pb_1793935821765_xuf6",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -268,7 +267,7 @@
         "title": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
         "press": "증시 속보",
         "url": "https://www.newspim.com/news/view/20261102000307",
-        "published_at": "2026-11-05T15:40:40.792Z"
+        "published_at": "2026-11-06T03:30:21.765Z"
       }
     }
   ],
