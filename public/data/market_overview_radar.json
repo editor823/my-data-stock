@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-06T03:30:21.765Z",
+  "updated_at": "2026-11-06T11:22:54.548Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "-4.7%",
+      "change_rate": "-6.02%",
       "is_up": false
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "-3.9%",
+      "change_rate": "-5.03%",
       "is_up": false
     },
     "investor_trend": {
@@ -25,221 +25,228 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_166",
-      "theme_name": "항공/저가 항공사",
-      "full_theme_name": "항공/저가 항공사(LCC)",
-      "change_rate": "-0.48%",
-      "composite_score": 57,
-      "total_stocks_count": 9,
-      "leader_stock": "한진칼",
-      "leader_ratio": 10.82,
-      "sub_leader_stock": "진에어",
+      "theme_id": "radar_276",
+      "theme_name": "클라우드 컴퓨팅",
+      "full_theme_name": "클라우드 컴퓨팅",
+      "change_rate": "-0.56%",
+      "composite_score": 64,
+      "total_stocks_count": 36,
+      "leader_stock": "엘리스",
+      "leader_ratio": 20.95,
+      "sub_leader_stock": "솔트웨어",
       "other_stocks": [
-        "에어부산",
-        "제주항공",
-        "티웨이홀딩스"
+        "엔텔스",
+        "삼성에스디에스",
+        "안랩"
       ],
       "sub_stocks_top3": [
         {
-          "name": "진에어",
-          "rate": "-0.2%"
+          "name": "솔트웨어",
+          "rate": "+5.9%"
         },
         {
-          "name": "에어부산",
-          "rate": "-1.0%"
+          "name": "엔텔스",
+          "rate": "+5.8%"
         },
         {
-          "name": "제주항공",
-          "rate": "-1.3%"
+          "name": "삼성에스디에스",
+          "rate": "+4.9%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 서킷브레이커에도 닷새 연속 불기둥…한진칼우, 23%대 강세 : 호반그룹과 조원태 한진그룹 회장의 경영권 분쟁 속에 한진칼우가 23% 넘게 상승 중이다. 코스피가 미국발 블루쓰나미 영향으로 8% 넘게 하락하며 서킷 브레이커를 맞았지만, 닷새째 강세를 멈추지 않고 있다. ...",
-      "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2305,
+      "past_trigger_reason": "[속보 기사] 엘리스, 美 기술주 반등에 12%대 급등…상장 후 롤러코스터 : 아주경제=최윤선 기자 solarchoi@ajunews.com 엘리스 AI PMDC 예시 조감도[사진=엘리스그룹] 인공지능(AI) 인프라 전문기업 엘리스가 12% 넘게 급등하고 있다. 간밤 뉴욕증시에서 주요 ...",
+      "future_momentum": "클라우드 컴퓨팅 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 8196,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "서킷브레이커에도 닷새 연속 불기둥…한진칼우, 23%대 강세",
-      "today_rising_fact": "[속보 기사] 서킷브레이커에도 닷새 연속 불기둥…한진칼우, 23%대 강세 : 호반그룹과 조원태 한진그룹 회장의 경영권 분쟁 속에 한진칼우가 23% 넘게 상승 중이다. 코스피가 미국발 블루쓰나미 영향으로 8% 넘게 하락하며 서킷 브레이커를 맞았지만, 닷새째 강세를 멈추지 않고 있다. ...",
+      "trigger_summary": "[특징주] 엘리스, 美 기술주 반등에 12%대 급등…상장 후 롤러코스터",
+      "today_rising_fact": "[속보 기사] 엘리스, 美 기술주 반등에 12%대 급등…상장 후 롤러코스터 : 아주경제=최윤선 기자 solarchoi@ajunews.com 엘리스 AI PMDC 예시 조감도[사진=엘리스그룹] 인공지능(AI) 인프라 전문기업 엘리스가 12% 넘게 급등하고 있다. 간밤 뉴욕증시에서 주요 ...",
       "top_article": {
-        "title": "서킷브레이커에도 닷새 연속 불기둥…한진칼우, 23%대 강세",
+        "title": "[특징주] 엘리스, 美 기술주 반등에 12%대 급등…상장 후 롤러코스터",
         "press": "증시 속보",
-        "url": "https://www.mt.co.kr/stock/2026/11/06/2026110610203551689",
-        "published_at": "2026-11-06T03:30:18.876Z"
+        "url": "https://www.ajunews.com/view/20261027133701878",
+        "published_at": "2026-11-06T11:22:52.287Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_49",
-      "theme_name": "인터넷 대표주",
-      "full_theme_name": "인터넷 대표주",
-      "change_rate": "+1.19%",
-      "composite_score": 55,
-      "total_stocks_count": 2,
-      "leader_stock": "NAVER",
-      "leader_ratio": 1.57,
-      "sub_leader_stock": "카카오",
-      "other_stocks": [],
+      "theme_id": "radar_126",
+      "theme_name": "통신",
+      "full_theme_name": "통신",
+      "change_rate": "+1.60%",
+      "composite_score": 61,
+      "total_stocks_count": 3,
+      "leader_stock": "LG유플러스",
+      "leader_ratio": 3.7,
+      "sub_leader_stock": "KT",
+      "other_stocks": [
+        "SK텔레콤"
+      ],
       "sub_stocks_top3": [
         {
-          "name": "카카오",
+          "name": "KT",
           "rate": "+1.4%"
+        },
+        {
+          "name": "SK텔레콤",
+          "rate": "-0.3%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 삼성전기·셀트리온·NAVER : 빅터뉴스 김두윤 기자 2026년 11월 5일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 삼성전기, 셀트리온, NAVER가 특징주로 꼽혔다. ■ 삼성전기(00...",
-      "future_momentum": "인터넷 대표주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1875,
+      "past_trigger_reason": "[속보 기사] 금리 하락·배당 증가…SKT·KT·LG유플러스 주목 : 현재 통신 3사의 기대배당수익률은 SK텔레콤 4.5%, KT 4.7%, LG유플러스 4.7% 수준이다. 시중 금리와 비교해 낮지는 않지만 투자 매력이 충분하지 않다는 분석이다. 김 연구원은 장기 DPS 상승...",
+      "future_momentum": "통신 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2402,
       "is_real_leading": false,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "[오늘의 특징주] 삼성전기·셀트리온·NAVER",
-      "today_rising_fact": "[속보 기사] 삼성전기·셀트리온·NAVER : 빅터뉴스 김두윤 기자 2026년 11월 5일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 삼성전기, 셀트리온, NAVER가 특징주로 꼽혔다. ■ 삼성전기(00...",
+      "trigger_summary": "[특징주] 금리 하락·배당 증가…SKT·KT·LG유플러스 주목",
+      "today_rising_fact": "[속보 기사] 금리 하락·배당 증가…SKT·KT·LG유플러스 주목 : 현재 통신 3사의 기대배당수익률은 SK텔레콤 4.5%, KT 4.7%, LG유플러스 4.7% 수준이다. 시중 금리와 비교해 낮지는 않지만 투자 매력이 충분하지 않다는 분석이다. 김 연구원은 장기 DPS 상승...",
       "top_article": {
-        "title": "[오늘의 특징주] 삼성전기·셀트리온·NAVER",
+        "title": "[특징주] 금리 하락·배당 증가…SKT·KT·LG유플러스 주목",
         "press": "증시 속보",
-        "url": "https://www.bigtanews.co.kr/article/view/big202611050021",
-        "published_at": "2026-11-06T03:30:19.370Z"
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=724378",
+        "published_at": "2026-11-06T11:22:52.749Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_525",
-      "theme_name": "렌터카",
-      "full_theme_name": "렌터카",
-      "change_rate": "+1.29%",
-      "composite_score": 50,
-      "total_stocks_count": 4,
-      "leader_stock": "롯데렌탈",
-      "leader_ratio": 10.4,
-      "sub_leader_stock": "레드캡투어",
+      "theme_id": "radar_265",
+      "theme_name": "모바일게임",
+      "full_theme_name": "모바일게임(스마트폰)",
+      "change_rate": "-0.20%",
+      "composite_score": 59,
+      "total_stocks_count": 36,
+      "leader_stock": "NHN",
+      "leader_ratio": 12.89,
+      "sub_leader_stock": "썸에이지",
       "other_stocks": [
-        "KG모빌리티플랫폼",
-        "쏘카"
+        "웹젠",
+        "펄어비스",
+        "컴투스"
       ],
       "sub_stocks_top3": [
         {
-          "name": "레드캡투어",
-          "rate": "+0.6%"
-        },
-        {
-          "name": "KG모빌리티플랫폼",
-          "rate": "-3.1%"
-        },
-        {
-          "name": "쏘카",
-          "rate": "-3.5%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 외국인, 삼성전자 순매도…기관, SK하이닉스·삼성중공업·한... : 기관은 SK하이닉스를 중심으로 삼성중공업과 한화오션 등을 순매수했으며, 피노와 롯데렌탈은 순매도 상위권에 포함됐다. 이날 국내 증시는 미국 AI·반도체 관련주 급락 여파로 장 초반 서킷브레이커가 발동하는 등...",
-      "future_momentum": "렌터카 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 990,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] 외국인, 삼성전자 순매도…기관, SK하이닉스·삼성중공업·한...",
-      "today_rising_fact": "[속보 기사] 외국인, 삼성전자 순매도…기관, SK하이닉스·삼성중공업·한... : 기관은 SK하이닉스를 중심으로 삼성중공업과 한화오션 등을 순매수했으며, 피노와 롯데렌탈은 순매도 상위권에 포함됐다. 이날 국내 증시는 미국 AI·반도체 관련주 급락 여파로 장 초반 서킷브레이커가 발동하는 등...",
-      "top_article": {
-        "title": "[특징주] 외국인, 삼성전자 순매도…기관, SK하이닉스·삼성중공업·한...",
-        "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=727089",
-        "published_at": "2026-11-06T03:30:19.831Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_378",
-      "theme_name": "건설기계",
-      "full_theme_name": "건설기계",
-      "change_rate": "+0.27%",
-      "composite_score": 50,
-      "total_stocks_count": 16,
-      "leader_stock": "혜인",
-      "leader_ratio": 15.46,
-      "sub_leader_stock": "대동금속",
-      "other_stocks": [
-        "전진건설로봇",
-        "두산밥캣",
-        "동일금속"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "대동금속",
-          "rate": "+12.6%"
-        },
-        {
-          "name": "전진건설로봇",
+          "name": "썸에이지",
           "rate": "+2.7%"
         },
         {
-          "name": "두산밥캣",
-          "rate": "+0.6%"
+          "name": "웹젠",
+          "rate": "+2.4%"
+        },
+        {
+          "name": "펄어비스",
+          "rate": "+2.3%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 테오도르의 시장분석: 와 테마주 \"건설주 강세 명확\" : 유니퀘스트·유니켐·알멕·혜인·빅텍 등도 15~19%대 상승하며 개별 재료성 특징주로 부각됐습니다. 하락률 상위에서는 폴라리스우노가 15%대, 서울식품우가 14%대 하락했고, 랩지노믹스·에이엔피·서한·듀켐바이...",
-      "future_momentum": "건설기계 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 438,
-      "is_real_leading": false,
+      "past_trigger_reason": "[속보 기사] SK하이닉스·NAVER·NHN : 빅터뉴스 김두윤 기자 11월 6일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK하이닉스, NAVER, NHN이 특징주로 꼽혔다. ■ SK하이닉스(00066...",
+      "future_momentum": "모바일게임 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 4409,
+      "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "테오도르의 시장분석: 특징주와 테마주 \"건설주 강세 명확\"",
-      "today_rising_fact": "[속보 기사] 테오도르의 시장분석: 와 테마주 \"건설주 강세 명확\" : 유니퀘스트·유니켐·알멕·혜인·빅텍 등도 15~19%대 상승하며 개별 재료성 특징주로 부각됐습니다. 하락률 상위에서는 폴라리스우노가 15%대, 서울식품우가 14%대 하락했고, 랩지노믹스·에이엔피·서한·듀켐바이...",
+      "trigger_summary": "[오늘의 특징주] SK하이닉스·NAVER·NHN",
+      "today_rising_fact": "[속보 기사] SK하이닉스·NAVER·NHN : 빅터뉴스 김두윤 기자 11월 6일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK하이닉스, NAVER, NHN이 특징주로 꼽혔다. ■ SK하이닉스(00066...",
       "top_article": {
-        "title": "테오도르의 시장분석: 특징주와 테마주 \"건설주 강세 명확\"",
+        "title": "[오늘의 특징주] SK하이닉스·NAVER·NHN",
         "press": "증시 속보",
-        "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=395947",
-        "published_at": "2026-11-06T03:30:20.281Z"
+        "url": "https://www.bigtanews.co.kr/article/view/big202611060012",
+        "published_at": "2026-11-06T11:22:53.175Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_124",
-      "theme_name": "제대혈",
-      "full_theme_name": "제대혈",
-      "change_rate": "+0.25%",
-      "composite_score": 50,
-      "total_stocks_count": 5,
-      "leader_stock": "강스템바이오텍",
-      "leader_ratio": 2,
-      "sub_leader_stock": "차바이오텍",
+      "theme_id": "radar_42",
+      "theme_name": "게임",
+      "full_theme_name": "게임",
+      "change_rate": "-0.51%",
+      "composite_score": 57,
+      "total_stocks_count": 30,
+      "leader_stock": "NHN",
+      "leader_ratio": 12.89,
+      "sub_leader_stock": "웹젠",
       "other_stocks": [
-        "녹십자",
-        "메디포스트",
-        "지씨셀"
+        "펄어비스",
+        "컴투스",
+        "위메이드맥스"
       ],
       "sub_stocks_top3": [
         {
-          "name": "차바이오텍",
-          "rate": "+0.6%"
+          "name": "웹젠",
+          "rate": "+2.4%"
         },
         {
-          "name": "녹십자",
-          "rate": "+0.1%"
+          "name": "펄어비스",
+          "rate": "+2.3%"
         },
         {
-          "name": "메디포스트",
-          "rate": "+0.1%"
+          "name": "컴투스",
+          "rate": "+2.0%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 강스템바이오텍, 무릎 골관절염 치료제 임상 결과 공개…후속... : 강스템바이오텍(217730)이 무릎 골관절염 치료제 '퓨어스템-오에이 키트 주'의 임상시험 결과보고서를 수령했다. 지난 7월 발표한 주요 임상 결과를 바탕으로 통증과 관절 기능, 안전성 등에 관한 세부 평가...",
-      "future_momentum": "제대혈 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 78,
-      "is_real_leading": false,
+      "past_trigger_reason": "[속보 기사] SK하이닉스·NAVER·NHN : 빅터뉴스 김두윤 기자 11월 6일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK하이닉스, NAVER, NHN이 특징주로 꼽혔다. ■ SK하이닉스(00066...",
+      "future_momentum": "게임 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 4427,
+      "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "[특징주] 강스템바이오텍, 무릎 골관절염 치료제 임상 결과 공개…후속...",
-      "today_rising_fact": "[속보 기사] 강스템바이오텍, 무릎 골관절염 치료제 임상 결과 공개…후속... : 강스템바이오텍(217730)이 무릎 골관절염 치료제 '퓨어스템-오에이 키트 주'의 임상시험 결과보고서를 수령했다. 지난 7월 발표한 주요 임상 결과를 바탕으로 통증과 관절 기능, 안전성 등에 관한 세부 평가...",
+      "trigger_summary": "[오늘의 특징주] SK하이닉스·NAVER·NHN",
+      "today_rising_fact": "[속보 기사] SK하이닉스·NAVER·NHN : 빅터뉴스 김두윤 기자 11월 6일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK하이닉스, NAVER, NHN이 특징주로 꼽혔다. ■ SK하이닉스(00066...",
       "top_article": {
-        "title": "[특징주] 강스템바이오텍, 무릎 골관절염 치료제 임상 결과 공개…후속...",
+        "title": "[오늘의 특징주] SK하이닉스·NAVER·NHN",
         "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=725028",
-        "published_at": "2026-11-06T03:30:20.794Z"
+        "url": "https://www.bigtanews.co.kr/article/view/big202611060012",
+        "published_at": "2026-11-06T11:22:53.460Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_488",
+      "theme_name": "웹툰",
+      "full_theme_name": "웹툰",
+      "change_rate": "-0.81%",
+      "composite_score": 56,
+      "total_stocks_count": 14,
+      "leader_stock": "NHN",
+      "leader_ratio": 12.89,
+      "sub_leader_stock": "엔키AX",
+      "other_stocks": [
+        "NAVER",
+        "키다리스튜디오",
+        "미스터블루"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "엔키AX",
+          "rate": "+4.9%"
+        },
+        {
+          "name": "NAVER",
+          "rate": "+2.0%"
+        },
+        {
+          "name": "키다리스튜디오",
+          "rate": "+0.5%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] SK하이닉스·NAVER·NHN : 빅터뉴스 김두윤 기자 11월 6일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK하이닉스, NAVER, NHN이 특징주로 꼽혔다. ■ SK하이닉스(00066...",
+      "future_momentum": "웹툰 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 5446,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[오늘의 특징주] SK하이닉스·NAVER·NHN",
+      "today_rising_fact": "[속보 기사] SK하이닉스·NAVER·NHN : 빅터뉴스 김두윤 기자 11월 6일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK하이닉스, NAVER, NHN이 특징주로 꼽혔다. ■ SK하이닉스(00066...",
+      "top_article": {
+        "title": "[오늘의 특징주] SK하이닉스·NAVER·NHN",
+        "press": "증시 속보",
+        "url": "https://www.bigtanews.co.kr/article/view/big202611060012",
+        "published_at": "2026-11-06T11:22:53.785Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1793935821277_smjt",
+      "theme_id": "pb_1793964174181_ar06",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -251,11 +258,11 @@
         "title": "[특징주] 외국인, 삼성전자 순매도…기관, SK하이닉스·삼성중공업·한...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=727089",
-        "published_at": "2026-11-06T03:30:21.277Z"
+        "published_at": "2026-11-06T11:22:54.181Z"
       }
     },
     {
-      "theme_id": "pb_1793935821765_xuf6",
+      "theme_id": "pb_1793964174548_qrlz",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -267,7 +274,7 @@
         "title": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
         "press": "증시 속보",
         "url": "https://www.newspim.com/news/view/20261102000307",
-        "published_at": "2026-11-06T03:30:21.765Z"
+        "published_at": "2026-11-06T11:22:54.548Z"
       }
     }
   ],
