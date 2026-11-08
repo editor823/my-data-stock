@@ -1,6 +1,6 @@
 {
   "success": true,
-  "updated_at": "2026-11-08T02:36:27.545Z",
+  "updated_at": "2026-11-08T10:38:27.932Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
@@ -65,7 +65,7 @@
         "title": "[특징주] 엘리스, 美 기술주 반등에 12%대 급등…상장 후 롤러코스터",
         "press": "증시 속보",
         "url": "https://www.ajunews.com/view/20261027133701878",
-        "published_at": "2026-11-08T02:36:25.364Z"
+        "published_at": "2026-11-08T10:38:25.393Z"
       },
       "timeline": []
     },
@@ -104,7 +104,7 @@
         "title": "[특징주] 금리 하락·배당 증가…SKT·KT·LG유플러스 주목",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=724378",
-        "published_at": "2026-11-08T02:36:25.805Z"
+        "published_at": "2026-11-08T10:38:25.902Z"
       },
       "timeline": []
     },
@@ -149,7 +149,7 @@
         "title": "[오늘의 특징주] SK하이닉스·NAVER·NHN",
         "press": "증시 속보",
         "url": "https://www.bigtanews.co.kr/article/view/big202611060012",
-        "published_at": "2026-11-08T02:36:26.212Z"
+        "published_at": "2026-11-08T10:38:26.349Z"
       },
       "timeline": []
     },
@@ -194,7 +194,7 @@
         "title": "[오늘의 특징주] SK하이닉스·NAVER·NHN",
         "press": "증시 속보",
         "url": "https://www.bigtanews.co.kr/article/view/big202611060012",
-        "published_at": "2026-11-08T02:36:26.479Z"
+        "published_at": "2026-11-08T10:38:26.651Z"
       },
       "timeline": []
     },
@@ -239,14 +239,14 @@
         "title": "[오늘의 특징주] SK하이닉스·NAVER·NHN",
         "press": "증시 속보",
         "url": "https://www.bigtanews.co.kr/article/view/big202611060012",
-        "published_at": "2026-11-08T02:36:26.778Z"
+        "published_at": "2026-11-08T10:38:26.949Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1794105387168_q9r3",
+      "theme_id": "pb_1794134307437_ig9q",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -258,11 +258,11 @@
         "title": "[특징주] 외국인, 삼성전자 순매도…기관, SK하이닉스·삼성중공업·한...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=727089",
-        "published_at": "2026-11-08T02:36:27.168Z"
+        "published_at": "2026-11-08T10:38:27.437Z"
       }
     },
     {
-      "theme_id": "pb_1794105387545_jm2c",
+      "theme_id": "pb_1794134307932_uvey",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -274,7 +274,7 @@
         "title": "[특징주] 글로벌 선박 발주 확대·신조선가 상승에 조선株 급등",
         "press": "증시 속보",
         "url": "https://www.newspim.com/news/view/20261102000307",
-        "published_at": "2026-11-08T02:36:27.545Z"
+        "published_at": "2026-11-08T10:38:27.932Z"
       }
     }
   ],
