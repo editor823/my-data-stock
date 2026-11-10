@@ -1,16 +1,16 @@
 {
   "success": true,
-  "updated_at": "2026-11-09T22:35:37.401Z",
+  "updated_at": "2026-11-10T04:42:07.817Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "-0.81%",
-      "is_up": false
+      "change_rate": "+3.66%",
+      "is_up": true
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "-0.82%",
-      "is_up": false
+      "change_rate": "+3.18%",
+      "is_up": true
     },
     "investor_trend": {
       "kospi": {
@@ -28,247 +28,247 @@
       "theme_id": "radar_166",
       "theme_name": "항공/저가 항공사",
       "full_theme_name": "항공/저가 항공사(LCC)",
-      "change_rate": "+4.40%",
-      "composite_score": 80,
+      "change_rate": "+12.63%",
+      "composite_score": 99,
       "total_stocks_count": 9,
-      "leader_stock": "한진칼",
-      "leader_ratio": 10.15,
-      "sub_leader_stock": "제주항공",
+      "leader_stock": "진에어",
+      "leader_ratio": 28.94,
+      "sub_leader_stock": "에어부산",
       "other_stocks": [
-        "트리니티항공",
-        "에어부산",
-        "진에어"
+        "아시아나항공",
+        "대한항공",
+        "제주항공"
       ],
       "sub_stocks_top3": [
-        {
-          "name": "제주항공",
-          "rate": "+9.6%"
-        },
-        {
-          "name": "트리니티항공",
-          "rate": "+8.8%"
-        },
         {
           "name": "에어부산",
-          "rate": "+4.4%"
+          "rate": "+19.9%"
+        },
+        {
+          "name": "아시아나항공",
+          "rate": "+11.4%"
+        },
+        {
+          "name": "대한항공",
+          "rate": "+11.2%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 호반·조원태 지분 경쟁에 한진칼 강세…우선주 3거래일 연속... : 한진칼이 호반그룹과 조원태 한진그룹 회장 간 지분 경쟁이 부각되면서 7거래일 연속 상승세를 이어가고 있다. 우선주인 한진칼우는 3거래일 연속 상한가를 기록했다. 9일 한국거래소에 따르면 이날 오전 10시 3...",
+      "past_trigger_reason": "[속보 기사] 국제유가 90달러선 하회…항공株 '방긋' : 같은 시간 항공주인 ▲대한항공우(29.98%) ▲진에어(25.37%) ▲에어부산(16.06%) 등도 나란히 상승하고 있다. 항공주가 강세를 보이는 건 국제유가 하락에... 대한항공과 아시아나항공은 오는 12...",
       "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2506,
+      "trading_value_eok": 5609,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 호반·조원태 지분 경쟁에 한진칼 강세…우선주 3거래일 연속...",
-      "today_rising_fact": "[속보 기사] 호반·조원태 지분 경쟁에 한진칼 강세…우선주 3거래일 연속... : 한진칼이 호반그룹과 조원태 한진그룹 회장 간 지분 경쟁이 부각되면서 7거래일 연속 상승세를 이어가고 있다. 우선주인 한진칼우는 3거래일 연속 상한가를 기록했다. 9일 한국거래소에 따르면 이날 오전 10시 3...",
+      "trigger_summary": "[특징주] 국제유가 90달러선 하회…항공株 '방긋'",
+      "today_rising_fact": "[속보 기사] 국제유가 90달러선 하회…항공株 '방긋' : 같은 시간 항공주인 ▲대한항공우(29.98%) ▲진에어(25.37%) ▲에어부산(16.06%) 등도 나란히 상승하고 있다. 항공주가 강세를 보이는 건 국제유가 하락에... 대한항공과 아시아나항공은 오는 12...",
       "top_article": {
-        "title": "[특징주] 호반·조원태 지분 경쟁에 한진칼 강세…우선주 3거래일 연속...",
+        "title": "[특징주] 국제유가 90달러선 하회…항공株 '방긋'",
         "press": "증시 속보",
-        "url": "https://www.newspim.com/news/view/20261109000373",
-        "published_at": "2026-11-09T22:35:34.670Z"
+        "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=902561",
+        "published_at": "2026-11-10T04:42:05.450Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_586",
-      "theme_name": "광통신",
-      "full_theme_name": "광통신(광케이블/광섬유 등)",
-      "change_rate": "+4.47%",
-      "composite_score": 76,
-      "total_stocks_count": 15,
-      "leader_stock": "머큐리",
-      "leader_ratio": 29.99,
-      "sub_leader_stock": "RFHIC",
+      "theme_id": "radar_200",
+      "theme_name": "우주항공산업",
+      "full_theme_name": "우주항공산업(누리호/인공위성 등)",
+      "change_rate": "+5.34%",
+      "composite_score": 97,
+      "total_stocks_count": 41,
+      "leader_stock": "티앤이코리아",
+      "leader_ratio": 29.98,
+      "sub_leader_stock": "LIG디펜스앤에어로스페이스",
       "other_stocks": [
-        "한국첨단소재",
-        "파이버프로",
-        "라이콤"
+        "알멕",
+        "대한항공",
+        "이노스페이스"
       ],
       "sub_stocks_top3": [
         {
-          "name": "RFHIC",
-          "rate": "+13.8%"
+          "name": "LIG디펜스앤에어로스페이스",
+          "rate": "+13.0%"
         },
         {
-          "name": "한국첨단소재",
-          "rate": "+13.1%"
+          "name": "알멕",
+          "rate": "+12.1%"
         },
         {
-          "name": "파이버프로",
-          "rate": "+3.0%"
+          "name": "대한항공",
+          "rate": "+11.2%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 머큐리, \"한화에어로 천무 美 해상 사격\"에 군 위성통신 사업... : 머큐리(100590)의 주가가 급등하며 시장의 주목을 받고 있다. 9일 한국거래소에 따르면 머큐리의 주가는 오전 10시 42분 기준 전일 대비 22.30% 상승한 4140원에 거래되고 있다. 한화에어로스페이...",
-      "future_momentum": "광통신 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1210,
+      "past_trigger_reason": "[속보 기사] 스페이스X 인프라 투자 확대 기대감…티앤이·LIG 각 25%·11% '상... : 10일 한국거래소에 따르면 이날 오전 10시 55분 기준 티앤이코리아는 전 거래일보다 3770원(25.29%) 상승한 1만860원에 거래 중이다. 같은 시각 LIG디펜스앤에어로스페이스(11.11%), 대한항...",
+      "future_momentum": "우주항공산업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3367,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 머큐리, \"한화에어로 천무 美 해상 사격\"에 군 위성통신 사업...",
-      "today_rising_fact": "[속보 기사] 머큐리, \"한화에어로 천무 美 해상 사격\"에 군 위성통신 사업... : 머큐리(100590)의 주가가 급등하며 시장의 주목을 받고 있다. 9일 한국거래소에 따르면 머큐리의 주가는 오전 10시 42분 기준 전일 대비 22.30% 상승한 4140원에 거래되고 있다. 한화에어로스페이...",
+      "trigger_summary": "[특징주]스페이스X 인프라 투자 확대 기대감…티앤이·LIG 각 25%·11% '상...",
+      "today_rising_fact": "[속보 기사] 스페이스X 인프라 투자 확대 기대감…티앤이·LIG 각 25%·11% '상... : 10일 한국거래소에 따르면 이날 오전 10시 55분 기준 티앤이코리아는 전 거래일보다 3770원(25.29%) 상승한 1만860원에 거래 중이다. 같은 시각 LIG디펜스앤에어로스페이스(11.11%), 대한항...",
       "top_article": {
-        "title": "[특징주] 머큐리, \"한화에어로 천무 美 해상 사격\"에 군 위성통신 사업...",
+        "title": "[특징주]스페이스X 인프라 투자 확대 기대감…티앤이·LIG 각 25%·11% '상...",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=303079",
-        "published_at": "2026-11-09T22:35:35.134Z"
+        "url": "https://www.ajunews.com/view/20261110105219705",
+        "published_at": "2026-11-10T04:42:05.773Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_17",
-      "theme_name": "SI",
-      "full_theme_name": "SI(시스템통합)",
-      "change_rate": "+1.08%",
-      "composite_score": 75,
-      "total_stocks_count": 30,
-      "leader_stock": "아시아나IDT",
-      "leader_ratio": 29.99,
-      "sub_leader_stock": "신세계 I&C",
+      "theme_id": "radar_619",
+      "theme_name": "데이터센터",
+      "full_theme_name": "데이터센터",
+      "change_rate": "+4.84%",
+      "composite_score": 94,
+      "total_stocks_count": 28,
+      "leader_stock": "NHN",
+      "leader_ratio": 29.7,
+      "sub_leader_stock": "HD건설기계",
       "other_stocks": [
-        "SGA솔루션즈",
-        "LG씨엔에스",
-        "DB"
+        "HD현대마린엔진",
+        "자이에스앤디",
+        "한화엔진"
       ],
       "sub_stocks_top3": [
         {
-          "name": "신세계 I&C",
-          "rate": "+9.7%"
+          "name": "HD건설기계",
+          "rate": "+11.9%"
         },
         {
-          "name": "SGA솔루션즈",
-          "rate": "+4.8%"
+          "name": "HD현대마린엔진",
+          "rate": "+10.4%"
         },
         {
-          "name": "LG씨엔에스",
-          "rate": "+4.7%"
+          "name": "자이에스앤디",
+          "rate": "+9.2%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 아시아나IDT, 항공 IT 계열사 재편 기대감에 장중 상한가 직행 : 아시아나IDT가 대한항공과 아시아나항공의 통합을 앞두고 항공 IT 계열사 간 사업 재편 기대감이 부각되며 장중 상한가로 직행했다. 특별한 신규 수주나 호재성 공시가 부재한 상황임에도 불구하고 최근 5거래일 ...",
-      "future_momentum": "SI 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2036,
+      "past_trigger_reason": "[속보 기사] NHN, 호실적에 AI 데이터센터 확대까지… 상한가 직행 : NHN 주가 ㅣ 네이버증권 NHN이 3분기 호실적과 인공지능(AI) 데이터센터 확대 계획에 힘입어 장중 상한가를 기록했다. 10일 오후 12시 48분 기준 유가증권시장에서 NHN은 전 거래일보다 29.87%...",
+      "future_momentum": "데이터센터 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3309,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] 아시아나IDT, 항공 IT 계열사 재편 기대감에 장중 상한가 직행",
-      "today_rising_fact": "[속보 기사] 아시아나IDT, 항공 IT 계열사 재편 기대감에 장중 상한가 직행 : 아시아나IDT가 대한항공과 아시아나항공의 통합을 앞두고 항공 IT 계열사 간 사업 재편 기대감이 부각되며 장중 상한가로 직행했다. 특별한 신규 수주나 호재성 공시가 부재한 상황임에도 불구하고 최근 5거래일 ...",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] NHN, 호실적에 AI 데이터센터 확대까지… 상한가 직행",
+      "today_rising_fact": "[속보 기사] NHN, 호실적에 AI 데이터센터 확대까지… 상한가 직행 : NHN 주가 ㅣ 네이버증권 NHN이 3분기 호실적과 인공지능(AI) 데이터센터 확대 계획에 힘입어 장중 상한가를 기록했다. 10일 오후 12시 48분 기준 유가증권시장에서 NHN은 전 거래일보다 29.87%...",
       "top_article": {
-        "title": "[특징주] 아시아나IDT, 항공 IT 계열사 재편 기대감에 장중 상한가 직행",
+        "title": "[특징주] NHN, 호실적에 AI 데이터센터 확대까지… 상한가 직행",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=303123",
-        "published_at": "2026-11-09T22:35:35.600Z"
+        "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=362220",
+        "published_at": "2026-11-10T04:42:06.177Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_55",
-      "theme_name": "보안주",
-      "full_theme_name": "보안주(정보)",
-      "change_rate": "+2.26%",
-      "composite_score": 74,
-      "total_stocks_count": 52,
-      "leader_stock": "한싹",
-      "leader_ratio": 29.87,
-      "sub_leader_stock": "에스피소프트",
+      "theme_id": "radar_205",
+      "theme_name": "원자력발전",
+      "full_theme_name": "원자력발전",
+      "change_rate": "+4.83%",
+      "composite_score": 93,
+      "total_stocks_count": 50,
+      "leader_stock": "디케이락",
+      "leader_ratio": 23.43,
+      "sub_leader_stock": "SNT에너지",
       "other_stocks": [
-        "아이씨티케이",
-        "엑스게이트",
-        "안랩"
+        "금양그린파워",
+        "삼미금속",
+        "효성중공업"
       ],
       "sub_stocks_top3": [
         {
-          "name": "에스피소프트",
-          "rate": "+21.6%"
+          "name": "SNT에너지",
+          "rate": "+20.4%"
         },
         {
-          "name": "아이씨티케이",
-          "rate": "+10.6%"
+          "name": "금양그린파워",
+          "rate": "+17.3%"
         },
         {
-          "name": "엑스게이트",
-          "rate": "+7.4%"
+          "name": "삼미금속",
+          "rate": "+13.3%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 외국인 카카오·기관 삼성전자 순매수 : 오전 9시 26분에는 에스와이(109610)가 순매수 1위를 기록했고, 깨끗한나라(004540), 엠에스바이오(0013Y0), 씨어스(458870), 한싹(430690)이 뒤를 이었다. 9시 58분에는 PS...",
-      "future_momentum": "보안주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1628,
+      "past_trigger_reason": "[속보 기사] 원전주 두산에너빌리티·한전기술·한전산업 등 전반적 약세…... : 디케이락은 7.83% 하락한 1만1530원, 삼미금속은 6.90% 내린 6070원에 거래되고 있다. 한양이엔지는 6.91% 하락한 2만2900원, 비에이치아이는 6.66% 내린 3만5750원을 기록하고 있다...",
+      "future_momentum": "원자력발전 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2012,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 외국인 카카오·기관 삼성전자 순매수",
-      "today_rising_fact": "[속보 기사] 외국인 카카오·기관 삼성전자 순매수 : 오전 9시 26분에는 에스와이(109610)가 순매수 1위를 기록했고, 깨끗한나라(004540), 엠에스바이오(0013Y0), 씨어스(458870), 한싹(430690)이 뒤를 이었다. 9시 58분에는 PS...",
+      "trigger_summary": "[특징주] 원전주 두산에너빌리티·한전기술·한전산업 등 전반적 약세…...",
+      "today_rising_fact": "[속보 기사] 원전주 두산에너빌리티·한전기술·한전산업 등 전반적 약세…... : 디케이락은 7.83% 하락한 1만1530원, 삼미금속은 6.90% 내린 6070원에 거래되고 있다. 한양이엔지는 6.91% 하락한 2만2900원, 비에이치아이는 6.66% 내린 3만5750원을 기록하고 있다...",
       "top_article": {
-        "title": "[특징주] 외국인 카카오·기관 삼성전자 순매수",
+        "title": "[특징주] 원전주 두산에너빌리티·한전기술·한전산업 등 전반적 약세…...",
         "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=727381",
-        "published_at": "2026-11-09T22:35:36.058Z"
+        "url": "https://www.cbci.co.kr/news/articleView.html?idxno=624083",
+        "published_at": "2026-11-10T04:42:06.518Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_269",
-      "theme_name": "LED장비",
-      "full_theme_name": "LED장비",
-      "change_rate": "+2.82%",
-      "composite_score": 71,
-      "total_stocks_count": 11,
-      "leader_stock": "티씨케이",
-      "leader_ratio": 9.02,
-      "sub_leader_stock": "주성엔지니어링",
+      "theme_id": "radar_390",
+      "theme_name": "마이크로 LED",
+      "full_theme_name": "마이크로 LED",
+      "change_rate": "+5.77%",
+      "composite_score": 90,
+      "total_stocks_count": 10,
+      "leader_stock": "코세스",
+      "leader_ratio": 13.82,
+      "sub_leader_stock": "사피엔반도체",
       "other_stocks": [
-        "예스티",
-        "지아이에스",
-        "이오테크닉스"
+        "루멘스바이오스",
+        "서울반도체",
+        "라온텍"
       ],
       "sub_stocks_top3": [
         {
-          "name": "주성엔지니어링",
-          "rate": "+4.9%"
+          "name": "사피엔반도체",
+          "rate": "+14.0%"
         },
         {
-          "name": "예스티",
-          "rate": "+4.7%"
+          "name": "루멘스바이오스",
+          "rate": "+7.7%"
         },
         {
-          "name": "지아이에스",
-          "rate": "+4.1%"
+          "name": "서울반도체",
+          "rate": "+6.0%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 테오도르의 시장분석 : 와 테마주 \"바이오·반도체 소재 관련 종... : 알테오젠(250,000원, +0.20%), 에코프로(80,100원, 보합), 에코프로비엠(105,000원, +0.67%), 주성엔지니어링(209,500원, +2.95%), 원익IPS(133,700원, +2....",
-      "future_momentum": "LED장비 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3204,
+      "past_trigger_reason": "[속보 기사] 쎄크, 마이크론에 58억 규모 HBM 검사장비 공급 소식에 10%대 '... : 쎄크의 대규모 수주 소식과 함께 이날 코세스(+17.28%), SFA반도체(+10.71%), 엑시콘(+10.10%) 등 반도체 장비 테마 관련주 전반에 매수세가 유입되며 동반 강세를 나타내고 있다. 이날 주...",
+      "future_momentum": "마이크로 LED 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 20978,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "테오도르의 시장분석 : 특징주와 테마주 \"바이오·반도체 소재 관련 종...",
-      "today_rising_fact": "[속보 기사] 테오도르의 시장분석 : 와 테마주 \"바이오·반도체 소재 관련 종... : 알테오젠(250,000원, +0.20%), 에코프로(80,100원, 보합), 에코프로비엠(105,000원, +0.67%), 주성엔지니어링(209,500원, +2.95%), 원익IPS(133,700원, +2....",
+      "trigger_summary": "[특징주] 쎄크, 마이크론에 58억 규모 HBM 검사장비 공급 소식에 10%대 '...",
+      "today_rising_fact": "[속보 기사] 쎄크, 마이크론에 58억 규모 HBM 검사장비 공급 소식에 10%대 '... : 쎄크의 대규모 수주 소식과 함께 이날 코세스(+17.28%), SFA반도체(+10.71%), 엑시콘(+10.10%) 등 반도체 장비 테마 관련주 전반에 매수세가 유입되며 동반 강세를 나타내고 있다. 이날 주...",
       "top_article": {
-        "title": "테오도르의 시장분석 : 특징주와 테마주 \"바이오·반도체 소재 관련 종...",
+        "title": "[특징주] 쎄크, 마이크론에 58억 규모 HBM 검사장비 공급 소식에 10%대 '...",
         "press": "증시 속보",
-        "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=393973",
-        "published_at": "2026-11-09T22:35:36.514Z"
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=303200",
+        "published_at": "2026-11-10T04:42:06.926Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1794263736956_0j08",
+      "theme_id": "pb_1794285727372_ynzu",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
       "ma5_recovered": true,
       "period_range": "최근 1.5개월 (기준봉 상단 지지선)",
-      "past_trigger_reason": "[속보 기사] 외국인 카카오·기관 삼성전자 순매수 : 9시 58분에는 PS일렉트로닉스(332570)가 1위로 올라섰으며, 엠에스바이오, 크리에이츠(439270), 한화머시너리앤서비스홀딩스(0220W0), 래블업(0147B0)... 9시 58분에는 삼성전자에 이...",
+      "past_trigger_reason": "[속보 기사] 외국인 '한온시스템·두산에너빌리티', 기관 '삼성전자·대한... : 이어 한화솔루션, 동원파츠, 팬오션(028670), SK이노베이션(096770) 순이었다. 오전 11시 11분에는 팬오션이 순매도 1위로 이동했고, 한화솔루션은 2위를 유지했다. 롯데관광개발은 3위, HMM...",
       "future_momentum": "글로벌 신조선가 지수 연중 최고치 경신 및 LNG 운반선·친환경 컨테이너선 후속 대량 수주 기대감",
       "top_article": {
-        "title": "[특징주] 외국인 카카오·기관 삼성전자 순매수",
+        "title": "[특징주] 외국인 '한온시스템·두산에너빌리티', 기관 '삼성전자·대한...",
         "press": "증시 속보",
-        "url": "https://www.newstnt.com/news/articleView.html?idxno=727381",
-        "published_at": "2026-11-09T22:35:36.956Z"
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=727642",
+        "published_at": "2026-11-10T04:42:07.372Z"
       }
     },
     {
-      "theme_id": "pb_1794263737401_j3o0",
+      "theme_id": "pb_1794285727817_vfxx",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-09T22:35:37.401Z"
+        "published_at": "2026-11-10T04:42:07.817Z"
       }
     }
   ],
