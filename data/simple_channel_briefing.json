@@ -1,34 +1,29 @@
 {
-  "updatedAt": "2026-11-10T04:42:07.857Z",
+  "updatedAt": "2026-11-10T15:42:16.160Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-11-10",
   "latestVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-10] 당일 증시 핵심 주도주 및 섹터별 수급 완벽 점검",
-    "published_kst": "2026-11-10 08:30:00",
-    "url": "https://www.youtube.com"
+    "id": "HrEjwgyY7ik",
+    "title": "당일 관심테마! 젠슨황 불륜 시인 및 트럼프 밀착 기업들 조사 채비등 또 악재 /데이터센터,경영권분쟁,태양광/삼성전자,SK하이닉스,NAVER,한진칼,엘리스,혜인,지엔씨,한화솔루션",
+    "published_kst": "2026-11-09 07:00:28",
+    "url": "https://www.youtube.com/watch?v=HrEjwgyY7ik"
   },
   "morningVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-10] 당일 관심테마! 조선,원전,풍력,AI반도체/한화오션,성광벤드,SK하이닉스",
-    "published_kst": "2026-11-10 08:30:00",
-    "url": "https://www.youtube.com",
+    "id": "HrEjwgyY7ik",
+    "title": "당일 관심테마! 젠슨황 불륜 시인 및 트럼프 밀착 기업들 조사 채비등 또 악재 /데이터센터,경영권분쟁,태양광/삼성전자,SK하이닉스,NAVER,한진칼,엘리스,혜인,지엔씨,한화솔루션",
+    "published_kst": "2026-11-09 07:00:28",
+    "url": "https://www.youtube.com/watch?v=HrEjwgyY7ik",
     "themes": [
-      "조선 & 해운",
-      "원전 & SMR",
-      "AI 반도체 & HBM",
-      "풍력 신재생"
+      "젠슨황 불륜 시인 및 트럼프 밀착 기업들 조사 채비등 또 악재"
     ],
     "stocks": [
-      "한화오션",
-      "성광벤드",
-      "SK하이닉스",
-      "니어스랩",
-      "두산에너빌리티"
+      "데이터센터",
+      "경영권분쟁",
+      "태양광"
     ],
     "key_points": [
       "조선 & 방산: 미국 해군 MRO 수주 및 중동·동유럽 수출 파이프라인 수급 집결",
@@ -38,22 +33,18 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-10] 장마감 관심테마! 당일 주도 섹터 수급 분석 및 내일 공략주",
-    "published_kst": "2026-11-10 16:30:00",
-    "url": "https://www.youtube.com",
+    "id": "CmvomvZ759w",
+    "title": "내일 관심테마! 여전히 쉽지않은 이번주. 젠슨황 악재?? 중동이슈는 지속 /데이터센터,반도체,경영권분쟁,보안/삼성전자,SK하이닉스,NAVER,한진칼,엘리스,혜인,삼성전기,지엔씨",
+    "published_kst": "2026-11-08 16:20:51",
+    "url": "https://www.youtube.com/watch?v=CmvomvZ759w",
     "themes": [
-      "조선 & 해운",
-      "원전 & SMR",
-      "AI 반도체 & HBM",
-      "풍력 신재생"
+      "여전히 쉽지않은 이번주. 젠슨황 악재?? 중동이슈는 지속"
     ],
     "stocks": [
-      "한화오션",
-      "성광벤드",
-      "SK하이닉스",
-      "니어스랩",
-      "두산에너빌리티"
+      "데이터센터",
+      "반도체",
+      "경영권분쟁",
+      "보안"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(한화오션, SK하이닉스 등) 외국인·기관 순매수 집중",

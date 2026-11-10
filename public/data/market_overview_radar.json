@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-10T04:42:07.817Z",
+  "updated_at": "2026-11-10T15:42:16.113Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "+3.66%",
+      "change_rate": "+4.39%",
       "is_up": true
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "+3.18%",
+      "change_rate": "+4.48%",
       "is_up": true
     },
     "investor_trend": {
@@ -28,44 +28,134 @@
       "theme_id": "radar_166",
       "theme_name": "항공/저가 항공사",
       "full_theme_name": "항공/저가 항공사(LCC)",
-      "change_rate": "+12.63%",
+      "change_rate": "+13.30%",
       "composite_score": 99,
       "total_stocks_count": 9,
       "leader_stock": "진에어",
-      "leader_ratio": 28.94,
+      "leader_ratio": 29.92,
       "sub_leader_stock": "에어부산",
       "other_stocks": [
-        "아시아나항공",
-        "대한항공",
-        "제주항공"
+        "한진칼",
+        "AK홀딩스",
+        "아시아나항공"
       ],
       "sub_stocks_top3": [
         {
           "name": "에어부산",
-          "rate": "+19.9%"
+          "rate": "+16.1%"
         },
         {
-          "name": "아시아나항공",
-          "rate": "+11.4%"
+          "name": "한진칼",
+          "rate": "+14.0%"
         },
         {
-          "name": "대한항공",
-          "rate": "+11.2%"
+          "name": "AK홀딩스",
+          "rate": "+12.7%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 국제유가 90달러선 하회…항공株 '방긋' : 같은 시간 항공주인 ▲대한항공우(29.98%) ▲진에어(25.37%) ▲에어부산(16.06%) 등도 나란히 상승하고 있다. 항공주가 강세를 보이는 건 국제유가 하락에... 대한항공과 아시아나항공은 오는 12...",
+      "past_trigger_reason": "[속보 기사] 대한항공·진에어·삼성전기 : 빅터뉴스 김두윤 기자 10일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 대한항공, 진에어, 삼성전기가 특징주로 꼽혔다. ■ 대한항공(003490, 운송·창고...",
       "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 5609,
+      "trading_value_eok": 7305,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 국제유가 90달러선 하회…항공株 '방긋'",
-      "today_rising_fact": "[속보 기사] 국제유가 90달러선 하회…항공株 '방긋' : 같은 시간 항공주인 ▲대한항공우(29.98%) ▲진에어(25.37%) ▲에어부산(16.06%) 등도 나란히 상승하고 있다. 항공주가 강세를 보이는 건 국제유가 하락에... 대한항공과 아시아나항공은 오는 12...",
+      "trigger_summary": "[오늘의 특징주] 대한항공·진에어·삼성전기",
+      "today_rising_fact": "[속보 기사] 대한항공·진에어·삼성전기 : 빅터뉴스 김두윤 기자 10일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 대한항공, 진에어, 삼성전기가 특징주로 꼽혔다. ■ 대한항공(003490, 운송·창고...",
       "top_article": {
-        "title": "[특징주] 국제유가 90달러선 하회…항공株 '방긋'",
+        "title": "[오늘의 특징주] 대한항공·진에어·삼성전기",
         "press": "증시 속보",
-        "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=902561",
-        "published_at": "2026-11-10T04:42:05.450Z"
+        "url": "https://www.bigtanews.co.kr/article/view/big202611100018",
+        "published_at": "2026-11-10T15:42:13.746Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_390",
+      "theme_name": "마이크로 LED",
+      "full_theme_name": "마이크로 LED",
+      "change_rate": "+7.10%",
+      "composite_score": 99,
+      "total_stocks_count": 10,
+      "leader_stock": "사피엔반도체",
+      "leader_ratio": 17.76,
+      "sub_leader_stock": "코세스",
+      "other_stocks": [
+        "영우디에스피",
+        "루멘스바이오스",
+        "라온텍"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "코세스",
+          "rate": "+15.7%"
+        },
+        {
+          "name": "영우디에스피",
+          "rate": "+9.6%"
+        },
+        {
+          "name": "루멘스바이오스",
+          "rate": "+8.8%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 반도체株 프리마켓서 줄줄이 급등…서울반도체 18.03%↑ : 오픈엣지테크놀로지는 960원(10.45%) 상승한 9190원, 사피엔반도체도 3900원(10.26%) 상승한 3만8000원, 가온칩스는 4250원(9.68%) 오른 4만3900원을 기록 중이다. 반도체 테스...",
+      "future_momentum": "마이크로 LED 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 30640,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "반도체株 프리마켓서 줄줄이 급등…서울반도체 18.03%↑[특징주]",
+      "today_rising_fact": "[속보 기사] 반도체株 프리마켓서 줄줄이 급등…서울반도체 18.03%↑ : 오픈엣지테크놀로지는 960원(10.45%) 상승한 9190원, 사피엔반도체도 3900원(10.26%) 상승한 3만8000원, 가온칩스는 4250원(9.68%) 오른 4만3900원을 기록 중이다. 반도체 테스...",
+      "top_article": {
+        "title": "반도체株 프리마켓서 줄줄이 급등…서울반도체 18.03%↑[특징주]",
+        "press": "증시 속보",
+        "url": "https://www.newsway.co.kr/news/view?ud=2026092208250742166",
+        "published_at": "2026-11-10T15:42:14.148Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_586",
+      "theme_name": "광통신",
+      "full_theme_name": "광통신(광케이블/광섬유 등)",
+      "change_rate": "+6.79%",
+      "composite_score": 99,
+      "total_stocks_count": 15,
+      "leader_stock": "RFHIC",
+      "leader_ratio": 18.73,
+      "sub_leader_stock": "서울바이오시스",
+      "other_stocks": [
+        "RF머트리얼즈",
+        "대한광통신",
+        "성호전자"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "서울바이오시스",
+          "rate": "+15.7%"
+        },
+        {
+          "name": "RF머트리얼즈",
+          "rate": "+11.6%"
+        },
+        {
+          "name": "대한광통신",
+          "rate": "+9.1%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 광통신주, '데이터센터 우려 과도' 평가에 급등 마감(종합) : 이날 코스닥에서 RFHIC는 19.20% 오른 5만600원에 거래를 마쳤다. RF머트리얼즈도 13% 상승했고, 대한광통신과 빛과전자 역시 9%, 6%씩 올랐다. 글로벌 대형 투자은행들이 AIDC 규제 우려가...",
+      "future_momentum": "광통신 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2160,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 광통신주, '데이터센터 우려 과도' 평가에 급등 마감(종합)",
+      "today_rising_fact": "[속보 기사] 광통신주, '데이터센터 우려 과도' 평가에 급등 마감(종합) : 이날 코스닥에서 RFHIC는 19.20% 오른 5만600원에 거래를 마쳤다. RF머트리얼즈도 13% 상승했고, 대한광통신과 빛과전자 역시 9%, 6%씩 올랐다. 글로벌 대형 투자은행들이 AIDC 규제 우려가...",
+      "top_article": {
+        "title": "[특징주] 광통신주, '데이터센터 우려 과도' 평가에 급등 마감(종합)",
+        "press": "증시 속보",
+        "url": "https://www.yna.co.kr/view/AKR20261110056051008?input=1195m",
+        "published_at": "2026-11-10T15:42:14.538Z"
       },
       "timeline": []
     },
@@ -73,34 +163,34 @@
       "theme_id": "radar_200",
       "theme_name": "우주항공산업",
       "full_theme_name": "우주항공산업(누리호/인공위성 등)",
-      "change_rate": "+5.34%",
-      "composite_score": 97,
+      "change_rate": "+5.99%",
+      "composite_score": 99,
       "total_stocks_count": 41,
       "leader_stock": "티앤이코리아",
       "leader_ratio": 29.98,
       "sub_leader_stock": "LIG디펜스앤에어로스페이스",
       "other_stocks": [
-        "알멕",
+        "이노스페이스",
         "대한항공",
-        "이노스페이스"
+        "알멕"
       ],
       "sub_stocks_top3": [
         {
           "name": "LIG디펜스앤에어로스페이스",
-          "rate": "+13.0%"
+          "rate": "+14.0%"
         },
         {
-          "name": "알멕",
-          "rate": "+12.1%"
+          "name": "이노스페이스",
+          "rate": "+12.8%"
         },
         {
           "name": "대한항공",
-          "rate": "+11.2%"
+          "rate": "+12.0%"
         }
       ],
       "past_trigger_reason": "[속보 기사] 스페이스X 인프라 투자 확대 기대감…티앤이·LIG 각 25%·11% '상... : 10일 한국거래소에 따르면 이날 오전 10시 55분 기준 티앤이코리아는 전 거래일보다 3770원(25.29%) 상승한 1만860원에 거래 중이다. 같은 시각 LIG디펜스앤에어로스페이스(11.11%), 대한항...",
       "future_momentum": "우주항공산업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3367,
+      "trading_value_eok": 4259,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -110,52 +200,7 @@
         "title": "[특징주]스페이스X 인프라 투자 확대 기대감…티앤이·LIG 각 25%·11% '상...",
         "press": "증시 속보",
         "url": "https://www.ajunews.com/view/20261110105219705",
-        "published_at": "2026-11-10T04:42:05.773Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_619",
-      "theme_name": "데이터센터",
-      "full_theme_name": "데이터센터",
-      "change_rate": "+4.84%",
-      "composite_score": 94,
-      "total_stocks_count": 28,
-      "leader_stock": "NHN",
-      "leader_ratio": 29.7,
-      "sub_leader_stock": "HD건설기계",
-      "other_stocks": [
-        "HD현대마린엔진",
-        "자이에스앤디",
-        "한화엔진"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "HD건설기계",
-          "rate": "+11.9%"
-        },
-        {
-          "name": "HD현대마린엔진",
-          "rate": "+10.4%"
-        },
-        {
-          "name": "자이에스앤디",
-          "rate": "+9.2%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] NHN, 호실적에 AI 데이터센터 확대까지… 상한가 직행 : NHN 주가 ㅣ 네이버증권 NHN이 3분기 호실적과 인공지능(AI) 데이터센터 확대 계획에 힘입어 장중 상한가를 기록했다. 10일 오후 12시 48분 기준 유가증권시장에서 NHN은 전 거래일보다 29.87%...",
-      "future_momentum": "데이터센터 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3309,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] NHN, 호실적에 AI 데이터센터 확대까지… 상한가 직행",
-      "today_rising_fact": "[속보 기사] NHN, 호실적에 AI 데이터센터 확대까지… 상한가 직행 : NHN 주가 ㅣ 네이버증권 NHN이 3분기 호실적과 인공지능(AI) 데이터센터 확대 계획에 힘입어 장중 상한가를 기록했다. 10일 오후 12시 48분 기준 유가증권시장에서 NHN은 전 거래일보다 29.87%...",
-      "top_article": {
-        "title": "[특징주] NHN, 호실적에 AI 데이터센터 확대까지… 상한가 직행",
-        "press": "증시 속보",
-        "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=362220",
-        "published_at": "2026-11-10T04:42:06.177Z"
+        "published_at": "2026-11-10T15:42:14.945Z"
       },
       "timeline": []
     },
@@ -163,96 +208,51 @@
       "theme_id": "radar_205",
       "theme_name": "원자력발전",
       "full_theme_name": "원자력발전",
-      "change_rate": "+4.83%",
-      "composite_score": 93,
+      "change_rate": "+5.68%",
+      "composite_score": 98,
       "total_stocks_count": 50,
       "leader_stock": "디케이락",
-      "leader_ratio": 23.43,
+      "leader_ratio": 25.09,
       "sub_leader_stock": "SNT에너지",
       "other_stocks": [
         "금양그린파워",
         "삼미금속",
-        "효성중공업"
+        "현대건설"
       ],
       "sub_stocks_top3": [
         {
           "name": "SNT에너지",
-          "rate": "+20.4%"
+          "rate": "+18.7%"
         },
         {
           "name": "금양그린파워",
-          "rate": "+17.3%"
+          "rate": "+13.9%"
         },
         {
           "name": "삼미금속",
-          "rate": "+13.3%"
+          "rate": "+12.3%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 원전주 두산에너빌리티·한전기술·한전산업 등 전반적 약세…... : 디케이락은 7.83% 하락한 1만1530원, 삼미금속은 6.90% 내린 6070원에 거래되고 있다. 한양이엔지는 6.91% 하락한 2만2900원, 비에이치아이는 6.66% 내린 3만5750원을 기록하고 있다...",
+      "past_trigger_reason": "[속보 기사] SNT에너지, 고효율 발전설비 시장 실적 가시화에 장중 18%↑ : 관련 투자 심리가 개선되면서 주식시장에서는 관련 테마주들의 동반 강세도 눈에 띈다. 같은 시각 SNT에너지와 유사한 발전 및 인프라 테마 내에 있는 디케이락(+24.63%), 삼미금속(+13.95%), 금양...",
       "future_momentum": "원자력발전 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2012,
+      "trading_value_eok": 3351,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 원전주 두산에너빌리티·한전기술·한전산업 등 전반적 약세…...",
-      "today_rising_fact": "[속보 기사] 원전주 두산에너빌리티·한전기술·한전산업 등 전반적 약세…... : 디케이락은 7.83% 하락한 1만1530원, 삼미금속은 6.90% 내린 6070원에 거래되고 있다. 한양이엔지는 6.91% 하락한 2만2900원, 비에이치아이는 6.66% 내린 3만5750원을 기록하고 있다...",
+      "trigger_summary": "[특징주] SNT에너지, 고효율 발전설비 시장 실적 가시화에 장중 18%↑",
+      "today_rising_fact": "[속보 기사] SNT에너지, 고효율 발전설비 시장 실적 가시화에 장중 18%↑ : 관련 투자 심리가 개선되면서 주식시장에서는 관련 테마주들의 동반 강세도 눈에 띈다. 같은 시각 SNT에너지와 유사한 발전 및 인프라 테마 내에 있는 디케이락(+24.63%), 삼미금속(+13.95%), 금양...",
       "top_article": {
-        "title": "[특징주] 원전주 두산에너빌리티·한전기술·한전산업 등 전반적 약세…...",
+        "title": "[특징주] SNT에너지, 고효율 발전설비 시장 실적 가시화에 장중 18%↑",
         "press": "증시 속보",
-        "url": "https://www.cbci.co.kr/news/articleView.html?idxno=624083",
-        "published_at": "2026-11-10T04:42:06.518Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_390",
-      "theme_name": "마이크로 LED",
-      "full_theme_name": "마이크로 LED",
-      "change_rate": "+5.77%",
-      "composite_score": 90,
-      "total_stocks_count": 10,
-      "leader_stock": "코세스",
-      "leader_ratio": 13.82,
-      "sub_leader_stock": "사피엔반도체",
-      "other_stocks": [
-        "루멘스바이오스",
-        "서울반도체",
-        "라온텍"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "사피엔반도체",
-          "rate": "+14.0%"
-        },
-        {
-          "name": "루멘스바이오스",
-          "rate": "+7.7%"
-        },
-        {
-          "name": "서울반도체",
-          "rate": "+6.0%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 쎄크, 마이크론에 58억 규모 HBM 검사장비 공급 소식에 10%대 '... : 쎄크의 대규모 수주 소식과 함께 이날 코세스(+17.28%), SFA반도체(+10.71%), 엑시콘(+10.10%) 등 반도체 장비 테마 관련주 전반에 매수세가 유입되며 동반 강세를 나타내고 있다. 이날 주...",
-      "future_momentum": "마이크로 LED 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 20978,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 쎄크, 마이크론에 58억 규모 HBM 검사장비 공급 소식에 10%대 '...",
-      "today_rising_fact": "[속보 기사] 쎄크, 마이크론에 58억 규모 HBM 검사장비 공급 소식에 10%대 '... : 쎄크의 대규모 수주 소식과 함께 이날 코세스(+17.28%), SFA반도체(+10.71%), 엑시콘(+10.10%) 등 반도체 장비 테마 관련주 전반에 매수세가 유입되며 동반 강세를 나타내고 있다. 이날 주...",
-      "top_article": {
-        "title": "[특징주] 쎄크, 마이크론에 58억 규모 HBM 검사장비 공급 소식에 10%대 '...",
-        "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=303200",
-        "published_at": "2026-11-10T04:42:06.926Z"
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=303281",
+        "published_at": "2026-11-10T15:42:15.338Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1794285727372_ynzu",
+      "theme_id": "pb_1794325335719_69jr",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인 '한온시스템·두산에너빌리티', 기관 '삼성전자·대한...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=727642",
-        "published_at": "2026-11-10T04:42:07.372Z"
+        "published_at": "2026-11-10T15:42:15.719Z"
       }
     },
     {
-      "theme_id": "pb_1794285727817_vfxx",
+      "theme_id": "pb_1794325336113_18rz",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-10T04:42:07.817Z"
+        "published_at": "2026-11-10T15:42:16.113Z"
       }
     }
   ],
