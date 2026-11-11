@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-10T15:42:16.113Z",
+  "updated_at": "2026-11-11T02:53:24.490Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "+4.39%",
+      "change_rate": "+1.34%",
       "is_up": true
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "+4.48%",
+      "change_rate": "+4.63%",
       "is_up": true
     },
     "investor_trend": {
@@ -25,234 +25,234 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_166",
-      "theme_name": "항공/저가 항공사",
-      "full_theme_name": "항공/저가 항공사(LCC)",
-      "change_rate": "+13.30%",
+      "theme_id": "radar_608",
+      "theme_name": "반도체 기판",
+      "full_theme_name": "반도체 기판(FC-BGA/PCB/MLB 등)",
+      "change_rate": "+10.68%",
       "composite_score": 99,
-      "total_stocks_count": 9,
-      "leader_stock": "진에어",
-      "leader_ratio": 29.92,
-      "sub_leader_stock": "에어부산",
+      "total_stocks_count": 14,
+      "leader_stock": "심텍홀딩스",
+      "leader_ratio": 21.47,
+      "sub_leader_stock": "이수페타시스",
       "other_stocks": [
-        "한진칼",
-        "AK홀딩스",
-        "아시아나항공"
+        "코리아써키트",
+        "티엘비",
+        "인텍플러스"
       ],
       "sub_stocks_top3": [
         {
-          "name": "에어부산",
-          "rate": "+16.1%"
+          "name": "이수페타시스",
+          "rate": "+19.2%"
         },
         {
-          "name": "한진칼",
-          "rate": "+14.0%"
+          "name": "코리아써키트",
+          "rate": "+17.1%"
         },
         {
-          "name": "AK홀딩스",
+          "name": "티엘비",
+          "rate": "+16.3%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 외국인 '삼성전자·심텍홀딩스', 기관 'SFA반도체·진에어' 러... : 11일 오전 국내 증시에서 키움증권 창구를 통한 장중 수급을 집계한 결과, 외국인은 삼성전자와 심텍홀딩스, 메드팩토를 순매수 상위권에 올렸으며, 기관은 SFA반도체와 진에어를 중심으로 매수 우위를 나타냈다....",
+      "future_momentum": "반도체 기판 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3336,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 외국인 '삼성전자·심텍홀딩스', 기관 'SFA반도체·진에어' 러...",
+      "today_rising_fact": "[속보 기사] 외국인 '삼성전자·심텍홀딩스', 기관 'SFA반도체·진에어' 러... : 11일 오전 국내 증시에서 키움증권 창구를 통한 장중 수급을 집계한 결과, 외국인은 삼성전자와 심텍홀딩스, 메드팩토를 순매수 상위권에 올렸으며, 기관은 SFA반도체와 진에어를 중심으로 매수 우위를 나타냈다....",
+      "top_article": {
+        "title": "[특징주] 외국인 '삼성전자·심텍홀딩스', 기관 'SFA반도체·진에어' 러...",
+        "press": "증시 속보",
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=727847",
+        "published_at": "2026-11-11T02:53:22.248Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_269",
+      "theme_name": "LED장비",
+      "full_theme_name": "LED장비",
+      "change_rate": "+8.79%",
+      "composite_score": 99,
+      "total_stocks_count": 11,
+      "leader_stock": "티에스이",
+      "leader_ratio": 19.71,
+      "sub_leader_stock": "예스티",
+      "other_stocks": [
+        "티씨케이",
+        "주성엔지니어링",
+        "프로텍"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "예스티",
+          "rate": "+14.4%"
+        },
+        {
+          "name": "티씨케이",
+          "rate": "+13.7%"
+        },
+        {
+          "name": "주성엔지니어링",
           "rate": "+12.7%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 대한항공·진에어·삼성전기 : 빅터뉴스 김두윤 기자 10일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 대한항공, 진에어, 삼성전기가 특징주로 꼽혔다. ■ 대한항공(003490, 운송·창고...",
-      "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 7305,
+      "past_trigger_reason": "[속보 기사] 티에스이(131290), HBM4 공급 확대에 수익성 '껑충' : 티에스이 CI. 티에스이(131290)는 프로브카드와 인터페이스보드, 테스트소켓을 주력으로 하는 반도체 후공정 테스트 부품 전문기업이다. 프로브카드는 2025년 매출의 46%를 차지하는 핵심 사업이다. 최근...",
+      "future_momentum": "LED장비 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2821,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[오늘의 특징주] 대한항공·진에어·삼성전기",
-      "today_rising_fact": "[속보 기사] 대한항공·진에어·삼성전기 : 빅터뉴스 김두윤 기자 10일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 대한항공, 진에어, 삼성전기가 특징주로 꼽혔다. ■ 대한항공(003490, 운송·창고...",
+      "trigger_summary": "[특징주] 티에스이(131290), HBM4 공급 확대에 수익성 '껑충'",
+      "today_rising_fact": "[속보 기사] 티에스이(131290), HBM4 공급 확대에 수익성 '껑충' : 티에스이 CI. 티에스이(131290)는 프로브카드와 인터페이스보드, 테스트소켓을 주력으로 하는 반도체 후공정 테스트 부품 전문기업이다. 프로브카드는 2025년 매출의 46%를 차지하는 핵심 사업이다. 최근...",
       "top_article": {
-        "title": "[오늘의 특징주] 대한항공·진에어·삼성전기",
+        "title": "[특징주] 티에스이(131290), HBM4 공급 확대에 수익성 '껑충'",
         "press": "증시 속보",
-        "url": "https://www.bigtanews.co.kr/article/view/big202611100018",
-        "published_at": "2026-11-10T15:42:13.746Z"
+        "url": "https://www.incheonilbo.com/news/articleView.html?idxno=1334378",
+        "published_at": "2026-11-11T02:53:22.585Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_390",
-      "theme_name": "마이크로 LED",
-      "full_theme_name": "마이크로 LED",
-      "change_rate": "+7.10%",
+      "theme_id": "radar_599",
+      "theme_name": "소캠",
+      "full_theme_name": "소캠(SOCAMM)",
+      "change_rate": "+8.74%",
       "composite_score": 99,
-      "total_stocks_count": 10,
-      "leader_stock": "사피엔반도체",
-      "leader_ratio": 17.76,
-      "sub_leader_stock": "코세스",
+      "total_stocks_count": 11,
+      "leader_stock": "코리아써키트",
+      "leader_ratio": 17.15,
+      "sub_leader_stock": "티엘비",
       "other_stocks": [
-        "영우디에스피",
-        "루멘스바이오스",
-        "라온텍"
+        "ISC",
+        "엠케이전자",
+        "대덕전자"
       ],
       "sub_stocks_top3": [
         {
-          "name": "코세스",
-          "rate": "+15.7%"
+          "name": "티엘비",
+          "rate": "+16.3%"
         },
         {
-          "name": "영우디에스피",
-          "rate": "+9.6%"
+          "name": "ISC",
+          "rate": "+11.1%"
         },
         {
-          "name": "루멘스바이오스",
-          "rate": "+8.8%"
+          "name": "엠케이전자",
+          "rate": "+10.1%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 반도체株 프리마켓서 줄줄이 급등…서울반도체 18.03%↑ : 오픈엣지테크놀로지는 960원(10.45%) 상승한 9190원, 사피엔반도체도 3900원(10.26%) 상승한 3만8000원, 가온칩스는 4250원(9.68%) 오른 4만3900원을 기록 중이다. 반도체 테스...",
-      "future_momentum": "마이크로 LED 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 30640,
+      "past_trigger_reason": "[속보 기사] 심텍홀딩스 20% 급등·이수페타시스 강세…반도체 기판주 전반... : 심텍홀딩스가 20% 넘게 급등한 가운데 이수페타시스와 코리아써키트, 심텍 등 주요 종목들도 상승 흐름을 보이고 있다. 이날 오전 9시 22분 현재 심텍홀딩스는 전일 대비 815원 오른 4705원에 거래되고 ...",
+      "future_momentum": "소캠 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2784,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "반도체株 프리마켓서 줄줄이 급등…서울반도체 18.03%↑[특징주]",
-      "today_rising_fact": "[속보 기사] 반도체株 프리마켓서 줄줄이 급등…서울반도체 18.03%↑ : 오픈엣지테크놀로지는 960원(10.45%) 상승한 9190원, 사피엔반도체도 3900원(10.26%) 상승한 3만8000원, 가온칩스는 4250원(9.68%) 오른 4만3900원을 기록 중이다. 반도체 테스...",
+      "trigger_summary": "[특징주] 심텍홀딩스 20% 급등·이수페타시스 강세…반도체 기판주 전반...",
+      "today_rising_fact": "[속보 기사] 심텍홀딩스 20% 급등·이수페타시스 강세…반도체 기판주 전반... : 심텍홀딩스가 20% 넘게 급등한 가운데 이수페타시스와 코리아써키트, 심텍 등 주요 종목들도 상승 흐름을 보이고 있다. 이날 오전 9시 22분 현재 심텍홀딩스는 전일 대비 815원 오른 4705원에 거래되고 ...",
       "top_article": {
-        "title": "반도체株 프리마켓서 줄줄이 급등…서울반도체 18.03%↑[특징주]",
+        "title": "[특징주] 심텍홀딩스 20% 급등·이수페타시스 강세…반도체 기판주 전반...",
         "press": "증시 속보",
-        "url": "https://www.newsway.co.kr/news/view?ud=2026092208250742166",
-        "published_at": "2026-11-10T15:42:14.148Z"
+        "url": "https://www.cbci.co.kr/news/articleView.html?idxno=625592",
+        "published_at": "2026-11-11T02:53:22.945Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_586",
-      "theme_name": "광통신",
-      "full_theme_name": "광통신(광케이블/광섬유 등)",
-      "change_rate": "+6.79%",
-      "composite_score": 99,
-      "total_stocks_count": 15,
-      "leader_stock": "RFHIC",
-      "leader_ratio": 18.73,
-      "sub_leader_stock": "서울바이오시스",
+      "theme_id": "radar_545",
+      "theme_name": "온디바이스 AI",
+      "full_theme_name": "온디바이스 AI",
+      "change_rate": "+6.80%",
+      "composite_score": 95,
+      "total_stocks_count": 24,
+      "leader_stock": "유니퀘스트",
+      "leader_ratio": 14,
+      "sub_leader_stock": "네패스",
       "other_stocks": [
-        "RF머트리얼즈",
-        "대한광통신",
-        "성호전자"
+        "에이팩트",
+        "네패스아크",
+        "큐알티"
       ],
       "sub_stocks_top3": [
         {
-          "name": "서울바이오시스",
-          "rate": "+15.7%"
+          "name": "네패스",
+          "rate": "+12.4%"
         },
         {
-          "name": "RF머트리얼즈",
-          "rate": "+11.6%"
-        },
-        {
-          "name": "대한광통신",
-          "rate": "+9.1%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 광통신주, '데이터센터 우려 과도' 평가에 급등 마감(종합) : 이날 코스닥에서 RFHIC는 19.20% 오른 5만600원에 거래를 마쳤다. RF머트리얼즈도 13% 상승했고, 대한광통신과 빛과전자 역시 9%, 6%씩 올랐다. 글로벌 대형 투자은행들이 AIDC 규제 우려가...",
-      "future_momentum": "광통신 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2160,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 광통신주, '데이터센터 우려 과도' 평가에 급등 마감(종합)",
-      "today_rising_fact": "[속보 기사] 광통신주, '데이터센터 우려 과도' 평가에 급등 마감(종합) : 이날 코스닥에서 RFHIC는 19.20% 오른 5만600원에 거래를 마쳤다. RF머트리얼즈도 13% 상승했고, 대한광통신과 빛과전자 역시 9%, 6%씩 올랐다. 글로벌 대형 투자은행들이 AIDC 규제 우려가...",
-      "top_article": {
-        "title": "[특징주] 광통신주, '데이터센터 우려 과도' 평가에 급등 마감(종합)",
-        "press": "증시 속보",
-        "url": "https://www.yna.co.kr/view/AKR20261110056051008?input=1195m",
-        "published_at": "2026-11-10T15:42:14.538Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_200",
-      "theme_name": "우주항공산업",
-      "full_theme_name": "우주항공산업(누리호/인공위성 등)",
-      "change_rate": "+5.99%",
-      "composite_score": 99,
-      "total_stocks_count": 41,
-      "leader_stock": "티앤이코리아",
-      "leader_ratio": 29.98,
-      "sub_leader_stock": "LIG디펜스앤에어로스페이스",
-      "other_stocks": [
-        "이노스페이스",
-        "대한항공",
-        "알멕"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "LIG디펜스앤에어로스페이스",
-          "rate": "+14.0%"
-        },
-        {
-          "name": "이노스페이스",
-          "rate": "+12.8%"
-        },
-        {
-          "name": "대한항공",
-          "rate": "+12.0%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 스페이스X 인프라 투자 확대 기대감…티앤이·LIG 각 25%·11% '상... : 10일 한국거래소에 따르면 이날 오전 10시 55분 기준 티앤이코리아는 전 거래일보다 3770원(25.29%) 상승한 1만860원에 거래 중이다. 같은 시각 LIG디펜스앤에어로스페이스(11.11%), 대한항...",
-      "future_momentum": "우주항공산업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4259,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주]스페이스X 인프라 투자 확대 기대감…티앤이·LIG 각 25%·11% '상...",
-      "today_rising_fact": "[속보 기사] 스페이스X 인프라 투자 확대 기대감…티앤이·LIG 각 25%·11% '상... : 10일 한국거래소에 따르면 이날 오전 10시 55분 기준 티앤이코리아는 전 거래일보다 3770원(25.29%) 상승한 1만860원에 거래 중이다. 같은 시각 LIG디펜스앤에어로스페이스(11.11%), 대한항...",
-      "top_article": {
-        "title": "[특징주]스페이스X 인프라 투자 확대 기대감…티앤이·LIG 각 25%·11% '상...",
-        "press": "증시 속보",
-        "url": "https://www.ajunews.com/view/20261110105219705",
-        "published_at": "2026-11-10T15:42:14.945Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_205",
-      "theme_name": "원자력발전",
-      "full_theme_name": "원자력발전",
-      "change_rate": "+5.68%",
-      "composite_score": 98,
-      "total_stocks_count": 50,
-      "leader_stock": "디케이락",
-      "leader_ratio": 25.09,
-      "sub_leader_stock": "SNT에너지",
-      "other_stocks": [
-        "금양그린파워",
-        "삼미금속",
-        "현대건설"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "SNT에너지",
-          "rate": "+18.7%"
-        },
-        {
-          "name": "금양그린파워",
-          "rate": "+13.9%"
-        },
-        {
-          "name": "삼미금속",
+          "name": "에이팩트",
           "rate": "+12.3%"
+        },
+        {
+          "name": "네패스아크",
+          "rate": "+12.7%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] SNT에너지, 고효율 발전설비 시장 실적 가시화에 장중 18%↑ : 관련 투자 심리가 개선되면서 주식시장에서는 관련 테마주들의 동반 강세도 눈에 띈다. 같은 시각 SNT에너지와 유사한 발전 및 인프라 테마 내에 있는 디케이락(+24.63%), 삼미금속(+13.95%), 금양...",
-      "future_momentum": "원자력발전 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3351,
+      "past_trigger_reason": "[속보 기사] 유니퀘스트, 26일 장중 2%대 하락 : 유니퀘스트가 26일 장중 하락세를 보였다. 한국경제 마켓의 20분 지연 시세 기준 주가는 1만870원으로 전 거래일보다 250원(2.25%) 내렸다. 장중 고가는 1만1290원, 저가는 1만410원으로 집계...",
+      "future_momentum": "온디바이스 AI 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2259,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] SNT에너지, 고효율 발전설비 시장 실적 가시화에 장중 18%↑",
-      "today_rising_fact": "[속보 기사] SNT에너지, 고효율 발전설비 시장 실적 가시화에 장중 18%↑ : 관련 투자 심리가 개선되면서 주식시장에서는 관련 테마주들의 동반 강세도 눈에 띈다. 같은 시각 SNT에너지와 유사한 발전 및 인프라 테마 내에 있는 디케이락(+24.63%), 삼미금속(+13.95%), 금양...",
+      "trigger_summary": "[특징주] 유니퀘스트, 26일 장중 2%대 하락",
+      "today_rising_fact": "[속보 기사] 유니퀘스트, 26일 장중 2%대 하락 : 유니퀘스트가 26일 장중 하락세를 보였다. 한국경제 마켓의 20분 지연 시세 기준 주가는 1만870원으로 전 거래일보다 250원(2.25%) 내렸다. 장중 고가는 1만1290원, 저가는 1만410원으로 집계...",
       "top_article": {
-        "title": "[특징주] SNT에너지, 고효율 발전설비 시장 실적 가시화에 장중 18%↑",
+        "title": "[특징주] 유니퀘스트, 26일 장중 2%대 하락",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=303281",
-        "published_at": "2026-11-10T15:42:15.338Z"
+        "url": "https://www.vegannews.co.kr/news/article.html?no=397210",
+        "published_at": "2026-11-11T02:53:23.324Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_556",
+      "theme_name": "뉴로모픽 반도체",
+      "full_theme_name": "뉴로모픽 반도체",
+      "change_rate": "+6.72%",
+      "composite_score": 94,
+      "total_stocks_count": 7,
+      "leader_stock": "네패스아크",
+      "leader_ratio": 12.71,
+      "sub_leader_stock": "네패스",
+      "other_stocks": [
+        "에이직랜드",
+        "오픈엣지테크놀로지",
+        "자람테크놀로지"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "네패스",
+          "rate": "+12.4%"
+        },
+        {
+          "name": "에이직랜드",
+          "rate": "+6.8%"
+        },
+        {
+          "name": "오픈엣지테크놀로지",
+          "rate": "+6.2%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 美 반도체주 강세에 소부장株 '들썩'…'시그네틱스·SFA반도체... : [자료=게티이미지뱅크] 시스템반도체 관련주도 하나마이크론(17.98%), 디아이(12.10%), 에프에스티(9.78%), 네패스아크(7.97%), 앤씨앤(7.49%), 테크윙(6.73%), 두산테스나(6.5...",
+      "future_momentum": "뉴로모픽 반도체 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 15045,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 美 반도체주 강세에 소부장株 '들썩'…'시그네틱스·SFA반도체...",
+      "today_rising_fact": "[속보 기사] 美 반도체주 강세에 소부장株 '들썩'…'시그네틱스·SFA반도체... : [자료=게티이미지뱅크] 시스템반도체 관련주도 하나마이크론(17.98%), 디아이(12.10%), 에프에스티(9.78%), 네패스아크(7.97%), 앤씨앤(7.49%), 테크윙(6.73%), 두산테스나(6.5...",
+      "top_article": {
+        "title": "[특징주] 美 반도체주 강세에 소부장株 '들썩'…'시그네틱스·SFA반도체...",
+        "press": "증시 속보",
+        "url": "https://www.newspim.com/news/view/20260921000410",
+        "published_at": "2026-11-11T02:53:23.717Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1794325335719_69jr",
+      "theme_id": "pb_1794365604113_ppvr",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인 '한온시스템·두산에너빌리티', 기관 '삼성전자·대한...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=727642",
-        "published_at": "2026-11-10T15:42:15.719Z"
+        "published_at": "2026-11-11T02:53:24.113Z"
       }
     },
     {
-      "theme_id": "pb_1794325336113_18rz",
+      "theme_id": "pb_1794365604490_0i5o",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-10T15:42:16.113Z"
+        "published_at": "2026-11-11T02:53:24.490Z"
       }
     }
   ],
