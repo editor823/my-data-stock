@@ -1,6 +1,6 @@
 {
   "success": true,
-  "updated_at": "2026-11-11T11:17:03.042Z",
+  "updated_at": "2026-11-11T19:45:49.177Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
@@ -59,13 +59,13 @@
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 이수페타시스, 美 로켓랩 실적 호조·AI 기판 수요 증가에 17%대...",
+      "trigger_summary": "[��징주] 이수페타시스, 美 로켓랩 실적 호조·AI 기판 수요 증가에 17%대...",
       "today_rising_fact": "[속보 기사] 이수페타시스, 美 로켓랩 실적 호조·AI 기판 수요 증가에 17%대... : 같은 시각 심텍홀딩스(+26.35%), 코리아써키트(+22.67%), 티엘비(+18.17%) 등 주요 PCB 관련주들이 일제히 두 자릿수 상승률을 기록하며 테마 전체의 상승 탄력을 배가시키고 있다. 증권업계...",
       "top_article": {
-        "title": "[특징주] 이수페타시스, 美 로켓랩 실적 호조·AI 기판 수요 증가에 17%대...",
+        "title": "[��징주] 이수페타시스, 美 로켓랩 실적 호조·AI 기판 수요 증가에 17%대...",
         "press": "증시 속보",
         "url": "https://www.widedaily.com/news/articleView.html?idxno=303413",
-        "published_at": "2026-11-11T11:17:00.721Z"
+        "published_at": "2026-11-11T19:45:46.800Z"
       },
       "timeline": []
     },
@@ -104,13 +104,13 @@
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 이수페타시스, 美 로켓랩 실적 호조·AI 기판 수요 증가에 17%대...",
+      "trigger_summary": "[��징주] 이수페타시스, 美 로켓랩 실적 호조·AI 기판 수요 증가에 17%대...",
       "today_rising_fact": "[속보 기사] 이수페타시스, 美 로켓랩 실적 호조·AI 기판 수요 증가에 17%대... : 같은 시각 심텍홀딩스(+26.35%), 코리아써키트(+22.67%), 티엘비(+18.17%) 등 주요 PCB 관련주들이 일제히 두 자릿수 상승률을 기록하며 테마 전체의 상승 탄력을 배가시키고 있다. 증권업계...",
       "top_article": {
-        "title": "[특징주] 이수페타시스, 美 로켓랩 실적 호조·AI 기판 수요 증가에 17%대...",
+        "title": "[��징주] 이수페타시스, 美 로켓랩 실적 호조·AI 기판 수요 증가에 17%대...",
         "press": "증시 속보",
         "url": "https://www.widedaily.com/news/articleView.html?idxno=303413",
-        "published_at": "2026-11-11T11:17:01.013Z"
+        "published_at": "2026-11-11T19:45:47.170Z"
       },
       "timeline": []
     },
@@ -155,7 +155,7 @@
         "title": "[특징주] 이수페타시스, 美 로켓랩 실적 호조·AI 기판 수요 증가에 17%대...",
         "press": "증시 속보",
         "url": "https://www.widedaily.com/news/articleView.html?idxno=303413",
-        "published_at": "2026-11-11T11:17:01.303Z"
+        "published_at": "2026-11-11T19:45:47.446Z"
       },
       "timeline": []
     },
@@ -200,7 +200,7 @@
         "title": "[특징주]티에스이, 반도체 후공정 장비주 동반 강세에 20.24% 뛰어…프로...",
         "press": "증시 속보",
         "url": "https://www.namdonews.com/news/articleView.html?idxno=928912",
-        "published_at": "2026-11-11T11:17:01.735Z"
+        "published_at": "2026-11-11T19:45:47.876Z"
       },
       "timeline": []
     },
@@ -245,14 +245,14 @@
         "title": "[특징주]티에스이, 반도체 후공정 장비주 동반 강세에 20.24% 뛰어…프로...",
         "press": "증시 속보",
         "url": "https://www.namdonews.com/news/articleView.html?idxno=928912",
-        "published_at": "2026-11-11T11:17:02.165Z"
+        "published_at": "2026-11-11T19:45:48.316Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1794395822601_zlor",
+      "theme_id": "pb_1794426348747_lw4w",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인 '한온시스템·두산에너빌리티', 기관 '삼성전자·대한...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=727642",
-        "published_at": "2026-11-11T11:17:02.601Z"
+        "published_at": "2026-11-11T19:45:48.747Z"
       }
     },
     {
-      "theme_id": "pb_1794395823042_zcn4",
+      "theme_id": "pb_1794426349177_cccp",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-11T11:17:03.042Z"
+        "published_at": "2026-11-11T19:45:49.177Z"
       }
     }
   ],
