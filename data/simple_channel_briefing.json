@@ -1,34 +1,30 @@
 {
-  "updatedAt": "2026-11-12T03:57:55.354Z",
+  "updatedAt": "2026-11-12T16:06:06.464Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-11-12",
   "latestVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-12] 당일 증시 핵심 주도주 및 섹터별 수급 완벽 점검",
-    "published_kst": "2026-11-12 08:30:00",
-    "url": "https://www.youtube.com"
+    "id": "JWKh_griocA",
+    "title": "좀 회복하나싶었더니 들려오는 젠슨황 추가(?) 악재...쉬어가는 증시 / 반도체,소부장,보안,경영권분쟁 /삼성전자SK하이��스,한진칼,삼성전기,JYP,코리아써키트,심텍,티엘비,주성",
+    "published_kst": "2026-11-12 16:05:59",
+    "url": "https://www.youtube.com/watch?v=JWKh_griocA"
   },
   "morningVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-12] 당일 관심테마! 조선,원전,풍력,AI반도체/한화오션,성광벤드,SK하이닉스",
-    "published_kst": "2026-11-12 08:30:00",
-    "url": "https://www.youtube.com",
+    "id": "iK7drU3IOS0",
+    "title": "당일 관심테마! 코어위브 실적 강세 및 앤트로픽 IPO 주문 폭주 ! /반도체,소부장,기판,로봇/삼성전자,SK하이닉스,코리아써키트,심텍,주성엔지니어링,삼성전기,한진칼,티엘비",
+    "published_kst": "2026-11-12 07:01:32",
+    "url": "https://www.youtube.com/watch?v=iK7drU3IOS0",
     "themes": [
-      "조선 & 해운",
-      "원전 & SMR",
-      "AI 반도체 & HBM",
-      "풍력 신재생"
+      "코어위브 실적 강세 및 앤트로픽 IPO 주문 폭주 !"
     ],
     "stocks": [
-      "한화오션",
-      "성광벤드",
-      "SK하이닉스",
-      "니어스랩",
-      "두산에너빌리티"
+      "반도체",
+      "소부장",
+      "기판",
+      "로봇"
     ],
     "key_points": [
       "조선 & 방산: 미국 해군 MRO 수주 및 중동·동유럽 수출 파이프라인 수급 집결",
@@ -38,22 +34,18 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-12] 장마감 관심테마! 당일 주도 섹터 수급 분석 및 내일 공략주",
-    "published_kst": "2026-11-12 16:30:00",
-    "url": "https://www.youtube.com",
+    "id": "yZ0W5qc659I",
+    "title": "내일 관심테마! 지수반등은 역시 반도체 & 소부장 !! 코스닥 승강제 ?? /반도체,소부장,기판,로봇/삼성전자,SK하이닉스,코리아써키트,심텍,주성엔지니어링,삼성전기,한진칼,티엘비",
+    "published_kst": "2026-11-11 21:05:32",
+    "url": "https://www.youtube.com/watch?v=yZ0W5qc659I",
     "themes": [
-      "조선 & 해운",
-      "원전 & SMR",
-      "AI 반도체 & HBM",
-      "풍력 신재생"
+      "지수반등은 역시 반도체 & 소부장 !! 코스닥 승강제 ??"
     ],
     "stocks": [
-      "한화오션",
-      "성광벤드",
-      "SK하이닉스",
-      "니어스랩",
-      "두산에너빌리티"
+      "반도체",
+      "소부장",
+      "기판",
+      "로봇"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(한화오션, SK하이닉스 등) 외국인·기관 순매수 집중",
