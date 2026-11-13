@@ -17,8 +17,8 @@
       "sourceUrl": "https://search.naver.com/search.naver?where=news&query=미국+ISM+제조업+PMI",
       "news_url": "https://search.naver.com/search.naver?where=news&query=미국+ISM+제조업+PMI",
       "status": "approved",
-      "diff_days": 1,
-      "d_day": "D-1"
+      "diff_days": -10,
+      "d_day": "D+10 종료"
     },
     {
       "id": "evt_20261105_01",
@@ -34,8 +34,8 @@
       "sourceUrl": "https://search.naver.com/search.naver?where=news&query=미국+FOMC+회의",
       "news_url": "https://search.naver.com/search.naver?where=news&query=미국+FOMC+회의",
       "status": "approved",
-      "diff_days": 3,
-      "d_day": "D-3"
+      "diff_days": -8,
+      "d_day": "D+8 종료"
     },
     {
       "id": "evt_20261106_01",
@@ -51,8 +51,8 @@
       "sourceUrl": "https://search.naver.com/search.naver?where=news&query=미국+비농업+고용보고서",
       "news_url": "https://search.naver.com/search.naver?where=news&query=미국+비농업+고용보고서",
       "status": "approved",
-      "diff_days": 4,
-      "d_day": "D-4"
+      "diff_days": -7,
+      "d_day": "D+7 종료"
     },
     {
       "id": "evt_20261107_01",
@@ -68,8 +68,8 @@
       "sourceUrl": "https://search.naver.com/search.naver?where=news&query=FOMC+기준금리+파월",
       "news_url": "https://search.naver.com/search.naver?where=news&query=FOMC+기준금리+파월",
       "status": "approved",
-      "diff_days": 5,
-      "d_day": "D-5"
+      "diff_days": -6,
+      "d_day": "D+6 종료"
     },
     {
       "id": "evt_20261108_01",
@@ -85,8 +85,8 @@
       "sourceUrl": "https://search.naver.com/search.naver?where=news&query=중국+전인대+상무위+경기부양책",
       "news_url": "https://search.naver.com/search.naver?where=news&query=중국+전인대+상무위+경기부양책",
       "status": "approved",
-      "diff_days": 6,
-      "d_day": "D-6"
+      "diff_days": -5,
+      "d_day": "D+5 종료"
     },
     {
       "id": "evt_20261112_01",
@@ -102,8 +102,8 @@
       "sourceUrl": "https://search.naver.com/search.naver?where=news&query=11월+옵션만기일",
       "news_url": "https://search.naver.com/search.naver?where=news&query=11월+옵션만기일",
       "status": "approved",
-      "diff_days": 10,
-      "d_day": "D-10"
+      "diff_days": -1,
+      "d_day": "D+1 종료"
     },
     {
       "id": "evt_20261114_01",
@@ -119,8 +119,8 @@
       "sourceUrl": "https://search.naver.com/search.naver?where=news&query=수능+증시+개폐장",
       "news_url": "https://search.naver.com/search.naver?where=news&query=수능+증시+개폐장",
       "status": "approved",
-      "diff_days": 12,
-      "d_day": "D-12"
+      "diff_days": 1,
+      "d_day": "D-1"
     },
     {
       "id": "evt_20261120_01",
@@ -136,8 +136,8 @@
       "sourceUrl": "https://search.naver.com/search.naver?where=news&query=엔비디아+3분기+실적+블랙웰",
       "news_url": "https://search.naver.com/search.naver?where=news&query=엔비디아+3분기+실적+블랙웰",
       "status": "approved",
-      "diff_days": 18,
-      "d_day": "D-18"
+      "diff_days": 7,
+      "d_day": "D-7"
     },
     {
       "id": "evt_20261128_01",
@@ -153,8 +153,8 @@
       "sourceUrl": "https://search.naver.com/search.naver?where=news&query=한국은행+금통위+기준금리",
       "news_url": "https://search.naver.com/search.naver?where=news&query=한국은행+금통위+기준금리",
       "status": "approved",
-      "diff_days": 26,
-      "d_day": "D-26"
+      "diff_days": 15,
+      "d_day": "D-15"
     },
     {
       "id": "evt_20261211_01",
@@ -170,8 +170,8 @@
       "sourceUrl": "https://search.naver.com/search.naver?where=news&query=미국+11월+CPI",
       "news_url": "https://search.naver.com/search.naver?where=news&query=미국+11월+CPI",
       "status": "approved",
-      "diff_days": 39,
-      "d_day": "D-39"
+      "diff_days": 28,
+      "d_day": "D-28"
     },
     {
       "id": "evt_20261218_01",
@@ -187,8 +187,8 @@
       "sourceUrl": "https://search.naver.com/search.naver?where=news&query=FOMC+점도표+금리결정",
       "news_url": "https://search.naver.com/search.naver?where=news&query=FOMC+점도표+금리결정",
       "status": "approved",
-      "diff_days": 46,
-      "d_day": "D-46"
+      "diff_days": 35,
+      "d_day": "D-35"
     }
   ],
   "pending_events": []
