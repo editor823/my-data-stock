@@ -1,11 +1,6 @@
 {
-<<<<<<< Updated upstream
-  "updated_at": "2026-11-13T03:29:26.520Z",
-  "updated_date_str": "2026년 11월 13일 03:29",
-=======
-  "updated_at": "2026-11-13T05:52:12.415Z",
-  "updated_date_str": "2026년 11월 13일 14:52",
->>>>>>> Stashed changes
+  "updated_at": "2026-11-13T11:24:32.893Z",
+  "updated_date_str": "2026년 11월 13일 11:24",
   "headline": "미국 증시 주요 지수 혼조 마감… AI 빅테크 및 금리 지표 관망",
   "summary_3lines": [
     "미 연준 통화정책 및 주요 경제지표 발표를 앞두고 증시 변동성 지속",
@@ -216,46 +211,28 @@
     }
   ],
   "macro": {
-<<<<<<< Updated upstream
-    "diesel_alert": "글로벌 에너지 시장 동향: WTI 88.16달러 선 안착 및 인플레이션 지표 모니터링",
+    "diesel_alert": "글로벌 에너지 시장 동향: WTI 88.24달러 선 안착 및 인플레이션 지표 모니터링",
     "wti": {
       "name": "WTI유",
-      "price": "88.16",
-      "ratio": "-0.65%"
+      "price": "88.24",
+      "ratio": "-0.56%"
     },
     "brent": {
       "name": "브렌트유",
-      "price": "95.47",
-      "ratio": "-0.37%"
+      "price": "95.74",
+      "ratio": "-0.08%"
     },
     "gold": {
       "name": "금",
-      "price": "3,918.80",
-      "ratio": "+0.86%"
-=======
-    "diesel_alert": "글로벌 에너지 시장 동향: WTI 88.50달러 선 안착 및 인플레이션 지표 모니터링",
-    "wti": {
-      "name": "WTI유",
-      "price": "88.50",
-      "ratio": "-0.27%"
-    },
-    "brent": {
-      "name": "브렌트유",
-      "price": "95.96",
-      "ratio": "+0.15%"
-    },
-    "gold": {
-      "name": "금",
-      "price": "3,913.50",
-      "ratio": "+0.73%"
->>>>>>> Stashed changes
+      "price": "3,895.00",
+      "ratio": "+0.25%"
     },
     "vix": {
       "name": "VIX 변동성",
-      "price": "18.70",
-      "ratio": "+6.92%"
+      "price": "18.33",
+      "ratio": "-1.98%"
     },
-    "night_range": "뉴욕 증시 정규장 마감 기준 S&P500·나스닥 변동성 지수(18.70) 유지"
+    "night_range": "뉴욕 증시 정규장 마감 기준 S&P500·나스닥 변동성 지수(18.33) 유지"
   },
   "news": []
 }
