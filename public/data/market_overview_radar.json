@@ -1,6 +1,6 @@
 {
   "success": true,
-  "updated_at": "2026-11-15T11:19:18.793Z",
+  "updated_at": "2026-11-15T19:00:11.155Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
@@ -65,7 +65,7 @@
         "title": "[특징주] 에이직랜드, 국내 유일 TSMC 파트너 경쟁력 재확인…'AI 수혜' ...",
         "press": "증시 속보",
         "url": "https://www.widedaily.com/news/articleView.html?idxno=303690",
-        "published_at": "2026-11-15T11:19:16.129Z"
+        "published_at": "2026-11-15T19:00:08.131Z"
       },
       "timeline": []
     },
@@ -110,7 +110,7 @@
         "title": "[특징주] 에이직랜드, 국내 유일 TSMC 파트너 경쟁력 재확인…'AI 수혜' ...",
         "press": "증시 속보",
         "url": "https://www.widedaily.com/news/articleView.html?idxno=303690",
-        "published_at": "2026-11-15T11:19:16.467Z"
+        "published_at": "2026-11-15T19:00:08.625Z"
       },
       "timeline": []
     },
@@ -155,7 +155,7 @@
         "title": "[특징주] KBI메탈, 3분기 누적 영업익 390% 폭증 '역대 최대' 실적에 14%대...",
         "press": "증시 속보",
         "url": "https://www.widedaily.com/news/articleView.html?idxno=303695",
-        "published_at": "2026-11-15T11:19:16.940Z"
+        "published_at": "2026-11-15T19:00:09.135Z"
       },
       "timeline": []
     },
@@ -200,7 +200,7 @@
         "title": "코스닥 반도체 장비株, 장초반 '불기둥'",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/13/2026111310083877397",
-        "published_at": "2026-11-15T11:19:17.408Z"
+        "published_at": "2026-11-15T19:00:09.639Z"
       },
       "timeline": []
     },
@@ -245,14 +245,14 @@
         "title": "[특징주] 금호건설, 3분기 실적 개선·수주 호조에 상한가…금호전기도...",
         "press": "증시 속보",
         "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8423",
-        "published_at": "2026-11-15T11:19:17.869Z"
+        "published_at": "2026-11-15T19:00:10.149Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1794741558330_f9ly",
+      "theme_id": "pb_1794769210646_ukju",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인 '한온시스템·두산에너빌리티', 기관 '삼성전자·대한...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=727642",
-        "published_at": "2026-11-15T11:19:18.330Z"
+        "published_at": "2026-11-15T19:00:10.646Z"
       }
     },
     {
-      "theme_id": "pb_1794741558793_dce5",
+      "theme_id": "pb_1794769211155_znrp",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-15T11:19:18.793Z"
+        "published_at": "2026-11-15T19:00:11.155Z"
       }
     }
   ],
