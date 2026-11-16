@@ -1,33 +1,31 @@
 {
-  "updatedAt": "2026-11-16T11:50:28.686Z",
+  "updatedAt": "2026-11-16T22:24:09.311Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-11-16",
   "latestVideo": {
     "hasVideo": true,
-    "id": "mbMyPmIHB5E",
-    "title": "숨은 쉬는 한국 증시 코스피 5천 달성 / 심플관심종목TV 라이브 / 종목상담 X",
-    "published_kst": "2026-11-06 16:47:15",
-    "url": "https://www.youtube.com/watch?v=mbMyPmIHB5E"
+    "id": "79YWF4XXQHE",
+    "title": "당일 관심테마! 하루 만에 꺾인 젠슨황 복귀, 시장은 앤트로픽 이후를 보는중 /반도체,보안,경영권,스마트글라스AI안경/���성전자,SK하이닉스,코리아써키트,심텍,나무가,아리바이오",
+    "published_kst": "2026-11-17 07:06:50",
+    "url": "https://www.youtube.com/watch?v=79YWF4XXQHE"
   },
   "morningVideo": {
     "hasVideo": true,
-    "id": "bfxokGeDp08",
-    "title": "당일 관심테마! 젠슨황 복귀 논의, 앤트로픽 상장등 중요한 한주 /반도체,소부장,기판,보안,경영권,스마트글라스/삼성전자,SK하이닉스,코리아써키트,심텍,지니언스,가온칩스,티엘비",
-    "published_kst": "2026-11-16 07:04:23",
-    "url": "https://www.youtube.com/watch?v=bfxokGeDp08",
+    "id": "79YWF4XXQHE",
+    "title": "당일 관심테마! 하루 만에 꺾인 젠슨황 복귀, 시장은 앤트로픽 이후를 보는중 /반도체,보안,경영권,스마트글라스AI안경/���성전자,SK하이닉스,코리아써키트,심텍,나무가,아리바이오",
+    "published_kst": "2026-11-17 07:06:50",
+    "url": "https://www.youtube.com/watch?v=79YWF4XXQHE",
     "themes": [
-      "젠슨황 복귀 논의",
-      "앤트로픽 상장등 중요한 한주"
+      "하루 만에 꺾인 젠슨황 복귀",
+      "시장은 앤트로픽 이후를 보는중"
     ],
     "stocks": [
       "반도체",
-      "소부장",
-      "기판",
       "보안",
       "경영권",
-      "스마트글라스"
+      "스마트글라스AI안경"
     ],
     "key_points": [
       "조선 & 방산: 미국 해군 MRO 수주 및 중동·동유럽 수출 파이프라인 수급 집결",
