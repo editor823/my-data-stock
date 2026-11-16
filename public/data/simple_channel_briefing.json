@@ -1,34 +1,33 @@
 {
-  "updatedAt": "2026-11-16T02:54:14.634Z",
+  "updatedAt": "2026-11-16T11:50:28.686Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-11-16",
   "latestVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-16] 당일 증시 핵심 주도주 및 섹터별 수급 완벽 점검",
-    "published_kst": "2026-11-16 08:30:00",
-    "url": "https://www.youtube.com"
+    "id": "mbMyPmIHB5E",
+    "title": "숨은 쉬는 한국 증시 코스피 5천 달성 / 심플관심종목TV 라이브 / 종목상담 X",
+    "published_kst": "2026-11-06 16:47:15",
+    "url": "https://www.youtube.com/watch?v=mbMyPmIHB5E"
   },
   "morningVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-16] 당일 관심테마! 조선,원전,풍력,AI반도체/한화오션,성광벤드,SK하이닉스",
-    "published_kst": "2026-11-16 08:30:00",
-    "url": "https://www.youtube.com",
+    "id": "bfxokGeDp08",
+    "title": "당일 관심테마! 젠슨황 복귀 논의, 앤트로픽 상장등 중요한 한주 /반도체,소부장,기판,보안,경영권,스마트글라스/삼성전자,SK하이닉스,코리아써키트,심텍,지니언스,가온칩스,티엘비",
+    "published_kst": "2026-11-16 07:04:23",
+    "url": "https://www.youtube.com/watch?v=bfxokGeDp08",
     "themes": [
-      "조선 & 해운",
-      "원전 & SMR",
-      "AI 반도체 & HBM",
-      "풍력 신재생"
+      "젠슨황 복귀 논의",
+      "앤트로픽 상장등 중요한 한주"
     ],
     "stocks": [
-      "한화오션",
-      "성광벤드",
-      "SK하이닉스",
-      "니어스랩",
-      "두산에너빌리티"
+      "반도체",
+      "소부장",
+      "기판",
+      "보안",
+      "경영권",
+      "스마트글라스"
     ],
     "key_points": [
       "조선 & 방산: 미국 해군 MRO 수주 및 중동·동유럽 수출 파이프라인 수급 집결",
@@ -38,22 +37,21 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "uLhE5X8p6rQ",
-    "title": "[2026-11-16] 장마감 관심테마! 당일 주도 섹터 수급 분석 및 내일 공략주",
-    "published_kst": "2026-11-16 16:30:00",
-    "url": "https://www.youtube.com",
+    "id": "RRtPeFkATCI",
+    "title": "내일 관심테마! 이번주 증시 빅 이벤트들! 엔비디아,앤트로픽,APEC/반도체,소부장,기판,보안,경영권/삼성전자,SK하이닉스,코리아써키트,심텍,지니언스,가온칩스,티엘비",
+    "published_kst": "2026-11-15 16:58:40",
+    "url": "https://www.youtube.com/watch?v=RRtPeFkATCI",
     "themes": [
-      "조선 & 해운",
-      "원전 & SMR",
-      "AI 반도체 & HBM",
-      "풍력 신재생"
+      "이번주 증시 빅 이벤트들! 엔비디아",
+      "앤트로픽",
+      "APEC"
     ],
     "stocks": [
-      "한화오션",
-      "성광벤드",
-      "SK하이닉스",
-      "니어스랩",
-      "두산에너빌리티"
+      "반도체",
+      "소부장",
+      "기판",
+      "보안",
+      "경영권"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(한화오션, SK하이닉스 등) 외국인·기관 순매수 집중",

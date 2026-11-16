@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-16T02:54:14.596Z",
+  "updated_at": "2026-11-16T11:50:28.649Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "-2.91%",
+      "change_rate": "-3.59%",
       "is_up": false
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "-3.92%",
+      "change_rate": "-4.86%",
       "is_up": false
     },
     "investor_trend": {
@@ -28,179 +28,134 @@
       "theme_id": "radar_488",
       "theme_name": "웹툰",
       "full_theme_name": "웹툰",
-      "change_rate": "+0.44%",
-      "composite_score": 52,
+      "change_rate": "+0.02%",
+      "composite_score": 65,
       "total_stocks_count": 14,
       "leader_stock": "엔키AX",
-      "leader_ratio": 19.4,
-      "sub_leader_stock": "키다리스튜디오",
+      "leader_ratio": 18.65,
+      "sub_leader_stock": "카카오",
       "other_stocks": [
         "NHN",
-        "미투온",
-        "카카오"
+        "핑거스토리",
+        "키다리스튜디오"
       ],
       "sub_stocks_top3": [
         {
-          "name": "키다리스튜디오",
-          "rate": "+3.5%"
+          "name": "카카오",
+          "rate": "+2.2%"
         },
         {
           "name": "NHN",
-          "rate": "+2.6%"
+          "rate": "+1.7%"
         },
         {
-          "name": "미투온",
-          "rate": "+1.8%"
+          "name": "핑거스토리",
+          "rate": "+1.2%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 옵토닉스·에이엘로봇 등 상장 : 아울러 제논·케이엠에프·에이엔에이치스트럭쳐·신영스팩12호·엔키화이트햇이 수요예측에 나서며 에스에프씨·유캐스트는 일반 청약을... 11월 16~20일 △제논 수요예측 -기업의 인공지능 전환(AX)을 지원하는 ...",
+      "past_trigger_reason": "[속보 기사] 엔키AX 18.88% 상승…산업용 AI·디지털전환 살펴보니 : 산업용 AI·디지털전환 관련 관심이 이어진 가운데 엔키AX 종가는 1,587원으로 집계됐다. 코스닥 시장에서 전 거래일보다 252원 올랐다. 이날 종가는 전 거래일 종가 1,335원보다 252원 올랐다. 장...",
       "future_momentum": "웹툰 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1180,
+      "trading_value_eok": 2094,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "옵토닉스·에이엘로봇 등 상장[증시캘린더]",
-      "today_rising_fact": "[속보 기사] 옵토닉스·에이엘로봇 등 상장 : 아울러 제논·케이엠에프·에이엔에이치스트럭쳐·신영스팩12호·엔키화이트햇이 수요예측에 나서며 에스에프씨·유캐스트는 일반 청약을... 11월 16~20일 △제논 수요예측 -기업의 인공지능 전환(AX)을 지원하는 ...",
+      "trigger_summary": "엔키AX 18.88% 상승…산업용 AI·디지털전환 살펴보니",
+      "today_rising_fact": "[속보 기사] 엔키AX 18.88% 상승…산업용 AI·디지털전환 살펴보니 : 산업용 AI·디지털전환 관련 관심이 이어진 가운데 엔키AX 종가는 1,587원으로 집계됐다. 코스닥 시장에서 전 거래일보다 252원 올랐다. 이날 종가는 전 거래일 종가 1,335원보다 252원 올랐다. 장...",
       "top_article": {
-        "title": "옵토닉스·에이엘로봇 등 상장[증시캘린더]",
+        "title": "엔키AX 18.88% 상승…산업용 AI·디지털전환 살펴보니",
         "press": "증시 속보",
-        "url": "https://www.edaily.co.kr/News/Read?newsId=01177526645646048&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-        "published_at": "2026-11-16T02:54:12.030Z"
+        "url": "https://www.job-post.co.kr/news/articleView.html?idxno=238716",
+        "published_at": "2026-11-16T11:50:26.120Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_234",
-      "theme_name": "보안주",
-      "full_theme_name": "보안주(물리)",
-      "change_rate": "+3.59%",
-      "composite_score": 51,
-      "total_stocks_count": 21,
-      "leader_stock": "지슨",
-      "leader_ratio": 29.97,
-      "sub_leader_stock": "카티스",
+      "theme_id": "radar_289",
+      "theme_name": "증강현실",
+      "full_theme_name": "증강현실(AR)",
+      "change_rate": "+2.07%",
+      "composite_score": 61,
+      "total_stocks_count": 20,
+      "leader_stock": "나무가",
+      "leader_ratio": 30,
+      "sub_leader_stock": "세코닉스",
       "other_stocks": [
-        "시선AI",
-        "DGI",
-        "픽셀플러스"
+        "사피엔반도체",
+        "라온텍",
+        "포니링크"
       ],
       "sub_stocks_top3": [
         {
-          "name": "카티스",
-          "rate": "+29.9%"
+          "name": "세코닉스",
+          "rate": "+29.8%"
         },
         {
-          "name": "시선AI",
-          "rate": "+24.6%"
+          "name": "사피엔반도체",
+          "rate": "+15.6%"
         },
         {
-          "name": "DGI",
-          "rate": "+22.8%"
+          "name": "라온텍",
+          "rate": "+11.1%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 세코닉스, 'AI 첨단 부정행위' 파장에 광학·카메라 기술 부각... : 83%)과 AR 기기용 디스플레이 반도체를 개발하는 사피엔반도체(+7.40%) 등도 큰 폭의 오름세를 기록 중이다. 또한, 보안 및 무선 신호 탐지 기술을 보유한 지슨 역시 정부의 방지 대책 수혜주로 묶이며...",
-      "future_momentum": "보안주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 142,
-      "is_real_leading": false,
+      "past_trigger_reason": "[속보 기사] 사피엔반도체, 차세대 디스플레이 마이크로LED 기술 부각에 11... : 동종목인 세코닉스, 나무가 등과 함께 증강현실(AR) 테마 전반의 강세를 이끄는 모습이다. 이날 주가 상승을 뒷받침하는 핵심 배경은 뚜렷한 실적 턴어라운드다. 사피엔반도체가 지난 12일 공시한 3분기 보고서...",
+      "future_momentum": "증강현실 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1050,
+      "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 세코닉스, 'AI 첨단 부정행위' 파장에 광학·카메라 기술 부각...",
-      "today_rising_fact": "[속보 기사] 세코닉스, 'AI 첨단 부정행위' 파장에 광학·카메라 기술 부각... : 83%)과 AR 기기용 디스플레이 반도체를 개발하는 사피엔반도체(+7.40%) 등도 큰 폭의 오름세를 기록 중이다. 또한, 보안 및 무선 신호 탐지 기술을 보유한 지슨 역시 정부의 방지 대책 수혜주로 묶이며...",
+      "trigger_summary": "[특징주] 사피엔반도체, 차세대 디스플레이 마이크로LED 기술 부각에 11...",
+      "today_rising_fact": "[속보 기사] 사피엔반도체, 차세대 디스플레이 마이크로LED 기술 부각에 11... : 동종목인 세코닉스, 나무가 등과 함께 증강현실(AR) 테마 전반의 강세를 이끄는 모습이다. 이날 주가 상승을 뒷받침하는 핵심 배경은 뚜렷한 실적 턴어라운드다. 사피엔반도체가 지난 12일 공시한 3분기 보고서...",
       "top_article": {
-        "title": "[특징주] 세코닉스, 'AI 첨단 부정행위' 파장에 광학·카메라 기술 부각...",
+        "title": "[특징주] 사피엔반도체, 차세대 디스플레이 마이크로LED 기술 부각에 11...",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=303758",
-        "published_at": "2026-11-16T02:54:12.453Z"
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=303807",
+        "published_at": "2026-11-16T11:50:26.420Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_332",
-      "theme_name": "스마트카",
-      "full_theme_name": "스마트카(SMART CAR)",
-      "change_rate": "+2.40%",
-      "composite_score": 50,
-      "total_stocks_count": 12,
-      "leader_stock": "세코닉스",
-      "leader_ratio": 29.83,
-      "sub_leader_stock": "MDS테크",
+      "theme_id": "radar_165",
+      "theme_name": "은행",
+      "full_theme_name": "은행",
+      "change_rate": "+1.39%",
+      "composite_score": 59,
+      "total_stocks_count": 11,
+      "leader_stock": "JB금융지주",
+      "leader_ratio": 2.97,
+      "sub_leader_stock": "케이뱅크",
       "other_stocks": [
-        "엠씨넥스",
-        "오비고",
-        "현대모비스"
+        "카카오뱅크",
+        "우리금융지주",
+        "하나금융지주"
       ],
       "sub_stocks_top3": [
         {
-          "name": "MDS테크",
-          "rate": "+11.7%"
+          "name": "케이뱅크",
+          "rate": "+2.5%"
         },
         {
-          "name": "엠씨넥스",
-          "rate": "+5.4%"
+          "name": "카카오뱅크",
+          "rate": "+1.9%"
         },
         {
-          "name": "오비고",
-          "rate": "+1.7%"
+          "name": "우리금융지주",
+          "rate": "+1.9%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 세코닉스, 'AI 첨단 부정행위' 파장에 광학·카메라 기술 부각... : 인공지능(AI) 스마트안경을 악용한 시험 부정행위 논란이 확산하는 가운데, 광학렌즈 및 카메라 부품 기술을 보유한 세코닉스가 장 초반 상한가로 직행했다. 16일 한국거래소에 따르면 오전 10시 39분 기준 ...",
-      "future_momentum": "스마트카 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 372,
-      "is_real_leading": false,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 세코닉스, 'AI 첨단 부정행위' 파장에 광학·카메라 기술 부각...",
-      "today_rising_fact": "[속보 기사] 세코닉스, 'AI 첨단 부정행위' 파장에 광학·카메라 기술 부각... : 인공지능(AI) 스마트안경을 악용한 시험 부정행위 논란이 확산하는 가운데, 광학렌즈 및 카메라 부품 기술을 보유한 세코닉스가 장 초반 상한가로 직행했다. 16일 한국거래소에 따르면 오전 10시 39분 기준 ...",
-      "top_article": {
-        "title": "[특징주] 세코닉스, 'AI 첨단 부정행위' 파장에 광학·카메라 기술 부각...",
-        "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=303758",
-        "published_at": "2026-11-16T02:54:12.870Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_566",
-      "theme_name": "딥페이크",
-      "full_theme_name": "딥페이크(deepfake)",
-      "change_rate": "+1.83%",
-      "composite_score": 50,
-      "total_stocks_count": 14,
-      "leader_stock": "M83",
-      "leader_ratio": 29.88,
-      "sub_leader_stock": "시선AI",
-      "other_stocks": [
-        "알체라",
-        "이스트소프트",
-        "디지캡"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "시선AI",
-          "rate": "+24.6%"
-        },
-        {
-          "name": "알체라",
-          "rate": "+3.9%"
-        },
-        {
-          "name": "이스트소프트",
-          "rate": "+2.9%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] M83, 100% 자회사 실적 견인에 3분기 누적 매출 작년 훌쩍…초... : 시각특수효과(VFX) 전문기업 M83이 인공지능(AI) 인프라 사업의 고성장에 힘입어 올해 3분기 역대 최대 실적을 달성했다는 소식에 장 초반 상한가로... 16일 오전 9시 5분 기준 코스닥 시장에서 M8...",
-      "future_momentum": "딥페이크 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 107,
+      "past_trigger_reason": "[속보 기사] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불' : JB금융지주는 2.23% 상승한 2만7550원, 카카오뱅크는 1.68% 오른 2만1150원을 기록 중이다. 5대 시중은행(KB국민·신한·하나·우리·NH농협) CI. [뉴스핌DB] 4대 금융지주도 나란히 상승...",
+      "future_momentum": "은행 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3886,
       "is_real_leading": false,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "[특징주] M83, 100% 자회사 실적 견인에 3분기 누적 매출 작년 훌쩍…초...",
-      "today_rising_fact": "[속보 기사] M83, 100% 자회사 실적 견인에 3분기 누적 매출 작년 훌쩍…초... : 시각특수효과(VFX) 전문기업 M83이 인공지능(AI) 인프라 사업의 고성장에 힘입어 올해 3분기 역대 최대 실적을 달성했다는 소식에 장 초반 상한가로... 16일 오전 9시 5분 기준 코스닥 시장에서 M8...",
+      "trigger_summary": "[특징주] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불'",
+      "today_rising_fact": "[속보 기사] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불' : JB금융지주는 2.23% 상승한 2만7550원, 카카오뱅크는 1.68% 오른 2만1150원을 기록 중이다. 5대 시중은행(KB국민·신한·하나·우리·NH농협) CI. [뉴스핌DB] 4대 금융지주도 나란히 상승...",
       "top_article": {
-        "title": "[특징주] M83, 100% 자회사 실적 견인에 3분기 누적 매출 작년 훌쩍…초...",
+        "title": "[특징주] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불'",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=303696",
-        "published_at": "2026-11-16T02:54:13.274Z"
+        "url": "https://www.newspim.com/news/view/20261116001348",
+        "published_at": "2026-11-16T11:50:26.860Z"
       },
       "timeline": []
     },
@@ -208,51 +163,96 @@
       "theme_id": "radar_164",
       "theme_name": "손해보험",
       "full_theme_name": "손해보험",
-      "change_rate": "+1.47%",
-      "composite_score": 50,
+      "change_rate": "+1.89%",
+      "composite_score": 55,
       "total_stocks_count": 8,
       "leader_stock": "한화손해보험",
-      "leader_ratio": 6.34,
+      "leader_ratio": 6.51,
       "sub_leader_stock": "DB손해보험",
       "other_stocks": [
-        "흥국화재",
         "현대해상",
-        "삼성화재"
+        "삼성화재",
+        "롯데손해보험"
       ],
       "sub_stocks_top3": [
         {
           "name": "DB손해보험",
-          "rate": "+3.7%"
-        },
-        {
-          "name": "흥국화재",
-          "rate": "+1.8%"
+          "rate": "+5.8%"
         },
         {
           "name": "현대해상",
-          "rate": "+1.5%"
+          "rate": "+4.1%"
+        },
+        {
+          "name": "삼성화재",
+          "rate": "+2.6%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 보험株, 미 국채금리 급등에 '강세' : 10일 한국거래소에 따르면 한화손해보험은 전일 대비 490원(6.21%) 오른 8380원에 거래를 마쳤다. 같은 날 보험주인 ▲한화생명(4.73%) ▲롯데손해보험(4.21%) ▲현대해상(2.86%) 등도 일...",
+      "past_trigger_reason": "[속보 기사] 한화손해보험, 3분기 순이익 34.1% 증가에 6.67% 오름세…보험손... : 한화손해보험이 보험 본업 개선에 따른 3분기 실적 호조에 힘입어 오름세를 보이고 있다. 16일 유가증권시장에서 오후 1시 47분 현재 한화손해보험은 전 거래일보다 6.67% 오른 6천390원에 거래되고 있다...",
       "future_momentum": "손해보험 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 603,
+      "trading_value_eok": 1549,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "[10일 특징주] 보험株, 미 국채금리 급등에 '강세'",
-      "today_rising_fact": "[속보 기사] 보험株, 미 국채금리 급등에 '강세' : 10일 한국거래소에 따르면 한화손해보험은 전일 대비 490원(6.21%) 오른 8380원에 거래를 마쳤다. 같은 날 보험주인 ▲한화생명(4.73%) ▲롯데손해보험(4.21%) ▲현대해상(2.86%) 등도 일...",
+      "trigger_summary": "[특징주]한화손해보험, 3분기 순이익 34.1% 증가에 6.67% 오름세…보험손...",
+      "today_rising_fact": "[속보 기사] 한화손해보험, 3분기 순이익 34.1% 증가에 6.67% 오름세…보험손... : 한화손해보험이 보험 본업 개선에 따른 3분기 실적 호조에 힘입어 오름세를 보이고 있다. 16일 유가증권시장에서 오후 1시 47분 현재 한화손해보험은 전 거래일보다 6.67% 오른 6천390원에 거래되고 있다...",
       "top_article": {
-        "title": "[10일 특징주] 보험株, 미 국채금리 급등에 '강세'",
+        "title": "[특징주]한화손해보험, 3분기 순이익 34.1% 증가에 6.67% 오름세…보험손...",
         "press": "증시 속보",
-        "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=853342",
-        "published_at": "2026-11-16T02:54:13.712Z"
+        "url": "https://www.namdonews.com/news/articleView.html?idxno=929342",
+        "published_at": "2026-11-16T11:50:27.290Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_302",
+      "theme_name": "음성인식",
+      "full_theme_name": "음성인식",
+      "change_rate": "-0.39%",
+      "composite_score": 55,
+      "total_stocks_count": 11,
+      "leader_stock": "코콤",
+      "leader_ratio": 8.65,
+      "sub_leader_stock": "미디어젠",
+      "other_stocks": [
+        "카카오",
+        "현대모비스",
+        "NAVER"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "미디어젠",
+          "rate": "+2.9%"
+        },
+        {
+          "name": "카카오",
+          "rate": "+2.2%"
+        },
+        {
+          "name": "현대모비스",
+          "rate": "-0.3%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] “탄약 부족하다“ 美 국방부 증산 요청에⋯국내 방산주 급등... : 25%), 퍼스텍(8.46%), 비츠로셀(7.90%), 쎄트렉아이(7.89%), 제노코(6.24%), 덕산하이메탈(5.94%), ��미금속(5.89%), 코츠테크놀로지(5.51%), 웨이비스(5.44%), ...",
+      "future_momentum": "음성인식 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2361,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] “탄약 부족하다“ 美 국방부 증산 요청에⋯국내 방산주 급등...",
+      "today_rising_fact": "[속보 기사] “탄약 부족하다“ 美 국방부 증산 요청에⋯국내 방산주 급등... : 25%), 퍼스텍(8.46%), 비츠로셀(7.90%), 쎄트렉아이(7.89%), 제노코(6.24%), 덕산하이메탈(5.94%), ��미금속(5.89%), 코츠테크놀로지(5.51%), 웨이비스(5.44%), ...",
+      "top_article": {
+        "title": "[특징주] “탄약 부족하다“ 美 국방부 증산 요청에⋯국내 방산주 급등...",
+        "press": "증시 속보",
+        "url": "https://www.etoday.co.kr/news/view/2612796",
+        "published_at": "2026-11-16T11:50:27.760Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1794797654154_pn6c",
+      "theme_id": "pb_1794829828185_mjf5",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=728560",
-        "published_at": "2026-11-16T02:54:14.154Z"
+        "published_at": "2026-11-16T11:50:28.185Z"
       }
     },
     {
-      "theme_id": "pb_1794797654595_m0lm",
+      "theme_id": "pb_1794829828649_o2vt",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-16T02:54:14.596Z"
+        "published_at": "2026-11-16T11:50:28.649Z"
       }
     }
   ],
