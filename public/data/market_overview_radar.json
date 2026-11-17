@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-16T22:24:09.276Z",
+  "updated_at": "2026-11-17T05:09:31.862Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "-3.59%",
+      "change_rate": "-2.11%",
       "is_up": false
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "-4.86%",
+      "change_rate": "-1.82%",
       "is_up": false
     },
     "investor_trend": {
@@ -25,234 +25,234 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_488",
-      "theme_name": "웹툰",
-      "full_theme_name": "웹툰",
-      "change_rate": "+0.02%",
-      "composite_score": 65,
-      "total_stocks_count": 14,
-      "leader_stock": "엔키AX",
-      "leader_ratio": 18.65,
-      "sub_leader_stock": "카카오",
+      "theme_id": "radar_615",
+      "theme_name": "2026 하반기 신규상장",
+      "full_theme_name": "2026 하반기 신규상장",
+      "change_rate": "-0.33%",
+      "composite_score": 68,
+      "total_stocks_count": 39,
+      "leader_stock": "옵토닉스",
+      "leader_ratio": 82.92,
+      "sub_leader_stock": "매드업",
       "other_stocks": [
-        "NHN",
-        "핑거스토리",
-        "키다리스튜디오"
+        "기도산업",
+        "티앤이코리아",
+        "엘리스"
       ],
       "sub_stocks_top3": [
         {
-          "name": "카카오",
-          "rate": "+2.2%"
+          "name": "매드업",
+          "rate": "+21.1%"
         },
         {
-          "name": "NHN",
-          "rate": "+1.7%"
+          "name": "기도산업",
+          "rate": "+3.8%"
         },
         {
-          "name": "핑거스토리",
-          "rate": "+1.2%"
+          "name": "티앤이코리아",
+          "rate": "+3.3%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 코아스템켐온·지슨 등 8개 종목 상한가 : 13위 엔키AX는 18.88%, 14위 뉴프렉스는 18.24% 상승했다. 뉴프렉스는 전자부품용 연성회로기판(FPCB) 관련 기업이다. 확장현실(XR) 기기와 스마트 안경 시장 확대에 대한 기대 속에 관련주로...",
-      "future_momentum": "웹툰 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2094,
+      "past_trigger_reason": "[속보 기사] 옵토닉스, 코스닥 입성 첫날 +119%대 급등 : 옵토닉스 주가가 코스닥 상장 첫 날 급등세를 보이고 있다. 17일 오전 11시 5분 기준 현재 공모가 대비 +119.58% 오른 2만 6,350원에 거래되고 있다. 거래량은 925만 7,826주다. 옵토닉스...",
+      "future_momentum": "2026 하반기 신규상장 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 7211,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "코아스템켐온·지슨 등 8개 종목 상한가",
-      "today_rising_fact": "[속보 기사] 코아스템켐온·지슨 등 8개 종목 상한가 : 13위 엔키AX는 18.88%, 14위 뉴프렉스는 18.24% 상승했다. 뉴프렉스는 전자부품용 연성회로기판(FPCB) 관련 기업이다. 확장현실(XR) 기기와 스마트 안경 시장 확대에 대한 기대 속에 관련주로...",
+      "trigger_summary": "[특징주] 옵토닉스, 코스닥 입성 첫날 +119%대 급등",
+      "today_rising_fact": "[속보 기사] 옵토닉스, 코스닥 입성 첫날 +119%대 급등 : 옵토닉스 주가가 코스닥 상장 첫 날 급등세를 보이고 있다. 17일 오전 11시 5분 기준 현재 공모가 대비 +119.58% 오른 2만 6,350원에 거래되고 있다. 거래량은 925만 7,826주다. 옵토닉스...",
       "top_article": {
-        "title": "코아스템켐온·지슨 등 8개 종목 상한가",
+        "title": "[특징주] 옵토닉스, 코스닥 입성 첫날 +119%대 급등",
         "press": "증시 속보",
-        "url": "http://www.kjdaily.com/article.php?aid=1794829991692565276",
-        "published_at": "2026-11-16T22:24:06.409Z"
+        "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1312654",
+        "published_at": "2026-11-17T05:09:29.436Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_289",
-      "theme_name": "증강현실",
-      "full_theme_name": "증강현실(AR)",
-      "change_rate": "+2.07%",
-      "composite_score": 61,
-      "total_stocks_count": 20,
-      "leader_stock": "나무가",
-      "leader_ratio": 30,
-      "sub_leader_stock": "세코닉스",
+      "theme_id": "radar_556",
+      "theme_name": "뉴로모픽 반도체",
+      "full_theme_name": "뉴로모픽 반도체",
+      "change_rate": "-0.16%",
+      "composite_score": 55,
+      "total_stocks_count": 7,
+      "leader_stock": "오픈엣지테크놀로지",
+      "leader_ratio": 7.04,
+      "sub_leader_stock": "앤씨앤",
       "other_stocks": [
-        "사피엔반도체",
-        "라온텍",
-        "포니링크"
+        "네패스",
+        "자람테크놀로지",
+        "에이직랜드"
       ],
       "sub_stocks_top3": [
         {
-          "name": "세코닉스",
-          "rate": "+29.8%"
+          "name": "앤씨앤",
+          "rate": "-0.1%"
         },
         {
-          "name": "사피엔반도체",
-          "rate": "+15.6%"
+          "name": "네패스",
+          "rate": "-0.2%"
         },
         {
-          "name": "라온텍",
-          "rate": "+11.1%"
+          "name": "자람테크놀로지",
+          "rate": "-0.7%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 지슨·세코닉스 상한가…AI 부정행위 방지 대책에 보안... : 16일 국내 증시에서는 지슨(446840), 세코닉스(053450), 나무가(190510), 지니틱스(303030), 카티스(140430), M83(476080) 등이 강세를 보였다. 지슨은 정부의 인공지능...",
-      "future_momentum": "증강현실 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1050,
+      "past_trigger_reason": "[속보 기사] 가온칩스, 8000억 'K-온디바이스 AI' 프로젝트 수혜 기대감에 ... : 같은 시각 오픈엣지테크놀로지(+18.37%), 텔레칩스(+9.72%), 에이디테크놀로지(+5.59%) 등 관련 팹리스 및 반도체 설계 자산(IP) 관련주들이 동반 상승 흐름을 보이고 있다. 여기에 가온칩스가...",
+      "future_momentum": "뉴로모픽 반도체 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 23499,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[오늘의 특징주] 지슨·세코닉스 상한가…AI 부정행위 방지 대책에 보안...",
-      "today_rising_fact": "[속보 기사] 지슨·세코닉스 상한가…AI 부정행위 방지 대책에 보안... : 16일 국내 증시에서는 지슨(446840), 세코닉스(053450), 나무가(190510), 지니틱스(303030), 카티스(140430), M83(476080) 등이 강세를 보였다. 지슨은 정부의 인공지능...",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 가온칩스, 8000억 'K-온디바이스 AI' 프로젝트 수혜 기대감에 ...",
+      "today_rising_fact": "[속보 기사] 가온칩스, 8000억 'K-온디바이스 AI' 프로젝트 수혜 기대감에 ... : 같은 시각 오픈엣지테크놀로지(+18.37%), 텔레칩스(+9.72%), 에이디테크놀로지(+5.59%) 등 관련 팹리스 및 반도체 설계 자산(IP) 관련주들이 동반 상승 흐름을 보이고 있다. 여기에 가온칩스가...",
       "top_article": {
-        "title": "[오늘의 특징주] 지슨·세코닉스 상한가…AI 부정행위 방지 대책에 보안...",
+        "title": "[특징주] 가온칩스, 8000억 'K-온디바이스 AI' 프로젝트 수혜 기대감에 ...",
         "press": "증시 속보",
-        "url": "https://www.ppss.kr/news/articleView.html?idxno=321247",
-        "published_at": "2026-11-16T22:24:06.869Z"
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=303826",
+        "published_at": "2026-11-17T05:09:29.885Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_165",
-      "theme_name": "은행",
-      "full_theme_name": "은행",
-      "change_rate": "+1.39%",
-      "composite_score": 59,
-      "total_stocks_count": 11,
-      "leader_stock": "JB금융지주",
-      "leader_ratio": 2.97,
-      "sub_leader_stock": "케이뱅크",
+      "theme_id": "radar_121",
+      "theme_name": "남북경협",
+      "full_theme_name": "남북경협",
+      "change_rate": "+1.25%",
+      "composite_score": 53,
+      "total_stocks_count": 29,
+      "leader_stock": "인디에프",
+      "leader_ratio": 29.89,
+      "sub_leader_stock": "좋은사람들",
       "other_stocks": [
-        "카카오뱅크",
-        "우리금융지주",
-        "하나금융지주"
+        "코데즈컴바인",
+        "일신석재",
+        "제이에스티나"
       ],
       "sub_stocks_top3": [
         {
-          "name": "케이뱅크",
-          "rate": "+2.5%"
+          "name": "좋은사람들",
+          "rate": "+19.8%"
         },
         {
-          "name": "카카오뱅크",
-          "rate": "+1.9%"
+          "name": "코데즈컴바인",
+          "rate": "+12.1%"
         },
         {
-          "name": "우리금융지주",
-          "rate": "+1.9%"
+          "name": "일신석재",
+          "rate": "+9.4%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불' : JB금융지주는 2.23% 상승한 2만7550원, 카카오뱅크는 1.68% 오른 2만1150원을 기록 중이다. 5대 시중은행(KB국민·신한·하나·우리·NH농협) CI. [뉴스핌DB] 4대 금융지주도 나란히 상승...",
-      "future_momentum": "은행 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3886,
+      "past_trigger_reason": "[속보 기사] 트럼프 \"김정은 만날 수 있다\" 발언에… 남북경협株 '강세' : 17일 한국거래소에 따르면 오후 1시 38분 기준 인디에프는 전날보다 695원(29.89%) 뛴 3020원에 거래되고 있다. 같은 시간 남북경협주로 묶이는 ▲좋은사람들(19.56%) ▲코데즈컴바인(16.15...",
+      "future_momentum": "남북경협 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 840,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 트럼프 \"김정은 만날 수 있다\" 발언에… 남북경협株 '강세'",
+      "today_rising_fact": "[속보 기사] 트럼프 \"김정은 만날 수 있다\" 발언에… 남북경협株 '강세' : 17일 한국거래소에 따르면 오후 1시 38분 기준 인디에프는 전날보다 695원(29.89%) 뛴 3020원에 거래되고 있다. 같은 시간 남북경협주로 묶이는 ▲좋은사람들(19.56%) ▲코데즈컴바인(16.15...",
+      "top_article": {
+        "title": "[특징주] 트럼프 \"김정은 만날 수 있다\" 발언에… 남북경협株 '강세'",
+        "press": "증시 속보",
+        "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=903344",
+        "published_at": "2026-11-17T05:09:30.266Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_59",
+      "theme_name": "광고",
+      "full_theme_name": "광고",
+      "change_rate": "+0.51%",
+      "composite_score": 51,
+      "total_stocks_count": 26,
+      "leader_stock": "오리콤",
+      "leader_ratio": 25.27,
+      "sub_leader_stock": "매드업",
+      "other_stocks": [
+        "와이즈버즈",
+        "플레이디",
+        "아시아경제"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "매드업",
+          "rate": "+21.1%"
+        },
+        {
+          "name": "와이즈버즈",
+          "rate": "+7.5%"
+        },
+        {
+          "name": "플레이디",
+          "rate": "+4.6%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 탄핵정국 정치테마주 부각… 오리콤 등 한동훈 관련주 '강세' : 모호한 입장을 유지하던 한동훈 국민의힘 대표 마저 윤 대통령의 직무집행정지를 주장하면서 한 대표의 관련주인 오리콤 등이 강세를 보이고 있다,. 6일 오전 10시16분 기준 오리콤 주가는 전일 대비 1080원...",
+      "future_momentum": "광고 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 904,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 탄핵정국 정치테마주 부각… 오리콤 등 한동훈 관련주 '강세'",
+      "today_rising_fact": "[속보 기사] 탄핵정국 정치테마주 부각… 오리콤 등 한동훈 관련주 '강세' : 모호한 입장을 유지하던 한동훈 국민의힘 대표 마저 윤 대통령의 직무집행정지를 주장하면서 한 대표의 관련주인 오리콤 등이 강세를 보이고 있다,. 6일 오전 10시16분 기준 오리콤 주가는 전일 대비 1080원...",
+      "top_article": {
+        "title": "[특징주] 탄핵정국 정치테마주 부각… 오리콤 등 한동훈 관련주 '강세'",
+        "press": "증시 속보",
+        "url": "https://www.moneys.co.kr/article/2024120610190380772",
+        "published_at": "2026-11-17T05:09:30.617Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_580",
+      "theme_name": "유심",
+      "full_theme_name": "유심(USIM)",
+      "change_rate": "+3.20%",
+      "composite_score": 50,
+      "total_stocks_count": 5,
+      "leader_stock": "퀀텀레일",
+      "leader_ratio": 11.97,
+      "sub_leader_stock": "성우전자",
+      "other_stocks": [
+        "이루온",
+        "옴니시스템",
+        "유비벨록스"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "성우전자",
+          "rate": "+3.2%"
+        },
+        {
+          "name": "이루온",
+          "rate": "+1.9%"
+        },
+        {
+          "name": "옴니시스템",
+          "rate": "+0.4%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 외국인·기관 '삼성전자·BNK금융지주' 러브콜…'SK텔레콤'은 매... : 외국인은 퀀텀레일을 지속적으로 순매도했고, 기관은 삼성전자와 고영을 순매수 상위권에 올렸다. 이날 증시는 앤트로픽 기업공개(IPO) 추진 기대와 미국 기술주 상승을 배경으로 반도체 대형주가 강세를 보였다. ...",
+      "future_momentum": "유심 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 16,
       "is_real_leading": false,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불'",
-      "today_rising_fact": "[속보 기사] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불' : JB금융지주는 2.23% 상승한 2만7550원, 카카오뱅크는 1.68% 오른 2만1150원을 기록 중이다. 5대 시중은행(KB국민·신한·하나·우리·NH농협) CI. [뉴스핌DB] 4대 금융지주도 나란히 상승...",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 외국인·기관 '삼성전자·BNK금융지주' 러브콜…'SK텔레콤'은 매...",
+      "today_rising_fact": "[속보 기사] 외국인·기관 '삼성전자·BNK금융지주' 러브콜…'SK텔레콤'은 매... : 외국인은 퀀텀레일을 지속적으로 순매도했고, 기관은 삼성전자와 고영을 순매수 상위권에 올렸다. 이날 증시는 앤트로픽 기업공개(IPO) 추진 기대와 미국 기술주 상승을 배경으로 반도체 대형주가 강세를 보였다. ...",
       "top_article": {
-        "title": "[특징주] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불'",
+        "title": "[특징주] 외국인·기관 '삼성전자·BNK금융지주' 러브콜…'SK텔레콤'은 매...",
         "press": "증시 속보",
-        "url": "https://www.newspim.com/news/view/20261116001348",
-        "published_at": "2026-11-16T22:24:07.370Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_164",
-      "theme_name": "손해보험",
-      "full_theme_name": "손해보험",
-      "change_rate": "+1.89%",
-      "composite_score": 55,
-      "total_stocks_count": 8,
-      "leader_stock": "한화손해보험",
-      "leader_ratio": 6.51,
-      "sub_leader_stock": "DB손해보험",
-      "other_stocks": [
-        "현대해상",
-        "삼성화재",
-        "롯데손해보험"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "DB손해보험",
-          "rate": "+5.8%"
-        },
-        {
-          "name": "현대해상",
-          "rate": "+4.1%"
-        },
-        {
-          "name": "삼성화재",
-          "rate": "+2.6%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 한화손해보험, 3분기 순이익 34.1% 증가에 6.67% 오름세…보험손... : 한화손해보험이 보험 본업 개선에 따른 3분기 실적 호조에 힘입어 오름세를 보이고 있다. 16일 유가증권시장에서 오후 1시 47분 현재 한화손해보험은 전 거래일보다 6.67% 오른 6천390원에 거래되고 있다...",
-      "future_momentum": "손해보험 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1549,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주]한화손해보험, 3분기 순이익 34.1% 증가에 6.67% 오름세…보험손...",
-      "today_rising_fact": "[속보 기사] 한화손해보험, 3분기 순이익 34.1% 증가에 6.67% 오름세…보험손... : 한화손해보험이 보험 본업 개선에 따른 3분기 실적 호조에 힘입어 오름세를 보이고 있다. 16일 유가증권시장에서 오후 1시 47분 현재 한화손해보험은 전 거래일보다 6.67% 오른 6천390원에 거래되고 있다...",
-      "top_article": {
-        "title": "[특징주]한화손해보험, 3분기 순이익 34.1% 증가에 6.67% 오름세…보험손...",
-        "press": "증시 속보",
-        "url": "https://www.namdonews.com/news/articleView.html?idxno=929342",
-        "published_at": "2026-11-16T22:24:07.861Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_302",
-      "theme_name": "음성인식",
-      "full_theme_name": "음성인식",
-      "change_rate": "-0.39%",
-      "composite_score": 55,
-      "total_stocks_count": 11,
-      "leader_stock": "코콤",
-      "leader_ratio": 8.65,
-      "sub_leader_stock": "미디어젠",
-      "other_stocks": [
-        "카카오",
-        "현대모비스",
-        "NAVER"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "미디어젠",
-          "rate": "+2.9%"
-        },
-        {
-          "name": "카카오",
-          "rate": "+2.2%"
-        },
-        {
-          "name": "현대모비스",
-          "rate": "-0.3%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] “탄약 부족하다“ 美 국방부 증산 요청에⋯국내 방산주 급등... : 25%), 퍼스텍(8.46%), 비츠로셀(7.90%), 쎄트렉아이(7.89%), 제노코(6.24%), 덕산하이메탈(5.94%), 삼미금속(5.89%), 코츠테크놀로지(5.51%), 웨이비스(5.44%), 비...",
-      "future_momentum": "음성인식 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2361,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] “탄약 부족하다“ 美 국방부 증산 요청에⋯국내 방산주 급등...",
-      "today_rising_fact": "[속보 기사] “탄약 부족하다“ 美 국방부 증산 요청에⋯국내 방산주 급등... : 25%), 퍼스텍(8.46%), 비츠로셀(7.90%), 쎄트렉아이(7.89%), 제노코(6.24%), 덕산하이메탈(5.94%), 삼미금속(5.89%), 코츠테크놀로지(5.51%), 웨이비스(5.44%), 비...",
-      "top_article": {
-        "title": "[특징주] “탄약 부족하다“ 美 국방부 증산 요청에⋯국내 방산주 급등...",
-        "press": "증시 속보",
-        "url": "https://www.etoday.co.kr/news/view/2612796",
-        "published_at": "2026-11-16T22:24:08.324Z"
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=725128",
+        "published_at": "2026-11-17T05:09:31.036Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1794867848800_34sn",
+      "theme_id": "pb_1794892171448_53d3",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=728560",
-        "published_at": "2026-11-16T22:24:08.800Z"
+        "published_at": "2026-11-17T05:09:31.448Z"
       }
     },
     {
-      "theme_id": "pb_1794867849276_4fqi",
+      "theme_id": "pb_1794892171862_r778",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-16T22:24:09.276Z"
+        "published_at": "2026-11-17T05:09:31.862Z"
       }
     }
   ],
