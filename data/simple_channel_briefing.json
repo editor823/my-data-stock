@@ -1,27 +1,27 @@
 {
-  "updatedAt": "2026-11-18T04:37:20.061Z",
+  "updatedAt": "2026-11-18T16:37:59.162Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-11-18",
   "latestVideo": {
     "hasVideo": true,
-    "id": "8iyDCh4yjPg",
-    "title": "당일 관심테마! 엔비디아 실적 어닝서프! 젠슨황 복귀 선언 /반도체,보안,경영권,스마트글라스AI안경/삼성전자,SK하이닉���,코리아써키트,지니언스,나무가,가온칩스,이수페타시스",
-    "published_kst": "2026-11-18 07:10:20",
-    "url": "https://www.youtube.com/watch?v=8iyDCh4yjPg"
+    "id": "d5hXrjaCMpQ",
+    "title": "한한령 테마 관련 생각. 강력한 주도테마가 될까? 주의해야 할 점은?",
+    "published_kst": "2026-11-18 21:17:02",
+    "url": "https://www.youtube.com/watch?v=d5hXrjaCMpQ"
   },
   "morningVideo": {
     "hasVideo": true,
     "id": "8iyDCh4yjPg",
-    "title": "당일 관심테마! 엔비디아 실적 어닝서프! 젠슨황 복귀 선언 /반도체,보안,경영권,스마트글라스AI안경/삼성전자,SK하이닉���,코리아써키트,지니언스,나무가,가온칩스,이수페타시스",
+    "title": "당일 관심테마! 엔비디아 실적 어닝서프! 젠슨황 복귀 선언 /반도���,보안,경영권,스마트글라스AI안경/삼성전자,SK하이닉스,코리아써키트,지니언스,나무가,가온칩스,이수페타시스",
     "published_kst": "2026-11-18 07:10:20",
     "url": "https://www.youtube.com/watch?v=8iyDCh4yjPg",
     "themes": [
       "엔비디아 실적 어닝서프! 젠슨황 복귀 선언"
     ],
     "stocks": [
-      "반도체",
+      "반도���",
       "보안",
       "경영권",
       "스마트글라스AI안경"

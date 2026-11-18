@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-18T04:37:20.022Z",
+  "updated_at": "2026-11-18T16:37:59.112Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "+1.37%",
+      "change_rate": "+1.99%",
       "is_up": true
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "+1.39%",
+      "change_rate": "+1.96%",
       "is_up": true
     },
     "investor_trend": {
@@ -25,47 +25,182 @@
   },
   "top_themes": [
     {
+      "theme_id": "radar_98",
+      "theme_name": "음원/음반",
+      "full_theme_name": "음원/음반",
+      "change_rate": "+10.78%",
+      "composite_score": 99,
+      "total_stocks_count": 15,
+      "leader_stock": "에스엠",
+      "leader_ratio": 29.91,
+      "sub_leader_stock": "YG PLUS",
+      "other_stocks": [
+        "JYP Ent.",
+        "CJ ENM",
+        "하이브"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "YG PLUS",
+          "rate": "+24.2%"
+        },
+        {
+          "name": "JYP Ent.",
+          "rate": "+22.1%"
+        },
+        {
+          "name": "CJ ENM",
+          "rate": "+19.8%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·... : 18일 오후 6시40분께 시간외 거래에서 에스엠은 2만3000원(29.13%) 오른 9만9900원을 기록했다. 스튜디오드래곤도 6700원(29.98%) 급등한 2만9050원에 거래됐다. 두 종목 모두 시간외...",
+      "future_momentum": "음원/음반 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3691,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·...",
+      "today_rising_fact": "[속보 기사] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·... : 18일 오후 6시40분께 시간외 거래에서 에스엠은 2만3000원(29.13%) 오른 9만9900원을 기록했다. 스튜디오드래곤도 6700원(29.98%) 급등한 2만9050원에 거래됐다. 두 종목 모두 시간외...",
+      "top_article": {
+        "title": "[특징주] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·...",
+        "press": "증시 속보",
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8574",
+        "published_at": "2026-11-18T16:37:57.012Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_128",
+      "theme_name": "엔터테인먼트",
+      "full_theme_name": "엔터테인먼트",
+      "change_rate": "+8.58%",
+      "composite_score": 99,
+      "total_stocks_count": 31,
+      "leader_stock": "스튜디오드래곤",
+      "leader_ratio": 29.98,
+      "sub_leader_stock": "에스엠",
+      "other_stocks": [
+        "디어유",
+        "JYP Ent.",
+        "노머스"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "에스엠",
+          "rate": "+29.9%"
+        },
+        {
+          "name": "디어유",
+          "rate": "+25.9%"
+        },
+        {
+          "name": "JYP Ent.",
+          "rate": "+22.1%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·... : 스튜디오드래곤도 6700원(29.98%) 급등한 2만9050원에 거래됐다. 두 종목 모두 시간외 거래에서 가격제한폭 수준까지 치솟았다. 대형 엔터테인먼트주도 강세를 보였다. 하이브는 13.70% 오른 17만...",
+      "future_momentum": "엔터테인먼트 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3248,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·...",
+      "today_rising_fact": "[속보 기사] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·... : 스튜디오드래곤도 6700원(29.98%) 급등한 2만9050원에 거래됐다. 두 종목 모두 시간외 거래에서 가격제한폭 수준까지 치솟았다. 대형 엔터테인먼트주도 강세를 보였다. 하이브는 13.70% 오른 17만...",
+      "top_article": {
+        "title": "[특징주] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·...",
+        "press": "증시 속보",
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8574",
+        "published_at": "2026-11-18T16:37:57.422Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_127",
+      "theme_name": "영상콘텐츠",
+      "full_theme_name": "영상콘텐츠",
+      "change_rate": "+7.74%",
+      "composite_score": 99,
+      "total_stocks_count": 31,
+      "leader_stock": "스튜디오드래곤",
+      "leader_ratio": 29.98,
+      "sub_leader_stock": "에이스토리",
+      "other_stocks": [
+        "JYP Ent.",
+        "CJ ENM",
+        "M83"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "에이스토리",
+          "rate": "+29.9%"
+        },
+        {
+          "name": "JYP Ent.",
+          "rate": "+22.1%"
+        },
+        {
+          "name": "CJ ENM",
+          "rate": "+19.8%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·... : 스튜디오드래곤도 6700원(29.98%) 급등한 2만9050원에 거래됐다. 두 종목 모두 시간외 거래에서 가격제한폭 수준까지 치솟았다. 대형 엔터테인먼트주도 강세를 보였다. 하이브는 13.70% 오른 17만...",
+      "future_momentum": "영상콘텐츠 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1485,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·...",
+      "today_rising_fact": "[속보 기사] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·... : 스튜디오드래곤도 6700원(29.98%) 급등한 2만9050원에 거래됐다. 두 종목 모두 시간외 거래에서 가격제한폭 수준까지 치솟았다. 대형 엔터테인먼트주도 강세를 보였다. 하이브는 13.70% 오른 17만...",
+      "top_article": {
+        "title": "[특징주] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·...",
+        "press": "증시 속보",
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8574",
+        "published_at": "2026-11-18T16:37:57.704Z"
+      },
+      "timeline": []
+    },
+    {
       "theme_id": "radar_587",
       "theme_name": "피지컬 AI/휴머노이드 로봇",
       "full_theme_name": "피지컬 AI/휴머노이드 로봇",
-      "change_rate": "+4.82%",
-      "composite_score": 94,
+      "change_rate": "+5.25%",
+      "composite_score": 96,
       "total_stocks_count": 49,
       "leader_stock": "빅웨이브로보틱스",
       "leader_ratio": 29.96,
       "sub_leader_stock": "레인보우로보틱스",
       "other_stocks": [
         "로보티즈",
-        "현대오토에버",
+        "한라캐스트",
         "디케이티"
       ],
       "sub_stocks_top3": [
         {
           "name": "레인보우로보틱스",
-          "rate": "+19.6%"
+          "rate": "+20.4%"
         },
         {
           "name": "로보티즈",
-          "rate": "+13.5%"
+          "rate": "+14.4%"
         },
         {
-          "name": "현대오토에버",
-          "rate": "+11.0%"
+          "name": "한라캐스트",
+          "rate": "+14.4%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 빅웨이브로보틱스, 로봇주 전반 온기 속 '마로솔' 등 플랫폼 경... : 로봇 자동화 플랫폼 기업 빅웨이브로보틱스가 로봇 테마 전반에 긍정적인 수급이 유입되는 가운데, 장 초반 14%대의 급등세를 연출하고 있다. 산업 현장 내 로봇 도입부터 유지보수까지 전 과정을 지원하는 통합 ...",
+      "past_trigger_reason": "[속보 기사] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선 : 특징주로는 빅웨이브로보틱스가 상한가를 기록했고, 레인보우로보틱스(+20.06%)도 상승했다. 최근 대기업들이 세계 최대 IT·전자 전시회인 'CES 2027'를 앞두고 로봇 투자를 강화하는 점이 주가 상승에...",
       "future_momentum": "피지컬 AI/휴머노이드 로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2580,
+      "trading_value_eok": 3777,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 빅웨이브로보틱스, 로봇주 전반 온기 속 '마로솔' 등 플랫폼 경...",
-      "today_rising_fact": "[속보 기사] 빅웨이브로보틱스, 로봇주 전반 온기 속 '마로솔' 등 플랫폼 경... : 로봇 자동화 플랫폼 기업 빅웨이브로보틱스가 로봇 테마 전반에 긍정적인 수급이 유입되는 가운데, 장 초반 14%대의 급등세를 연출하고 있다. 산업 현장 내 로봇 도입부터 유지보수까지 전 과정을 지원하는 통합 ...",
+      "trigger_summary": "[마켓펄스] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선",
+      "today_rising_fact": "[속보 기사] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선 : 특징주로는 빅웨이브로보틱스가 상한가를 기록했고, 레인보우로보틱스(+20.06%)도 상승했다. 최근 대기업들이 세계 최대 IT·전자 전시회인 'CES 2027'를 앞두고 로봇 투자를 강화하는 점이 주가 상승에...",
       "top_article": {
-        "title": "[특징주] 빅웨이브로보틱스, 로봇주 전반 온기 속 '마로솔' 등 플랫폼 경...",
+        "title": "[마켓펄스] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=303727",
-        "published_at": "2026-11-18T04:37:17.701Z"
+        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130957",
+        "published_at": "2026-11-18T16:37:58.110Z"
       },
       "timeline": []
     },
@@ -73,186 +208,51 @@
       "theme_id": "radar_505",
       "theme_name": "로봇",
       "full_theme_name": "로봇(산업용/협동로봇 등)",
-      "change_rate": "+4.06%",
-      "composite_score": 90,
+      "change_rate": "+4.73%",
+      "composite_score": 94,
       "total_stocks_count": 77,
       "leader_stock": "빅웨이브로보틱스",
       "leader_ratio": 29.96,
       "sub_leader_stock": "레인보우로보틱스",
       "other_stocks": [
-        "브릴스",
         "로보티즈",
-        "에스피지"
+        "한라캐스트",
+        "디케이티"
       ],
       "sub_stocks_top3": [
         {
           "name": "레인보우로보틱스",
-          "rate": "+19.6%"
-        },
-        {
-          "name": "브릴스",
-          "rate": "+15.1%"
+          "rate": "+20.4%"
         },
         {
           "name": "로보티즈",
-          "rate": "+13.5%"
+          "rate": "+14.4%"
+        },
+        {
+          "name": "한라캐스트",
+          "rate": "+14.4%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 빅웨이브로보틱스, 로봇주 전반 온기 속 '마로솔' 등 플랫폼 경... : 로봇 자동화 플랫폼 기업 빅웨이브로보틱스가 로봇 테마 전반에 긍정적인 수급이 유입되는 가운데, 장 초반 14%대의 급등세를 연출하고 있다. 산업 현장 내 로봇 도입부터 유지보수까지 전 과정을 지원하는 통합 ...",
+      "past_trigger_reason": "[속보 기사] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선 : 특징주로는 빅웨이브로보틱스가 상한가를 기록했고, 레인보우로보틱스(+20.06%)도 상승했다. 최근 대기업들이 세계 최대 IT·전자 전시회인 'CES 2027'를 앞두고 로봇 투자를 강화하는 점이 주가 상승에...",
       "future_momentum": "로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2808,
+      "trading_value_eok": 7051,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 빅웨이브로보틱스, 로봇주 전반 온기 속 '마로솔' 등 플랫폼 경...",
-      "today_rising_fact": "[속보 기사] 빅웨이브로보틱스, 로봇주 전반 온기 속 '마로솔' 등 플랫폼 경... : 로봇 자동화 플랫폼 기업 빅웨이브로보틱스가 로봇 테마 전반에 긍정적인 수급이 유입되는 가운데, 장 초반 14%대의 급등세를 연출하고 있다. 산업 현장 내 로봇 도입부터 유지보수까지 전 과정을 지원하는 통합 ...",
+      "trigger_summary": "[마켓펄스] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선",
+      "today_rising_fact": "[속보 기사] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선 : 특징주로는 빅웨이브로보틱스가 상한가를 기록했고, 레인보우로보틱스(+20.06%)도 상승했다. 최근 대기업들이 세계 최대 IT·전자 전시회인 'CES 2027'를 앞두고 로봇 투자를 강화하는 점이 주가 상승에...",
       "top_article": {
-        "title": "[특징주] 빅웨이브로보틱스, 로봇주 전반 온기 속 '마로솔' 등 플랫폼 경...",
+        "title": "[마켓펄스] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=303727",
-        "published_at": "2026-11-18T04:37:18.066Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_55",
-      "theme_name": "보안주",
-      "full_theme_name": "보안주(정보)",
-      "change_rate": "+2.30%",
-      "composite_score": 76,
-      "total_stocks_count": 52,
-      "leader_stock": "파수AI",
-      "leader_ratio": 17.2,
-      "sub_leader_stock": "한싹",
-      "other_stocks": [
-        "파이오링크",
-        "라온시큐어",
-        "지니언스"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "한싹",
-          "rate": "+11.5%"
-        },
-        {
-          "name": "파이오링크",
-          "rate": "+10.6%"
-        },
-        {
-          "name": "라온시큐어",
-          "rate": "+7.8%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 이씨에스, 강력한 주주환원책 발표에 13% 껑충…스마트워크 수... : 줄이는 유연한 근무 체계를 확대 도입함에 따라, 기업용 통합 커뮤니케이션과 웹 컨퍼런싱 솔루션을 공급하는 이씨에스에 대한 인프라 수혜 기대감이 투자 심리를 자극하고 있다. 실제로 이날 주식시장에서는 이씨에스...",
-      "future_momentum": "보안주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2644,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 이씨에스, 강력한 주주환원책 발표에 13% 껑충…스마트워크 수...",
-      "today_rising_fact": "[속보 기사] 이씨에스, 강력한 주주환원책 발표에 13% 껑충…스마트워크 수... : 줄이는 유연한 근무 체계를 확대 도입함에 따라, 기업용 통합 커뮤니케이션과 웹 컨퍼런싱 솔루션을 공급하는 이씨에스에 대한 인프라 수혜 기대감이 투자 심리를 자극하고 있다. 실제로 이날 주식시장에서는 이씨에스...",
-      "top_article": {
-        "title": "[특징주] 이씨에스, 강력한 주주환원책 발표에 13% 껑충…스마트워크 수...",
-        "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=304009",
-        "published_at": "2026-11-18T04:37:18.416Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_608",
-      "theme_name": "반도체 기판",
-      "full_theme_name": "반도체 기판(FC-BGA/PCB/MLB 등)",
-      "change_rate": "+1.73%",
-      "composite_score": 74,
-      "total_stocks_count": 14,
-      "leader_stock": "다원넥스뷰",
-      "leader_ratio": 19.32,
-      "sub_leader_stock": "심텍홀딩스",
-      "other_stocks": [
-        "LG이노텍",
-        "삼성전기",
-        "덕산하이메탈"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "심텍홀딩스",
-          "rate": "+5.0%"
-        },
-        {
-          "name": "LG이노텍",
-          "rate": "+3.5%"
-        },
-        {
-          "name": "삼성전기",
-          "rate": "+3.5%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 유진테크, 반도체 장비주 훈풍 속 이틀째 강세…7만 8,000원선 ... : 수요 증가가 기업의 실적 성장으로 직결될 것이란 기대감이 크게 작용하고 있다. 한편, 이날 주식시장에서는 유진테크의 상승세와 함께 다원넥스뷰(+11.73%), 원익홀딩스(+11.41%), 와이씨(+10.42...",
-      "future_momentum": "반도체 기판 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 7127,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] 유진테크, 반도체 장비주 훈풍 속 이틀째 강세…7만 8,000원선 ...",
-      "today_rising_fact": "[속보 기사] 유진테크, 반도체 장비주 훈풍 속 이틀째 강세…7만 8,000원선 ... : 수요 증가가 기업의 실적 성장으로 직결될 것이란 기대감이 크게 작용하고 있다. 한편, 이날 주식시장에서는 유진테크의 상승세와 함께 다원넥스뷰(+11.73%), 원익홀딩스(+11.41%), 와이씨(+10.42...",
-      "top_article": {
-        "title": "[특징주] 유진테크, 반도체 장비주 훈풍 속 이틀째 강세…7만 8,000원선 ...",
-        "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=303955",
-        "published_at": "2026-11-18T04:37:18.761Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_112",
-      "theme_name": "공기청정기",
-      "full_theme_name": "공기청정기",
-      "change_rate": "+2.05%",
-      "composite_score": 70,
-      "total_stocks_count": 12,
-      "leader_stock": "에스피지",
-      "leader_ratio": 12.09,
-      "sub_leader_stock": "성호전자",
-      "other_stocks": [
-        "LG전자",
-        "삼성전자",
-        "크린앤사이언스"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "성호전자",
-          "rate": "+10.1%"
-        },
-        {
-          "name": "LG전자",
-          "rate": "+3.1%"
-        },
-        {
-          "name": "삼성전자",
-          "rate": "+1.2%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 하이젠알앤엠, 로봇 테마 강세 속 '조선·중공업 로봇 공략' 모... : 이날 로봇(산업용/협동로봇 등) 테마가 전반적인 상승세를 타며 에스피지, 레인보우로보틱스 등 주요 관련주들과 함께 동반 강세를 보이는 모습이다. 주가 상승의 핵심 모멘텀은 하이젠알앤엠이 전날 발표한 조선·중...",
-      "future_momentum": "공기청정기 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 26161,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 하이젠알앤엠, 로봇 테마 강세 속 '조선·중공업 로봇 공략' 모...",
-      "today_rising_fact": "[속보 기사] 하이젠알앤엠, 로봇 테마 강세 속 '조선·중공업 로봇 공략' 모... : 이날 로봇(산업용/협동로봇 등) 테마가 전반적인 상승세를 타며 에스피지, 레인보우로보틱스 등 주요 관련주들과 함께 동반 강세를 보이는 모습이다. 주가 상승의 핵심 모멘텀은 하이젠알앤엠이 전날 발표한 조선·중...",
-      "top_article": {
-        "title": "[특징주] 하이젠알앤엠, 로봇 테마 강세 속 '조선·중공업 로봇 공략' 모...",
-        "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=303624",
-        "published_at": "2026-11-18T04:37:19.174Z"
+        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130957",
+        "published_at": "2026-11-18T16:37:58.384Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1794976639596_78k9",
+      "theme_id": "pb_1795019878753_wjw6",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=728560",
-        "published_at": "2026-11-18T04:37:19.596Z"
+        "published_at": "2026-11-18T16:37:58.754Z"
       }
     },
     {
-      "theme_id": "pb_1794976640022_kv5c",
+      "theme_id": "pb_1795019879112_xp1c",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-18T04:37:20.022Z"
+        "published_at": "2026-11-18T16:37:59.112Z"
       }
     }
   ],
