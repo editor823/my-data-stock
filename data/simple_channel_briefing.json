@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-11-19T04:19:23.085Z",
+  "updatedAt": "2026-11-19T16:40:54.367Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-11-19",
   "latestVideo": {
     "hasVideo": true,
-    "id": "3Af2BHs7JTY",
-    "title": "당일 관심테마! 수능생 여러분 화이팅!! 금리 12월 빅스텝 ?! /반도체,보안,경영권,한한령/삼성전자,SK하이닉스,코리아써��트,지니언스,jyp,에스엠,원익홀딩스,하이브,삼현",
-    "published_kst": "2026-11-19 07:04:16",
-    "url": "https://www.youtube.com/watch?v=3Af2BHs7JTY"
+    "id": "XaUN4zfdkJU",
+    "title": "내일 관심테마! 텍사스 데이터센터 승인 재개! + AI대어 앤트로픽 상장 /반도체,기판,광통신/삼성전자,SK하이닉스,코리아���키트,삼성전기,대한광통신,티엘비,심텍,주성엔지니어링",
+    "published_kst": "2026-11-19 21:05:22",
+    "url": "https://www.youtube.com/watch?v=XaUN4zfdkJU"
   },
   "morningVideo": {
     "hasVideo": true,
     "id": "3Af2BHs7JTY",
-    "title": "당일 관심테마! 수능생 여러분 화이팅!! 금리 12월 빅스텝 ?! /반도체,보안,경영권,한한령/삼성전자,SK하이닉스,코리아써��트,지니언스,jyp,에스엠,원익홀딩스,하이브,삼현",
+    "title": "당일 관심테마! 수능생 여러분 화이팅!! 금리 12월 빅스텝 ?! /반도체,보안,경영권,한한령/삼성전자,SK하이닉스,코리아써키트,지니언스,jyp,에스엠,원익홀딩스,하이브,삼현",
     "published_kst": "2026-11-19 07:04:16",
     "url": "https://www.youtube.com/watch?v=3Af2BHs7JTY",
     "themes": [
@@ -34,21 +34,17 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "RRtPeFkATCI",
-    "title": "내일 관심테마! 이번주 증시 빅 이벤트들! 엔비디아,앤트로픽,APEC/반도체,소부장,기판,보안,경영권/삼성전자,SK하이닉스,코리아써키트,심텍,지니언스,가온칩스,티엘비",
-    "published_kst": "2026-11-15 16:58:40",
-    "url": "https://www.youtube.com/watch?v=RRtPeFkATCI",
+    "id": "XaUN4zfdkJU",
+    "title": "내일 관심테마! 텍사스 데이터센터 승인 재개! + AI대어 앤트로픽 상장 /반도체,기판,광통신/삼성전자,SK하이닉스,코리아���키트,삼성전기,대한광통신,티엘비,심텍,주성엔지니어링",
+    "published_kst": "2026-11-19 21:05:22",
+    "url": "https://www.youtube.com/watch?v=XaUN4zfdkJU",
     "themes": [
-      "이번주 증시 빅 이벤트들! 엔비디아",
-      "앤트로픽",
-      "APEC"
+      "텍사스 데이터센터 승인 재개! + AI대어 앤트로픽 상장"
     ],
     "stocks": [
       "반도체",
-      "소부장",
       "기판",
-      "보안",
-      "경영권"
+      "광통신"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(한화오션, SK하이닉스 등) 외국인·기관 순매수 집중",
