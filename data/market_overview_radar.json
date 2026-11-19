@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-18T16:37:59.112Z",
+  "updated_at": "2026-11-19T04:19:23.041Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "+1.99%",
+      "change_rate": "+0.1%",
       "is_up": true
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "+1.96%",
+      "change_rate": "+0.11%",
       "is_up": true
     },
     "investor_trend": {
@@ -25,92 +25,182 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_98",
-      "theme_name": "음원/음반",
-      "full_theme_name": "음원/음반",
-      "change_rate": "+10.78%",
+      "theme_id": "radar_128",
+      "theme_name": "엔터테인먼트",
+      "full_theme_name": "엔터테인먼트",
+      "change_rate": "+6.05%",
       "composite_score": 99,
-      "total_stocks_count": 15,
-      "leader_stock": "에스엠",
-      "leader_ratio": 29.91,
-      "sub_leader_stock": "YG PLUS",
+      "total_stocks_count": 31,
+      "leader_stock": "스튜디오드래곤",
+      "leader_ratio": 29.96,
+      "sub_leader_stock": "CJ ENM",
       "other_stocks": [
-        "JYP Ent.",
-        "CJ ENM",
-        "하이브"
+        "노머스",
+        "디어유",
+        "에스팀"
       ],
       "sub_stocks_top3": [
         {
-          "name": "YG PLUS",
-          "rate": "+24.2%"
-        },
-        {
-          "name": "JYP Ent.",
-          "rate": "+22.1%"
-        },
-        {
           "name": "CJ ENM",
-          "rate": "+19.8%"
+          "rate": "+22.2%"
+        },
+        {
+          "name": "노머스",
+          "rate": "+16.8%"
+        },
+        {
+          "name": "디어유",
+          "rate": "+15.8%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·... : 18일 오후 6시40분께 시간외 거래에서 에스엠은 2만3000원(29.13%) 오른 9만9900원을 기록했다. 스튜디오드래곤도 6700원(29.98%) 급등한 2만9050원에 거래됐다. 두 종목 모두 시간외...",
-      "future_momentum": "음원/음반 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3691,
+      "past_trigger_reason": "[속보 기사] 하이브, 한한령 완화 기대감·일 키홀더 인수 맞물려 이틀째 ... : 같은 시각 기준 엔터테인먼트 테마는 전체 265개 테마 중 등락률 6위(평균 +6.24%)에 올랐으며, 스튜디오드래곤(+29.96%), CJ ENM(+23.61%), 디어유(+16.30%), 에스팀(+14....",
+      "future_momentum": "엔터테인먼트 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3051,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·...",
-      "today_rising_fact": "[속보 기사] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·... : 18일 오후 6시40분께 시간외 거래에서 에스엠은 2만3000원(29.13%) 오른 9만9900원을 기록했다. 스튜디오드래곤도 6700원(29.98%) 급등한 2만9050원에 거래됐다. 두 종목 모두 시간외...",
+      "trigger_summary": "[특징주] 하이브, 한한령 완화 기대감·일 키홀더 인수 맞물려 이틀째 ...",
+      "today_rising_fact": "[속보 기사] 하이브, 한한령 완화 기대감·일 키홀더 인수 맞물려 이틀째 ... : 같은 시각 기준 엔터테인먼트 테마는 전체 265개 테마 중 등락률 6위(평균 +6.24%)에 올랐으며, 스튜디오드래곤(+29.96%), CJ ENM(+23.61%), 디어유(+16.30%), 에스팀(+14....",
       "top_article": {
-        "title": "[특징주] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·...",
+        "title": "[특징주] 하이브, 한한령 완화 기대감·일 키홀더 인수 맞물려 이틀째 ...",
         "press": "증시 속보",
-        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8574",
-        "published_at": "2026-11-18T16:37:57.012Z"
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=304137",
+        "published_at": "2026-11-19T04:19:20.524Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_128",
-      "theme_name": "엔터테인먼트",
-      "full_theme_name": "엔터테인먼트",
-      "change_rate": "+8.58%",
-      "composite_score": 99,
-      "total_stocks_count": 31,
-      "leader_stock": "스튜디오드래곤",
-      "leader_ratio": 29.98,
-      "sub_leader_stock": "에스엠",
+      "theme_id": "radar_98",
+      "theme_name": "음원/음반",
+      "full_theme_name": "음원/음반",
+      "change_rate": "+5.19%",
+      "composite_score": 94,
+      "total_stocks_count": 15,
+      "leader_stock": "CJ ENM",
+      "leader_ratio": 22.18,
+      "sub_leader_stock": "YG PLUS",
       "other_stocks": [
-        "디어유",
-        "JYP Ent.",
-        "노머스"
+        "하이브",
+        "에스엠",
+        "더핑크퐁컴퍼니"
       ],
       "sub_stocks_top3": [
         {
+          "name": "YG PLUS",
+          "rate": "+14.3%"
+        },
+        {
+          "name": "하이브",
+          "rate": "+11.3%"
+        },
+        {
           "name": "에스엠",
-          "rate": "+29.9%"
-        },
-        {
-          "name": "디어유",
-          "rate": "+25.9%"
-        },
-        {
-          "name": "JYP Ent.",
-          "rate": "+22.1%"
+          "rate": "+9.2%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·... : 스튜디오드래곤도 6700원(29.98%) 급등한 2만9050원에 거래됐다. 두 종목 모두 시간외 거래에서 가격제한폭 수준까지 치솟았다. 대형 엔터테인먼트주도 강세를 보였다. 하이브는 13.70% 오른 17만...",
-      "future_momentum": "엔터테인먼트 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3248,
+      "past_trigger_reason": "[속보 기사] 신세계, 면세점 테마 강세·수익성 개선 부각에 10%대 급등 : 소매유통 테마 역시 등락률 14위(평균 +3.06%)를 기록 중이며 CJ ENM(+23.61%), 청담글로벌(+3.85%) 등이 강세 흐름에 동참했다. 면세점 부문에서는 신세계면세점(신세계디에프)의 수익성 ...",
+      "future_momentum": "음원/음반 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 4066,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·...",
-      "today_rising_fact": "[속보 기사] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·... : 스튜디오드래곤도 6700원(29.98%) 급등한 2만9050원에 거래됐다. 두 종목 모두 시간외 거래에서 가격제한폭 수준까지 치솟았다. 대형 엔터테인먼트주도 강세를 보였다. 하이브는 13.70% 오른 17만...",
+      "trigger_summary": "[특징주] 신세계, 면세점 테마 강세·수익성 개선 부각에 10%대 급등",
+      "today_rising_fact": "[속보 기사] 신세계, 면세점 테마 강세·수익성 개선 부각에 10%대 급등 : 소매유통 테마 역시 등락률 14위(평균 +3.06%)를 기록 중이며 CJ ENM(+23.61%), 청담글로벌(+3.85%) 등이 강세 흐름에 동참했다. 면세점 부문에서는 신세계면세점(신세계디에프)의 수익성 ...",
       "top_article": {
-        "title": "[특징주] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·...",
+        "title": "[특징주] 신세계, 면세점 테마 강세·수익성 개선 부각에 10%대 급등",
         "press": "증시 속보",
-        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8574",
-        "published_at": "2026-11-18T16:37:57.422Z"
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=304138",
+        "published_at": "2026-11-19T04:19:20.973Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_147",
+      "theme_name": "여행",
+      "full_theme_name": "여행",
+      "change_rate": "+10.14%",
+      "composite_score": 86,
+      "total_stocks_count": 9,
+      "leader_stock": "노랑풍선",
+      "leader_ratio": 29.98,
+      "sub_leader_stock": "참좋은여행",
+      "other_stocks": [
+        "하나투어",
+        "롯데관광개발",
+        "모두투어"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "참좋은여행",
+          "rate": "+20.7%"
+        },
+        {
+          "name": "하나투어",
+          "rate": "+16.8%"
+        },
+        {
+          "name": "롯데관광개발",
+          "rate": "+8.9%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 한한령 해제 기대감… 노랑풍선 上 등 여행주 급등 : 19일 오전 11시 24분 기준 노랑풍선(104620) 주가는 전 거래일 대비 29.98%(상한가) 상승한 4140원에 거래되고 있다. 같은 시각 참좋은여행(23.42%), 하나투어(22.60%), 롯데관광...",
+      "future_momentum": "여행 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 815,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[ET특징주] 한한령 해제 기대감… 노랑풍선 上 등 여행주 급등",
+      "today_rising_fact": "[속보 기사] 한한령 해제 기대감… 노랑풍선 上 등 여행주 급등 : 19일 오전 11시 24분 기준 노랑풍선(104620) 주가는 전 거래일 대비 29.98%(상한가) 상승한 4140원에 거래되고 있다. 같은 시각 참좋은여행(23.42%), 하나투어(22.60%), 롯데관광...",
+      "top_article": {
+        "title": "[ET특징주] 한한령 해제 기대감… 노랑풍선 上 등 여행주 급등",
+        "press": "증시 속보",
+        "url": "https://www.etnews.com/20261119000187",
+        "published_at": "2026-11-19T04:19:21.359Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_166",
+      "theme_name": "항공/저가 항공사",
+      "full_theme_name": "항공/저가 항공사(LCC)",
+      "change_rate": "+5.87%",
+      "composite_score": 86,
+      "total_stocks_count": 9,
+      "leader_stock": "제주항공",
+      "leader_ratio": 15.6,
+      "sub_leader_stock": "트리니티항공",
+      "other_stocks": [
+        "AK홀딩스",
+        "에어부산",
+        "아시아나항공"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "트리니티항공",
+          "rate": "+11.9%"
+        },
+        {
+          "name": "AK홀딩스",
+          "rate": "+8.3%"
+        },
+        {
+          "name": "에어부산",
+          "rate": "+6.1%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 제주항공, 중국인 방한 수요 확대 기대에 상승세 : 제주항공이 중국인 방한 수요 확대 기대감에 상승세다. 제주항공(089590)은 11월 19일 오후 1시 4분 기준 전 거래일보다 17.07% 상승한 8780원에 거래되고 있다. 전날 중국 선전에서 열린 한중...",
+      "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1764,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[ET특징주]제주항공, 중국인 방한 수요 확대 기대에 상승세",
+      "today_rising_fact": "[속보 기사] 제주항공, 중국인 방한 수요 확대 기대에 상승세 : 제주항공이 중국인 방한 수요 확대 기대감에 상승세다. 제주항공(089590)은 11월 19일 오후 1시 4분 기준 전 거래일보다 17.07% 상승한 8780원에 거래되고 있다. 전날 중국 선전에서 열린 한중...",
+      "top_article": {
+        "title": "[ET특징주]제주항공, 중국인 방한 수요 확대 기대에 상승세",
+        "press": "증시 속보",
+        "url": "https://www.etnews.com/20261119000216",
+        "published_at": "2026-11-19T04:19:21.815Z"
       },
       "timeline": []
     },
@@ -118,141 +208,51 @@
       "theme_id": "radar_127",
       "theme_name": "영상콘텐츠",
       "full_theme_name": "영상콘텐츠",
-      "change_rate": "+7.74%",
-      "composite_score": 99,
+      "change_rate": "+7.98%",
+      "composite_score": 79,
       "total_stocks_count": 31,
-      "leader_stock": "스튜디오드래곤",
-      "leader_ratio": 29.98,
-      "sub_leader_stock": "에이스토리",
+      "leader_stock": "에이스토리",
+      "leader_ratio": 30,
+      "sub_leader_stock": "스튜디오드래곤",
       "other_stocks": [
-        "JYP Ent.",
+        "자이언트스텝",
         "CJ ENM",
-        "M83"
+        "에스팀"
       ],
       "sub_stocks_top3": [
         {
-          "name": "에이스토리",
+          "name": "스튜디오드래곤",
+          "rate": "+30.0%"
+        },
+        {
+          "name": "자이언트스텝",
           "rate": "+29.9%"
         },
         {
-          "name": "JYP Ent.",
-          "rate": "+22.1%"
-        },
-        {
           "name": "CJ ENM",
-          "rate": "+19.8%"
+          "rate": "+22.2%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·... : 스튜디오드래곤도 6700원(29.98%) 급등한 2만9050원에 거래됐다. 두 종목 모두 시간외 거래에서 가격제한폭 수준까지 치솟았다. 대형 엔터테인먼트주도 강세를 보였다. 하이브는 13.70% 오른 17만...",
+      "past_trigger_reason": "[속보 기사] 한중 FTA 후속협상 타결…한한령 해제 기대에 관련株 '급등' : 같은 시간 엔터주인 ▲에이스토리(30.00%) ▲스튜디오드래곤(29.96%) ▲YG PLUS(13.65%) 등도 일제히 상승하고 있다. 게임주에도 매수세가 유입되고 있다. 위메이드맥스는 29.91% 뛰었고,...",
       "future_momentum": "영상콘텐츠 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1485,
-      "is_real_leading": true,
+      "trading_value_eok": 465,
+      "is_real_leading": false,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·...",
-      "today_rising_fact": "[속보 기사] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·... : 스튜디오드래곤도 6700원(29.98%) 급등한 2만9050원에 거래됐다. 두 종목 모두 시간외 거래에서 가격제한폭 수준까지 치솟았다. 대형 엔터테인먼트주도 강세를 보였다. 하이브는 13.70% 오른 17만...",
+      "trigger_summary": "[특징주] 한중 FTA 후속협상 타결…한한령 해제 기대에 관련株 '급등'",
+      "today_rising_fact": "[속보 기사] 한중 FTA 후속협상 타결…한한령 해제 기대에 관련株 '급등' : 같은 시간 엔터주인 ▲에이스토리(30.00%) ▲스튜디오드래곤(29.96%) ▲YG PLUS(13.65%) 등도 일제히 상승하고 있다. 게임주에도 매수세가 유입되고 있다. 위메이드맥스는 29.91% 뛰었고,...",
       "top_article": {
-        "title": "[특징주] 한한령 해제 기대감에 엔터·콘텐츠주 시간외 급등…에스엠·...",
+        "title": "[특징주] 한중 FTA 후속협상 타결…한한령 해제 기대에 관련株 '급등'",
         "press": "증시 속보",
-        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8574",
-        "published_at": "2026-11-18T16:37:57.704Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_587",
-      "theme_name": "피지컬 AI/휴머노이드 로봇",
-      "full_theme_name": "피지컬 AI/휴머노이드 로봇",
-      "change_rate": "+5.25%",
-      "composite_score": 96,
-      "total_stocks_count": 49,
-      "leader_stock": "빅웨이브로보틱스",
-      "leader_ratio": 29.96,
-      "sub_leader_stock": "레인보우로보틱스",
-      "other_stocks": [
-        "로보티즈",
-        "한라캐스트",
-        "디케이티"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "레인보우로보틱스",
-          "rate": "+20.4%"
-        },
-        {
-          "name": "로보티즈",
-          "rate": "+14.4%"
-        },
-        {
-          "name": "한라캐스트",
-          "rate": "+14.4%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선 : 특징주로는 빅웨이브로보틱스가 상한가를 기록했고, 레인보우로보틱스(+20.06%)도 상승했다. 최근 대기업들이 세계 최대 IT·전자 전시회인 'CES 2027'를 앞두고 로봇 투자를 강화하는 점이 주가 상승에...",
-      "future_momentum": "피지컬 AI/휴머노이드 로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3777,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[마켓펄스] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선",
-      "today_rising_fact": "[속보 기사] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선 : 특징주로는 빅웨이브로보틱스가 상한가를 기록했고, 레인보우로보틱스(+20.06%)도 상승했다. 최근 대기업들이 세계 최대 IT·전자 전시회인 'CES 2027'를 앞두고 로봇 투자를 강화하는 점이 주가 상승에...",
-      "top_article": {
-        "title": "[마켓펄스] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선",
-        "press": "증시 속보",
-        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130957",
-        "published_at": "2026-11-18T16:37:58.110Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_505",
-      "theme_name": "로봇",
-      "full_theme_name": "로봇(산업용/협동로봇 등)",
-      "change_rate": "+4.73%",
-      "composite_score": 94,
-      "total_stocks_count": 77,
-      "leader_stock": "빅웨이브로보틱스",
-      "leader_ratio": 29.96,
-      "sub_leader_stock": "레인보우로보틱스",
-      "other_stocks": [
-        "로보티즈",
-        "한라캐스트",
-        "디케이티"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "레인보우로보틱스",
-          "rate": "+20.4%"
-        },
-        {
-          "name": "로보티즈",
-          "rate": "+14.4%"
-        },
-        {
-          "name": "한라캐스트",
-          "rate": "+14.4%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선 : 특징주로는 빅웨이브로보틱스가 상한가를 기록했고, 레인보우로보틱스(+20.06%)도 상승했다. 최근 대기업들이 세계 최대 IT·전자 전시회인 'CES 2027'를 앞두고 로봇 투자를 강화하는 점이 주가 상승에...",
-      "future_momentum": "로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 7051,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[마켓펄스] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선",
-      "today_rising_fact": "[속보 기사] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선 : 특징주로는 빅웨이브로보틱스가 상한가를 기록했고, 레인보우로보틱스(+20.06%)도 상승했다. 최근 대기업들이 세계 최대 IT·전자 전시회인 'CES 2027'를 앞두고 로봇 투자를 강화하는 점이 주가 상승에...",
-      "top_article": {
-        "title": "[마켓펄스] &quot;개미·외국인 떠난 증시&quot;…기관 홀로 끌어올린 코스피 5000선",
-        "press": "증시 속보",
-        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130957",
-        "published_at": "2026-11-18T16:37:58.384Z"
+        "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=903627",
+        "published_at": "2026-11-19T04:19:22.185Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1795019878753_wjw6",
+      "theme_id": "pb_1795061962617_uzw1",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=728560",
-        "published_at": "2026-11-18T16:37:58.754Z"
+        "published_at": "2026-11-19T04:19:22.617Z"
       }
     },
     {
-      "theme_id": "pb_1795019879112_xp1c",
+      "theme_id": "pb_1795061963041_hkvz",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-18T16:37:59.112Z"
+        "published_at": "2026-11-19T04:19:23.041Z"
       }
     }
   ],
