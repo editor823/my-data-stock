@@ -1,16 +1,16 @@
 {
   "success": true,
-  "updated_at": "2026-11-19T16:40:54.330Z",
+  "updated_at": "2026-11-20T04:07:20.752Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "+1.39%",
-      "is_up": true
+      "change_rate": "-4.67%",
+      "is_up": false
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "+3.32%",
-      "is_up": true
+      "change_rate": "-4.45%",
+      "is_up": false
     },
     "investor_trend": {
       "kospi": {
@@ -25,137 +25,47 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_128",
-      "theme_name": "엔터테인먼트",
-      "full_theme_name": "엔터테인먼트",
-      "change_rate": "+6.14%",
-      "composite_score": 99,
-      "total_stocks_count": 31,
-      "leader_stock": "스튜디오드래곤",
-      "leader_ratio": 29.96,
-      "sub_leader_stock": "CJ ENM",
+      "theme_id": "radar_379",
+      "theme_name": "항공기부품",
+      "full_theme_name": "항공기부품",
+      "change_rate": "-1.14%",
+      "composite_score": 64,
+      "total_stocks_count": 16,
+      "leader_stock": "하나에어로",
+      "leader_ratio": 33.86,
+      "sub_leader_stock": "현대위아",
       "other_stocks": [
-        "디어유",
-        "노머스",
-        "NEW"
+        "하이즈항공",
+        "신화프리텍",
+        "대한항공"
       ],
       "sub_stocks_top3": [
         {
-          "name": "CJ ENM",
-          "rate": "+25.0%"
+          "name": "현대위아",
+          "rate": "-1.0%"
         },
         {
-          "name": "디어유",
-          "rate": "+16.6%"
+          "name": "하이즈항공",
+          "rate": "-1.0%"
         },
         {
-          "name": "노머스",
-          "rate": "+13.0%"
+          "name": "신화프리텍",
+          "rate": "-1.1%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] &quot;일단 팔고 보자&quot;...개인·외인, 앤트로픽 IPO 앞두고 관망심... : 특징주로는 한중 정상회담을 계기로 양국 간 경제·문화 교류 확대 기대감이 커지면서 엔터테인먼트와 미디어를 비롯해 화장품·여행·항공주가 일제히 강세를 보였다. 스튜디오드래곤, 에이스토리가 상한가를 기록했고, ...",
-      "future_momentum": "엔터테인먼트 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2996,
+      "past_trigger_reason": "[속보 기사] 하나에어로, 코스닥 상장 첫날 +61%대 급등 : 하나에어로 주가가 코스닥 상장 첫날 급등세를 보이고 있다. 20일 오전 10시 35분 기준 현재 공모가 대비 +61.05% 오른 9,200원에 거래되고 있다. 거래량은 2,989만 0,740주다. 2007년...",
+      "future_momentum": "항공기부품 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 4657,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[마켓펄스] &quot;일단 팔고 보자&quot;...개인·외인, 앤트로픽 IPO 앞두고 관망심...",
-      "today_rising_fact": "[속보 기사] &quot;일단 팔고 보자&quot;...개인·외인, 앤트로픽 IPO 앞두고 관망심... : 특징주로는 한중 정상회담을 계기로 양국 간 경제·문화 교류 확대 기대감이 커지면서 엔터테인먼트와 미디어를 비롯해 화장품·여행·항공주가 일제히 강세를 보였다. 스튜디오드래곤, 에이스토리가 상한가를 기록했고, ...",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 하나에어로, 코스닥 상장 첫날 +61%대 급등",
+      "today_rising_fact": "[속보 기사] 하나에어로, 코스닥 상장 첫날 +61%대 급등 : 하나에어로 주가가 코스닥 상장 첫날 급등세를 보이고 있다. 20일 오전 10시 35분 기준 현재 공모가 대비 +61.05% 오른 9,200원에 거래되고 있다. 거래량은 2,989만 0,740주다. 2007년...",
       "top_article": {
-        "title": "[마켓펄스] &quot;일단 팔고 보자&quot;...개인·외인, 앤트로픽 IPO 앞두고 관망심...",
+        "title": "[특징주] 하나에어로, 코스닥 상장 첫날 +61%대 급등",
         "press": "증시 속보",
-        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130987",
-        "published_at": "2026-11-19T16:40:51.939Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_98",
-      "theme_name": "음원/음반",
-      "full_theme_name": "음원/음반",
-      "change_rate": "+5.95%",
-      "composite_score": 99,
-      "total_stocks_count": 15,
-      "leader_stock": "CJ ENM",
-      "leader_ratio": 25.03,
-      "sub_leader_stock": "하이브",
-      "other_stocks": [
-        "YG PLUS",
-        "더핑크퐁컴퍼니",
-        "에프엔씨엔터"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "하이브",
-          "rate": "+12.4%"
-        },
-        {
-          "name": "YG PLUS",
-          "rate": "+12.0%"
-        },
-        {
-          "name": "더핑크퐁컴퍼니",
-          "rate": "+8.9%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] &quot;일단 팔고 보자&quot;...개인·외인, 앤트로픽 IPO 앞두고 관망심... : 특징주로는 한중 정상회담을 계기로 양국 간 경제·문화 교류 확대 기대감이 커지면서 엔터테인먼트와 미디어를 비롯해 화장품·여행·항공주가 일제히 강세를 보였다. 스튜디오드래곤, 에이스토리가 상한가를 기록했고, ...",
-      "future_momentum": "음원/음반 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4323,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[마켓펄스] &quot;일단 팔고 보자&quot;...개인·외인, 앤트로픽 IPO 앞두고 관망심...",
-      "today_rising_fact": "[속보 기사] &quot;일단 팔고 보자&quot;...개인·외인, 앤트로픽 IPO 앞두고 관망심... : 특징주로는 한중 정상회담을 계기로 양국 간 경제·문화 교류 확대 기대감이 커지면서 엔터테인먼트와 미디어를 비롯해 화장품·여행·항공주가 일제히 강세를 보였다. 스튜디오드래곤, 에이스토리가 상한가를 기록했고, ...",
-      "top_article": {
-        "title": "[마켓펄스] &quot;일단 팔고 보자&quot;...개인·외인, 앤트로픽 IPO 앞두고 관망심...",
-        "press": "증시 속보",
-        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130987",
-        "published_at": "2026-11-19T16:40:52.354Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_166",
-      "theme_name": "항공/저가 항공사",
-      "full_theme_name": "항공/저가 항공사(LCC)",
-      "change_rate": "+6.23%",
-      "composite_score": 92,
-      "total_stocks_count": 9,
-      "leader_stock": "제주항공",
-      "leader_ratio": 13.33,
-      "sub_leader_stock": "AK홀딩스",
-      "other_stocks": [
-        "트리니티항공",
-        "에어부산",
-        "진에어"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "AK홀딩스",
-          "rate": "+12.4%"
-        },
-        {
-          "name": "트리니티항공",
-          "rate": "+11.9%"
-        },
-        {
-          "name": "에어부산",
-          "rate": "+6.5%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] &quot;일단 팔고 보자&quot;...개인·외인, 앤트로픽 IPO 앞두고 관망심... : 특징주로는 한중 정상회담을 계기로 양국 간 경제·문화 교류 확대 기대감이 커지면서 엔터테인먼트와 미디어를 비롯해 화장품·여행·항공주가... 하나투어(+16.75%), 참좋은여행(+15.07%), 제주항공(+...",
-      "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2050,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[마켓펄스] &quot;일단 팔고 보자&quot;...개인·외인, 앤트로픽 IPO 앞두고 관망심...",
-      "today_rising_fact": "[속보 기사] &quot;일단 팔고 보자&quot;...개인·외인, 앤트로픽 IPO 앞두고 관망심... : 특징주로는 한중 정상회담을 계기로 양국 간 경제·문화 교류 확대 기대감이 커지면서 엔터테인먼트와 미디어를 비롯해 화장품·여행·항공주가... 하나투어(+16.75%), 참좋은여행(+15.07%), 제주항공(+...",
-      "top_article": {
-        "title": "[마켓펄스] &quot;일단 팔고 보자&quot;...개인·외인, 앤트로픽 IPO 앞두고 관망심...",
-        "press": "증시 속보",
-        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=130987",
-        "published_at": "2026-11-19T16:40:52.756Z"
+        "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1314115",
+        "published_at": "2026-11-20T04:07:18.498Z"
       },
       "timeline": []
     },
@@ -163,96 +73,186 @@
       "theme_id": "radar_147",
       "theme_name": "여행",
       "full_theme_name": "여행",
-      "change_rate": "+9.23%",
-      "composite_score": 90,
+      "change_rate": "+1.00%",
+      "composite_score": 56,
       "total_stocks_count": 9,
       "leader_stock": "노랑풍선",
-      "leader_ratio": 29.98,
-      "sub_leader_stock": "하나투어",
+      "leader_ratio": 21.98,
+      "sub_leader_stock": "참좋은여행",
       "other_stocks": [
-        "참좋은여행",
-        "롯데관광개발",
-        "세중"
+        "그래디언트",
+        "레드캡투어",
+        "모두투어"
       ],
       "sub_stocks_top3": [
         {
-          "name": "하나투어",
-          "rate": "+18.5%"
-        },
-        {
           "name": "참좋은여행",
-          "rate": "+16.4%"
+          "rate": "+6.7%"
         },
         {
-          "name": "롯데관광개발",
-          "rate": "+7.1%"
+          "name": "그래디언트",
+          "rate": "+1.1%"
+        },
+        {
+          "name": "레드캡투어",
+          "rate": "+0.1%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 에이스토리·스튜디오드래곤 상한가…한중 FTA 타결에 ... : ■ 시장 해석 이날 특징주 상승은 한중 FTA 후속협상 타결에 따른 중국 시장 재개방 기대가 콘텐츠·관광·화장품·게임업종으로 확산된 장세로 풀이된다. 특히 에이스토리와 스튜디오드래곤은 중국의 콘텐츠 심사 및...",
+      "past_trigger_reason": "[속보 기사] 노랑풍선, 전일 상한가 이어 10%대 강세…한중 FTA 타결 기대 지... : 전 거래일 상한가를 기록한 종합여행사 노랑풍선이 20일 장중에도 10% 넘게 오르며 후속 상승세를 이어가고 있다. 한중 자유무역협정(FTA) 서비스·투자 후속협상의 실질 타결로 중국 현지 모객 및 방한 관광...",
       "future_momentum": "여행 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1000,
+      "trading_value_eok": 1161,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[오늘의 특징주] 에이스토리·스튜디오드래곤 상한가…한중 FTA 타결에 ...",
-      "today_rising_fact": "[속보 기사] 에이스토리·스튜디오드래곤 상한가…한중 FTA 타결에 ... : ■ 시장 해석 이날 특징주 상승은 한중 FTA 후속협상 타결에 따른 중국 시장 재개방 기대가 콘텐츠·관광·화장품·게임업종으로 확산된 장세로 풀이된다. 특히 에이스토리와 스튜디오드래곤은 중국의 콘텐츠 심사 및...",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 노랑풍선, 전일 상한가 이어 10%대 강세…한중 FTA 타결 기대 지...",
+      "today_rising_fact": "[속보 기사] 노랑풍선, 전일 상한가 이어 10%대 강세…한중 FTA 타결 기대 지... : 전 거래일 상한가를 기록한 종합여행사 노랑풍선이 20일 장중에도 10% 넘게 오르며 후속 상승세를 이어가고 있다. 한중 자유무역협정(FTA) 서비스·투자 후속협상의 실질 타결로 중국 현지 모객 및 방한 관광...",
       "top_article": {
-        "title": "[오늘의 특징주] 에이스토리·스튜디오드래곤 상한가…한중 FTA 타결에 ...",
+        "title": "[특징주] 노랑풍선, 전일 상한가 이어 10%대 강세…한중 FTA 타결 기대 지...",
         "press": "증시 속보",
-        "url": "https://www.ppss.kr/news/articleView.html?idxno=321954",
-        "published_at": "2026-11-19T16:40:53.152Z"
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=304275",
+        "published_at": "2026-11-20T04:07:18.880Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_270",
-      "theme_name": "모바일콘텐츠",
-      "full_theme_name": "모바일콘텐츠(스마트폰/태블릿PC)",
-      "change_rate": "+3.71%",
-      "composite_score": 89,
-      "total_stocks_count": 32,
-      "leader_stock": "미스터블루",
-      "leader_ratio": 29.99,
-      "sub_leader_stock": "자이언트스텝",
+      "theme_id": "radar_166",
+      "theme_name": "항공/저가 항공사",
+      "full_theme_name": "항공/저가 항공사(LCC)",
+      "change_rate": "+0.54%",
+      "composite_score": 53,
+      "total_stocks_count": 9,
+      "leader_stock": "한진칼",
+      "leader_ratio": 10.88,
+      "sub_leader_stock": "제주항공",
       "other_stocks": [
-        "셀바스AI",
-        "NHN벅스",
-        "핑거스토리"
+        "진에어",
+        "AK홀딩스",
+        "트리니티항공"
       ],
       "sub_stocks_top3": [
         {
-          "name": "자이언트스텝",
-          "rate": "+29.9%"
+          "name": "제주항공",
+          "rate": "+4.8%"
         },
         {
-          "name": "셀바스AI",
-          "rate": "+7.4%"
+          "name": "진에어",
+          "rate": "+0.9%"
         },
         {
-          "name": "NHN벅스",
-          "rate": "+6.6%"
+          "name": "AK홀딩스",
+          "rate": "+0.5%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 에이스토리·스튜디오드래곤 상한가…한중 FTA 타결에 ... : 미스터블루(207760)는 3분기 실적 개선에 힘입어 상한가를 기록했다. 이날 시장에서는 중국 시장 재개방 가능성이 가장 큰 투자 재료로 부각됐다. 그동안... ■ 시장 해석 이날 특징주 상승은 한중 FTA...",
-      "future_momentum": "모바일콘텐츠 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2706,
+      "past_trigger_reason": "[속보 기사] 한진칼, 지분 경쟁 지속·항공업황 기대에 10%대 급등 : 한진그룹 지주사인 한진칼이 지배구조를 둘러싼 지분 경쟁 이슈와 항공업종 전반의 우호적 영업환경 기대감에 힘입어 장 초반 10% 넘게 급등하고... 20일 한국거래소에 따르면 오전 9시 43분 기준 유가증권시...",
+      "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1567,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[오늘의 특징주] 에이스토리·스튜디오드래곤 상한가…한중 FTA 타결에 ...",
-      "today_rising_fact": "[속보 기사] 에이스토리·스튜디오드래곤 상한가…한중 FTA 타결에 ... : 미스터블루(207760)는 3분기 실적 개선에 힘입어 상한가를 기록했다. 이날 시장에서는 중국 시장 재개방 가능성이 가장 큰 투자 재료로 부각됐다. 그동안... ■ 시장 해석 이날 특징주 상승은 한중 FTA...",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 한진칼, 지분 경쟁 지속·항공업황 기대에 10%대 급등",
+      "today_rising_fact": "[속보 기사] 한진칼, 지분 경쟁 지속·항공업황 기대에 10%대 급등 : 한진그룹 지주사인 한진칼이 지배구조를 둘러싼 지분 경쟁 이슈와 항공업종 전반의 우호적 영업환경 기대감에 힘입어 장 초반 10% 넘게 급등하고... 20일 한국거래소에 따르면 오전 9시 43분 기준 유가증권시...",
       "top_article": {
-        "title": "[오늘의 특징주] 에이스토리·스튜디오드래곤 상한가…한중 FTA 타결에 ...",
+        "title": "[특징주] 한진칼, 지분 경쟁 지속·항공업황 기대에 10%대 급등",
         "press": "증시 속보",
-        "url": "https://www.ppss.kr/news/articleView.html?idxno=321954",
-        "published_at": "2026-11-19T16:40:53.544Z"
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=304222",
+        "published_at": "2026-11-20T04:07:19.221Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_241",
+      "theme_name": "바이오시밀러",
+      "full_theme_name": "바이오시밀러(복제 바이오의약품)",
+      "change_rate": "-0.09%",
+      "composite_score": 51,
+      "total_stocks_count": 21,
+      "leader_stock": "한미약품",
+      "leader_ratio": 9.48,
+      "sub_leader_stock": "알테오젠",
+      "other_stocks": [
+        "삼천당제약",
+        "바이넥스",
+        "한올바이오파마"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "알테오젠",
+          "rate": "+3.6%"
+        },
+        {
+          "name": "삼천당제약",
+          "rate": "+3.3%"
+        },
+        {
+          "name": "바이넥스",
+          "rate": "+1.6%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 한미약품, 美 중간선거 뒤 의료보험 확대 기대에 11.81% 껑충 : 미국 중간선거 이후 의료보험 정책 확대 기대가 번지며 제약·바이오주가 강세를 보이는 가운데 한미약품 주가가 10%대 올랐다. 5일 유가증권시장에서 오후 12시 47분 현재 한미약품은 47만3,500원에 거래...",
+      "future_momentum": "바이오시밀러 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1655,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주]한미약품, 美 중간선거 뒤 의료보험 확대 기대에 11.81% 껑충",
+      "today_rising_fact": "[속보 기사] 한미약품, 美 중간선거 뒤 의료보험 확대 기대에 11.81% 껑충 : 미국 중간선거 이후 의료보험 정책 확대 기대가 번지며 제약·바이오주가 강세를 보이는 가운데 한미약품 주가가 10%대 올랐다. 5일 유가증권시장에서 오후 12시 47분 현재 한미약품은 47만3,500원에 거래...",
+      "top_article": {
+        "title": "[특징주]한미약품, 美 중간선거 뒤 의료보험 확대 기대에 11.81% 껑충",
+        "press": "증시 속보",
+        "url": "https://www.namdonews.com/news/articleView.html?idxno=928271",
+        "published_at": "2026-11-20T04:07:19.539Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_165",
+      "theme_name": "은행",
+      "full_theme_name": "은행",
+      "change_rate": "-0.10%",
+      "composite_score": 51,
+      "total_stocks_count": 11,
+      "leader_stock": "신한지주",
+      "leader_ratio": 1.4,
+      "sub_leader_stock": "카카오뱅크",
+      "other_stocks": [
+        "하나금융지주",
+        "우리금융지주",
+        "JB금융지주"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "카카오뱅크",
+          "rate": "+1.2%"
+        },
+        {
+          "name": "하나금융지주",
+          "rate": "+1.0%"
+        },
+        {
+          "name": "우리금융지주",
+          "rate": "+0.6%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 변동성 장세에 방어주 부각⋯금융株 '강세' : 신한지주(2.34%), 우리금융지주(2.20%), 하나금융지주(1.86%), 기업은행(1.04%) 등 다른 금융주도 상승 흐름이다. 최근 국내 증시가 급등락을 반복하면서 금융 종목의 방어주 성격이 부각된 영...",
+      "future_momentum": "은행 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2045,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 변동성 장세에 방어주 부각⋯금융株 '강세'",
+      "today_rising_fact": "[속보 기사] 변동성 장세에 방어주 부각⋯금융株 '강세' : 신한지주(2.34%), 우리금융지주(2.20%), 하나금융지주(1.86%), 기업은행(1.04%) 등 다른 금융주도 상승 흐름이다. 최근 국내 증시가 급등락을 반복하면서 금융 종목의 방어주 성격이 부각된 영...",
+      "top_article": {
+        "title": "[특징주] 변동성 장세에 방어주 부각⋯금융株 '강세'",
+        "press": "증시 속보",
+        "url": "http://www.inews24.com/view/2028513",
+        "published_at": "2026-11-20T04:07:19.949Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1795106453938_w7uk",
+      "theme_id": "pb_1795147640345_kmwy",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=728560",
-        "published_at": "2026-11-19T16:40:53.938Z"
+        "published_at": "2026-11-20T04:07:20.345Z"
       }
     },
     {
-      "theme_id": "pb_1795106454330_zds9",
+      "theme_id": "pb_1795147640751_9qp7",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-19T16:40:54.330Z"
+        "published_at": "2026-11-20T04:07:20.752Z"
       }
     }
   ],
