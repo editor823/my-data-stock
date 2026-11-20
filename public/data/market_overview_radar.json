@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-20T04:07:20.752Z",
+  "updated_at": "2026-11-20T16:16:39.585Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "-4.67%",
+      "change_rate": "-5.21%",
       "is_up": false
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "-4.45%",
+      "change_rate": "-5.71%",
       "is_up": false
     },
     "investor_trend": {
@@ -25,182 +25,92 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_379",
-      "theme_name": "항공기부품",
-      "full_theme_name": "항공기부품",
-      "change_rate": "-1.14%",
-      "composite_score": 64,
-      "total_stocks_count": 16,
-      "leader_stock": "하나에어로",
-      "leader_ratio": 33.86,
-      "sub_leader_stock": "현대위아",
-      "other_stocks": [
-        "하이즈항공",
-        "신화프리텍",
-        "대한항공"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "현대위아",
-          "rate": "-1.0%"
-        },
-        {
-          "name": "하이즈항공",
-          "rate": "-1.0%"
-        },
-        {
-          "name": "신화프리텍",
-          "rate": "-1.1%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 하나에어로, 코스닥 상장 첫날 +61%대 급등 : 하나에어로 주가가 코스닥 상장 첫날 급등세를 보이고 있다. 20일 오전 10시 35분 기준 현재 공모가 대비 +61.05% 오른 9,200원에 거래되고 있다. 거래량은 2,989만 0,740주다. 2007년...",
-      "future_momentum": "항공기부품 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4657,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] 하나에어로, 코스닥 상장 첫날 +61%대 급등",
-      "today_rising_fact": "[속보 기사] 하나에어로, 코스닥 상장 첫날 +61%대 급등 : 하나에어로 주가가 코스닥 상장 첫날 급등세를 보이고 있다. 20일 오전 10시 35분 기준 현재 공모가 대비 +61.05% 오른 9,200원에 거래되고 있다. 거래량은 2,989만 0,740주다. 2007년...",
-      "top_article": {
-        "title": "[특징주] 하나에어로, 코스닥 상장 첫날 +61%대 급등",
-        "press": "증시 속보",
-        "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1314115",
-        "published_at": "2026-11-20T04:07:18.498Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_147",
-      "theme_name": "여행",
-      "full_theme_name": "여행",
-      "change_rate": "+1.00%",
-      "composite_score": 56,
-      "total_stocks_count": 9,
-      "leader_stock": "노랑풍선",
-      "leader_ratio": 21.98,
-      "sub_leader_stock": "참좋은여행",
-      "other_stocks": [
-        "그래디언트",
-        "레드캡투어",
-        "모두투어"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "참좋은여행",
-          "rate": "+6.7%"
-        },
-        {
-          "name": "그래디언트",
-          "rate": "+1.1%"
-        },
-        {
-          "name": "레드캡투어",
-          "rate": "+0.1%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 노랑풍선, 전일 상한가 이어 10%대 강세…한중 FTA 타결 기대 지... : 전 거래일 상한가를 기록한 종합여행사 노랑풍선이 20일 장중에도 10% 넘게 오르며 후속 상승세를 이어가고 있다. 한중 자유무역협정(FTA) 서비스·투자 후속협상의 실질 타결로 중국 현지 모객 및 방한 관광...",
-      "future_momentum": "여행 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1161,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] 노랑풍선, 전일 상한가 이어 10%대 강세…한중 FTA 타결 기대 지...",
-      "today_rising_fact": "[속보 기사] 노랑풍선, 전일 상한가 이어 10%대 강세…한중 FTA 타결 기대 지... : 전 거래일 상한가를 기록한 종합여행사 노랑풍선이 20일 장중에도 10% 넘게 오르며 후속 상승세를 이어가고 있다. 한중 자유무역협정(FTA) 서비스·투자 후속협상의 실질 타결로 중국 현지 모객 및 방한 관광...",
-      "top_article": {
-        "title": "[특징주] 노랑풍선, 전일 상한가 이어 10%대 강세…한중 FTA 타결 기대 지...",
-        "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=304275",
-        "published_at": "2026-11-20T04:07:18.880Z"
-      },
-      "timeline": []
-    },
-    {
       "theme_id": "radar_166",
       "theme_name": "항공/저가 항공사",
       "full_theme_name": "항공/저가 항공사(LCC)",
-      "change_rate": "+0.54%",
+      "change_rate": "-1.06%",
       "composite_score": 53,
       "total_stocks_count": 9,
       "leader_stock": "한진칼",
-      "leader_ratio": 10.88,
-      "sub_leader_stock": "제주항공",
+      "leader_ratio": 9.72,
+      "sub_leader_stock": "AK홀딩스",
       "other_stocks": [
-        "진에어",
-        "AK홀딩스",
-        "트리니티항공"
+        "제주항공",
+        "트리니티항공",
+        "진에어"
       ],
       "sub_stocks_top3": [
         {
-          "name": "제주항공",
-          "rate": "+4.8%"
-        },
-        {
-          "name": "진에어",
-          "rate": "+0.9%"
-        },
-        {
           "name": "AK홀딩스",
-          "rate": "+0.5%"
+          "rate": "+2.1%"
+        },
+        {
+          "name": "제주항공",
+          "rate": "+0.7%"
+        },
+        {
+          "name": "트리니티항공",
+          "rate": "-2.5%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 한진칼, 지분 경쟁 지속·항공업황 기대에 10%대 급등 : 한진그룹 지주사인 한진칼이 지배구조를 둘러싼 지분 경쟁 이슈와 항공업종 전반의 우호적 영업환경 기대감에 힘입어 장 초반 10% 넘게 급등하고... 20일 한국거래소에 따르면 오전 9시 43분 기준 유가증권시...",
+      "past_trigger_reason": "[속보 기사] SK텔레콤·글로벌텍스프리·한진칼 : 빅터뉴스 신진호 기자 11월 20일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK텔레콤, 글로벌텍스프리, 한진칼이 특징주로 꼽혔다. ■ SK텔레콤(0176...",
       "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1567,
+      "trading_value_eok": 2309,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "[특징주] 한진칼, 지분 경쟁 지속·항공업황 기대에 10%대 급등",
-      "today_rising_fact": "[속보 기사] 한진칼, 지분 경쟁 지속·항공업황 기대에 10%대 급등 : 한진그룹 지주사인 한진칼이 지배구조를 둘러싼 지분 경쟁 이슈와 항공업종 전반의 우호적 영업환경 기대감에 힘입어 장 초반 10% 넘게 급등하고... 20일 한국거래소에 따르면 오전 9시 43분 기준 유가증권시...",
+      "trigger_summary": "[오늘의 특징주] SK텔레콤·글로벌텍스프리·한진칼",
+      "today_rising_fact": "[속보 기사] SK텔레콤·글로벌텍스프리·한진칼 : 빅터뉴스 신진호 기자 11월 20일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK텔레콤, 글로벌텍스프리, 한진칼이 특징주로 꼽혔다. ■ SK텔레콤(0176...",
       "top_article": {
-        "title": "[특징주] 한진칼, 지분 경쟁 지속·항공업황 기대에 10%대 급등",
+        "title": "[오늘의 특징주] SK텔레콤·글로벌텍스프리·한진칼",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=304222",
-        "published_at": "2026-11-20T04:07:19.221Z"
+        "url": "https://www.bigtanews.co.kr/article/view/big202611200025",
+        "published_at": "2026-11-20T16:16:37.278Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_241",
-      "theme_name": "바이오시밀러",
-      "full_theme_name": "바이오시밀러(복제 바이오의약품)",
-      "change_rate": "-0.09%",
-      "composite_score": 51,
-      "total_stocks_count": 21,
-      "leader_stock": "한미약품",
-      "leader_ratio": 9.48,
-      "sub_leader_stock": "알테오젠",
+      "theme_id": "radar_380",
+      "theme_name": "면세점",
+      "full_theme_name": "면세점",
+      "change_rate": "+0.59%",
+      "composite_score": 50,
+      "total_stocks_count": 8,
+      "leader_stock": "글로벌텍스프리",
+      "leader_ratio": 10.71,
+      "sub_leader_stock": "토니모리",
       "other_stocks": [
-        "삼천당제약",
-        "바이넥스",
-        "한올바이오파마"
+        "현대백화점",
+        "JTC",
+        "한국정보통신"
       ],
       "sub_stocks_top3": [
         {
-          "name": "알테오젠",
-          "rate": "+3.6%"
+          "name": "토니모리",
+          "rate": "+1.7%"
         },
         {
-          "name": "삼천당제약",
-          "rate": "+3.3%"
+          "name": "현대백화점",
+          "rate": "+0.9%"
         },
         {
-          "name": "바이넥스",
-          "rate": "+1.6%"
+          "name": "JTC",
+          "rate": "-0.3%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 한미약품, 美 중간선거 뒤 의료보험 확대 기대에 11.81% 껑충 : 미국 중간선거 이후 의료보험 정책 확대 기대가 번지며 제약·바이오주가 강세를 보이는 가운데 한미약품 주가가 10%대 올랐다. 5일 유가증권시장에서 오후 12시 47분 현재 한미약품은 47만3,500원에 거래...",
-      "future_momentum": "바이오시밀러 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1655,
+      "past_trigger_reason": "[속보 기사] SK텔레콤·글로벌텍스프리·한진칼 : 빅터뉴스 신진호 기자 11월 20일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK텔레콤, 글로벌텍스프리, 한진칼이 특징주로 꼽혔다. ■ SK텔레콤(0176...",
+      "future_momentum": "면세점 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 984,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "[특징주]한미약품, 美 중간선거 뒤 의료보험 확대 기대에 11.81% 껑충",
-      "today_rising_fact": "[속보 기사] 한미약품, 美 중간선거 뒤 의료보험 확대 기대에 11.81% 껑충 : 미국 중간선거 이후 의료보험 정책 확대 기대가 번지며 제약·바이오주가 강세를 보이는 가운데 한미약품 주가가 10%대 올랐다. 5일 유가증권시장에서 오후 12시 47분 현재 한미약품은 47만3,500원에 거래...",
+      "trigger_summary": "[오늘의 특징주] SK텔레콤·글로벌텍스프리·한진칼",
+      "today_rising_fact": "[속보 기사] SK텔레콤·글로벌텍스프리·한진칼 : 빅터뉴스 신진호 기자 11월 20일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK텔레콤, 글로벌텍스프리, 한진칼이 특징주로 꼽혔다. ■ SK텔레콤(0176...",
       "top_article": {
-        "title": "[특징주]한미약품, 美 중간선거 뒤 의료보험 확대 기대에 11.81% 껑충",
+        "title": "[오늘의 특징주] SK텔레콤·글로벌텍스프리·한진칼",
         "press": "증시 속보",
-        "url": "https://www.namdonews.com/news/articleView.html?idxno=928271",
-        "published_at": "2026-11-20T04:07:19.539Z"
+        "url": "https://www.bigtanews.co.kr/article/view/big202611200025",
+        "published_at": "2026-11-20T16:16:37.698Z"
       },
       "timeline": []
     },
@@ -208,51 +118,141 @@
       "theme_id": "radar_165",
       "theme_name": "은행",
       "full_theme_name": "은행",
-      "change_rate": "-0.10%",
-      "composite_score": 51,
+      "change_rate": "-0.59%",
+      "composite_score": 50,
       "total_stocks_count": 11,
-      "leader_stock": "신한지주",
-      "leader_ratio": 1.4,
-      "sub_leader_stock": "카카오뱅크",
+      "leader_stock": "카카오뱅크",
+      "leader_ratio": 0.93,
+      "sub_leader_stock": "신한지주",
       "other_stocks": [
-        "하나금융지주",
         "우리금융지주",
+        "하나금융지주",
         "JB금융지주"
       ],
       "sub_stocks_top3": [
         {
-          "name": "카카오뱅크",
-          "rate": "+1.2%"
-        },
-        {
-          "name": "하나금융지주",
-          "rate": "+1.0%"
+          "name": "신한지주",
+          "rate": "+0.8%"
         },
         {
           "name": "우리금융지주",
-          "rate": "+0.6%"
+          "rate": "+0.3%"
+        },
+        {
+          "name": "하나금융지주",
+          "rate": "+0.2%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 변동성 장세에 방어주 부각⋯금융株 '강세' : 신한지주(2.34%), 우리금융지주(2.20%), 하나금융지주(1.86%), 기업은행(1.04%) 등 다른 금융주도 상승 흐름이다. 최근 국내 증시가 급등락을 반복하면서 금융 종목의 방어주 성격이 부각된 영...",
+      "past_trigger_reason": "[속보 기사] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불' : JB금융지주는 2.23% 상승한 2만7550원, 카카오뱅크는 1.68% 오른 2만1150원을 기록 중이다. 5대 시중은행(KB국민·신한·하나·우리·NH농협) CI. [뉴스핌DB] 4대 금융지주도 나란히 상승...",
       "future_momentum": "은행 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2045,
+      "trading_value_eok": 3810,
       "is_real_leading": false,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "[특징주] 변동성 장세에 방어주 부각⋯금융株 '강세'",
-      "today_rising_fact": "[속보 기사] 변동성 장세에 방어주 부각⋯금융株 '강세' : 신한지주(2.34%), 우리금융지주(2.20%), 하나금융지주(1.86%), 기업은행(1.04%) 등 다른 금융주도 상승 흐름이다. 최근 국내 증시가 급등락을 반복하면서 금융 종목의 방어주 성격이 부각된 영...",
+      "trigger_summary": "[특징주] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불'",
+      "today_rising_fact": "[속보 기사] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불' : JB금융지주는 2.23% 상승한 2만7550원, 카카오뱅크는 1.68% 오른 2만1150원을 기록 중이다. 5대 시중은행(KB국민·신한·하나·우리·NH농협) CI. [뉴스핌DB] 4대 금융지주도 나란히 상승...",
       "top_article": {
-        "title": "[특징주] 변동성 장세에 방어주 부각⋯금융株 '강세'",
+        "title": "[특징주] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불'",
         "press": "증시 속보",
-        "url": "http://www.inews24.com/view/2028513",
-        "published_at": "2026-11-20T04:07:19.949Z"
+        "url": "https://www.newspim.com/news/view/20261116001348",
+        "published_at": "2026-11-20T16:16:38.109Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_59",
+      "theme_name": "광고",
+      "full_theme_name": "광고",
+      "change_rate": "-0.73%",
+      "composite_score": 50,
+      "total_stocks_count": 26,
+      "leader_stock": "드림인사이트",
+      "leader_ratio": 28.97,
+      "sub_leader_stock": "모비데이즈",
+      "other_stocks": [
+        "와이즈버즈",
+        "엔비티",
+        "플레이디"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "모비데이즈",
+          "rate": "+4.3%"
+        },
+        {
+          "name": "와이즈버즈",
+          "rate": "+3.8%"
+        },
+        {
+          "name": "엔비티",
+          "rate": "+1.9%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 드림인사이트, 5억 규모 추가 자사주 매입 소식에 10%대 강세 : 드림인사이트가 주가 안정과 주주가치 제고를 위해 5억 원 규모의 추가 자사주 매입을 결정하면서 장중 10%대 강세를 보이고 있다. 지난 6월 10억 원 규모의 매입에 이은 적극적인 주주친화 행보가 투자 심리...",
+      "future_momentum": "광고 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 69,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 드림인사이트, 5억 규모 추가 자사주 매입 소식에 10%대 강세",
+      "today_rising_fact": "[속보 기사] 드림인사이트, 5억 규모 추가 자사주 매입 소식에 10%대 강세 : 드림인사이트가 주가 안정과 주주가치 제고를 위해 5억 원 규모의 추가 자사주 매입을 결정하면서 장중 10%대 강세를 보이고 있다. 지난 6월 10억 원 규모의 매입에 이은 적극적인 주주친화 행보가 투자 심리...",
+      "top_article": {
+        "title": "[특징주] 드림인사이트, 5억 규모 추가 자사주 매입 소식에 10%대 강세",
+        "press": "증시 속보",
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=302681",
+        "published_at": "2026-11-20T16:16:38.479Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_506",
+      "theme_name": "탈모 치료",
+      "full_theme_name": "탈모 치료",
+      "change_rate": "-1.19%",
+      "composite_score": 50,
+      "total_stocks_count": 29,
+      "leader_stock": "타임X AI",
+      "leader_ratio": 30,
+      "sub_leader_stock": "바이오니아",
+      "other_stocks": [
+        "인산가",
+        "샤페론",
+        "TS트릴리온"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "바이오니아",
+          "rate": "+12.5%"
+        },
+        {
+          "name": "인산가",
+          "rate": "+1.3%"
+        },
+        {
+          "name": "샤페론",
+          "rate": "+0.5%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 타임X AI·삐아 상한가…한중 FTA 기대에 화장품株 강세 : 20일 국내 증시에서는 타임X AI(304840), 삐아(451250), 마녀공장(439090), 바이오니아(064550), HLB생명과학(067630) 등이 강세를 보였다. 타임X AI는 유상증자와... ...",
+      "future_momentum": "탈모 치료 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 284,
+      "is_real_leading": false,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[오늘의 특징주] 타임X AI·삐아 상한가…한중 FTA 기대에 화장품株 강세",
+      "today_rising_fact": "[속보 기사] 타임X AI·삐아 상한가…한중 FTA 기대에 화장품株 강세 : 20일 국내 증시에서는 타임X AI(304840), 삐아(451250), 마녀공장(439090), 바이오니아(064550), HLB생명과학(067630) 등이 강세를 보였다. 타임X AI는 유상증자와... ...",
+      "top_article": {
+        "title": "[오늘의 특징주] 타임X AI·삐아 상한가…한중 FTA 기대에 화장품株 강세",
+        "press": "증시 속보",
+        "url": "https://www.ppss.kr/news/articleView.html?idxno=322157",
+        "published_at": "2026-11-20T16:16:38.838Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1795147640345_kmwy",
+      "theme_id": "pb_1795191399205_ugw3",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=728560",
-        "published_at": "2026-11-20T04:07:20.345Z"
+        "published_at": "2026-11-20T16:16:39.205Z"
       }
     },
     {
-      "theme_id": "pb_1795147640751_9qp7",
+      "theme_id": "pb_1795191399585_9i2v",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-20T04:07:20.752Z"
+        "published_at": "2026-11-20T16:16:39.585Z"
       }
     }
   ],
