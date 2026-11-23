@@ -1,30 +1,30 @@
 {
-  "updatedAt": "2026-11-22T19:53:28.871Z",
+  "updatedAt": "2026-11-23T03:52:12.798Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
-  "targetDate": "2026-11-22",
+  "targetDate": "2026-11-23",
   "latestVideo": {
     "hasVideo": true,
-    "id": "FKsEAGakUh8",
-    "title": "내일 관심테마! 미선물,앤트로픽,엔비디아 시간외,증안펀드,공매도금지등 정부정책 /반도체,기판,화장품,보안/삼성전자,SK하이닉스코리아써키트,삼성전기,티엘비,한진칼,심텍,안랩,지니언스",
-    "published_kst": "2026-11-22 17:35:50",
-    "url": "https://www.youtube.com/watch?v=FKsEAGakUh8"
+    "id": "eXV8e4OfF1w",
+    "title": "당일 관심테마! 증안펀드 및 미증시 반등중...갭하락 조금은 상쇄 /반도체,기판,화장품,보안/삼성전자,SK하이닉스코리아���키트,삼성전기,티엘비,한진칼,심텍,안랩,지니언스,삐아",
+    "published_kst": "2026-11-23 07:09:56",
+    "url": "https://www.youtube.com/watch?v=eXV8e4OfF1w"
   },
   "morningVideo": {
     "hasVideo": true,
-    "id": "3Af2BHs7JTY",
-    "title": "당일 관심테마! 수능생 여러분 화이팅!! 금리 12월 빅스텝 ?! /반도체,보안,경영권,한한령/삼성전자,SK하이닉스,코리아써키트,지니언스,jyp,에스엠,원익홀딩스,하이브,삼현",
-    "published_kst": "2026-11-19 07:04:16",
-    "url": "https://www.youtube.com/watch?v=3Af2BHs7JTY",
+    "id": "eXV8e4OfF1w",
+    "title": "당일 관심테마! 증안펀드 및 미증시 반등중...갭하락 조금은 상쇄 /반도체,기판,화장품,보안/삼성전자,SK하이닉스코리아���키트,삼성전기,티엘비,한진칼,심텍,안랩,지니언스,삐아",
+    "published_kst": "2026-11-23 07:09:56",
+    "url": "https://www.youtube.com/watch?v=eXV8e4OfF1w",
     "themes": [
-      "수능생 여러분 화이팅!! 금리 12월 빅스텝 ?!"
+      "증안펀드 및 미증시 반등중...갭하락 조금은 상쇄"
     ],
     "stocks": [
       "반도체",
-      "보안",
-      "경영권",
-      "한한령"
+      "기판",
+      "화장품",
+      "보안"
     ],
     "key_points": [
       "조선 & 방산: 미국 해군 MRO 수주 및 중동·동유럽 수출 파이프라인 수급 집결",

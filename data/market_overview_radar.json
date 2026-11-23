@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-22T19:53:28.819Z",
+  "updated_at": "2026-11-23T03:52:12.754Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "-5.21%",
+      "change_rate": "-3.77%",
       "is_up": false
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "-5.71%",
+      "change_rate": "-1.59%",
       "is_up": false
     },
     "investor_trend": {
@@ -25,234 +25,234 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_166",
-      "theme_name": "항공/저가 항공사",
-      "full_theme_name": "항공/저가 항공사(LCC)",
-      "change_rate": "-1.06%",
-      "composite_score": 53,
-      "total_stocks_count": 9,
-      "leader_stock": "한진칼",
-      "leader_ratio": 9.72,
-      "sub_leader_stock": "AK홀딩스",
-      "other_stocks": [
-        "제주항공",
-        "트리니티항공",
-        "진에어"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "AK홀딩스",
-          "rate": "+2.1%"
-        },
-        {
-          "name": "제주항공",
-          "rate": "+0.7%"
-        },
-        {
-          "name": "트리니티항공",
-          "rate": "-2.5%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] SK텔레콤·글로벌텍스프리·한진칼 : 빅터뉴스 신진호 기자 11월 20일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK텔레콤, 글로벌텍스프리, 한진칼이 특징주로 꼽혔다. ■ SK텔레콤(0176...",
-      "future_momentum": "항공/저가 항공사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2309,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[오늘의 특징주] SK텔레콤·글로벌텍스프리·한진칼",
-      "today_rising_fact": "[속보 기사] SK텔레콤·글로벌텍스프리·한진칼 : 빅터뉴스 신진호 기자 11월 20일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK텔레콤, 글로벌텍스프리, 한진칼이 특징주로 꼽혔다. ■ SK텔레콤(0176...",
-      "top_article": {
-        "title": "[오늘의 특징주] SK텔레콤·글로벌텍스프리·한진칼",
-        "press": "증시 속보",
-        "url": "https://www.bigtanews.co.kr/article/view/big202611200025",
-        "published_at": "2026-11-22T19:53:25.912Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_380",
-      "theme_name": "면세점",
-      "full_theme_name": "면세점",
-      "change_rate": "+0.59%",
-      "composite_score": 50,
-      "total_stocks_count": 8,
-      "leader_stock": "글로벌텍스프리",
-      "leader_ratio": 10.71,
-      "sub_leader_stock": "토니모리",
-      "other_stocks": [
-        "현대백화점",
-        "JTC",
-        "한국정보통신"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "토니모리",
-          "rate": "+1.7%"
-        },
-        {
-          "name": "현대백화점",
-          "rate": "+0.9%"
-        },
-        {
-          "name": "JTC",
-          "rate": "-0.3%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] SK텔레콤·글로벌텍스프리·한진칼 : 빅터뉴스 신진호 기자 11월 20일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK텔레콤, 글로벌텍스프리, 한진칼이 특징주로 꼽혔다. ■ SK텔레콤(0176...",
-      "future_momentum": "면세점 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 984,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[오늘의 특징주] SK텔레콤·글로벌텍스프리·한진칼",
-      "today_rising_fact": "[속보 기사] SK텔레콤·글로벌텍스프리·한진칼 : 빅터뉴스 신진호 기자 11월 20일 증시 마감 결과, 거래대금과 거래량 급증, 등락률, 외국인·기관 수급을 종합해 점수화한 결과 SK텔레콤, 글로벌텍스프리, 한진칼이 특징주로 꼽혔다. ■ SK텔레콤(0176...",
-      "top_article": {
-        "title": "[오늘의 특징주] SK텔레콤·글로벌텍스프리·한진칼",
-        "press": "증시 속보",
-        "url": "https://www.bigtanews.co.kr/article/view/big202611200025",
-        "published_at": "2026-11-22T19:53:26.412Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_165",
-      "theme_name": "은행",
-      "full_theme_name": "은행",
-      "change_rate": "-0.59%",
-      "composite_score": 50,
-      "total_stocks_count": 11,
-      "leader_stock": "카카오뱅크",
-      "leader_ratio": 0.93,
-      "sub_leader_stock": "신한지주",
-      "other_stocks": [
-        "우리금융지주",
-        "하나금융지주",
-        "JB금융지주"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "신한지주",
-          "rate": "+0.8%"
-        },
-        {
-          "name": "우리금융지주",
-          "rate": "+0.3%"
-        },
-        {
-          "name": "하나금융지주",
-          "rate": "+0.2%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불' : JB금융지주는 2.23% 상승한 2만7550원, 카카오뱅크는 1.68% 오른 2만1150원을 기록 중이다. 5대 시중은행(KB국민·신한·하나·우리·NH농협) CI. [뉴스핌DB] 4대 금융지주도 나란히 상승...",
-      "future_momentum": "은행 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3810,
-      "is_real_leading": false,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불'",
-      "today_rising_fact": "[속보 기사] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불' : JB금융지주는 2.23% 상승한 2만7550원, 카카오뱅크는 1.68% 오른 2만1150원을 기록 중이다. 5대 시중은행(KB국민·신한·하나·우리·NH농협) CI. [뉴스핌DB] 4대 금융지주도 나란히 상승...",
-      "top_article": {
-        "title": "[특징주] 코픽스 2년 8개월 만에 최고…은행株 애프터마켓 '빨간불'",
-        "press": "증시 속보",
-        "url": "https://www.newspim.com/news/view/20261116001348",
-        "published_at": "2026-11-22T19:53:26.924Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_59",
-      "theme_name": "광고",
-      "full_theme_name": "광고",
-      "change_rate": "-0.73%",
-      "composite_score": 50,
-      "total_stocks_count": 26,
-      "leader_stock": "드림인사이트",
-      "leader_ratio": 28.97,
-      "sub_leader_stock": "모비데이즈",
-      "other_stocks": [
-        "와이즈버즈",
-        "엔비티",
-        "플레이디"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "모비데이즈",
-          "rate": "+4.3%"
-        },
-        {
-          "name": "와이즈버즈",
-          "rate": "+3.8%"
-        },
-        {
-          "name": "엔비티",
-          "rate": "+1.9%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 드림인사이트, 5억 규모 추가 자사주 매입 소식에 10%대 강세 : 드림인사이트가 주가 안정과 주주가치 제고를 위해 5억 원 규모의 추가 자사주 매입을 결정하면서 장중 10%대 강세를 보이고 있다. 지난 6월 10억 원 규모의 매입에 이은 적극적인 주주친화 행보가 투자 심리...",
-      "future_momentum": "광고 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 69,
-      "is_real_leading": false,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] 드림인사이트, 5억 규모 추가 자사주 매입 소식에 10%대 강세",
-      "today_rising_fact": "[속보 기사] 드림인사이트, 5억 규모 추가 자사주 매입 소식에 10%대 강세 : 드림인사이트가 주가 안정과 주주가치 제고를 위해 5억 원 규모의 추가 자사주 매입을 결정하면서 장중 10%대 강세를 보이고 있다. 지난 6월 10억 원 규모의 매입에 이은 적극적인 주주친화 행보가 투자 심리...",
-      "top_article": {
-        "title": "[특징주] 드림인사이트, 5억 규모 추가 자사주 매입 소식에 10%대 강세",
-        "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=302681",
-        "published_at": "2026-11-22T19:53:27.402Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_506",
-      "theme_name": "탈모 치료",
-      "full_theme_name": "탈모 치료",
-      "change_rate": "-1.19%",
-      "composite_score": 50,
-      "total_stocks_count": 29,
-      "leader_stock": "타임X AI",
+      "theme_id": "radar_505",
+      "theme_name": "로봇",
+      "full_theme_name": "로봇(산업용/협동로봇 등)",
+      "change_rate": "+0.86%",
+      "composite_score": 74,
+      "total_stocks_count": 77,
+      "leader_stock": "휴림로봇",
       "leader_ratio": 30,
-      "sub_leader_stock": "바이오니아",
+      "sub_leader_stock": "코스모로보틱스",
       "other_stocks": [
-        "인산가",
-        "샤페론",
-        "TS트릴리온"
+        "에이엘로봇",
+        "빅웨이브로보틱스",
+        "아이로보틱스"
       ],
       "sub_stocks_top3": [
         {
-          "name": "바이오니아",
-          "rate": "+12.5%"
+          "name": "코스모로보틱스",
+          "rate": "+21.6%"
         },
         {
-          "name": "인산가",
-          "rate": "+1.3%"
+          "name": "에이엘로봇",
+          "rate": "+14.6%"
         },
         {
-          "name": "샤페론",
-          "rate": "+0.5%"
+          "name": "빅웨이브로보틱스",
+          "rate": "+11.7%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 타임X AI·삐아 상한가…한중 FTA 기대에 화장품株 강세 : 20일 국내 증시에서는 타임X AI(304840), 삐아(451250), 마녀공장(439090), 바이오니아(064550), HLB생명과학(067630) 등이 강세를 보였다. 타임X AI는 유상증자와... ...",
-      "future_momentum": "탈모 치료 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 284,
+      "past_trigger_reason": "[속보 기사] 외국인 '크라우드웍스·휴림로봇', 기관 '삼성전자·롯데손해... : 23일 오전 국내 증시에서 키움증권 창구를 통한 장중 수급을 집계한 결과, 외국인은 크라우드웍스와 휴림로봇을 중심으로 순매수 상위권을 형성한 반면, 남선알미늄과 삼성전자는 순매도 상위권에 올랐다. 기관은 삼...",
+      "future_momentum": "로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3674,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 외국인 '크라우드웍스·휴림로봇', 기관 '삼성전자·롯데손해...",
+      "today_rising_fact": "[속보 기사] 외국인 '크라우드웍스·휴림로봇', 기관 '삼성전자·롯데손해... : 23일 오전 국내 증시에서 키움증권 창구를 통한 장중 수급을 집계한 결과, 외국인은 크라우드웍스와 휴림로봇을 중심으로 순매수 상위권을 형성한 반면, 남선알미늄과 삼성전자는 순매도 상위권에 올랐다. 기관은 삼...",
+      "top_article": {
+        "title": "[특징주] 외국인 '크라우드웍스·휴림로봇', 기관 '삼성전자·롯데손해...",
+        "press": "증시 속보",
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=729832",
+        "published_at": "2026-11-23T03:52:10.359Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_587",
+      "theme_name": "피지컬 AI/휴머노이드 로봇",
+      "full_theme_name": "피지컬 AI/휴머노이드 로봇",
+      "change_rate": "-0.81%",
+      "composite_score": 58,
+      "total_stocks_count": 49,
+      "leader_stock": "에이엘로봇",
+      "leader_ratio": 14.59,
+      "sub_leader_stock": "빅웨이브로보틱스",
+      "other_stocks": [
+        "에스오에스랩",
+        "디케이티",
+        "로보티즈"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "빅웨이브로보틱스",
+          "rate": "+11.7%"
+        },
+        {
+          "name": "에스오에스랩",
+          "rate": "+6.9%"
+        },
+        {
+          "name": "디케이티",
+          "rate": "+7.0%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 아이로보틱스, CES 2027 휴머노이드 기대감 속 로봇주 강세에 ... : 해당 테마 내에서는 상한가(30.00%)를 기록한 휴림로봇을 비롯해 코스모로보틱스(22.55%), 에이엘로봇(15.90%), 빅웨이브로보틱스(12.22%), 앤로보틱스(5.97%), TPC로보틱스(4.27%...",
+      "future_momentum": "피지컬 AI/휴머노이드 로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3152,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 아이로보틱스, CES 2027 휴머노이드 기대감 속 로봇주 강세에 ...",
+      "today_rising_fact": "[속보 기사] 아이로보틱스, CES 2027 휴머노이드 기대감 속 로봇주 강세에 ... : 해당 테마 내에서는 상한가(30.00%)를 기록한 휴림로봇을 비롯해 코스모로보틱스(22.55%), 에이엘로봇(15.90%), 빅웨이브로보틱스(12.22%), 앤로보틱스(5.97%), TPC로보틱스(4.27%...",
+      "top_article": {
+        "title": "[특징주] 아이로보틱스, CES 2027 휴머노이드 기대감 속 로봇주 강세에 ...",
+        "press": "증시 속보",
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=304446",
+        "published_at": "2026-11-23T03:52:10.775Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_615",
+      "theme_name": "2026 하반기 신규상장",
+      "full_theme_name": "2026 하반기 신규상장",
+      "change_rate": "-1.59%",
+      "composite_score": 54,
+      "total_stocks_count": 41,
+      "leader_stock": "에이엘로봇",
+      "leader_ratio": 14.59,
+      "sub_leader_stock": "빅웨이브로보틱스",
+      "other_stocks": [
+        "매드업",
+        "인텔리빅스",
+        "브릴스"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "빅웨이브로보틱스",
+          "rate": "+11.7%"
+        },
+        {
+          "name": "매드업",
+          "rate": "+7.3%"
+        },
+        {
+          "name": "인텔리빅스",
+          "rate": "+4.9%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 아이로보틱스, CES 2027 휴머노이드 기대감 속 로봇주 강세에 ... : 해당 테마 내에서는 상한가(30.00%)를 기록한 휴림로봇을 비롯해 코스모로보틱스(22.55%), 에이엘로봇(15.90%), 빅웨이브로보틱스(12.22%), 앤로보틱스(5.97%), TPC로보틱스(4.27%...",
+      "future_momentum": "2026 하반기 신규상장 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2256,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 아이로보틱스, CES 2027 휴머노이드 기대감 속 로봇주 강세에 ...",
+      "today_rising_fact": "[속보 기사] 아이로보틱스, CES 2027 휴머노이드 기대감 속 로봇주 강세에 ... : 해당 테마 내에서는 상한가(30.00%)를 기록한 휴림로봇을 비롯해 코스모로보틱스(22.55%), 에이엘로봇(15.90%), 빅웨이브로보틱스(12.22%), 앤로보틱스(5.97%), TPC로보틱스(4.27%...",
+      "top_article": {
+        "title": "[특징주] 아이로보틱스, CES 2027 휴머노이드 기대감 속 로봇주 강세에 ...",
+        "press": "증시 속보",
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=304446",
+        "published_at": "2026-11-23T03:52:11.081Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_110",
+      "theme_name": "화장품",
+      "full_theme_name": "화장품",
+      "change_rate": "-2.13%",
+      "composite_score": 52,
+      "total_stocks_count": 95,
+      "leader_stock": "뷰티스킨",
+      "leader_ratio": 26.2,
+      "sub_leader_stock": "에이피알",
+      "other_stocks": [
+        "코스메카코리아",
+        "한국화장품",
+        "삐아"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "에이피알",
+          "rate": "+8.9%"
+        },
+        {
+          "name": "코스메카코리아",
+          "rate": "+6.5%"
+        },
+        {
+          "name": "한국화장품",
+          "rate": "+6.3%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 뷰티스킨, 한중 FTA 타결에 25% 급등…화장품株 동반 강세 : 한중 자유무역협정(FTA) 서비스·투자 후속협상 타결에 따른 중국 시장 확대 기대감에 뷰티스킨이 23일 장중 25% 넘게 급등하고 있다. 한중 관계 개선으로 중국인 관광객 증가와 국내 화장품 기업의 현지 사...",
+      "future_momentum": "화장품 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1643,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[특징주] 뷰티스킨, 한중 FTA 타결에 25% 급등…화장품株 동반 강세",
+      "today_rising_fact": "[속보 기사] 뷰티스킨, 한중 FTA 타결에 25% 급등…화장품株 동반 강세 : 한중 자유무역협정(FTA) 서비스·투자 후속협상 타결에 따른 중국 시장 확대 기대감에 뷰티스킨이 23일 장중 25% 넘게 급등하고 있다. 한중 관계 개선으로 중국인 관광객 증가와 국내 화장품 기업의 현지 사...",
+      "top_article": {
+        "title": "[특징주] 뷰티스킨, 한중 FTA 타결에 25% 급등…화장품株 동반 강세",
+        "press": "증시 속보",
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1732657",
+        "published_at": "2026-11-23T03:52:11.484Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_608",
+      "theme_name": "반도체 기판",
+      "full_theme_name": "반도체 기판(FC-BGA/PCB/MLB 등)",
+      "change_rate": "-0.70%",
+      "composite_score": 51,
+      "total_stocks_count": 14,
+      "leader_stock": "심텍홀딩스",
+      "leader_ratio": 4.41,
+      "sub_leader_stock": "심텍",
+      "other_stocks": [
+        "이수페타시스",
+        "삼성전기",
+        "티엘비"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "심텍",
+          "rate": "+2.7%"
+        },
+        {
+          "name": "이수페타시스",
+          "rate": "+1.9%"
+        },
+        {
+          "name": "삼성전기",
+          "rate": "+0.8%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 삼성전자·루닛, 외국인·기관 동반 순매수 상위권…한국전력... : 루닛은 10시 3분 5위에서 11시 10분 2위로 올라섰으며, 심텍홀딩스(036710)는 2위에서 3위로 이동했다. 이수페타시스(007660)는 두 차례 모두 4위를 유지했고, SFA반도체(036540)는 ...",
+      "future_momentum": "반도체 기판 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 6778,
       "is_real_leading": false,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "[오늘의 특징주] 타임X AI·삐아 상한가…한중 FTA 기대에 화장품株 강세",
-      "today_rising_fact": "[속보 기사] 타임X AI·삐아 상한가…한중 FTA 기대에 화장품株 강세 : 20일 국내 증시에서는 타임X AI(304840), 삐아(451250), 마녀공장(439090), 바이오니아(064550), HLB생명과학(067630) 등이 강세를 보였다. 타임X AI는 유상증자와... ...",
+      "trigger_summary": "[특징주] 삼성전자·루닛, 외국인·기관 동반 순매수 상위권…한국전력...",
+      "today_rising_fact": "[속보 기사] 삼성전자·루닛, 외국인·기관 동반 순매수 상위권…한국전력... : 루닛은 10시 3분 5위에서 11시 10분 2위로 올라섰으며, 심텍홀딩스(036710)는 2위에서 3위로 이동했다. 이수페타시스(007660)는 두 차례 모두 4위를 유지했고, SFA반도체(036540)는 ...",
       "top_article": {
-        "title": "[오늘의 특징주] 타임X AI·삐아 상한가…한중 FTA 기대에 화장품株 강세",
+        "title": "[특징주] 삼성전자·루닛, 외국인·기관 동반 순매수 상위권…한국전력...",
         "press": "증시 속보",
-        "url": "https://www.ppss.kr/news/articleView.html?idxno=322157",
-        "published_at": "2026-11-22T19:53:27.867Z"
+        "url": "https://www.newstnt.com/news/articleView.html?idxno=728289",
+        "published_at": "2026-11-23T03:52:11.910Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1795377208345_x6q2",
+      "theme_id": "pb_1795405932328_stv0",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=728560",
-        "published_at": "2026-11-22T19:53:28.345Z"
+        "published_at": "2026-11-23T03:52:12.328Z"
       }
     },
     {
-      "theme_id": "pb_1795377208819_tdpr",
+      "theme_id": "pb_1795405932754_ebhb",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-22T19:53:28.819Z"
+        "published_at": "2026-11-23T03:52:12.754Z"
       }
     }
   ],
