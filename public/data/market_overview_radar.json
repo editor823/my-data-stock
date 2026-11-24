@@ -1,6 +1,6 @@
 {
   "success": true,
-  "updated_at": "2026-11-24T07:00:09.577Z",
+  "updated_at": "2026-11-24T18:59:30.297Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
@@ -25,55 +25,10 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_587",
-      "theme_name": "피지컬 AI/휴머노이드 로봇",
-      "full_theme_name": "피지컬 AI/휴머노이드 로봇",
-      "change_rate": "+10.24%",
-      "composite_score": 99,
-      "total_stocks_count": 49,
-      "leader_stock": "현대오토에버",
-      "leader_ratio": 29.93,
-      "sub_leader_stock": "한국피아이엠",
-      "other_stocks": [
-        "유진로봇",
-        "씨메스로보틱스",
-        "로보티즈"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "한국피아이엠",
-          "rate": "+29.9%"
-        },
-        {
-          "name": "유진로봇",
-          "rate": "+20.6%"
-        },
-        {
-          "name": "씨메스로보틱스",
-          "rate": "+20.0%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 젠슨 황 복귀에 현대오토에버 상한가…엔비디아 GPU·피지컬AI ... : 젠슨 황 엔비디아 최고경영자(CEO)의 복귀 소식에 현대차그룹과 엔비디아의 협력 기대가 되살아나면서 현대오토에버가 가격제한폭까지 올랐다. 현대차그룹의 인공지능(AI) 데이터센터 구축과 피지컬AI·로봇 사업 ...",
-      "future_momentum": "피지컬 AI/휴머노이드 로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 5349,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 젠슨 황 복귀에 현대오토에버 상한가…엔비디아 GPU·피지컬AI ...",
-      "today_rising_fact": "[속보 기사] 젠슨 황 복귀에 현대오토에버 상한가…엔비디아 GPU·피지컬AI ... : 젠슨 황 엔비디아 최고경영자(CEO)의 복귀 소식에 현대차그룹과 엔비디아의 협력 기대가 되살아나면서 현대오토에버가 가격제한폭까지 올랐다. 현대차그룹의 인공지능(AI) 데이터센터 구축과 피지컬AI·로봇 사업 ...",
-      "top_article": {
-        "title": "[특징주] 젠슨 황 복귀에 현대오토에버 상한가…엔비디아 GPU·피지컬AI ...",
-        "press": "증시 속보",
-        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8805",
-        "published_at": "2026-11-24T07:00:06.920Z"
-      },
-      "timeline": []
-    },
-    {
       "theme_id": "radar_505",
       "theme_name": "로봇",
       "full_theme_name": "로봇(산업용/협동로봇 등)",
-      "change_rate": "+9.91%",
+      "change_rate": "+6.41%",
       "composite_score": 99,
       "total_stocks_count": 77,
       "leader_stock": "KH바텍",
@@ -95,12 +50,12 @@
         },
         {
           "name": "한국피아이엠",
-          "rate": "+29.9%"
+          "rate": "+24.9%"
         }
       ],
       "past_trigger_reason": "[속보 기사] 엔비디아발 훈풍에 로봇주 무더기 급등…휴림로봇 등 5종목 상... : 아이씨에이치(30.00%), KH바텍(29.96%), 아이티엠반도체(29.88%), 한국피아이엠(29.87%) 등도 상한가를 기록 중이다. 로봇 대장주로 꼽히는 레인보우로보틱스는 19.28% 오른 47만95...",
       "future_momentum": "로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 6572,
+      "trading_value_eok": 6747,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
@@ -110,149 +65,194 @@
         "title": "[특징주] 엔비디아발 훈풍에 로봇주 무더기 급등…휴림로봇 등 5종목 상...",
         "press": "증시 속보",
         "url": "https://www.ajunews.com/view/20261124133936063",
-        "published_at": "2026-11-24T07:00:07.362Z"
+        "published_at": "2026-11-24T18:59:28.708Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_159",
-      "theme_name": "자동차 대표주",
-      "full_theme_name": "자동차 대표주",
-      "change_rate": "+9.70%",
+      "theme_id": "radar_587",
+      "theme_name": "피지컬 AI/휴머노이드 로봇",
+      "full_theme_name": "피지컬 AI/휴머노이드 로봇",
+      "change_rate": "+6.23%",
       "composite_score": 99,
-      "total_stocks_count": 7,
-      "leader_stock": "현대모비스",
-      "leader_ratio": 14.51,
-      "sub_leader_stock": "HL만도",
+      "total_stocks_count": 49,
+      "leader_stock": "한국피아이엠",
+      "leader_ratio": 24.94,
+      "sub_leader_stock": "현대오토에버",
       "other_stocks": [
-        "현대차",
-        "기아",
-        "한온시스템"
+        "로보티즈",
+        "씨메스로보틱스",
+        "레인보우로보틱스"
       ],
       "sub_stocks_top3": [
         {
-          "name": "HL만도",
-          "rate": "+13.1%"
+          "name": "현대오토에버",
+          "rate": "+24.4%"
         },
         {
-          "name": "현대차",
-          "rate": "+11.1%"
+          "name": "로보티즈",
+          "rate": "+14.4%"
         },
         {
-          "name": "기아",
-          "rate": "+10.7%"
+          "name": "씨메스로보틱스",
+          "rate": "+13.9%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 현대모비스, 임시주총 80% 이상 찬성으로 램프 분할 가결…11%... : 24일 유가증권시장에서 현대모비스가 자동차 램프사업 물적분할 안건의 임시주주총회 통과 소식과 피지컬 AI·자동차 관련주 동반 강세에 힘입어 11%대 급등세를 보이고 있다. 한국거래소에 따르면 이날 오전 10...",
-      "future_momentum": "자동차 대표주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 4405,
+      "past_trigger_reason": "[속보 기사] 한국피아이엠, 젠슨 황 복귀 훈풍에 상한가…휴머노이드 감속... : 금속분말사출성형(MIM) 전문기업 한국피아이엠이 젠슨 황 엔비디아 최고경영자(CEO)의 복귀 소식에 따른 로봇주 강세 속에서 상한가를 기록했다. 휴머노이드 로봇에 들어가는 초소형 감속기와 인공지능(AI) 데...",
+      "future_momentum": "피지컬 AI/휴머노이드 로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 5869,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 현대모비스, 임시주총 80% 이상 찬성으로 램프 분할 가결…11%...",
-      "today_rising_fact": "[속보 기사] 현대모비스, 임시주총 80% 이상 찬성으로 램프 분할 가결…11%... : 24일 유가증권시장에서 현대모비스가 자동차 램프사업 물적분할 안건의 임시주주총회 통과 소식과 피지컬 AI·자동차 관련주 동반 강세에 힘입어 11%대 급등세를 보이고 있다. 한국거래소에 따르면 이날 오전 10...",
+      "trigger_summary": "[특징주] 한국피아이엠, 젠슨 황 복귀 훈풍에 상한가…휴머노이드 감속...",
+      "today_rising_fact": "[속보 기사] 한국피아이엠, 젠슨 황 복귀 훈풍에 상한가…휴머노이드 감속... : 금속분말사출성형(MIM) 전문기업 한국피아이엠이 젠슨 황 엔비디아 최고경영자(CEO)의 복귀 소식에 따른 로봇주 강세 속에서 상한가를 기록했다. 휴머노이드 로봇에 들어가는 초소형 감속기와 인공지능(AI) 데...",
       "top_article": {
-        "title": "[특징주] 현대모비스, 임시주총 80% 이상 찬성으로 램프 분할 가결…11%...",
+        "title": "[특징주] 한국피아이엠, 젠슨 황 복귀 훈풍에 상한가…휴머노이드 감속...",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=304528",
-        "published_at": "2026-11-24T07:00:07.809Z"
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8807",
+        "published_at": "2026-11-24T18:59:29.014Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_405",
-      "theme_name": "MLCC",
-      "full_theme_name": "MLCC(적층세라믹콘덴서)",
-      "change_rate": "+9.37%",
-      "composite_score": 99,
-      "total_stocks_count": 11,
-      "leader_stock": "아모텍",
-      "leader_ratio": 23.33,
-      "sub_leader_stock": "대주전자재료",
-      "other_stocks": [
-        "코스모신소재",
-        "삼화콘덴서",
-        "삼성전기"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "대주전자재료",
-          "rate": "+13.3%"
-        },
-        {
-          "name": "코스모신소재",
-          "rate": "+11.8%"
-        },
-        {
-          "name": "삼화콘덴서",
-          "rate": "+10.9%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 코스모신소재, MLCC·2차전지 테마 동반 강세에 10%대 급등 : 테마 내 아모텍(+23.62%), 대주전자재료(+12.33%), 삼성전기(+11.57%), 삼화콘덴서(+11.38%), 아바텍(+10.90%) 등이 일제히 강세를 보였다. '2차전지(소재/부품)' 테마 역시...",
-      "future_momentum": "MLCC 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 7343,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 코스모신소재, MLCC·2차전지 테마 동반 강세에 10%대 급등",
-      "today_rising_fact": "[속보 기사] 코스모신소재, MLCC·2차전지 테마 동반 강세에 10%대 급등 : 테마 내 아모텍(+23.62%), 대주전자재료(+12.33%), 삼성전기(+11.57%), 삼화콘덴서(+11.38%), 아바텍(+10.90%) 등이 일제히 강세를 보였다. '2차전지(소재/부품)' 테마 역시...",
-      "top_article": {
-        "title": "[특징주] 코스모신소재, MLCC·2차전지 테마 동반 강세에 10%대 급등",
-        "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=304530",
-        "published_at": "2026-11-24T07:00:08.252Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_173",
-      "theme_name": "IT 대표주",
-      "full_theme_name": "IT 대표주",
-      "change_rate": "+8.85%",
-      "composite_score": 99,
-      "total_stocks_count": 6,
-      "leader_stock": "LG전자",
-      "leader_ratio": 15.86,
+      "theme_id": "radar_388",
+      "theme_name": "아이폰",
+      "full_theme_name": "아이폰",
+      "change_rate": "+4.84%",
+      "composite_score": 94,
+      "total_stocks_count": 20,
+      "leader_stock": "아이티엠반도체",
+      "leader_ratio": 29.88,
       "sub_leader_stock": "삼성SDI",
       "other_stocks": [
-        "SK하이닉스",
-        "삼성전자",
-        "LG디스플레이"
+        "LG화학",
+        "비에이치",
+        "LG이노텍"
       ],
       "sub_stocks_top3": [
         {
           "name": "삼성SDI",
-          "rate": "+13.6%"
+          "rate": "+8.8%"
         },
         {
-          "name": "SK하이닉스",
-          "rate": "+6.7%"
+          "name": "LG화학",
+          "rate": "+7.2%"
         },
         {
-          "name": "삼성전자",
-          "rate": "+6.7%"
+          "name": "비에이치",
+          "rate": "+6.3%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] LG전자, 젠슨 황 엔비디아 복귀 소식.. 16%대 '급등' : LG전자가 젠슨 황 엔비디아 최고경영자(CEO)의 복귀 소식에 급등하고 있다. 엔비디아와 추진 중인 로봇·인공지능(AI) 데이터센터 등 신사업 협력에 대한 기대감이 투자심리에 반영된 것으로 풀이된다. 24일...",
-      "future_momentum": "IT 대표주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 74523,
+      "past_trigger_reason": "[속보 기사] 엔비디아발 훈풍에 로봇주 무더기 급등…휴림로봇 등 5종목 상... : 아이씨에이치(30.00%), KH바텍(29.96%), 아이티엠반도체(29.88%), 한국피아이엠(29.87%) 등도 상한가를 기록 중이다. 로봇 대장주로 꼽히는 레인보우로보틱스는 19.28% 오른 47만95...",
+      "future_momentum": "아이폰 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 12171,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] LG전자, 젠슨 황 엔비디아 복귀 소식.. 16%대 '급등'",
-      "today_rising_fact": "[속보 기사] LG전자, 젠슨 황 엔비디아 복귀 소식.. 16%대 '급등' : LG전자가 젠슨 황 엔비디아 최고경영자(CEO)의 복귀 소식에 급등하고 있다. 엔비디아와 추진 중인 로봇·인공지능(AI) 데이터센터 등 신사업 협력에 대한 기대감이 투자심리에 반영된 것으로 풀이된다. 24일...",
+      "trigger_summary": "[특징주] 엔비디아발 훈풍에 로봇주 무더기 급등…휴림로봇 등 5종목 상...",
+      "today_rising_fact": "[속보 기사] 엔비디아발 훈풍에 로봇주 무더기 급등…휴림로봇 등 5종목 상... : 아이씨에이치(30.00%), KH바텍(29.96%), 아이티엠반도체(29.88%), 한국피아이엠(29.87%) 등도 상한가를 기록 중이다. 로봇 대장주로 꼽히는 레인보우로보틱스는 19.28% 오른 47만95...",
       "top_article": {
-        "title": "[특징주] LG전자, 젠슨 황 엔비디아 복귀 소식.. 16%대 '급등'",
+        "title": "[특징주] 엔비디아발 훈풍에 로봇주 무더기 급등…휴림로봇 등 5종목 상...",
         "press": "증시 속보",
-        "url": "https://www.g-enews.com/view.php?ud=20261124145949600344093b5d4e_1",
-        "published_at": "2026-11-24T07:00:08.692Z"
+        "url": "https://www.ajunews.com/view/20261124133936063",
+        "published_at": "2026-11-24T18:59:29.264Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_501",
+      "theme_name": "리비안",
+      "full_theme_name": "리비안(RIVIAN)",
+      "change_rate": "+4.71%",
+      "composite_score": 94,
+      "total_stocks_count": 21,
+      "leader_stock": "모베이스전자",
+      "leader_ratio": 29.98,
+      "sub_leader_stock": "HL만도",
+      "other_stocks": [
+        "삼성SDI",
+        "피에이치에이",
+        "피엔티"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "HL만도",
+          "rate": "+9.1%"
+        },
+        {
+          "name": "삼성SDI",
+          "rate": "+8.8%"
+        },
+        {
+          "name": "피에이치에이",
+          "rate": "+7.8%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 美 전기차 리비안 판매 호조.. 알멕 등 부품업체 '강세' : TCC스틸은 10.70%, 모베이스전자 8.79%, 상신이디피 6.95% 등이 강세다. 지난 2일(현지시간) 리비안은 3분기 차량 인도 실적이 시장 기대를 웃돌았다고 밝혔다. 리비안은 3분기 차량 1만924...",
+      "future_momentum": "리비안 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3929,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 美 전기차 리비안 판매 호조.. 알멕 등 부품업체 '강세'",
+      "today_rising_fact": "[속보 기사] 美 전기차 리비안 판매 호조.. 알멕 등 부품업체 '강세' : TCC스틸은 10.70%, 모베이스전자 8.79%, 상신이디피 6.95% 등이 강세다. 지난 2일(현지시간) 리비안은 3분기 차량 인도 실적이 시장 기대를 웃돌았다고 밝혔다. 리비안은 3분기 차량 1만924...",
+      "top_article": {
+        "title": "[특징주] 美 전기차 리비안 판매 호조.. 알멕 등 부품업체 '강세'",
+        "press": "증시 속보",
+        "url": "https://www.g-enews.com/view.php?ud=20261006102632846444093b5d4e_1",
+        "published_at": "2026-11-24T18:59:29.510Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_326",
+      "theme_name": "3D 프린터",
+      "full_theme_name": "3D 프린터",
+      "change_rate": "+6.03%",
+      "composite_score": 93,
+      "total_stocks_count": 11,
+      "leader_stock": "휴림로봇",
+      "leader_ratio": 29.9,
+      "sub_leader_stock": "TPC로보틱스",
+      "other_stocks": [
+        "로보스타",
+        "링크솔루션",
+        "모아텍"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "TPC로보틱스",
+          "rate": "+9.8%"
+        },
+        {
+          "name": "로보스타",
+          "rate": "+9.2%"
+        },
+        {
+          "name": "링크솔루션",
+          "rate": "+7.5%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 엔비디아발 훈풍에 로봇주 무더기 급등…휴림로봇 등 5종목 상... : 24일 한국거래소에 따르면 이날 오후 1시36분 기준 휴림로봇은 전 거래일 대비 1710원(29.90%) 오른 7430원에 거래되고 있다. 아이씨에이치(30.00%), KH바텍(29.96%), 아이티엠반도체...",
+      "future_momentum": "3D 프린터 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1665,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 엔비디아발 훈풍에 로봇주 무더기 급등…휴림로봇 등 5종목 상...",
+      "today_rising_fact": "[속보 기사] 엔비디아발 훈풍에 로봇주 무더기 급등…휴림로봇 등 5종목 상... : 24일 한국거래소에 따르면 이날 오후 1시36분 기준 휴림로봇은 전 거래일 대비 1710원(29.90%) 오른 7430원에 거래되고 있다. 아이씨에이치(30.00%), KH바텍(29.96%), 아이티엠반도체...",
+      "top_article": {
+        "title": "[특징주] 엔비디아발 훈풍에 로봇주 무더기 급등…휴림로봇 등 5종목 상...",
+        "press": "증시 속보",
+        "url": "https://www.ajunews.com/view/20261124133936063",
+        "published_at": "2026-11-24T18:59:29.781Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1795503609128_e0k8",
+      "theme_id": "pb_1795546770029_fwfr",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인 대한광통신·휴림로봇, 기관 삼성전자·심텍홀딩스 순...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=730132",
-        "published_at": "2026-11-24T07:00:09.128Z"
+        "published_at": "2026-11-24T18:59:30.029Z"
       }
     },
     {
-      "theme_id": "pb_1795503609577_9rnj",
+      "theme_id": "pb_1795546770297_9t65",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-24T07:00:09.577Z"
+        "published_at": "2026-11-24T18:59:30.297Z"
       }
     }
   ],
