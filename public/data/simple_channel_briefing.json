@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-25T05:33:04.711Z",
+  "updatedAt": "2026-11-25T18:04:25.736Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-11-25",
   "latestVideo": {
     "hasVideo": true,
-    "id": "086XrvYK0jc",
-    "title": "당일 관심테마! 관세에 조사에 쉽지않은 시장 지속 - 계속 주의 필요 /반도체,화장품,로봇,보안/삼성전자SK하이닉스,삼성전기,로보티즈,한진칼,휴림로봇,삼현,마녀공장,삐아,삼성sdi",
-    "published_kst": "2026-11-25 07:01:35",
-    "url": "https://www.youtube.com/watch?v=086XrvYK0jc"
+    "id": "ZyXgmlMULpY",
+    "title": "내일 관심테마! SK하이닉스 100만원! 관세부터 나올 악재는 가득.. /반도체,화장품,보안,로봇,경영권/삼성전자,SK하이닉스,삼성전기,안랩,지니언스,한진칼,에이피알,한국화장품",
+    "published_kst": "2026-11-25 21:00:19",
+    "url": "https://www.youtube.com/watch?v=ZyXgmlMULpY"
   },
   "morningVideo": {
     "hasVideo": true,
@@ -34,18 +34,19 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "M_dxqQwpsm0",
-    "title": "내일 관심테마! 하루만에 반납중인 젠슨황 효과...시장은 계속 보수적으로 /반도체,기판,화장품,보안/삼성전자,SK하이닉스,삼성전기,로보티즈,한진칼,심텍,안랩,마녀공장,삐아,삼현",
-    "published_kst": "2026-11-24 21:39:18",
-    "url": "https://www.youtube.com/watch?v=M_dxqQwpsm0",
+    "id": "ZyXgmlMULpY",
+    "title": "내일 관심테마! SK하이닉스 100만원! 관세부터 나올 악재는 가득.. /반도체,화장품,보안,로봇,경영권/삼성전자,SK하이닉스,삼성전기,안랩,지니언스,한진칼,에이피알,한국화장품",
+    "published_kst": "2026-11-25 21:00:19",
+    "url": "https://www.youtube.com/watch?v=ZyXgmlMULpY",
     "themes": [
-      "하루만에 반납중인 젠슨황 효과...시장은 계속 보수적으로"
+      "SK하이닉스 100만원! 관세부터 나올 악재는 가득.."
     ],
     "stocks": [
       "반도체",
-      "기판",
       "화장품",
-      "보안"
+      "보안",
+      "로봇",
+      "경영권"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(한화오션, SK하이닉스 등) 외국인·기관 순매수 집중",

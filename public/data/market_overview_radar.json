@@ -1,6 +1,6 @@
 {
   "success": true,
-  "updated_at": "2026-11-25T05:33:04.667Z",
+  "updated_at": "2026-11-25T18:04:25.688Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
@@ -9,7 +9,7 @@
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "-2.66%",
+      "change_rate": "-2.29%",
       "is_up": false
     },
     "investor_trend": {
@@ -28,8 +28,8 @@
       "theme_id": "radar_55",
       "theme_name": "보안주",
       "full_theme_name": "보안주(정보)",
-      "change_rate": "+4.13%",
-      "composite_score": 91,
+      "change_rate": "+2.90%",
+      "composite_score": 85,
       "total_stocks_count": 52,
       "leader_stock": "안랩",
       "leader_ratio": 29.96,
@@ -46,161 +46,26 @@
         },
         {
           "name": "지니언스",
-          "rate": "+21.2%"
+          "rate": "+17.9%"
         },
         {
           "name": "라온시큐어",
-          "rate": "+15.8%"
+          "rate": "+13.9%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑ : 테마 내에서는 안랩(+29.96%)과 파수AI(+29.95%)가 나란히 상한가를 기록한 가운데 지니언스(+26.13%), 라온시큐어(+21.01%), 한싹(+14.91%), 에스피소프트(+14.32%) 등 ...",
+      "past_trigger_reason": "[속보 기사] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행 : 25일 국내 증시에서 안랩(053800)과 파수AI(150900)가 나란히 상한가를 기록했다. 코스피와 코스닥이 각각 6.16%, 2.29% 하락한 가운데 정보보안 관련주가 동반 강세를 보였다. 이날 정규장...",
       "future_momentum": "보안주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 7744,
+      "trading_value_eok": 8656,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑",
-      "today_rising_fact": "[속보 기사] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑ : 테마 내에서는 안랩(+29.96%)과 파수AI(+29.95%)가 나란히 상한가를 기록한 가운데 지니언스(+26.13%), 라온시큐어(+21.01%), 한싹(+14.91%), 에스피소프트(+14.32%) 등 ...",
+      "trigger_summary": "[오늘의 특징주] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행",
+      "today_rising_fact": "[속보 기사] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행 : 25일 국내 증시에서 안랩(053800)과 파수AI(150900)가 나란히 상한가를 기록했다. 코스피와 코스닥이 각각 6.16%, 2.29% 하락한 가운데 정보보안 관련주가 동반 강세를 보였다. 이날 정규장...",
       "top_article": {
-        "title": "[특징주] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑",
+        "title": "[오늘의 특징주] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=304746",
-        "published_at": "2026-11-25T05:33:02.146Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_387",
-      "theme_name": "블록체인",
-      "full_theme_name": "블록체인",
-      "change_rate": "+2.94%",
-      "composite_score": 83,
-      "total_stocks_count": 23,
-      "leader_stock": "파수AI",
-      "leader_ratio": 29.95,
-      "sub_leader_stock": "라온시큐어",
-      "other_stocks": [
-        "SGA솔루션즈",
-        "케이사인",
-        "위메이드"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "라온시큐어",
-          "rate": "+15.8%"
-        },
-        {
-          "name": "SGA솔루션즈",
-          "rate": "+9.2%"
-        },
-        {
-          "name": "케이사인",
-          "rate": "+5.0%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑ : 테마 내에서는 안랩(+29.96%)과 파수AI(+29.95%)가 나란히 상한가를 기록한 가운데 지니언스(+26.13%), 라온시큐어(+21.01%), 한싹(+14.91%), 에스피소프트(+14.32%) 등 ...",
-      "future_momentum": "블록체인 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1905,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑",
-      "today_rising_fact": "[속보 기사] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑ : 테마 내에서는 안랩(+29.96%)과 파수AI(+29.95%)가 나란히 상한가를 기록한 가운데 지니언스(+26.13%), 라온시큐어(+21.01%), 한싹(+14.91%), 에스피소프트(+14.32%) 등 ...",
-      "top_article": {
-        "title": "[특징주] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑",
-        "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=304746",
-        "published_at": "2026-11-25T05:33:02.653Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_566",
-      "theme_name": "딥페이크",
-      "full_theme_name": "딥페이크(deepfake)",
-      "change_rate": "+2.87%",
-      "composite_score": 82,
-      "total_stocks_count": 14,
-      "leader_stock": "파수AI",
-      "leader_ratio": 29.95,
-      "sub_leader_stock": "라온시큐어",
-      "other_stocks": [
-        "에스피소프트",
-        "샌즈랩",
-        "아이씨티케이"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "라온시큐어",
-          "rate": "+15.8%"
-        },
-        {
-          "name": "에스피소프트",
-          "rate": "+10.7%"
-        },
-        {
-          "name": "샌즈랩",
-          "rate": "+4.2%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑ : 테마 내에서는 안랩(+29.96%)과 파수AI(+29.95%)가 나란히 상한가를 기록한 가운데 지니언스(+26.13%), 라온시큐어(+21.01%), 한싹(+14.91%), 에스피소프트(+14.32%) 등 ...",
-      "future_momentum": "딥페이크 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1881,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑",
-      "today_rising_fact": "[속보 기사] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑ : 테마 내에서는 안랩(+29.96%)과 파수AI(+29.95%)가 나란히 상한가를 기록한 가운데 지니언스(+26.13%), 라온시큐어(+21.01%), 한싹(+14.91%), 에스피소프트(+14.32%) 등 ...",
-      "top_article": {
-        "title": "[특징주] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑",
-        "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=304746",
-        "published_at": "2026-11-25T05:33:03.023Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_507",
-      "theme_name": "마이데이터",
-      "full_theme_name": "마이데이터",
-      "change_rate": "+3.81%",
-      "composite_score": 81,
-      "total_stocks_count": 12,
-      "leader_stock": "파수AI",
-      "leader_ratio": 29.95,
-      "sub_leader_stock": "파이오링크",
-      "other_stocks": [
-        "아톤",
-        "NICE평가정보",
-        "세종텔레콤"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "파이오링크",
-          "rate": "+8.9%"
-        },
-        {
-          "name": "아톤",
-          "rate": "+5.6%"
-        },
-        {
-          "name": "NICE평가정보",
-          "rate": "+3.7%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑ : 테마 내에서는 안랩(+29.96%)과 파수AI(+29.95%)가 나란히 상한가를 기록한 가운데 지니언스(+26.13%), 라온시큐어(+21.01%), 한싹(+14.91%), 에스피소프트(+14.32%) 등 ...",
-      "future_momentum": "마이데이터 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1601,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑",
-      "today_rising_fact": "[속보 기사] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑ : 테마 내에서는 안랩(+29.96%)과 파수AI(+29.95%)가 나란히 상한가를 기록한 가운데 지니언스(+26.13%), 라온시큐어(+21.01%), 한싹(+14.91%), 에스피소프트(+14.32%) 등 ...",
-      "top_article": {
-        "title": "[특징주] 모니터랩, CIA 해킹 피해 소식에 보안주 매수세 집중…10%↑",
-        "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=304746",
-        "published_at": "2026-11-25T05:33:03.320Z"
+        "url": "https://www.ppss.kr/news/articleView.html?idxno=322985",
+        "published_at": "2026-11-25T18:04:23.888Z"
       },
       "timeline": []
     },
@@ -208,51 +73,186 @@
       "theme_id": "radar_110",
       "theme_name": "화장품",
       "full_theme_name": "화장품",
-      "change_rate": "+1.78%",
-      "composite_score": 79,
+      "change_rate": "+1.64%",
+      "composite_score": 78,
       "total_stocks_count": 95,
       "leader_stock": "뷰티스킨",
-      "leader_ratio": 26.55,
-      "sub_leader_stock": "한국화장품제조",
+      "leader_ratio": 25.52,
+      "sub_leader_stock": "제닉",
       "other_stocks": [
-        "코스맥스",
         "코스메카코리아",
-        "본느"
+        "코스맥스",
+        "한국화장품제조"
       ],
       "sub_stocks_top3": [
         {
-          "name": "한국화장품제조",
-          "rate": "+11.8%"
-        },
-        {
-          "name": "코스맥스",
-          "rate": "+11.8%"
+          "name": "제닉",
+          "rate": "+13.6%"
         },
         {
           "name": "코스메카코리아",
-          "rate": "+11.7%"
+          "rate": "+13.5%"
+        },
+        {
+          "name": "코스맥스",
+          "rate": "+13.0%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 한국화장품제조, 연말 성수기·한중 FTA 수혜 기대감에 12%대 급... : 테마 내에서는 뷰티스킨(+24.74%), 실리콘투(+12.79%), 코스맥스(+11.66%), 에이피알(+11.57%), 엘앤씨바이오(+11.30%), 코스메카코리아(+10.83%) 등이 동반 강세를 나타냈...",
+      "past_trigger_reason": "[속보 기사] 코스피 6% 급락에도 화장품주 '질주'…연말 성수기·북미 매출... : 코스닥시장에서는 뷰티스킨이 29.90% 올라 상한가를 기록했고, 코스메카코리아(13.36%)와 실리콘투(12.02%)도 큰 폭으로 뛰었다. 이날 코스피가 전 거래일보다 308.52포인트(6.16%) 내린 4...",
       "future_momentum": "화장품 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2435,
+      "trading_value_eok": 3371,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "[특징주] 한국화장품제조, 연말 성수기·한중 FTA 수혜 기대감에 12%대 급...",
-      "today_rising_fact": "[속보 기사] 한국화장품제조, 연말 성수기·한중 FTA 수혜 기대감에 12%대 급... : 테마 내에서는 뷰티스킨(+24.74%), 실리콘투(+12.79%), 코스맥스(+11.66%), 에이피알(+11.57%), 엘앤씨바이오(+11.30%), 코스메카코리아(+10.83%) 등이 동반 강세를 나타냈...",
+      "trigger_summary": "[특징주] 코스피 6% 급락에도 화장품주 '질주'…연말 성수기·북미 매출...",
+      "today_rising_fact": "[속보 기사] 코스피 6% 급락에도 화장품주 '질주'…연말 성수기·북미 매출... : 코스닥시장에서는 뷰티스킨이 29.90% 올라 상한가를 기록했고, 코스메카코리아(13.36%)와 실리콘투(12.02%)도 큰 폭으로 뛰었다. 이날 코스피가 전 거래일보다 308.52포인트(6.16%) 내린 4...",
       "top_article": {
-        "title": "[특징주] 한국화장품제조, 연말 성수기·한중 FTA 수혜 기대감에 12%대 급...",
+        "title": "[특징주] 코스피 6% 급락에도 화장품주 '질주'…연말 성수기·북미 매출...",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=304741",
-        "published_at": "2026-11-25T05:33:03.726Z"
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8843",
+        "published_at": "2026-11-25T18:04:24.240Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_387",
+      "theme_name": "블록체인",
+      "full_theme_name": "블록체인",
+      "change_rate": "+2.35%",
+      "composite_score": 75,
+      "total_stocks_count": 23,
+      "leader_stock": "파수AI",
+      "leader_ratio": 29.95,
+      "sub_leader_stock": "라온시큐어",
+      "other_stocks": [
+        "SGA솔루션즈",
+        "케이사인",
+        "한컴위드"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "라온시큐어",
+          "rate": "+13.9%"
+        },
+        {
+          "name": "SGA솔루션즈",
+          "rate": "+10.7%"
+        },
+        {
+          "name": "케이사인",
+          "rate": "+7.3%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 안랩·파수AI 상한가…CIA ���킹 소식 속 급락장 역주행 : 25일 국내 증시에서 안랩(053800)과 파수AI(150900)가 나란히 상한가를 기록했다. 코스피와 코스닥이 각각 6.16%, 2.29% 하락한 가운데 정보보안 관련주가 동반 강세를 보였다. 이날 정규장...",
+      "future_momentum": "블록체인 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1626,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[오늘의 특징주] 안랩·파수AI 상한가…CIA ���킹 소식 속 급락장 역주행",
+      "today_rising_fact": "[속보 기사] 안랩·파수AI 상한가…CIA ���킹 소식 속 급락장 역주행 : 25일 국내 증시에서 안랩(053800)과 파수AI(150900)가 나란히 상한가를 기록했다. 코스피와 코스닥이 각각 6.16%, 2.29% 하락한 가운데 정보보안 관련주가 동반 강세를 보였다. 이날 정규장...",
+      "top_article": {
+        "title": "[오늘의 특징주] 안랩·파수AI 상한가…CIA ���킹 소식 속 급락장 역주행",
+        "press": "증시 속보",
+        "url": "https://www.ppss.kr/news/articleView.html?idxno=322985",
+        "published_at": "2026-11-25T18:04:24.517Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_566",
+      "theme_name": "딥페이크",
+      "full_theme_name": "딥페이크(deepfake)",
+      "change_rate": "+0.95%",
+      "composite_score": 75,
+      "total_stocks_count": 14,
+      "leader_stock": "파수AI",
+      "leader_ratio": 29.95,
+      "sub_leader_stock": "라온시큐어",
+      "other_stocks": [
+        "에스피소프트",
+        "샌즈랩",
+        "플랜티넷"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "라온시큐어",
+          "rate": "+13.9%"
+        },
+        {
+          "name": "에스피소프트",
+          "rate": "+6.0%"
+        },
+        {
+          "name": "샌즈랩",
+          "rate": "+2.0%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행 : 25일 국내 증시에서 안랩(053800)과 파수AI(150900)가 나란히 상한가를 기록했다. 코스피와 코스닥이 각각 6.16%, 2.29% 하락한 가운데 정보보안 관련주가 동반 강세를 보였다. 이날 정규장...",
+      "future_momentum": "딥페이크 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2113,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[오늘의 특징주] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행",
+      "today_rising_fact": "[속보 기사] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행 : 25일 국내 증시에서 안랩(053800)과 파수AI(150900)가 나란히 상한가를 기록했다. 코스피와 코스닥이 각각 6.16%, 2.29% 하락한 가운데 정보보안 관련주가 동반 강세를 보였다. 이날 정규장...",
+      "top_article": {
+        "title": "[오늘의 특징주] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행",
+        "press": "증시 속보",
+        "url": "https://www.ppss.kr/news/articleView.html?idxno=322985",
+        "published_at": "2026-11-25T18:04:24.809Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_32",
+      "theme_name": "패션/의류",
+      "full_theme_name": "패션/의류",
+      "change_rate": "+0.08%",
+      "composite_score": 70,
+      "total_stocks_count": 59,
+      "leader_stock": "윙스풋",
+      "leader_ratio": 29.92,
+      "sub_leader_stock": "뉴키즈온",
+      "other_stocks": [
+        "에이피알",
+        "피스피스스튜디오",
+        "미스토홀딩스"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "뉴키즈온",
+          "rate": "+11.1%"
+        },
+        {
+          "name": "에이피알",
+          "rate": "+10.6%"
+        },
+        {
+          "name": "피스피스스튜디오",
+          "rate": "+6.3%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] AI 부정행위 대책에 지슨 ��등...텔레칩스·가온칩스도... : 옵토닉스 신규 상장·나노팀 흑자전환…윙스풋 사업 다각화도 주목 나머지 상승 종목들에서는 신규 상장과 실적 개선, 사업구조 변화 등 개별 요인이... 신발 유통기업 윙스풋은 최근 브랜드 포트폴리오 확대와 사업...",
+      "future_momentum": "패션/의류 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2697,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": false,
+      "trigger_summary": "[오늘의 특징주] AI 부정행위 대책에 지슨 ��등...텔레칩스·가온칩스도...",
+      "today_rising_fact": "[속보 기사] AI 부정행위 대책에 지슨 ��등...텔레칩스·가온칩스도... : 옵토닉스 신규 상장·나노팀 흑자전환…윙스풋 사업 다각화도 주목 나머지 상승 종목들에서는 신규 상장과 실적 개선, 사업구조 변화 등 개별 요인이... 신발 유통기업 윙스풋은 최근 브랜드 포트폴리오 확대와 사업...",
+      "top_article": {
+        "title": "[오늘의 특징주] AI 부정행위 대책에 지슨 ��등...텔레칩스·가온칩스도...",
+        "press": "증시 속보",
+        "url": "https://www.ppss.kr/news/articleView.html?idxno=321356",
+        "published_at": "2026-11-25T18:04:25.115Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1795584784212_2mfg",
+      "theme_id": "pb_1795629865394_g6br",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인 대한광통신·휴림로봇, 기관 삼성전자·심텍홀딩스 순...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=730132",
-        "published_at": "2026-11-25T05:33:04.212Z"
+        "published_at": "2026-11-25T18:04:25.394Z"
       }
     },
     {
-      "theme_id": "pb_1795584784667_fs7y",
+      "theme_id": "pb_1795629865688_3hqn",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-25T05:33:04.667Z"
+        "published_at": "2026-11-25T18:04:25.688Z"
       }
     }
   ],
