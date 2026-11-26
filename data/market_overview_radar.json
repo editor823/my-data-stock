@@ -1,16 +1,16 @@
 {
   "success": true,
-  "updated_at": "2026-11-25T18:04:25.688Z",
+  "updated_at": "2026-11-26T05:15:30.972Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "-6.16%",
-      "is_up": false
+      "change_rate": "+1.18%",
+      "is_up": true
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "-2.29%",
-      "is_up": false
+      "change_rate": "+1.92%",
+      "is_up": true
     },
     "investor_trend": {
       "kospi": {
@@ -25,234 +25,234 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_55",
-      "theme_name": "보안주",
-      "full_theme_name": "보안주(정보)",
-      "change_rate": "+2.90%",
-      "composite_score": 85,
-      "total_stocks_count": 52,
-      "leader_stock": "안랩",
-      "leader_ratio": 29.96,
-      "sub_leader_stock": "파수AI",
-      "other_stocks": [
-        "지니언스",
-        "라온시큐어",
-        "이글루"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "파수AI",
-          "rate": "+29.9%"
-        },
-        {
-          "name": "지니언스",
-          "rate": "+17.9%"
-        },
-        {
-          "name": "라온시큐어",
-          "rate": "+13.9%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행 : 25일 국내 증시에서 안랩(053800)과 파수AI(150900)가 나란히 상한가를 기록했다. 코스피와 코스닥이 각각 6.16%, 2.29% 하락한 가운데 정보보안 관련주가 동반 강세를 보였다. 이날 정규장...",
-      "future_momentum": "보안주 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 8656,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[오늘의 특징주] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행",
-      "today_rising_fact": "[속보 기사] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행 : 25일 국내 증시에서 안랩(053800)과 파수AI(150900)가 나란히 상한가를 기록했다. 코스피와 코스닥이 각각 6.16%, 2.29% 하락한 가운데 정보보안 관련주가 동반 강세를 보였다. 이날 정규장...",
-      "top_article": {
-        "title": "[오늘의 특징주] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행",
-        "press": "증시 속보",
-        "url": "https://www.ppss.kr/news/articleView.html?idxno=322985",
-        "published_at": "2026-11-25T18:04:23.888Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_110",
-      "theme_name": "화장품",
-      "full_theme_name": "화장품",
-      "change_rate": "+1.64%",
-      "composite_score": 78,
-      "total_stocks_count": 95,
-      "leader_stock": "뷰티스킨",
-      "leader_ratio": 25.52,
-      "sub_leader_stock": "제닉",
-      "other_stocks": [
-        "코스메카코리아",
-        "코스맥스",
-        "한국화장품제조"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "제닉",
-          "rate": "+13.6%"
-        },
-        {
-          "name": "코스메카코리아",
-          "rate": "+13.5%"
-        },
-        {
-          "name": "코스맥스",
-          "rate": "+13.0%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 코스피 6% 급락에도 화장품주 '질주'…연말 성수기·북미 매출... : 코스닥시장에서는 뷰티스킨이 29.90% 올라 상한가를 기록했고, 코스메카코리아(13.36%)와 실리콘투(12.02%)도 큰 폭으로 뛰었다. 이날 코스피가 전 거래일보다 308.52포인트(6.16%) 내린 4...",
-      "future_momentum": "화장품 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3371,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[특징주] 코스피 6% 급락에도 화장품주 '질주'…연말 성수기·북미 매출...",
-      "today_rising_fact": "[속보 기사] 코스피 6% 급락에도 화장품주 '질주'…연말 성수기·북미 매출... : 코스닥시장에서는 뷰티스킨이 29.90% 올라 상한가를 기록했고, 코스메카코리아(13.36%)와 실리콘투(12.02%)도 큰 폭으로 뛰었다. 이날 코스피가 전 거래일보다 308.52포인트(6.16%) 내린 4...",
-      "top_article": {
-        "title": "[특징주] 코스피 6% 급락에도 화장품주 '질주'…연말 성수기·북미 매출...",
-        "press": "증시 속보",
-        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8843",
-        "published_at": "2026-11-25T18:04:24.240Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_387",
-      "theme_name": "블록체인",
-      "full_theme_name": "블록체인",
-      "change_rate": "+2.35%",
-      "composite_score": 75,
-      "total_stocks_count": 23,
-      "leader_stock": "파수AI",
-      "leader_ratio": 29.95,
-      "sub_leader_stock": "라온시큐어",
-      "other_stocks": [
-        "SGA솔루션즈",
-        "케이사인",
-        "한컴위드"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "라온시큐어",
-          "rate": "+13.9%"
-        },
-        {
-          "name": "SGA솔루션즈",
-          "rate": "+10.7%"
-        },
-        {
-          "name": "케이사인",
-          "rate": "+7.3%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 안랩·파수AI 상한가…CIA ���킹 소식 속 급락장 역주행 : 25일 국내 증시에서 안랩(053800)과 파수AI(150900)가 나란히 상한가를 기록했다. 코스피와 코스닥이 각각 6.16%, 2.29% 하락한 가운데 정보보안 관련주가 동반 강세를 보였다. 이날 정규장...",
-      "future_momentum": "블록체인 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 1626,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[오늘의 특징주] 안랩·파수AI 상한가…CIA ���킹 소식 속 급락장 역주행",
-      "today_rising_fact": "[속보 기사] 안랩·파수AI 상한가…CIA ���킹 소식 속 급락장 역주행 : 25일 국내 증시에서 안랩(053800)과 파수AI(150900)가 나란히 상한가를 기록했다. 코스피와 코스닥이 각각 6.16%, 2.29% 하락한 가운데 정보보안 관련주가 동반 강세를 보였다. 이날 정규장...",
-      "top_article": {
-        "title": "[오늘의 특징주] 안랩·파수AI 상한가…CIA ���킹 소식 속 급락장 역주행",
-        "press": "증시 속보",
-        "url": "https://www.ppss.kr/news/articleView.html?idxno=322985",
-        "published_at": "2026-11-25T18:04:24.517Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_566",
-      "theme_name": "딥페이크",
-      "full_theme_name": "딥페이크(deepfake)",
-      "change_rate": "+0.95%",
-      "composite_score": 75,
+      "theme_id": "radar_584",
+      "theme_name": "스페이스X",
+      "full_theme_name": "스페이스X(SpaceX)",
+      "change_rate": "+10.75%",
+      "composite_score": 99,
       "total_stocks_count": 14,
-      "leader_stock": "파수AI",
-      "leader_ratio": 29.95,
-      "sub_leader_stock": "라온시큐어",
+      "leader_stock": "나노팀",
+      "leader_ratio": 29.9,
+      "sub_leader_stock": "미래에셋벤처투자",
       "other_stocks": [
-        "에스피소프트",
-        "샌즈랩",
-        "플랜티넷"
+        "스피어",
+        "센서뷰",
+        "에이치브이엠"
       ],
       "sub_stocks_top3": [
         {
-          "name": "라온시큐어",
-          "rate": "+13.9%"
+          "name": "미래에셋벤처투자",
+          "rate": "+21.2%"
         },
         {
-          "name": "에스피소프트",
-          "rate": "+6.0%"
+          "name": "스피어",
+          "rate": "+19.2%"
         },
         {
-          "name": "샌즈랩",
-          "rate": "+2.0%"
+          "name": "센서뷰",
+          "rate": "+19.1%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행 : 25일 국내 증시에서 안랩(053800)과 파수AI(150900)가 나란히 상한가를 기록했다. 코스피와 코스닥이 각각 6.16%, 2.29% 하락한 가운데 정보보안 관련주가 동반 강세를 보였다. 이날 정규장...",
-      "future_momentum": "딥페이크 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2113,
+      "past_trigger_reason": "[속보 기사] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금... : 테마 내에서는 상한가에 육박한 나노팀(29.90%)을 비롯해 스피어(22.59%), 미래에셋벤처투자(22.22%), 에이치브이엠(18.04%), 센서뷰(17.40%), 와이제이링크(11.76%) 등이 동반 ...",
+      "future_momentum": "스페이스X 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3717,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
-      "ma5_recovered": false,
-      "trigger_summary": "[오늘의 특징주] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행",
-      "today_rising_fact": "[속보 기사] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행 : 25일 국내 증시에서 안랩(053800)과 파수AI(150900)가 나란히 상한가를 기록했다. 코스피와 코스닥이 각각 6.16%, 2.29% 하락한 가운데 정보보안 관련주가 동반 강세를 보였다. 이날 정규장...",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금...",
+      "today_rising_fact": "[속보 기사] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금... : 테마 내에서는 상한가에 육박한 나노팀(29.90%)을 비롯해 스피어(22.59%), 미래에셋벤처투자(22.22%), 에이치브이엠(18.04%), 센서뷰(17.40%), 와이제이링크(11.76%) 등이 동반 ...",
       "top_article": {
-        "title": "[오늘의 특징주] 안랩·파수AI 상한가…CIA 해킹 소식 속 급락장 역주행",
+        "title": "[특징주] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금...",
         "press": "증시 속보",
-        "url": "https://www.ppss.kr/news/articleView.html?idxno=322985",
-        "published_at": "2026-11-25T18:04:24.809Z"
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=304892",
+        "published_at": "2026-11-26T05:15:28.292Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_32",
-      "theme_name": "패션/의류",
-      "full_theme_name": "패션/의류",
-      "change_rate": "+0.08%",
-      "composite_score": 70,
-      "total_stocks_count": 59,
-      "leader_stock": "윙스풋",
-      "leader_ratio": 29.92,
-      "sub_leader_stock": "뉴키즈온",
+      "theme_id": "radar_200",
+      "theme_name": "우주항공산업",
+      "full_theme_name": "우주항공산업(누리호/인공위성 등)",
+      "change_rate": "+5.63%",
+      "composite_score": 95,
+      "total_stocks_count": 41,
+      "leader_stock": "LK삼양",
+      "leader_ratio": 29.93,
+      "sub_leader_stock": "스피어",
       "other_stocks": [
-        "에이피알",
-        "피스피스스튜디오",
-        "미스토홀딩스"
+        "센서뷰",
+        "알멕",
+        "에이치브이엠"
       ],
       "sub_stocks_top3": [
         {
-          "name": "뉴키즈온",
-          "rate": "+11.1%"
+          "name": "스피어",
+          "rate": "+19.2%"
         },
         {
-          "name": "에이피알",
-          "rate": "+10.6%"
+          "name": "센서뷰",
+          "rate": "+19.1%"
         },
         {
-          "name": "피스피스스튜디오",
-          "rate": "+6.3%"
+          "name": "알멕",
+          "rate": "+13.4%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] AI 부정행위 대책에 지슨 ��등...텔레칩스·가온칩스도... : 옵토닉스 신규 상장·나노팀 흑자전환…윙스풋 사업 다각화도 주목 나머지 상승 종목들에서는 신규 상장과 실적 개선, 사업구조 변화 등 개별 요인이... 신발 유통기업 윙스풋은 최근 브랜드 포트폴리오 확대와 사업...",
-      "future_momentum": "패션/의류 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2697,
+      "past_trigger_reason": "[속보 기사] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금... : 함께 포함된 우주항공산업 테마 역시 전체 2위(평균 6.46%)에 올라 상한가를 기록한 LK삼양(29.93%)과 알멕(14.40%), 나라스페이스테크놀로지(14.35%) 등이 일제히 강세를 보이고 있다. 테...",
+      "future_momentum": "우주항공산업 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1827,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금...",
+      "today_rising_fact": "[속보 기사] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금... : 함께 포함된 우주항공산업 테마 역시 전체 2위(평균 6.46%)에 올라 상한가를 기록한 LK삼양(29.93%)과 알멕(14.40%), 나라스페이스테크놀로지(14.35%) 등이 일제히 강세를 보이고 있다. 테...",
+      "top_article": {
+        "title": "[특징주] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금...",
+        "press": "증시 속보",
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=304892",
+        "published_at": "2026-11-26T05:15:28.795Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_481",
+      "theme_name": "마켓컬리",
+      "full_theme_name": "마켓컬리(kurly)",
+      "change_rate": "+3.68%",
+      "composite_score": 77,
+      "total_stocks_count": 10,
+      "leader_stock": "미래에셋벤처투자",
+      "leader_ratio": 21.24,
+      "sub_leader_stock": "DSC인베스트먼트",
+      "other_stocks": [
+        "태경케미컬",
+        "이씨에스",
+        "케이씨피드"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "DSC인베스트먼트",
+          "rate": "+3.0%"
+        },
+        {
+          "name": "태경케미컬",
+          "rate": "+2.8%"
+        },
+        {
+          "name": "이씨에스",
+          "rate": "+2.1%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금... : 테마 내에서는 상한가에 육박한 나노팀(29.90%)을 비롯해 스피어(22.59%), 미래에셋벤처투자(22.22%), 에이치브이엠(18.04%), 센서뷰(17.40%), 와이제이링크(11.76%) 등이 동반 ...",
+      "future_momentum": "마켓컬리 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1610,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금...",
+      "today_rising_fact": "[속보 기사] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금... : 테마 내에서는 상한가에 육박한 나노팀(29.90%)을 비롯해 스피어(22.59%), 미래에셋벤처투자(22.22%), 에이치브이엠(18.04%), 센서뷰(17.40%), 와이제이링크(11.76%) 등이 동반 ...",
+      "top_article": {
+        "title": "[특징주] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금...",
+        "press": "증시 속보",
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=304892",
+        "published_at": "2026-11-26T05:15:29.253Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_405",
+      "theme_name": "MLCC",
+      "full_theme_name": "MLCC(적층세라믹콘덴서)",
+      "change_rate": "+3.47%",
+      "composite_score": 77,
+      "total_stocks_count": 11,
+      "leader_stock": "대주전자재료",
+      "leader_ratio": 12.34,
+      "sub_leader_stock": "삼성전기",
+      "other_stocks": [
+        "아모텍",
+        "한켐",
+        "원준"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "삼성전기",
+          "rate": "+5.0%"
+        },
+        {
+          "name": "아모텍",
+          "rate": "+5.0%"
+        },
+        {
+          "name": "한켐",
+          "rate": "+3.7%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 금양그린파워, 연료전지 테마 매수세 유입에 급등…전기공사... : 함께 포함된 태양광에너지 테마 역시 전체 19위(평균 2.51%)를 기록하며 대주전자재료(13.36%), 유니테스트(8.20%), 나노신소재(7.53%), 주성엔지니어링(6.71%), OCI홀딩스(6.00%...",
+      "future_momentum": "MLCC 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 5862,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] 금양그린파워, 연료전지 테마 매수세 유입에 급등…전기공사...",
+      "today_rising_fact": "[속보 기사] 금양그린파워, 연료전지 테마 매수세 유입에 급등…전기공사... : 함께 포함된 태양광에너지 테마 역시 전체 19위(평균 2.51%)를 기록하며 대주전자재료(13.36%), 유니테스트(8.20%), 나노신소재(7.53%), 주성엔지니어링(6.71%), OCI홀딩스(6.00%...",
+      "top_article": {
+        "title": "[특징주] 금양그린파워, 연료전지 테마 매수세 유입에 급등…전기공사...",
+        "press": "증시 속보",
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=304799",
+        "published_at": "2026-11-26T05:15:29.714Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_119",
+      "theme_name": "창투사",
+      "full_theme_name": "창투사",
+      "change_rate": "+1.96%",
+      "composite_score": 77,
+      "total_stocks_count": 20,
+      "leader_stock": "미래에셋벤처투자",
+      "leader_ratio": 21.24,
+      "sub_leader_stock": "아주IB투자",
+      "other_stocks": [
+        "SV인베스트먼트",
+        "컴퍼니케이",
+        "스톤브릿지벤처스"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "아주IB투자",
+          "rate": "+8.0%"
+        },
+        {
+          "name": "SV인베스트먼트",
+          "rate": "+5.4%"
+        },
+        {
+          "name": "컴퍼니케이",
+          "rate": "+3.2%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금... : 테마 내에서는 상한가에 육박한 나노팀(29.90%)을 비롯해 스피어(22.59%), 미래에셋벤처투자(22.22%), 에이치브이엠(18.04%), 센서뷰(17.40%), 와이제이링크(11.76%) 등이 동반 ...",
+      "future_momentum": "창투사 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 2023,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": false,
-      "trigger_summary": "[오늘의 특징주] AI 부정행위 대책에 지슨 ��등...텔레칩스·가온칩스도...",
-      "today_rising_fact": "[속보 기사] AI 부정행위 대책에 지슨 ��등...텔레칩스·가온칩스도... : 옵토닉스 신규 상장·나노팀 흑자전환…윙스풋 사업 다각화도 주목 나머지 상승 종목들에서는 신규 상장과 실적 개선, 사업구조 변화 등 개별 요인이... 신발 유통기업 윙스풋은 최근 브랜드 포트폴리오 확대와 사업...",
+      "trigger_summary": "[특징주] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금...",
+      "today_rising_fact": "[속보 기사] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금... : 테마 내에서는 상한가에 육박한 나노팀(29.90%)을 비롯해 스피어(22.59%), 미래에셋벤처투자(22.22%), 에이치브이엠(18.04%), 센서뷰(17.40%), 와이제이링크(11.76%) 등이 동반 ...",
       "top_article": {
-        "title": "[오늘의 특징주] AI 부정행위 대책에 지슨 ��등...텔레칩스·가온칩스도...",
+        "title": "[특징주] 세아베스틸지주, 우주항공 테마 매수세 유입에 급등…특수합금...",
         "press": "증시 속보",
-        "url": "https://www.ppss.kr/news/articleView.html?idxno=321356",
-        "published_at": "2026-11-25T18:04:25.115Z"
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=304892",
+        "published_at": "2026-11-26T05:15:30.067Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1795629865394_g6br",
+      "theme_id": "pb_1795670130525_180c",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 외국인 대한광통신·휴림로봇, 기관 삼성전자·심텍홀딩스 순...",
         "press": "증시 속보",
         "url": "https://www.newstnt.com/news/articleView.html?idxno=730132",
-        "published_at": "2026-11-25T18:04:25.394Z"
+        "published_at": "2026-11-26T05:15:30.525Z"
       }
     },
     {
-      "theme_id": "pb_1795629865688_3hqn",
+      "theme_id": "pb_1795670130972_3174",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-25T18:04:25.688Z"
+        "published_at": "2026-11-26T05:15:30.972Z"
       }
     }
   ],

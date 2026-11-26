@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25T18:04:33.297Z",
-  "updated_date_str": "2026년 11월 25일 18:04",
+  "updated_at": "2026-11-26T05:15:35.816Z",
+  "updated_date_str": "2026년 11월 26일 05:15",
   "headline": "미국 증시 주요 지수 혼조 마감… AI 빅테크 및 금리 지표 관망",
   "summary_3lines": [
     "미 연준 통화정책 및 주요 경제지표 발표를 앞두고 증시 변동성 지속",
@@ -12,31 +12,31 @@
       "ticker": "XLB",
       "name": "소재",
       "theme": "광물/화학/귀금속",
-      "price": "51.07",
-      "ratio": 1.79,
-      "ratio_str": "+1.79%",
+      "price": "51.21",
+      "ratio": 2.07,
+      "ratio_str": "+2.07%",
       "reason": "금·구리 등 산업용 금속 가격 견조 및 친환경 소재 수요 지속",
       "stocks": [
         {
           "ticker": "LIN",
           "name": "린데",
-          "ratio": 1.58,
-          "ratio_str": "+1.58%",
-          "price": "524.99"
+          "ratio": 1.51,
+          "ratio_str": "+1.51%",
+          "price": "524.61"
         },
         {
           "ticker": "FCX",
           "name": "프리포트맥모란",
-          "ratio": -0.3,
-          "ratio_str": "-0.30%",
-          "price": "47.59"
+          "ratio": 1.72,
+          "ratio_str": "+1.72%",
+          "price": "48.55"
         },
         {
           "ticker": "NEM",
           "name": "뉴몬트",
-          "ratio": 0.12,
-          "ratio_str": "+0.12%",
-          "price": "99.55"
+          "ratio": 2.02,
+          "ratio_str": "+2.02%",
+          "price": "101.44"
         }
       ]
     },
@@ -44,134 +44,31 @@
       "ticker": "XLRE",
       "name": "부동산",
       "theme": "데이터센터리츠/상업용부동산",
-      "price": "43.99",
-      "ratio": 1.21,
-      "ratio_str": "+1.21%",
+      "price": "43.86",
+      "ratio": 0.92,
+      "ratio_str": "+0.92%",
       "reason": "AI 데이터센터 전용 리츠 수요 급증 및 물류 인프라 임대율 방어",
       "stocks": [
         {
           "ticker": "PLD",
           "name": "프로로지스",
-          "ratio": 0.14,
-          "ratio_str": "+0.14%",
-          "price": "127.50"
+          "ratio": -0.23,
+          "ratio_str": "-0.23%",
+          "price": "127.03"
         },
         {
           "ticker": "AMT",
           "name": "아메리칸타워",
-          "ratio": 1.7,
-          "ratio_str": "+1.70%",
-          "price": "185.93"
+          "ratio": 0.96,
+          "ratio_str": "+0.96%",
+          "price": "184.59"
         },
         {
           "ticker": "EQIX",
           "name": "에퀴닉스",
-          "ratio": -0.51,
-          "ratio_str": "-0.51%",
-          "price": "977.74"
-        }
-      ]
-    },
-    {
-      "ticker": "XLE",
-      "name": "에너지",
-      "theme": "정유/원유/가스",
-      "price": "60.99",
-      "ratio": 0.89,
-      "ratio_str": "+0.89%",
-      "reason": "국제유가 및 정유·원유 밸류체인 실적 개선과 현금흐름 부각으로 매수세 유입",
-      "stocks": [
-        {
-          "ticker": "XOM",
-          "name": "엑슨모빌",
-          "ratio": 0.46,
-          "ratio_str": "+0.46%",
-          "price": "158.97"
-        },
-        {
-          "ticker": "CVX",
-          "name": "셰브론",
-          "ratio": 1.23,
-          "ratio_str": "+1.23%",
-          "price": "211.30"
-        },
-        {
-          "ticker": "VLO",
-          "name": "발레로",
-          "ratio": -0.92,
-          "ratio_str": "-0.92%",
-          "price": "321.68"
-        },
-        {
-          "ticker": "OXY",
-          "name": "옥시덴털",
-          "ratio": 1.78,
-          "ratio_str": "+1.78%",
-          "price": "54.33"
-        }
-      ]
-    },
-    {
-      "ticker": "XLP",
-      "name": "필수소비재",
-      "theme": "식음료/대형마트/생필품",
-      "price": "92.63",
-      "ratio": 0.82,
-      "ratio_str": "+0.82%",
-      "reason": "시장 불확실성 속 안정적인 배당 수익률과 방어적 실적 돋보여",
-      "stocks": [
-        {
-          "ticker": "WMT",
-          "name": "월마트",
-          "ratio": -0.6,
-          "ratio_str": "-0.60%",
-          "price": "131.52"
-        },
-        {
-          "ticker": "COST",
-          "name": "코스트코",
-          "ratio": 0.12,
-          "ratio_str": "+0.12%",
-          "price": "1,093.06"
-        },
-        {
-          "ticker": "PG",
-          "name": "프록터앤갬블",
-          "ratio": 0.96,
-          "ratio_str": "+0.96%",
-          "price": "174.13"
-        }
-      ]
-    },
-    {
-      "ticker": "XLU",
-      "name": "유틸리티",
-      "theme": "원자력발전/전력망/신재생",
-      "price": "43.66",
-      "ratio": 0.6,
-      "ratio_str": "+0.60%",
-      "reason": "빅테크 AI 데이터센터 전력 수요 폭증 및 원전 장기 PPA 계약 체결 모멘텀",
-      "stocks": [
-        {
-          "ticker": "NEE",
-          "name": "넥스트에라",
-          "ratio": 1.13,
-          "ratio_str": "+1.13%",
-          "price": "85.54"
-        },
-        {
-          "ticker": "SO",
-          "name": "서던컴퍼니",
-          "ratio": 1.23,
-          "ratio_str": "+1.23%",
-          "price": "95.27"
-        },
-        {
-          "ticker": "CEG",
-          "name": "콘스텔레이션에너지",
-          "ratio": -2.92,
-          "ratio_str": "-2.92%",
-          "price": "237.68"
+          "ratio": -0.46,
+          "ratio_str": "-0.46%",
+          "price": "978.22"
         }
       ]
     },
@@ -179,63 +76,31 @@
       "ticker": "XLC",
       "name": "커뮤니케이션",
       "theme": "검색엔진/SNS/스트리밍",
-      "price": "104.95",
-      "ratio": 0.48,
-      "ratio_str": "+0.48%",
+      "price": "105.38",
+      "ratio": 0.89,
+      "ratio_str": "+0.89%",
       "reason": "디지털 광고 매출 성장세 지속 및 생성형 AI 검색 점유율 방어",
       "stocks": [
         {
           "ticker": "GOOGL",
           "name": "알파벳",
-          "ratio": -3.01,
-          "ratio_str": "-3.01%",
-          "price": "270.65"
+          "ratio": -2.13,
+          "ratio_str": "-2.13%",
+          "price": "273.10"
         },
         {
           "ticker": "META",
           "name": "메타",
-          "ratio": 2.26,
-          "ratio_str": "+2.26%",
-          "price": "603.15"
+          "ratio": 3.4,
+          "ratio_str": "+3.40%",
+          "price": "609.89"
         },
         {
           "ticker": "NFLX",
           "name": "넷플릭스",
-          "ratio": -0.08,
-          "ratio_str": "-0.08%",
-          "price": "58.82"
-        }
-      ]
-    },
-    {
-      "ticker": "XLF",
-      "name": "금융",
-      "theme": "투자은행/상업은행/카드",
-      "price": "56.37",
-      "ratio": 0.45,
-      "ratio_str": "+0.45%",
-      "reason": "순이자마진(NIM) 방어 및 견조한 IB 수수료 수익 바탕 금융주 강세",
-      "stocks": [
-        {
-          "ticker": "JPM",
-          "name": "JP모건",
-          "ratio": -0.27,
-          "ratio_str": "-0.27%",
-          "price": "316.25"
-        },
-        {
-          "ticker": "BAC",
-          "name": "뱅크오브아메리카",
-          "ratio": -0.46,
-          "ratio_str": "-0.46%",
-          "price": "48.36"
-        },
-        {
-          "ticker": "GS",
-          "name": "골드만삭스",
-          "ratio": -1.27,
-          "ratio_str": "-1.27%",
-          "price": "795.76"
+          "ratio": 0.92,
+          "ratio_str": "+0.92%",
+          "price": "59.41"
         }
       ]
     },
@@ -243,31 +108,166 @@
       "ticker": "XLI",
       "name": "산업재",
       "theme": "방산/항공우주/전력기계",
-      "price": "162.05",
-      "ratio": 0.27,
-      "ratio_str": "+0.27%",
+      "price": "162.95",
+      "ratio": 0.83,
+      "ratio_str": "+0.83%",
       "reason": "글로벌 방산 수주 확대 및 AI 데이터센터 전력 인프라 투자 지속",
       "stocks": [
         {
           "ticker": "GE",
           "name": "GE에어로스페이스",
-          "ratio": -0.46,
-          "ratio_str": "-0.46%",
-          "price": "316.57"
+          "ratio": -0.33,
+          "ratio_str": "-0.33%",
+          "price": "316.98"
         },
         {
           "ticker": "CAT",
           "name": "캐터필러",
-          "ratio": -1.92,
-          "ratio_str": "-1.92%",
-          "price": "530.27"
+          "ratio": 0.57,
+          "ratio_str": "+0.57%",
+          "price": "543.69"
         },
         {
           "ticker": "LMT",
           "name": "록히드마틴",
-          "ratio": 2,
-          "ratio_str": "+2.00%",
-          "price": "598.39"
+          "ratio": 2.15,
+          "ratio_str": "+2.15%",
+          "price": "599.24"
+        }
+      ]
+    },
+    {
+      "ticker": "XLE",
+      "name": "에너지",
+      "theme": "정유/원유/가스",
+      "price": "60.90",
+      "ratio": 0.74,
+      "ratio_str": "+0.74%",
+      "reason": "국제유가 및 정유·원유 밸류체인 실적 개선과 현금흐름 부각으로 매수세 유입",
+      "stocks": [
+        {
+          "ticker": "XOM",
+          "name": "엑슨모빌",
+          "ratio": -0.09,
+          "ratio_str": "-0.09%",
+          "price": "158.08"
+        },
+        {
+          "ticker": "CVX",
+          "name": "셰브론",
+          "ratio": 1.06,
+          "ratio_str": "+1.06%",
+          "price": "210.95"
+        },
+        {
+          "ticker": "VLO",
+          "name": "발레로",
+          "ratio": -0.51,
+          "ratio_str": "-0.51%",
+          "price": "323.00"
+        },
+        {
+          "ticker": "OXY",
+          "name": "옥시덴털",
+          "ratio": 1.07,
+          "ratio_str": "+1.07%",
+          "price": "53.95"
+        }
+      ]
+    },
+    {
+      "ticker": "XLF",
+      "name": "금융",
+      "theme": "투자은행/상업은행/카드",
+      "price": "56.51",
+      "ratio": 0.71,
+      "ratio_str": "+0.71%",
+      "reason": "순이자마진(NIM) 방어 및 견조한 IB 수수료 수익 바탕 금융주 강세",
+      "stocks": [
+        {
+          "ticker": "JPM",
+          "name": "JP모건",
+          "ratio": -0.11,
+          "ratio_str": "-0.11%",
+          "price": "316.74"
+        },
+        {
+          "ticker": "BAC",
+          "name": "뱅크오브아메리카",
+          "ratio": -0.04,
+          "ratio_str": "-0.04%",
+          "price": "48.54"
+        },
+        {
+          "ticker": "GS",
+          "name": "골드만삭스",
+          "ratio": -0.62,
+          "ratio_str": "-0.62%",
+          "price": "801.03"
+        }
+      ]
+    },
+    {
+      "ticker": "XLU",
+      "name": "유틸리티",
+      "theme": "원자력발전/전력망/신재생",
+      "price": "43.61",
+      "ratio": 0.48,
+      "ratio_str": "+0.48%",
+      "reason": "빅테크 AI 데이터센터 전력 수요 폭증 및 원전 장기 PPA 계약 체결 모멘텀",
+      "stocks": [
+        {
+          "ticker": "NEE",
+          "name": "넥스트에라",
+          "ratio": 0.98,
+          "ratio_str": "+0.98%",
+          "price": "85.41"
+        },
+        {
+          "ticker": "SO",
+          "name": "서던컴퍼니",
+          "ratio": 0.95,
+          "ratio_str": "+0.95%",
+          "price": "95.00"
+        },
+        {
+          "ticker": "CEG",
+          "name": "콘스텔레이션에너지",
+          "ratio": -3.9,
+          "ratio_str": "-3.90%",
+          "price": "235.28"
+        }
+      ]
+    },
+    {
+      "ticker": "XLP",
+      "name": "필수소비재",
+      "theme": "식음료/대형마트/생필품",
+      "price": "92.30",
+      "ratio": 0.46,
+      "ratio_str": "+0.46%",
+      "reason": "시장 불확실성 속 안정적인 배당 수익률과 방어적 실적 돋보여",
+      "stocks": [
+        {
+          "ticker": "WMT",
+          "name": "월마트",
+          "ratio": -0.28,
+          "ratio_str": "-0.28%",
+          "price": "131.94"
+        },
+        {
+          "ticker": "COST",
+          "name": "코스트코",
+          "ratio": -0.45,
+          "ratio_str": "-0.45%",
+          "price": "1,086.81"
+        },
+        {
+          "ticker": "PG",
+          "name": "프록터앤갬블",
+          "ratio": 0.44,
+          "ratio_str": "+0.44%",
+          "price": "173.23"
         }
       ]
     }
@@ -277,63 +277,31 @@
       "ticker": "XLK",
       "name": "정보기술",
       "theme": "AI반도체/빅테크/소프트웨어",
-      "price": "152.84",
-      "ratio": -2.71,
-      "ratio_str": "-2.71%",
+      "price": "155.79",
+      "ratio": -0.83,
+      "ratio_str": "-0.83%",
       "reason": "단기 급등에 따른 차익실현 매물 출회 및 국채금리 변동성에 따른 밸류에이션 부담",
       "stocks": [
         {
           "ticker": "NVDA",
           "name": "엔비디아",
-          "ratio": -6.05,
-          "ratio_str": "-6.05%",
-          "price": "145.98"
+          "ratio": -3.91,
+          "ratio_str": "-3.91%",
+          "price": "149.30"
         },
         {
           "ticker": "AAPL",
           "name": "애플",
-          "ratio": -0.17,
-          "ratio_str": "-0.17%",
-          "price": "353.47"
+          "ratio": 0.43,
+          "ratio_str": "+0.43%",
+          "price": "355.58"
         },
         {
           "ticker": "MSFT",
           "name": "마이크로소프트",
-          "ratio": -1.63,
-          "ratio_str": "-1.63%",
-          "price": "488.05"
-        }
-      ]
-    },
-    {
-      "ticker": "XLY",
-      "name": "경기소비재",
-      "theme": "전기차/이커머스/유통",
-      "price": "117.28",
-      "ratio": -0.38,
-      "ratio_str": "-0.38%",
-      "reason": "고물가·고금리 장기화에 따른 가계 소비 여력 위축 우려",
-      "stocks": [
-        {
-          "ticker": "AMZN",
-          "name": "아마존",
-          "ratio": -3.25,
-          "ratio_str": "-3.25%",
-          "price": "244.10"
-        },
-        {
-          "ticker": "TSLA",
-          "name": "테슬라",
-          "ratio": -3.23,
-          "ratio_str": "-3.23%",
-          "price": "372.25"
-        },
-        {
-          "ticker": "HD",
-          "name": "홈디포",
-          "ratio": 2.38,
-          "ratio_str": "+2.38%",
-          "price": "362.10"
+          "ratio": -1.25,
+          "ratio_str": "-1.25%",
+          "price": "489.93"
         }
       ]
     },
@@ -341,122 +309,154 @@
       "ticker": "XLV",
       "name": "헬스케어",
       "theme": "제약/바이오/의료기기",
-      "price": "184.26",
-      "ratio": -0.25,
-      "ratio_str": "-0.25%",
+      "price": "183.68",
+      "ratio": -0.56,
+      "ratio_str": "-0.56%",
       "reason": "약가 인하 정책 부담 및 전통 제약주 파이프라인 지연 우려",
       "stocks": [
         {
           "ticker": "LLY",
           "name": "일라이릴리",
-          "ratio": -1.05,
-          "ratio_str": "-1.05%",
-          "price": "1,392.87"
+          "ratio": -1.09,
+          "ratio_str": "-1.09%",
+          "price": "1,392.22"
         },
         {
           "ticker": "JNJ",
           "name": "존슨앤존슨",
-          "ratio": -0.12,
-          "ratio_str": "-0.12%",
-          "price": "276.13"
+          "ratio": -0.91,
+          "ratio_str": "-0.91%",
+          "price": "273.94"
         },
         {
           "ticker": "ABBV",
           "name": "애브비",
-          "ratio": -1.13,
-          "ratio_str": "-1.13%",
-          "price": "296.90"
+          "ratio": -1.93,
+          "ratio_str": "-1.93%",
+          "price": "294.48"
         }
       ]
     },
     {
-      "ticker": "XLI",
-      "name": "산업재",
-      "theme": "방산/항공우주/전력기계",
-      "price": "162.05",
-      "ratio": 0.27,
-      "ratio_str": "+0.27%",
-      "reason": "글로벌 방산 수주 확대 및 AI 데이터센터 전력 인프라 투자 지속",
+      "ticker": "XLY",
+      "name": "경기소비재",
+      "theme": "전기차/이커머스/유통",
+      "price": "117.49",
+      "ratio": -0.2,
+      "ratio_str": "-0.20%",
+      "reason": "고물가·고금리 장기화에 따른 가계 소비 여력 위축 우려",
       "stocks": [
         {
-          "ticker": "GE",
-          "name": "GE에어로스페이스",
-          "ratio": -0.46,
-          "ratio_str": "-0.46%",
-          "price": "316.57"
+          "ticker": "AMZN",
+          "name": "아마존",
+          "ratio": -3.12,
+          "ratio_str": "-3.12%",
+          "price": "244.43"
         },
         {
-          "ticker": "CAT",
-          "name": "캐터필러",
-          "ratio": -1.92,
-          "ratio_str": "-1.92%",
-          "price": "530.27"
+          "ticker": "TSLA",
+          "name": "테슬라",
+          "ratio": -1.18,
+          "ratio_str": "-1.18%",
+          "price": "380.14"
         },
         {
-          "ticker": "LMT",
-          "name": "록히드마틴",
-          "ratio": 2,
-          "ratio_str": "+2.00%",
-          "price": "598.39"
+          "ticker": "HD",
+          "name": "홈디포",
+          "ratio": 2.14,
+          "ratio_str": "+2.14%",
+          "price": "361.26"
         }
       ]
     },
     {
-      "ticker": "XLF",
-      "name": "금융",
-      "theme": "투자은행/상업은행/카드",
-      "price": "56.37",
-      "ratio": 0.45,
-      "ratio_str": "+0.45%",
-      "reason": "순이자마진(NIM) 방어 및 견조한 IB 수수료 수익 바탕 금융주 강세",
+      "ticker": "XLP",
+      "name": "필수소비재",
+      "theme": "식음료/대형마트/생필품",
+      "price": "92.30",
+      "ratio": 0.46,
+      "ratio_str": "+0.46%",
+      "reason": "시장 불확실성 속 안정적인 배당 수익률과 방어적 실적 돋보여",
       "stocks": [
         {
-          "ticker": "JPM",
-          "name": "JP모건",
-          "ratio": -0.27,
-          "ratio_str": "-0.27%",
-          "price": "316.25"
+          "ticker": "WMT",
+          "name": "월마트",
+          "ratio": -0.28,
+          "ratio_str": "-0.28%",
+          "price": "131.94"
         },
         {
-          "ticker": "BAC",
-          "name": "뱅크오브아메리카",
-          "ratio": -0.46,
-          "ratio_str": "-0.46%",
-          "price": "48.36"
+          "ticker": "COST",
+          "name": "코스트코",
+          "ratio": -0.45,
+          "ratio_str": "-0.45%",
+          "price": "1,086.81"
         },
         {
-          "ticker": "GS",
-          "name": "골드만삭스",
-          "ratio": -1.27,
-          "ratio_str": "-1.27%",
-          "price": "795.76"
+          "ticker": "PG",
+          "name": "프록터앤갬블",
+          "ratio": 0.44,
+          "ratio_str": "+0.44%",
+          "price": "173.23"
+        }
+      ]
+    },
+    {
+      "ticker": "XLU",
+      "name": "유틸리티",
+      "theme": "원자력발전/전력망/신재생",
+      "price": "43.61",
+      "ratio": 0.48,
+      "ratio_str": "+0.48%",
+      "reason": "빅테크 AI 데이터센터 전력 수요 폭증 및 원전 장기 PPA 계약 체결 모멘텀",
+      "stocks": [
+        {
+          "ticker": "NEE",
+          "name": "넥스트에라",
+          "ratio": 0.98,
+          "ratio_str": "+0.98%",
+          "price": "85.41"
+        },
+        {
+          "ticker": "SO",
+          "name": "서던컴퍼니",
+          "ratio": 0.95,
+          "ratio_str": "+0.95%",
+          "price": "95.00"
+        },
+        {
+          "ticker": "CEG",
+          "name": "콘스텔레이션에너지",
+          "ratio": -3.9,
+          "ratio_str": "-3.90%",
+          "price": "235.28"
         }
       ]
     }
   ],
   "macro": {
-    "diesel_alert": "글로벌 에너지 시장 동향: WTI 83.65달러 선 안착 및 인플레이션 지표 모니터링",
+    "diesel_alert": "글로벌 에너지 시장 동향: WTI 84.36달러 선 안착 및 인플레이션 지표 모니터링",
     "wti": {
       "name": "WTI유",
-      "price": "83.65",
-      "ratio": "+1.95%"
+      "price": "84.36",
+      "ratio": "+0.81%"
     },
     "brent": {
       "name": "브렌트유",
-      "price": "90.32",
-      "ratio": "+1.73%"
+      "price": "91.11",
+      "ratio": "+0.52%"
     },
     "gold": {
       "name": "금",
-      "price": "3,542.80",
-      "ratio": "-1.34%"
+      "price": "3,623.20",
+      "ratio": "+1.64%"
     },
     "vix": {
       "name": "VIX 변동성",
-      "price": "29.75",
-      "ratio": "+12.86%"
+      "price": "28.29",
+      "ratio": "+7.32%"
     },
-    "night_range": "뉴욕 증시 정규장 마감 기준 S&P500·나스닥 변동성 지수(29.75) 유지"
+    "night_range": "뉴욕 증시 정규장 마감 기준 S&P500·나스닥 변동성 지수(28.29) 유지"
   },
   "news": []
 }
