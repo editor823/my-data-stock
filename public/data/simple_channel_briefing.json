@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-26T05:15:31.018Z",
+  "updatedAt": "2026-11-26T17:49:19.369Z",
   "channelId": "UChQIBrXk5QMyJjF3Hl_5-kQ",
   "channelTitle": "심플 관심종목 TV",
   "channelUrl": "https://www.youtube.com/channel/UChQIBrXk5QMyJjF3Hl_5-kQ",
   "targetDate": "2026-11-26",
   "latestVideo": {
     "hasVideo": true,
-    "id": "R7CGtage8YU",
-    "title": "당일 관심테마! 공포의 끝에서 다행히 돌려준 야간선물, 미 증시 /반도체,화장품,보안,로봇,경영권/삼성전자,SK하이닉스,삼성전기,안랩,지니언스,한진칼,에이피알,코리아써키트,심텍",
-    "published_kst": "2026-11-26 06:57:38",
-    "url": "https://www.youtube.com/watch?v=R7CGtage8YU"
+    "id": "8-dZkElSP5I",
+    "title": "내일 관심테마! 시황에 호재는...없나요?? 그래도 일정비중은 들고있어야하는 구간 /반도체,화장품,보안,로봇,우주항공/���성전자,SK하이닉스,삼성전기,안안랩,미래에셋벤처투자,에이피알",
+    "published_kst": "2026-11-26 21:21:06",
+    "url": "https://www.youtube.com/watch?v=8-dZkElSP5I"
   },
   "morningVideo": {
     "hasVideo": true,
@@ -36,19 +36,19 @@
   },
   "closingVideo": {
     "hasVideo": true,
-    "id": "ZyXgmlMULpY",
-    "title": "내일 관심테마! SK하이닉스 100만원! 관세부터 나올 악재는 가득.. /반도체,화장품,보안,로봇,경영권/삼성전자,SK하이닉스,삼성전기,안랩,지니언스,한진칼,에이피알,한국화장품",
-    "published_kst": "2026-11-25 21:00:19",
-    "url": "https://www.youtube.com/watch?v=ZyXgmlMULpY",
+    "id": "8-dZkElSP5I",
+    "title": "내일 관심테마! 시황에 호재는...없나요?? 그래도 일정비중은 들고있어야하는 구간 /반도체,화장품,보안,로봇,우주항공/���성전자,SK하이닉스,삼성전기,안안랩,미래에셋벤처투자,에이피알",
+    "published_kst": "2026-11-26 21:21:06",
+    "url": "https://www.youtube.com/watch?v=8-dZkElSP5I",
     "themes": [
-      "SK하이닉스 100만원! 관세부터 나올 악재는 가득.."
+      "시황에 호재는...없나요?? 그래도 일정비중은 들고있어야하는 구간"
     ],
     "stocks": [
       "반도체",
       "화장품",
       "보안",
       "로봇",
-      "경영권"
+      "우주항공"
     ],
     "key_points": [
       "당일 거래대금 상위 주도주(한화오션, SK하이닉스 등) 외국인·기관 순매수 집중",
