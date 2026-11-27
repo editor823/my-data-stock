@@ -1,15 +1,15 @@
 {
   "success": true,
-  "updated_at": "2026-11-27T05:13:18.929Z",
+  "updated_at": "2026-11-27T17:34:10.053Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
-      "change_rate": "+4.07%",
+      "change_rate": "+4.34%",
       "is_up": true
     },
     "kosdaq": {
       "value": "875.20",
-      "change_rate": "+7.62%",
+      "change_rate": "+8.13%",
       "is_up": true
     },
     "investor_trend": {
@@ -25,92 +25,137 @@
   },
   "top_themes": [
     {
-      "theme_id": "radar_579",
-      "theme_name": "2차전지",
-      "full_theme_name": "2차전지(나트륨이온)",
-      "change_rate": "+9.12%",
+      "theme_id": "radar_389",
+      "theme_name": "면역항암제",
+      "full_theme_name": "면역항암제",
+      "change_rate": "+11.74%",
       "composite_score": 99,
-      "total_stocks_count": 9,
-      "leader_stock": "에코프로",
-      "leader_ratio": 13.59,
-      "sub_leader_stock": "에코프로비엠",
+      "total_stocks_count": 37,
+      "leader_stock": "큐리언트",
+      "leader_ratio": 30,
+      "sub_leader_stock": "더코디",
       "other_stocks": [
-        "나인테크",
-        "더블유씨피",
-        "애경케미칼"
+        "에이비엘바이오",
+        "카나프테라퓨틱스",
+        "앱클론"
       ],
       "sub_stocks_top3": [
         {
-          "name": "에코프로비엠",
-          "rate": "+12.7%"
+          "name": "더코디",
+          "rate": "+30.0%"
         },
         {
-          "name": "나인테크",
-          "rate": "+10.5%"
+          "name": "에이비엘바이오",
+          "rate": "+29.6%"
         },
         {
-          "name": "더블유씨피",
-          "rate": "+10.0%"
+          "name": "카나프테라퓨틱스",
+          "rate": "+22.7%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 에코프로비엠, 차세대 배터리 관심 속 장중 두 자릿수 강세 : 이차전지 양극소재 전문기업 에코프로비엠이 2차전지 관련 테마 전반의 강세 흐름에 힘입어 장중 12% 넘게 급등하고 있다. 27일 오전 10시 48분 기준 코스닥 시장에서 에코프로비엠(247540)은 전 거래...",
-      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2906,
+      "past_trigger_reason": "[속보 기사] 큐리언트, 유상증자 구주주 청약 물량 초과 달성에 상한가 마... : 큐리언트(115180)가 유상증자 구주주 청약에서 모집 물량을 초과 달성했다는 소식에 11월 27일 코스닥 시장에서 상한가를 기록했다. 기존 주주들의 청약... 이날 큐리언트는 전 거래일 대비 30%(3,6...",
+      "future_momentum": "면역항암제 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1649,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 에코프로비엠, 차세대 배터리 관심 속 장중 두 자릿수 강세",
-      "today_rising_fact": "[속보 기사] 에코프로비엠, 차세대 배터리 관심 속 장중 두 자릿수 강세 : 이차전지 양극소재 전문기업 에코프로비엠이 2차전지 관련 테마 전반의 강세 흐름에 힘입어 장중 12% 넘게 급등하고 있다. 27일 오전 10시 48분 기준 코스닥 시장에서 에코프로비엠(247540)은 전 거래...",
+      "trigger_summary": "[특징주] 큐리언트, 유상증자 구주주 청약 물량 초과 달성에 상한가 마...",
+      "today_rising_fact": "[속보 기사] 큐리언트, 유상증자 구주주 청약 물량 초과 달성에 상한가 마... : 큐리언트(115180)가 유상증자 구주주 청약에서 모집 물량을 초과 달성했다는 소식에 11월 27일 코스닥 시장에서 상한가를 기록했다. 기존 주주들의 청약... 이날 큐리언트는 전 거래일 대비 30%(3,6...",
       "top_article": {
-        "title": "[특징주] 에코프로비엠, 차세대 배터리 관심 속 장중 두 자릿수 강세",
+        "title": "[특징주] 큐리언트, 유상증자 구주주 청약 물량 초과 달성에 상한가 마...",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=304993",
-        "published_at": "2026-11-27T05:13:16.527Z"
+        "url": "https://www.biotimes.co.kr/news/articleView.html?idxno=36567",
+        "published_at": "2026-11-27T17:34:07.604Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_505",
-      "theme_name": "로봇",
-      "full_theme_name": "로봇(산업용/협동로봇 등)",
-      "change_rate": "+8.61%",
+      "theme_id": "radar_579",
+      "theme_name": "2차전지",
+      "full_theme_name": "2차전지(나트륨이온)",
+      "change_rate": "+10.03%",
       "composite_score": 99,
-      "total_stocks_count": 82,
-      "leader_stock": "코스모로보틱스",
-      "leader_ratio": 30,
-      "sub_leader_stock": "에스피시스템스",
+      "total_stocks_count": 9,
+      "leader_stock": "에코프로",
+      "leader_ratio": 14.69,
+      "sub_leader_stock": "에코프로비엠",
       "other_stocks": [
-        "대성하이텍",
-        "클로봇",
-        "앤로보틱스"
+        "나인테크",
+        "애경케미칼",
+        "더블유씨피"
       ],
       "sub_stocks_top3": [
         {
-          "name": "에스피시스템스",
-          "rate": "+29.9%"
+          "name": "에코프로비엠",
+          "rate": "+13.3%"
         },
         {
-          "name": "대성하이텍",
-          "rate": "+29.9%"
+          "name": "나인테크",
+          "rate": "+11.4%"
         },
         {
-          "name": "클로봇",
-          "rate": "+28.8%"
+          "name": "애경케미칼",
+          "rate": "+10.5%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 아이엘, 로봇 업종 훈풍에 강세…실리콘 렌즈·전장 램프 수직... : 테마 내에서는 가격제한폭 수준까지 오른 코스모로보틱스(+30.00%), 에스피시스템스(+29.93%), 대성하이텍(+29.90%)을 비롯해 앤로보틱스(+27.78%), 클로봇(+27.40%), 라온로보틱스(...",
-      "future_momentum": "로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2278,
+      "past_trigger_reason": "[속보 기사] 에코프로 주가, 14%대↑... 코스닥 훈풍에 상승세 : 사진=에코프로 에코프로 주가가 급등하고 있다. 27일 오후 2시 43분 KRX 기준 에코프로는 전 거래일 대비 14.84%(9500원) 오른 7만3500원에 거래되고 있다. 이날 에코프로는 6만5000원에 ...",
+      "future_momentum": "2차전지 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3963,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 아이엘, 로봇 업종 훈풍에 강세…실리콘 렌즈·전장 램프 수직...",
-      "today_rising_fact": "[속보 기사] 아이엘, 로봇 업종 훈풍에 강세…실리콘 렌즈·전장 램프 수직... : 테마 내에서는 가격제한폭 수준까지 오른 코스모로보틱스(+30.00%), 에스피시스템스(+29.93%), 대성하이텍(+29.90%)을 비롯해 앤로보틱스(+27.78%), 클로봇(+27.40%), 라온로보틱스(...",
+      "trigger_summary": "[특징주] 에코프로 주가, 14%대↑... 코스닥 훈풍에 상승세",
+      "today_rising_fact": "[속보 기사] 에코프로 주가, 14%대↑... 코스닥 훈풍에 상승세 : 사진=에코프로 에코프로 주가가 급등하고 있다. 27일 오후 2시 43분 KRX 기준 에코프로는 전 거래일 대비 14.84%(9500원) 오른 7만3500원에 거래되고 있다. 이날 에코프로는 6만5000원에 ...",
       "top_article": {
-        "title": "[특징주] 아이엘, 로봇 업종 훈풍에 강세…실리콘 렌즈·전장 램프 수직...",
+        "title": "[특징주] 에코프로 주가, 14%대↑... 코스닥 훈풍에 상승세",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=305035",
-        "published_at": "2026-11-27T05:13:16.897Z"
+        "url": "https://www.ggilbo.com/news/articleView.html?idxno=1195985",
+        "published_at": "2026-11-27T17:34:08.040Z"
+      },
+      "timeline": []
+    },
+    {
+      "theme_id": "radar_92",
+      "theme_name": "통신장비",
+      "full_theme_name": "통신장비",
+      "change_rate": "+9.74%",
+      "composite_score": 99,
+      "total_stocks_count": 47,
+      "leader_stock": "쏘닉스",
+      "leader_ratio": 29.95,
+      "sub_leader_stock": "케이엠더블유",
+      "other_stocks": [
+        "인텔리안테크",
+        "서진시스템",
+        "케이앤에스아이앤씨"
+      ],
+      "sub_stocks_top3": [
+        {
+          "name": "케이엠더블유",
+          "rate": "+21.3%"
+        },
+        {
+          "name": "인텔리안테크",
+          "rate": "+21.0%"
+        },
+        {
+          "name": "서진시스템",
+          "rate": "+20.5%"
+        }
+      ],
+      "past_trigger_reason": "[속보 기사] LIG아큐버, 5G·위성통신 시험장비 모멘텀 지속에 장중 13% 넘게... : 테마 내에서는 LIG아큐버 외에도 쏘닉스(+28.52%), 케이엠더블유(+15.64%), 오이솔루션(+13.30%), 서진시스템(+12.79%), 에치에프알(+12.30%), 자람테크놀로지(+10.40%) ...",
+      "future_momentum": "통신장비 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 1484,
+      "is_real_leading": true,
+      "pullback_rate": "-25.0%",
+      "ma5_recovered": true,
+      "trigger_summary": "[특징주] LIG아큐버, 5G·위성통신 시험장비 모멘텀 지속에 장중 13% 넘게...",
+      "today_rising_fact": "[속보 기사] LIG아큐버, 5G·위성통신 시험장비 모멘텀 지속에 장중 13% 넘게... : 테마 내에서는 LIG아큐버 외에도 쏘닉스(+28.52%), 케이엠더블유(+15.64%), 오이솔루션(+13.30%), 서진시스템(+12.79%), 에치에프알(+12.30%), 자람테크놀로지(+10.40%) ...",
+      "top_article": {
+        "title": "[특징주] LIG아큐버, 5G·위성통신 시험장비 모멘텀 지속에 장중 13% 넘게...",
+        "press": "증시 속보",
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=304969",
+        "published_at": "2026-11-27T17:34:08.452Z"
       },
       "timeline": []
     },
@@ -118,141 +163,96 @@
       "theme_id": "radar_556",
       "theme_name": "뉴로모픽 반도체",
       "full_theme_name": "뉴로모픽 반도체",
-      "change_rate": "+8.55%",
+      "change_rate": "+9.43%",
       "composite_score": 99,
       "total_stocks_count": 7,
-      "leader_stock": "네패스",
-      "leader_ratio": 13.14,
-      "sub_leader_stock": "자람테크놀로지",
+      "leader_stock": "자람테크놀로지",
+      "leader_ratio": 12.19,
+      "sub_leader_stock": "오픈엣지테크놀로지",
       "other_stocks": [
+        "네패스",
         "에이직랜드",
-        "오픈엣지테크놀로지",
         "네패스아크"
       ],
       "sub_stocks_top3": [
         {
-          "name": "자람테크놀로지",
-          "rate": "+12.1%"
+          "name": "오픈엣지테크놀로지",
+          "rate": "+11.9%"
+        },
+        {
+          "name": "네패스",
+          "rate": "+11.6%"
         },
         {
           "name": "에이직랜드",
-          "rate": "+10.6%"
-        },
-        {
-          "name": "오픈엣지테크놀로지",
-          "rate": "+9.6%"
+          "rate": "+10.5%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] AI 투자 우려 재부각...반도체 소부장株 줄줄이 급락 : 이외 두산테스나(-9.92%), 디아이(-9.75%), 코세스(-9.73%), 네패스아크(-9.56%), 레이저쎌(-9.40%), 엑시콘(-9.37%), 인텍플러스(-9.22%), 마이크로컨텍솔(-9.16%...",
+      "past_trigger_reason": "[속보 기사] 티엠씨, 광통신 업종 매수세 유입에 강세…북미 광케이블 현지... : 테마 내에서는 자람테크놀로지(+11.07%)와 우리넷(+10.62%)을 비롯해 라이콤(+10.09%), 서울바이오시스(+9.24%), RFHIC(+8.17%), 빛샘전자(+8.11%) 등이 티엠씨와 함께 동...",
       "future_momentum": "뉴로모픽 반도체 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 17582,
+      "trading_value_eok": 25259,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] AI 투자 우려 재부각...반도체 소부장株 줄줄이 급락",
-      "today_rising_fact": "[속보 기사] AI 투자 우려 재부각...반도체 소부장株 줄줄이 급락 : 이외 두산테스나(-9.92%), 디아이(-9.75%), 코세스(-9.73%), 네패스아크(-9.56%), 레이저쎌(-9.40%), 엑시콘(-9.37%), 인텍플러스(-9.22%), 마이크로컨텍솔(-9.16%...",
+      "trigger_summary": "[특징주] 티엠씨, 광통신 업종 매수세 유입에 강세…북미 광케이블 현지...",
+      "today_rising_fact": "[속보 기사] 티엠씨, 광통신 업종 매수세 유입에 강세…북미 광케이블 현지... : 테마 내에서는 자람테크놀로지(+11.07%)와 우리넷(+10.62%)을 비롯해 라이콤(+10.09%), 서울바이오시스(+9.24%), RFHIC(+8.17%), 빛샘전자(+8.11%) 등이 티엠씨와 함께 동...",
       "top_article": {
-        "title": "[특징주] AI 투자 우려 재부각...반도체 소부장株 줄줄이 급락",
+        "title": "[특징주] 티엠씨, 광통신 업종 매수세 유입에 강세…북미 광케이블 현지...",
         "press": "증시 속보",
-        "url": "https://www.newspim.com/news/view/20261125000300",
-        "published_at": "2026-11-27T05:13:17.337Z"
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=305036",
+        "published_at": "2026-11-27T17:34:08.854Z"
       },
       "timeline": []
     },
     {
-      "theme_id": "radar_587",
-      "theme_name": "피지컬 AI/휴머노이드 로봇",
-      "full_theme_name": "피지컬 AI/휴머노이드 로봇",
-      "change_rate": "+8.35%",
+      "theme_id": "radar_505",
+      "theme_name": "로봇",
+      "full_theme_name": "로봇(산업용/협동로봇 등)",
+      "change_rate": "+9.40%",
       "composite_score": 99,
-      "total_stocks_count": 49,
-      "leader_stock": "크라우드웍스",
-      "leader_ratio": 29.91,
-      "sub_leader_stock": "클로봇",
+      "total_stocks_count": 82,
+      "leader_stock": "코스모로보틱스",
+      "leader_ratio": 30,
+      "sub_leader_stock": "앤로보틱스",
       "other_stocks": [
-        "마키나락스",
-        "케이엔에스",
-        "유진로봇"
+        "에스피시스템스",
+        "대성하이텍",
+        "클로봇"
       ],
       "sub_stocks_top3": [
         {
-          "name": "클로봇",
-          "rate": "+28.8%"
+          "name": "앤로보틱스",
+          "rate": "+30.0%"
         },
         {
-          "name": "마키나락스",
-          "rate": "+15.3%"
+          "name": "에스피시스템스",
+          "rate": "+29.9%"
         },
         {
-          "name": "케이엔에스",
-          "rate": "+14.5%"
+          "name": "대성하이텍",
+          "rate": "+29.9%"
         }
       ],
-      "past_trigger_reason": "[속보 기사] 나우로보틱스, 삼성 반도체 공장 로봇 확대 전망 속 10%대 후속... : 피지컬 AI·휴머노이드 로봇 테마 역시 전체 6위(평균 +7.85%)를 기록하며 크라우드웍스(+29.91%), 마키나락스(+14.89%), 에이엘로봇(+14.63%), 유진로봇(+13.64%), 뉴로메카(+...",
-      "future_momentum": "피지컬 AI/휴머노이드 로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 3414,
+      "past_trigger_reason": "[속보 기사] 코스모로보틱스·제닉스로보틱스 상한가…휴머노이드 수요 확... : 코스모로보틱스와 제닉스로보틱스가 가격제한폭까지 치솟았고, 레인보우로보틱스도 13% 넘게 상승하는 등 관련 종목 전반으로 매수세가 확산했다. 이날 코스닥시장에서 코스모로보틱스와 제닉스로보틱스는 각각 상한가로 ...",
+      "future_momentum": "로봇 밸류체인 실질 공급 계약 및 후속 수주 기대감",
+      "trading_value_eok": 3367,
       "is_real_leading": true,
       "pullback_rate": "-25.0%",
       "ma5_recovered": true,
-      "trigger_summary": "[특징주] 나우로보틱스, 삼성 반도체 공장 로봇 확대 전망 속 10%대 후속...",
-      "today_rising_fact": "[속보 기사] 나우로보틱스, 삼성 반도체 공장 로봇 확대 전망 속 10%대 후속... : 피지컬 AI·휴머노이드 로봇 테마 역시 전체 6위(평균 +7.85%)를 기록하며 크라우드웍스(+29.91%), 마키나락스(+14.89%), 에이엘로봇(+14.63%), 유진로봇(+13.64%), 뉴로메카(+...",
+      "trigger_summary": "[특징주] 코스모로보틱스·제닉스로보틱스 상한가…휴머노이드 수요 확...",
+      "today_rising_fact": "[속보 기사] 코스모로보틱스·제닉스로보틱스 상한가…휴머노이드 수요 확... : 코스모로보틱스와 제닉스로보틱스가 가격제한폭까지 치솟았고, 레인보우로보틱스도 13% 넘게 상승하는 등 관련 종목 전반으로 매수세가 확산했다. 이날 코스닥시장에서 코스모로보틱스와 제닉스로보틱스는 각각 상한가로 ...",
       "top_article": {
-        "title": "[특징주] 나우로보틱스, 삼성 반도체 공장 로봇 확대 전망 속 10%대 후속...",
+        "title": "[특징주] 코스모로보틱스·제닉스로보틱스 상한가…휴머노이드 수요 확...",
         "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=305015",
-        "published_at": "2026-11-27T05:13:17.628Z"
-      },
-      "timeline": []
-    },
-    {
-      "theme_id": "radar_269",
-      "theme_name": "LED장비",
-      "full_theme_name": "LED장비",
-      "change_rate": "+7.86%",
-      "composite_score": 99,
-      "total_stocks_count": 11,
-      "leader_stock": "주성엔지니어링",
-      "leader_ratio": 13.48,
-      "sub_leader_stock": "티씨케이",
-      "other_stocks": [
-        "레이저쎌",
-        "기가레인",
-        "지아이에스"
-      ],
-      "sub_stocks_top3": [
-        {
-          "name": "티씨케이",
-          "rate": "+10.3%"
-        },
-        {
-          "name": "레이저쎌",
-          "rate": "+9.2%"
-        },
-        {
-          "name": "기가레인",
-          "rate": "+9.0%"
-        }
-      ],
-      "past_trigger_reason": "[속보 기사] 주성엔지니어링, 마이크로 LED·증착 공정 고도화 훈풍에 장중... : 마이크로 LED 등 차세대 디스플레이 전환과 첨단 반도체 패키징 설비 투자 확대 기대감 속에 LED장비 관련주가 강세를 보이면서 주성엔지니어링이 장중 급등하고 있다. 27일 오후 1시 2분 기준 코스닥 시장...",
-      "future_momentum": "LED장비 밸류체인 실질 공급 계약 및 후속 수주 기대감",
-      "trading_value_eok": 2821,
-      "is_real_leading": true,
-      "pullback_rate": "-25.0%",
-      "ma5_recovered": true,
-      "trigger_summary": "[특징주] 주성엔지니어링, 마이크로 LED·증착 공정 고도화 훈풍에 장중...",
-      "today_rising_fact": "[속보 기사] 주성엔지니어링, 마이크로 LED·증착 공정 고도화 훈풍에 장중... : 마이크로 LED 등 차세대 디스플레이 전환과 첨단 반도체 패키징 설비 투자 확대 기대감 속에 LED장비 관련주가 강세를 보이면서 주성엔지니어링이 장중 급등하고 있다. 27일 오후 1시 2분 기준 코스닥 시장...",
-      "top_article": {
-        "title": "[특징주] 주성엔지니어링, 마이크로 LED·증착 공정 고도화 훈풍에 장중...",
-        "press": "증시 속보",
-        "url": "https://www.widedaily.com/news/articleView.html?idxno=305024",
-        "published_at": "2026-11-27T05:13:18.016Z"
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8943",
+        "published_at": "2026-11-27T17:34:09.251Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1795756398451_5qxd",
+      "theme_id": "pb_1795800849652_fo1t",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 티엠씨, 광통신 업종 매수세 유입에 강세…북미 광케이블 현지...",
         "press": "증시 속보",
         "url": "https://www.widedaily.com/news/articleView.html?idxno=305036",
-        "published_at": "2026-11-27T05:13:18.451Z"
+        "published_at": "2026-11-27T17:34:09.652Z"
       }
     },
     {
-      "theme_id": "pb_1795756398928_y57p",
+      "theme_id": "pb_1795800850053_2boy",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-27T05:13:18.928Z"
+        "published_at": "2026-11-27T17:34:10.053Z"
       }
     }
   ],
