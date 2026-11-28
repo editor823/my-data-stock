@@ -1,6 +1,6 @@
 {
   "success": true,
-  "updated_at": "2026-11-27T17:34:10.053Z",
+  "updated_at": "2026-11-28T04:49:16.595Z",
   "market_overview": {
     "kospi": {
       "value": "2,680.50",
@@ -65,7 +65,7 @@
         "title": "[특징주] 큐리언트, 유상증자 구주주 청약 물량 초과 달성에 상한가 마...",
         "press": "증시 속보",
         "url": "https://www.biotimes.co.kr/news/articleView.html?idxno=36567",
-        "published_at": "2026-11-27T17:34:07.604Z"
+        "published_at": "2026-11-28T04:49:13.693Z"
       },
       "timeline": []
     },
@@ -110,7 +110,7 @@
         "title": "[특징주] 에코프로 주가, 14%대↑... 코스닥 훈풍에 상승세",
         "press": "증시 속보",
         "url": "https://www.ggilbo.com/news/articleView.html?idxno=1195985",
-        "published_at": "2026-11-27T17:34:08.040Z"
+        "published_at": "2026-11-28T04:49:14.248Z"
       },
       "timeline": []
     },
@@ -155,7 +155,7 @@
         "title": "[특징주] LIG아큐버, 5G·위성통신 시험장비 모멘텀 지속에 장중 13% 넘게...",
         "press": "증시 속보",
         "url": "https://www.widedaily.com/news/articleView.html?idxno=304969",
-        "published_at": "2026-11-27T17:34:08.452Z"
+        "published_at": "2026-11-28T04:49:14.749Z"
       },
       "timeline": []
     },
@@ -200,7 +200,7 @@
         "title": "[특징주] 티엠씨, 광통신 업종 매수세 유입에 강세…북미 광케이블 현지...",
         "press": "증시 속보",
         "url": "https://www.widedaily.com/news/articleView.html?idxno=305036",
-        "published_at": "2026-11-27T17:34:08.854Z"
+        "published_at": "2026-11-28T04:49:15.227Z"
       },
       "timeline": []
     },
@@ -245,14 +245,14 @@
         "title": "[특징주] 코스모로보틱스·제닉스로보틱스 상한가…휴머노이드 수요 확...",
         "press": "증시 속보",
         "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8943",
-        "published_at": "2026-11-27T17:34:09.251Z"
+        "published_at": "2026-11-28T04:49:15.686Z"
       },
       "timeline": []
     }
   ],
   "pullback_themes": [
     {
-      "theme_id": "pb_1795800849652_fo1t",
+      "theme_id": "pb_1795841356140_gw4f",
       "theme_name": "조선 및 조선기자재",
       "leader_stock": "한화오션",
       "pullback_rate": "-26.4%",
@@ -264,11 +264,11 @@
         "title": "[특징주] 티엠씨, 광통신 업종 매수세 유입에 강세…북미 광케이블 현지...",
         "press": "증시 속보",
         "url": "https://www.widedaily.com/news/articleView.html?idxno=305036",
-        "published_at": "2026-11-27T17:34:09.652Z"
+        "published_at": "2026-11-28T04:49:16.140Z"
       }
     },
     {
-      "theme_id": "pb_1795800850053_2boy",
+      "theme_id": "pb_1795841356595_3wjp",
       "theme_name": "원자력발전 및 SMR",
       "leader_stock": "성광벤드",
       "pullback_rate": "-34.8%",
@@ -280,7 +280,7 @@
         "title": "'어닝쇼크' 성광벤드, 신저가 경신...목표가 4.3만원→4만원",
         "press": "증시 속보",
         "url": "https://www.mt.co.kr/stock/2026/11/09/2026110909275097483",
-        "published_at": "2026-11-27T17:34:10.053Z"
+        "published_at": "2026-11-28T04:49:16.595Z"
       }
     }
   ],
